@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass jcuthesis
+\begin_preamble
+\usepackage[draft,subsubsection]{progress}
+\end_preamble
 \options sort&compress
 \use_default_options true
 \begin_modules
@@ -13,7 +16,7 @@ theorems-sec
 \maintain_unincluded_children false
 \language australian
 \language_package default
-\inputencoding auto
+\inputencoding utf8
 \fontencoding global
 \font_roman default
 \font_sans default
@@ -238,10 +241,13 @@ filename "appendix.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "/home/michael/Dropbox/PhD/Writings/refs"
-options "plainnat"
+options "unsrtnat"
 
 \end_inset
 

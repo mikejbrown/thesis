@@ -79,9 +79,25 @@ theorems-sec
 \begin_layout Chapter
 Nonequilibrium Quantum Field Theory and n-Particle Irreducible Effective
  Action Techniques
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap2"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+progress{0}
+\end_layout
 
 \end_inset
 

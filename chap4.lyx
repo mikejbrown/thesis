@@ -78,9 +78,25 @@ theorems-sec
 
 \begin_layout Chapter
 Symmetry Improvement of nPIEA for Scalar Field Theories
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap4"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+progress{0}
+\end_layout
 
 \end_inset
 
