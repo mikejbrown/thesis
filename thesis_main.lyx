@@ -88,8 +88,16 @@ theorems-sec
 \begin_body
 
 \begin_layout Title
-Symmetries and Nonperturbative Effective Action Techniques in Quantum Field
- Theory
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Symmetries and Nonperturbative Effective Action
+\end_layout
+
+\end_inset
+
+Self-Consistent Techniques in Quantum Field Theory
 \end_layout
 
 \begin_layout Author
