@@ -77,7 +77,7 @@ theorems-sec
 \begin_body
 
 \begin_layout Chapter
-Symmetries, Ward Identities and Constraints in nPIEA
+Symmetries, Ward Identities and Truncations in nPIEA
 \end_layout
 
 \begin_layout Standard
@@ -97,6 +97,26 @@ status open
 \backslash
 progress{0}
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The previous chapter introduced nPIEA as a technique suitable for studies
+ in non-equilibrium QFT.
+ This chapter explores the symmetry properties of nPIEA.
+ In particular, it will demonstrate that global symmetries are not generically
+ preserved by truncations of nPIEA.
+ The causes of this and the consequences for phenomenology will be reviewed.
+\end_layout
+
+\begin_layout Section
+Global Symmetries in QFT
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Global-Symmetries-in-QFT"
 
 \end_inset
 
