@@ -171,6 +171,129 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Chapter*
+List of Publications
+\end_layout
+
+\begin_layout Standard
+This thesis is largely based on the following peer reviewed journal articles:
+\end_layout
+
+\begin_layout Itemize
+M.J.
+ Brown and I.
+ B.
+ Whittingham, Symmetry improvement of 3PI effective actions for O(N) scalar
+ field theory, Phys.
+ Rev.
+ D 91, 085020 (2015).
+ DOI: 
+\begin_inset CommandInset href
+LatexCommand href
+name "10.1103/PhysRevD.91.085020"
+target "http://dx.doi.org/10.1103/PhysRevD.91.085020"
+
+\end_inset
+
+, arXiv: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+update
+\end_layout
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+M.
+ Brown and I.
+ Whittingham, Two-particle irreducible effective actions versus resummation:
+ Analytic properties and self-consistency, Nucl.
+ Phys.
+ B900, 477 (2015).
+ DOI: 
+\begin_inset CommandInset href
+LatexCommand href
+name "10.1016/j.nuclphysb.2015.09.021"
+target "http://dx.doi.org/10.1016/j.nuclphysb.2015.09.021"
+
+\end_inset
+
+, arXiv: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+update
+\end_layout
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Itemize
+M.J.
+ Brown, I.
+ B.
+ Whittingham and D.
+ S.
+ Kosov, Linear response theory for symmetry improved two particle irreducible
+ effective actions, Phys.
+ Rev.
+ D 93, 105018 (2016).
+ DOI: 
+\begin_inset CommandInset href
+LatexCommand href
+name "10.1103/PhysRevD.93.105018"
+target "http://dx.doi.org/10.1103/PhysRevD.93.105018"
+
+\end_inset
+
+, arXiv: 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+update
+\end_layout
+
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+and the following preprints:
+\end_layout
+
+\begin_layout Itemize
+M.J.
+ Brown, I.
+ B.
+ Whittingham and D.
+ S.
+ Kosov, 
+\emph on
+manuscript in preparation
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE!!!!!
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
@@ -261,7 +384,7 @@ filename "appendix.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/michael/Dropbox/PhD/Writings/refs"
+bibfiles "C:/Users/Michael/Dropbox/PhD/Writings/refs,C:/Users/Michael/Dropbox/PhD/Writings/Linear Response Theory for SI-2PIEA/dist/refs"
 options "unsrtnat"
 
 \end_inset

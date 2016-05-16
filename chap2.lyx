@@ -118,5 +118,169 @@ Basically follow Berges reviews & Calzetta&Hu book except add material from
 
 \end_layout
 
+\begin_layout Standard
+This chapter introduces the 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective actions in the context of non-equilibrium
+ quantum field theory and discusses their general properties.
+ The general material in this chapter is based on the reviews by Berges
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2004,Bergesa"
+
+\end_inset
+
+, the extensive book by Calzetta and Hu 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Calzetta2008"
+
+\end_inset
+
+ and the sections on the analytic properties of effective actions and the
+ comparison to resummation methods is from a paper published by the author
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_two-particle_2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Quantum field theory and functional integrals
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Quantum-field-theory"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+field
+\emph default
+ 
+\begin_inset Formula $\phi:\mathcal{M}\to\mathcal{T}$
+\end_inset
+
+ is simply a mapping from a spacetime manifold 
+\begin_inset Formula $\mathcal{M}$
+\end_inset
+
+ to a field or 
+\emph on
+target
+\emph default
+ space 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ assigning to each event in spacetime the value that the field takes at
+ that event.
+ A 
+\emph on
+quantum field
+\emph default
+ is simply a field which can exist in a quantum superposition of several
+ classical states.
+ Thus quantum field theory (QFT) is often considered a special case of quantum
+ mechanics (QM), taking the limit that the number of degrees of freedom
+ goes to infinity.
+ However, the limit usually cannot be taken in a rigorous way and in fact
+ one proceeds the other way, deriving QM as a special case of QFT in zero
+ spatial dimensions (where 
+\begin_inset Formula $\mathcal{M}=\mathbb{R}$
+\end_inset
+
+ is just the time-line and 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is a copy of ordinary space for each particle).
+ Furthermore, there are non-trivial QFTs with no particle content whatsoever
+ (so called 
+\emph on
+conformal field theories
+\emph default
+ and 
+\emph on
+topological field theories
+\emph default
+).
+ Still, there is a close relation between QM and QFT: for each formalism
+ available for QM there is a corresponding QFT formalism
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Do Bohm, QBism...
+ matter?
+\end_layout
+
+\end_inset
+
+.
+ Thus, for example, one could study quantum fields in the Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"
+\end_layout
+
+\end_inset
+
+odinger picture via the 
+\emph on
+wavefunctional
+\emph default
+ 
+\begin_inset Formula $\Psi\left[\phi\left(\boldsymbol{x}\right)\right]$
+\end_inset
+
+ and its evolution equation 
+\begin_inset Formula $i\hbar\partial_{t}\Psi=\hat{\mathrm{H}}\Psi$
+\end_inset
+
+.
+ However, in QFT it is often far more convenient to use the functional integral
+ formalism, originally due to Feynman 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CITE
+\end_layout
+
+\end_inset
+
+, so in this section we review QFT in the functional formalism and some
+ of the connections to the more familiar canonical formalism which will
+ be useful later on.
+\end_layout
+
 \end_body
 \end_document

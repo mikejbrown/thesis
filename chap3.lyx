@@ -114,6 +114,17 @@ The previous chapter introduced nPIEA as a technique suitable for studies
 
 \begin_layout Section
 Global Symmetries in QFT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Global-Symmetries-in-QFT"
