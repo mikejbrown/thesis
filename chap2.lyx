@@ -197,6 +197,49 @@ target
 
  assigning to each event in spacetime the value that the field takes at
  that event.
+ This thesis focuses on the special case of scalar fields, for which 
+\begin_inset Formula $\mathcal{T}=\mathbb{R}$
+\end_inset
+
+ (later on, when discussing symmetries, 
+\begin_inset Formula $\mathcal{T}=\mathbb{R}^{N}$
+\end_inset
+
+ for integer 
+\begin_inset Formula $N$
+\end_inset
+
+).
+ This thesis also restricts discussion to flat spacetimes
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The generalisation to curved spacetimes is in some respects straightforward
+ and in other respects quite subtle and interesting, though beyond the scope
+ of this thesis.
+ In any event, quantum field theory in curved spacetime is standard lore
+ (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CITE
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+, so 
+\begin_inset Formula $\mathcal{M}=\mathbb{R}^{d}$
+\end_inset
+
+.
  A 
 \emph on
 quantum field
@@ -277,9 +320,238 @@ CITE
 
 \end_inset
 
-, so in this section we review QFT in the functional formalism and some
- of the connections to the more familiar canonical formalism which will
- be useful later on.
+, so this section reviews QFT in the functional formalism and some of the
+ connections to the more familiar canonical formalism which will be useful
+ later on.
+\end_layout
+
+\begin_layout Standard
+Start in the canonical formalism.
+ Here, fields are Heisenberg picture operators (actually operator valued
+ distributions) 
+\begin_inset Formula $\hat{\phi}\left(\boldsymbol{x},t\right)$
+\end_inset
+
+ with accompanying canonical momenta 
+\begin_inset Formula $\hat{\pi}\left(\boldsymbol{x},t\right)$
+\end_inset
+
+ which obey canonical 
+\emph on
+equal time
+\emph default
+ commutation relationships
+\begin_inset Formula 
+\begin{gather*}
+\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\phi}\left(\boldsymbol{y},t\right)\right]=\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=0,\\
+\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=i\delta^{\left(3\right)}\left(\boldsymbol{x}-\boldsymbol{y}\right).
+\end{gather*}
+
+\end_inset
+
+Commutators at unequal times must be found by evolving the field with its
+ equations of motion.
+ For a free field this can be done exactly.
+ The free field Hamiltonian is quadratic in fields and momenta, exactly
+ analogous to QM harmonic oscillator:
+\begin_inset Formula 
+\[
+\hat{H}_{0}=\int_{\boldsymbol{x}}\frac{1}{2}\hat{\pi}^{2}+\frac{1}{2}\left(\nabla\hat{\phi}\right)^{2}+\frac{1}{2}m^{2}\hat{\phi}^{2}.
+\]
+
+\end_inset
+
+
+\begin_inset Formula $m$
+\end_inset
+
+ is a parameter with dimensions of inverse length (which is equal to mass
+ 
+\begin_inset Formula $m\hbar/c$
+\end_inset
+
+ because 
+\begin_inset Formula $\hbar=c=1$
+\end_inset
+
+).
+ The Hamiltonian equations of motion are then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\partial_{t}\hat{\phi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]\\
+ & =\hat{\pi}\left(\boldsymbol{x},t\right),\\
+\partial_{t}\hat{\pi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]\\
+ & =\nabla^{2}\hat{\phi}-m^{2}\hat{\phi},
+\end{align*}
+
+\end_inset
+
+which can be rearranged to
+\begin_inset Formula 
+\[
+\left(\partial_{t}^{2}-\nabla^{2}+m^{2}\right)\hat{\phi}=0
+\]
+
+\end_inset
+
+which is the 
+\emph on
+Klein-Gordon
+\emph default
+ equation for 
+\begin_inset Formula $\hat{\phi}$
+\end_inset
+
+, and an analogous equation for 
+\begin_inset Formula $\hat{\pi}$
+\end_inset
+
+.
+ As a linear equation, this can be solved by Fourier decomposition
+\begin_inset Formula 
+\[
+\hat{\phi}\left(\boldsymbol{x},t\right)=\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}\right],
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+\omega_{\boldsymbol{k}}=\sqrt{\boldsymbol{k}^{2}+m^{2}}
+\]
+
+\end_inset
+
+and taking into account that, as a real scalar field, 
+\begin_inset Formula $\hat{\phi}^{\dagger}=\hat{\phi}$
+\end_inset
+
+.
+ Taking the normalisation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{\boldsymbol{k}}=\sqrt{\frac{\left(2\pi\right)^{3}}{2\omega_{\boldsymbol{k}}f_{\boldsymbol{k}}}}
+\]
+
+\end_inset
+
+and applying the equal time commutation relations leads then to the commutation
+ relations
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Check 
+\begin_inset Formula $2\pi$
+\end_inset
+
+s etc.
+ here:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather*}
+\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}\right]=\left[\hat{a}_{\boldsymbol{k}}^{\dagger},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=0,\\
+\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=f_{\boldsymbol{k}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right),
+\end{gather*}
+
+\end_inset
+
+for the mode operators.
+ It is conventional to take 
+\begin_inset Formula $f_{\boldsymbol{k}}=1$
+\end_inset
+
+, which is used in all the following.
+ With this choice 
+\begin_inset Formula $\hat{a}_{\boldsymbol{k}}\left(\hat{a}_{\boldsymbol{k}}^{\dagger}\right)$
+\end_inset
+
+ are annihilation(creation) operators for particles with bosonic statistics.
+\end_layout
+
+\begin_layout Standard
+Using the mode expansion the free Hamiltonian becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{H}_{0}=\int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\left(\hat{a}_{\boldsymbol{k}}^{\dagger}\hat{a}_{\boldsymbol{k}}+\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)\right),
+\]
+
+\end_inset
+
+where the formal commutator 
+\begin_inset Formula $\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{k}}^{\dagger}\right]=\delta^{\left(3\right)}\left(\boldsymbol{0}\right)$
+\end_inset
+
+ was used.
+ Using the Fourier representation of the delta function 
+\begin_inset Formula $\delta^{\left(3\right)}\left(\boldsymbol{0}\right)=\left(2\pi\right)^{-3}\int_{\boldsymbol{x}}\mathrm{e}^{i\boldsymbol{x}\cdot\boldsymbol{0}}=\left(2\pi\right)^{-3}\mathrm{V}$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathrm{V}$
+\end_inset
+
+ is the volume of space, the second term can be written
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)=\left(\frac{1}{2}\int_{\boldsymbol{k}}\omega_{\boldsymbol{k}}\right)\mathrm{V},
+\]
+
+\end_inset
+
+which assigns an energy density of 
+\begin_inset Formula $\frac{1}{2}\int_{\boldsymbol{k}}\omega_{\boldsymbol{k}}$
+\end_inset
+
+ to the vacuum.
+ Subtracting this (divergent) vacuum energy density gives the normal ordered
+ Hamiltonian
+\begin_inset Formula 
+\[
+:\hat{H}_{0}:=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{a}_{\boldsymbol{k}}^{\dagger}a_{\boldsymbol{k}}=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{N}_{\boldsymbol{k}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{N}_{\boldsymbol{k}}$
+\end_inset
+
+ is the number operator for the mode 
+\begin_inset Formula $\boldsymbol{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $:\hat{H}_{0}:$
+\end_inset
+
+ describes non-interacting (because the energy is additive) particle-like
+ bosonic excitations of mass 
+\begin_inset Formula $m$
+\end_inset
+
+.
 \end_layout
 
 \end_body
