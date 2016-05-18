@@ -125,24 +125,24 @@ This chapter introduces the
 
 -particle irreducible effective actions in the context of non-equilibrium
  quantum field theory and discusses their general properties.
- The general material in this chapter is based on the reviews by Berges
- 
+ The general material in this chapter is largely based on the reviews by
+ Berges 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Berges2004,Bergesa"
 
 \end_inset
 
-, the extensive book by Calzetta and Hu 
+ and the extensive book by Calzetta and Hu 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Calzetta2008"
 
 \end_inset
 
- and the sections on the analytic properties of effective actions and the
- comparison to resummation methods is from a paper published by the author
- 
+.
+ The sections on the analytic properties of effective actions and the comparison
+ to resummation methods is from a paper published by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "brown_two-particle_2015"
@@ -150,6 +150,9 @@ key "brown_two-particle_2015"
 \end_inset
 
 .
+ The starting point for the discussion is a textbook level review of basic
+ quantum field theory for scalar fields, first in the canonical, then the
+ functional formalism.
 \end_layout
 
 \begin_layout Section
@@ -552,6 +555,232 @@ where
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+Now the unequal time commutator can be found:
+\begin_inset Formula 
+\begin{align*}
+\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{ikx}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-ikx},\hat{a}_{\boldsymbol{q}}\mathrm{e}^{iqy}+\hat{a}_{\boldsymbol{q}}^{\dagger}\mathrm{e}^{-iqy}\right]\\
+ & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right)\\
+ & =\int\frac{\mathrm{d}^{3}\boldsymbol{k}}{2\omega_{\boldsymbol{k}}}\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
+\end{align*}
+
+\end_inset
+
+where the time component of 
+\begin_inset Formula $k_{\mu}$
+\end_inset
+
+ is 
+\begin_inset Formula $\omega_{\boldsymbol{k}}$
+\end_inset
+
+ in the exponentials.
+ Note that when 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are spacelike separated, there is a frame in which the time component of
+ 
+\begin_inset Formula $x^{\mu}-y^{\mu}$
+\end_inset
+
+ vanishes.
+ In this case one can see that the commutator vanishes by setting 
+\begin_inset Formula $\boldsymbol{k}\to-\boldsymbol{k}$
+\end_inset
+
+ in the second term.
+ To show that this holds in all frames one needs to show that the integration
+ measure is in fact Lorentz invariant, as the exponentials are manifestly
+ invariant.
+ Consider the identity
+\begin_inset Formula 
+\[
+\frac{1}{2\omega_{\boldsymbol{k}}}=\int\mathrm{d}k_{0}\delta\left(k_{0}^{2}-\omega_{\boldsymbol{k}}^{2}\right)\Theta\left(k_{0}\right)=\int\mathrm{d}k_{0}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right).
+\]
+
+\end_inset
+
+Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{k}\left(2\pi\right)^{4}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
+\end{align*}
+
+\end_inset
+
+which is manifestly invariant under the isochronous (i.e.
+ not reversing time) Lorentz transformations.
+ Thus fields commute at spacelike separation.
+ This is the 
+\emph on
+microcausality
+\emph default
+ condition and effectively implements the speed of light limit for information
+ transmission.
+ Microcausality holds for the free field theory, but also for the interacting
+ theories of physical interest
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The main exception being electromagnetism in the Coulomb gauge, which explicitly
+ breaks Lorentz invariance.
+ In this cause the (gauge variant) commutators do not vanish at spacelike
+ separations but causality problems are avoided because only gauge invariant
+ quantities are physically observable.
+ All gauge invariant quantities can be equally well computed in a Lorentz
+ covariant gauge in which microcausality is manifest at every step.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and is automatic if the theory is constructed from a Lorentz invariant
+ action which is the integral of a local density which is a finite order
+ polynomial of fields and their derivatives 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Time contours, Green functions and Non-equilibrium QFT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Time-contours-Green-functions-NEQFT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The 1PI effective action
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-1PI-effective"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The 2PI effective action
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-2PI-effective"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Higher 
+\begin_inset Formula $n$
+\end_inset
+
+PI effective actions
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Higher-PI-effective"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Analytic properties of the 2PI effective action and resummation schemes
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Analytic-properties-of-2PIEA-and-resummation"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
