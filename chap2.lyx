@@ -669,6 +669,414 @@ REF
 .
 \end_layout
 
+\begin_layout Standard
+Since spacelike separated fields commute, the set of fields on a spacelike
+ hypersurface 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ forms a complete commuting set of operators and a complete set of eigenvectors
+ can be found.
+ Arbitrary states can be expanded in this basis as
+\begin_inset Formula 
+\[
+\Ket{\Psi}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Psi\left[\phi\left(x\right)\right]\Ket{\phi\left(x\right);\Sigma}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\Psi\left[\phi\left(x\right)\right]$
+\end_inset
+
+ is the wavefunctional and the Heisenberg states 
+\begin_inset Formula $\Ket{\phi\left(x\right);\Sigma}$
+\end_inset
+
+ are eigenvectors of the field 
+\begin_inset Formula $\hat{\phi}\left(x\right)$
+\end_inset
+
+ operators on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\Ket{\phi\left(x\right);\Sigma}$
+\end_inset
+
+ is generally 
+\emph on
+not
+\emph default
+ an eigenvector of a field operator 
+\emph on
+not
+\emph default
+ on the hypersurface.
+ The time variable hidden in the notation 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is merely part of the label for the state and implies nothing about its
+ time evolution (indeed Heisenberg states do not evolve).
+ The notation 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $;\Sigma$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is used to remind us of this fact.
+ Now consider a transition amplitude between an initial and final state
+ 
+\begin_inset Formula $\Psi_{i}\to\Psi_{f}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\Braket{\Psi_{f}|\Psi_{i}} & = & \int\mathcal{D}\left[\phi_{i}\left(x\in\Sigma_{i}\right),\phi_{f}\left(x\in\Sigma_{f}\right)\right]\\
+ &  & \times\Psi_{f}^{\star}\left[\phi_{f}\left(x\right)\right]\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}\Psi_{i}\left[\phi_{i}\left(x\right)\right],
+\end{eqnarray*}
+
+\end_inset
+
+where the initial and final hypersurfaces are 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ respectively and we assume that 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ is later than 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ (i.e.
+ any future directed timelike curve passing through 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ at proper time 
+\begin_inset Formula $\tau_{i}$
+\end_inset
+
+ passes through 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ at a proper time 
+\begin_inset Formula $\tau_{f}>\tau_{i}$
+\end_inset
+
+).
+ From this equation it is clear that the time evolution problem reduces
+ to finding
+\begin_inset Formula 
+\[
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}},
+\]
+
+\end_inset
+
+the transition amplitude between field eigenstates on two spacelike hypersurface
+s.
+\end_layout
+
+\begin_layout Standard
+This goal is accomplished by the 
+\emph on
+Feynman path integral
+\emph default
+ or 
+\emph on
+functional integral
+\emph default
+.
+ The idea is to do the time evolution a little bit at a time.
+ Since 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ is later than 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ it is possible to break the finite time evolution into a succession of
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ steps 
+\begin_inset Formula $\Sigma_{i}\to\Sigma_{1}\to\Sigma_{2}\to\cdots\to\Sigma_{N-1}\to\Sigma_{f}$
+\end_inset
+
+ and take the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit such that each step represents an infinitesimal time evolution.
+ Formally this is done by repeatedly inserting resolutions of the identity
+\begin_inset Formula 
+\[
+\hat{\mathbb{I}}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Ket{\phi;\Sigma}\Bra{\phi;\Sigma},
+\]
+
+\end_inset
+
+obtaining
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\\
+ &  & \times\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{N-1}\left(x\right);\Sigma_{N-1}}\\
+ &  & \times\cdots\times\Braket{\phi_{k+1}\left(x\right);\Sigma_{k+1}|\phi_{k}\left(x\right);\Sigma_{k}}\\
+ &  & \times\cdots\times\Braket{\phi_{1}\left(x\right);\Sigma_{1}|\phi_{i}\left(x\right);\Sigma_{i}}.
+\end{eqnarray*}
+
+\end_inset
+
+To simplify this further one can assume that the 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+s are all flat and parallel (the general case can be recovered from the
+ final result).
+ This means that there is an inertial coordinate system where the time 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+ is constant on each 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+.
+ One can further assume, without loss of generality, that the hypersurfaces
+ are equally spaced.
+ That is, 
+\begin_inset Formula $t_{k}=t_{i}+\epsilon k$
+\end_inset
+
+ where 
+\begin_inset Formula $\epsilon=\left(t_{f}-t_{i}\right)/N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now all one needs is the infinitesimal step
+\begin_inset Formula 
+\[
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}.
+\]
+
+\end_inset
+
+Intuitively, there is not much time for the fields to evolve, so this should
+ be close to the delta functional 
+\begin_inset Formula $\approx\delta\left[\phi_{k+1}-\phi_{k}\right]$
+\end_inset
+
+.
+ To find the 
+\begin_inset Formula $\mathcal{O}\left(\epsilon\right)$
+\end_inset
+
+ correction it is easiest to convert the states into the Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{o}
+\end_layout
+
+\end_inset
+
+dinger picture (indicated using a subscript 
+\begin_inset Quotes eld
+\end_inset
+
+S
+\begin_inset Quotes erd
+\end_inset
+
+) using the time evolution operator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}=\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+\]
+
+\end_inset
+
+Resolving the identity again, this time with 
+\begin_inset Formula $\hat{\pi}$
+\end_inset
+
+ eigenstates,
+\begin_inset Formula 
+\begin{eqnarray*}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
+ &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
+ &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+\end{eqnarray*}
+
+\end_inset
+
+Using
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall from basic QM that 
+\begin_inset Formula $\Braket{q|p}=\exp\left(\frac{i}{\hbar}qp\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\Braket{\phi|\pi}=\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi\left(\boldsymbol{x},t_{k}\right)\phi\left(\boldsymbol{x},t_{k}\right)\right)$
+\end_inset
+
+ this can be written
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi_{k}\left(\boldsymbol{x},t_{k}\right)\left[\phi_{k+1}\left(\boldsymbol{x},t_{k}\right)-\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right]\right)\\
+ &  & \times\exp\left[-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\\
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}\left[\pi_{k}\left(\boldsymbol{x},t_{k}\right)\partial_{t}\phi_{k}\left(\boldsymbol{x},t_{k}\right)-\mathcal{H}\left(\phi_{k},\pi_{k}\right)\right]\right)
+\end{eqnarray*}
+
+\end_inset
+
+using the finite difference approximation 
+\begin_inset Formula $\phi_{k+1}-\phi_{k}=\epsilon\partial_{t}\phi_{k}$
+\end_inset
+
+ and that the Hamiltonian 
+\begin_inset Formula $H=\int_{\boldsymbol{x}}\mathcal{H}$
+\end_inset
+
+ is the integral of a local Hamiltonian density 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ Multiplying all time steps gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi,\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\mathcal{H}\left(\phi,\pi\right)\right]\right)
+\]
+
+\end_inset
+
+which, in the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit is the Hamiltonian form of the path integral.
+\end_layout
+
+\begin_layout Standard
+If the Hamiltonian is quadratic in the momenta the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ integral can be performed by completing the square:
+\begin_inset Formula 
+\begin{eqnarray*}
+\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\frac{1}{2}\pi\left(x\right)^{2}\right]\right) & = & \int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\left[\pi\left(x\right)-\partial_{t}\phi\left(x\right)\right]^{2}\right)\\
+ &  & \times\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right)\\
+ & = & N\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right),
+\end{eqnarray*}
+
+\end_inset
+
+where the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ integration variable can be shifted 
+\begin_inset Formula $\pi\to\pi+\partial_{t}\phi$
+\end_inset
+
+ to give the constant normalisation factor
+\begin_inset Formula 
+\[
+N=\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\pi\left(x\right)^{2}\right),
+\]
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{L}\left(\phi\right)$
+\end_inset
+
+ is the Lagrangian density.
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is traditionally absorbed into the definition of the measure 
+\begin_inset Formula $\mathcal{D}\left[\phi\right]$
+\end_inset
+
+ and is unimportant for most physical problems.
+\end_layout
+
 \begin_layout Section
 Time contours, Green functions and Non-equilibrium QFT
 \begin_inset ERT

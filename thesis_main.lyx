@@ -5,6 +5,7 @@
 \textclass jcuthesis
 \begin_preamble
 \usepackage[draft,subsubsection]{progress}
+\usepackage{braket}
 \end_preamble
 \options sort&compress
 \use_default_options true
