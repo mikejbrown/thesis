@@ -1066,6 +1066,10 @@ where
 \end_inset
 
  is the Lagrangian density.
+ This is a completely Lorentz invariant (indeed, diffeomorphism invariant)
+ formula for transition amplitudes which no longer depends on any particular
+ assumptions about the time slicing used etc.
+ Of course, all of the difficulties are hidden in the notation.
  
 \begin_inset Formula $N$
 \end_inset
@@ -1075,6 +1079,44 @@ where
 \end_inset
 
  and is unimportant for most physical problems.
+ Some methods of dealing with the overall normalisation are discussed in
+ the next section.
+ Note that matrix elements of arbitrary time ordered products of fields
+ are now easily obtained.
+ Define the functional
+\begin_inset Formula 
+\[
+\mathcal{A}_{fi}\left[J\left(x\right)\right]=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)-J\left(x\right)\phi\left(x\right)\right).
+\]
+
+\end_inset
+
+Then
+\begin_inset Formula 
+\[
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
+\]
+
+\end_inset
+
+where it is assumed that all 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ are in the spacetime region bounded by 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+.
+ This type of 
+\emph on
+generating functional
+\emph default
+ technique is used frequently in the following.
 \end_layout
 
 \begin_layout Section
@@ -1097,6 +1139,134 @@ name "sec:Time-contours-Green-functions-NEQFT"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+In order to make practical use of the functional integral it is necessary
+ to have some way of characterising the initial and final states, handling
+ the overall normalisation and evaluating the integral itself.
+ Each of these typically require regularisation to handle divergences and
+ renormalisation to express the input parameters in terms of physical observable
+s.
+ The way all of these are implemented depends on the physical application
+ being considered.
+\end_layout
+
+\begin_layout Standard
+For example, the setting of most particle physics is vacuum field theory.
+ One is usually interested in the scattering of a small number of particles
+ which only interact in a small spacetime region.
+ Long before and after the interaction the particles are effectively free,
+ so the initial and final states can be approximated by free particle states
+ 
+\begin_inset Formula $\sim a_{\boldsymbol{k}_{1}}^{\dagger}a_{\boldsymbol{k}_{2}}^{\dagger}\cdots a_{\boldsymbol{k}_{n}}^{\dagger}\Ket{\text{vac}}$
+\end_inset
+
+ and the appropriate observable is the S-matrix element.
+ The 
+\emph on
+Lehmann-Symanzik-Zimmerman
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CHECK
+\end_layout
+
+\end_inset
+
+ (LSZ) reduction formulae connect the S-matrix elements for the asymptotic
+ free particle states to the vacuum-to-vacuum transition matrix elements
+ of a time ordered product of interacting fields (a 
+\emph on
+correlation
+\emph default
+ or 
+\emph on
+Green function
+\emph default
+).
+ These Green functions can be evaluated by using, essentially, the formulae
+ of the previous section
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+XREF
+\end_layout
+
+\end_inset
+
+, only a trick is required to characterise the initial and final physical
+ vacuum state and handle the overall normalisation.
+ The 
+\emph on
+Gel-mann-Low
+\emph default
+ formula
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CHECK
+\end_layout
+
+\end_inset
+
+ accomplishes both.
+ The idea is that, instead of trying to find the wavefunctional of the vacuum
+ state, one can use 
+\emph on
+any
+\emph default
+ physically reasonable initial and final states in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),
+\]
+
+\end_inset
+
+and deform the time contour in a slight negative imaginary direction, so
+ that one eventually takes the limit 
+\begin_inset Formula $t_{i}\to-\infty\left(1-i\epsilon\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{f}\to+\infty\left(1-i\epsilon\right)$
+\end_inset
+
+.
+ The imaginary time component introduces a dissipative part to the time
+ evolution 
+\begin_inset Formula $\sim\exp\left(-\epsilon tH\right)$
+\end_inset
+
+ which damps all states except for the lowest energy, i.e.
+ vacuum, state.
+ So finally in the limit only the vacuum-to-vacuum matrix element survives.
+ The normalisation factor is taken care of by noting that 
+\begin_inset Formula $\Braket{\text{vac}|\text{vac}}=1$
+\end_inset
+
+, i.e.
+ an undisturbed vacuum remains vacuum.
+ Thus one can simply divide by this factor, giving
+\begin_inset Formula 
+\[
+\Braket{\text{vac}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\text{vac}}=\frac{\int\mathcal{D}\left[\phi\right]\phi\left(x_{1}\right)\cdots\phi\left(x_{n}\right)\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)},
+\]
+
+\end_inset
+
+where the functional integrals are over all spacetime and any ambiguity
+ in the normalisation of the measure simply cancels between the numerator
+ and denominator of the ratio.
 \end_layout
 
 \begin_layout Section
