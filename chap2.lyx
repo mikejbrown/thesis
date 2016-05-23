@@ -1272,7 +1272,35 @@ and deform the time contour in a slight negative imaginary direction, so
 
  which damps all states except for the lowest energy, i.e.
  vacuum, state.
- So finally in the limit only the vacuum-to-vacuum matrix element survives.
+ So finally in the limit only the vacuum-to-vacuum matrix element survives
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This assumes that the vacuum state is non-degenerate and separated by a
+ finite spectral gap from any excited states.
+ In particular, this implies that this formalism for vacuum field theory
+ is strictly speaking invalid for massless particles.
+ Yet, massless particles can be handled in this formalism provided one takes
+ care of infrared (i.e.
+ low energy) divergences and computes inclusive cross sections, i.e.
+ including processes with the emission of extra soft particles in the final
+ state.
+ A detailed treatment of these issues is beyond the scope of this thesis,
+ but can be found in e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
  The normalisation factor is taken care of by noting that 
 \begin_inset Formula $\Braket{\text{vac}|\text{vac}}=1$
 \end_inset
@@ -2103,7 +2131,7 @@ The main objects of interest are the correlation functions of field operators,
  objects like
 \begin_inset Formula 
 \[
-D\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\phi\left(\boldsymbol{1}\right)\phi\left(\boldsymbol{2}\right)\right]\right\rangle ,
+\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\phi\left(\boldsymbol{1}\right)\phi\left(\boldsymbol{2}\right)\right]\right\rangle ,
 \]
 
 \end_inset
@@ -2168,7 +2196,7 @@ reference "tab:Keldysh-components-of"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -2755,7 +2783,7 @@ The origin of some of the names can be seen by visualising the function
  For example, the lesser function is given by
 \begin_inset Formula 
 \[
-D^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \phi\left(\boldsymbol{2}\right)\phi\left(\boldsymbol{1}\right)\right\rangle ,
+\Delta^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \phi\left(\boldsymbol{2}\right)\phi\left(\boldsymbol{1}\right)\right\rangle ,
 \]
 
 \end_inset
@@ -2782,11 +2810,11 @@ as if
 , even if it is not.
  The hook functions are similarly visual.
  Consider the left hook function 
-\begin_inset Formula $\lhook D\left(\boldsymbol{1},\boldsymbol{2}\right)$
+\begin_inset Formula $\lhook\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)$
 \end_inset
 
 : the left argument is on the Matsubara (vertical) branch and the right
- argument is on a real time (horizontal) branch (it doesn't matter which
+ argument is on a real time (horizontal) branch (it does not matter which
  one since the contour ordering is the same in both cases).
  The contour delta function is defined so that 
 \begin_inset Formula $\int_{C}\mathrm{d}z'\ \delta_{C}\left(z,z'\right)f\left(z'\right)=f\left(z\right)$
@@ -2864,7 +2892,7 @@ key "Stefanucci2013"
  the form
 \begin_inset Formula 
 \[
-\square_{\boldsymbol{1}}D\left(\boldsymbol{1},\boldsymbol{2}\right)=i\delta_{C}\left(\boldsymbol{1},\boldsymbol{2}\right)+\int_{C}\mathrm{d}\boldsymbol{3}\ \Sigma\left(\boldsymbol{1},\boldsymbol{3}\right)D\left(\boldsymbol{3},\boldsymbol{2}\right),
+\square_{\boldsymbol{1}}\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=i\delta_{C}\left(\boldsymbol{1},\boldsymbol{2}\right)+\int_{C}\mathrm{d}\boldsymbol{3}\ \Sigma\left(\boldsymbol{1},\boldsymbol{3}\right)\Delta\left(\boldsymbol{3},\boldsymbol{2}\right),
 \]
 
 \end_inset
@@ -2878,13 +2906,13 @@ where
 \end_inset
 
  is also defined on the time contour, the Langreth rules show that 
-\begin_inset Formula $D^{<}$
+\begin_inset Formula $\Delta^{<}$
 \end_inset
 
  obeys (suppressing arguments)
 \begin_inset Formula 
 \[
-\square_{\boldsymbol{1}}D^{<}=i\delta+\Sigma^{<}\cdot D^{A}+\Sigma^{R}\cdot D^{<}+\rhook\Sigma\star\lhook D,
+\square_{\boldsymbol{1}}\Delta^{<}=i\delta+\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
 \]
 
 \end_inset
@@ -2896,7 +2924,7 @@ an equation suitable for numerical solution.
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3449,6 +3477,24 @@ Matsubara
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:
+\end_layout
+
+\begin_layout Plain Layout
+More about the physical meaning/use of Green's functions, Dyson equation
+ etc....
 \end_layout
 
 \end_inset
