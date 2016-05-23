@@ -1065,7 +1065,30 @@ where
 \begin_inset Formula $\mathcal{L}\left(\phi\right)$
 \end_inset
 
- is the Lagrangian density.
+ is the Lagrangian density
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It is common to refer to 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ simply as the Lagrangian, i.e.
+ dropping the 
+\begin_inset Quotes eld
+\end_inset
+
+density.
+\begin_inset Quotes erd
+\end_inset
+
+ Though strictly speaking incorrect, this rarely results in confusion.
+\end_layout
+
+\end_inset
+
+.
  This is a completely Lorentz invariant (indeed, diffeomorphism invariant)
  formula for transition amplitudes which no longer depends on any particular
  assumptions about the time slicing used etc.
@@ -1267,6 +1290,327 @@ and deform the time contour in a slight negative imaginary direction, so
 where the functional integrals are over all spacetime and any ambiguity
  in the normalisation of the measure simply cancels between the numerator
  and denominator of the ratio.
+\end_layout
+
+\begin_layout Standard
+In thermal equilibrium one is not interested in the S-matrix as there are
+ no asymptotic states.
+ Rather one is interested in the partition function
+\begin_inset Formula 
+\[
+Z=\mathrm{Tr}\mathrm{e}^{-\beta\hat{H}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\beta=1/T$
+\end_inset
+
+ is the inverse temperature.
+ From 
+\begin_inset Formula $Z$
+\end_inset
+
+ all thermodynamic functions can be derived.
+ The trick to evaluate 
+\begin_inset Formula $Z$
+\end_inset
+
+ in the 
+\emph on
+Matsubara
+\emph default
+ 
+\emph on
+formalism
+\emph default
+ is to note that the operator 
+\begin_inset Formula $\exp\left(-\beta\hat{H}\right)$
+\end_inset
+
+ is formally imaginary time evolution 
+\begin_inset Formula $\exp\left(-i\hat{H}t/\hbar\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $t=-i\hbar\beta$
+\end_inset
+
+.
+ Therefore one 
+\emph on
+Wick rotates
+\emph default
+ to imaginary time 
+\begin_inset Formula $t=x^{0}=-i\hbar x^{4}$
+\end_inset
+
+ where 
+\begin_inset Formula $x^{4}$
+\end_inset
+
+ goes from zero to 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Furthermore, the trace operation implies periodic boundary conditions:
+\begin_inset Formula 
+\begin{eqnarray*}
+Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\\
+ & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\\
+ & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\\
+ & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right)
+\end{eqnarray*}
+
+\end_inset
+
+where the 
+\emph on
+Euclidean
+\emph default
+ Lagrangian 
+\begin_inset Formula $\mathcal{L}_{E}$
+\end_inset
+
+ is obtained by making the replacement 
+\begin_inset Formula $t\to-i\hbar x^{4}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+.
+ The overall normalisation is either irrelevant (because the observable
+ is a ratio, e.g.
+ 
+\begin_inset Formula $\left\langle \hat{O}\right\rangle =\mathrm{Tr}\left(\hat{O}\mathrm{e}^{-\beta\hat{H}}\right)/Z$
+\end_inset
+
+) or can be fixed from the requirement that thermodynamic functions (e.g.
+ pressure 
+\begin_inset Formula $P=\partial_{V}\left(T\ln Z\right)$
+\end_inset
+
+) vanish at zero temperature.
+\end_layout
+
+\begin_layout Standard
+These aspects can be illustrated by the case of a free field theory, for
+ which
+\begin_inset Formula 
+\[
+\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\int_{x_{E}}\left(\left(\partial_{x^{4}}\phi\right)^{2}+\left(\nabla\phi\right)^{2}+m^{2}\phi^{2}\right)=-\frac{1}{2}\int_{x_{E}}\phi D\phi
+\]
+
+\end_inset
+
+where
+\begin_inset Formula 
+\[
+D=-\partial_{x^{4}}^{2}-\nabla^{2}+m^{2}=-\nabla_{E}^{2}+m^{2}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula $\nabla_{E}$
+\end_inset
+
+ is the obvious Euclidean space gradient operator.
+ The following discussion closely follows 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kapusta_finite-temperature_2006"
+
+\end_inset
+
+.
+ The functional integral is easiest to evaluate in the eigenbasis of 
+\begin_inset Formula $D$
+\end_inset
+
+, i.e.
+ periodic functions of the form 
+\begin_inset Formula $\exp i\left(\boldsymbol{p}\cdot\boldsymbol{x}+\omega_{n}x^{4}\right)$
+\end_inset
+
+ where the Matsubara frequencies 
+\begin_inset Formula $\omega_{n}=2\pi n/\beta$
+\end_inset
+
+ with 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ implement the periodic boundary condition.
+ It is also convenient to quantise in a spatial box of volume 
+\begin_inset Formula $\mathrm{V}=L^{3}$
+\end_inset
+
+ with periodic boundary conditions, making 
+\begin_inset Formula $\boldsymbol{p}$
+\end_inset
+
+ discrete with lattice spacing 
+\begin_inset Formula $2\pi/L$
+\end_inset
+
+.
+ The convenient basis functions are
+\begin_inset Formula 
+\[
+\phi_{n\boldsymbol{p}}=\sqrt{\frac{\beta}{\mathrm{V}}}\mathrm{e}^{i\left(\boldsymbol{p}\cdot\boldsymbol{x}+\omega_{n}x^{4}\right)},
+\]
+
+\end_inset
+
+which are normalised so that
+\begin_inset Formula 
+\[
+\Braket{\phi_{m\boldsymbol{q}}|\phi_{n\boldsymbol{p}}}=\beta^{2}\delta_{mn}\delta_{\boldsymbol{p}\boldsymbol{q}},
+\]
+
+\end_inset
+
+where, on functions, 
+\begin_inset Formula $\Braket{f|g}\equiv\int_{x_{E}}f^{\star}g$
+\end_inset
+
+.
+ With these normalisations the Fourier amplitudes 
+\begin_inset Formula $A_{n\boldsymbol{p}}$
+\end_inset
+
+ in
+\begin_inset Formula 
+\[
+\phi=\sum_{n\boldsymbol{p}}A_{n\boldsymbol{p}}\phi_{n\boldsymbol{p}}
+\]
+
+\end_inset
+
+are dimensionless.
+ Then 
+\begin_inset Formula 
+\[
+\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\sum_{n\boldsymbol{p}}\left|A_{n\boldsymbol{p}}\right|^{2}\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The functional integrand does not depend on the phases of 
+\begin_inset Formula $A_{n\boldsymbol{p}}$
+\end_inset
+
+, so these contribute to the normalisation.
+ The integrals over the magnitudes are Gaussian, giving
+\begin_inset Formula 
+\[
+Z=N'\prod_{n\boldsymbol{p}}\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]^{-1/2}
+\]
+
+\end_inset
+
+where all the normalisation factors are absorbed in 
+\begin_inset Formula $N'$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+\ln Z & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\ln\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]\\
+ & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\left\{ \ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta^{2}\left(\boldsymbol{p}^{2}+m^{2}\right)}\frac{\mathrm{d}\theta^{2}}{\theta^{2}+\left(2\pi n\right)^{2}}\right\} \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\left(1+\frac{2}{\mathrm{e}^{\theta}-1}\right)\right\} \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\beta\omega_{\boldsymbol{p}}-1+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\frac{2}{\mathrm{e}^{\theta}-1}\right\} \\
+ & = & \ln N'-\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} -\sum_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\end{eqnarray*}
+
+\end_inset
+
+The identity 
+\begin_inset Formula $\sum_{n}1/\left(n^{2}+\left(\theta/2\pi\right)^{2}\right)=\left(2\pi^{2}/\theta\right)\left(1+2/\left(\mathrm{e}^{\theta}-1\right)\right)$
+\end_inset
+
+ was used to get the third line.
+ The rest of the steps are straightforward evaluations.
+\end_layout
+
+\begin_layout Standard
+Demanding that the entropy 
+\begin_inset Formula $S=\partial\left(T\ln Z\right)/\partial T\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $T\to0$
+\end_inset
+
+ fixes the normalisation
+\begin_inset Formula 
+\[
+N'=\exp\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} ,
+\]
+
+\end_inset
+
+and finally (on taking the infinite volume limit 
+\begin_inset Formula $\sum_{\boldsymbol{p}}\to\mathrm{V}\int_{\boldsymbol{p}}$
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+\ln Z=-\mathrm{V}\int_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\]
+
+\end_inset
+
+The energy density is
+\begin_inset Formula 
+\[
+\rho=\frac{E}{V}=-\frac{\partial_{\beta}\ln Z}{\mathrm{V}}=\int_{\boldsymbol{p}}\left(\frac{1}{2}\omega_{\boldsymbol{p}}+\frac{\omega_{\boldsymbol{p}}}{\mathrm{e}^{\beta\omega_{\boldsymbol{p}}}-1}\right)
+\]
+
+\end_inset
+
+which is the familiar Bose-Einstein contribution plus a vacuum energy contributi
+on which can be subtracted.
+ Similarly, the pressure is
+\begin_inset Formula 
+\[
+P=T\partial_{V}\ln Z=-\int_{\boldsymbol{p}}\left[\frac{1}{2}\omega_{\boldsymbol{p}}+T\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\]
+
+\end_inset
+
+Note that there is a vacuum contribution to the pressure as well.
+ The fact that this contribution is equal to the negative of the vacuum
+ energy is in fact a consequence of Lorentz invariance
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The energy-momentum tensor of a Lorentz invariant state must be proportional
+ to the metric 
+\begin_inset Formula $T_{\mu\nu}\propto\eta_{\mu\nu}$
+\end_inset
+
+ since there are no other spacetime tensors available to construct it from.
+ Thus the pressure (i.e.
+ the diagonal space-space components) is equal and opposite to the energy
+ density (the time-time component).
+\end_layout
+
+\end_inset
+
+ and this provides a nice check of the formalism.
 \end_layout
 
 \begin_layout Section
