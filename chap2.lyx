@@ -1594,7 +1594,7 @@ Note that there is a vacuum contribution to the pressure as well.
  The fact that this contribution is equal to the negative of the vacuum
  energy is in fact a consequence of Lorentz invariance
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The energy-momentum tensor of a Lorentz invariant state must be proportional
@@ -1611,6 +1611,1849 @@ The energy-momentum tensor of a Lorentz invariant state must be proportional
 \end_inset
 
  and this provides a nice check of the formalism.
+\end_layout
+
+\begin_layout Standard
+The formalisms sketched above for vacuum and finite temperature field theory
+ can be naturally generalised to the contour or nonequilibrium Green function
+ method which also allows the treatment of non-equilibrium field theory.
+ The contour method has been used extensively in various fields of condensed
+ matter and particle physics, from molecular transport and ultracold atomic
+ gases to nanoelectronics, nuclear physics and cosmology.
+ The research literature using these techniques is vast, and there are good
+ recent books introducing them in condensed matter 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+ and high energy/cosmology 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Calzetta2008"
+
+\end_inset
+
+ contexts.
+ The contour method (as defined by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanLeeuwen2013,Stefanucci2013"
+
+\end_inset
+
+) contains the ordinary vacuum quantum field theory (as discussed above
+ and in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995,Zinn-Justin1990"
+
+\end_inset
+
+ and many other references), the finite temperature equilibrium quantum
+ field theory in the 
+\emph on
+Matsubara
+\emph default
+ or 
+\emph on
+imaginary time 
+\emph default
+formalism (discussed above and in e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+), and the nonequilibrium Green function theory developed by Schwinger and
+ Keldysh (independently; see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kita2010"
+
+\end_inset
+
+ in addition to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Primary refs???
+\end_layout
+
+\end_inset
+
+) as special cases.
+\end_layout
+
+\begin_layout Standard
+The basic idea of the method is quite simple.
+ Consider a quantum system in some initial state 
+\begin_inset Formula $\ket{\Psi_{0}}$
+\end_inset
+
+ at an initial time 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Then the expectation value 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ of some operator 
+\begin_inset Formula $\hat{O}\left(t\right)$
+\end_inset
+
+ at time 
+\begin_inset Formula $t$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+O\left(t\right)=\Braket{\Psi\left(t\right)|\hat{O}\left(t\right)|\Psi\left(t\right)}=\Braket{\Psi_{0}|\hat{U}\left(t_{0},t\right)\hat{O}\left(t\right)\hat{U}\left(t,t_{0}\right)|\Psi_{0}},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{U}\left(t,t_{0}\right)$
+\end_inset
+
+ is the time evolution operator.
+ As usual 
+\begin_inset Formula $\hat{U}\left(t_{2},t_{1}\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $t_{2}>t_{1}$
+\end_inset
+
+ can be expressed in terms of a time ordered exponential
+\begin_inset Formula 
+\[
+\hat{U}\left(t_{2},t_{1}\right)=\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
+\]
+
+\end_inset
+
+but for 
+\begin_inset Formula $t_{2}<t_{1}$
+\end_inset
+
+ by an 
+\emph on
+anti-time ordered
+\emph default
+ exponential is required:
+\begin_inset Formula 
+\[
+\hat{U}\left(t_{2},t_{1}\right)=\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\bar{\mathrm{T}}$
+\end_inset
+
+ orders operators in the opposite sense to 
+\begin_inset Formula $\mathrm{T}$
+\end_inset
+
+, i.e.
+ earlier times to the left.
+\end_layout
+
+\begin_layout Standard
+Substituting these in the equation for 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\[
+O\left(t\right)=\Braket{\Psi_{0}|\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t}^{t_{0}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} \hat{O}\left(t\right)\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} |\Psi_{0}}.
+\]
+
+\end_inset
+
+This can be simplified by interpreting the time evolution as along a 
+\emph on
+two branched
+\emph default
+ contour 
+\begin_inset Formula $C$
+\end_inset
+
+ which runs from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t$
+\end_inset
+
+ then doubles back to 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Introducing a contour time variable 
+\begin_inset Formula $z$
+\end_inset
+
+ as an affine parameter on the contour
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+An explicit mapping of 
+\begin_inset Formula $z\in\left(t_{0},2t-t_{0}\right)$
+\end_inset
+
+ to ordinary time 
+\begin_inset Formula $\tau\in\left(t_{0},t\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\tau=z$
+\end_inset
+
+ for 
+\begin_inset Formula $t_{0}\leq z\leq t$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau=2t-z$
+\end_inset
+
+ for 
+\begin_inset Formula $t<z<2t-t_{0}$
+\end_inset
+
+, but this is rarely needed in practice.
+\end_layout
+
+\end_inset
+
+ and a 
+\emph on
+contour time ordering
+\emph default
+ 
+\begin_inset Formula $\mathrm{T}_{C}$
+\end_inset
+
+, 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\[
+O\left(t\right)=\Braket{\Psi_{0}|\mathrm{T}_{C}\left\{ \exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}\left(t\right)\right\} |\Psi_{0}}.
+\]
+
+\end_inset
+
+Further, both branches of 
+\begin_inset Formula $C$
+\end_inset
+
+ can be extended to an arbitrary time 
+\begin_inset Formula $T>t$
+\end_inset
+
+, removing the 
+\begin_inset Formula $t$
+\end_inset
+
+ dependence of the contour.
+ Since there are no operators in the time interval 
+\begin_inset Formula $\left(t,T\right)$
+\end_inset
+
+ the segment of the evolution from 
+\begin_inset Formula $t$
+\end_inset
+
+ to 
+\begin_inset Formula $T$
+\end_inset
+
+ and back is given by 
+\begin_inset Formula $\hat{U}\left(t,T\right)\hat{U}\left(T,t\right)=\hat{\mathbb{I}}$
+\end_inset
+
+ and cancels outs, so no modification of the above expression is necessary.
+ There is an ambiguity where 
+\begin_inset Formula $\hat{O}\left(t\right)$
+\end_inset
+
+ should go on the contour, i.e.
+ how to generalise 
+\begin_inset Formula $\hat{O}\left(t\right)\to\hat{O}\left(z\right)$
+\end_inset
+
+, but for convenience 
+\begin_inset Formula $\hat{O}\left(z\right)$
+\end_inset
+
+ can be taken to be the same operator on both branches.
+\end_layout
+
+\begin_layout Standard
+The generalisation of this result to multiple operators and a general initial
+ density matrix 
+\begin_inset Formula $\hat{\rho}_{0}=\sum_{n}p_{n}\ket n\bra n$
+\end_inset
+
+, where 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ is the probability that the system is in state 
+\begin_inset Formula $\ket n$
+\end_inset
+
+, is obvious:
+\begin_inset Formula 
+\[
+\left\langle O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right\rangle =\mathrm{Tr}\left\{ \hat{\rho}_{0}\mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} .
+\]
+
+\end_inset
+
+Proceeding still further, a general density matrix can be written 
+\begin_inset Formula 
+\[
+\hat{\rho}_{0}=Z^{-1}\exp\left(-\beta\hat{H}_{M}\right),
+\]
+
+\end_inset
+
+for 
+\emph on
+some
+\emph default
+ Hermitian operator 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+, where 
+\begin_inset Formula $Z$
+\end_inset
+
+ is chosen to ensure 
+\begin_inset Formula $\mathrm{Tr}\hat{\rho}_{0}=1$
+\end_inset
+
+ (in fact 
+\begin_inset Formula $Z$
+\end_inset
+
+ can be absorbed into a shift of 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ if so desired).
+ If the Hamiltonian of the system is time independent and 
+\begin_inset Formula $\hat{H}_{M}=\hat{H}$
+\end_inset
+
+ then this describes a thermal equilibrium state at temperature 
+\begin_inset Formula $1/\beta k_{B}$
+\end_inset
+
+.
+ However, there is no loss of generality in writing 
+\begin_inset Formula $\hat{\rho}_{0}$
+\end_inset
+
+ in this way with a general 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+, and out of equilibrium the value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is entirely arbitrary, equivalent to an arbitrary normalisation convention
+ for 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+.
+ Now note that 
+\begin_inset Formula $\exp\left(-\beta\hat{H}_{M}\right)=\exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t_{0}-i\beta\hbar}\mathrm{d}\tau\ \hat{H}_{M}\right)=\hat{U}\left(t_{0}-i\beta\hbar,t_{0};\hat{H}_{M}\right)$
+\end_inset
+
+, i.e.
+ up to an overall normalisation factor the initial density matrix can be
+ written as the time evolution operator for an 
+\emph on
+imaginary
+\emph default
+ time interval with 
+\begin_inset Quotes eld
+\end_inset
+
+Hamiltonian
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ (assuming a 
+\begin_inset Formula $\tau$
+\end_inset
+
+ independent 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+).
+ Extending the contour 
+\begin_inset Formula $C$
+\end_inset
+
+ with a segment on the imaginary axis from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{0}-i\beta\hbar$
+\end_inset
+
+ and 
+\emph on
+defining
+\emph default
+ 
+\begin_inset Formula $\hat{H}\left(z\right)=\hat{H}_{M}$
+\end_inset
+
+ for 
+\begin_inset Formula $z$
+\end_inset
+
+ on this segment then, taking care with the normalisation,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left\langle \mathrm{T}_{C}\left[O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right]\right\rangle =\frac{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} }{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\right]\right\} }.
+\]
+
+\end_inset
+
+The imaginary branch of the contour is called the 
+\emph on
+Matsubara
+\emph default
+ branch, as this is the same contour used in the imaginary time field theory
+ formalism for thermal equilibrium problems.
+ The similarity of this result to the usual vacuum field theory formula
+ (c.f., for example, equation 4.31 of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995"
+
+\end_inset
+
+) should be obvious, however 
+\emph on
+no
+\emph default
+ assumptions have been made about the initial/final state or spectrum of
+ the theory.
+ This greatly extends the applicability of the formalism compared to the
+ usual vacuum field theory.
+ Despite this, much of the technical machinery of the vacuum theory, including
+ path integrals, Feynman diagrams, effective actions and renormalisation,
+ can be carried over with suitable modifications for contour time ordering
+ as opposed to regular time ordering.
+ Difficulties come from the extra degrees of freedom (fields on the backward
+ branch of the contour), the explicit appearance of memory effects, and
+ choosing a 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ that allows for consistent and practically solvable renormalisation conditions.
+\end_layout
+
+\begin_layout Standard
+The main objects of interest are the correlation functions of field operators,
+ i.e.
+ objects like
+\begin_inset Formula 
+\[
+D\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\phi\left(\boldsymbol{1}\right)\phi\left(\boldsymbol{2}\right)\right]\right\rangle ,
+\]
+
+\end_inset
+
+in a scalar field theory.
+ A boldfaced argument 
+\begin_inset Formula $\boldsymbol{1},\boldsymbol{2},\ldots$
+\end_inset
+
+ or 
+\begin_inset Formula $\boldsymbol{x},\boldsymbol{y},\ldots$
+\end_inset
+
+ is shorthand for a complete set of spacetime coordinates and the time coordinat
+es run on the time contour 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ There are nine possibilities for the time arguments of the Green function:
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ can be on either of the forward, backward or Matsubara branches of the
+ contour independently.
+ This leads to the definition of 
+\emph on
+component
+\emph default
+ Green functions, with real time arguments, for each case.
+ There is also the possibility for a singular part, proportional to a contour
+ delta function 
+\begin_inset Formula $\delta_{C}\left(z_{1},z_{2}\right)$
+\end_inset
+
+.
+ These components and two 
+\begin_inset Quotes eld
+\end_inset
+
+derived
+\begin_inset Quotes erd
+\end_inset
+
+ Green functions (the advanced and retarded functions) are listed in Table
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Keldysh-components-of"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Keldysh-components-of"
+
+\end_inset
+
+
+\lang australian
+Keldysh components for any function 
+\begin_inset Formula $k\left(z,z'\right)$
+\end_inset
+
+ taking two contour time arguments.
+ (Note: 
+\begin_inset Formula $t_{0}=0$
+\end_inset
+
+ here.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Keldysh component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contour arguments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Singular
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{\delta}\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k\left(z,z'\right)=\delta_{C}\left(z,z'\right)k^{\delta}\left(z\right)+\text{regular functions}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{T}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z,z'$
+\end_inset
+
+ on forward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anti-time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{\tilde{T}}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z,z'$
+\end_inset
+
+ on backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lesser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{<}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on forward, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greater
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{>}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on backward, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on forward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook k\left(\tau,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on forward/backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook k\left(t,\tau\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on forward/backward contour, 
+\begin_inset Formula $z'=-i\tau$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matsubara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{M}\left(\tau,\tau'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+, 
+\begin_inset Formula $z'=-i\tau'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retarded
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{R}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{R}\left(t,t'\right)=k^{\delta}\left(t-t'\right)\delta\left(t-t'\right)+\Theta\left(t-t'\right)\left[k^{>}\left(t,t'\right)-k^{<}\left(t,t'\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{A}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{A}\left(t,t'\right)=k^{\delta}\left(t-t'\right)\delta\left(t-t'\right)-\Theta\left(t'-t\right)\left[k^{>}\left(t,t'\right)-k^{<}\left(t,t'\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The origin of some of the names can be seen by visualising the function
+ arguments on the time contour.
+ For example, the lesser function is given by
+\begin_inset Formula 
+\[
+D^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \phi\left(\boldsymbol{2}\right)\phi\left(\boldsymbol{1}\right)\right\rangle ,
+\]
+
+\end_inset
+
+i.e.
+ the second argument appears to the left of the first in the matrix element,
+ regardless of the relation between 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+.
+ So in the lesser function order the fields 
+\emph on
+as if 
+\emph default
+
+\begin_inset Formula $t_{1}<t_{2}$
+\end_inset
+
+, even if it is not.
+ The hook functions are similarly visual.
+ Consider the left hook function 
+\begin_inset Formula $\lhook D\left(\boldsymbol{1},\boldsymbol{2}\right)$
+\end_inset
+
+: the left argument is on the Matsubara (vertical) branch and the right
+ argument is on a real time (horizontal) branch (it doesn't matter which
+ one since the contour ordering is the same in both cases).
+ The contour delta function is defined so that 
+\begin_inset Formula $\int_{C}\mathrm{d}z'\ \delta_{C}\left(z,z'\right)f\left(z'\right)=f\left(z\right)$
+\end_inset
+
+ as usual.
+ The only nontrivial reduction to an ordinary delta function is when (taking
+ 
+\begin_inset Formula $t_{0}=0$
+\end_inset
+
+ for simplicity) 
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+ lies on the Matsubara branch:
+\begin_inset Formula 
+\[
+\int_{C}\mathrm{d}z'\ \delta_{C}\left(-i\tau,z'\right)f\left(z'\right)=f\left(-i\tau\right).
+\]
+
+\end_inset
+
+The only contribution can come from 
+\begin_inset Formula $z'$
+\end_inset
+
+ on the Matsubara branch, so substitute 
+\begin_inset Formula $z'=-i\tau'$
+\end_inset
+
+ giving
+\begin_inset Formula 
+\[
+\int_{0}^{-i\beta\hbar}\mathrm{d}\left(-i\tau'\right)\delta_{C}\left(-i\tau,-i\tau'\right)f\left(-i\tau'\right)=f\left(-i\tau\right),
+\]
+
+\end_inset
+
+which gives 
+\begin_inset Formula $\delta_{C}\left(-i\tau,-i\tau'\right)=i\delta\left(\tau-\tau'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When working with the Keldysh components it is convenient to have identities
+ for the reduction of frequently occuring convolutions and products of contour
+ time functions to their components.
+ These identities are called 
+\emph on
+Langreth rules
+\emph default
+ and are summarised in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Langreth-rules"
+
+\end_inset
+
+.
+ These identities are proved in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+ chapter 5.
+ The most common use of these identities is in the reduction of equations
+ of motion for contour ordered Green functions to equations for real times
+ functions.
+ For example, if a scalar field Green function obeys a Dyson equation of
+ the form
+\begin_inset Formula 
+\[
+\square_{\boldsymbol{1}}D\left(\boldsymbol{1},\boldsymbol{2}\right)=i\delta_{C}\left(\boldsymbol{1},\boldsymbol{2}\right)+\int_{C}\mathrm{d}\boldsymbol{3}\ \Sigma\left(\boldsymbol{1},\boldsymbol{3}\right)D\left(\boldsymbol{3},\boldsymbol{2}\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\square_{\boldsymbol{1}}=\frac{\partial}{\partial x_{1}^{\mu}}\frac{\partial}{\partial x_{1\mu}}$
+\end_inset
+
+ and the self energy function 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is also defined on the time contour, the Langreth rules show that 
+\begin_inset Formula $D^{<}$
+\end_inset
+
+ obeys (suppressing arguments)
+\begin_inset Formula 
+\[
+\square_{\boldsymbol{1}}D^{<}=i\delta+\Sigma^{<}\cdot D^{A}+\Sigma^{R}\cdot D^{<}+\rhook\Sigma\star\lhook D,
+\]
+
+\end_inset
+
+an equation suitable for numerical solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Langreth-rules"
+
+\end_inset
+
+
+\lang australian
+Langreth rules for convolutions and products (with 
+\begin_inset Formula $f\cdot g\equiv\int_{0}^{\infty}\mathrm{d}t\ f\left(t\right)g\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f\star g\equiv-i\int_{0}^{\beta}\mathrm{d}\tau\ f\left(\tau\right)g\left(\tau\right)$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Green function
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c\left(z,z'\right)=\int_{C}\mathrm{d}\bar{z}\ a\left(z,\bar{z}\right)b\left(\bar{z},z'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c\left(z,z'\right)=a\left(z,z'\right)b\left(z',z\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a^{\delta}=b^{\delta}=0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greater
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{>}=a^{>}\cdot b^{A}+a^{R}\cdot b^{>}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{>}=a^{>}b^{<}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lesser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{<}=a^{<}\cdot b^{A}+a^{R}\cdot b^{<}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{<}=a^{<}b^{>}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retarded
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{R}=a^{R}\cdot b^{R}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{R}=\begin{cases}
+a^{R}b^{<}+a^{<}b^{A}\\
+a^{R}b^{>}+a^{>}b^{A}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{A}=a^{A}\cdot b^{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{A}=\begin{cases}
+a^{A}b^{<}+a^{<}b^{R}\\
+a^{A}b^{>}+a^{>}b^{R}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{T}=a^{T}\cdot b^{T}-a^{<}\cdot b^{>}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{T}=\begin{cases}
+a^{<}b^{T}+a^{R}b^{<}\\
+a^{T}b^{>}+a^{>}b^{A}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anti-time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{\tilde{T}}=a^{>}\cdot b^{<}-a^{\tilde{T}}\cdot b^{\tilde{T}}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{\tilde{T}}=\begin{cases}
+a^{\tilde{T}}b^{<}-a^{<}b^{A}\\
+a^{>}b^{\tilde{T}}-a^{R}b^{>}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook c=a^{R}\cdot\rhook b+\rhook a\star b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook c=\rhook a\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook c=\lhook a\cdot b^{A}+a^{M}\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook c=\rhook a\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matsubara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{M}=a^{M}\star b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{M}=a^{M}b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section

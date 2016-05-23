@@ -296,6 +296,26 @@ UPDATE!!!!!
 \end_layout
 
 \begin_layout Standard
+
+\lang british
+\begin_inset FormulaMacro
+\newcommand{\lhook}[1]{#1^{\ulcorner}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset FormulaMacro
+\newcommand{\rhook}[1]{#1^{\urcorner}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "notation.lyx"
