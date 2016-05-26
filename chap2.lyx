@@ -3524,6 +3524,102 @@ name "sec:The-1PI-effective"
 
 \end_layout
 
+\begin_layout Standard
+Generating functionals and effective action methods form the basis for the
+ rest of this work.
+ This section reviews the one particle irreducible effective action.
+ Originally developed by Goldstone, Salam and Weinberg 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "goldstone_broken_1962"
+
+\end_inset
+
+ and, independently, Jona-Lasinio 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jona-lasinio_relativistic_1964"
+
+\end_inset
+
+, the 1PIEA is widely used, particularly in discussions of theories with
+ spontaneous symmetry breaking or gauge symmetries.
+ The treatment starts with the generating functional 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+, closely related to the partition function describe above.
+ 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ generates all correlation functions of the field theory and can be related
+ to a Feynman diagram expansion.
+ From 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ one derives 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+ which contains only the 
+\begin_inset Quotes eld
+\end_inset
+
+connected
+\begin_inset Quotes erd
+\end_inset
+
+ correlation functions, i.e.
+ those whose diagrams are made of one connected component.
+ The 1PIEA 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ is then found by Legendre transforming 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+ and is the generating function of 
+\begin_inset Quotes eld
+\end_inset
+
+proper
+\begin_inset Quotes erd
+\end_inset
+
+ correlation functions, meaning those which cannot be divided by cutting
+ one line of the corresponding Feynman diagram.
+ The skeleton expansion of the connected generating functional provides
+ an elegant and systematic means of relating connected correlation functions
+ with the proper correlation functions.
+ Hence 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ contains all of the physical information of a field theory in relatively
+ compact form.
+ Further, terms in the derivative expansion of 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ have a direct physical meaning.
+ Most importantly, the term with no derivatives (the 
+\emph on
+effective potential
+\emph default
+) is equal to the minimum of the energy, over all states 
+\begin_inset Formula $\Ket{\Psi}$
+\end_inset
+
+, subject to the constraint that the mean field is equal to 
+\begin_inset Formula $\left\langle \phi\right\rangle =\varphi$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Section
 The 2PI effective action
 \begin_inset ERT
