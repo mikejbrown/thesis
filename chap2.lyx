@@ -153,6 +153,10 @@ key "brown_two-particle_2015"
  The starting point for the discussion is a textbook level review of basic
  quantum field theory for scalar fields, first in the canonical, then the
  functional formalism.
+ This is to establish conventions and collect in one place the concepts
+ and results upon which the rest of the thesis will build.
+ It is not, however, suitable for a first introduction to quantum field
+ theory.
 \end_layout
 
 \begin_layout Section
@@ -345,10 +349,10 @@ equal time
 \emph default
  commutation relationships
 \begin_inset Formula 
-\begin{gather*}
+\begin{gather}
 \left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\phi}\left(\boldsymbol{y},t\right)\right]=\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=0,\\
 \left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=i\delta^{\left(3\right)}\left(\boldsymbol{x}-\boldsymbol{y}\right).
-\end{gather*}
+\end{gather}
 
 \end_inset
 
@@ -358,9 +362,9 @@ Commutators at unequal times must be found by evolving the field with its
  The free field Hamiltonian is quadratic in fields and momenta, exactly
  analogous to QM harmonic oscillator:
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{H}_{0}=\int_{\boldsymbol{x}}\frac{1}{2}\hat{\pi}^{2}+\frac{1}{2}\left(\nabla\hat{\phi}\right)^{2}+\frac{1}{2}m^{2}\hat{\phi}^{2}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -383,20 +387,18 @@ Commutators at unequal times must be found by evolving the field with its
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
-\partial_{t}\hat{\phi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]\\
- & =\hat{\pi}\left(\boldsymbol{x},t\right),\\
-\partial_{t}\hat{\pi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]\\
- & =\nabla^{2}\hat{\phi}-m^{2}\hat{\phi},
-\end{align*}
+\begin{align}
+\partial_{t}\hat{\phi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]=\hat{\pi}\left(\boldsymbol{x},t\right),\\
+\partial_{t}\hat{\pi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]=\nabla^{2}\hat{\phi}-m^{2}\hat{\phi},
+\end{align}
 
 \end_inset
 
 which can be rearranged to
 \begin_inset Formula 
-\[
+\begin{equation}
 \left(\partial_{t}^{2}-\nabla^{2}+m^{2}\right)\hat{\phi}=0
-\]
+\end{equation}
 
 \end_inset
 
@@ -415,17 +417,17 @@ Klein-Gordon
 .
  As a linear equation, this can be solved by Fourier decomposition
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{\phi}\left(\boldsymbol{x},t\right)=\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}\right],
-\]
+\end{equation}
 
 \end_inset
 
 where
 \begin_inset Formula 
-\[
+\begin{equation}
 \omega_{\boldsymbol{k}}=\sqrt{\boldsymbol{k}^{2}+m^{2}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -439,9 +441,9 @@ and taking into account that, as a real scalar field,
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 N_{\boldsymbol{k}}=\sqrt{\frac{\left(2\pi\right)^{3}}{2\omega_{\boldsymbol{k}}f_{\boldsymbol{k}}}}
-\]
+\end{equation}
 
 \end_inset
 
@@ -466,10 +468,10 @@ s etc.
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{gather*}
+\begin{gather}
 \left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}\right]=\left[\hat{a}_{\boldsymbol{k}}^{\dagger},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=0,\\
 \left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=f_{\boldsymbol{k}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right),
-\end{gather*}
+\end{gather}
 
 \end_inset
 
@@ -492,9 +494,9 @@ Using the mode expansion the free Hamiltonian becomes
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{H}_{0}=\int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\left(\hat{a}_{\boldsymbol{k}}^{\dagger}\hat{a}_{\boldsymbol{k}}+\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -516,9 +518,9 @@ where the formal commutator
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)=\left(\frac{1}{2}\int_{\boldsymbol{k}}\omega_{\boldsymbol{k}}\right)\mathrm{V},
-\]
+\end{equation}
 
 \end_inset
 
@@ -530,9 +532,9 @@ which assigns an energy density of
  Subtracting this (divergent) vacuum energy density gives the normal ordered
  Hamiltonian
 \begin_inset Formula 
-\[
+\begin{equation}
 :\hat{H}_{0}:=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{a}_{\boldsymbol{k}}^{\dagger}a_{\boldsymbol{k}}=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{N}_{\boldsymbol{k}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -560,11 +562,11 @@ where
 \begin_layout Standard
 Now the unequal time commutator can be found:
 \begin_inset Formula 
-\begin{align*}
-\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{ikx}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-ikx},\hat{a}_{\boldsymbol{q}}\mathrm{e}^{iqy}+\hat{a}_{\boldsymbol{q}}^{\dagger}\mathrm{e}^{-iqy}\right]\\
- & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right)\\
+\begin{align}
+\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{ikx}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-ikx},\hat{a}_{\boldsymbol{q}}\mathrm{e}^{iqy}+\hat{a}_{\boldsymbol{q}}^{\dagger}\mathrm{e}^{-iqy}\right]\nonumber \\
+ & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right)\nonumber \\
  & =\int\frac{\mathrm{d}^{3}\boldsymbol{k}}{2\omega_{\boldsymbol{k}}}\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -601,9 +603,9 @@ where the time component of
  invariant.
  Consider the identity
 \begin_inset Formula 
-\[
+\begin{equation}
 \frac{1}{2\omega_{\boldsymbol{k}}}=\int\mathrm{d}k_{0}\delta\left(k_{0}^{2}-\omega_{\boldsymbol{k}}^{2}\right)\Theta\left(k_{0}\right)=\int\mathrm{d}k_{0}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right).
-\]
+\end{equation}
 
 \end_inset
 
@@ -612,9 +614,9 @@ Then
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{k}\left(2\pi\right)^{4}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -679,9 +681,9 @@ Since spacelike separated fields commute, the set of fields on a spacelike
  can be found.
  Arbitrary states can be expanded in this basis as
 \begin_inset Formula 
-\[
+\begin{equation}
 \Ket{\Psi}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Psi\left[\phi\left(x\right)\right]\Ket{\phi\left(x\right);\Sigma}
-\]
+\end{equation}
 
 \end_inset
 
@@ -753,10 +755,10 @@ not
 
 :
 \begin_inset Formula 
-\begin{eqnarray*}
-\Braket{\Psi_{f}|\Psi_{i}} & = & \int\mathcal{D}\left[\phi_{i}\left(x\in\Sigma_{i}\right),\phi_{f}\left(x\in\Sigma_{f}\right)\right]\\
+\begin{eqnarray}
+\Braket{\Psi_{f}|\Psi_{i}} & = & \int\mathcal{D}\left[\phi_{i}\left(x\in\Sigma_{i}\right),\phi_{f}\left(x\in\Sigma_{f}\right)\right]\nonumber \\
  &  & \times\Psi_{f}^{\star}\left[\phi_{f}\left(x\right)\right]\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}\Psi_{i}\left[\phi_{i}\left(x\right)\right],
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -797,9 +799,9 @@ where the initial and final hypersurfaces are
  From this equation it is clear that the time evolution problem reduces
  to finding
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -842,9 +844,9 @@ functional integral
  limit such that each step represents an infinitesimal time evolution.
  Formally this is done by repeatedly inserting resolutions of the identity
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{\mathbb{I}}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Ket{\phi;\Sigma}\Bra{\phi;\Sigma},
-\]
+\end{equation}
 
 \end_inset
 
@@ -853,12 +855,12 @@ obtaining
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\\
- &  & \times\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{N-1}\left(x\right);\Sigma_{N-1}}\\
- &  & \times\cdots\times\Braket{\phi_{k+1}\left(x\right);\Sigma_{k+1}|\phi_{k}\left(x\right);\Sigma_{k}}\\
+\begin{eqnarray}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\nonumber \\
+ &  & \times\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{N-1}\left(x\right);\Sigma_{N-1}}\nonumber \\
+ &  & \times\cdots\times\Braket{\phi_{k+1}\left(x\right);\Sigma_{k+1}|\phi_{k}\left(x\right);\Sigma_{k}}\nonumber \\
  &  & \times\cdots\times\Braket{\phi_{1}\left(x\right);\Sigma_{1}|\phi_{i}\left(x\right);\Sigma_{i}}.
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -894,9 +896,9 @@ s are all flat and parallel (the general case can be recovered from the
 \begin_layout Standard
 Now all one needs is the infinitesimal step
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -936,9 +938,9 @@ S
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}=\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -948,12 +950,12 @@ Resolving the identity again, this time with
 
  eigenstates,
 \begin_inset Formula 
-\begin{eqnarray*}
-\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
- &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
- & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\\
+\begin{eqnarray}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -980,11 +982,11 @@ Recall from basic QM that
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray*}
-\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi_{k}\left(\boldsymbol{x},t_{k}\right)\left[\phi_{k+1}\left(\boldsymbol{x},t_{k}\right)-\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right]\right)\\
- &  & \times\exp\left[-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\\
+\begin{eqnarray}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi_{k}\left(\boldsymbol{x},t_{k}\right)\left[\phi_{k+1}\left(\boldsymbol{x},t_{k}\right)-\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right]\right)\nonumber \\
+ &  & \times\exp\left[-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\nonumber \\
  & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}\left[\pi_{k}\left(\boldsymbol{x},t_{k}\right)\partial_{t}\phi_{k}\left(\boldsymbol{x},t_{k}\right)-\mathcal{H}\left(\phi_{k},\pi_{k}\right)\right]\right)
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -1006,9 +1008,9 @@ using the finite difference approximation
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi,\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\mathcal{H}\left(\phi,\pi\right)\right]\right)
-\]
+\end{equation}
 
 \end_inset
 
@@ -1026,11 +1028,11 @@ If the Hamiltonian is quadratic in the momenta the
 
  integral can be performed by completing the square:
 \begin_inset Formula 
-\begin{eqnarray*}
-\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\frac{1}{2}\pi\left(x\right)^{2}\right]\right) & = & \int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\left[\pi\left(x\right)-\partial_{t}\phi\left(x\right)\right]^{2}\right)\\
- &  & \times\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right)\\
+\begin{eqnarray}
+\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\frac{1}{2}\pi\left(x\right)^{2}\right]\right) & = & \int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\left[\pi\left(x\right)-\partial_{t}\phi\left(x\right)\right]^{2}\right)\nonumber \\
+ &  & \times\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right)\nonumber \\
  & = & N\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right),
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -1044,9 +1046,9 @@ where the
 
  to give the constant normalisation factor
 \begin_inset Formula 
-\[
+\begin{equation}
 N=\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\pi\left(x\right)^{2}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -1055,9 +1057,9 @@ and
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),
-\]
+\begin{equation}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),\label{eq:phi-eigenstate-transition-amplitude-pi}
+\end{equation}
 
 \end_inset
 
@@ -1108,17 +1110,17 @@ density.
  are now easily obtained.
  Define the functional
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{A}_{fi}\left[J\left(x\right)\right]=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)-J\left(x\right)\phi\left(x\right)\right).
-\]
+\end{equation}
 
 \end_inset
 
 Then
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1188,18 +1190,8 @@ For example, the setting of most particle physics is vacuum field theory.
  and the appropriate observable is the S-matrix element.
  The 
 \emph on
-Lehmann-Symanzik-Zimmerman
+Lehmann-Symanzik-Zimmermann
 \emph default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CHECK
-\end_layout
-
-\end_inset
-
  (LSZ) reduction formulae connect the S-matrix elements for the asymptotic
  free particle states to the vacuum-to-vacuum transition matrix elements
  of a time ordered product of interacting fields (a 
@@ -1211,51 +1203,48 @@ correlation
 Green function
 \emph default
 ).
- These Green functions can be evaluated by using, essentially, the formulae
- of the previous section
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-XREF
-\end_layout
-
-\end_inset
-
-, only a trick is required to characterise the initial and final physical
+ The essential idea of the LSZ formulae is that, while the free field operators
+ create and destroy single particles, interacting fields have some amplitude
+ to create and destroy multi-particle states.
+ Nevertheless, multi-particle wave packets spread differently than single
+ particle wave packets, so that the single particle contributions can be
+ isolated and related to the asymptotic free particle states.
+ The Green functions can be evaluated by using, essentially, the formulae
+ of the previous section.
+ However it is necessary to characterise the initial and final physical
  vacuum state and handle the overall normalisation.
  The 
 \emph on
-Gel-mann-Low
+Gell-Mann
 \emph default
- formula
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CHECK
-\end_layout
-
-\end_inset
-
- accomplishes both.
+ and 
+\emph on
+Low
+\emph default
+ theorem accomplishes both.
  The idea is that, instead of trying to find the wavefunctional of the vacuum
  state, one can use 
 \emph on
 any
 \emph default
- physically reasonable initial and final states in
-\end_layout
+ physically reasonable initial and final states
+\begin_inset Foot
+status open
 
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),
-\]
+\begin_layout Plain Layout
+The only condition is that they have non-zero overlap with the vacuum state.
+\end_layout
 
 \end_inset
 
-and deform the time contour in a slight negative imaginary direction, so
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phi-eigenstate-transition-amplitude-pi"
+
+\end_inset
+
+ and deform the time contour in a slight negative imaginary direction, so
  that one eventually takes the limit 
 \begin_inset Formula $t_{i}\to-\infty\left(1-i\epsilon\right)$
 \end_inset
@@ -1267,7 +1256,7 @@ and deform the time contour in a slight negative imaginary direction, so
 .
  The imaginary time component introduces a dissipative part to the time
  evolution 
-\begin_inset Formula $\sim\exp\left(-\epsilon tH\right)$
+\begin_inset Formula $\sim\exp\left(-\epsilon t\hat{H}\right)$
 \end_inset
 
  which damps all states except for the lowest energy, i.e.
@@ -1285,7 +1274,7 @@ This assumes that the vacuum state is non-degenerate and separated by a
  care of infrared (i.e.
  low energy) divergences and computes inclusive cross sections, i.e.
  including processes with the emission of extra soft particles in the final
- state.
+ state which are invisible in realistic detectors.
  A detailed treatment of these issues is beyond the scope of this thesis,
  but can be found in e.g.
  
@@ -1309,9 +1298,9 @@ key "Peskin1995"
  an undisturbed vacuum remains vacuum.
  Thus one can simply divide by this factor, giving
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\text{vac}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\text{vac}}=\frac{\int\mathcal{D}\left[\phi\right]\phi\left(x_{1}\right)\cdots\phi\left(x_{n}\right)\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)},
-\]
+\end{equation}
 
 \end_inset
 
@@ -1325,9 +1314,9 @@ In thermal equilibrium one is not interested in the S-matrix as there are
  no asymptotic states.
  Rather one is interested in the partition function
 \begin_inset Formula 
-\[
+\begin{equation}
 Z=\mathrm{Tr}\mathrm{e}^{-\beta\hat{H}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -1385,12 +1374,12 @@ Wick rotates
 .
  Furthermore, the trace operation implies periodic boundary conditions:
 \begin_inset Formula 
-\begin{eqnarray*}
-Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\\
- & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\\
- & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\\
+\begin{eqnarray}
+Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\nonumber \\
+ & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\nonumber \\
+ & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
  & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right)
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -1429,17 +1418,17 @@ Euclidean
 These aspects can be illustrated by the case of a free field theory, for
  which
 \begin_inset Formula 
-\[
+\begin{equation}
 \int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\int_{x_{E}}\left(\left(\partial_{x^{4}}\phi\right)^{2}+\left(\nabla\phi\right)^{2}+m^{2}\phi^{2}\right)=-\frac{1}{2}\int_{x_{E}}\phi D\phi
-\]
+\end{equation}
 
 \end_inset
 
 where
 \begin_inset Formula 
-\[
+\begin{equation}
 D=-\partial_{x^{4}}^{2}-\nabla^{2}+m^{2}=-\nabla_{E}^{2}+m^{2}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1489,17 +1478,17 @@ key "kapusta_finite-temperature_2006"
 .
  The convenient basis functions are
 \begin_inset Formula 
-\[
+\begin{equation}
 \phi_{n\boldsymbol{p}}=\sqrt{\frac{\beta}{\mathrm{V}}}\mathrm{e}^{i\left(\boldsymbol{p}\cdot\boldsymbol{x}+\omega_{n}x^{4}\right)},
-\]
+\end{equation}
 
 \end_inset
 
 which are normalised so that
 \begin_inset Formula 
-\[
+\begin{equation}
 \Braket{\phi_{m\boldsymbol{q}}|\phi_{n\boldsymbol{p}}}=\beta^{2}\delta_{mn}\delta_{\boldsymbol{p}\boldsymbol{q}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -1514,18 +1503,18 @@ where, on functions,
 
  in
 \begin_inset Formula 
-\[
+\begin{equation}
 \phi=\sum_{n\boldsymbol{p}}A_{n\boldsymbol{p}}\phi_{n\boldsymbol{p}}
-\]
+\end{equation}
 
 \end_inset
 
 are dimensionless.
  Then 
 \begin_inset Formula 
-\[
+\begin{equation}
 \int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\sum_{n\boldsymbol{p}}\left|A_{n\boldsymbol{p}}\right|^{2}\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right).
-\]
+\end{equation}
 
 \end_inset
 
@@ -1540,9 +1529,9 @@ The functional integrand does not depend on the phases of
 , so these contribute to the normalisation.
  The integrals over the magnitudes are Gaussian, giving
 \begin_inset Formula 
-\[
+\begin{equation}
 Z=N'\prod_{n\boldsymbol{p}}\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]^{-1/2}
-\]
+\end{equation}
 
 \end_inset
 
@@ -1553,13 +1542,13 @@ where all the normalisation factors are absorbed in
 .
  Then
 \begin_inset Formula 
-\begin{eqnarray*}
-\ln Z & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\ln\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]\\
- & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\left\{ \ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta^{2}\left(\boldsymbol{p}^{2}+m^{2}\right)}\frac{\mathrm{d}\theta^{2}}{\theta^{2}+\left(2\pi n\right)^{2}}\right\} \\
- & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\left(1+\frac{2}{\mathrm{e}^{\theta}-1}\right)\right\} \\
- & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\beta\omega_{\boldsymbol{p}}-1+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\frac{2}{\mathrm{e}^{\theta}-1}\right\} \\
+\begin{eqnarray}
+\ln Z & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\ln\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]\nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\left\{ \ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta^{2}\left(\boldsymbol{p}^{2}+m^{2}\right)}\frac{\mathrm{d}\theta^{2}}{\theta^{2}+\left(2\pi n\right)^{2}}\right\} \nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\left(1+\frac{2}{\mathrm{e}^{\theta}-1}\right)\right\} \nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\beta\omega_{\boldsymbol{p}}-1+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\frac{2}{\mathrm{e}^{\theta}-1}\right\} \nonumber \\
  & = & \ln N'-\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} -\sum_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -1582,9 +1571,9 @@ Demanding that the entropy
 
  fixes the normalisation
 \begin_inset Formula 
-\[
+\begin{equation}
 N'=\exp\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} ,
-\]
+\end{equation}
 
 \end_inset
 
@@ -1594,17 +1583,17 @@ and finally (on taking the infinite volume limit
 
 )
 \begin_inset Formula 
-\[
+\begin{equation}
 \ln Z=-\mathrm{V}\int_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
-\]
+\end{equation}
 
 \end_inset
 
 The energy density is
 \begin_inset Formula 
-\[
-\rho=\frac{E}{V}=-\frac{\partial_{\beta}\ln Z}{\mathrm{V}}=\int_{\boldsymbol{p}}\left(\frac{1}{2}\omega_{\boldsymbol{p}}+\frac{\omega_{\boldsymbol{p}}}{\mathrm{e}^{\beta\omega_{\boldsymbol{p}}}-1}\right)
-\]
+\begin{equation}
+\rho=\frac{E}{\mathrm{V}}=-\frac{\partial_{\beta}\ln Z}{\mathrm{V}}=\int_{\boldsymbol{p}}\left(\frac{1}{2}\omega_{\boldsymbol{p}}+\frac{\omega_{\boldsymbol{p}}}{\mathrm{e}^{\beta\omega_{\boldsymbol{p}}}-1}\right)
+\end{equation}
 
 \end_inset
 
@@ -1612,9 +1601,9 @@ which is the familiar Bose-Einstein contribution plus a vacuum energy contributi
 on which can be subtracted.
  Similarly, the pressure is
 \begin_inset Formula 
-\[
-P=T\partial_{V}\ln Z=-\int_{\boldsymbol{p}}\left[\frac{1}{2}\omega_{\boldsymbol{p}}+T\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
-\]
+\begin{equation}
+P=T\partial_{\mathrm{V}}\ln Z=-\int_{\boldsymbol{p}}\left[\frac{1}{2}\omega_{\boldsymbol{p}}+T\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\end{equation}
 
 \end_inset
 
@@ -1749,9 +1738,9 @@ The basic idea of the method is quite simple.
 
  is
 \begin_inset Formula 
-\[
+\begin{equation}
 O\left(t\right)=\Braket{\Psi\left(t\right)|\hat{O}\left(t\right)|\Psi\left(t\right)}=\Braket{\Psi_{0}|\hat{U}\left(t_{0},t\right)\hat{O}\left(t\right)\hat{U}\left(t,t_{0}\right)|\Psi_{0}},
-\]
+\end{equation}
 
 \end_inset
 
@@ -1770,9 +1759,9 @@ where
 
  can be expressed in terms of a time ordered exponential
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{U}\left(t_{2},t_{1}\right)=\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
-\]
+\end{equation}
 
 \end_inset
 
@@ -1786,9 +1775,9 @@ anti-time ordered
 \emph default
  exponential is required:
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{U}\left(t_{2},t_{1}\right)=\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
-\]
+\end{equation}
 
 \end_inset
 
@@ -1811,9 +1800,9 @@ Substituting these in the equation for
 
  gives
 \begin_inset Formula 
-\[
+\begin{equation}
 O\left(t\right)=\Braket{\Psi_{0}|\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t}^{t_{0}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} \hat{O}\left(t\right)\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} |\Psi_{0}}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -1890,9 +1879,9 @@ contour time ordering
 
  can be written as
 \begin_inset Formula 
-\[
+\begin{equation}
 O\left(t\right)=\Braket{\Psi_{0}|\mathrm{T}_{C}\left\{ \exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}\left(t\right)\right\} |\Psi_{0}}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -1958,17 +1947,17 @@ The generalisation of this result to multiple operators and a general initial
 
 , is obvious:
 \begin_inset Formula 
-\[
+\begin{equation}
 \left\langle O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right\rangle =\mathrm{Tr}\left\{ \hat{\rho}_{0}\mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} .
-\]
+\end{equation}
 
 \end_inset
 
 Proceeding still further, a general density matrix can be written 
 \begin_inset Formula 
-\[
+\begin{equation}
 \hat{\rho}_{0}=Z^{-1}\exp\left(-\beta\hat{H}_{M}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -2002,7 +1991,7 @@ some
 \end_inset
 
  then this describes a thermal equilibrium state at temperature 
-\begin_inset Formula $1/\beta k_{B}$
+\begin_inset Formula $1/\beta$
 \end_inset
 
 .
@@ -2084,27 +2073,23 @@ defining
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\left\langle \mathrm{T}_{C}\left[O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right]\right\rangle =\frac{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} }{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\right]\right\} }.
-\]
+\begin{eqnarray}
+\left\langle \mathrm{T}_{C}\left[O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right]\right\rangle  & = & \frac{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} }{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\right]\right\} }\nonumber \\
+ & = & \frac{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{C}\mathcal{L}\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{C}\mathcal{L}\right)},
+\end{eqnarray}
 
 \end_inset
 
-The imaginary branch of the contour is called the 
+where in the second line we have specialised to field theory and extended
+ the path integral and Lagrangian to all branches of the controur.
+ The imaginary branch of the contour is called the 
 \emph on
 Matsubara
 \emph default
  branch, as this is the same contour used in the imaginary time field theory
  formalism for thermal equilibrium problems.
  The similarity of this result to the usual vacuum field theory formula
- (c.f., for example, equation 4.31 of 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Peskin1995"
-
-\end_inset
-
-) should be obvious, however 
+ should be obvious, however 
 \emph on
 no
 \emph default
@@ -2130,19 +2115,15 @@ The main objects of interest are the correlation functions of field operators,
  i.e.
  objects like
 \begin_inset Formula 
-\[
-\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\phi\left(\boldsymbol{1}\right)\phi\left(\boldsymbol{2}\right)\right]\right\rangle ,
-\]
+\begin{equation}
+\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(\boldsymbol{1}\right)\hat{\phi}\left(\boldsymbol{2}\right)\right]\right\rangle ,
+\end{equation}
 
 \end_inset
 
 in a scalar field theory.
  A boldfaced argument 
 \begin_inset Formula $\boldsymbol{1},\boldsymbol{2},\ldots$
-\end_inset
-
- or 
-\begin_inset Formula $\boldsymbol{x},\boldsymbol{y},\ldots$
 \end_inset
 
  is shorthand for a complete set of spacetime coordinates and the time coordinat
@@ -2782,9 +2763,9 @@ The origin of some of the names can be seen by visualising the function
  arguments on the time contour.
  For example, the lesser function is given by
 \begin_inset Formula 
-\[
-\Delta^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \phi\left(\boldsymbol{2}\right)\phi\left(\boldsymbol{1}\right)\right\rangle ,
-\]
+\begin{equation}
+\Delta^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \hat{\phi}\left(\boldsymbol{2}\right)\hat{\phi}\left(\boldsymbol{1}\right)\right\rangle ,
+\end{equation}
 
 \end_inset
 
@@ -2832,9 +2813,9 @@ as if
 
  lies on the Matsubara branch:
 \begin_inset Formula 
-\[
+\begin{equation}
 \int_{C}\mathrm{d}z'\ \delta_{C}\left(-i\tau,z'\right)f\left(z'\right)=f\left(-i\tau\right).
-\]
+\end{equation}
 
 \end_inset
 
@@ -2848,9 +2829,9 @@ The only contribution can come from
 
  giving
 \begin_inset Formula 
-\[
+\begin{equation}
 \int_{0}^{-i\beta\hbar}\mathrm{d}\left(-i\tau'\right)\delta_{C}\left(-i\tau,-i\tau'\right)f\left(-i\tau'\right)=f\left(-i\tau\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -2891,9 +2872,9 @@ key "Stefanucci2013"
  For example, if a scalar field Green function obeys a Dyson equation of
  the form
 \begin_inset Formula 
-\[
+\begin{equation}
 \square_{\boldsymbol{1}}\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=i\delta_{C}\left(\boldsymbol{1},\boldsymbol{2}\right)+\int_{C}\mathrm{d}\boldsymbol{3}\ \Sigma\left(\boldsymbol{1},\boldsymbol{3}\right)\Delta\left(\boldsymbol{3},\boldsymbol{2}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -2911,9 +2892,9 @@ where
 
  obeys (suppressing arguments)
 \begin_inset Formula 
-\[
+\begin{equation}
 \square_{\boldsymbol{1}}\Delta^{<}=i\delta+\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
-\]
+\end{equation}
 
 \end_inset
 
