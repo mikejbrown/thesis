@@ -1111,7 +1111,7 @@ density.
  Define the functional
 \begin_inset Formula 
 \begin{equation}
-\mathcal{A}_{fi}\left[J\left(x\right)\right]=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)-J\left(x\right)\phi\left(x\right)\right).
+\mathcal{A}_{fi}\left[J\left(x\right)\right]=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\mathcal{L}\left(\phi\right)+J\left(x\right)\phi\left(x\right)\right)\right].\label{eq:transition-amplitude-generating-functional}
 \end{equation}
 
 \end_inset
@@ -1119,7 +1119,7 @@ density.
 Then
 \begin_inset Formula 
 \begin{equation}
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
 \end{equation}
 
 \end_inset
@@ -1299,7 +1299,7 @@ key "Peskin1995"
  Thus one can simply divide by this factor, giving
 \begin_inset Formula 
 \begin{equation}
-\Braket{\text{vac}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\text{vac}}=\frac{\int\mathcal{D}\left[\phi\right]\phi\left(x_{1}\right)\cdots\phi\left(x_{n}\right)\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)},
+\Braket{\text{vac}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\text{vac}}=\frac{\int\mathcal{D}\left[\phi\right]\phi\left(x_{1}\right)\cdots\phi\left(x_{n}\right)\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)},\label{eq:vacuum-to-vacuum-transition-matrix-element}
 \end{equation}
 
 \end_inset
@@ -2116,18 +2116,13 @@ The main objects of interest are the correlation functions of field operators,
  objects like
 \begin_inset Formula 
 \begin{equation}
-\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(\boldsymbol{1}\right)\hat{\phi}\left(\boldsymbol{2}\right)\right]\right\rangle ,
+\Delta\left(x,y\right)=-i\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(x\right)\hat{\phi}\left(y\right)\right]\right\rangle ,
 \end{equation}
 
 \end_inset
 
 in a scalar field theory.
- A boldfaced argument 
-\begin_inset Formula $\boldsymbol{1},\boldsymbol{2},\ldots$
-\end_inset
-
- is shorthand for a complete set of spacetime coordinates and the time coordinat
-es run on the time contour 
+ Now all the time coordinates run on the time contour 
 \begin_inset Formula $C$
 \end_inset
 
@@ -2764,7 +2759,7 @@ The origin of some of the names can be seen by visualising the function
  For example, the lesser function is given by
 \begin_inset Formula 
 \begin{equation}
-\Delta^{<}\left(\boldsymbol{1},\boldsymbol{2}\right)=-i\left\langle \hat{\phi}\left(\boldsymbol{2}\right)\hat{\phi}\left(\boldsymbol{1}\right)\right\rangle ,
+\Delta^{<}\left(x,y\right)=-i\left\langle \hat{\phi}\left(y\right)\hat{\phi}\left(x\right)\right\rangle ,
 \end{equation}
 
 \end_inset
@@ -2772,11 +2767,11 @@ The origin of some of the names can be seen by visualising the function
 i.e.
  the second argument appears to the left of the first in the matrix element,
  regardless of the relation between 
-\begin_inset Formula $t_{1}$
+\begin_inset Formula $x^{0}$
 \end_inset
 
  and 
-\begin_inset Formula $t_{2}$
+\begin_inset Formula $y^{0}$
 \end_inset
 
 .
@@ -2785,13 +2780,13 @@ i.e.
 as if 
 \emph default
 
-\begin_inset Formula $t_{1}<t_{2}$
+\begin_inset Formula $x^{0}<y^{0}$
 \end_inset
 
 , even if it is not.
  The hook functions are similarly visual.
  Consider the left hook function 
-\begin_inset Formula $\lhook\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)$
+\begin_inset Formula $\lhook\Delta\left(x,y\right)$
 \end_inset
 
 : the left argument is on the Matsubara (vertical) branch and the right
@@ -2873,13 +2868,13 @@ key "Stefanucci2013"
  the form
 \begin_inset Formula 
 \begin{equation}
-\square_{\boldsymbol{1}}\Delta\left(\boldsymbol{1},\boldsymbol{2}\right)=i\delta_{C}\left(\boldsymbol{1},\boldsymbol{2}\right)+\int_{C}\mathrm{d}\boldsymbol{3}\ \Sigma\left(\boldsymbol{1},\boldsymbol{3}\right)\Delta\left(\boldsymbol{3},\boldsymbol{2}\right),
+\square_{x}\Delta\left(x,y\right)=i\delta_{C}\left(x,y\right)+\int_{z}\Sigma\left(x,z\right)\Delta\left(z,y\right),
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $\square_{\boldsymbol{1}}=\frac{\partial}{\partial x_{1}^{\mu}}\frac{\partial}{\partial x_{1\mu}}$
+\begin_inset Formula $\square_{x}=\frac{\partial}{\partial x^{\mu}}\frac{\partial}{\partial x_{\mu}}$
 \end_inset
 
  and the self energy function 
@@ -2893,7 +2888,7 @@ where
  obeys (suppressing arguments)
 \begin_inset Formula 
 \begin{equation}
-\square_{\boldsymbol{1}}\Delta^{<}=i\delta+\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
+\square_{x}\Delta^{<}=i\delta+\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
 \end{equation}
 
 \end_inset
@@ -3599,6 +3594,477 @@ effective potential
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+The previous section outlined how using various choices of time contour
+ in the functional integral allow one to compute vacuum, finite temperature
+ and non-equilibrium properties of a field theory.
+ The differences between these formalisms are largely irrelevant to most
+ of the following considerations.
+ The important thing is that all observables of the theory can be computed
+ from a formula formally identical to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:vacuum-to-vacuum-transition-matrix-element"
+
+\end_inset
+
+, only where the range of the integration variables, boundary conditions
+ and time contour are interpreted appropriately according to the particular
+ physical situation.
+ To that end it proves useful to generalise the generating functional 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transition-amplitude-generating-functional"
+
+\end_inset
+
+ to a quantity usually called the partition function:
+\begin_inset Formula 
+\begin{equation}
+Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\mathcal{L}\left(\phi\right)+J\left(x\right)\phi\left(x\right)\right)\right],\label{eq:partition-function-for-1PIEA}
+\end{equation}
+
+\end_inset
+
+with the only difference being that the time contour and boundary conditions
+ of the functional integral are hidden in the notation and can be re-interpreted
+ as needed.
+ Then, the generalisation of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:vacuum-to-vacuum-transition-matrix-element"
+
+\end_inset
+
+ that we seek is
+\begin_inset Formula 
+\begin{equation}
+G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)\equiv\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]\right\rangle =\left.\frac{1}{Z\left[J\right]}\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)Z\left[J\right]\right|_{J=0},
+\end{equation}
+
+\end_inset
+
+which defines the functions 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $n=1,2,3,\cdots$
+\end_inset
+
+, which are the contour ordered Green functions of the theory.
+ (There is no harm in defining also the trivial cases 
+\begin_inset Formula $G^{\left(0\right)}\equiv\left\langle 1\right\rangle =1$
+\end_inset
+
+ and 
+\begin_inset Formula $G^{\left(n\right)}=0$
+\end_inset
+
+ for 
+\begin_inset Formula $n<0$
+\end_inset
+
+, which makes some formulae simpler.)
+\end_layout
+
+\begin_layout Standard
+Applying the trivial identity
+\begin_inset Formula 
+\begin{equation}
+0=\int\mathcal{D}\left[\phi\right]\frac{\delta}{\delta\phi\left(x_{1}\right)}F\left[\phi\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $F\left[\phi\right]$
+\end_inset
+
+ is an arbitrary functional, to the case 
+\begin_inset Formula 
+\begin{equation}
+F\left[\phi\right]=\phi\left(x_{2}\right)\cdots\phi\left(x_{n}\right)\exp\left[\frac{i}{\hbar}\left(\int_{x}\mathcal{L}\left(\phi\right)+J\left(x\right)\phi\left(x\right)\right)\right]
+\end{equation}
+
+\end_inset
+
+and working out the derivative explicitly gives the 
+\emph on
+Schwinger-Dyson equation
+\emph default
+
+\begin_inset Formula 
+\begin{multline}
+\left\langle \mathrm{T}_{C}\left[\phi\left(x_{2}\right)\cdots\phi\left(x_{n}\right)\left(\frac{\delta S\left[\phi\right]}{\delta\phi\left(x_{1}\right)}+J\left(x_{1}\right)\right)\right]\right\rangle \\
+=i\hbar\sum_{j=2}^{n}\delta_{C}\left(x_{1},x_{j}\right)G^{\left(n-2\right)}\left(\phi\left(x_{2}\right),\cdots\phi\left(x_{j-1}\right),\phi\left(x_{j+1}\right),\cdots,\phi\left(x_{n}\right)\right),
+\end{multline}
+
+\end_inset
+
+which says that the classical equation of motion 
+\begin_inset Formula $\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}-J\left(x\right)=0$
+\end_inset
+
+ is obeyed inside correlation functions up to the existence of delta function
+ 
+\emph on
+contact terms
+\emph default
+ on the right hand side.
+ Substituting an explicit form for 
+\begin_inset Formula $S\left[\phi\right]$
+\end_inset
+
+ gives a hierarchy of equations, one for each 
+\begin_inset Formula $n$
+\end_inset
+
+, connecting correlation functions for different values of 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ This is exactly analogous to the BBGKY 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+LOOK UP NAMES
+\end_layout
+
+\end_inset
+
+ hierarchy in statistical mechanics.
+ Solving this hierarchy of equations in practice requires truncation at
+ some finite order, which necessitates invoking a closure ansatz approximating
+ some higher order correlation functions in terms of lower order ones.
+ This ansatz can be physically motivated but always involves some degree
+ of arbitrariness and often leads to the violation of some physical principle
+ such as time reversal invariance or gauge invariance.
+ In contrast, while higher 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA provide a superficially very similar framework (a hierarchy of equations
+ of motion connecting correlation functions of different order), the equations
+ of motion resulting from 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA are automatically self-consistent and closed, without requiring any
+ arbitrary ansatz or approximation.
+\end_layout
+
+\begin_layout Standard
+Usually the Lagrangian can be written
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}\left(\phi\right)=\frac{1}{2}\phi\Delta_{0}^{-1}\phi-V_{\mathrm{int}}\left(\phi\right),
+\end{equation}
+
+\end_inset
+
+where the first term is the quadratic part of the Lagrangian, 
+\begin_inset Formula $\Delta_{0}^{-1}$
+\end_inset
+
+ is a differential operator and 
+\begin_inset Formula $V_{\mathrm{int}}\left(\phi\right)$
+\end_inset
+
+ is a polynomial containing cubic and higher terms in 
+\begin_inset Formula $\phi$
+\end_inset
+
+.
+ In this case there is a perturbation expansion for 
+\begin_inset Formula $Z$
+\end_inset
+
+ which can be derived by expanding the exponential in 
+\begin_inset Formula $V_{\mathrm{int}}\left(\phi\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+Z\left[J\right] & = & \int\mathcal{D}\left[\phi\right]\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(\phi\right)\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
+ & = & \int\mathcal{D}\left[\phi\right]\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
+ & = & \exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
+ & = & \exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\exp\left[-\frac{i}{\hbar}\frac{1}{2}J\Delta_{0}J\right]Z\left[0\right],
+\end{eqnarray}
+
+\end_inset
+
+where the last line is obtained by completing the square in the exponent
+ of the Gaussian integral.
+ Thus
+\begin_inset Formula 
+\begin{multline}
+G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)=\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\\
+\times\left.\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J\left(x\right)}\right)\right]\exp\left[-\frac{i}{\hbar}\int_{xy}\frac{1}{2}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)\right]\right|_{J=0}.
+\end{multline}
+
+\end_inset
+
+Expanding the exponentials one finds the usual Wick expansion of the Green
+ functions which is embodied in the 
+\emph on
+Feynman rules
+\emph default
+:
+\end_layout
+
+\begin_layout Enumerate
+To find a contribution to 
+\begin_inset Formula $G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)$
+\end_inset
+
+ draw 
+\begin_inset Formula $n$
+\end_inset
+
+ points (
+\begin_inset Quotes eld
+\end_inset
+
+external legs
+\begin_inset Quotes erd
+\end_inset
+
+), associated to 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ through 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Enumerate
+Draw a 
+\begin_inset Formula $k$
+\end_inset
+
+ point vertex for every interaction 
+\begin_inset Formula $\frac{1}{k!}g_{k}\phi^{k}\subset V_{\mathrm{int}}$
+\end_inset
+
+ appearing in the expansion of the exponential.
+ Each such vertex is associated with a factor 
+\begin_inset Formula $\left(-\frac{i}{\hbar}\right)g_{k}$
+\end_inset
+
+ and an integral 
+\begin_inset Formula $\int_{x}$
+\end_inset
+
+ over position of the vertex, and
+\end_layout
+
+\begin_layout Enumerate
+Connect external legs and vertices with lines (
+\begin_inset Quotes eld
+\end_inset
+
+propagators
+\begin_inset Quotes erd
+\end_inset
+
+) in all possible ways such that: all external legs are attached to one
+ 
+\begin_inset Quotes eld
+\end_inset
+
+line end,
+\begin_inset Quotes erd
+\end_inset
+
+ each 
+\begin_inset Formula $k$
+\end_inset
+
+ point vertex is attached to 
+\begin_inset Formula $k$
+\end_inset
+
+ line ends (nothing forbids attaching both ends of a line to the same vertex)
+ and no line ends except on a vertex or external leg.
+ Each line is associated with a factor 
+\begin_inset Formula $i\hbar\Delta_{0}\left(x,y\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are the position of the two ends.
+\end_layout
+
+\begin_layout Enumerate
+Also, associate to the diagram an overall symmetry factor 
+\begin_inset Formula $1/\left|\Gamma\right|$
+\end_inset
+
+, where 
+\begin_inset Formula $\left|\Gamma\right|$
+\end_inset
+
+ is the order of the automorphism group of the diagram under interchanges
+ of lines and vertices.
+\end_layout
+
+\begin_layout Standard
+Using these rules it is possible to compute 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+ systematically, order by order, in a perturbation expansion in the coupling
+ constants in 
+\begin_inset Formula $V_{\mathrm{int}}$
+\end_inset
+
+.
+ From 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+, one can also recover 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+Z\left[J\right]=\sum_{n=0}^{\infty}\frac{1}{n!}\int_{x_{1}\cdots x_{n}}J\left(x_{1}\right)\cdots J\left(x_{n}\right)G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The diagram expansion of 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+contains many disconnected diagrams, i.e.
+ diagrams with more than one connected component.
+ This leads to an undesirable duplication of computation (since a disconnected
+ contribution to 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+ is also a contribution to various 
+\begin_inset Formula $G^{\left(k\right)}$
+\end_inset
+
+ with 
+\begin_inset Formula $k<n$
+\end_inset
+
+) and non-extensivity of 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+ since a disconnected contribution factorises 
+\begin_inset Formula $\sim G^{\left(k\right)}\left(x_{1},\cdots,x_{k}\right)G^{\left(n-k\right)}\left(x_{n-k},\cdots,x_{n}\right)$
+\end_inset
+
+ and so is independent of the relative separation between points in the
+ two clusters 
+\begin_inset Formula $x_{1},\cdots,x_{k}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{n-k},\cdots,x_{n}$
+\end_inset
+
+.
+ Clearly the connected components are the basic objects which one would
+ prefer to compute.
+ Fortunately, though the combinatorics will not be proved here
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It can be found in any quantum field theory book.
+\end_layout
+
+\end_inset
+
+, the connected diagrams obey the simple relationship given schematically
+ as
+\begin_inset Formula 
+\begin{equation}
+\text{all diagrams}=\exp\left(\text{connected diagrams}\right).
+\end{equation}
+
+\end_inset
+
+This strongly motivates the introduction of the 
+\emph on
+connected generating functional
+\emph default
+
+\begin_inset Formula 
+\begin{equation}
+W\left[J\right]=-i\hbar\ln Z\left[J\right].
+\end{equation}
+
+\end_inset
+
+The diagram expansion for 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+ has the same Feynman rules as above, except that one only includes connected
+ diagrams and, traditionally, the extra overall factor 
+\begin_inset Formula $-i\hbar$
+\end_inset
+
+.
+ Note that to lowest order
+\begin_inset Formula 
+\begin{equation}
+W\left[J\right]=W\left[0\right]-\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
+\end{equation}
+
+\end_inset
+
+As usual, for most physical purposes the overall normalisation 
+\begin_inset Formula $W\left[0\right]$
+\end_inset
+
+ is unimportant.
+ The connected correlation functions are
+\begin_inset Formula 
+\[
+G_{C}^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)W\left[J\right]\right|_{J=0},
+\]
+
+\end_inset
+
+so that, at leading order in interactions,
+\begin_inset Formula 
+\begin{eqnarray}
+G_{C}^{\left(2\right)}\left(x,y\right) & = & \hbar^{2}\Delta_{0}\left(x,y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right),\\
+G_{C}^{1}\left(x\right)=G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n}\right) & = & 0+\mathcal{O}\left(V_{\mathrm{int}}\right).
+\end{eqnarray}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
