@@ -4059,8 +4059,772 @@ so that, at leading order in interactions,
 \begin_inset Formula 
 \begin{eqnarray}
 G_{C}^{\left(2\right)}\left(x,y\right) & = & \hbar^{2}\Delta_{0}\left(x,y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right),\\
-G_{C}^{1}\left(x\right)=G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n}\right) & = & 0+\mathcal{O}\left(V_{\mathrm{int}}\right).
+G_{C}^{1}\left(x\right) & = & G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n}\right)=0+\mathcal{O}\left(V_{\mathrm{int}}\right).
 \end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is a great deal of duplication of computation, even in the connected
+ correlation functions.
+ This can be seen by the example of the two point function of a theory with
+ 
+\begin_inset Formula $V_{\mathrm{int}}\left(\phi\right)=\frac{1}{4!}\lambda\phi^{4}$
+\end_inset
+
+ expanded to third order in the interaction:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{perturbation-theory-propagator}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+G_{C}^{
+\backslash
+left(2
+\backslash
+right)}
+\backslash
+left(x,y
+\backslash
+right)&
+\end_layout
+
+\begin_layout Plain Layout
+
+=
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,o}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{2}
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v,v,o} 
+\backslash
+fmfdot{v}
+\backslash
+end{fmfgraph}} 
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v1,v1,v2,v2,o} 
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\backslash
+end{fmfgraph}} 
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,v2} 
+\backslash
+fmf{phantom}{v2,t}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,v2,t,v2,v1} 
+\backslash
+fmfdot{v1,v2}
+\backslash
+end{fmfgraph}} 
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{6}
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v1,v2,o} 
+\backslash
+fmf{plain,left,tension=0}{v1,v2,v1} 
+\backslash
+fmfdot{v1,v2}
+\backslash
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v1,v1,v2,v2,v3,v3,o} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{tl,t1,t2,tr} 
+\backslash
+fmf{plain}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,x1,t1}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v2,v3,t2}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,x1,v1} 
+\backslash
+fmf{plain,left}{v2,v3,v2} 
+\backslash
+fmf{plain,left}{v3,t2,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{tl,t2,t1,tr} 
+\backslash
+fmf{plain}{i,v2,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,x1,t1}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v2,v3,t2}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,x1,v1} 
+\backslash
+fmf{plain,left}{v2,v3,v2} 
+\backslash
+fmf{plain,left}{v3,t2,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+
+\backslash
+frac{1}{12}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,60) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v1,v1,v2,v3,o} 
+\backslash
+fmf{plain,left,tension=0}{v2,v3,v2} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{12}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,60) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v2,v3,v1,v1,o} 
+\backslash
+fmf{plain,left,tension=0}{v2,v3,v2} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,60) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,v2,v3,t}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,v2,v3,t,v3,v2,v1} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+
+\backslash
+frac{1}{12}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{tl,t1,t2,tr} 
+\backslash
+fmf{plain}{i,x1,v1,x2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{x1,v2,t1}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{x2,v3,t2}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.5}{v1,v2} 
+\backslash
+fmf{plain,right=0.5}{v1,v3} 
+\backslash
+fmf{plain,left=0.5}{v2,v3,v2} 
+\backslash
+fmf{plain}{v2,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}} 
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.5}{v1,v3,v2} 
+\backslash
+fmf{plain,right}{v1,v2} 
+\backslash
+fmf{phantom,tension=0.1}{v3,t} 
+\backslash
+fmf{plain,left}{v3,t,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{lm2,lm1,i,l1,l2}
+\backslash
+fmfright{rm2,rm1,o,r1,r2}
+\backslash
+fmftop{tl,t1,t2,t3,tr} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{l1,v2,v3,r1}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.6}{v1,v2} 
+\backslash
+fmf{plain,left=0.4}{v2,v3} 
+\backslash
+fmf{plain,left=0.6}{v3,v1} 
+\backslash
+fmf{plain,left}{v2,t1,v2}
+\backslash
+fmf{plain,left}{v3,t3,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+
+\backslash
+frac{1}{4}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,x1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{t,v3,x1}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,right=0.3}{v1,v3,v2} 
+\backslash
+fmf{plain,left=0.5}{v1,v3,v2} 
+\backslash
+fmfdot{v1,v2,v3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+mathcal{O}
+\backslash
+left(
+\backslash
+lambda^4
+\backslash
+right).
+\backslash
+label{eq:G-perturbation-series-diagrams}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+There are obviously a number of repeated structures in this expression,
+ which can be seen to follow the pattern of a geometric series:
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{dyson-series}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+G_{C}^{
+\backslash
+left(2
+\backslash
+right)}
+\backslash
+left(x,y
+\backslash
+right)&=
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,o}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v,o} 
+\backslash
+fmfblob{.15w}{v}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v1,v2,o} 
+\backslash
+fmfblob{.15w}{v1}
+\backslash
+fmfblob{.15w}{v2}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v1,v2,v3,o} 
+\backslash
+fmfblob{.15w}{v1}
+\backslash
+fmfblob{.15w}{v2}
+\backslash
+fmfblob{.15w}{v3}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+cdots,
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+where the shaded 
+\begin_inset Quotes eld
+\end_inset
+
+blobs
+\begin_inset Quotes erd
+\end_inset
+
+ represent the sum of all two point 
+\emph on
+one particle irreducible
+\emph default
+ (1PI) Feynman diagrams, that is, the set of diagrams which do not fall
+ apart upon being cut by any one line.
+ A similar expansion occurs for the higher order correlation functions 
+\begin_inset Formula $G^{\left(n\geq3\right)}$
+\end_inset
+
+ which can also be written in terms of 1PI subgraphs.
+\end_layout
+
+\begin_layout Standard
+There is a generating function for the one particle irreducible diagrams:
+ the 1PI effective action 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ which is the Legendre transform of 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi\right]=W\left[J\right]-J\frac{\delta W}{\delta J},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $J$
+\end_inset
+
+ on the right hand side is eliminated in terms of the mean field 
+\begin_inset Formula $\varphi=\left\langle \phi\right\rangle $
+\end_inset
+
+ by solving
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+There are physically relevant cases where this equation cannot be inverted.
+ The most important example in this class is spontaneous symmetry breaking.
+ There the saddle point method of evaluating 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ derived below gives a non-convex potential which also has an imaginary
+ part.
+ The non-convex portion of the potential is unphysical, corresponding to
+ a metastable state, and the imaginary part of the potential is related
+ to the lifetime of that state.
+ The true form of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in these cases is given by a Maxwell construction much like that used for
+ the free energy in thermodynamics.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta W}{\delta J}=\varphi.
+\end{equation}
+
+\end_inset
+
+Then the equation of motion followed by 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\Gamma}{\delta\varphi}=-J.
+\end{equation}
 
 \end_inset
 
