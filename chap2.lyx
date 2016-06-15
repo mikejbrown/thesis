@@ -3705,7 +3705,7 @@ Schwinger-Dyson equation
 \end_inset
 
 which says that the classical equation of motion 
-\begin_inset Formula $\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}-J\left(x\right)=0$
+\begin_inset Formula $\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}+J\left(x\right)=0$
 \end_inset
 
  is obeyed inside correlation functions up to the existence of delta function
@@ -3727,16 +3727,7 @@ contact terms
 \end_inset
 
 .
- This is exactly analogous to the BBGKY 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-LOOK UP NAMES
-\end_layout
-
-\end_inset
-
+ This is exactly analogous to the Bogoliubov-Born-Green-Kirkwood-Yvon (BBGKY)
  hierarchy in statistical mechanics.
  Solving this hierarchy of equations in practice requires truncation at
  some finite order, which necessitates invoking a closure ansatz approximating
@@ -3945,7 +3936,7 @@ Using these rules it is possible to compute
 :
 \begin_inset Formula 
 \begin{equation}
-Z\left[J\right]=\sum_{n=0}^{\infty}\frac{1}{n!}\int_{x_{1}\cdots x_{n}}J\left(x_{1}\right)\cdots J\left(x_{n}\right)G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right).
+Z\left[J\right]=\sum_{n=0}^{\infty}\frac{1}{n!}\left(\frac{i}{\hbar}\right)^{n}\int_{x_{1}\cdots x_{n}}J\left(x_{1}\right)\cdots J\left(x_{n}\right)G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right).
 \end{equation}
 
 \end_inset
@@ -4064,6 +4055,58 @@ G_{C}^{1}\left(x\right) & = & G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n
 
 \end_inset
 
+From these 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+ can be recovered if need be:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+W\left[J\right]=\sum_{n=0}^{\infty}\frac{1}{n!}\left(\frac{i}{\hbar}\right)^{n}\int_{x_{1}\cdots x_{n}}J\left(x_{1}\right)\cdots J\left(x_{n}\right)G_{C}^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right).
+\end{equation}
+
+\end_inset
+
+It is also convenient to define
+\begin_inset Formula 
+\begin{equation}
+\Delta\left(x,y\right)=\hbar^{-2}G_{C}^{\left(2\right)}\left(x,y\right),
+\end{equation}
+
+\end_inset
+
+i.e.
+ simply stripping off the factor of 
+\begin_inset Formula $\hbar^{2}$
+\end_inset
+
+.
+ It is useful for later to note that, in terms of the 
+\begin_inset Formula $G^{\left(n\right)}$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+G_{C}^{\left(2\right)}\left(x,y\right)=-i\hbar\left[G^{\left(2\right)}\left(x,y\right)-G^{\left(1\right)}\left(x\right)G^{\left(1\right)}\left(y\right)\right],
+\end{equation}
+
+\end_inset
+
+thus
+\begin_inset Formula 
+\begin{equation}
+G^{\left(2\right)}\left(x,y\right)=i\hbar\Delta\left(x,y\right)+\left\langle \phi\left(x\right)\right\rangle \left\langle \phi\left(y\right)\right\rangle .
+\end{equation}
+
+\end_inset
+
 
 \end_layout
 
@@ -4095,11 +4138,11 @@ begin{align}
 
 \begin_layout Plain Layout
 
-G_{C}^{
+i
 \backslash
-left(2
+hbar
 \backslash
-right)}
+Delta
 \backslash
 left(x,y
 \backslash
@@ -4626,11 +4669,11 @@ begin{align}
 
 \begin_layout Plain Layout
 
-G_{C}^{
+i
 \backslash
-left(2
+hbar
 \backslash
-right)}
+Delta
 \backslash
 left(x,y
 \backslash
@@ -4717,6 +4760,8 @@ end{fmfgraph}}
 +
 \backslash
 cdots,
+\backslash
+label{eq:dyson-series-for-propagator}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4749,7 +4794,87 @@ one particle irreducible
 \emph default
  (1PI) Feynman diagrams, that is, the set of diagrams which do not fall
  apart upon being cut by any one line.
- A similar expansion occurs for the higher order correlation functions 
+ The series can be easily summed.
+ Let 
+\begin_inset Formula $-\frac{i}{\hbar}\Sigma$
+\end_inset
+
+ denote the 1PI 
+\begin_inset Quotes eld
+\end_inset
+
+blob.
+\begin_inset Quotes erd
+\end_inset
+
+ Then 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:dyson-series-for-propagator"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+refers to ERT 
+\backslash
+begin{fmffile}...
+ above
+\end_layout
+
+\end_inset
+
+ can be written
+\begin_inset Formula 
+\begin{align}
+i\hbar\Delta & =i\hbar\Delta_{0}+\left(i\hbar\Delta_{0}\right)\left(-\frac{i}{\hbar}\Sigma\right)\left(i\hbar\Delta_{0}\right)+\left(i\hbar\Delta_{0}\right)\left(-\frac{i}{\hbar}\Sigma\right)\left(i\hbar\Delta_{0}\right)\left(-\frac{i}{\hbar}\Sigma\right)\left(i\hbar\Delta_{0}\right)+\cdots\nonumber \\
+ & =i\hbar\Delta_{0}+i\hbar\Delta_{0}\Sigma\Delta.
+\end{align}
+
+\end_inset
+
+Acting on the right with 
+\begin_inset Formula $\Delta^{-1}$
+\end_inset
+
+ and on the left with 
+\begin_inset Formula $\Delta_{0}^{-1}$
+\end_inset
+
+ one finds
+\begin_inset Formula 
+\[
+\Delta^{-1}=\Delta_{0}^{-1}-\Sigma,
+\]
+
+\end_inset
+
+which is known as the 
+\emph on
+Dyson equation
+\emph default
+ for 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is called the 
+\emph on
+self-energy
+\emph default
+.
+ A similar 
+\emph on
+skeleton
+\emph default
+ expansion occurs for the higher order correlation functions 
 \begin_inset Formula $G^{\left(n\geq3\right)}$
 \end_inset
 
@@ -4766,7 +4891,7 @@ There is a generating function for the one particle irreducible diagrams:
 \begin_inset Formula $W\left[J\right]$
 \end_inset
 
-:
+,
 \begin_inset Formula 
 \begin{equation}
 \Gamma\left[\varphi\right]=W\left[J\right]-J\frac{\delta W}{\delta J},
@@ -4784,7 +4909,7 @@ where
 
  by solving
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 There are physically relevant cases where this equation cannot be inverted.
@@ -4828,6 +4953,225 @@ Then the equation of motion followed by
 
 \end_inset
 
+A useful result is
+\begin_inset Formula 
+\begin{equation}
+\int_{y}\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta^{2}W}{\delta J\left(y\right)\delta J\left(z\right)}=\int_{y}-\frac{\delta J\left(y\right)}{\delta\varphi\left(x\right)}\frac{\delta\varphi\left(z\right)}{\delta J\left(y\right)}=-\delta\left(x-z\right),
+\end{equation}
+
+\end_inset
+
+so that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}=\Delta^{-1}\left(x,y\right).
+\end{equation}
+
+\end_inset
+
+Taking another derivative gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+0 & = & \frac{\delta}{\delta\varphi\left(w\right)}\int_{y}\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta^{2}W}{\delta J\left(y\right)\delta J\left(z\right)}\nonumber \\
+ & = & \int_{y}\frac{\delta^{3}\Gamma}{\delta\varphi\left(w\right)\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta^{2}W}{\delta J\left(y\right)\delta J\left(z\right)}+\int_{yv}\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta J\left(v\right)}{\delta\varphi\left(w\right)}\frac{\delta^{3}W}{\delta J\left(v\right)\delta J\left(y\right)\delta J\left(z\right)}\nonumber \\
+ & = & \int_{y}\frac{\delta^{3}\Gamma}{\delta\varphi\left(w\right)\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta^{2}W}{\delta J\left(y\right)\delta J\left(z\right)}\nonumber \\
+ &  & -\int_{yv}\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}\frac{\delta\Gamma}{\delta\varphi\left(w\right)\delta\varphi\left(v\right)}\frac{\delta^{3}W}{\delta J\left(v\right)\delta J\left(y\right)\delta J\left(z\right)},
+\end{eqnarray}
+
+\end_inset
+
+from which
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{3}\Gamma}{\delta\varphi\left(w\right)\delta\varphi\left(x\right)\delta\varphi\left(u\right)}=-\int_{yzv}\Delta^{-1}\left(w,v\right)\Delta^{-1}\left(x,y\right)\Delta^{-1}\left(u,z\right)\frac{\delta^{3}W}{\delta J\left(v\right)\delta J\left(y\right)\delta J\left(z\right)}.
+\end{equation}
+
+\end_inset
+
+Similar results can be derived for higher order correlation functions by
+ taking more derivatives.
+ One eventually finds that 
+\begin_inset Formula $W$
+\end_inset
+
+ is given by a sum of 
+\emph on
+tree
+\emph default
+ diagrams (i.e., no loops) where the vertices are given by the derivatives
+ of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+.
+ This is the skeleton expansion of 
+\begin_inset Formula $W$
+\end_inset
+
+, and from it one can see that 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ consists of 1PI diagrams only.
+ A detailed proof is not needed here and can be found in, e.g., chapter 5
+ of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ is most often evaluated in a semi-classical or saddle point approximation.
+ Here the path integral is expanded around the field configuration 
+\begin_inset Formula $\phi_{c}$
+\end_inset
+
+ of stationary phase, which is the one that satisfies the classical equation
+ of motion 
+\begin_inset Formula 
+\begin{equation}
+\left.\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}\right|_{\phi=\phi_{c}\left[J\right]}+J\left(x\right)=0.
+\end{equation}
+
+\end_inset
+
+Writing 
+\begin_inset Formula $\phi=\phi_{c}+\hbar^{1/2}\tilde{\phi}$
+\end_inset
+
+,
+\begin_inset Formula 
+\begin{eqnarray}
+Z\left[J\right] & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{c}\right]\tilde{\phi}+V\left(\phi_{c},\tilde{\phi}\right)\right)\right]\nonumber \\
+ & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\int\mathcal{D}\left[\phi\right]\left(1+\mathcal{O}\left(\hbar\right)\right)\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{c}\right]\tilde{\phi}\right)\right]\nonumber \\
+ & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\left(N\left(\det\Delta_{0}\left[\phi_{c}\right]\right)^{1/2}+\mathcal{O}\left(\hbar\right)\right),
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $V\left(\phi_{c},\tilde{\phi}\right)$
+\end_inset
+
+ is defined by the first line.
+ Note that it contains cubic and higher terms in 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ only by virtue of the classical equation of motion, so that 
+\begin_inset Formula $V\left(\phi_{c},\tilde{\phi}\right)\sim\mathcal{O}\left(\hbar^{1/2}\right)$
+\end_inset
+
+.
+ The leading correction to 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ necessarily involves two cubic vertices, however, so is 
+\begin_inset Formula $\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+.
+ The constant 
+\begin_inset Formula $N$
+\end_inset
+
+ is determined by 
+\begin_inset Formula $Z\left[0\right]=1$
+\end_inset
+
+.
+ Also note that 
+\begin_inset Formula $\Delta_{0}^{-1}\left[\phi_{c}\right]$
+\end_inset
+
+ depends on 
+\begin_inset Formula $\phi_{c}$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+W\left[J\right]=S\left[\phi_{c}\right]+J\phi_{c}+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{c}\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
+\end{equation}
+
+\end_inset
+
+To perform the Legendre transform one needs to relate 
+\begin_inset Formula $\phi_{c}$
+\end_inset
+
+ to 
+\begin_inset Formula $\varphi$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varphi=\frac{\delta W}{\delta J}=\frac{\delta\phi_{c}}{\delta J}\frac{\delta S}{\delta\phi_{c}}+\phi_{c}+J\frac{\delta\phi_{c}}{\delta J}+\frac{\delta\phi_{c}}{\delta J}\frac{\delta}{\delta\phi_{c}}\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{c}\right]+\mathcal{O}\left(\hbar^{2}\right)=\phi_{c}+\mathcal{O}\left(\hbar\right).
+\]
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi_{c}\right]+J\phi_{c}=S\left[\varphi\right]+J\varphi+\mathcal{O}\left(\hbar^{2}\right),
+\end{equation}
+
+\end_inset
+
+because of the classical equation of motion, so that
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\varphi\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
+\end{equation}
+
+\end_inset
+
+The 
+\begin_inset Formula $\Delta_{0}^{-1}\left[0\right]$
+\end_inset
+
+ term is just a shift by an overall constant which is often neglected, leading
+ one to write
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\varphi\right]+\mathcal{O}\left(\hbar^{2}\right).\label{eq:1piea}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: What more to say here???
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -4851,6 +5195,204 @@ name "sec:The-2PI-effective"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Two-particle irreducible effective actions (2PIEA) and approximation schemes
+ based on them are useful when it is necessary to go beyond the perturbative
+ field theory embodied by the 1PIEA, with applications to thermal and non-equili
+brium plasmas/fluids, strongly coupled quantum field theories and systems
+ dominated by many-body collective effects.
+ The technique was originally developed by Lee and Yang 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lee_many-body_1960"
+
+\end_inset
+
+, Luttinger and Ward 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "luttinger_ground-state_1960"
+
+\end_inset
+
+, Baym 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "baym_self-consistent_1962"
+
+\end_inset
+
+ and others in the context of many-body theory, then extended by Cornwall,
+ Jackiw and Tomboulis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cornwall_effective_1974"
+
+\end_inset
+
+ to relativistic field theory in terms of functional integrals.
+ Since then a broad literature has developed surrounding 2PI effective actions
+ and their generalisations (see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2004"
+
+\end_inset
+
+ for a good introductory review).
+\end_layout
+
+\begin_layout Standard
+The essential idea behind the 2PIEA is to define a functional 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ of not only the mean field 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, but also the (connected) two point correlation function 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+ By allowing 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ to vary it is possible to eliminate the diagrams yielding propagator correction
+s.
+ This is achieved by a double Legendre transform procedure, first defining
+ a generalised partition functional
+\begin_inset Formula 
+\begin{equation}
+Z\left[J,K\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(S\left[\phi\right]+J\phi+\frac{1}{2}\phi K\phi\right)\right],
+\end{equation}
+
+\end_inset
+
+where spacetime integrations are hidden for brevity, i.e.
+ 
+\begin_inset Formula $\phi K\phi\equiv\int_{xy}\phi\left(x\right)K\left(x,y\right)\phi\left(y\right)$
+\end_inset
+
+ etc.
+ Then 
+\begin_inset Formula $W\left[J,K\right]=-i\hbar\ln Z\left[J,K\right]$
+\end_inset
+
+ as before and
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi,\Delta\right]=W\left[J,K\right]-J\frac{\delta W\left[J,K\right]}{\delta J}-K\frac{\delta W\left[J,K\right]}{\delta K},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $J$
+\end_inset
+
+ and 
+\begin_inset Formula $K$
+\end_inset
+
+ are eliminated by solving
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\delta W}{\delta J\left(x\right)} & = & \varphi\left(x\right),\\
+\frac{\delta W}{\delta K\left(x,y\right)} & = & \frac{1}{2}\left(i\hbar\Delta\left(x,y\right)+\varphi\left(x\right)\varphi\left(y\right)\right).
+\end{eqnarray}
+
+\end_inset
+
+The equations of motion obeyed by the 2PIEA are then
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi} & = & -J-K\varphi,\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta} & = & -\frac{1}{2}i\hbar K.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The easiest way to compute the double Legendre transform is stepwise, using
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1piea"
+
+\end_inset
+
+ with 
+\begin_inset Formula $S\to S+\frac{1}{2}\phi K\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta_{0}^{-1}\to\Delta_{0}^{-1}+K$
+\end_inset
+
+ as an intermediate step, then performing the transform with respect to
+ 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ This leads to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi,\Delta\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta^{-1}+\frac{i\hbar}{2}\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta-1\right)+\Gamma_{2}\left[\varphi,\Delta\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Gamma_{2}\left[\varphi,\Delta\right]\sim\mathcal{O}\left(\hbar^{2}\right)$
+\end_inset
+
+ on using
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K=\Delta^{-1}-\Delta_{0}^{-1}+\mathcal{O}\left(\hbar\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equation of motion for the propagator becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta^{-1}=\Delta_{0}^{-1}-\Sigma,
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\Sigma=\frac{2i}{\hbar}\frac{\delta\Gamma_{2}\left[\varphi,\Delta\right]}{\delta\Delta},
+\end{equation}
+
+\end_inset
+
+which one recognises as the Dyson equation and self-energy respectively.
 \end_layout
 
 \begin_layout Section
