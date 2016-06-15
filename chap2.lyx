@@ -5163,6 +5163,111 @@ The
 \end_layout
 
 \begin_layout Standard
+There is a nice topological property of Feynman diagrams which makes the
+ organisation of the semi-classical expansion at higher orders easy.
+ A diagram contributing to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ has an overall factor of 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ coming from the definition of 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+, another 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ for each 
+\begin_inset Formula $i\hbar\Delta_{0}$
+\end_inset
+
+ propagator appearing in the diagram, and a factor of 
+\begin_inset Formula $\hbar^{-1}$
+\end_inset
+
+ for each vertex.
+ Thus the total power of 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ for a diagram is 
+\begin_inset Formula $I-V+1$
+\end_inset
+
+ where 
+\begin_inset Formula $I$
+\end_inset
+
+ is the number of lines and 
+\begin_inset Formula $V$
+\end_inset
+
+ the number of vertices.
+ However, the Euler characteristic 
+\begin_inset Formula $L-I+V=1$
+\end_inset
+
+, where 
+\begin_inset Formula $L$
+\end_inset
+
+ is the number of faces or 
+\begin_inset Quotes eld
+\end_inset
+
+loops
+\begin_inset Quotes erd
+\end_inset
+
+ in the graph, is a topological invariant for all planar graphs.
+ Thus, for planar graphs the contribution to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ is 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{L}\right)$
+\end_inset
+
+.
+ The definition of 
+\begin_inset Formula $L$
+\end_inset
+
+ can be extended from planar graphs to all graphs by using the same formula.
+ Thus, in the semi-classical expansion powers of 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ count the number of loops in a graph.
+ This agrees with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1piea"
+
+\end_inset
+
+: the 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ term is just the classical action and the 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{1}\right)$
+\end_inset
+
+ term is the sum of all one loop graphs, as can be seen explicitly by expanding
+ the logarithm in a Taylor series in 
+\begin_inset Formula $V_{\mathrm{int}}$
+\end_inset
+
+.
+ The terms not shown above are the 1PI diagrams with two or more loops.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
@@ -5393,6 +5498,716 @@ where
 \end_inset
 
 which one recognises as the Dyson equation and self-energy respectively.
+ Since 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ consists of 1PI graphs and the effect of 
+\begin_inset Formula $\delta/\delta\Delta$
+\end_inset
+
+ is to remove a propagator from any graph in 
+\begin_inset Formula $\Gamma_{2}$
+\end_inset
+
+ in all possible ways, 
+\begin_inset Formula $\Gamma_{2}$
+\end_inset
+
+ must consist of 
+\emph on
+two particle irreducible
+\emph default
+ (2PI) graphs, i.e.
+ those which do not fall apart under any cutting of two lines.
+\end_layout
+
+\begin_layout Standard
+For reference it is useful to give the 2PIEA for a quartic scalar field
+ theory, generalised to a set of fields 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+, 
+\begin_inset Formula $a=1,\cdots,N$
+\end_inset
+
+, up to three loop order.
+ No symmetry is yet imposed, though the study of 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetric theories forms the bulk of this thesis.
+ The classical action is given by
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi\right]=\frac{1}{2}\phi_{a}\left(-\square\delta_{ab}-m_{ab}^{2}\right)\phi_{b}-\frac{1}{3!}g_{abc}\phi_{a}\phi_{b}\phi_{c}-\frac{1}{4!}\lambda_{abcd}\phi_{a}\phi_{b}\phi_{c}\phi_{d},
+\end{equation}
+
+\end_inset
+
+where the linear term is dropped without loss of generality
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+If a linear term is present, it can be removed by shifting 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+.
+ This results in a constant term which can also be dropped without consequence.
+\end_layout
+
+\end_inset
+
+.
+ Without loss of generality 
+\begin_inset Formula $m_{ab}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{abc}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{abcd}$
+\end_inset
+
+ are totally symmetric under permutations of indices.
+ There are 
+\begin_inset Formula $N\left(N+1\right)/2$
+\end_inset
+
+, 
+\begin_inset Formula $N\left(N+1\right)\left(N+2\right)/3!$
+\end_inset
+
+ and 
+\begin_inset Formula $N\left(N+1\right)\left(N+2\right)\left(N+3\right)/4!$
+\end_inset
+
+ linearly independent quadratic, cubic and quartic couplings respectively,
+ though 
+\begin_inset Formula $N\left(N-1\right)/2$
+\end_inset
+
+ rotations of the fields into each other can be used to remove some of these,
+ e.g.
+ by diagonalising 
+\begin_inset Formula $m_{ab}^{2}$
+\end_inset
+
+.
+ In the case of 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry there are only two constants with 
+\begin_inset Formula $m_{ab}^{2}=m^{2}\delta_{ab}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{abc}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{abcd}\propto\lambda\left(\delta_{ab}\delta_{cd}+\text{permutations}\right)$
+\end_inset
+
+.
+ One has the bare propagator
+\begin_inset Formula 
+\begin{equation}
+\Delta_{0ab}^{-1}\left[\varphi\right]=\left.\frac{\delta^{2}S}{\delta\phi_{a}\delta\phi_{b}}\right|_{\phi=\varphi}=-\left(\square\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}\right),
+\end{equation}
+
+\end_inset
+
+and the effective interaction Lagrangian
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V\left(\varphi,\tilde{\phi}\right)=-\frac{1}{3!}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}-\frac{1}{4!}\lambda_{abcd}\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}\tilde{\phi}_{d}.
+\end{equation}
+
+\end_inset
+
+It is convenient to introduce the shorthands 
+\begin_inset Formula $V_{abc}=-\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $W_{abcd}=-\lambda_{abcd}$
+\end_inset
+
+ (this matches then the notation of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_symmetry_2015"
+
+\end_inset
+
+).
+ 
+\begin_inset Formula $\Gamma_{2}\left[\varphi,\Delta\right]$
+\end_inset
+
+ is the sum of 2PI Feynman diagrams with interactions given by the above
+ and propagators given by the variational propagator 
+\begin_inset Formula $i\hbar\Delta_{ab}$
+\end_inset
+
+.
+ Up to three loop order this is
+\begin_inset Formula 
+\begin{equation}
+\Gamma_{2}=\Phi_{1}+\Phi_{2}+\Phi_{3}+\Phi_{4}+\Phi_{5}+\mathcal{O}\left(\hbar^{4}\right),
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{twopi-diagrams}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_1 & = 
+\backslash
+parbox{12mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmftop{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfbottom{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{i,v,o}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,tension=0.7}{v,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=90,tension=0.7}{v,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} & = -
+\backslash
+frac{
+\backslash
+hbar^{2}}{8}W_{abcd}
+\backslash
+Delta_{ab}
+\backslash
+Delta_{cd}, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_2 & = 
+\backslash
+parbox{12mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} & = 
+\backslash
+frac{
+\backslash
+hbar^{2}}{12}V_{abc}V_{def}
+\backslash
+Delta_{ad}
+\backslash
+Delta_{be}
+\backslash
+Delta_{cf}, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_3 & = 
+\backslash
+parbox{12mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfsurroundn{v}{12}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v4}
+\backslash
+fmfdot{v8}
+\backslash
+fmfdot{v12}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=.5}{v4,v8}
+\backslash
+fmf{plain,right=.5}{v8,v12}
+\backslash
+fmf{plain,right=.5}{v12,v4}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,v8}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,v12}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} & = 
+\backslash
+frac{i
+\backslash
+hbar^{3}}{4!}V_{abc}V_{def}V_{ghi}V_{jkl}
+\backslash
+Delta_{ad}
+\backslash
+Delta_{bg}
+\backslash
+Delta_{cj}
+\backslash
+Delta_{eh}
+\backslash
+Delta_{fk}
+\backslash
+Delta_{il}, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_4 & = 
+\backslash
+parbox{12mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfsurroundn{v}{12}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v4}
+\backslash
+fmfdot{v7}
+\backslash
+fmfdot{v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=.5}{v4,v7}
+\backslash
+fmf{plain,right=.8}{v7,v1}
+\backslash
+fmf{plain,right=.5}{v1,v4}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=0.2}{v4,v7}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=0.2}{v4,v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} & = -
+\backslash
+frac{i
+\backslash
+hbar^{3}}{8}W_{abcd}V_{efg}V_{hij}
+\backslash
+Delta_{ae}
+\backslash
+Delta_{bf}
+\backslash
+Delta_{ch}
+\backslash
+Delta_{di}
+\backslash
+Delta_{gj}, 
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_5 & = 
+\backslash
+parbox{12mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=0.5}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=0.5}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} & = 
+\backslash
+frac{i
+\backslash
+hbar^{3}}{48}W_{abcd}W_{efgh}
+\backslash
+Delta_{ae}
+\backslash
+Delta_{bf}
+\backslash
+Delta_{cg}
+\backslash
+Delta_{dh}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{eqnarray}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+These diagrams are called 
+\begin_inset Quotes eld
+\end_inset
+
+EIGHT,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+EGG,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+MERCEDES,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+HAIR,
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+BBALL,
+\begin_inset Quotes erd
+\end_inset
+
+ respectively, in the nomenclature of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carrington2011,Carrington2011a"
+
+\end_inset
+
+.
+ Keeping only 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ is called the 
+\emph on
+Hartree-Fock
+\emph default
+ (HF) approximation, which has special properties due to the simple form
+ of the self-energy, while keeping both 
+\begin_inset Formula $\Phi_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ is called the 
+\emph on
+sunset
+\emph default
+ approximation.
+ Note that at four loop order there are eleven new diagrams (including the
+ first non-planar diagram), so the number of diagrams increases rapidly
+ with order.
+ However, the growth is much slower than for 1PI or connected diagrams and
+ the 2PIEA gives a relatively compact formulation of the theory.
+\end_layout
+
+\begin_layout Standard
+It is also convenient to give explicitly the equations of motion in the
+ sunset approximation for later reference.
+ They are:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+-\left(\square\delta_{ab}+m_{ab}^{2}\right)\varphi_{b} & = & \frac{1}{2}g_{abc}\varphi_{b}\varphi_{c}+\frac{1}{3!}\lambda_{abcd}\varphi_{b}\varphi_{c}\varphi_{d}\nonumber \\
+ &  & +\frac{i\hbar}{2}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\Delta_{cb}+\frac{\hbar^{2}}{6}\lambda_{abcd}V_{efg}\Delta_{be}\Delta_{cf}\Delta_{dg}\nonumber \\
+ &  & -J_{a}-K_{ab}\varphi_{b}\\
+\Delta_{ab}^{-1} & = & \Delta_{0ab}^{-1}+\frac{i\hbar}{2}W_{abcd}\Delta_{cd}-\frac{i\hbar}{2}V_{acd}V_{bef}\Delta_{ce}\Delta_{df}\nonumber \\
+ &  & +K_{ab}.
+\end{eqnarray}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
