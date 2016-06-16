@@ -6888,5 +6888,894 @@ name "sec:Analytic-properties-of-2PIEA-and-resummation"
 
 \end_layout
 
+\begin_layout Standard
+One of the advantages of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA (
+\begin_inset Formula $n>1$
+\end_inset
+
+) is the summation of perturbation theory effected by the self-consistent
+ equations of motion.
+ This can be illustrated simply with the example of the 2PIEA in the Hartree-Foc
+k approximation.
+ The propagator equation of motion reads
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ab}^{-1}=-\left(\square\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}+\frac{i\hbar}{2}\lambda_{abcd}\Delta_{cd}\right).\label{eq:2piea-hartree-fock}
+\end{equation}
+
+\end_inset
+
+Consider for simplicity the case where 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ is independent of position and time.
+ This is the case, for example, in thermal equilibrium or vacuum since by
+ assumption spacetime is also homogeneous.
+ Then this equation can be solved in the Fourier domain.
+ Introducing
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ab}^{-1}\left(p\right)=\int_{x-y}\mathrm{e}^{ip\left(x-y\right)}\Delta_{ab}^{-1}\left(x,y\right),
+\end{equation}
+
+\end_inset
+
+the equation of motion is
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ab}^{-1}\left(p\right)=-\left(-p^{2}\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}+\frac{i\hbar}{2}\lambda_{abcd}\int_{k}\Delta_{cd}\left(k\right)\right).
+\end{equation}
+
+\end_inset
+
+The important point is that 
+\begin_inset Formula $\int_{k}\Delta_{cd}\left(k\right)$
+\end_inset
+
+ is actually independent of 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Thus one can write 
+\begin_inset Formula $\Delta_{ab}^{-1}\left(p\right)=p^{2}\delta_{ab}-M_{ab}^{2}$
+\end_inset
+
+ where the effective mass matrix is given by the 
+\emph on
+gap equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{ab}^{2}=m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}+\frac{i\hbar}{2}\lambda_{abcd}\int_{k}\left[k^{2}\delta_{cd}-M_{cd}^{2}\right]^{-1}.
+\end{equation}
+
+\end_inset
+
+There is a basis of fields in which the matrix 
+\begin_inset Formula $M_{ab}^{2}=M_{a}^{2}\delta_{ab}$
+\end_inset
+
+ (no sum) is diagonalised.
+ In that basis
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{a}^{2}=\mu_{a}^{2}+\frac{i\hbar}{2}\sum_{c}\lambda_{ac}\int_{k}\frac{1}{k^{2}-M_{c}^{2}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{a}^{2}$
+\end_inset
+
+ are the eigenvalues of 
+\begin_inset Formula $m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{ac}$
+\end_inset
+
+ are, for each 
+\begin_inset Formula $c$
+\end_inset
+
+, the eigenvalues of the matrix 
+\begin_inset Formula $\lambda_{abcc}$
+\end_inset
+
+ (no sum).
+\end_layout
+
+\begin_layout Standard
+The integral is divergent in 
+\begin_inset Formula $d\geq2$
+\end_inset
+
+ dimensions and must be regularised.
+ Using dimensional regularisation in 
+\begin_inset Formula $d=4-2\epsilon$
+\end_inset
+
+ dimensions,
+\begin_inset Formula 
+\begin{align}
+\int_{k}\frac{i}{k^{2}-M_{c}^{2}} & =-\frac{M_{c}^{2}}{16\pi^{2}}\left[\frac{1}{\epsilon}-\gamma+1+\ln\left(4\pi\right)+\mathcal{O}\left(\epsilon\right)\right]\nonumber \\
+ & +\frac{M_{c}^{2}}{16\pi^{2}}\ln\left(\frac{M_{c}^{2}}{\mu^{2}}\right)+\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+M_{c}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+M_{c}^{2}}}-1},
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is the renormalisation point and 
+\begin_inset Formula $\gamma\approx0.577$
+\end_inset
+
+ is the Euler-Mascheroni constant.
+ The three terms are the divergent contribution, the finite vacuum contribution
+ and the finite temperature Bose-Einstein contribution respectively.
+ The renormalisation procedure (not carried out in full here), effectively
+ results in the removal of the infinite part.
+ The ambiguity in the removal of a finite part is reflected in the freedom
+ to choose 
+\begin_inset Formula $\mu$
+\end_inset
+
+.
+ For simplicity set the temperature to zero (the finite temperature contribution
+ is not important for the point that follows).
+ Then,
+\begin_inset Formula 
+\begin{equation}
+M_{a}^{2}=\mu_{a}^{2}+\frac{\hbar}{2}\sum_{c}\lambda_{ac}\frac{M_{c}^{2}}{16\pi^{2}}\ln\left(\frac{M_{c}^{2}}{\mu^{2}}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now contrast this with the perturbative, or 1PI, evaluation of the same
+ quantity.
+ In the 1PI self-energy only the bare 
+\begin_inset Formula $\Delta_{0}$
+\end_inset
+
+ propagators appear, so the analogue of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2piea-hartree-fock"
+
+\end_inset
+
+ is identical except for the replacement 
+\begin_inset Formula $\Delta\to\Delta_{0}$
+\end_inset
+
+ on the right hand side.
+ This results eventually in the replacement 
+\begin_inset Formula $M_{c}^{2}\to\mu_{c}^{2}$
+\end_inset
+
+ on the right hand side above, giving
+\begin_inset Formula 
+\begin{equation}
+M_{a}^{2}\left(\mathrm{1PI}\right)=\mu_{a}^{2}+\frac{\hbar}{2}\sum_{c}\lambda_{ac}\frac{\mu_{c}^{2}}{16\pi^{2}}\ln\left(\frac{\mu_{c}^{2}}{\mu^{2}}\right),
+\end{equation}
+
+\end_inset
+
+which is what is obtained by iterating the 2PI equation once and ignoring
+ terms of order 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{2}\right)$
+\end_inset
+
+.
+ The 2PI solution has higher order contributions, starting with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M_{a}^{2}=M_{a}^{2}\left(\mathrm{1PI}\right)+\frac{\hbar^{2}}{1024\pi^{4}}\sum_{cd}\lambda_{ac}\lambda_{cd}\left[1+\ln\left(\frac{\mu_{c}^{2}}{\mu^{2}}\right)\right]\mu_{d}^{2}\ln\left(\frac{\mu_{d}^{2}}{\mu^{2}}\right)+\mathcal{O}\left(\hbar^{3}\right).
+\end{equation}
+
+\end_inset
+
+This is a large correction if, parametrically, 
+\begin_inset Formula $\lambda\ln\left(\mu_{a}^{2}/\mu^{2}\right)\sim16\pi^{2}$
+\end_inset
+
+.
+ This can occur in theories with very strong couplings or a hierarchy of
+ masses so that some 
+\begin_inset Formula $\mu_{a}^{2}/\mu^{2}$
+\end_inset
+
+ is inevitably large.
+ An important case is 
+\begin_inset Formula $\mu_{a}^{2}=0$
+\end_inset
+
+.
+ In this case the 1PI gap equation gives zero, but the 2PI gap equation
+ gives a non-perturbative solution 
+\begin_inset Formula $M_{a}^{2}\sim\mu^{2}\exp\left(32\pi^{2}/\hbar\lambda\right)$
+\end_inset
+
+ which may or may not be physical.
+\end_layout
+
+\begin_layout Standard
+This can be seen diagrammatically as well.
+ The Hartree-Fock gap equation is
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{hartree-fock-resummation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Delta^{-1} = 
+\backslash
+left( 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} 
+\backslash
+right)^{-1} = 
+\backslash
+left( 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} 
+\backslash
+right)^{-1} - 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{i,v,o}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,tension=0.5}{v,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+where the full propagator represents 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ and the dashed propagator 
+\begin_inset Formula $\Delta_{0}$
+\end_inset
+
+.
+ This can be rearranged into
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{hartree-fock-resummation2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} = 
+\backslash
+quad 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} + 
+\backslash
+quad 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,tension=0.5}{v,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+Iterating this equation gives
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{hartree-fock-resummation3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} = 
+\backslash
+quad 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} + 
+\backslash
+quad 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v,o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes,tension=0.5}{v,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}} + 
+\backslash
+quad 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,50)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmftop{t}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{i,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v,o}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{t,v2,v}
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes,left=1}{v,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,tension=0.5,left=1}{v2,t,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v2,v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 1PI Dyson equation consists of the first two terms on the right hand
+ side only.
+ The additional term gives, upon repeated iteration, the sum of all 
+\emph on
+daisy
+\emph default
+ (or 
+\emph on
+ring
+\emph default
+) diagrams as well as all 
+\emph on
+superdaisy
+\emph default
+ (i.e., daisies within daisies in a fractal pattern) diagrams.
+ The highly non-trivial fact about 2PI approximation schemes is that all
+ of these diagrams appear with the correct combinatoric factors.
+ From the point of view of someone engineering 
+\emph on
+ad hoc
+\emph default
+ equations of motion to effect a resummation, this is a highly desirable
+ property which would be difficult to prove, especially when diagrams with
+ more complicated topologies are included.
+ Furthermore, since perturbation theories are generically asymptotic expansions,
+ resummation in general is a dangerous procedure.
+ Mathematically speaking an asymptotic series can be summed to 
+\emph on
+any
+\emph default
+ value whatsoever.
+ Additional non-perturbative properties are required of any resummation
+ scheme that claims to faithfully represent the original theory.
+ For these reasons, while 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA (
+\begin_inset Formula $n>1$
+\end_inset
+
+) 
+\emph on
+do
+\emph default
+ effect resummations of perturbation theory, speaking of resummations reflects
+ a limited understanding of why 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA actually work.
+ This section examines this issue in the context of the 2PIEA for a toy
+ model which is exactly solvable so that a deeper understanding of the analytic
+ features that support 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs in general and 
+\begin_inset Formula $2$
+\end_inset
+
+PIEAs in particular can be found.
+ These results are then contrasted with those for some other common resummation
+ schemes used in the literature.
+\end_layout
+
 \end_body
 \end_document
