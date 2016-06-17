@@ -406,7 +406,7 @@ filename "appendix.lyx"
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "C:/Users/Michael/Dropbox/PhD/Writings/refs,C:/Users/Michael/Dropbox/PhD/Writings/Linear Response Theory for SI-2PIEA/dist/refs"
+bibfiles "C:/Users/Michael/Dropbox/PhD/Writings/refs,C:/Users/Michael/Dropbox/PhD/Writings/Linear Response Theory for SI-2PIEA/dist/refs,C:/Users/Michael/Dropbox/PhD/Writings/Symmetry Improved nPI/analytic-npi/refs"
 options "unsrtnat"
 
 \end_inset

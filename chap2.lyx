@@ -7774,7 +7774,1270 @@ PIEAs in general and
 
 PIEAs in particular can be found.
  These results are then contrasted with those for some other common resummation
- schemes used in the literature.
+ schemes used in the literature, particularly the Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ and Bore-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ methods.
+ Much of this section is based on a publication by the author 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_two-particle_2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Unfortunately robust comparisons are difficult because the large order behaviour
+ of perturbation theory is known, at best, in a sketchy form for most field
+ theories of interest.
+ The use of a genuinely trivial model 
+\begin_inset Quotes eld
+\end_inset
+
+field theory
+\begin_inset Quotes erd
+\end_inset
+
+ in zero spacetime dimensions (i.e.
+ probability theory) allows for exact results to be obtained and removes
+ all complications due to renormalisation etc.
+ This model nevertheless accurately represents the typical combinatoric
+ structure of large order perturbation theory, at least in those cases where
+ the behaviour is known in more interesting field theories.
+ A 
+\begin_inset Quotes eld
+\end_inset
+
+spectral function
+\begin_inset Quotes erd
+\end_inset
+
+ representation of the Green function (similar to the one first introduced
+ by Bender and Wu 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1971,Bender1978"
+
+\end_inset
+
+) is used to capture the non-analyticity of the solutions in the various
+ methods.
+\end_layout
+
+\begin_layout Standard
+The existence of the spectral representation is connected to the branch
+ cut of physical amplitudes on the negative coupling (
+\begin_inset Formula $\lambda$
+\end_inset
+
+) axis.
+ This branch cut is due to the non-existence of the theory at negative couplings
+: the path integral diverges due to a potential unbounded from below.
+ In a higher dimensional field theory this has a simple physical interpretation:
+ the vacuum is unstable and, after tunneling through a barrier, the system
+ rolls down the potential 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Coleman1977"
+
+\end_inset
+
+.
+ For weak coupling the semi-classical approximation is valid and the tunneling
+ is exponentially suppressed, giving an imaginary contribution 
+\begin_inset Formula $\sim\exp\left(-1/\lambda\right)$
+\end_inset
+
+ to the vacuum persistence amplitude which is inherited by the Green function.
+ This exponential behaviour can also be seen in the spectral function.
+\end_layout
+
+\begin_layout Standard
+Dyson 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dyson1952"
+
+\end_inset
+
+ argued that a very similar phenomenon occurs in quantum electrodynamics
+ (QED).
+ In QED physical observables are calculated in a perturbation series of
+ the form 
+\begin_inset Formula $F\left(e^{2}\right)=a_{0}+a_{2}e^{2}+a_{4}e^{4}+\cdots$
+\end_inset
+
+ where 
+\begin_inset Formula $e\sim0.3$
+\end_inset
+
+ is the charge of the electron.
+ Now if one imagines a world where 
+\begin_inset Formula $e^{2}<0$
+\end_inset
+
+, i.e.
+ like charges attract, it is easy to see that the ordinary vacuum is unstable
+ to the production of many electron-positron pairs which separate into clouds
+ of like-charged particles.
+ At weak coupling there is a large tunneling barrier to overcome because
+ one must pay for the rest mass of the pairs and separate them far enough
+ for the wrong-sign Coulomb potential to compensate.
+ Thus there is a finite but exponentially suppressed rate of vacuum decay.
+ A Taylor series expansion in 
+\begin_inset Formula $e^{2}$
+\end_inset
+
+ cannot capture this non-analyticity so the perturbation series must be
+ divergent.
+\end_layout
+
+\begin_layout Standard
+Similarly, the perturbation series in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ diverges for the toy model considered here.
+ Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants can represent physical quantities more accurately than Taylor
+ series because they can develop isolated poles in the complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ plane, however they struggle to capture the strong coupling behaviour at
+ any fixed order in the approximation.
+ Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants are better able to capture the non-analyticities of the Borel
+ transform, however, and the widely used combination Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants give a better global approximation.
+ This occurs because the Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximated Bore transform has poles in the Borel plane, which lead to
+ branch cuts when the Laplace transform is taken to return to physical variables.
+ Similarly, the self-consistent 2PI approximations develop branch point
+ non-analyticities and approximate the exact Green function rather well
+ in the entire complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ plane already at the leading non-trivial truncation.
+ However, the branch cuts in the 2PI case arise because the 2PI Green function
+ obeys self-consistent equations of motion, and is connected to the existence
+ of unphysical solution branches.
+\end_layout
+
+\begin_layout Standard
+A question that naturally arises is: how do these methods compare? Both
+ 2PI and Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ methods have the ability to accurately represent non-analyticities of the
+ exact theory and so out-perform other methods.
+ However, a natural conjecture is that self-consistently derived equations
+ of motion 
+\begin_inset Quotes eld
+\end_inset
+
+know more
+\begin_inset Quotes erd
+\end_inset
+
+ about the analytic structure of the underlying theory than do the generic
+ Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants.
+ Hence we test the hypothesis that the 2PI methods should be more accurate
+ that Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ and, indeed, find this to be the case, at least in certain regimes.
+\end_layout
+
+\begin_layout Standard
+The theory discussed here, although admittedly a toy model, also has physical
+ relevance.
+ Beneke and Moch found this toy model as the theory governing the zero mode
+ of scalar fields in Euclidean de Sitter space 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beneke2013"
+
+\end_inset
+
+.
+ They performed an analysis very similar to this one, finding that a non-perturb
+ative treatment is necessary and comparing 2PI and (Borel-)Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ resummed approximations.
+ However, they present this analysis very briefly as part of a larger discussion
+ of scalar fields in de Sitter space.
+ Further, their comparison of the 2PI and resummed techniques, while correct,
+ is not very detailed.
+ The analysis presented here is a detailed discussion of the interplay between
+ 2PI effective actions and various resummation techniques.
+ Use of the spectral function to quantify the non-analyticities present
+ in the Green function in aid of this comparison is, to the author's knowledge,
+ a new aspect.
+\end_layout
+
+\begin_layout Subsection
+Exact solution
+\end_layout
+
+\begin_layout Standard
+The toy model is a Euclidean quartic theory in zero dimensions, i.e.
+ a probability theory for a single real variable 
+\begin_inset Formula $q$
+\end_inset
+
+ given by the partition function 
+\begin_inset Formula 
+\begin{equation}
+Z\left[K\right]=N\int_{-\infty}^{\infty}\mathrm{d}q\exp\left(-\frac{1}{2}m^{2}q^{2}-\frac{1}{4!}\lambda q^{4}-\frac{1}{2}Kq^{2}\right)
+\end{equation}
+
+\end_inset
+
+with a source 
+\begin_inset Formula $K$
+\end_inset
+
+ for the two point function.
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is a normalisation factor chosen so that 
+\begin_inset Formula $Z\left[0\right]=1$
+\end_inset
+
+.
+ This theory has been discussed before in the context of exact and non-perturbat
+ive methods in field theory (see, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Malbouisson1999,Crutchfield1979"
+
+\end_inset
+
+ and references therein) because, despite the absence of spacetime, the
+ theory possesses a perturbative expansion in terms of Feynman diagrams
+ with the same combinatorial structure as more realistic theories.
+ It was also discussed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beneke2013"
+
+\end_inset
+
+ as an effective field theory for scalar field zero modes in Euclidean de
+ Sitter space.
+\end_layout
+
+\begin_layout Standard
+Attention is restricted to the 
+\begin_inset Formula $m^{2}>0$
+\end_inset
+
+ theory since, though the 
+\begin_inset Formula $m^{2}<0$
+\end_inset
+
+ theory exists and may be interesting for other purposes, it possesses no
+ sensible weak coupling limit and in zero dimensions does not give a broken
+ symmetry phase anyway.
+ In the absence of symmetry breaking there is no need for a source term
+ for 
+\begin_inset Formula $q$
+\end_inset
+
+.
+ The integral diverges for 
+\begin_inset Formula $\mathrm{Re}\lambda<0$
+\end_inset
+
+, but can be defined for all complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ by analytic continuation.
+ Then 
+\begin_inset Formula $Z\left[K\right]$
+\end_inset
+
+ possesses a branch cut along the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis.
+ Physically, this signals the instability of the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ vacuum due to tunneling away from the local minimum at 
+\begin_inset Formula $q\sim0$
+\end_inset
+
+ to 
+\begin_inset Formula $q\sim\pm\sqrt{-6m^{2}/\lambda}$
+\end_inset
+
+ followed by rolling down the inverted quartic potential which is unbounded
+ from below.
+ The branch point at 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ means that the weak coupling perturbation series has zero radius of convergence
+, agreeing with the general analysis of Dyson 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dyson1952"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Introducing the conveniently rescaled variables 
+\begin_inset Formula $k=K/m^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho=3m^{4}/4\lambda$
+\end_inset
+
+, the integral can be performed giving 
+\begin_inset Formula 
+\begin{equation}
+Z\left[K\right]=\frac{2N}{m}\sqrt{\rho\left(1+k\right)}\exp\left(\rho\left(1+k\right)^{2}\right)\mathrm{K}_{1/4}\left(\rho\left(1+k\right)^{2}\right),
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $K_{1/4}\left(\cdots\right)$
+\end_inset
+
+ is a modified Bessel function of the second kind.
+ This expression is valid so long as 
+\begin_inset Formula 
+\begin{equation}
+\mathrm{Re}\left(\sqrt{\rho}\left(1+k\right)\right)>0,
+\end{equation}
+
+\end_inset
+
+ which extends the definition to the entirety of the cut 
+\begin_inset Formula $\lambda$
+\end_inset
+
+-plane.
+ The normalisation factor is 
+\begin_inset Formula 
+\begin{equation}
+N=\frac{m}{2}\frac{\exp\left(-\rho\right)}{\sqrt{\rho}\mathrm{K}_{1/4}\left(\rho\right)},
+\end{equation}
+
+\end_inset
+
+ so finally 
+\begin_inset Formula 
+\begin{equation}
+Z\left[K\right]=\sqrt{1+k}\exp\left(\rho\left[\left(1+k\right)^{2}-1\right]\right)\frac{\mathrm{K}_{1/4}\left(\rho\left(1+k\right)^{2}\right)}{\mathrm{K}_{1/4}\left(\rho\right)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Also define the generating function 
+\begin_inset Formula 
+\begin{equation}
+W\left[K\right]=-\ln Z\left[K\right]
+\end{equation}
+
+\end_inset
+
+ and note that connected correlations are found by taking derivatives of
+ 
+\begin_inset Formula $W$
+\end_inset
+
+.
+ For example, 
+\begin_inset Formula 
+\begin{align}
+\frac{\partial}{\partial K}W\left[K\right] & =\frac{1}{2}\left\langle q^{2}\right\rangle _{K}\equiv\frac{1}{2}\bar{G},\label{eq:g-def}\\
+\frac{\partial^{2}}{\partial K^{2}}W\left[K\right] & =-\frac{1}{4}\left(\left\langle q^{4}\right\rangle -\left\langle q^{2}\right\rangle ^{2}\right)_{K}\equiv\frac{1}{4}\left(V^{\left(4\right)}\bar{G}^{4}-2\bar{G}^{2}\right),\label{eq:4pt-vertex-def}
+\end{align}
+
+\end_inset
+
+ where the subscript 
+\begin_inset Formula $K$
+\end_inset
+
+ indicates the average is taken at a fixed value of 
+\begin_inset Formula $K$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $V^{\left(4\right)}$
+\end_inset
+
+ are the proper two and four point functions respectively.
+ To lowest order in perturbation theory and with 
+\begin_inset Formula $K=0$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{G}=1/m^{2}+\mathcal{O}\left(\lambda\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $V^{\left(4\right)}=\lambda+\mathcal{O}\left(\lambda^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The exact value of 
+\begin_inset Formula $W\left[K\right]$
+\end_inset
+
+ is easily obtained directly from the definition, giving 
+\begin_inset Formula 
+\begin{align}
+W\left[K\right] & =-\frac{1}{2}\ln\left(1+k\right)-\rho\left[\left(1+k\right)^{2}-1\right]-\ln\mathrm{K}_{1/4}\left(\rho\left(1+k\right)^{2}\right)+\ln\mathrm{K}_{1/4}\left(\rho\right).
+\end{align}
+
+\end_inset
+
+ By direct differentiation the exact two point correlation function is 
+\begin_inset Formula 
+\begin{align}
+m^{2}\left\langle q^{2}\right\rangle _{K} & =4\rho\left(1+k\right)\left[\frac{\mathrm{K}_{3/4}\left(\rho\left(1+k\right)^{2}\right)}{\mathrm{K}_{1/4}\left(\rho\left(1+k\right)^{2}\right)}-1\right],
+\end{align}
+
+\end_inset
+
+ or for the original (
+\begin_inset Formula $K=0$
+\end_inset
+
+) theory,
+\begin_inset Formula 
+\begin{align}
+m^{2}\bar{G} & =4\rho\left(\frac{\mathrm{K}_{3/4}\left(\rho\right)}{\mathrm{K}_{1/4}\left(\rho\right)}-1\right).\label{eq:exact-G-soln}
+\end{align}
+
+\end_inset
+
+Like 
+\begin_inset Formula $Z$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ possesses a branch cut discontinuity from 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ to 
+\begin_inset Formula $\lambda=-\infty$
+\end_inset
+
+.
+ At 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ one obtains the usual free (Gaussian) theory result 
+\begin_inset Formula $\bar{G}=G_{0}=m^{-2}$
+\end_inset
+
+.
+ In the strong coupling limit, 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{G}\sim\left[2\sqrt{6}\Gamma\left(\frac{3}{4}\right)/\Gamma\left(\frac{1}{4}\right)\right]\lambda^{-1/2}+\mathcal{O}\left(\lambda^{-1}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ is shown in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Gexact}
+\end_layout
+
+\end_inset
+
+, from which the branch cut is obvious.
+ This can also be seen in more detail in the complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ plane as shown in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Gexact-analytic-behaviour}
+\end_layout
+
+\end_inset
+
+.
+ One sees that not only does 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ possess a branch cut, it is analytic in the cut plane and is in fact a
+ Herglotz-Nevanlinna function (i.e.
+ 
+\begin_inset Formula $\bar{G}\left(\lambda\right)^{\star}=\bar{G}\left(\lambda^{\star}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\star$
+\end_inset
+
+ is complex conjugation).
+ This gives rise to an integral representation in terms of a spectral function
+ which can be used in order to quantify the branch cut.
+\end_layout
+
+\begin_layout Standard
+Start with the integral representation for 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ using the Cauchy formula 
+\begin_inset Formula 
+\begin{equation}
+\bar{G}\left(\lambda\right)=\frac{1}{2\pi i}\oint_{C}\frac{\bar{G}\left(\lambda'\right)}{\lambda'-\lambda}\mathrm{d}\lambda',
+\end{equation}
+
+\end_inset
+
+where the contour 
+\begin_inset Formula $C$
+\end_inset
+
+ circles 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ in the counter-clockwise direction and avoids the cut.
+ Deforming the contour to run on the circle at infinity and around the cut
+ and using 
+\begin_inset Formula $\bar{G}\left(\lambda\right)\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $\left|\lambda\right|\to\infty$
+\end_inset
+
+, the integral can be written in terms of a spectral function 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(s\right)=\frac{\bar{G}\left(-s-i\epsilon\right)-\bar{G}\left(-s+i\epsilon\right)}{2\pi i}\Theta\left(s\right)=\frac{\mathrm{Im}\left[\bar{G}\left(-s-i\epsilon\right)\right]}{\pi}\Theta\left(s\right),
+\end{equation}
+
+\end_inset
+
+such that 
+\begin_inset Formula 
+\begin{equation}
+\bar{G}\left(\lambda\right)=\int_{0}^{\infty}\mathrm{d}s\frac{\sigma\left(s\right)}{s+\lambda}.\label{eq:spectral-function-def}
+\end{equation}
+
+\end_inset
+
+Then, 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(\lambda\right)=-\frac{4\sqrt{2}}{m^{2}\pi^{2}}\frac{1}{\mathrm{Im}\left[I_{-\frac{1}{4}}\left(-\rho\right)^{2}-I_{\frac{1}{4}}\left(-\rho\right)^{2}\right]}\Theta\left(\lambda\right),\label{eq:spectral-function-exact}
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $I_{\pm\frac{1}{4}}\left(\rho\right)$
+\end_inset
+
+ are modified Bessel functions of the first kind
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that the physical interpretation of this spectral function is unrelated
+ to the usual one in field theory since, for one thing, there is no such
+ thing as energy in zero dimensions.
+ We consider
+\begin_inset Formula $\sigma\left(s\right)$
+\end_inset
+
+ a purely formal device that gives information about the analytic structure
+ of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $\sigma\left(\lambda\right)$
+\end_inset
+
+ is shown in Figure
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
+\backslash
+ref{fig:sigma-exact}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Expanding 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ in a Taylor series in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ gives 
+\begin_inset Formula 
+\begin{align}
+\bar{G} & =\frac{1}{m^{2}}+\frac{4}{m^{2}}\frac{\sum_{n=1}^{\infty}\frac{1}{\left(n-1\right)!}\left(-\frac{1}{4!}\lambda\right)^{n}2^{2n}\Gamma\left(2n+\frac{1}{2}\right)\frac{1}{m^{4n}}}{\sum_{n=0}^{\infty}\frac{1}{n!}\left(-\frac{1}{4!}\lambda\right)^{n}2^{2n}\Gamma\left(2n+\frac{1}{2}\right)\frac{1}{m^{4n}}}\nonumber \\
+ & =\frac{1}{m^{2}}-\frac{\lambda}{2m^{6}}+\frac{2\lambda^{2}}{3m^{10}}-\frac{11\lambda^{3}}{8m^{14}}+\frac{34\lambda^{4}}{9m^{18}}+\cdots.\label{eq:G-perturbation-series}
+\end{align}
+
+\end_inset
+
+The perturbative approximations 
+\begin_inset Formula $G_{n}$
+\end_inset
+
+ are the 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{n}\right)$
+\end_inset
+
+ truncations of this series.
+ The first few are shown compared to the exact 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:G-pert-series}
+\end_layout
+
+\end_inset
+
+.
+ These approximations apparently converge poorly to the exact solution,
+ and in fact the series diverges.
+ The series for 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ can also be described in terms of Feynman diagrams by the following rules:
+ 
+\end_layout
+
+\begin_layout Enumerate
+Draw all connected graphs with two external lines constructed from lines
+ and four point vertices.
+\end_layout
+
+\begin_layout Enumerate
+Associate to each line a factor 
+\begin_inset Formula $G_{0}=1/m^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Associate to each vertex a factor 
+\begin_inset Formula $-\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Divide by an overall symmetry factor being the order of the symmetry group
+ of the diagram under permutations of lines and vertices.
+\end_layout
+
+\begin_layout Standard
+The diagrams of this series are exactly those seen before in the 
+\begin_inset Formula $\lambda\phi^{4}$
+\end_inset
+
+ theory in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:G-perturbation-series-diagrams"
+
+\end_inset
+
+.
+ The series 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:G-perturbation-series"
+
+\end_inset
+
+ has the form 
+\begin_inset Formula $\bar{G}=m^{-2}\sum_{n=0}^{\infty}c_{n}\left(\lambda/m^{4}\right)^{n}$
+\end_inset
+
+ where the coefficients asymptotically obey 
+\begin_inset Formula $c_{n+1}\sim-\frac{2}{3}nc_{n}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, thus the radius of convergence of the series is zero.
+ This is consistent with the fact that we are perturbing around a branch
+ point of the exact solution: no approximation of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ in terms of analytic functions can converge at 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ because 
+\begin_inset Formula $Z\left[K\right]$
+\end_inset
+
+ is itself undefined for 
+\begin_inset Formula $\mathrm{Re}\lambda<0$
+\end_inset
+
+.
+ The terms of the series start to increase when 
+\begin_inset Formula $c_{n+1}\left(\lambda/m^{4}\right)\sim c_{n}$
+\end_inset
+
+, i.e.
+ 
+\begin_inset Formula $n\sim3m^{4}/2\lambda$
+\end_inset
+
+, meaning the series is useful for 
+\begin_inset Formula $\lambda\ll m^{4}$
+\end_inset
+
+ but fails immediately for a moderately strong coupling 
+\begin_inset Formula $\lambda\approx m^{4}$
+\end_inset
+
+.
+ This is typical asymptotic series behaviour as shown in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Gpert-asymptotic-series}
+\end_layout
+
+\end_inset
+
+.
+ Extrapolating perturbation theory to strong coupling 
+\begin_inset Formula $\lambda\gg m^{4}$
+\end_inset
+
+ is simply impossible, although the exact solution is well behaved there.
+ (In fact 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ can be expanded as 
+\begin_inset Formula $\bar{G}=m^{-2}\sum_{n=1}^{\infty}\tilde{c}_{n}\left(\lambda/m^{4}\right)^{-n/2}$
+\end_inset
+
+, displaying explicitly the branch point at 
+\begin_inset Formula $\lambda=\infty$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Subsection
+Borel summation
+\end_layout
+
+\begin_layout Standard
+The series expansion for 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ diverges for all 
+\begin_inset Formula $\lambda\ne0$
+\end_inset
+
+.
+ This is typical of perturbation series and usually signals some singularity
+ of the exact solution for unphysical values of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Indeed, the toy model does not exist for 
+\begin_inset Formula $\mathrm{Re}\lambda<0$
+\end_inset
+
+ and the exact solution possesses a branch cut on the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis, a feature which cannot be reproduced in any order of perturbation
+ theory.
+ However, the perturbation series is asymptotic and does contain true informatio
+n about the exact solution, even if 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is large enough that the series is not useful practically.
+ Because of the ubiquity of this phenomenon, mathematicians have invented
+ a number of series summation techniques which assign a finite value to
+ certain types of divergent series and which obey certain consistency properties
+ (e.g.
+ the value assigned to a convergent series is just its na
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{i}
+\end_layout
+
+\end_inset
+
+ve sum).
+ This section discusses Borel summation, which is capable of summing factorially
+ divergent series like 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:G-perturbation-series"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Suppose that 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}$
+\end_inset
+
+ is a divergent series but that the 
+\emph on
+Borel transform
+\emph default
+ of the series, defined as 
+\begin_inset Formula 
+\begin{equation}
+\phi\left(x\right)=\sum_{n=0}^{\infty}\frac{a_{n}x^{n}}{n!},
+\end{equation}
+
+\end_inset
+
+ converges for sufficiently small 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ Then, if the integral 
+\begin_inset Formula 
+\begin{equation}
+B\left(x\right)=\int_{0}^{\infty}\mathrm{e}^{-t}\phi\left(xt\right)\mathrm{d}t\label{eq:borel-sum}
+\end{equation}
+
+\end_inset
+
+exists the 
+\emph on
+Borel sum
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1999,Ellis1996,Dorigoni2014"
+
+\end_inset
+
+ of the divergent series is defined as 
+\begin_inset Formula $\mathcal{B}\left[\sum_{n=0}^{\infty}a_{n}\right]\equiv B\left(1\right)$
+\end_inset
+
+.
+ This definition is justified by substituting the series for 
+\begin_inset Formula $\phi\left(xt\right)$
+\end_inset
+
+ into the integral and evaluating term-wise and noting that 
+\begin_inset Formula $B\left(x\right)\sim\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+.
+ The main drawback of Borel summation is that one must know the precise
+ form of 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+ to compute 
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+, which is rarely the case in field theory.
+ For this reason Borel summation cannot be usefully applied directly in
+ practice.
+ However, one may use Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants as discussed in the next section to recast the Borel transform
+ in a useful way.
+ In the case of the toy model, though, one can verify that the perturbation
+ series is Borel summable and the Borel sum is equal to the exact solution
+ (the computation is unenlightening and best done by a computer algebra
+ package).
+\end_layout
+
+\begin_layout Standard
+Note that key to Borel-summability of the perturbation series is the alternating
+ sign 
+\begin_inset Formula $\left(-1\right)^{n}$
+\end_inset
+
+ of the 
+\begin_inset Formula $n$
+\end_inset
+
+-th order term.
+ To see this consider the two series 
+\begin_inset Formula 
+\begin{align}
+S_{1} & =\sum_{n=0}^{\infty}\left(-\lambda\right)^{n}n!,\\
+S_{2} & =\sum_{n=0}^{\infty}\lambda^{n}n!,
+\end{align}
+
+\end_inset
+
+ which differ only by the alternating sign.
+ The Borel transforms 
+\begin_inset Formula $\phi_{1,2}\left(x\right)$
+\end_inset
+
+ are 
+\begin_inset Formula 
+\begin{align}
+\phi_{1}\left(x\right) & =\sum_{n=0}^{\infty}\left(-\lambda x\right)^{n}=\frac{1}{1+\lambda x},\\
+\phi_{2}\left(x\right) & =\sum_{n=0}^{\infty}\left(\lambda x\right)^{n}=\frac{1}{1-\lambda x},
+\end{align}
+
+\end_inset
+
+ and the Borel sums are 
+\begin_inset Formula 
+\begin{align}
+\mathcal{B}\left[S_{1}\right]=B_{1}\left(1\right) & =\int_{0}^{\infty}\frac{\mathrm{e}^{-t}}{1+\lambda t}\mathrm{d}t,\\
+\mathcal{B}\left[S_{2}\right]=B_{2}\left(1\right) & =\int_{0}^{\infty}\frac{\mathrm{e}^{-t}}{1-\lambda t}\mathrm{d}t.
+\end{align}
+
+\end_inset
+
+In the first case the integral exists and 
+\begin_inset Formula $\mathcal{B}\left[S_{1}\right]=\lambda^{-1}\mathrm{e}^{1/\lambda}\Gamma\left(0,\frac{1}{\lambda}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\Gamma\left(a,b\right)=\int_{b}^{\infty}t^{a-1}\mathrm{e}^{-t}\mathrm{d}t$
+\end_inset
+
+ is the incomplete gamma function.
+ However, the second integral hits a pole at 
+\begin_inset Formula $t=1/\lambda$
+\end_inset
+
+.
+ There is no natural prescription for avoiding the pole, which leads to
+ an ambiguity in the sum of 
+\begin_inset Formula $\pm\pi i\lambda^{-1}\mathrm{e}^{-1/\lambda}$
+\end_inset
+
+.
+ This is a non-perturbative ambiguity called a 
+\emph on
+renormalon
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Beneke1999"
+
+\end_inset
+
+.
+ In every known case where this arises in field theory the renormalon is
+ connected to a non-perturbative finite action solution of the field equations,
+ i.e.
+ an instanton or soliton, and a correct evaluation of the path integral
+ which sums over 
+\emph on
+all
+\emph default
+ saddle points (not just perturbative ones) removes the ambiguity.
+ Key to the practical application of Borel summation is the location and
+ classification of all renormalons in a given theory 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Crutchfield1979"
+
+\end_inset
+
+.
+ Sophisticated techniques have been developed to deal with this situation
+ which are beyond the scope of this thesis 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dorigoni2014,Dunne2014,Basar2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation and Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ resummation
+\end_layout
+
+\begin_layout Subsection
+2PI Results
+\end_layout
+
+\begin_layout Subsection
+Hybrid 2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
