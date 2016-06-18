@@ -9019,8 +9019,1406 @@ status open
  resummation
 \end_layout
 
+\begin_layout Standard
+Borel summation is limited in its usefulness because one often only knows
+ a few low order terms of perturbation theory (as well as the possibility
+ of renormalons).
+ Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation is a technique which often improves perturbation series and
+ is far more useful in practice, and can be combined with Borel summation.
+ Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants are rational polynomials which generally converge rapidly
+ to the function being fitted, are useful for numerical computation, and
+ help to estimate the location of singularities of the function in the complex
+ plane.
+ Many software packages include standard routines for evaluating Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants, for instance the 
+\noun on
+PadeApproximant
+\noun default
+ function in 
+\noun on
+Mathematica
+\noun default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+C,TM,R...?
+\end_layout
+
+\end_inset
+
+.
+ This section applies Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants to both the Green function and its Borel transform, finding
+ that the latter approach is clearly the better one.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\left(N,M\right)$
+\end_inset
+
+-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximant of a function 
+\begin_inset Formula $\sum_{n=0}^{\infty}a_{n}x^{n}$
+\end_inset
+
+ is given by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1999"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+P_{M}^{N}\left(x\right)=\frac{\sum_{n=0}^{N}A_{n}x^{n}}{\sum_{n=0}^{M}B_{n}x^{n}},
+\end{equation}
+
+\end_inset
+
+where without loss of generality one takes 
+\begin_inset Formula $B_{0}=1$
+\end_inset
+
+.
+ The remaining 
+\begin_inset Formula $N+M+1$
+\end_inset
+
+ coefficients are chosen so that the Taylor series of 
+\begin_inset Formula $P_{M}^{N}\left(x\right)$
+\end_inset
+
+ matches the perturbation series up to 
+\begin_inset Formula $\mathcal{O}\left(x^{N+M}\right)$
+\end_inset
+
+.
+ Due to the denominator, Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants develop poles in the complex 
+\begin_inset Formula $x$
+\end_inset
+
+-plane, allowing the close approximation of more singular functions than
+ Taylor series are capable of.
+ Examples of the use of Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants in field theory can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Ellis1996,Kraemmer2004"
+
+\end_inset
+
+ and references therein.
+\end_layout
+
+\begin_layout Standard
+To find the approximants to 
+\begin_inset Formula $m^{2}\bar{G}$
+\end_inset
+
+, with 
+\begin_inset Formula $x=\lambda/m^{4}$
+\end_inset
+
+, one must restrict attention to the approximants where 
+\begin_inset Formula $M=N+1$
+\end_inset
+
+.
+ This guarantees that 
+\begin_inset Formula $P_{M}^{N}\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+.
+ The usual diagonal approximants (
+\begin_inset Formula $N=M$
+\end_inset
+
+) would give an unphysical constant 
+\begin_inset Formula $P_{N}^{N}\to A_{N}/B_{N}\neq0$
+\end_inset
+
+ as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+.
+ Note that it is impossible to match the true 
+\begin_inset Formula $1/\sqrt{\lambda}$
+\end_inset
+
+ behaviour of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+ using Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants centred on the origin.
+ The best that is possible in this limit is 
+\begin_inset Formula $\sim\lambda^{-1}$
+\end_inset
+
+.
+ (As it happens, using 
+\begin_inset Formula $x\propto\sqrt{\lambda}$
+\end_inset
+
+ does not allow one to resolve this issue: the same approximants are found
+ only with 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ everywhere in place of 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ This is because the 
+\begin_inset Formula $1/\sqrt{\lambda}$
+\end_inset
+
+ behaviour is due to the branch point at infinity, which is infinitely far
+ from the origin where the Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants are matched to perturbation theory.
+ Low order Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants can extract information about the branch point near the origin,
+ but evidently not the one at infinity.) The first five approximants for
+ 
+\begin_inset Formula $m^{2}\bar{G}$
+\end_inset
+
+ are shown in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:pade-approximants"
+
+\end_inset
+
+ and the first three are plotted in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Pade-approx}
+\end_layout
+
+\end_inset
+
+ with comparison to the exact 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+.
+ Note that the existence of the integral representation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:spectral-function-def"
+
+\end_inset
+
+ for 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ implies that 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ is a 
+\emph on
+Stieltjes
+\emph default
+ function, meaning one can prove convergence properties for the Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants as 
+\begin_inset Formula $N,M\to\infty$
+\end_inset
+
+, though this analysis is not presented here (see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1999"
+
+\end_inset
+
+ for examples in other contexts).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:pade-approximants"
+
+\end_inset
+
+First few Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants for 
+\begin_inset Formula $m^{2}\bar{G}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{P_{N+1}^{N}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{\begin{aligned}[t]\frac{1}{1+\frac{\lambda}{2m^{4}}}\end{aligned}
+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{\begin{aligned}[t]\frac{1+\frac{2\lambda}{m^{4}}}{1+\frac{5\lambda}{2m^{4}}+\frac{7\lambda^{2}}{12m^{8}}}\end{aligned}
+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{\begin{aligned}[t]\frac{1+\frac{16\lambda}{3m^{4}}+\frac{59\lambda^{2}}{12m^{8}}}{1+\frac{35\lambda}{6m^{4}}+\frac{43\lambda^{2}}{6m^{8}}+\frac{77\lambda^{3}}{72m^{12}}}\end{aligned}
+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{\begin{aligned}[t]\frac{1+\frac{10\lambda}{m^{4}}+\frac{155\lambda^{2}}{6m^{8}}+\frac{15\lambda^{3}}{m^{12}}}{1+\frac{21\lambda}{2m^{4}}+\frac{365\lambda^{2}}{12m^{8}}+\frac{295\lambda^{3}}{12m^{12}}+\frac{385\lambda^{4}}{144m^{16}}}\end{aligned}
+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topspace="default" interlinespace="default">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ensuremath{\begin{aligned}[t]\frac{1+\frac{16\lambda}{m^{4}}+\frac{315\lambda^{2}}{4m^{8}}+\frac{1190\lambda^{3}}{9m^{12}}+\frac{7945\lambda^{4}}{144m^{16}}}{1+\frac{33\lambda}{2m^{4}}+\frac{259\lambda^{2}}{3m^{8}}+\frac{11935\lambda^{3}}{72m^{12}}+\frac{14315\lambda^{4}}{144m^{16}}+\frac{7315\lambda^{5}}{864m^{20}}}\end{aligned}
+}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $\left(N,N+1\right)$
+\end_inset
+
+-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximant can also be written as 
+\begin_inset Formula 
+\begin{equation}
+P_{N+1}^{N}=\sum_{i=0}^{N}\frac{r_{i}}{\lambda-p_{i}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ are the 
+\begin_inset Formula $i$
+\end_inset
+
+-th residue and pole respectively.
+ Note that since all of the coefficients in the denominators of Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:pade-approximants"
+
+\end_inset
+
+ are positive and real, all of the poles must either be on the negative
+ real axis or they must be complex and come in complex conjugate pairs.
+ Numerical experiments suggest that all the poles lie on the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis, though the author is not aware of a proof of this for all 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ Assuming this is generally true, Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants give a representation of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ which approximates the continuous spectral function by a sum of delta functions
+ 
+\begin_inset Formula 
+\begin{equation}
+\sigma\left(s\right)\approx\sigma_{N}\left(s\right)\equiv\sum_{i=0}^{N}r_{i}\delta\left(s+p_{i}\right).
+\end{equation}
+
+\end_inset
+
+ As 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ the poles become denser and fill the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis, eventually merging into a continuous branch cut.
+ Similarly the spectral function turns into a dense sum of delta functions
+ which, when considered acting on any sufficiently smooth test function,
+ smooths into a continuous function.
+ The first few 
+\begin_inset Formula $\sigma_{N}$
+\end_inset
+
+ are shown next to the exact spectral function in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Pade-spectral-function}
+\end_layout
+
+\end_inset
+
+ for comparison.
+\end_layout
+
+\begin_layout Standard
+Now consider Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation of the Borel transform of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+.
+ This is aided by noting the following connections between the Borel transform
+ 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+v^{-1}\sigma\left(\frac{\lambda}{v}\right)\xleftarrow[x\to v]{\mathcal{L}^{-1}}\phi\left(x\right)\xrightarrow[x\to s]{\mathcal{L}}s^{-1}\bar{G}\left(\frac{\lambda}{s}\right).
+\end{equation}
+
+\end_inset
+
+That is, the Green function is related to the Laplace transform of the Borel
+ transform, while the spectral function is related to the inverse Laplace
+ transform of the Borel transform.
+ These relations can be shown using the definitions of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ and the integral representation of the (inverse) Laplace transform.
+ This allows one to extract the spectral function directly from the Borel
+ transform.
+ Note that each pole of 
+\begin_inset Formula $\phi$
+\end_inset
+
+ yields by the inverse Laplace transform a term of the form 
+\begin_inset Formula $\lambda^{-1}\exp\left(-k/\lambda\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, where 
+\begin_inset Formula $k$
+\end_inset
+
+ is controlled by the location of the pole.
+ The general Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation for 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is a superposition of terms of this form.
+\end_layout
+
+\begin_layout Standard
+The first few approximants to 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ are shown in Figures 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Gbar-PadeBorel}
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:sigma-PadeBorel}
+\end_layout
+
+\end_inset
+
+ respectively.
+ The low order Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ Green functions are reasonably accurate (within a few percent for 
+\begin_inset Formula $\lambda\leq5m^{4}$
+\end_inset
+
+) but the spectral functions are not approximated particularly well.
+ Certain approximants to 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ oscillate erratically and even become negative for certain values of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Except for the fact that the best approximant is the highest order one
+ plotted, there is no clear sense in which the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximations appear to converge to 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ However, even this bad approximation is at least a continuous function,
+ as opposed to a sum of delta functions.
+\end_layout
+
 \begin_layout Subsection
 2PI Results
+\end_layout
+
+\begin_layout Standard
+The 2PI effective action in the toy model is
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[G\right]=W\left[K\right]-K\partial_{K}W\left[K\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $K$
+\end_inset
+
+ is solved for in terms of 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma\left[G\right]$
+\end_inset
+
+ obeys the equation of motion 
+\begin_inset Formula 
+\begin{equation}
+\partial_{G}\Gamma\left[G\right]=-\frac{1}{2}K.
+\end{equation}
+
+\end_inset
+
+Explicitly, 
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[G\right]=\frac{1}{2}\ln\left(G^{-1}\right)+\frac{1}{2}m^{2}G+\gamma_{2\mathrm{PI}}+\mathrm{const.},
+\end{equation}
+
+\end_inset
+
+ where 
+\begin_inset Formula $-\gamma_{2\mathrm{PI}}$
+\end_inset
+
+ is (minus due to Euclidean conventions) the sum of two particle irreducible
+ vacuum graphs, i.e.
+ those graphs which do not fall apart when any two lines are cut, where
+ the lines are given by 
+\begin_inset Formula $G$
+\end_inset
+
+ and vertices by 
+\begin_inset Formula $-\lambda$
+\end_inset
+
+.
+ The equation of motion in the absence of sources is 
+\begin_inset Formula 
+\begin{equation}
+G^{-1}=m^{2}+2\partial_{G}\gamma_{2\mathrm{PI}},\label{eq:2pi-G-eom}
+\end{equation}
+
+\end_inset
+
+which is Dyson's equation where the second term on the right hand side,
+ 
+\begin_inset Formula $-\Sigma=2\partial_{G}\gamma_{2\mathrm{PI}}$
+\end_inset
+
+, represents the exact one-particle irreducible self-energy of the propagator
+ 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+By power counting (or counting line ends in the corresponding diagrams),
+ 
+\begin_inset Formula $\gamma_{2\mathrm{PI}}=\sum_{n=0}^{\infty}\gamma_{n}\left(\lambda G^{2}\right)^{n}$
+\end_inset
+
+.
+ It is possible to derive the 
+\begin_inset Formula $\gamma_{n}$
+\end_inset
+
+ by considering the symmetry factors of the two particle irreducible Feynman
+ diagrams, but they can also be obtained using knowledge of the exact solution
+ 
+\begin_inset Formula $G=\bar{G}$
+\end_inset
+
+.
+ Substituting 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ into the equation of motion and the expansion for 
+\begin_inset Formula $\gamma_{2\text{PI}}$
+\end_inset
+
+, expanding about 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ and matching powers of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, one finds 
+\begin_inset Formula 
+\begin{align}
+\gamma_{2\mathrm{PI}} & =\frac{G^{2}\lambda}{8}-\frac{G^{4}\lambda^{2}}{48}+\frac{G^{6}\lambda^{3}}{48}-\frac{5G^{8}\lambda^{4}}{128}+\frac{101G^{10}\lambda^{5}}{960}-\frac{93G^{12}\lambda^{6}}{256}\nonumber \\
+ & +\frac{8143G^{14}\lambda^{7}}{5376}-\frac{271217G^{16}\lambda^{8}}{36864}+\frac{374755G^{18}\lambda^{9}}{9216}-\frac{5151939G^{20}\lambda^{10}}{20480}\nonumber \\
+ & +\frac{697775057G^{22}\lambda^{11}}{405504}-\frac{3802117511G^{24}\lambda^{12}}{294912}+\frac{201268707239G^{26}\lambda^{13}}{1916928}\nonumber \\
+ & -\frac{11440081763125G^{28}\lambda^{14}}{12386304}+\frac{5148422676667G^{30}\lambda^{15}}{589824}-\frac{1665014342007385G^{32}\lambda^{16}}{18874368}\nonumber \\
+ & +\frac{4231429245358235G^{34}\lambda^{17}}{4456448}-\frac{921138067678697395G^{36}\lambda^{18}}{84934656}+\mathcal{O}\left(\lambda^{19}G^{38}\right).\label{eq:gamma2pi-series}
+\end{align}
+
+\end_inset
+
+The author does not know of any closed form expression for either the coefficien
+ts of this series or its sum (implicit analytic expressions can be derived;
+ however, these require the inversion of 
+\begin_inset Formula $G=\bar{G}\left(\lambda\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $\lambda\left(G\right)$
+\end_inset
+
+, which is not known in closed form).
+ However, after the first few terms the coefficients are well approximated
+ by 
+\begin_inset Formula $\gamma_{i+1}\sim-\frac{2}{3}i\gamma_{i}$
+\end_inset
+
+, the same as for the perturbation series.
+ This has the hallmark of an asymptotic series and, like perturbation theory,
+ the 2PI series does not converge.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Discuss Kleinert's recursion formula...?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The first non-trivial contribution to the equation of motion gives 
+\begin_inset Formula 
+\begin{equation}
+G_{\left(1\right)}^{-1}=m^{2}+\frac{\lambda}{2}G_{\left(1\right)},
+\end{equation}
+
+\end_inset
+
+ where the subscript 
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+ indicates terms of order 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{1}\right)$
+\end_inset
+
+ have been kept.
+ This has two solutions 
+\begin_inset Formula 
+\begin{equation}
+G_{\left(1\right)}=\frac{-m^{2}\pm\sqrt{m^{4}+2\lambda}}{\lambda}.
+\end{equation}
+
+\end_inset
+
+ One of these solutions is unphysical and the 
+\begin_inset Formula $+$
+\end_inset
+
+ sign must be chosen.
+ As 
+\begin_inset Formula $\lambda\to0$
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+G_{\left(1\right)}\to\frac{1}{m^{2}}-\frac{\lambda}{2m^{6}}+\frac{\lambda^{2}}{2m^{10}}+\mathcal{O}\left(\lambda^{3}\right),
+\end{equation}
+
+\end_inset
+
+ which matches perturbation theory up to 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{2}\right)$
+\end_inset
+
+ terms as expected.
+ However, unlike perturbation theory, the strong coupling limit 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+ exists and gives 
+\begin_inset Formula 
+\begin{equation}
+G_{\left(1\right)}\to\sqrt{\frac{2}{\lambda}}-\frac{m^{2}}{\lambda}+\frac{m^{4}}{\left(2\lambda\right)^{3/2}}+\mathcal{O}\left(\frac{1}{\lambda^{5/2}}\right).
+\end{equation}
+
+\end_inset
+
+ This series has the correct form in powers of 
+\begin_inset Formula $\lambda^{-1/2}$
+\end_inset
+
+, though the leading coefficient is incorrect by 
+\begin_inset Formula $\approx15\%$
+\end_inset
+
+, and the sub-leading coefficients are incorrect by 
+\begin_inset Formula $\approx40\%$
+\end_inset
+
+, 
+\begin_inset Formula $70\%$
+\end_inset
+
+ and 
+\begin_inset Formula $100\%$
+\end_inset
+
+ etc.
+ This level of accuracy is remarkable considering the simple nature of the
+ approximation and the fact that 
+\begin_inset Formula $\gamma_{2\text{PI}}$
+\end_inset
+
+ was truncated at leading order in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+! 
+\begin_inset Formula $G_{\left(1\right)}$
+\end_inset
+
+ is a much more uniform approximation to 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ than the perturbative approximation 
+\begin_inset Formula $m^{-2}-\lambda/2m^{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This uniformity is possible because of the branch cut 
+\begin_inset Formula $G_{\left(1\right)}$
+\end_inset
+
+ possesses on the negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis.
+ The discontinuity across the cut 
+\begin_inset Formula 
+\begin{equation}
+G_{\left(1\right)}\left(\lambda+i\epsilon\right)-G_{\left(1\right)}\left(\lambda-i\epsilon\right)=2i\frac{\sqrt{-m^{4}-2\lambda}}{\lambda}\Theta\left(-\lambda-\frac{m^{4}}{2}\right),
+\end{equation}
+
+\end_inset
+
+ gives the spectral function 
+\begin_inset Formula 
+\begin{equation}
+\sigma_{\left(1\right)}\left(\lambda\right)=\frac{\sqrt{-m^{4}+2\lambda}}{\pi\lambda}\Theta\left(\lambda-\frac{m^{4}}{2}\right),\label{eq:sigma-2loop-2pi-approx}
+\end{equation}
+
+\end_inset
+
+which is a far better approximation to the exact spectral function than
+ obtained from any of the other techniques, as can be seen from Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:sigma-2pi-2loop}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+All of the first order approximations are shown in Figure
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
+\backslash
+ref{fig:Gbar-all-first-order-approxs}
+\end_layout
+
+\end_inset
+
+.
+ Note that for 
+\begin_inset Formula $\lambda/m^{4}\geq0$
+\end_inset
+
+ the best approximation is the 2PI, followed by the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+, then by Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+, then perturbation theory last of all.
+ The situation for negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is complicated.
+ The best approximation overall is the 2PI, though it has an unphysical
+ cusp where the branch cut starts (
+\begin_inset Formula $\lambda/m^{4}=-1/2$
+\end_inset
+
+ in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:Gbar-all-first-order-approxs}
+\end_layout
+
+\end_inset
+
+).
+ It appears the 2PI approximation trades sensitivity to the exponentially
+ small portion of 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ in exchange for a better global approximation.
+ The Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation is good at small negative 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ but hits a pole at 
+\begin_inset Formula $\lambda/m^{4}=-2$
+\end_inset
+
+ and there loses all validity.
+ The Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation is smooth and more accurate than the 2PI near the peak of
+ 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+, but eventually becomes invalid, even negative, at sufficiently large negative
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ (
+\begin_inset Formula $\lambda/m^{4}\lesssim-5.37$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+At 
+\begin_inset Formula $n$
+\end_inset
+
+-th order, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-G-eom"
+
+\end_inset
+
+ is a degree 
+\begin_inset Formula $2n$
+\end_inset
+
+ polynomial in 
+\begin_inset Formula $G$
+\end_inset
+
+ which has 
+\begin_inset Formula $2n$
+\end_inset
+
+ roots, only one of which is physical.
+ For 
+\begin_inset Formula $n=2$
+\end_inset
+
+ there are analytical expressions for the roots, though they are very bulky,
+ and for 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-G-eom"
+
+\end_inset
+
+ must be solved numerically.
+ Picking out the correct root for a given value of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is tricky in general and left to the reader.
+ However, one can see on general grounds that truncations of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-G-eom"
+
+\end_inset
+
+ give a singular perturbation theory in 
+\begin_inset Formula $\lambda$
+\end_inset
+
+: at 
+\begin_inset Formula $\lambda=0$
+\end_inset
+
+ the physical solution starts at 
+\begin_inset Formula $G_{0}$
+\end_inset
+
+ and the spurious solutions flow in from infinity as inverse powers of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ as 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ increases to finite values.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Also note that at least one of the spurious solutions (and always an odd
+ number of them) are real since the coefficients in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-G-eom"
+
+\end_inset
+
+ are real and complex solutions must occur in conjugate pairs.
+\end_layout
+
+\end_inset
+
+ At strong coupling the roots generically approach each other and one must
+ carefully track them through the complex plane.
+ The possibility that a resummation of the 2PI series would remove some
+ or all of these spurious solutions is examined using two potential methods
+ in the next section with mixed results.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -9034,6 +10432,394 @@ status open
 \backslash
 'e
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Since the series of 2PI diagrams is asymptotic, one may use a series summation
+ method to improve convergence.
+ Note that this is logically independent of the resummations embodied in
+ the 2PI approximation itself.
+ This section studies the use of Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ summation of the action term 
+\begin_inset Formula $\gamma_{2\text{PI}}$
+\end_inset
+
+ or the equation of motion term 
+\begin_inset Formula $\partial_{G}\gamma_{2\text{PI}}$
+\end_inset
+
+.
+ First, consider Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ summation of the action which matches the series expansion up to order
+ 
+\begin_inset Formula $N+M$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[G\right]=\frac{1}{2}\ln\left(G^{-1}\right)+\frac{1}{2}m^{2}G+\frac{\sum_{n=0}^{N}A_{n}^{\left(\gamma\right)}\left(\lambda G^{2}\right)^{n}}{\sum_{n=0}^{M}B_{n}^{\left(\gamma\right)}\left(\lambda G^{2}\right)^{n}}+\mathrm{const.}
+\end{equation}
+
+\end_inset
+
+The equation of motion becomes 
+\begin_inset Formula 
+\begin{align}
+G^{-1} & =m^{2}+2\frac{\mathrm{d}}{\mathrm{d}G}\frac{\sum_{n=0}^{N}A_{n}^{\left(\gamma\right)}\left(\lambda G^{2}\right)^{n}}{\sum_{n=0}^{M}B_{n}^{\left(\gamma\right)}\left(\lambda G^{2}\right)^{n}}\nonumber \\
+ & =m^{2}+\frac{4\sum_{n=0}^{N}\sum_{k=0}^{M}\left(n-k\right)A_{n}^{\left(\gamma\right)}B_{k}^{\left(\gamma\right)}\lambda^{n+k}G^{2\left(n+k\right)-1}}{\left[\sum_{n=0}^{M}B_{n}^{\left(\gamma\right)}\left(\lambda G^{2}\right)^{n}\right]^{2}}.\label{eq:hybrid-attempt-1}
+\end{align}
+
+\end_inset
+
+Multiplying by the denominator this becomes a polynomial equation of degree
+ 
+\begin_inset Formula $2\left(N+M\right)$
+\end_inset
+
+ as expected.
+ This equation will have 
+\begin_inset Formula $2\left(N+M\right)-1$
+\end_inset
+
+ spurious solutions as does the ordinary 2PI approximation of matching order.
+ To take a specific example, consider 
+\begin_inset Formula $\gamma_{2\text{PI}}$
+\end_inset
+
+ up to 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{4}\right)$
+\end_inset
+
+ and the matching 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+- and 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants: 
+\begin_inset Formula 
+\begin{align}
+\gamma_{2\text{PI}} & =\frac{G^{2}\lambda}{8}-\frac{G^{4}\lambda^{2}}{48}+\frac{G^{6}\lambda^{3}}{48}-\frac{5G^{8}\lambda^{4}}{128}+\cdots\\
+ & \approx\frac{\frac{G^{2}\lambda}{8}+\frac{113G^{4}\lambda^{2}}{480}}{1+\frac{41G^{2}\lambda}{20}+\frac{7G^{4}\lambda^{2}}{40}}\\
+ & \approx\frac{G^{2}\lambda}{8\left(1+\frac{G^{2}\lambda}{6}-\frac{5G^{4}\lambda^{2}}{36}+\frac{113G^{6}\lambda^{3}}{432}\right)}.
+\end{align}
+
+\end_inset
+
+The solution resulting from any of these versions of 
+\begin_inset Formula $\gamma_{2\text{PI}}$
+\end_inset
+
+ cannot be written in closed form, however numerical solutions are shown
+ in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:hybrid-solution}
+\end_layout
+
+\end_inset
+
+ for moderately small 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ (for 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ outside of this range, different roots become relevant).
+ The hybrid solutions are more accurate than the fourth order 2PI solution,
+ although the level of improvement depends strongly on the type of Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximant employed.
+ The trade-off is a loss of accuracy at large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+, as shown in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:hybrid-solution-large-lambda}
+\end_layout
+
+\end_inset
+
+ for the best roots found.
+ Each approximation decays with the correct leading 
+\begin_inset Formula $\lambda^{-1/2}$
+\end_inset
+
+ power, however they differ by 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+ factors which are not negligible.
+ Remarkably, the best approximation of those shown at large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the 
+\begin_inset Formula $\mathcal{O}\left(\lambda\right)$
+\end_inset
+
+ 2PI approximation.
+ For the greater computational expense the 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+-hybrid approximation is not noticeably an improvement at large coupling.
+ The apparent clustering of the 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{4}\right)$
+\end_inset
+
+ 2PI and 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+-hybrid approximations away from the exact value as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+ stems from the minus sign of the leading term in 
+\begin_inset Formula $\partial_{G}\gamma_{2\text{PI}}$
+\end_inset
+
+ in these approximations, suggesting that one should not use approximations
+ with this property.
+\end_layout
+
+\begin_layout Standard
+Next try Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ summing the equation of motion: 
+\begin_inset Formula 
+\begin{equation}
+G^{-1}=m^{2}+2\frac{G^{-1}\sum_{n=1}^{N}A_{n}^{\left(\partial\gamma\right)}\left(\lambda G^{2}\right)^{n}}{\sum_{n=0}^{M}B_{n}^{\left(\partial\gamma\right)}\left(\lambda G^{2}\right)^{n}},\label{eq:hybrid-attempt-2}
+\end{equation}
+
+\end_inset
+
+where the explicit factor of 
+\begin_inset Formula $G^{-1}$
+\end_inset
+
+ on the right hand side simply ensures the self-energy is an odd function
+ of 
+\begin_inset Formula $G$
+\end_inset
+
+ as it must be.
+ This equation of motion is of degree 
+\begin_inset Formula $\max\left(2N,2M+1\right)$
+\end_inset
+
+, which for typical choices of 
+\begin_inset Formula $N$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ results in a rough halving of the number of spurious solutions.
+ To obtain an analytic result consider the first non-trivial approximant,
+ i.e.
+ 
+\begin_inset Formula $N=M=1$
+\end_inset
+
+.
+ The resulting equation of motion is 
+\begin_inset Formula 
+\begin{equation}
+G^{-1}=m^{2}+\frac{1}{2}\frac{\lambda G}{1+\frac{1}{3}\lambda G^{2}},
+\end{equation}
+
+\end_inset
+
+which agrees with the usual 2PI equation of motion up to terms of order
+ 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{3}\right)$
+\end_inset
+
+, however it only has two spurious solutions instead of three.
+ The physical solution obtained by matching at small 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\begin{equation}
+G_{\text{hy}}=\frac{1}{6m^{2}}\left(-1+\frac{36m^{4}-\lambda}{X^{1/3}}-\frac{X^{1/3}}{\lambda}\right),\label{eq:hybrid-soln}
+\end{equation}
+
+\end_inset
+
+ where
+\begin_inset Formula 
+\[
+X=\lambda^{3}-378\lambda^{2}m^{4}+18\lambda m^{2}\sqrt{\lambda\left(-2\lambda^{2}+144m^{8}+429\lambda m^{4}\right)}.
+\]
+
+\end_inset
+
+Indeed, this matches perturbation theory up to 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{3}\right)$
+\end_inset
+
+ terms.
+ However, the large 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ behaviour in this approximation is pathological: 
+\begin_inset Formula 
+\begin{equation}
+G_{\text{hy}}\to-\frac{1}{2m^{2}}+\frac{18m^{2}}{\lambda}+\mathcal{O}\left(\lambda^{-3/2}\right),
+\end{equation}
+
+\end_inset
+
+as 
+\begin_inset Formula $\lambda\to\infty$
+\end_inset
+
+.
+ This reflects the existence of an unphysical branch cut on the positive
+ 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ axis starting at 
+\begin_inset Formula $\lambda/m^{4}=\frac{3}{4}\left(143+19\sqrt{57}\right)\approx214$
+\end_inset
+
+, which 
+\begin_inset Formula $G_{\text{hy}}$
+\end_inset
+
+ has in addition to the expected cuts on the negative axis.
+ The existence of this cut also renders the derivation of the spectral function
+ invalid, meaning that 
+\begin_inset Formula $G_{\text{hy}}$
+\end_inset
+
+ cannot be written in the form 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:spectral-function-def"
+
+\end_inset
+
+.
+ It is not known at this stage whether other forms of Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ summed equations of motion lack these pathologies.
+ Further investigation of hybrid approximation schemes is left to future
+ work.
+\end_layout
+
+\begin_layout Section
+Summary
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch2-Summary"
 
 \end_inset
 
