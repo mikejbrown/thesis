@@ -8391,14 +8391,9 @@ Like
 \end_inset
 
  is shown in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Gexact}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gexact"
 
 \end_inset
 
@@ -8408,14 +8403,9 @@ ref{fig:Gexact}
 \end_inset
 
  plane as shown in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Gexact-analytic-behaviour}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gexact-analytic-behaviour"
 
 \end_inset
 
@@ -8437,6 +8427,205 @@ ref{fig:Gexact-analytic-behaviour}
  is complex conjugation).
  This gives rise to an integral representation in terms of a spectral function
  which can be used in order to quantify the branch cut.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Gexact.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gexact"
+
+\end_inset
+
+
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:exact-G-soln"
+
+\end_inset
+
+ as a function of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ for 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
+ The sign of the imaginary part depends on whether one approaches the 
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+ cut from above or below.
+ Note the imaginary part is exponentially suppressed near the origin because
+ the vacuum decay process is non-perturbative.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Gexact-abs.pdf
+	height 40theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gexact-abs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Gexact-arg.pdf
+	height 40theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gexact-arg"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gexact-analytic-behaviour"
+
+\end_inset
+
+Modulus 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gexact-abs"
+
+\end_inset
+
+ and phase 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gexact-arg"
+
+\end_inset
+
+ of 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:exact-G-soln"
+
+\end_inset
+
+ for 
+\begin_inset Formula $m^{2}=1$
+\end_inset
+
+ in the complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ plane.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8525,19 +8714,68 @@ Note that the physical interpretation of this spectral function is unrelated
 \begin_inset Formula $\sigma\left(\lambda\right)$
 \end_inset
 
- is shown in Figure
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- 
-\backslash
-ref{fig:sigma-exact}
-\end_layout
+ is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigma-exact"
 
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/sigma-exact.pdf
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigma-exact"
+
+\end_inset
+
+Spectral function 
+\begin_inset Formula $\sigma\left(\lambda\right)$
+\end_inset
+
+ of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:spectral-function-exact"
+
+\end_inset
+
+ for 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -8572,21 +8810,70 @@ The perturbative approximations
 \end_inset
 
  in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:G-pert-series}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:G-pert-series"
 
 \end_inset
 
 .
  These approximations apparently converge poorly to the exact solution,
  and in fact the series diverges.
- The series for 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/G-pert-series.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:G-pert-series"
+
+\end_inset
+
+Perturbative approximations to 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ up to 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{5}\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $m=1$
+\end_inset
+
+, compared to the exact solution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The series for 
 \begin_inset Formula $\bar{G}$
 \end_inset
 
@@ -8690,14 +8977,9 @@ reference "eq:G-perturbation-series"
 
 .
  This is typical asymptotic series behaviour as shown in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Gpert-asymptotic-series}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gpert-asymptotic-series"
 
 \end_inset
 
@@ -8720,6 +9002,66 @@ ref{fig:Gpert-asymptotic-series}
 \end_inset
 
 .)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/G-pert-asympt-series.pdf
+	width 75col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gpert-asymptotic-series"
+
+\end_inset
+
+Relative error 
+\begin_inset Formula $\left|\left(G_{n}-\bar{G}\right)/\bar{G}\right|$
+\end_inset
+
+of the 
+\begin_inset Formula $n$
+\end_inset
+
+-th perturbative approximation to 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ for 
+\begin_inset Formula $m=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda=1/4$
+\end_inset
+
+, showing the decreasing then increasing behaviour typical of asymptotic
+ series
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -9322,14 +9664,9 @@ reference "tab:pade-approximants"
 \end_inset
 
  and the first three are plotted in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Pade-approx}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pade-approx"
 
 \end_inset
 
@@ -9382,6 +9719,67 @@ key "Bender1999"
 \end_inset
 
  for examples in other contexts).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Pade-approx.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Pade-approx"
+
+\end_inset
+
+First three Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants to 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+.
+ Note the simple poles developed for 
+\begin_inset Formula $\lambda<0$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9697,18 +10095,70 @@ status open
 \end_inset
 
  are shown next to the exact spectral function in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Pade-spectral-function}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Pade-spectral-function"
 
 \end_inset
 
  for comparison.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/sigma-Pade.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Pade-spectral-function"
+
+\end_inset
+
+Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximations to the spectral function 
+\begin_inset Formula $\sigma\left(\lambda\right)$
+\end_inset
+
+ consist of an increasingly dense set of delta functions.
+ (Note the delta functions have been smoothed for visual purposes only.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -9812,26 +10262,16 @@ The first few approximants to
 \end_inset
 
  are shown in Figures 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Gbar-PadeBorel}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gbar-PadeBorel"
 
 \end_inset
 
  and 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:sigma-PadeBorel}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigma-PadeBorel"
 
 \end_inset
 
@@ -9884,6 +10324,121 @@ status open
 .
  However, even this bad approximation is at least a continuous function,
  as opposed to a sum of delta functions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Gbar-PadeBorel.pdf
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gbar-PadeBorel"
+
+\end_inset
+
+Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximations to the Green function 
+\begin_inset Formula $\bar{G}\left(\lambda\right)$
+\end_inset
+
+ (ratio of approximant / exact).
+ Approximants are calculated by numerical integration of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:borel-sum"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/sigma-PadeBorel.pdf
+	width 100col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigma-PadeBorel"
+
+\end_inset
+
+Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximations to the spectral function 
+\begin_inset Formula $\sigma\left(\lambda\right)$
+\end_inset
+
+ (ratio of approximant / exact).
+ Note that the (2,2) approximant is off scale.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -10175,14 +10730,9 @@ G_{\left(1\right)}\left(\lambda+i\epsilon\right)-G_{\left(1\right)}\left(\lambda
 
 which is a far better approximation to the exact spectral function than
  obtained from any of the other techniques, as can be seen from Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:sigma-2pi-2loop}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sigma-2pi-2loop"
 
 \end_inset
 
@@ -10190,15 +10740,90 @@ ref{fig:sigma-2pi-2loop}
 \end_layout
 
 \begin_layout Standard
-All of the first order approximations are shown in Figure
-\begin_inset Note Note
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
- 
-\backslash
-ref{fig:Gbar-all-first-order-approxs}
+\begin_inset Graphics
+	filename images/ch2/sigma-2pi-2loop.pdf
+	width 100col%
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sigma-2pi-2loop"
+
+\end_inset
+
+Comparison of exact spectral function 
+\begin_inset Formula $\sigma\left(\lambda\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:spectral-function-exact"
+
+\end_inset
+
+ with the two loop 2PI approximation 
+\begin_inset Formula $\sigma_{\left(1\right)}\left(\lambda\right)$
+\end_inset
+
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:sigma-2loop-2pi-approx"
+
+\end_inset
+
+ for 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
+ Already, the simplest nontrivial 2PI truncation gives a much better approximati
+on than perturbation theory or Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants to arbitrary order.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+All of the first order approximations are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gbar-all-first-order-approxs"
 
 \end_inset
 
@@ -10245,14 +10870,9 @@ status open
 \end_inset
 
  in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:Gbar-all-first-order-approxs}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Gbar-all-first-order-approxs"
 
 \end_inset
 
@@ -10313,6 +10933,50 @@ status open
 \end_inset
 
 ).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/Gbar-all-first-order-approxs.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Gbar-all-first-order-approxs"
+
+\end_inset
+
+Comparison of (the real part of) the exact Green function 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+ to each of the approximations discussed to first non-trivial order in each
+ case.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -10550,14 +11214,9 @@ The solution resulting from any of these versions of
 
  cannot be written in closed form, however numerical solutions are shown
  in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:hybrid-solution}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hybrid-solution"
 
 \end_inset
 
@@ -10590,14 +11249,9 @@ status open
 \end_inset
 
 , as shown in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:hybrid-solution-large-lambda}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hybrid-solution-large-lambda"
 
 \end_inset
 
@@ -10643,6 +11297,139 @@ ref{fig:hybrid-solution-large-lambda}
 
  in these approximations, suggesting that one should not use approximations
  with this property.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/hybrid-2pi-soln.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hybrid-solution"
+
+\end_inset
+
+Comparison of exact 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+, first and fourth order 2PI and 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+- and 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+-2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ hybrid solutions at small coupling.
+ The 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+-hybrid solution lies almost on top of the exact solution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch2/hybrid-2pi-soln-large-lambda.pdf
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hybrid-solution-large-lambda"
+
+\end_inset
+
+Comparison of exact 
+\begin_inset Formula $\bar{G}$
+\end_inset
+
+, first and fourth order 2PI and 
+\begin_inset Formula $\left(2,2\right)$
+\end_inset
+
+- and 
+\begin_inset Formula $\left(1,3\right)$
+\end_inset
+
+-2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ hybrid solutions at large coupling.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
