@@ -4241,11 +4241,17 @@ fmf{plain,left}{v1,v2,t,v2,v1}
 fmfdot{v1,v2}
 \backslash
 end{fmfgraph}} 
+\backslash
+nonumber
+\backslash
+
+\backslash
+
 \end_layout
 
 \begin_layout Plain Layout
 
-+
+&+
 \backslash
 frac{1}{6}
 \backslash
@@ -4264,17 +4270,11 @@ fmf{plain,left,tension=0}{v1,v2,v1}
 fmfdot{v1,v2}
 \backslash
 end{fmfgraph}}
-\backslash
-nonumber
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
 
-&+
++
 \backslash
 frac{1}{8}
 \backslash
@@ -4452,17 +4452,11 @@ fmf{plain,left}{v1,v2,v3,t,v3,v2,v1}
 fmfdot{v1,v2,v3} 
 \backslash
 end{fmfgraph}}
-\backslash
-nonumber
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
 
-&+
++
 \backslash
 frac{1}{12}
 \backslash
@@ -4498,12 +4492,18 @@ fmf{plain}{v2,v3}
 \backslash
 fmfdot{v1,v2,v3} 
 \backslash
-end{fmfgraph}} 
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+ 
 \end_layout
 
 \begin_layout Plain Layout
 
-+
+&+
 \backslash
 frac{1}{4}
 \backslash
@@ -4571,17 +4571,11 @@ fmf{plain,left}{v3,t3,v3}
 fmfdot{v1,v2,v3} 
 \backslash
 end{fmfgraph}}
-\backslash
-nonumber
-\backslash
-
-\backslash
-
 \end_layout
 
 \begin_layout Plain Layout
 
-&+
++
 \backslash
 frac{1}{4}
 \backslash
@@ -10824,6 +10818,392 @@ name "sec:ch2-Summary"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+This chapter has reviewed quantum field theory focusing on the functional
+ integral formalism.
+ It has been shown that a common formula for the generating functional can
+ be used for scattering, thermal equilibrium and generic non-equilibrium
+ problems by specifying a choice of time contour.
+ The fundamental objects of field theory are the Green functions which can
+ be straightforwardly connected to physical observables such as densities,
+ currents and so forth.
+ These Green functions can be computed in a perturbation expansion in terms
+ of Feynman diagrams or can be efficiently computed using the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, which were reviewed and explicit derivations given for 
+\begin_inset Formula $n=1,2$
+\end_inset
+
+ and 
+\begin_inset Formula $3$
+\end_inset
+
+ in the case of a generic quartic scalar field theory.
+ Finally, to illustrate the advantages of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA method over resummation methods, the 2PIEA was applied to an exactly
+ solvable toy model and contrasted with Borel, Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ and Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ summation.
+\end_layout
+
+\begin_layout Standard
+The perturbation theory has zero radius of convergence due to a branch cut
+ on the negative coupling (
+\begin_inset Formula $\lambda$
+\end_inset
+
+) axis, a fact which is invisible to perturbation theory.
+ The theory is Borel summable, with the Borel sum giving the exact answer.
+ However, Borel summation alone is not usually this helpful in practice.
+ Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants well describe the Green function at weak coupling, though
+ not at strong coupling.
+ However, the combination of Borel and Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximation yields an effective global approximation scheme for the Green
+ function.
+ The two point Green function of this theory admits a nice integral representati
+on in terms of the spectral function (i.e.
+ discontinuity of the branch cut) which shows that the Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants improve perturbation theory by allowing the spectral function
+ to be approximated as a sum of delta functions and the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ method gives a continuous, albeit erratic and inaccurate, approximation
+ to the spectral function.
+ The 2PI approximation scheme surpasses perturbation theory, Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ and Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants already at the leading non-trivial truncation.
+ Like the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ method, 2PI approximations can develop branch points and represent the
+ spectral function by a continuous distribution.
+ However, the 2PI approximation is quantitatively superior at the leading
+ truncation.
+ A hybrid 2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ scheme was introduced using Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants to partially resum the 2PI diagram series.
+ The quality of the result depends strongly on the type of Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximant used, with the best result found for the diagonal approximant.
+ This hybrid approximation performs considerably better than the comparable
+ 2PI approximation at weak coupling, though not noticeably better at strong
+ coupling.
+ These results are not entirely surprising because while, e.g., the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ method is a widely applicable general 
+\begin_inset Quotes eld
+\end_inset
+
+black box
+\begin_inset Quotes erd
+\end_inset
+
+ method, the self-consistent 2PI equations of motion are derived within
+ a 
+\emph on
+particular
+\emph default
+ field theory of interest.
+ This gives the 2PI method 
+\begin_inset Quotes eld
+\end_inset
+
+insider information,
+\begin_inset Quotes erd
+\end_inset
+
+ from which it should be able to construct a better approximation.
+ This comes at the cost of spurious solutions which must be eliminated and
+ the added difficulty of finding the 2PI effective action in the first place.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are the subject of a rich literature and have found applications in
+ diverse areas from early universe cosmology to nano-electronics (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bergesa,Calzetta2008"
+
+\end_inset
+
+).
+ The virtues of approximation schemes built on 
+\begin_inset Formula $n$
+\end_inset
+
+PI effective actions are often explained in terms of a resummation of an
+ infinite series of perturbative Feynman diagrams which are encapsulated
+ in the non-perturbative Green function 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ and proper vertex functions 
+\begin_inset Formula $V,\cdots,V^{\left(n\right)}$
+\end_inset
+
+, from which the 
+\begin_inset Formula $n$
+\end_inset
+
+PI diagram series is built.
+ However, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are not resummation schemes: they are a self-consistent variational
+ principle.
+ The definition of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA in terms of the Legendre transform is crucial for the self-consistency
+ of the scheme.
+ The immediate practical consequence is that any modification of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA which does not derive from a consistent modified variational principle
+ is very likely to be inconsistent.
+ So for instance, the consistency of recent attempts to improve the symmetry
+ properties of 2PIEAs 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "pilaftsis_symmetry_2013"
+
+\end_inset
+
+ is guaranteed by the existence of a suitable constrained variational principle,
+ however, ad hoc attempts to modify the equations of motion to satisfy symmetrie
+s will fail.
+\end_layout
+
+\begin_layout Standard
+From the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA one obtains a set of coupled integro-differential equations of motion
+ for the 
+\begin_inset Formula $1$
+\end_inset
+
+- through 
+\begin_inset Formula $n$
+\end_inset
+
+-point correlation functions which are similar in spirit to the Schwinger-Dyson
+ or BBGKY equations.
+ However, the 
+\begin_inset Formula $n$
+\end_inset
+
+PI equations of motion are automatically closed and require no further approxima
+tion than a truncation of the diagram series to be used in practice.
+ Further, time evolution of the equations of motion is well behaved compared
+ to other schemes.
+ The reason for this is that the non-linear nature of the equations of motion
+ eliminates the secularities present in perturbation theory (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2004,Bergesa"
+
+\end_inset
+
+).
+ This gives 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs an appealing degree of mechanisation and suitability especially for
+ non-equilibrium time evolution problems.
+ There are two types of outstanding difficulties however, both due to the
+ non-linear nature of the equations of motion.
+ The first is the renormalisation procedure, which has not been discussed
+ in detail here.
+ A renormalisation procedure based on a BPHZ type of analysis will be discussed
+ in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ where it is applied to the symmetry improved 3PIEA.
+ The renormalisation of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA remains an open problem in general, however.
+ The second problem is violation of symmetries by truncations of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ Discussion of this problem and attempts at its resolution form the bulk
+ of the rest of this thesis.
 \end_layout
 
 \end_body
