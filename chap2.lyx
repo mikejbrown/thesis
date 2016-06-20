@@ -3,6 +3,11 @@
 \begin_document
 \begin_header
 \textclass jcuthesis
+\begin_preamble
+\usepackage[draft,subsubsection]{progress}
+\usepackage{braket}
+\usepackage[force]{feynmp-auto}
+\end_preamble
 \options sort&compress
 \use_default_options true
 \master thesis_main.lyx
@@ -33,7 +38,16 @@ theorems-sec
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -96,7 +110,7 @@ status open
 
 
 \backslash
-progress{0}
+progress{30}
 \end_layout
 
 \end_inset
@@ -2888,12 +2902,168 @@ where
  obeys (suppressing arguments)
 \begin_inset Formula 
 \begin{equation}
-\square_{x}\Delta^{<}=i\delta+\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
+\square_{x}\Delta^{<}=\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
 \end{equation}
 
 \end_inset
 
 an equation suitable for numerical solution.
+\end_layout
+
+\begin_layout Standard
+The Green functions contain the physical information of the theory.
+ This can be seen explicitly in the simplifying case of free fields where
+ 
+\begin_inset Formula $\Sigma=0$
+\end_inset
+
+ and the Dyson equation can be solved simply by Fourier transform.
+ Writing
+\begin_inset Formula 
+\begin{equation}
+\Delta^{\left(a\right)}\left(x,y\right)=\int_{p}\mathrm{e}^{-ip\left(x-y\right)}\Delta^{\left(a\right)}\left(p\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\left(a\right)$
+\end_inset
+
+ denotes the Keldysh component, one has 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Calzetta1988"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta^{\mathrm{T}}\left(p\right) & = & \frac{1}{p^{2}-m^{2}+i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),\\
+\Delta^{<}\left(p\right)=\Delta^{>}\left(-p\right) & = & -2\pi i\left[\Theta\left(p^{0}\right)+f\left(p\right)\right]\delta\left(p^{2}-m^{2}\right),\\
+\Delta^{\tilde{\mathrm{T}}}\left(p\right) & = & -\frac{1}{p^{2}-m^{2}-i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta^{<}\left(p\right)=\Delta^{>}\left(-p\right)$
+\end_inset
+
+ follows by Hermiticity of the field 
+\begin_inset Formula $\hat{\phi}$
+\end_inset
+
+, and the fact that the same function 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ is found on all of the right hand sides is due to the fact that the commutator
+ 
+\begin_inset Formula $\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right]$
+\end_inset
+
+ is a c-number, so its expectation value 
+\begin_inset Formula $-i\left\langle \left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right]\right\rangle =\Delta^{>}\left(x,y\right)-\Delta^{<}\left(x,y\right)$
+\end_inset
+
+ is independent of the state.
+ By considering the anticommutator 
+\begin_inset Formula $-i\left\{ \hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right\} =\Delta^{>}\left(x,y\right)+\Delta^{<}\left(x,y\right)$
+\end_inset
+
+ one finds that 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ must be real and even.
+ Another constraint is that 
+\begin_inset Formula $\int_{xy}h^{\star}\left(x\right)i\Delta^{<}\left(x,y\right)h\left(y\right)\geq0$
+\end_inset
+
+ for all real functions 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $f\left(p\right)\geq0$
+\end_inset
+
+.
+ Finally, an equilibrium computation shows that there 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ is just the Bose-Einstein occupation number of the mode 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ naturally has the interpretation of a statistical distribution function
+ which can be extended to arbitrary states.
+ Thus knowledge of the Green function is equivalent to knowledge of the
+ statistical distribution function.
+\end_layout
+
+\begin_layout Standard
+Other observables of the theory are simply related to the Green functions
+ since they are polynomials in the fields and their derivatives.
+ For example, in a theory with 
+\begin_inset Formula $N$
+\end_inset
+
+ scalar fields 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+, 
+\begin_inset Formula $a=1,\cdots,N$
+\end_inset
+
+, with an 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry, the conserved 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ currents are 
+\begin_inset Formula 
+\begin{equation}
+j_{\mu}^{A}=i\left\langle \phi_{a}T_{ab}^{A}\overleftrightarrow{\partial_{\mu}}\phi_{b}\right\rangle ,
+\end{equation}
+
+\end_inset
+
+which can be written in terms of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+ If the theory has a quartic coupling the energy-momentum tensor is 
+\begin_inset Formula 
+\begin{align}
+T_{\mu\nu} & =\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}\vphantom{\left(\frac{1}{2}\right)}\right.\nonumber \\
+ & \left.-\eta_{\mu\nu}\left(\frac{1}{2}\partial_{\rho}\phi_{a}\partial^{\rho}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\right)\right\rangle ,
+\end{align}
+
+\end_inset
+
+which can be written in terms of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ and 
+\begin_inset Formula $G^{\left(4\right)}=\left\langle \mathrm{T}_{C}\left[\phi_{a}\phi_{b}\phi_{c}\phi_{d}\right]\right\rangle $
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -3470,7 +3640,7 @@ TODO:
 
 \begin_layout Plain Layout
 More about the physical meaning/use of Green's functions, Dyson equation
- etc....
+ etc....?
 \end_layout
 
 \end_inset
