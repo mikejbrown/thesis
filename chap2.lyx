@@ -3,11 +3,6 @@
 \begin_document
 \begin_header
 \textclass jcuthesis
-\begin_preamble
-\usepackage[draft,subsubsection]{progress}
-\usepackage{braket}
-\usepackage[force]{feynmp-auto}
-\end_preamble
 \options sort&compress
 \use_default_options true
 \master thesis_main.lyx
@@ -5112,7 +5107,7 @@ Then the equation of motion followed by
  is
 \begin_inset Formula 
 \begin{equation}
-\frac{\delta\Gamma}{\delta\varphi}=-J.
+\frac{\delta\Gamma}{\delta\varphi}=-J.\label{eq:1piea-eom}
 \end{equation}
 
 \end_inset
@@ -5705,7 +5700,7 @@ For reference it is useful to give the 2PIEA for a quartic scalar field
  The classical action is given by
 \begin_inset Formula 
 \begin{equation}
-S\left[\phi\right]=\frac{1}{2}\phi_{a}\left(-\square\delta_{ab}-m_{ab}^{2}\right)\phi_{b}-\frac{1}{3!}g_{abc}\phi_{a}\phi_{b}\phi_{c}-\frac{1}{4!}\lambda_{abcd}\phi_{a}\phi_{b}\phi_{c}\phi_{d},
+S\left[\phi\right]=\frac{1}{2}\phi_{a}\left(-\square\delta_{ab}-m_{ab}^{2}\right)\phi_{b}-\frac{1}{3!}g_{abc}\phi_{a}\phi_{b}\phi_{c}-\frac{1}{4!}\lambda_{abcd}\phi_{a}\phi_{b}\phi_{c}\phi_{d},\label{eq:generic-scalar-action}
 \end{equation}
 
 \end_inset

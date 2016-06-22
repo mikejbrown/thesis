@@ -113,7 +113,7 @@ The previous chapter introduced nPIEA as a technique suitable for studies
 \end_layout
 
 \begin_layout Section
-Global Symmetries in QFT
+Global Symmetries in the 1PIEA
 \begin_inset ERT
 status open
 
@@ -127,7 +127,858 @@ status open
 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Global-Symmetries-in-QFT"
+name "sec:Global-Symmetries-in-1PIEA"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Consider the action 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:generic-scalar-action"
+
+\end_inset
+
+ for a generic 
+\begin_inset Formula $\phi^{4}$
+\end_inset
+
+ scalar field theory with 
+\begin_inset Formula $N$
+\end_inset
+
+ fields 
+\begin_inset Formula $\phi_{1},\cdots,\phi_{N}$
+\end_inset
+
+, reproduced here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi\right]=\frac{1}{2}\phi_{a}\left(-\square\delta_{ab}-m_{ab}^{2}\right)\phi_{b}-\frac{1}{3!}g_{abc}\phi_{a}\phi_{b}\phi_{c}-\frac{1}{4!}\lambda_{abcd}\phi_{a}\phi_{b}\phi_{c}\phi_{d}.
+\end{equation}
+
+\end_inset
+
+The derivative term has a 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry under rotations of the fields
+\begin_inset Formula 
+\begin{equation}
+\delta\phi_{a}=iT_{ab}\phi_{b}=i\epsilon_{A}T_{ab}^{A}\phi_{b},\label{eq:field-ON-transformation}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $T_{ab}=-T_{ba}$
+\end_inset
+
+ is a generator of rotations which has been expanded in the second equality
+ in a basis 
+\begin_inset Formula $T_{ab}^{A}$
+\end_inset
+
+ of 
+\begin_inset Formula $A=1,\cdots,N\left(N-1\right)/2$
+\end_inset
+
+ independent generators.
+ When an explicit basis of generators is required one can take 
+\begin_inset Formula $T_{ab}^{jk}=i\left(\delta_{ja}\delta_{kb}-\delta_{jb}\delta_{ka}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $A=\left(j,k\right)$
+\end_inset
+
+ is thought of as an (antisymmetric) multi-index.
+ Note that the implicit integration convention can be maintained if 
+\begin_inset Formula $T_{ab}^{A}\left(x,y\right)\propto\delta\left(x-y\right)$
+\end_inset
+
+ contains a spacetime delta function.
+\end_layout
+
+\begin_layout Standard
+The mass term in general breaks this symmetry.
+ Using rotations to diagonalise 
+\begin_inset Formula $m_{ab}^{2}$
+\end_inset
+
+ one finds that it consists of 
+\begin_inset Formula $k$
+\end_inset
+
+ blocks 
+\begin_inset Formula 
+\begin{equation}
+m_{ab}^{2}=\mathrm{diag}\left(m_{1}^{2},\cdots,m_{1}^{2},m_{2}^{2},\cdots,m_{2}^{2},m_{3}^{2},\cdots,m_{k}^{2}\right),
+\end{equation}
+
+\end_inset
+
+where each eigenvalue 
+\begin_inset Formula $m_{i}^{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $n_{i}$
+\end_inset
+
+-fold degenerate.
+ Obviously 
+\begin_inset Formula $\sum_{i=1}^{k}n_{i}=N$
+\end_inset
+
+.
+ One then finds that the mass term breaks the symmetry into within-block
+ symmetries 
+\begin_inset Formula $O\left(N\right)\to O\left(n_{1}\right)\times O\left(n_{2}\right)\times\cdots\times O\left(n_{k}\right)$
+\end_inset
+
+.
+ In the case of a non-degenerate eigenvalue the corresponding group factor
+ is 
+\begin_inset Formula $\mathbb{Z}_{2}$
+\end_inset
+
+ for the discrete symmetry 
+\begin_inset Formula $\phi_{a}\to-\phi_{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This thesis focuses on continuous symmetries.
+ Further, there is clearly nothing essential lost by focusing on a single
+ block, since the more general case is a direct product of blocks, each
+ block having a simple (in the sense of group theory) symmetry group.
+ Therefore, restrict to the case of a single block where 
+\begin_inset Formula $m_{ab}^{2}=m^{2}\delta_{ab}$
+\end_inset
+
+.
+ This retains the full 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry.
+ The cubic coupling transforms like a symmetric rank three tensor, but there
+ is no non-trivial invariant tensor of that form.
+ Thus 
+\begin_inset Formula $g_{abc}=0$
+\end_inset
+
+ to maintain the symmetry.
+ Further, the quartic coupling transforms like a symmetric rank four tensor,
+ but the only possibility is 
+\begin_inset Formula $\delta_{ab}\delta_{cd}+\text{permutations}$
+\end_inset
+
+.
+ Thus, without loss of generality one can consider the general 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetric action
+\begin_inset Formula 
+\begin{eqnarray}
+S\left[\phi\right] & = & \frac{1}{2}\phi_{a}\left(-\square-m^{2}\right)\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\\
+ & = & \frac{1}{2}\phi_{a}\left(-\square\right)\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}-v^{2}\right)^{2},
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $\lambda v^{2}/6=-m^{2}$
+\end_inset
+
+ and the first and second lines differ by an irrelevant constant term.
+\end_layout
+
+\begin_layout Standard
+Consider now the partition functional
+\begin_inset Formula 
+\begin{equation}
+Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(S\left[\phi\right]+J_{a}\phi_{a}\right)\right],
+\end{equation}
+
+\end_inset
+
+and make the change of integration variables 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:field-ON-transformation"
+
+\end_inset
+
+.
+ As discussed above, the classical action is invariant.
+ Also the functional measure 
+\begin_inset Formula $\mathcal{D}\left[\phi\right]$
+\end_inset
+
+ is invariant
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Non-invariance of the functional measure arises in a number of physically
+ important cases, none of which are relevant here: chiral transformations
+ of fermion fields, non-linear field redefinitions, and scale and diffeomorphism
+ transformations of spacetime.
+\end_layout
+
+\end_inset
+
+.
+ Thus the partition functional changes by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta Z=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(S\left[\phi\right]+J_{a}\phi_{a}\right)\right]\frac{i}{\hbar}J_{b}\delta\phi_{b},
+\end{equation}
+
+\end_inset
+
+but since this is simply a change of integration variables 
+\begin_inset Formula $\delta Z=0$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\begin{equation}
+0=J_{b}T_{bc}^{A}\frac{\delta}{\delta J_{c}}Z\left[J\right],
+\end{equation}
+
+\end_inset
+
+which must hold independent of 
+\begin_inset Formula $J$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The physical meaning of this can be understood by considering, for example,
+ the quadratic term in 
+\begin_inset Formula $Z\left[J\right]=1+\left(\frac{i}{\hbar}\right)J_{a}G_{a}^{\left(1\right)}+\frac{1}{2}\left(\frac{i}{\hbar}\right)^{2}J_{a}J_{b}G_{ab}^{\left(2\right)}+\cdots$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+0 & = & J_{d}T_{dc}^{A}\frac{\delta}{\delta J_{c}}\frac{1}{2}\left(\frac{i}{\hbar}\right)^{2}J_{a}J_{b}G_{ab}^{\left(2\right)}\nonumber \\
+ & = & \frac{1}{2}\left(\frac{i}{\hbar}\right)^{2}\left[J_{d}T_{da}^{A}J_{b}+J_{a}J_{d}T_{db}^{A}\right]G_{ab}^{\left(2\right)}\nonumber \\
+ & \propto & \left(\delta J_{a}J_{b}+J_{a}\delta J_{b}\right)G_{ab}^{\left(2\right)},
+\end{eqnarray}
+
+\end_inset
+
+where the last line 
+\emph on
+defines
+\emph default
+ 
+\begin_inset Formula $\delta J_{a}=i\epsilon_{A}T_{ab}^{A}J_{b}$
+\end_inset
+
+.
+ The shift above is simply that produced by a rotation of 
+\begin_inset Formula $J$
+\end_inset
+
+ in 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+.
+ The fact the shift vanishes implies that 
+\begin_inset Formula $G_{ab}^{\left(2\right)}$
+\end_inset
+
+ transforms like a symmetric rank two tensor under rotations, which is obvious
+ in hindsight considering that 
+\begin_inset Formula $G_{ab}^{\left(2\right)}=\left\langle \mathrm{T}_{C}\left[\phi_{a}\phi_{b}\right]\right\rangle $
+\end_inset
+
+.
+ A similar analysis applies to each Green function with the result that
+ 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ is invariant under 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ rotations of 
+\begin_inset Formula $J$
+\end_inset
+
+.
+ Likewise 
+\begin_inset Formula $W\left[J\right]=-i\hbar\ln Z\left[J\right]$
+\end_inset
+
+.
+ The fact that 
+\begin_inset Formula $W\left[J\right]$
+\end_inset
+
+ is invariant and that 
+\begin_inset Formula $\varphi_{a}=G_{a}^{\left(1\right)}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+ both transform like vectors (i.e.
+ that the relationship between 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+ is maintained under a common rotation) implies that 
+\begin_inset Formula $\Gamma\left[\varphi\right]=W\left[J\right]-J_{a}\varphi_{a}$
+\end_inset
+
+ is also invariant under rotations.
+ Note that invariance holds 
+\emph on
+off-shell
+\emph default
+, that is, before equations of motion are imposed on 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ In other words the functional form of 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ is invariant, not just its value at solutions of the equation of motion.
+\end_layout
+
+\begin_layout Standard
+The invariance of 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ under rotations allows one to derive a number of identities called 
+\emph on
+Ward identities
+\emph default
+ (WIs) for the proper correlation functions.
+ Start by finding the shift of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ under a rotation
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\Gamma}{\delta\varphi_{a}}i\epsilon_{A}T_{ab}^{A}\varphi_{b}=0.\label{eq:master-WI}
+\end{equation}
+
+\end_inset
+
+This is the 
+\emph on
+master
+\emph default
+ WI.
+ Since this holds off-shell one can simplify it by taking derivatives with
+ respect to 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\emph on
+then
+\emph default
+ imposing equations of motion, which are (recall 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1piea-eom"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\Gamma}{\delta\varphi_{a}}=-J_{a}.
+\end{equation}
+
+\end_inset
+
+One can also extract the common factors 
+\begin_inset Formula $i\epsilon_{A}$
+\end_inset
+
+ and define the identity 
+\begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{m}}^{A}=0$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{m}}^{A}$
+\end_inset
+
+ is the left hand side of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:master-WI"
+
+\end_inset
+
+ after taking 
+\begin_inset Formula $m$
+\end_inset
+
+ field derivatives, applying equations of motion and extracting factors.
+ Proceeding this way one obtains all of the WIs, the first few of which
+ are
+\begin_inset Formula 
+\begin{eqnarray}
+\mathcal{W}^{A} & = & -J_{a}T_{ab}^{A}\varphi_{b},\\
+\mathcal{W}_{c}^{A} & = & \Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A},\label{eq:1PI-Delta-WI}\\
+\mathcal{W}_{cd}^{A} & = & V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},\label{eq:1PI-V-WI}\\
+\mathcal{W}_{cde}^{A} & = & V_{edca}^{\left(4\right)}T_{ab}^{A}\varphi_{b}+V_{dca}T_{ae}^{A}+V_{eca}T_{ad}^{A}+V_{eda}T_{ac}^{A},
+\end{eqnarray}
+
+\end_inset
+
+and so on.
+ These are non-trivial identities relating the (full) propagator and various
+ proper vertex functions.
+ The most important identities for the following development are 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-V-WI"
+
+\end_inset
+
+, though all of them are on equal footing conceptually.
+ This thesis restricts to consideration to the lowest few WIs merely for
+ technical simplicity.
+ The methods developed herein can be extended straightforwardly.
+ Note that after 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
+
+\end_inset
+
+ the WI do not depend explicitly on the source.
+ This is useful in the discussion of linear response for symmetry improved
+ effective actions in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The physical meaning of these identities can be best seen in simple cases.
+ Setting the source to zero corresponds most often to the physical limit
+ (i.e.
+ when the external source is considered as a formal tool, not a physical
+ quantity in and of itself).
+ In this case the first WI is trivial and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
+
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\begin{equation}
+0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}.
+\end{equation}
+
+\end_inset
+
+Due to translation invariance the vacuum state has 
+\begin_inset Formula $\varphi_{a}=\text{constant}$
+\end_inset
+
+, so that this can be simplified using
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ca}^{-1}\left(x,y\right)=\int_{p}\mathrm{e}^{-ip\left(x-y\right)}\Delta_{ca}^{-1}\left(p\right),
+\end{equation}
+
+\end_inset
+
+which gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=\Delta_{ca}^{-1}\left(p=0\right)T_{ab}^{A}\varphi_{b}=-M_{ca}^{2}T_{ab}^{A}\varphi_{b},
+\end{equation}
+
+\end_inset
+
+recalling that the zero mode of the inverse propagator is (minus) the mass
+ matrix.
+ Choosing without loss of generality a basis where 
+\begin_inset Formula $\varphi_{b}=\left(0,\cdots,0,v\right)=v\delta_{bN}$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\begin{equation}
+M_{ca}^{2}v=0,\ a\neq N.\label{eq:Goldstone-theorem}
+\end{equation}
+
+\end_inset
+
+There are thus two regimes: the symmetric regime where 
+\begin_inset Formula $v=0$
+\end_inset
+
+, and the broken symmetry regime where 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ and 
+\begin_inset Formula $M_{ca}^{2}=0$
+\end_inset
+
+ if either 
+\begin_inset Formula $c,a\neq N$
+\end_inset
+
+ (it hold for both indices because 
+\begin_inset Formula $M_{ca}^{2}$
+\end_inset
+
+ is symmetric).
+ This identity is called 
+\emph on
+Goldstone's theorem
+\emph default
+ which says that 
+\begin_inset Quotes eld
+\end_inset
+
+in any theory with a spontaneously broken continuous symmetry, each broken
+ symmetry generator corresponds to a massless excitation.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+There is a caveat that this only holds in more than two spacetime dimensions.
+ In two or fewer dimensions spontaneous breaking of continuous symmetries
+ is impossible and 
+\begin_inset Formula $v=0$
+\end_inset
+
+ always.
+ This is discussed in more detail in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ The massive mode is called (loosely) 
+\begin_inset Quotes eld
+\end_inset
+
+the Higgs
+\begin_inset Quotes erd
+\end_inset
+
+ boson and the massless modes are called Goldstone bosons.
+\end_layout
+
+\begin_layout Standard
+Under the same conditions the identity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-V-WI"
+
+\end_inset
+
+ can be simplified by introducing the Fourier transformed three point vertex
+ function
+\begin_inset Formula 
+\begin{equation}
+V_{dca}\left(x,y,z\right)=\int_{pq}\mathrm{e}^{-ip\left(x-z\right)-iq\left(y-z\right)}V_{dca}\left(p,q,-p-q\right),
+\end{equation}
+
+\end_inset
+
+so that 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-V-WI"
+
+\end_inset
+
+ becomes
+\begin_inset Formula 
+\begin{equation}
+0=V_{dca}\left(p,-p,0\right)T_{aN}^{A}v+\Delta_{ca}^{-1}\left(p\right)T_{ad}^{A}+\Delta_{da}^{-1}\left(p\right)T_{ac}^{A}.
+\end{equation}
+
+\end_inset
+
+Substituting in different values of 
+\begin_inset Formula $c$
+\end_inset
+
+, 
+\begin_inset Formula $d$
+\end_inset
+
+ and 
+\begin_inset Formula $A$
+\end_inset
+
+ gives a slew of identities:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\Delta_{cg}^{-1}\left(p\right), &  & A=\left(g,d\right),d\neq N,\ c\neq g,d,N,\\
+0 & =\Delta_{gg}^{-1}\left(p\right)-\Delta_{dd}^{-1}\left(p\right), &  & A=\left(g,d\right),c,d\neq N,\ \text{no sum on }d,g,\\
+0 & =\Delta_{Na}^{-1}\left(p\right), &  & A=\left(g,g'\right),d=N,c=g',a=g,\\
+0 & =V_{dcg}\left(p,-p,0\right)v, &  & A=\left(g,N\right),c,d\neq N,\\
+0 & =V_{NNg}\left(p,-p,0\right)v, &  & A=\left(g,N\right),c=d=N,\\
+0 & =V_{Ncg}\left(p,-p,0\right)v-\Delta_{NN}^{-1}\left(p\right)\delta_{gc}+\Delta_{cg}^{-1}\left(p\right), &  & A=\left(g,N\right),d=N,c\neq N,
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $g,g'\neq N$
+\end_inset
+
+ and 
+\begin_inset Formula $g\neq g'$
+\end_inset
+
+.
+ The first three identities are satisfied iff 
+\begin_inset Formula $\Delta_{ab}^{-1}\left(p\right)$
+\end_inset
+
+ has the form
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ab}^{-1}=\begin{cases}
+\Delta_{G}^{-1} & a=b\neq N,\\
+\Delta_{H}^{-1} & a=b=N,
+\end{cases}\label{eq:SSB-ansatz-Delta}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta_{G/H}$
+\end_inset
+
+ are the Goldstone/Higgs propagators respectively, with corresponding masses
+ 
+\begin_inset Formula $m_{G/H}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The last three identities have differing effects in the symmetric and broken
+ symmetry regimes.
+ In the symmetric regime there is 
+\emph on
+no constraint
+\emph default
+ on 
+\begin_inset Formula $V$
+\end_inset
+
+ (that is, none coming from 
+\emph on
+these
+\emph default
+ WI; the higher WI will give further constraints causing 
+\begin_inset Formula $V=0$
+\end_inset
+
+), but the last identity requires 
+\begin_inset Formula $\Delta_{H}^{-1}=\Delta_{G}^{-1}$
+\end_inset
+
+.
+ In the broken symmetry regime the first two identities are satisfied by
+\begin_inset Formula 
+\begin{equation}
+V_{abc}\left(x,y,z\right)=\begin{cases}
+0 & \text{any zero or two indices}=N,\\
+V_{N}\left(x,y,z\right) & a=b=N,\\
+\bar{V}\left(x;y,z\right) & a=N,\ b=c\neq N,\\
+ & \text{permutations},
+\end{cases}\label{eq:SSB-ansatz-Vertex}
+\end{equation}
+
+\end_inset
+
+where the subtle point (
+\begin_inset Quotes eld
+\end_inset
+
+permutations
+\begin_inset Quotes erd
+\end_inset
+
+) is that the position arguments of 
+\begin_inset Formula $\bar{V}\left(x,y,z\right)$
+\end_inset
+
+ are 
+\emph on
+not
+\emph default
+ symmetric: by convention the first argument refers to the index which equals
+ 
+\begin_inset Formula $N$
+\end_inset
+
+.
+ The other two arguments are symmetric.
+ The final identity requires
+\begin_inset Formula 
+\begin{equation}
+\bar{V}\left(p;-p,0\right)v-\Delta_{H}^{-1}\left(p\right)+\Delta_{G}^{-1}\left(p\right)=0.
+\end{equation}
+
+\end_inset
+
+To understand this physically write 
+\begin_inset Formula $\bar{V}\left(x,y,z\right)=-\lambda v/3\times\delta\left(x-y\right)\delta\left(x-z\right)+\delta\bar{V}$
+\end_inset
+
+ where the first term is the tree level value coming from
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+V_{0abc}=-\frac{\lambda}{3}\left(\delta_{ab}\varphi_{c}+\delta_{ca}\varphi_{b}+\delta_{bc}\varphi_{a}\right),
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula $\delta\bar{V}$
+\end_inset
+
+ represents all loop corrections to 
+\begin_inset Formula $\bar{V}$
+\end_inset
+
+.
+ Then the WI becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-\frac{\lambda v^{2}}{3}+\delta\bar{V}\left(p;-p,0\right)v+m_{H}^{2}+\Sigma_{H}\left(p\right)-m_{G}^{2}-\Sigma_{G}\left(p\right)=0.
+\end{equation}
+
+\end_inset
+
+Matching terms of common order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\begin{eqnarray}
+m_{H}^{2} & = & \frac{\lambda v^{2}}{3}+m_{G}^{2},\\
+\delta\bar{V}\left(p;-p,0\right)v & = & \Sigma_{G}\left(p\right)-\Sigma_{H}\left(p\right).
+\end{eqnarray}
+
+\end_inset
+
+The first equation is the tree level relation between the masses of the
+ Higgs and Goldstone bosons.
+ The second equation is a relation between the vertex loop corrections with
+ a soft (zero momentum) Goldstone leg and the self-energies of the Goldstone
+ and Higgs bosons.
+ In the symmetric regime 
+\begin_inset Formula $v=0$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{H}^{2}=m_{G}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{H}=\Sigma_{G}$
+\end_inset
+
+ as expected.
+\end_layout
+
+\begin_layout Section
+Global Symmetries in the 2PIEA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Global-Symmetries-in-2PIEA"
 
 \end_inset
 
