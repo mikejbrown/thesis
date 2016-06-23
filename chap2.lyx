@@ -4285,7 +4285,7 @@ There is a great deal of duplication of computation, even in the connected
 
  expanded to third order in the interaction:
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -5575,8 +5575,8 @@ where
 The equations of motion obeyed by the 2PIEA are then
 \begin_inset Formula 
 \begin{eqnarray}
-\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi} & = & -J-K\varphi,\\
-\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta} & = & -\frac{1}{2}i\hbar K.
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi} & = & -J-K\varphi,\label{eq:2pi-eom-varphi}\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta} & = & -\frac{1}{2}i\hbar K.\label{eq:2pi-eom-Delta}
 \end{eqnarray}
 
 \end_inset

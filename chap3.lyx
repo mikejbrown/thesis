@@ -78,6 +78,17 @@ theorems-sec
 
 \begin_layout Chapter
 Symmetries, Ward Identities and Truncations in nPIEA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -983,6 +994,290 @@ name "sec:Global-Symmetries-in-2PIEA"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Correlation functions derived from the 2PIEA obey different Ward identities
+ than those derived from the 1PIEA 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFS!
+\end_layout
+
+\end_inset
+
+.
+ Applying the same type of analysis as above to the 2PIEA 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ for the 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetric theory one finds that 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ is invariant and 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta_{ab}$
+\end_inset
+
+ transform as a vector and symmetric rank two tensor respectively.
+ As before 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ is invariant off-shell.
+ The shift of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ gives the 2PI version of the master Ward identity
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\Gamma}{\delta\varphi_{a}}i\epsilon_{A}T_{ab}^{A}\varphi_{b}+\frac{\delta\Gamma}{\delta\Delta_{ab}}i\epsilon_{A}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right)=0.
+\end{equation}
+
+\end_inset
+
+The second term accounts for the additional transformation of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ in the 2PIEA formalism.
+ Taking derivatives with respect to 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+, stripping factors of 
+\begin_inset Formula $i\epsilon_{A}$
+\end_inset
+
+ and applying the 2PI equations of motion (recall 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-eom-varphi"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-eom-Delta"
+
+\end_inset
+
+ reproduced here for convenience:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi} & = & -J-K\varphi,\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta} & = & -\frac{1}{2}i\hbar K,
+\end{eqnarray}
+
+\end_inset
+
+), gives a set of 2PI WIs which are now complicated by the fact that there
+ are multiple types of correlation function of the same rank appearing.
+ For example, there are now two different two point functions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{2}\Gamma}{\delta\varphi_{a}\delta\varphi_{b}},\ \frac{\delta\Gamma}{\delta\Delta_{ab}},
+\end{equation}
+
+\end_inset
+
+and three different four point functions
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{4}\Gamma}{\delta\varphi_{a}\delta\varphi_{b}\delta\varphi_{c}\delta\varphi_{d}},\ \frac{\delta^{3}\Gamma}{\delta\varphi_{a}\delta\varphi_{b}\delta\Delta_{cd}},\ \frac{\delta^{2}\Gamma}{\delta\Delta_{ab}\delta\Delta_{cd}},
+\end{equation}
+
+\end_inset
+
+which are, in general truncations, all different.
+\end_layout
+
+\begin_layout Standard
+To illustrate the various 1PI and 2PI functions recall the equivalence relations
+hip between the 1PIEA and 2PIEA 
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi\right]=\Gamma\left[\varphi,\Delta\left[\varphi\right]\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta\left[\varphi\right]$
+\end_inset
+
+ is the solution of 
+\begin_inset Formula $\delta\Gamma\left[\varphi,\Delta\right]/\delta\Delta=0$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $\varphi$
+\end_inset
+
+.
+ Using that 
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}}=\Delta_{ab}^{-1}\left[\varphi\right]=\Delta_{0ab}^{-1}\left[\varphi\right]-\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\begin{equation}
+\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]=\frac{2i}{\hbar}\left(\frac{\delta\Gamma_{2}\left[\varphi,\Delta\right]}{\delta\Delta_{ab}}\right)_{\Delta=\Delta\left[\varphi\right]},
+\end{equation}
+
+\end_inset
+
+one can relate derivatives of 
+\begin_inset Formula $\Gamma\left[\varphi\right]$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ to mixed derivatives of 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+ For example,
+\begin_inset Formula 
+\begin{equation}
+V_{abc}=\frac{\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}\delta\varphi_{c}}=V_{0abc}\left[\varphi\right]-\frac{\delta\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{c}}.
+\end{equation}
+
+\end_inset
+
+Being careful to use the chain rule, one obtains
+\begin_inset Formula 
+\begin{align}
+V_{abc} & =V_{0abc}\left[\varphi\right]-\left(\frac{\delta\Sigma_{ab}\left[\varphi,\Delta\right]}{\delta\varphi_{c}}\right)_{\Delta=\Delta\left[\varphi\right]}-\left(\frac{\delta\Delta_{de}}{\delta\varphi_{c}}\frac{\delta\Sigma_{ab}\left[\varphi,\Delta\right]}{\delta\Delta_{de}}\right)_{\Delta=\Delta\left[\varphi\right]}\nonumber \\
+ & =V_{0abc}\left[\varphi\right]-\left(\frac{\delta\Sigma_{ab}}{\delta\varphi_{c}}\right)_{\Delta=\Delta\left[\varphi\right]}+V_{cde}\Delta_{df}\left[\varphi\right]\Delta_{eg}\left[\varphi\right]\left(\frac{\delta\Sigma_{ab}}{\delta\Delta_{fg}}\right)_{\Delta=\Delta\left[\varphi\right]},
+\end{align}
+
+\end_inset
+
+where the second line is reached using 
+\begin_inset Formula $\delta\Delta=-\Delta\left(\delta\Delta^{-1}\right)\Delta$
+\end_inset
+
+ as an intermediate step.
+ Continuing in this way one can find a set of identities relating derivatives
+ of the 1PIEA and the 2PIEA evaluated at 
+\begin_inset Formula $\Delta=\Delta\left[\varphi\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+It is possible to also find identities which do not require 
+\begin_inset Formula $\Delta=\Delta\left[\varphi\right]$
+\end_inset
+
+ by taking derivatives of the 2PI equations of motion and using relations
+ involving 
+\begin_inset Formula $W\left[J,K\right]$
+\end_inset
+
+, such as 
+\begin_inset Formula $\delta J_{a}/\delta\varphi_{b}=\left(\delta\varphi_{b}/\delta J_{a}\right)^{-1}=\left(\delta^{2}W\left[J,K\right]/\delta J_{b}\delta J_{a}\right)^{-1}=-\Delta_{ba}^{-1}$
+\end_inset
+
+ and so on.
+ This allows one to find that, for example,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta_{ba}^{-1}=\frac{\delta^{2}\Gamma\left[\varphi,\Delta\right]}{\delta\varphi_{b}\delta\varphi_{a}}+\frac{2i}{\hbar}\frac{\delta^{2}\Gamma\left[\varphi,\Delta\right]}{\delta\varphi_{b}\delta\Delta_{ad}}\varphi_{d}+\frac{2i}{\hbar}\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta_{ab}},
+\end{equation}
+
+\end_inset
+
+regardless of the values of the external sources.
+ If the derivatives are taken holding 
+\begin_inset Formula $K=0$
+\end_inset
+
+ fixed (so that 
+\begin_inset Formula $\Delta=\Delta\left[\varphi\right]$
+\end_inset
+
+) the second and third term vanish, reproducing 
+\begin_inset Formula $\Delta_{ba}^{-1}=\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]/\delta\varphi_{b}\delta\varphi_{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Taking 
+\begin_inset Formula $\delta/\delta\varphi_{c}$
+\end_inset
+
+ of the master 2PI WI and using the previous result in the absence of external
+ sources one finds
+\begin_inset Formula 
+\begin{equation}
+0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right),
+\end{equation}
+
+\end_inset
+
+which is the 2PI analogue of Goldstone's theorem.
+ Note that there is no reason for the second term to vanish in generic truncatio
+ns of the 2PIEA, though it must vanish in the exact theory since there 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ is equal to the 1PI value for which 
+\begin_inset Formula $\Delta_{ca}^{-1}T_{ab}\varphi_{b}=0$
+\end_inset
+
+.
+ In an approximation however, this no longer holds and the 2PI function
+ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ no longer faithfully represents the propagator of the Goldstone bosons,
+ which now have an unphysical mass.
 \end_layout
 
 \end_body
