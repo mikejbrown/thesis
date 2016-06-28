@@ -103,5 +103,3517 @@ progress{0}
 
 \end_layout
 
+\begin_layout Section
+Background and motivation
+\end_layout
+
+\begin_layout Section
+Quantum field theory and functional integrals
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Quantum-field-theory"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+field
+\emph default
+ 
+\begin_inset Formula $\phi:\mathcal{M}\to\mathcal{T}$
+\end_inset
+
+ is simply a mapping from a spacetime manifold 
+\begin_inset Formula $\mathcal{M}$
+\end_inset
+
+ to a field or 
+\emph on
+target
+\emph default
+ space 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ assigning to each event in spacetime the value that the field takes at
+ that event.
+ This thesis focuses on the special case of scalar fields, for which 
+\begin_inset Formula $\mathcal{T}=\mathbb{R}$
+\end_inset
+
+ (later on, when discussing symmetries, 
+\begin_inset Formula $\mathcal{T}=\mathbb{R}^{N}$
+\end_inset
+
+ for integer 
+\begin_inset Formula $N$
+\end_inset
+
+).
+ This thesis also restricts discussion to flat spacetimes
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The generalisation to curved spacetimes is in some respects straightforward
+ and in other respects quite subtle and interesting, though beyond the scope
+ of this thesis.
+ In any event, quantum field theory in curved spacetime is standard lore
+ (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CITE
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+, so 
+\begin_inset Formula $\mathcal{M}=\mathbb{R}^{d}$
+\end_inset
+
+.
+ A 
+\emph on
+quantum field
+\emph default
+ is simply a field which can exist in a quantum superposition of several
+ classical states.
+ Thus quantum field theory (QFT) is often considered a special case of quantum
+ mechanics (QM), taking the limit that the number of degrees of freedom
+ goes to infinity.
+ However, the limit usually cannot be taken in a rigorous way and in fact
+ one proceeds the other way, deriving QM as a special case of QFT in zero
+ spatial dimensions (where 
+\begin_inset Formula $\mathcal{M}=\mathbb{R}$
+\end_inset
+
+ is just the time-line and 
+\begin_inset Formula $\mathcal{T}$
+\end_inset
+
+ is a copy of ordinary space for each particle).
+ Furthermore, there are non-trivial QFTs with no particle content whatsoever
+ (so called 
+\emph on
+conformal field theories
+\emph default
+ and 
+\emph on
+topological field theories
+\emph default
+).
+ Still, there is a close relation between QM and QFT: for each formalism
+ available for QM there is a corresponding QFT formalism
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Do Bohm, QBism...
+ matter?
+\end_layout
+
+\end_inset
+
+.
+ Thus, for example, one could study quantum fields in the Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"
+\end_layout
+
+\end_inset
+
+odinger picture via the 
+\emph on
+wavefunctional
+\emph default
+ 
+\begin_inset Formula $\Psi\left[\phi\left(\boldsymbol{x}\right)\right]$
+\end_inset
+
+ and its evolution equation 
+\begin_inset Formula $i\hbar\partial_{t}\Psi=\hat{\mathrm{H}}\Psi$
+\end_inset
+
+.
+ However, in QFT it is often far more convenient to use the functional integral
+ formalism, originally due to Feynman 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CITE
+\end_layout
+
+\end_inset
+
+, so this section reviews QFT in the functional formalism and some of the
+ connections to the more familiar canonical formalism which will be useful
+ later on.
+\end_layout
+
+\begin_layout Standard
+Start in the canonical formalism.
+ Here, fields are Heisenberg picture operators (actually operator valued
+ distributions) 
+\begin_inset Formula $\hat{\phi}\left(\boldsymbol{x},t\right)$
+\end_inset
+
+ with accompanying canonical momenta 
+\begin_inset Formula $\hat{\pi}\left(\boldsymbol{x},t\right)$
+\end_inset
+
+ which obey canonical 
+\emph on
+equal time
+\emph default
+ commutation relationships
+\begin_inset Formula 
+\begin{gather}
+\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\phi}\left(\boldsymbol{y},t\right)\right]=\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=0,\\
+\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{\pi}\left(\boldsymbol{y},t\right)\right]=i\delta^{\left(3\right)}\left(\boldsymbol{x}-\boldsymbol{y}\right).
+\end{gather}
+
+\end_inset
+
+Commutators at unequal times must be found by evolving the field with its
+ equations of motion.
+ For a free field this can be done exactly.
+ The free field Hamiltonian is quadratic in fields and momenta, exactly
+ analogous to QM harmonic oscillator:
+\begin_inset Formula 
+\begin{equation}
+\hat{H}_{0}=\int_{\boldsymbol{x}}\frac{1}{2}\hat{\pi}^{2}+\frac{1}{2}\left(\nabla\hat{\phi}\right)^{2}+\frac{1}{2}m^{2}\hat{\phi}^{2}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $m$
+\end_inset
+
+ is a parameter with dimensions of inverse length (which is equal to mass
+ 
+\begin_inset Formula $m\hbar/c$
+\end_inset
+
+ because 
+\begin_inset Formula $\hbar=c=1$
+\end_inset
+
+).
+ The Hamiltonian equations of motion are then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\partial_{t}\hat{\phi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\phi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]=\hat{\pi}\left(\boldsymbol{x},t\right),\\
+\partial_{t}\hat{\pi}\left(\boldsymbol{x},t\right) & =-i\left[\hat{\pi}\left(\boldsymbol{x},t\right),\hat{H}_{0}\left(t\right)\right]=\nabla^{2}\hat{\phi}-m^{2}\hat{\phi},
+\end{align}
+
+\end_inset
+
+which can be rearranged to
+\begin_inset Formula 
+\begin{equation}
+\left(\partial_{t}^{2}-\nabla^{2}+m^{2}\right)\hat{\phi}=0
+\end{equation}
+
+\end_inset
+
+which is the 
+\emph on
+Klein-Gordon
+\emph default
+ equation for 
+\begin_inset Formula $\hat{\phi}$
+\end_inset
+
+, and an analogous equation for 
+\begin_inset Formula $\hat{\pi}$
+\end_inset
+
+.
+ As a linear equation, this can be solved by Fourier decomposition
+\begin_inset Formula 
+\begin{equation}
+\hat{\phi}\left(\boldsymbol{x},t\right)=\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-i\left(\boldsymbol{k}\cdot\boldsymbol{x}-\omega_{\boldsymbol{k}}t\right)}\right],
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\omega_{\boldsymbol{k}}=\sqrt{\boldsymbol{k}^{2}+m^{2}}
+\end{equation}
+
+\end_inset
+
+and taking into account that, as a real scalar field, 
+\begin_inset Formula $\hat{\phi}^{\dagger}=\hat{\phi}$
+\end_inset
+
+.
+ Taking the normalisation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+N_{\boldsymbol{k}}=\sqrt{\frac{\left(2\pi\right)^{3}}{2\omega_{\boldsymbol{k}}f_{\boldsymbol{k}}}}
+\end{equation}
+
+\end_inset
+
+and applying the equal time commutation relations leads then to the commutation
+ relations
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Check 
+\begin_inset Formula $2\pi$
+\end_inset
+
+s etc.
+ here:
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{gather}
+\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}\right]=\left[\hat{a}_{\boldsymbol{k}}^{\dagger},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=0,\\
+\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{q}}^{\dagger}\right]=f_{\boldsymbol{k}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right),
+\end{gather}
+
+\end_inset
+
+for the mode operators.
+ It is conventional to take 
+\begin_inset Formula $f_{\boldsymbol{k}}=1$
+\end_inset
+
+, which is used in all the following.
+ With this choice 
+\begin_inset Formula $\hat{a}_{\boldsymbol{k}}\left(\hat{a}_{\boldsymbol{k}}^{\dagger}\right)$
+\end_inset
+
+ are annihilation(creation) operators for particles with bosonic statistics.
+\end_layout
+
+\begin_layout Standard
+Using the mode expansion the free Hamiltonian becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\hat{H}_{0}=\int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\left(\hat{a}_{\boldsymbol{k}}^{\dagger}\hat{a}_{\boldsymbol{k}}+\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)\right),
+\end{equation}
+
+\end_inset
+
+where the formal commutator 
+\begin_inset Formula $\left[\hat{a}_{\boldsymbol{k}},\hat{a}_{\boldsymbol{k}}^{\dagger}\right]=\delta^{\left(3\right)}\left(\boldsymbol{0}\right)$
+\end_inset
+
+ was used.
+ Using the Fourier representation of the delta function 
+\begin_inset Formula $\delta^{\left(3\right)}\left(\boldsymbol{0}\right)=\left(2\pi\right)^{-3}\int_{\boldsymbol{x}}\mathrm{e}^{i\boldsymbol{x}\cdot\boldsymbol{0}}=\left(2\pi\right)^{-3}\mathrm{V}$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathrm{V}$
+\end_inset
+
+ is the volume of space, the second term can be written
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{\boldsymbol{k}}\left(2\pi\right)^{3}\omega_{\boldsymbol{k}}\frac{1}{2}\delta^{\left(3\right)}\left(\boldsymbol{0}\right)=\left(\frac{1}{2}\int_{\boldsymbol{k}}\omega_{\boldsymbol{k}}\right)\mathrm{V},
+\end{equation}
+
+\end_inset
+
+which assigns an energy density of 
+\begin_inset Formula $\frac{1}{2}\int_{\boldsymbol{k}}\omega_{\boldsymbol{k}}$
+\end_inset
+
+ to the vacuum.
+ Subtracting this (divergent) vacuum energy density gives the normal ordered
+ Hamiltonian
+\begin_inset Formula 
+\begin{equation}
+:\hat{H}_{0}:=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{a}_{\boldsymbol{k}}^{\dagger}a_{\boldsymbol{k}}=\int\mathrm{d}^{3}\boldsymbol{k}\ \omega_{\boldsymbol{k}}\hat{N}_{\boldsymbol{k}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{N}_{\boldsymbol{k}}$
+\end_inset
+
+ is the number operator for the mode 
+\begin_inset Formula $\boldsymbol{k}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $:\hat{H}_{0}:$
+\end_inset
+
+ describes non-interacting (because the energy is additive) particle-like
+ bosonic excitations of mass 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now the unequal time commutator can be found:
+\begin_inset Formula 
+\begin{align}
+\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{ikx}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-ikx},\hat{a}_{\boldsymbol{q}}\mathrm{e}^{iqy}+\hat{a}_{\boldsymbol{q}}^{\dagger}\mathrm{e}^{-iqy}\right]\nonumber \\
+ & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right)\nonumber \\
+ & =\int\frac{\mathrm{d}^{3}\boldsymbol{k}}{2\omega_{\boldsymbol{k}}}\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
+\end{align}
+
+\end_inset
+
+where the time component of 
+\begin_inset Formula $k_{\mu}$
+\end_inset
+
+ is 
+\begin_inset Formula $\omega_{\boldsymbol{k}}$
+\end_inset
+
+ in the exponentials.
+ Note that when 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ are spacelike separated, there is a frame in which the time component of
+ 
+\begin_inset Formula $x^{\mu}-y^{\mu}$
+\end_inset
+
+ vanishes.
+ In this case one can see that the commutator vanishes by setting 
+\begin_inset Formula $\boldsymbol{k}\to-\boldsymbol{k}$
+\end_inset
+
+ in the second term.
+ To show that this holds in all frames one needs to show that the integration
+ measure is in fact Lorentz invariant, as the exponentials are manifestly
+ invariant.
+ Consider the identity
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{2\omega_{\boldsymbol{k}}}=\int\mathrm{d}k_{0}\delta\left(k_{0}^{2}-\omega_{\boldsymbol{k}}^{2}\right)\Theta\left(k_{0}\right)=\int\mathrm{d}k_{0}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right).
+\end{equation}
+
+\end_inset
+
+Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{k}\left(2\pi\right)^{4}\delta\left(k^{2}-m^{2}\right)\Theta\left(k_{0}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
+\end{align}
+
+\end_inset
+
+which is manifestly invariant under the isochronous (i.e.
+ not reversing time) Lorentz transformations.
+ Thus fields commute at spacelike separation.
+ This is the 
+\emph on
+microcausality
+\emph default
+ condition and effectively implements the speed of light limit for information
+ transmission.
+ Microcausality holds for the free field theory, but also for the interacting
+ theories of physical interest
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The main exception being electromagnetism in the Coulomb gauge, which explicitly
+ breaks Lorentz invariance.
+ In this cause the (gauge variant) commutators do not vanish at spacelike
+ separations but causality problems are avoided because only gauge invariant
+ quantities are physically observable.
+ All gauge invariant quantities can be equally well computed in a Lorentz
+ covariant gauge in which microcausality is manifest at every step.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and is automatic if the theory is constructed from a Lorentz invariant
+ action which is the integral of a local density which is a finite order
+ polynomial of fields and their derivatives 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since spacelike separated fields commute, the set of fields on a spacelike
+ hypersurface 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ forms a complete commuting set of operators and a complete set of eigenvectors
+ can be found.
+ Arbitrary states can be expanded in this basis as
+\begin_inset Formula 
+\begin{equation}
+\Ket{\Psi}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Psi\left[\phi\left(x\right)\right]\Ket{\phi\left(x\right);\Sigma}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Psi\left[\phi\left(x\right)\right]$
+\end_inset
+
+ is the wavefunctional and the Heisenberg states 
+\begin_inset Formula $\Ket{\phi\left(x\right);\Sigma}$
+\end_inset
+
+ are eigenvectors of the field 
+\begin_inset Formula $\hat{\phi}\left(x\right)$
+\end_inset
+
+ operators on 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ with eigenvalues 
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\Ket{\phi\left(x\right);\Sigma}$
+\end_inset
+
+ is generally 
+\emph on
+not
+\emph default
+ an eigenvector of a field operator 
+\emph on
+not
+\emph default
+ on the hypersurface.
+ The time variable hidden in the notation 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\phi\left(x\right)$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is merely part of the label for the state and implies nothing about its
+ time evolution (indeed Heisenberg states do not evolve).
+ The notation 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $;\Sigma$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ is used to remind us of this fact.
+ Now consider a transition amplitude between an initial and final state
+ 
+\begin_inset Formula $\Psi_{i}\to\Psi_{f}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+\Braket{\Psi_{f}|\Psi_{i}} & = & \int\mathcal{D}\left[\phi_{i}\left(x\in\Sigma_{i}\right),\phi_{f}\left(x\in\Sigma_{f}\right)\right]\nonumber \\
+ &  & \times\Psi_{f}^{\star}\left[\phi_{f}\left(x\right)\right]\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}\Psi_{i}\left[\phi_{i}\left(x\right)\right],
+\end{eqnarray}
+
+\end_inset
+
+where the initial and final hypersurfaces are 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ respectively and we assume that 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ is later than 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ (i.e.
+ any future directed timelike curve passing through 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ at proper time 
+\begin_inset Formula $\tau_{i}$
+\end_inset
+
+ passes through 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ at a proper time 
+\begin_inset Formula $\tau_{f}>\tau_{i}$
+\end_inset
+
+).
+ From this equation it is clear that the time evolution problem reduces
+ to finding
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}},
+\end{equation}
+
+\end_inset
+
+the transition amplitude between field eigenstates on two spacelike hypersurface
+s.
+\end_layout
+
+\begin_layout Standard
+This goal is accomplished by the 
+\emph on
+Feynman path integral
+\emph default
+ or 
+\emph on
+functional integral
+\emph default
+.
+ The idea is to do the time evolution a little bit at a time.
+ Since 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+ is later than 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ it is possible to break the finite time evolution into a succession of
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ steps 
+\begin_inset Formula $\Sigma_{i}\to\Sigma_{1}\to\Sigma_{2}\to\cdots\to\Sigma_{N-1}\to\Sigma_{f}$
+\end_inset
+
+ and take the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit such that each step represents an infinitesimal time evolution.
+ Formally this is done by repeatedly inserting resolutions of the identity
+\begin_inset Formula 
+\begin{equation}
+\hat{\mathbb{I}}=\int\mathcal{D}\left[\phi\left(x\in\Sigma\right)\right]\Ket{\phi;\Sigma}\Bra{\phi;\Sigma},
+\end{equation}
+
+\end_inset
+
+obtaining
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\nonumber \\
+ &  & \times\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{N-1}\left(x\right);\Sigma_{N-1}}\nonumber \\
+ &  & \times\cdots\times\Braket{\phi_{k+1}\left(x\right);\Sigma_{k+1}|\phi_{k}\left(x\right);\Sigma_{k}}\nonumber \\
+ &  & \times\cdots\times\Braket{\phi_{1}\left(x\right);\Sigma_{1}|\phi_{i}\left(x\right);\Sigma_{i}}.
+\end{eqnarray}
+
+\end_inset
+
+To simplify this further one can assume that the 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+s are all flat and parallel (the general case can be recovered from the
+ final result).
+ This means that there is an inertial coordinate system where the time 
+\begin_inset Formula $t_{k}$
+\end_inset
+
+ is constant on each 
+\begin_inset Formula $\Sigma_{k}$
+\end_inset
+
+.
+ One can further assume, without loss of generality, that the hypersurfaces
+ are equally spaced.
+ That is, 
+\begin_inset Formula $t_{k}=t_{i}+\epsilon k$
+\end_inset
+
+ where 
+\begin_inset Formula $\epsilon=\left(t_{f}-t_{i}\right)/N$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Now all one needs is the infinitesimal step
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}.
+\end{equation}
+
+\end_inset
+
+Intuitively, there is not much time for the fields to evolve, so this should
+ be close to the delta functional 
+\begin_inset Formula $\approx\delta\left[\phi_{k+1}-\phi_{k}\right]$
+\end_inset
+
+.
+ To find the 
+\begin_inset Formula $\mathcal{O}\left(\epsilon\right)$
+\end_inset
+
+ correction it is easiest to convert the states into the Schr
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{o}
+\end_layout
+
+\end_inset
+
+dinger picture (indicated using a subscript 
+\begin_inset Quotes eld
+\end_inset
+
+S
+\begin_inset Quotes erd
+\end_inset
+
+) using the time evolution operator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}=\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+\end{equation}
+
+\end_inset
+
+Resolving the identity again, this time with 
+\begin_inset Formula $\hat{\pi}$
+\end_inset
+
+ eigenstates,
+\begin_inset Formula 
+\begin{eqnarray}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+\end{eqnarray}
+
+\end_inset
+
+Using
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall from basic QM that 
+\begin_inset Formula $\Braket{q|p}=\exp\left(\frac{i}{\hbar}qp\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\Braket{\phi|\pi}=\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi\left(\boldsymbol{x},t_{k}\right)\phi\left(\boldsymbol{x},t_{k}\right)\right)$
+\end_inset
+
+ this can be written
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi_{k}\left(\boldsymbol{x},t_{k}\right)\left[\phi_{k+1}\left(\boldsymbol{x},t_{k}\right)-\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right]\right)\nonumber \\
+ &  & \times\exp\left[-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\nonumber \\
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}\left[\pi_{k}\left(\boldsymbol{x},t_{k}\right)\partial_{t}\phi_{k}\left(\boldsymbol{x},t_{k}\right)-\mathcal{H}\left(\phi_{k},\pi_{k}\right)\right]\right)
+\end{eqnarray}
+
+\end_inset
+
+using the finite difference approximation 
+\begin_inset Formula $\phi_{k+1}-\phi_{k}=\epsilon\partial_{t}\phi_{k}$
+\end_inset
+
+ and that the Hamiltonian 
+\begin_inset Formula $H=\int_{\boldsymbol{x}}\mathcal{H}$
+\end_inset
+
+ is the integral of a local Hamiltonian density 
+\begin_inset Formula $\mathcal{H}$
+\end_inset
+
+.
+ Multiplying all time steps gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi,\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\mathcal{H}\left(\phi,\pi\right)\right]\right)
+\end{equation}
+
+\end_inset
+
+which, in the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit is the Hamiltonian form of the path integral.
+\end_layout
+
+\begin_layout Standard
+If the Hamiltonian is quadratic in the momenta the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ integral can be performed by completing the square:
+\begin_inset Formula 
+\begin{eqnarray}
+\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}\left[\pi\left(x\right)\partial_{t}\phi\left(x\right)-\frac{1}{2}\pi\left(x\right)^{2}\right]\right) & = & \int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\left[\pi\left(x\right)-\partial_{t}\phi\left(x\right)\right]^{2}\right)\nonumber \\
+ &  & \times\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right)\nonumber \\
+ & = & N\exp\left(\frac{i}{\hbar}\int_{x}\frac{1}{2}\left(\partial_{t}\phi\left(x\right)\right)^{2}\right),
+\end{eqnarray}
+
+\end_inset
+
+where the 
+\begin_inset Formula $\pi$
+\end_inset
+
+ integration variable can be shifted 
+\begin_inset Formula $\pi\to\pi+\partial_{t}\phi$
+\end_inset
+
+ to give the constant normalisation factor
+\begin_inset Formula 
+\begin{equation}
+N=\int\mathcal{D}\left[\pi\right]\exp\left(\frac{i}{\hbar}\int_{x}-\frac{1}{2}\pi\left(x\right)^{2}\right),
+\end{equation}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}}=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right),\label{eq:phi-eigenstate-transition-amplitude-pi}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{L}\left(\phi\right)$
+\end_inset
+
+ is the Lagrangian density
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It is common to refer to 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+ simply as the Lagrangian, i.e.
+ dropping the 
+\begin_inset Quotes eld
+\end_inset
+
+density.
+\begin_inset Quotes erd
+\end_inset
+
+ Though strictly speaking incorrect, this rarely results in confusion.
+\end_layout
+
+\end_inset
+
+.
+ This is a completely Lorentz invariant (indeed, diffeomorphism invariant)
+ formula for transition amplitudes which no longer depends on any particular
+ assumptions about the time slicing used etc.
+ Of course, all of the difficulties are hidden in the notation.
+ 
+\begin_inset Formula $N$
+\end_inset
+
+ is traditionally absorbed into the definition of the measure 
+\begin_inset Formula $\mathcal{D}\left[\phi\right]$
+\end_inset
+
+ and is unimportant for most physical problems.
+ Some methods of dealing with the overall normalisation are discussed in
+ the next section.
+ Note that matrix elements of arbitrary time ordered products of fields
+ are now easily obtained.
+ Define the functional
+\begin_inset Formula 
+\begin{equation}
+\mathcal{A}_{fi}\left[J\left(x\right)\right]=N\int_{\phi\left(x\right)=\phi_{i}\left(x\right),\ x\in\Sigma_{i}}^{\phi\left(x\right)=\phi_{f}\left(x\right),\ x\in\Sigma_{f}}\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\mathcal{L}\left(\phi\right)+J\left(x\right)\phi\left(x\right)\right)\right].\label{eq:transition-amplitude-generating-functional}
+\end{equation}
+
+\end_inset
+
+Then
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
+\end{equation}
+
+\end_inset
+
+where it is assumed that all 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+ are in the spacetime region bounded by 
+\begin_inset Formula $\Sigma_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{f}$
+\end_inset
+
+.
+ This type of 
+\emph on
+generating functional
+\emph default
+ technique is used frequently in the following.
+\end_layout
+
+\begin_layout Section
+Time contours, Green functions and Non-equilibrium QFT
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Time-contours-Green-functions-NEQFT"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to make practical use of the functional integral it is necessary
+ to have some way of characterising the initial and final states, handling
+ the overall normalisation and evaluating the integral itself.
+ Each of these typically require regularisation to handle divergences and
+ renormalisation to express the input parameters in terms of physical observable
+s.
+ The way all of these are implemented depends on the physical application
+ being considered.
+\end_layout
+
+\begin_layout Standard
+For example, the setting of most particle physics is vacuum field theory.
+ One is usually interested in the scattering of a small number of particles
+ which only interact in a small spacetime region.
+ Long before and after the interaction the particles are effectively free,
+ so the initial and final states can be approximated by free particle states
+ 
+\begin_inset Formula $\sim a_{\boldsymbol{k}_{1}}^{\dagger}a_{\boldsymbol{k}_{2}}^{\dagger}\cdots a_{\boldsymbol{k}_{n}}^{\dagger}\Ket{\text{vac}}$
+\end_inset
+
+ and the appropriate observable is the S-matrix element.
+ The 
+\emph on
+Lehmann-Symanzik-Zimmermann
+\emph default
+ (LSZ) reduction formulae connect the S-matrix elements for the asymptotic
+ free particle states to the vacuum-to-vacuum transition matrix elements
+ of a time ordered product of interacting fields (a 
+\emph on
+correlation
+\emph default
+ or 
+\emph on
+Green function
+\emph default
+).
+ The essential idea of the LSZ formulae is that, while the free field operators
+ create and destroy single particles, interacting fields have some amplitude
+ to create and destroy multi-particle states.
+ Nevertheless, multi-particle wave packets spread differently than single
+ particle wave packets, so that the single particle contributions can be
+ isolated and related to the asymptotic free particle states.
+ The Green functions can be evaluated by using, essentially, the formulae
+ of the previous section.
+ However it is necessary to characterise the initial and final physical
+ vacuum state and handle the overall normalisation.
+ The 
+\emph on
+Gell-Mann
+\emph default
+ and 
+\emph on
+Low
+\emph default
+ theorem accomplishes both.
+ The idea is that, instead of trying to find the wavefunctional of the vacuum
+ state, one can use 
+\emph on
+any
+\emph default
+ physically reasonable initial and final states
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The only condition is that they have non-zero overlap with the vacuum state.
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phi-eigenstate-transition-amplitude-pi"
+
+\end_inset
+
+ and deform the time contour in a slight negative imaginary direction, so
+ that one eventually takes the limit 
+\begin_inset Formula $t_{i}\to-\infty\left(1-i\epsilon\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $t_{f}\to+\infty\left(1-i\epsilon\right)$
+\end_inset
+
+.
+ The imaginary time component introduces a dissipative part to the time
+ evolution 
+\begin_inset Formula $\sim\exp\left(-\epsilon t\hat{H}\right)$
+\end_inset
+
+ which damps all states except for the lowest energy, i.e.
+ vacuum, state.
+ So finally in the limit only the vacuum-to-vacuum matrix element survives
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+This assumes that the vacuum state is non-degenerate and separated by a
+ finite spectral gap from any excited states.
+ In particular, this implies that this formalism for vacuum field theory
+ is strictly speaking invalid for massless particles.
+ Yet, massless particles can be handled in this formalism provided one takes
+ care of infrared (i.e.
+ low energy) divergences and computes inclusive cross sections, i.e.
+ including processes with the emission of extra soft particles in the final
+ state which are invisible in realistic detectors.
+ A detailed treatment of these issues is beyond the scope of this thesis,
+ but can be found in e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ The normalisation factor is taken care of by noting that 
+\begin_inset Formula $\Braket{\text{vac}|\text{vac}}=1$
+\end_inset
+
+, i.e.
+ an undisturbed vacuum remains vacuum.
+ Thus one can simply divide by this factor, giving
+\begin_inset Formula 
+\begin{equation}
+\Braket{\text{vac}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\text{vac}}=\frac{\int\mathcal{D}\left[\phi\right]\phi\left(x_{1}\right)\cdots\phi\left(x_{n}\right)\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{x}\mathcal{L}\left(\phi\right)\right)},\label{eq:vacuum-to-vacuum-transition-matrix-element}
+\end{equation}
+
+\end_inset
+
+where the functional integrals are over all spacetime and any ambiguity
+ in the normalisation of the measure simply cancels between the numerator
+ and denominator of the ratio.
+\end_layout
+
+\begin_layout Standard
+In thermal equilibrium one is not interested in the S-matrix as there are
+ no asymptotic states.
+ Rather one is interested in the partition function
+\begin_inset Formula 
+\begin{equation}
+Z=\mathrm{Tr}\mathrm{e}^{-\beta\hat{H}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\beta=1/T$
+\end_inset
+
+ is the inverse temperature.
+ From 
+\begin_inset Formula $Z$
+\end_inset
+
+ all thermodynamic functions can be derived.
+ The trick to evaluate 
+\begin_inset Formula $Z$
+\end_inset
+
+ in the 
+\emph on
+Matsubara
+\emph default
+ 
+\emph on
+formalism
+\emph default
+ is to note that the operator 
+\begin_inset Formula $\exp\left(-\beta\hat{H}\right)$
+\end_inset
+
+ is formally imaginary time evolution 
+\begin_inset Formula $\exp\left(-i\hat{H}t/\hbar\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $t=-i\hbar\beta$
+\end_inset
+
+.
+ Therefore one 
+\emph on
+Wick rotates
+\emph default
+ to imaginary time 
+\begin_inset Formula $t=x^{0}=-i\hbar x^{4}$
+\end_inset
+
+ where 
+\begin_inset Formula $x^{4}$
+\end_inset
+
+ goes from zero to 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+ Furthermore, the trace operation implies periodic boundary conditions:
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\nonumber \\
+ & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\nonumber \\
+ & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
+ & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right)
+\end{eqnarray}
+
+\end_inset
+
+where the 
+\emph on
+Euclidean
+\emph default
+ Lagrangian 
+\begin_inset Formula $\mathcal{L}_{E}$
+\end_inset
+
+ is obtained by making the replacement 
+\begin_inset Formula $t\to-i\hbar x^{4}$
+\end_inset
+
+ in 
+\begin_inset Formula $\mathcal{L}$
+\end_inset
+
+.
+ The overall normalisation is either irrelevant (because the observable
+ is a ratio, e.g.
+ 
+\begin_inset Formula $\left\langle \hat{O}\right\rangle =\mathrm{Tr}\left(\hat{O}\mathrm{e}^{-\beta\hat{H}}\right)/Z$
+\end_inset
+
+) or can be fixed from the requirement that thermodynamic functions (e.g.
+ pressure 
+\begin_inset Formula $P=\partial_{V}\left(T\ln Z\right)$
+\end_inset
+
+) vanish at zero temperature.
+\end_layout
+
+\begin_layout Standard
+These aspects can be illustrated by the case of a free field theory, for
+ which
+\begin_inset Formula 
+\begin{equation}
+\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\int_{x_{E}}\left(\left(\partial_{x^{4}}\phi\right)^{2}+\left(\nabla\phi\right)^{2}+m^{2}\phi^{2}\right)=-\frac{1}{2}\int_{x_{E}}\phi D\phi
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+D=-\partial_{x^{4}}^{2}-\nabla^{2}+m^{2}=-\nabla_{E}^{2}+m^{2}
+\end{equation}
+
+\end_inset
+
+and 
+\begin_inset Formula $\nabla_{E}$
+\end_inset
+
+ is the obvious Euclidean space gradient operator.
+ The following discussion closely follows 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "kapusta_finite-temperature_2006"
+
+\end_inset
+
+.
+ The functional integral is easiest to evaluate in the eigenbasis of 
+\begin_inset Formula $D$
+\end_inset
+
+, i.e.
+ periodic functions of the form 
+\begin_inset Formula $\exp i\left(\boldsymbol{p}\cdot\boldsymbol{x}+\omega_{n}x^{4}\right)$
+\end_inset
+
+ where the Matsubara frequencies 
+\begin_inset Formula $\omega_{n}=2\pi n/\beta$
+\end_inset
+
+ with 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+ implement the periodic boundary condition.
+ It is also convenient to quantise in a spatial box of volume 
+\begin_inset Formula $\mathrm{V}=L^{3}$
+\end_inset
+
+ with periodic boundary conditions, making 
+\begin_inset Formula $\boldsymbol{p}$
+\end_inset
+
+ discrete with lattice spacing 
+\begin_inset Formula $2\pi/L$
+\end_inset
+
+.
+ The convenient basis functions are
+\begin_inset Formula 
+\begin{equation}
+\phi_{n\boldsymbol{p}}=\sqrt{\frac{\beta}{\mathrm{V}}}\mathrm{e}^{i\left(\boldsymbol{p}\cdot\boldsymbol{x}+\omega_{n}x^{4}\right)},
+\end{equation}
+
+\end_inset
+
+which are normalised so that
+\begin_inset Formula 
+\begin{equation}
+\Braket{\phi_{m\boldsymbol{q}}|\phi_{n\boldsymbol{p}}}=\beta^{2}\delta_{mn}\delta_{\boldsymbol{p}\boldsymbol{q}},
+\end{equation}
+
+\end_inset
+
+where, on functions, 
+\begin_inset Formula $\Braket{f|g}\equiv\int_{x_{E}}f^{\star}g$
+\end_inset
+
+.
+ With these normalisations the Fourier amplitudes 
+\begin_inset Formula $A_{n\boldsymbol{p}}$
+\end_inset
+
+ in
+\begin_inset Formula 
+\begin{equation}
+\phi=\sum_{n\boldsymbol{p}}A_{n\boldsymbol{p}}\phi_{n\boldsymbol{p}}
+\end{equation}
+
+\end_inset
+
+are dimensionless.
+ Then 
+\begin_inset Formula 
+\begin{equation}
+\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\sum_{n\boldsymbol{p}}\left|A_{n\boldsymbol{p}}\right|^{2}\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The functional integrand does not depend on the phases of 
+\begin_inset Formula $A_{n\boldsymbol{p}}$
+\end_inset
+
+, so these contribute to the normalisation.
+ The integrals over the magnitudes are Gaussian, giving
+\begin_inset Formula 
+\begin{equation}
+Z=N'\prod_{n\boldsymbol{p}}\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]^{-1/2}
+\end{equation}
+
+\end_inset
+
+where all the normalisation factors are absorbed in 
+\begin_inset Formula $N'$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{eqnarray}
+\ln Z & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\ln\left[\beta^{2}\left(\omega_{n}^{2}+\boldsymbol{p}^{2}+m^{2}\right)\right]\nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\left\{ \ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta^{2}\left(\boldsymbol{p}^{2}+m^{2}\right)}\frac{\mathrm{d}\theta^{2}}{\theta^{2}+\left(2\pi n\right)^{2}}\right\} \nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\left(1+\frac{2}{\mathrm{e}^{\theta}-1}\right)\right\} \nonumber \\
+ & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\beta\omega_{\boldsymbol{p}}-1+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\frac{2}{\mathrm{e}^{\theta}-1}\right\} \nonumber \\
+ & = & \ln N'-\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} -\sum_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\end{eqnarray}
+
+\end_inset
+
+The identity 
+\begin_inset Formula $\sum_{n}1/\left(n^{2}+\left(\theta/2\pi\right)^{2}\right)=\left(2\pi^{2}/\theta\right)\left(1+2/\left(\mathrm{e}^{\theta}-1\right)\right)$
+\end_inset
+
+ was used to get the third line.
+ The rest of the steps are straightforward evaluations.
+\end_layout
+
+\begin_layout Standard
+Demanding that the entropy 
+\begin_inset Formula $S=\partial\left(T\ln Z\right)/\partial T\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $T\to0$
+\end_inset
+
+ fixes the normalisation
+\begin_inset Formula 
+\begin{equation}
+N'=\exp\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} ,
+\end{equation}
+
+\end_inset
+
+and finally (on taking the infinite volume limit 
+\begin_inset Formula $\sum_{\boldsymbol{p}}\to\mathrm{V}\int_{\boldsymbol{p}}$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+\ln Z=-\mathrm{V}\int_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\end{equation}
+
+\end_inset
+
+The energy density is
+\begin_inset Formula 
+\begin{equation}
+\rho=\frac{E}{\mathrm{V}}=-\frac{\partial_{\beta}\ln Z}{\mathrm{V}}=\int_{\boldsymbol{p}}\left(\frac{1}{2}\omega_{\boldsymbol{p}}+\frac{\omega_{\boldsymbol{p}}}{\mathrm{e}^{\beta\omega_{\boldsymbol{p}}}-1}\right)
+\end{equation}
+
+\end_inset
+
+which is the familiar Bose-Einstein contribution plus a vacuum energy contributi
+on which can be subtracted.
+ Similarly, the pressure is
+\begin_inset Formula 
+\begin{equation}
+P=T\partial_{\mathrm{V}}\ln Z=-\int_{\boldsymbol{p}}\left[\frac{1}{2}\omega_{\boldsymbol{p}}+T\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+\end{equation}
+
+\end_inset
+
+Note that there is a vacuum contribution to the pressure as well.
+ The fact that this contribution is equal to the negative of the vacuum
+ energy is in fact a consequence of Lorentz invariance
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The energy-momentum tensor of a Lorentz invariant state must be proportional
+ to the metric 
+\begin_inset Formula $T_{\mu\nu}\propto\eta_{\mu\nu}$
+\end_inset
+
+ since there are no other spacetime tensors available to construct it from.
+ Thus the pressure (i.e.
+ the diagonal space-space components) is equal and opposite to the energy
+ density (the time-time component).
+\end_layout
+
+\end_inset
+
+ and this provides a nice check of the formalism.
+\end_layout
+
+\begin_layout Standard
+The formalisms sketched above for vacuum and finite temperature field theory
+ can be naturally generalised to the contour or nonequilibrium Green function
+ method which also allows the treatment of non-equilibrium field theory.
+ The contour method has been used extensively in various fields of condensed
+ matter and particle physics, from molecular transport and ultracold atomic
+ gases to nanoelectronics, nuclear physics and cosmology.
+ The research literature using these techniques is vast, and there are good
+ recent books introducing them in condensed matter 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+ and high energy/cosmology 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Calzetta2008"
+
+\end_inset
+
+ contexts.
+ The contour method (as defined by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanLeeuwen2013,Stefanucci2013"
+
+\end_inset
+
+) contains the ordinary vacuum quantum field theory (as discussed above
+ and in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995,Zinn-Justin1990"
+
+\end_inset
+
+ and many other references), the finite temperature equilibrium quantum
+ field theory in the 
+\emph on
+Matsubara
+\emph default
+ or 
+\emph on
+imaginary time 
+\emph default
+formalism (discussed above and in e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+), and the nonequilibrium Green function theory developed by Schwinger and
+ Keldysh (independently; see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kita2010"
+
+\end_inset
+
+ in addition to 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Primary refs???
+\end_layout
+
+\end_inset
+
+) as special cases.
+\end_layout
+
+\begin_layout Standard
+The basic idea of the method is quite simple.
+ Consider a quantum system in some initial state 
+\begin_inset Formula $\ket{\Psi_{0}}$
+\end_inset
+
+ at an initial time 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Then the expectation value 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ of some operator 
+\begin_inset Formula $\hat{O}\left(t\right)$
+\end_inset
+
+ at time 
+\begin_inset Formula $t$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+O\left(t\right)=\Braket{\Psi\left(t\right)|\hat{O}\left(t\right)|\Psi\left(t\right)}=\Braket{\Psi_{0}|\hat{U}\left(t_{0},t\right)\hat{O}\left(t\right)\hat{U}\left(t,t_{0}\right)|\Psi_{0}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{U}\left(t,t_{0}\right)$
+\end_inset
+
+ is the time evolution operator.
+ As usual 
+\begin_inset Formula $\hat{U}\left(t_{2},t_{1}\right)$
+\end_inset
+
+ for 
+\begin_inset Formula $t_{2}>t_{1}$
+\end_inset
+
+ can be expressed in terms of a time ordered exponential
+\begin_inset Formula 
+\begin{equation}
+\hat{U}\left(t_{2},t_{1}\right)=\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
+\end{equation}
+
+\end_inset
+
+but for 
+\begin_inset Formula $t_{2}<t_{1}$
+\end_inset
+
+ by an 
+\emph on
+anti-time ordered
+\emph default
+ exponential is required:
+\begin_inset Formula 
+\begin{equation}
+\hat{U}\left(t_{2},t_{1}\right)=\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\bar{\mathrm{T}}$
+\end_inset
+
+ orders operators in the opposite sense to 
+\begin_inset Formula $\mathrm{T}$
+\end_inset
+
+, i.e.
+ earlier times to the left.
+\end_layout
+
+\begin_layout Standard
+Substituting these in the equation for 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\begin{equation}
+O\left(t\right)=\Braket{\Psi_{0}|\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t}^{t_{0}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} \hat{O}\left(t\right)\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} |\Psi_{0}}.
+\end{equation}
+
+\end_inset
+
+This can be simplified by interpreting the time evolution as along a 
+\emph on
+two branched
+\emph default
+ contour 
+\begin_inset Formula $C$
+\end_inset
+
+ which runs from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t$
+\end_inset
+
+ then doubles back to 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+ Introducing a contour time variable 
+\begin_inset Formula $z$
+\end_inset
+
+ as an affine parameter on the contour
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+An explicit mapping of 
+\begin_inset Formula $z\in\left(t_{0},2t-t_{0}\right)$
+\end_inset
+
+ to ordinary time 
+\begin_inset Formula $\tau\in\left(t_{0},t\right)$
+\end_inset
+
+ is 
+\begin_inset Formula $\tau=z$
+\end_inset
+
+ for 
+\begin_inset Formula $t_{0}\leq z\leq t$
+\end_inset
+
+ and 
+\begin_inset Formula $\tau=2t-z$
+\end_inset
+
+ for 
+\begin_inset Formula $t<z<2t-t_{0}$
+\end_inset
+
+, but this is rarely needed in practice.
+\end_layout
+
+\end_inset
+
+ and a 
+\emph on
+contour time ordering
+\emph default
+ 
+\begin_inset Formula $\mathrm{T}_{C}$
+\end_inset
+
+, 
+\begin_inset Formula $O\left(t\right)$
+\end_inset
+
+ can be written as
+\begin_inset Formula 
+\begin{equation}
+O\left(t\right)=\Braket{\Psi_{0}|\mathrm{T}_{C}\left\{ \exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}\left(t\right)\right\} |\Psi_{0}}.
+\end{equation}
+
+\end_inset
+
+Further, both branches of 
+\begin_inset Formula $C$
+\end_inset
+
+ can be extended to an arbitrary time 
+\begin_inset Formula $T>t$
+\end_inset
+
+, removing the 
+\begin_inset Formula $t$
+\end_inset
+
+ dependence of the contour.
+ Since there are no operators in the time interval 
+\begin_inset Formula $\left(t,T\right)$
+\end_inset
+
+ the segment of the evolution from 
+\begin_inset Formula $t$
+\end_inset
+
+ to 
+\begin_inset Formula $T$
+\end_inset
+
+ and back is given by 
+\begin_inset Formula $\hat{U}\left(t,T\right)\hat{U}\left(T,t\right)=\hat{\mathbb{I}}$
+\end_inset
+
+ and cancels outs, so no modification of the above expression is necessary.
+ There is an ambiguity where 
+\begin_inset Formula $\hat{O}\left(t\right)$
+\end_inset
+
+ should go on the contour, i.e.
+ how to generalise 
+\begin_inset Formula $\hat{O}\left(t\right)\to\hat{O}\left(z\right)$
+\end_inset
+
+, but for convenience 
+\begin_inset Formula $\hat{O}\left(z\right)$
+\end_inset
+
+ can be taken to be the same operator on both branches.
+\end_layout
+
+\begin_layout Standard
+The generalisation of this result to multiple operators and a general initial
+ density matrix 
+\begin_inset Formula $\hat{\rho}_{0}=\sum_{n}p_{n}\ket n\bra n$
+\end_inset
+
+, where 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ is the probability that the system is in state 
+\begin_inset Formula $\ket n$
+\end_inset
+
+, is obvious:
+\begin_inset Formula 
+\begin{equation}
+\left\langle O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right\rangle =\mathrm{Tr}\left\{ \hat{\rho}_{0}\mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} .
+\end{equation}
+
+\end_inset
+
+Proceeding still further, a general density matrix can be written 
+\begin_inset Formula 
+\begin{equation}
+\hat{\rho}_{0}=Z^{-1}\exp\left(-\beta\hat{H}_{M}\right),
+\end{equation}
+
+\end_inset
+
+for 
+\emph on
+some
+\emph default
+ Hermitian operator 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+, where 
+\begin_inset Formula $Z$
+\end_inset
+
+ is chosen to ensure 
+\begin_inset Formula $\mathrm{Tr}\hat{\rho}_{0}=1$
+\end_inset
+
+ (in fact 
+\begin_inset Formula $Z$
+\end_inset
+
+ can be absorbed into a shift of 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ if so desired).
+ If the Hamiltonian of the system is time independent and 
+\begin_inset Formula $\hat{H}_{M}=\hat{H}$
+\end_inset
+
+ then this describes a thermal equilibrium state at temperature 
+\begin_inset Formula $1/\beta$
+\end_inset
+
+.
+ However, there is no loss of generality in writing 
+\begin_inset Formula $\hat{\rho}_{0}$
+\end_inset
+
+ in this way with a general 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+, and out of equilibrium the value of 
+\begin_inset Formula $\beta$
+\end_inset
+
+ is entirely arbitrary, equivalent to an arbitrary normalisation convention
+ for 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+.
+ Now note that 
+\begin_inset Formula $\exp\left(-\beta\hat{H}_{M}\right)=\exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t_{0}-i\beta\hbar}\mathrm{d}\tau\ \hat{H}_{M}\right)=\hat{U}\left(t_{0}-i\beta\hbar,t_{0};\hat{H}_{M}\right)$
+\end_inset
+
+, i.e.
+ up to an overall normalisation factor the initial density matrix can be
+ written as the time evolution operator for an 
+\emph on
+imaginary
+\emph default
+ time interval with 
+\begin_inset Quotes eld
+\end_inset
+
+Hamiltonian
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ (assuming a 
+\begin_inset Formula $\tau$
+\end_inset
+
+ independent 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+).
+ Extending the contour 
+\begin_inset Formula $C$
+\end_inset
+
+ with a segment on the imaginary axis from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{0}-i\beta\hbar$
+\end_inset
+
+ and 
+\emph on
+defining
+\emph default
+ 
+\begin_inset Formula $\hat{H}\left(z\right)=\hat{H}_{M}$
+\end_inset
+
+ for 
+\begin_inset Formula $z$
+\end_inset
+
+ on this segment then, taking care with the normalisation,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\left\langle \mathrm{T}_{C}\left[O_{1}\left(z_{1}\right)O_{2}\left(z_{2}\right)\cdots\right]\right\rangle  & = & \frac{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots\right]\right\} }{\mathrm{Tr}\left\{ \mathrm{T}_{C}\left[\exp\left(-\frac{i}{\hbar}\int_{C}\mathrm{d}z\ \hat{H}\left(z\right)\right)\right]\right\} }\nonumber \\
+ & = & \frac{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{C}\mathcal{L}\right)\hat{O}_{1}\left(z_{1}\right)\hat{O}_{2}\left(z_{2}\right)\cdots}{\int\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{C}\mathcal{L}\right)},
+\end{eqnarray}
+
+\end_inset
+
+where in the second line we have specialised to field theory and extended
+ the path integral and Lagrangian to all branches of the controur.
+ The imaginary branch of the contour is called the 
+\emph on
+Matsubara
+\emph default
+ branch, as this is the same contour used in the imaginary time field theory
+ formalism for thermal equilibrium problems.
+ The similarity of this result to the usual vacuum field theory formula
+ should be obvious, however 
+\emph on
+no
+\emph default
+ assumptions have been made about the initial/final state or spectrum of
+ the theory.
+ This greatly extends the applicability of the formalism compared to the
+ usual vacuum field theory.
+ Despite this, much of the technical machinery of the vacuum theory, including
+ path integrals, Feynman diagrams, effective actions and renormalisation,
+ can be carried over with suitable modifications for contour time ordering
+ as opposed to regular time ordering.
+ Difficulties come from the extra degrees of freedom (fields on the backward
+ branch of the contour), the explicit appearance of memory effects, and
+ choosing a 
+\begin_inset Formula $\hat{H}_{M}$
+\end_inset
+
+ that allows for consistent and practically solvable renormalisation conditions.
+\end_layout
+
+\begin_layout Standard
+The main objects of interest are the correlation functions of field operators,
+ i.e.
+ objects like
+\begin_inset Formula 
+\begin{equation}
+\Delta\left(x,y\right)=-i\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(x\right)\hat{\phi}\left(y\right)\right]\right\rangle ,
+\end{equation}
+
+\end_inset
+
+in a scalar field theory.
+ Now all the time coordinates run on the time contour 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ There are nine possibilities for the time arguments of the Green function:
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $z_{2}$
+\end_inset
+
+ can be on either of the forward, backward or Matsubara branches of the
+ contour independently.
+ This leads to the definition of 
+\emph on
+component
+\emph default
+ Green functions, with real time arguments, for each case.
+ There is also the possibility for a singular part, proportional to a contour
+ delta function 
+\begin_inset Formula $\delta_{C}\left(z_{1},z_{2}\right)$
+\end_inset
+
+.
+ These components and two 
+\begin_inset Quotes eld
+\end_inset
+
+derived
+\begin_inset Quotes erd
+\end_inset
+
+ Green functions (the advanced and retarded functions) are listed in Table
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Keldysh-components-of"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Keldysh-components-of"
+
+\end_inset
+
+
+\lang australian
+Keldysh components for any function 
+\begin_inset Formula $k\left(z,z'\right)$
+\end_inset
+
+ taking two contour time arguments.
+ (Note: 
+\begin_inset Formula $t_{0}=0$
+\end_inset
+
+ here.)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Keldysh component
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Symbol
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Contour arguments
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Singular
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{\delta}\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k\left(z,z'\right)=\delta_{C}\left(z,z'\right)k^{\delta}\left(z\right)+\text{regular functions}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{T}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z,z'$
+\end_inset
+
+ on forward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anti-time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{\tilde{T}}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z,z'$
+\end_inset
+
+ on backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lesser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{<}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on forward, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greater
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{>}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on backward, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on forward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook k\left(\tau,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+, 
+\begin_inset Formula $z'$
+\end_inset
+
+ on forward/backward contour
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook k\left(t,\tau\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z$
+\end_inset
+
+ on forward/backward contour, 
+\begin_inset Formula $z'=-i\tau$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matsubara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{M}\left(\tau,\tau'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+, 
+\begin_inset Formula $z'=-i\tau'$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retarded
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{R}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{R}\left(t,t'\right)=k^{\delta}\left(t-t'\right)\delta\left(t-t'\right)+\Theta\left(t-t'\right)\left[k^{>}\left(t,t'\right)-k^{<}\left(t,t'\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{A}\left(t,t'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $k^{A}\left(t,t'\right)=k^{\delta}\left(t-t'\right)\delta\left(t-t'\right)-\Theta\left(t'-t\right)\left[k^{>}\left(t,t'\right)-k^{<}\left(t,t'\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The origin of some of the names can be seen by visualising the function
+ arguments on the time contour.
+ For example, the lesser function is given by
+\begin_inset Formula 
+\begin{equation}
+\Delta^{<}\left(x,y\right)=-i\left\langle \hat{\phi}\left(y\right)\hat{\phi}\left(x\right)\right\rangle ,
+\end{equation}
+
+\end_inset
+
+i.e.
+ the second argument appears to the left of the first in the matrix element,
+ regardless of the relation between 
+\begin_inset Formula $x^{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $y^{0}$
+\end_inset
+
+.
+ So in the lesser function order the fields 
+\emph on
+as if 
+\emph default
+
+\begin_inset Formula $x^{0}<y^{0}$
+\end_inset
+
+, even if it is not.
+ The hook functions are similarly visual.
+ Consider the left hook function 
+\begin_inset Formula $\lhook\Delta\left(x,y\right)$
+\end_inset
+
+: the left argument is on the Matsubara (vertical) branch and the right
+ argument is on a real time (horizontal) branch (it does not matter which
+ one since the contour ordering is the same in both cases).
+ The contour delta function is defined so that 
+\begin_inset Formula $\int_{C}\mathrm{d}z'\ \delta_{C}\left(z,z'\right)f\left(z'\right)=f\left(z\right)$
+\end_inset
+
+ as usual.
+ The only nontrivial reduction to an ordinary delta function is when (taking
+ 
+\begin_inset Formula $t_{0}=0$
+\end_inset
+
+ for simplicity) 
+\begin_inset Formula $z=-i\tau$
+\end_inset
+
+ lies on the Matsubara branch:
+\begin_inset Formula 
+\begin{equation}
+\int_{C}\mathrm{d}z'\ \delta_{C}\left(-i\tau,z'\right)f\left(z'\right)=f\left(-i\tau\right).
+\end{equation}
+
+\end_inset
+
+The only contribution can come from 
+\begin_inset Formula $z'$
+\end_inset
+
+ on the Matsubara branch, so substitute 
+\begin_inset Formula $z'=-i\tau'$
+\end_inset
+
+ giving
+\begin_inset Formula 
+\begin{equation}
+\int_{0}^{-i\beta\hbar}\mathrm{d}\left(-i\tau'\right)\delta_{C}\left(-i\tau,-i\tau'\right)f\left(-i\tau'\right)=f\left(-i\tau\right),
+\end{equation}
+
+\end_inset
+
+which gives 
+\begin_inset Formula $\delta_{C}\left(-i\tau,-i\tau'\right)=i\delta\left(\tau-\tau'\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+When working with the Keldysh components it is convenient to have identities
+ for the reduction of frequently occuring convolutions and products of contour
+ time functions to their components.
+ These identities are called 
+\emph on
+Langreth rules
+\emph default
+ and are summarised in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Langreth-rules"
+
+\end_inset
+
+.
+ These identities are proved in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Stefanucci2013"
+
+\end_inset
+
+ chapter 5.
+ The most common use of these identities is in the reduction of equations
+ of motion for contour ordered Green functions to equations for real times
+ functions.
+ For example, if a scalar field Green function obeys a Dyson equation of
+ the form
+\begin_inset Formula 
+\begin{equation}
+\square_{x}\Delta\left(x,y\right)=i\delta_{C}\left(x,y\right)+\int_{z}\Sigma\left(x,z\right)\Delta\left(z,y\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\square_{x}=\frac{\partial}{\partial x^{\mu}}\frac{\partial}{\partial x_{\mu}}$
+\end_inset
+
+ and the self energy function 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ is also defined on the time contour, the Langreth rules show that 
+\begin_inset Formula $\Delta^{<}$
+\end_inset
+
+ obeys (suppressing arguments)
+\begin_inset Formula 
+\begin{equation}
+\square_{x}\Delta^{<}=\Sigma^{<}\cdot\Delta^{A}+\Sigma^{R}\cdot\Delta^{<}+\rhook\Sigma\star\lhook\Delta,
+\end{equation}
+
+\end_inset
+
+an equation suitable for numerical solution.
+\end_layout
+
+\begin_layout Standard
+The Green functions contain the physical information of the theory.
+ This can be seen explicitly in the simplifying case of free fields where
+ 
+\begin_inset Formula $\Sigma=0$
+\end_inset
+
+ and the Dyson equation can be solved simply by Fourier transform.
+ Writing
+\begin_inset Formula 
+\begin{equation}
+\Delta^{\left(a\right)}\left(x,y\right)=\int_{p}\mathrm{e}^{-ip\left(x-y\right)}\Delta^{\left(a\right)}\left(p\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\left(a\right)$
+\end_inset
+
+ denotes the Keldysh component, one has 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Calzetta1988"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\Delta^{\mathrm{T}}\left(p\right) & = & \frac{1}{p^{2}-m^{2}+i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),\\
+\Delta^{<}\left(p\right)=\Delta^{>}\left(-p\right) & = & -2\pi i\left[\Theta\left(p^{0}\right)+f\left(p\right)\right]\delta\left(p^{2}-m^{2}\right),\\
+\Delta^{\tilde{\mathrm{T}}}\left(p\right) & = & -\frac{1}{p^{2}-m^{2}-i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),
+\end{eqnarray*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta^{<}\left(p\right)=\Delta^{>}\left(-p\right)$
+\end_inset
+
+ follows by Hermiticity of the field 
+\begin_inset Formula $\hat{\phi}$
+\end_inset
+
+, and the fact that the same function 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ is found on all of the right hand sides is due to the fact that the commutator
+ 
+\begin_inset Formula $\left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right]$
+\end_inset
+
+ is a c-number, so its expectation value 
+\begin_inset Formula $-i\left\langle \left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right]\right\rangle =\Delta^{>}\left(x,y\right)-\Delta^{<}\left(x,y\right)$
+\end_inset
+
+ is independent of the state.
+ By considering the anticommutator 
+\begin_inset Formula $-i\left\{ \hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right\} =\Delta^{>}\left(x,y\right)+\Delta^{<}\left(x,y\right)$
+\end_inset
+
+ one finds that 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ must be real and even.
+ Another constraint is that 
+\begin_inset Formula $\int_{xy}h^{\star}\left(x\right)i\Delta^{<}\left(x,y\right)h\left(y\right)\geq0$
+\end_inset
+
+ for all real functions 
+\begin_inset Formula $h\left(x\right)$
+\end_inset
+
+, which implies that 
+\begin_inset Formula $f\left(p\right)\geq0$
+\end_inset
+
+.
+ Finally, an equilibrium computation shows that there 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ is just the Bose-Einstein occupation number of the mode 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $f\left(p\right)$
+\end_inset
+
+ naturally has the interpretation of a statistical distribution function
+ which can be extended to arbitrary states.
+ Thus knowledge of the Green function is equivalent to knowledge of the
+ statistical distribution function.
+\end_layout
+
+\begin_layout Standard
+Other observables of the theory are simply related to the Green functions
+ since they are polynomials in the fields and their derivatives.
+ For example, in a theory with 
+\begin_inset Formula $N$
+\end_inset
+
+ scalar fields 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+, 
+\begin_inset Formula $a=1,\cdots,N$
+\end_inset
+
+, with an 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry, the conserved 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ currents are 
+\begin_inset Formula 
+\begin{equation}
+j_{\mu}^{A}=i\left\langle \phi_{a}T_{ab}^{A}\overleftrightarrow{\partial_{\mu}}\phi_{b}\right\rangle ,
+\end{equation}
+
+\end_inset
+
+which can be written in terms of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+ If the theory has a quartic coupling the energy-momentum tensor is 
+\begin_inset Formula 
+\begin{align}
+T_{\mu\nu} & =\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}\vphantom{\left(\frac{1}{2}\right)}\right.\nonumber \\
+ & \left.-\eta_{\mu\nu}\left(\frac{1}{2}\partial_{\rho}\phi_{a}\partial^{\rho}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\right)\right\rangle ,
+\end{align}
+
+\end_inset
+
+which can be written in terms of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ and 
+\begin_inset Formula $G^{\left(4\right)}=\left\langle \mathrm{T}_{C}\left[\phi_{a}\phi_{b}\phi_{c}\phi_{d}\right]\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Langreth-rules"
+
+\end_inset
+
+
+\lang australian
+Langreth rules for convolutions and products (with 
+\begin_inset Formula $f\cdot g\equiv\int_{0}^{\infty}\mathrm{d}t\ f\left(t\right)g\left(t\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $f\star g\equiv-i\int_{0}^{\beta}\mathrm{d}\tau\ f\left(\tau\right)g\left(\tau\right)$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Green function
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="left" valignment="middle" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c\left(z,z'\right)=\int_{C}\mathrm{d}\bar{z}\ a\left(z,\bar{z}\right)b\left(\bar{z},z'\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c\left(z,z'\right)=a\left(z,z'\right)b\left(z',z\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(a^{\delta}=b^{\delta}=0\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Greater
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{>}=a^{>}\cdot b^{A}+a^{R}\cdot b^{>}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{>}=a^{>}b^{<}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Lesser
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{<}=a^{<}\cdot b^{A}+a^{R}\cdot b^{<}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{<}=a^{<}b^{>}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Retarded
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{R}=a^{R}\cdot b^{R}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{R}=\begin{cases}
+a^{R}b^{<}+a^{<}b^{A}\\
+a^{R}b^{>}+a^{>}b^{A}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{A}=a^{A}\cdot b^{A}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{A}=\begin{cases}
+a^{A}b^{<}+a^{<}b^{R}\\
+a^{A}b^{>}+a^{>}b^{R}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{T}=a^{T}\cdot b^{T}-a^{<}\cdot b^{>}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{T}=\begin{cases}
+a^{<}b^{T}+a^{R}b^{<}\\
+a^{T}b^{>}+a^{>}b^{A}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Anti-time ordered
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{\tilde{T}}=a^{>}\cdot b^{<}-a^{\tilde{T}}\cdot b^{\tilde{T}}+\rhook a\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{\tilde{T}}=\begin{cases}
+a^{\tilde{T}}b^{<}-a^{<}b^{A}\\
+a^{>}b^{\tilde{T}}-a^{R}b^{>}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook c=a^{R}\cdot\rhook b+\rhook a\star b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rhook c=\rhook a\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Left hook
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook c=\lhook a\cdot b^{A}+a^{M}\star\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\lhook c=\rhook a\lhook b$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Matsubara
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{M}=a^{M}\star b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $c^{M}=a^{M}b^{M}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vphantom{k_{k}^{k^{k^{k}}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:
+\end_layout
+
+\begin_layout Plain Layout
+More about the physical meaning/use of Green's functions, Dyson equation
+ etc....?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Summary
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch1-Summary"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This chapter has reviewed quantum field theory focusing on the functional
+ integral formalism.
+ It has been shown that a common formula for the generating functional can
+ be used for scattering, thermal equilibrium and generic non-equilibrium
+ problems by specifying a choice of time contour.
+ The fundamental objects of field theory are the Green functions which can
+ be straightforwardly connected to physical observables such as densities,
+ currents and so forth.
+\end_layout
+
 \end_body
 \end_document

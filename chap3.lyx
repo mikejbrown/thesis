@@ -1368,16 +1368,28 @@ The propagators evaluated at coincident points are quadratically divergent
  in four dimensions, so the difference
 \begin_inset Formula 
 \begin{equation}
-i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=i\int_{p}\frac{m_{H}^{2}-m_{G}^{2}}{\left(p^{2}-m_{H}^{2}\right)\left(p^{2}-m_{G}^{2}\right)},
+i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=i\int_{p}\frac{m_{H}^{2}-m_{G}^{2}}{\left(p^{2}-m_{H}^{2}\right)\left(p^{2}-m_{G}^{2}\right)}+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}},
 \end{equation}
 
 \end_inset
 
 is logarithmically divergent and requires renormalisation.
- In general, the renormalised form of this integral can be written
+ 
+\begin_inset Formula $\mathcal{T}_{H/G}^{\mathrm{th}}$
+\end_inset
+
+ are the finite thermal Bose-Einstein contributions
+\begin_inset Formula 
+\[
+\mathcal{T}_{H/G}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+m_{H/G}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+m_{H/G}^{2}}}-1}.
+\]
+
+\end_inset
+
+ In general, the renormalised form of the difference can be written
 \begin_inset Formula 
 \begin{equation}
-i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=\left(m_{H}^{2}-m_{G}^{2}\right)\left[C+F\left(m_{H}^{2},m_{G}^{2}\right)\right],
+i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=\left(m_{H}^{2}-m_{G}^{2}\right)\left[C+F\left(m_{H}^{2},m_{G}^{2}\right)\right]+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}},
 \end{equation}
 
 \end_inset
@@ -1386,7 +1398,7 @@ where
 \begin_inset Formula $C$
 \end_inset
 
- is a (real) scheme dependent constant and
+ is a real scheme dependent constant and
 \begin_inset Formula 
 \begin{equation}
 F\left(m_{H}^{2},m_{G}^{2}\right)=\int_{0}^{m_{G}^{2}}\mathrm{d}\mu^{2}\int_{p}\frac{i}{\left(p^{2}-m_{H}^{2}\right)\left(p^{2}-\mu^{2}\right)^{2}},
@@ -1403,13 +1415,25 @@ is finite and equal to zero if
 \end_inset
 
 ).
- Thus
+ In the modified minimal subtraction scheme (
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+C=\frac{1}{16\pi^{2}}\ln\left(\frac{m_{H}^{2}}{\mu^{2}}\right).
+\end{equation}
+
+\end_inset
+
+Thus
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-m_{G}^{2}=-\frac{\hbar\lambda}{3}v\left(m_{H}^{2}-m_{G}^{2}\right)\left[C+F\left(m_{H}^{2},m_{G}^{2}\right)\right]+\mathcal{O}\left(\lambda^{2}\right),
+m_{G}^{2}=-\frac{\hbar\lambda}{3}v\left[\left(m_{H}^{2}-m_{G}^{2}\right)\left(C+F\left(m_{H}^{2},m_{G}^{2}\right)\right)+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}}\right]+\mathcal{O}\left(\lambda^{2}\right),
 \end{equation}
 
 \end_inset
@@ -1418,23 +1442,62 @@ which only admits
 \begin_inset Formula $m_{G}^{2}=0$
 \end_inset
 
- as a solution if 
+ as a solution at zero temperature if 
 \begin_inset Formula $C=0$
 \end_inset
 
 .
- However, it will be seen later on 
-\begin_inset Note Note
+ This can be achieved in 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ by choosing the renormalisation point 
+\begin_inset Formula $\mu=m_{H}$
+\end_inset
+
+ (a similar choice can be made in any other subtraction scheme).
+ However, once this is done all renormalisation constants are fixed and
+ one has 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+ at any other temperature in the symmetry breaking regime.
+ As a result Goldstone's theorem is violated at finite temperature and the
+ unphysical mass of the Goldstone bosons is responsible for also changing
+ the symmetry breaking phase transition from second order to first order.
+ The only other 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ solution also has 
+\begin_inset Formula $m_{H}^{2}=0$
+\end_inset
+
+ which is only possible at the critical temperature of the phase transition.
+ To find the critical temperature it is necessary to actually solve the
+ 2PI gap equation.
+\end_layout
+
+\begin_layout Section
+Renormalisation and solution of the 2PI Hartree-Fock gap equations
+\begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-WHERE?
+
+}{
 \end_layout
 
 \end_inset
 
-that this renormalisation condition is inconsistent and Goldstone's theorem
- is violated.
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
