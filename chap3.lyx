@@ -1816,7 +1816,7 @@ Once regularised the coincident propagators
 \begin{align}
 0 & =-v\left(m^{2}+\frac{\lambda}{6}v^{2}+\left(N-1\right)\frac{\hbar\lambda}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-2PI-HF-vev-eom}\\
 m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-2PI-HF-G-eom}\\
-m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right).\label{eq:fin-2PI-HF-H-eom}
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-2PI-HF-H-eom}
 \end{align}
 
 \end_inset
@@ -1896,7 +1896,31 @@ It remains to determine the renormalisation constants.
 \end_inset
 
  left unspecified has the virtue of being scheme agnostic.
- Substituting 
+ In either case the finite parts of the coincident propagators are take
+ to be
+\begin_inset Formula 
+\begin{equation}
+\mathcal{T}_{G/H}^{\mathrm{fin}}=\frac{m_{G/H}^{2}}{16\pi^{2}}\ln\left(\frac{m_{G/H}^{2}}{\mu^{2}}\right)+\mathcal{T}_{G/H}^{\mathrm{th}},
+\end{equation}
+
+\end_inset
+
+where the thermal contribution is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{T}_{G/H}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}-1}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting 
 \begin_inset Formula $\mathcal{T}_{G/H}^{\infty}$
 \end_inset
 
@@ -1967,7 +1991,34 @@ Z=Z_{\Delta} & =1,\\
 
 \end_inset
 
+The final renormalisation choice is to take 
+\begin_inset Formula $\mu^{2}=m_{H}^{2}$
+\end_inset
 
+, which results in the tree level (i.e.
+ classical) relations 
+\begin_inset Formula $m^{2}=-\lambda v^{2}/6$
+\end_inset
+
+, 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{H}^{2}=\lambda v^{2}/3$
+\end_inset
+
+ holding at zero temperature.
+ It is convenient to denote the zero temperature values with an over-bar,
+ so that 
+\begin_inset Formula $\bar{v}^{2}=3\bar{m}_{H}^{2}/\lambda=-6m^{2}/\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{G}^{2}=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2024,7 +2075,7 @@ In the symmetric regime
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T_{\star}=\sqrt{\frac{72\left|m^{2}\right|}{\hbar\lambda\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right).
+T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right).
 \end{equation}
 
 \end_inset
