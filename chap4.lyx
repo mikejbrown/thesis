@@ -114,5 +114,35 @@ progress{0}
 
 \end_layout
 
+\begin_layout Standard
+The previous chapter discussed global symmetries and Ward identities in
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, showing that the solutions of truncated 
+\begin_inset Formula $n$
+\end_inset
+
+PI equations of motion do not obey the 1PI Ward identities.
+ This chapter discusses an attempt to circumvent these problems originated
+ by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Symmetry Improvement of the 2PIEA
+\end_layout
+
+\begin_layout Section
+Symmetry Improvement of the 3PIEA
+\end_layout
+
 \end_body
 \end_document

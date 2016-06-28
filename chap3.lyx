@@ -1255,7 +1255,7 @@ Taking
  sources one finds
 \begin_inset Formula 
 \begin{equation}
-0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right),
+0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ad}^{A}\Delta_{db}+T_{bd}^{A}\Delta_{ad}\right),
 \end{equation}
 
 \end_inset
@@ -1278,6 +1278,163 @@ ns of the 2PIEA, though it must vanish in the exact theory since there
 
  no longer faithfully represents the propagator of the Goldstone bosons,
  which now have an unphysical mass.
+\end_layout
+
+\begin_layout Standard
+To see this explicitly, consider substituting in the explicit saddle point
+ formula for the 2PIEA 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2piea"
+
+\end_inset
+
+ in the Hartree-Fock approximation
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi,\Delta\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta^{-1}+\frac{i\hbar}{2}\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta-1\right)+\frac{\hbar^{2}\lambda}{24}\left(\Delta_{aa}\Delta_{bb}+2\Delta_{ab}\Delta_{ab}\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+which leads to
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\left(z\right)\delta\Delta_{ab}\left(x,y\right)}=-\frac{i\hbar\lambda}{6}\left(\delta_{ab}\varphi_{c}+\delta_{ca}\varphi_{b}+\delta_{bc}\varphi_{a}\right)\delta^{\left(4\right)}\left(x-y\right)\delta^{\left(4\right)}\left(x-z\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+whence
+\begin_inset Formula 
+\begin{eqnarray}
+0 & = & \int_{x}\Delta_{ca}^{-1}\left(z,x\right)T_{ab}^{A}\varphi_{b}\left(x\right)\nonumber \\
+ &  & -\frac{i\hbar\lambda}{6}\left(\delta_{ab}\varphi_{c}\left(z\right)+\delta_{ca}\varphi_{b}\left(z\right)+\delta_{bc}\varphi_{a}\left(z\right)\right)\left(T_{ad}^{A}\Delta_{db}\left(z,z\right)+T_{bd}^{A}\Delta_{ad}\left(z,z\right)\right)\nonumber \\
+ &  & +\mathcal{O}\left(\lambda^{2}\right),
+\end{eqnarray}
+
+\end_inset
+
+where all spacetime arguments are now made explicit.
+\end_layout
+
+\begin_layout Standard
+Substituting different values of 
+\begin_inset Formula $A$
+\end_inset
+
+ gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=v\left(-m_{G}^{2}\right)-\frac{i\hbar\lambda}{3}v\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+for 
+\begin_inset Formula $A=\left(g,N\right)$
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=v\Delta_{Ng}\left(z,z\right)+\mathcal{O}\left(\lambda\right),
+\end{equation}
+
+\end_inset
+
+for 
+\begin_inset Formula $A=\left(g,g'\right)$
+\end_inset
+
+.
+ The second equation is satisfied if the mixed Higgs-Goldstone propagators
+ vanish, but the first equation implies a violation of Goldstone's theorem.
+ Indeed, in the broken symmetry regime
+\begin_inset Formula 
+\begin{equation}
+m_{G}^{2}=-\frac{i\hbar\lambda}{3}v\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right).
+\end{equation}
+
+\end_inset
+
+The propagators evaluated at coincident points are quadratically divergent
+ in four dimensions, so the difference
+\begin_inset Formula 
+\begin{equation}
+i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=i\int_{p}\frac{m_{H}^{2}-m_{G}^{2}}{\left(p^{2}-m_{H}^{2}\right)\left(p^{2}-m_{G}^{2}\right)},
+\end{equation}
+
+\end_inset
+
+is logarithmically divergent and requires renormalisation.
+ In general, the renormalised form of this integral can be written
+\begin_inset Formula 
+\begin{equation}
+i\Delta_{H}\left(z,z\right)-i\Delta_{G}\left(z,z\right)=\left(m_{H}^{2}-m_{G}^{2}\right)\left[C+F\left(m_{H}^{2},m_{G}^{2}\right)\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $C$
+\end_inset
+
+ is a (real) scheme dependent constant and
+\begin_inset Formula 
+\begin{equation}
+F\left(m_{H}^{2},m_{G}^{2}\right)=\int_{0}^{m_{G}^{2}}\mathrm{d}\mu^{2}\int_{p}\frac{i}{\left(p^{2}-m_{H}^{2}\right)\left(p^{2}-\mu^{2}\right)^{2}},
+\end{equation}
+
+\end_inset
+
+is finite and equal to zero if 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ (explicitly 
+\begin_inset Formula $F\left(m_{H}^{2},xm_{H}^{2}\right)=\frac{1}{16\pi^{2}}\frac{x\ln x}{x-1}$
+\end_inset
+
+).
+ Thus
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{G}^{2}=-\frac{\hbar\lambda}{3}v\left(m_{H}^{2}-m_{G}^{2}\right)\left[C+F\left(m_{H}^{2},m_{G}^{2}\right)\right]+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+which only admits 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ as a solution if 
+\begin_inset Formula $C=0$
+\end_inset
+
+.
+ However, it will be seen later on 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+WHERE?
+\end_layout
+
+\end_inset
+
+that this renormalisation condition is inconsistent and Goldstone's theorem
+ is violated.
 \end_layout
 
 \end_body
