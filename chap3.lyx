@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass jcuthesis
 \options sort&compress
 \use_default_options true
@@ -16,16 +18,16 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -1932,6 +1934,40 @@ reference "eq:ren-2PI-HF-H-eom"
 \end_inset
 
  which are kinematically distinct and so must vanish separately.
+ This tedious and unenlightening computation is best left to a computer
+ algebra package.
+ The constant 
+\begin_inset Formula $Z_{\Delta}$
+\end_inset
+
+ is redundant in the Hartree-Fock approximation and can simply be set to
+ one.
+ There are ten independent equations for the eight remaining constants,
+ thus the fact that a solution exists is a non-trivial consistency check.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Mathematica notebook available...
+ in appendix??? or public git repo somewhere...?
+\end_layout
+
+\end_inset
+
+The resulting renormalisation constants are
+\begin_inset Formula 
+\begin{align}
+Z=Z_{\Delta} & =1,\\
+\delta m_{0}^{2}=\delta m_{1}^{2} & =-\frac{\hbar\lambda}{6}\left(N+2\right)\left(c_{0}\Lambda^{2}+c_{1}m^{2}\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)\right)\frac{\delta\lambda_{1}^{A}+\lambda}{\delta\lambda_{1}^{B}+\lambda},\\
+\delta\lambda_{1}^{A}=\delta\lambda_{2}^{A} & =\left(1+\frac{3\left(N+2\right)}{6+c_{1}\left(N+2\right)\lambda\hbar\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)}\right)\delta\lambda_{1}^{B},\\
+\delta\lambda_{1}^{B}=\delta\lambda_{2}^{B} & =\left(-1+\frac{3}{3+c_{1}\lambda\hbar\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)}\right)\lambda,\\
+\delta\lambda_{0} & =\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}.
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
