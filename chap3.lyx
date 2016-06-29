@@ -1500,5 +1500,501 @@ name "sec:Renormalisation-and-solution-2PI-HF"
 
 \end_layout
 
+\begin_layout Standard
+In order to exhibit the properties of solutions of the 2PI equations of
+ motion in more detail it is necessary to discuss the renormalisation process.
+ Renormalisation is a necessary process to extract any physical observables
+ from a QFT.
+ In a renormalisable theory all divergences can be absorbed in a redefinition
+ of a fixed finite number of coupling constants, yielding a predictive theory
+ once the couplings are fixed experimentally.
+ In a non-renormalisable theory the divergences cannot be removed by a finite
+ number of coupling constants, but the required infinitude of constants
+ can be organised order by order in powers of an energy scale 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ so that only a finite number are required to give a predictive 
+\emph on
+effective field theory
+\emph default
+ accurate to some fixed order in 
+\begin_inset Formula $E/\Lambda$
+\end_inset
+
+ for low energy processes 
+\begin_inset Formula $E\ll\Lambda$
+\end_inset
+
+.
+ However, the number of couplings required grows as 
+\begin_inset Formula $E$
+\end_inset
+
+ approaches 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ and the theory loses predictivity altogether at the cutoff scale 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+ The scalar 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ theory considered above and in the rest of this thesis is renormalisable
+ in 
+\begin_inset Formula $d\leq4$
+\end_inset
+
+ spacetime dimensions.
+ Elegant general discussions of renormalisation theory can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990,zinn-justin_phase_2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+To renormalise the 2PIEA one first replaces all bare parameters by their
+ renormalised counterparts, which are represented here by the same letters
+ for simplicity:
+\begin_inset Formula 
+\begin{eqnarray}
+\left(\phi,\varphi,v\right) & \to & Z^{1/2}\left(\phi,\varphi,v\right),\\
+m^{2} & \to & Z^{-1}Z_{\Delta}^{-1}\left(m^{2}+\delta m^{2}\right),\\
+\lambda & \to & Z^{-2}\left(\lambda+\delta\lambda\right),\\
+\Delta & \to & ZZ_{\Delta}\Delta,
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $Z$
+\end_inset
+
+, 
+\begin_inset Formula $Z_{\Delta}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta m^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\lambda$
+\end_inset
+
+ are to chosen to cancel divergences.
+ Whenever necessary to refer to bare parameters in the remainder of this
+ chapter, the subscript 
+\begin_inset Quotes eld
+\end_inset
+
+B
+\begin_inset Quotes erd
+\end_inset
+
+ will be used, e.g.
+ 
+\begin_inset Formula $m_{B}^{2}$
+\end_inset
+
+ etc.
+ Due to the presence of composite operators in the effective action, additional
+ counterterms are required compared to the standard perturbation theory:
+ 
+\begin_inset Formula $\delta m_{0}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\lambda_{0}$
+\end_inset
+
+ for terms in the bare action, 
+\begin_inset Formula $\delta m_{1}^{2}$
+\end_inset
+
+ for one-loop terms, 
+\begin_inset Formula $\delta\lambda_{1}^{A}$
+\end_inset
+
+ for terms of the form 
+\begin_inset Formula $\phi_{a}\phi_{a}\Delta_{bb}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda_{1}^{B}$
+\end_inset
+
+ for 
+\begin_inset Formula $\phi_{a}\phi_{b}\Delta_{ab}$
+\end_inset
+
+ terms, 
+\begin_inset Formula $\delta\lambda_{2}^{A}$
+\end_inset
+
+ for 
+\begin_inset Formula $\Delta_{aa}\Delta_{bb}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\lambda_{2}^{B}$
+\end_inset
+
+ for 
+\begin_inset Formula $\Delta_{ab}\Delta_{ab}$
+\end_inset
+
+.
+ Altogether there are nine renormalisation constants which must be eliminated
+ by imposing nine conditions.
+\end_layout
+
+\begin_layout Standard
+The resulting renormalised 2PIEA in the Hartree-Fock approximation is
+\begin_inset Formula 
+\begin{eqnarray}
+\Gamma\left[\varphi,\Delta\right] & = & \frac{1}{2}Z\varphi_{a}\left(-\square\right)\varphi_{a}-\frac{1}{2}Z_{\Delta}^{-1}\varphi_{a}\left(m^{2}+\delta m_{0}^{2}\right)\varphi_{a}-\frac{\lambda+\delta\lambda_{0}}{4!}\left(\varphi_{a}\varphi_{a}\right)^{2}+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta^{-1}\right)\nonumber \\
+ &  & -\frac{i\hbar}{2}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}\right)\Delta_{aa}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}\varphi_{a}\varphi_{a}\Delta_{bb}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{B}}{3}\varphi_{a}\varphi_{b}\Delta_{ab}\right]\nonumber \\
+ &  & +Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)}{24}\Delta_{aa}\Delta_{bb}+Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{B}\right)}{12}\Delta_{ab}\Delta_{ab}+\mathcal{O}\left(\lambda^{2}\right),
+\end{eqnarray}
+
+\end_inset
+
+which, on using the SSB ansatz 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-ansatz-Delta"
+
+\end_inset
+
+, becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Gamma\left[v,\Delta_{G},\Delta_{H}\right] & =\int_{x}\left(-\frac{1}{2}Z_{\Delta}^{-1}\left(m^{2}+\delta m_{0}^{2}\right)v^{2}-\frac{\lambda+\delta\lambda_{0}}{4!}v^{4}\right)\nonumber \\
+ & +\left(N-1\right)\frac{i\hbar}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta_{G}^{-1}\right)+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta_{H}^{-1}\right)\nonumber \\
+ & -\left(N-1\right)\frac{i\hbar}{2}\mathrm{Tr}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\Delta_{G}\right]\nonumber \\
+ & -\frac{i\hbar}{2}\mathrm{Tr}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\Delta_{H}\right]\nonumber \\
+ & +Z_{\Delta}^{2}\frac{\hbar^{2}}{24}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\left(N-1\right)\Delta_{G}\Delta_{G}\nonumber \\
+ & +Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)}{12}\left(N-1\right)\Delta_{G}\Delta_{H}+Z_{\Delta}^{2}\frac{\hbar^{2}}{24}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\Delta_{H}\Delta_{H}+\mathcal{O}\left(\lambda^{2}\right),
+\end{align}
+
+\end_inset
+
+which matches the expression found in appendix B of the author's paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_symmetry_2015"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The equations of motion following from this action are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =-Z_{\Delta}^{-1}\left(m^{2}+\delta m_{0}^{2}\right)v-\frac{\lambda+\delta\lambda_{0}}{3!}v^{3}-\left(N-1\right)\frac{\hbar}{2}\left(Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{3}v\right)i\Delta_{G}\left(x,x\right)\nonumber \\
+ & -\frac{\hbar}{2}\left(Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{3}v\right)i\Delta_{H}\left(x,x\right)+\mathcal{O}\left(\lambda^{2}\right),\label{eq:ren-2PI-HF-vev-eom}
+\end{align}
+
+\end_inset
+
+for 
+\begin_inset Formula $v$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1}\left(x,y\right) & =-\left(ZZ_{\Delta}\square_{x}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\delta\left(x-y\right)\nonumber \\
+ & -Z_{\Delta}^{2}\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]i\Delta_{G}\left(x,x\right)\delta\left(x-y\right)\nonumber \\
+ & -Z_{\Delta}^{2}\frac{\hbar\left(\lambda+\delta\lambda_{2}^{A}\right)}{6}i\Delta_{H}\left(x,x\right)\delta\left(x-y\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{align}
+
+\end_inset
+
+for 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Delta_{H}^{-1}\left(x,y\right) & =-\left(ZZ_{\Delta}\square_{x}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\delta\left(x-y\right)\nonumber \\
+ & -Z_{\Delta}^{2}\frac{\hbar\left(\lambda+\delta\lambda_{2}^{A}\right)}{6}\left(N-1\right)i\Delta_{G}\left(x,x\right)\delta\left(x-y\right)\nonumber \\
+ & -Z_{\Delta}^{2}\frac{\hbar}{6}\left(3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right)i\Delta_{H}\left(x,x\right)\delta\left(x-y\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{align}
+
+\end_inset
+
+for 
+\begin_inset Formula $\Delta_{H}$
+\end_inset
+
+.
+ Matching these to 
+\begin_inset Formula $\Delta_{G/H}^{-1}\left(x,y\right)=-\left(\square_{x}+m_{G/H}^{2}\right)\delta\left(x-y\right)$
+\end_inset
+
+ gives the gap equations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}+Z_{\Delta}^{2}\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]i\Delta_{G}\left(x,x\right)\nonumber \\
+ & +Z_{\Delta}^{2}\frac{\hbar\left(\lambda+\delta\lambda_{2}^{A}\right)}{6}i\Delta_{H}\left(x,x\right)+\mathcal{O}\left(\lambda^{2}\right),\label{eq:ren-2PI-HF-G-eom}\\
+m_{H}^{2} & =m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}+Z_{\Delta}^{2}\frac{\hbar\left(\lambda+\delta\lambda_{2}^{A}\right)}{6}\left(N-1\right)i\Delta_{G}\left(x,x\right)\nonumber \\
+ & +Z_{\Delta}^{2}\frac{\hbar}{6}\left(3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right)i\Delta_{H}\left(x,x\right)+\mathcal{O}\left(\lambda^{2}\right),\label{eq:ren-2PI-HF-H-eom}
+\end{align}
+
+\end_inset
+
+and the first renormalisation condition 
+\begin_inset Formula $ZZ_{\Delta}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Once regularised the coincident propagators 
+\begin_inset Formula $\mathcal{T}_{G/H}\equiv i\Delta_{G/H}\left(x,x\right)$
+\end_inset
+
+ split into parts which are infinite 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\infty}$
+\end_inset
+
+ and finite 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\mathrm{fin}}$
+\end_inset
+
+ in the limit that the regularisation parameter is removed (e.g.
+ 
+\begin_inset Formula $d\to4$
+\end_inset
+
+ spacetime dimensions in dimensional regularisation or 
+\begin_inset Formula $\Lambda\to\infty$
+\end_inset
+
+ in a cutoff regularisation).
+ The split is ambiguous in that a finite value can be shifted from one piece
+ to the other.
+ The choice of split defines the renormalisation scheme.
+ Once the split is made all renormalisation constants are determined by
+ the condition that all divergences cancel in the equations of motion.
+ After the cancellation the finite parts left behind will be
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =-v\left(m^{2}+\frac{\lambda}{6}v^{2}+\left(N-1\right)\frac{\hbar\lambda}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-2PI-HF-vev-eom}\\
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-2PI-HF-G-eom}\\
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right).\label{eq:fin-2PI-HF-H-eom}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It remains to determine the renormalisation constants.
+ By dimensional analysis one can generically write 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\infty}=c_{0}\Lambda^{2}+c_{1}m_{G/H}^{2}\ln\left(\Lambda^{2}/\mu^{2}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ is a large energy cutoff scale and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is an arbitrary subtraction scale (typically chosen to be of the same order
+ of magnitude as 
+\begin_inset Formula $v$
+\end_inset
+
+ or 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+) which parameterises the arbitrariness of the split.
+ The constants 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ depend on the renormalisation scheme.
+ For example, in dimensional regularisation with 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ subtraction 
+\begin_inset Formula $c_{0}=0$
+\end_inset
+
+, 
+\begin_inset Formula $c_{1}=-1/16\pi^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda^{2}=4\pi\mu^{2}\exp\left(\frac{1}{\epsilon}-\gamma+1\right)$
+\end_inset
+
+ where physical limit is 
+\begin_inset Formula $\epsilon=2-d/2\to0$
+\end_inset
+
+ corresponding to 
+\begin_inset Formula $\Lambda\to\infty$
+\end_inset
+
+.
+ In a straightforward cutoff regularisation 
+\begin_inset Formula $c_{0}=-c_{1}=1/16\pi^{2}$
+\end_inset
+
+.
+ The approach with 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ left unspecified has the virtue of being scheme agnostic.
+ Substituting 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\infty}$
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-G-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ren-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ren-2PI-HF-H-eom"
+
+\end_inset
+
+ and rearranging one can identify the divergences proportional to the various
+ powers of 
+\begin_inset Formula $1,v,\mathcal{T}_{G}^{\mathrm{fin}},\mathcal{T}_{H}^{\mathrm{fin}}$
+\end_inset
+
+ which are kinematically distinct and so must vanish separately.
+\end_layout
+
+\begin_layout Standard
+Using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-vev-eom"
+
+\end_inset
+
+ can be simplified to
+\begin_inset Formula 
+\begin{equation}
+0=v\left(m_{H}^{2}-\frac{\lambda}{3}v^{2}\right)+\mathcal{O}\left(\lambda^{2}\right).
+\end{equation}
+
+\end_inset
+
+In the symmetric regime 
+\begin_inset Formula $v=0$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{H}^{2}-m_{G}^{2}=\frac{\hbar\lambda}{3}\left(\mathcal{T}_{H}^{\mathrm{fin}}-\mathcal{T}_{G}^{\mathrm{fin}}\right)$
+\end_inset
+
+ which has the solution 
+\begin_inset Formula $m_{H}^{2}=m_{G}^{2}=m^{2}+\frac{\hbar\lambda}{6}\left(N+2\right)\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right)$
+\end_inset
+
+.
+ The critical temperature 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+ occurs when 
+\begin_inset Formula $m_{H}^{2}=m_{G}^{2}=0$
+\end_inset
+
+, for which 
+\begin_inset Formula $\mathcal{T}_{G}^{\mathrm{fin}}=T_{\star}^{2}/12$
+\end_inset
+
+, giving
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+T_{\star}=\sqrt{\frac{72\left|m^{2}\right|}{\hbar\lambda\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
