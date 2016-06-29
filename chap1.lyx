@@ -103,6 +103,31 @@ progress{0}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:
+\end_layout
+
+\begin_layout Itemize
+Work out what to discuss for motivation and background
+\end_layout
+
+\begin_layout Itemize
+Tie in QFT sections better
+\end_layout
+
+\begin_layout Itemize
+Outline of thesis & summary
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Background and motivation
 \end_layout
@@ -718,7 +743,7 @@ where the initial and final hypersurfaces are
 \begin_inset Formula $\Sigma_{f}$
 \end_inset
 
- respectively and we assume that 
+ respectively and by assumption 
 \begin_inset Formula $\Sigma_{f}$
 \end_inset
 
@@ -1038,10 +1063,44 @@ density.
 
 \end_inset
 
-.
- This is a completely Lorentz invariant (indeed, diffeomorphism invariant)
- formula for transition amplitudes which no longer depends on any particular
- assumptions about the time slicing used etc.
+
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}\left(\phi\right)=\pi\left(x\right)\partial_{t}\phi\left(x\right)-\mathcal{H}\left(\phi,\pi\right)=\frac{1}{2}\partial_{\mu}\phi\partial^{\mu}\phi-V\left(\phi\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $V\left(\phi\right)$
+\end_inset
+
+ is the potential which is equal to 
+\begin_inset Formula $\frac{1}{2}m^{2}\phi^{2}$
+\end_inset
+
+ in the case of a free field theory.
+ The classical action functional is the spacetime integral of the Lagrangian
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi\right]=\int_{x}\mathcal{L}\left(\phi\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:phi-eigenstate-transition-amplitude-pi"
+
+\end_inset
+
+ is a completely Lorentz invariant (indeed, diffeomorphism invariant) formula
+ for transition amplitudes which no longer depends on any particular assumptions
+ about the time slicing used etc.
  Of course, all of the difficulties are hidden in the notation.
  
 \begin_inset Formula $N$
@@ -2028,8 +2087,8 @@ defining
 
 \end_inset
 
-where in the second line we have specialised to field theory and extended
- the path integral and Lagrangian to all branches of the controur.
+where the second line specialises to field theory and extends the path integral
+ and Lagrangian to all branches of the controur.
  The imaginary branch of the contour is called the 
 \emph on
 Matsubara
@@ -2087,6 +2146,10 @@ in a scalar field theory.
  can be on either of the forward, backward or Matsubara branches of the
  contour independently.
  This leads to the definition of 
+\emph on
+Keldysh
+\emph default
+ 
 \emph on
 component
 \emph default
@@ -2873,11 +2936,11 @@ key "Calzetta1988"
 
 
 \begin_inset Formula 
-\begin{eqnarray*}
+\begin{eqnarray}
 \Delta^{\mathrm{T}}\left(p\right) & = & \frac{1}{p^{2}-m^{2}+i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),\\
 \Delta^{<}\left(p\right)=\Delta^{>}\left(-p\right) & = & -2\pi i\left[\Theta\left(p^{0}\right)+f\left(p\right)\right]\delta\left(p^{2}-m^{2}\right),\\
 \Delta^{\tilde{\mathrm{T}}}\left(p\right) & = & -\frac{1}{p^{2}-m^{2}-i\epsilon}-2\pi if\left(p\right)\delta\left(p^{2}-m^{2}\right),
-\end{eqnarray*}
+\end{eqnarray}
 
 \end_inset
 
@@ -2975,12 +3038,29 @@ j_{\mu}^{A}=i\left\langle \phi_{a}T_{ab}^{A}\overleftrightarrow{\partial_{\mu}}\
 
 \end_inset
 
-which can be written in terms of 
-\begin_inset Formula $\Delta$
+where 
+\begin_inset Formula $T_{ab}^{A}=-T_{ba}^{A}$
+\end_inset
+
+ is a generator of rotations which has been expanded in a basis of the 
+\begin_inset Formula $A=1,\cdots,N\left(N-1\right)/2$
+\end_inset
+
+ independent generators and 
+\begin_inset Formula $f\overleftrightarrow{\partial_{\mu}}g\equiv f\left(\partial_{\mu}g\right)-\left(\partial_{\mu}f\right)g$
 \end_inset
 
 .
- If the theory has a quartic coupling the energy-momentum tensor is 
+ This can be written in terms of the Green function as
+\begin_inset Formula 
+\begin{equation}
+j_{\mu}^{A}\left(x\right)=iT_{ab}^{A}\left.\left(\partial_{\mu}^{\left(y\right)}-\partial_{\mu}^{\left(x\right)}\right)\left\langle \phi_{a}\left(x\right)\phi_{b}\left(y\right)\right\rangle \right|_{y\to x}=T_{ab}^{A}\left.\left(\partial_{\mu}^{\left(x\right)}-\partial_{\mu}^{\left(y\right)}\right)\Delta_{ab}^{>}\left(x,y\right)\right|_{y\to x}.
+\end{equation}
+
+\end_inset
+
+Similarly, if the theory has a quartic coupling the energy-momentum tensor
+ is 
 \begin_inset Formula 
 \begin{align}
 T_{\mu\nu} & =\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}\vphantom{\left(\frac{1}{2}\right)}\right.\nonumber \\
@@ -3557,24 +3637,6 @@ Matsubara
 \end_inset
 
 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO:
-\end_layout
-
-\begin_layout Plain Layout
-More about the physical meaning/use of Green's functions, Dyson equation
- etc....?
 \end_layout
 
 \end_inset

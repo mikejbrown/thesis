@@ -169,7 +169,7 @@ etc.
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="54" columns="2">
+<lyxtabular version="3" rows="55" columns="2">
 <features rotate="0" islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -678,6 +678,33 @@ Derivative with respect to specified spacetime variable
 \end_inset
 
  etc.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overleftrightarrow{\partial_{\mu}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right-left derivative: 
+\begin_inset Formula $f\overleftrightarrow{\partial_{\mu}}g\equiv f\left(\partial_{\mu}g\right)-\left(\partial_{\mu}f\right)g$
+\end_inset
+
+
 \end_layout
 
 \end_inset

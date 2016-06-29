@@ -404,6 +404,16 @@ filename "appendix.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+FIX BIBTEX DATABASE!!!
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "C:/Users/Michael/Dropbox/PhD/Writings/refs,C:/Users/Michael/Dropbox/PhD/Writings/Linear Response Theory for SI-2PIEA/dist/refs,C:/Users/Michael/Dropbox/PhD/Writings/Symmetry Improved nPI/analytic-npi/refs"

@@ -118,8 +118,15 @@ progress{30}
 status open
 
 \begin_layout Plain Layout
-Basically follow Berges reviews & Calzetta&Hu book except add material from
- our NPB paper about analyticity and resummation.
+TODO:
+\end_layout
+
+\begin_layout Itemize
+Discussion of renormalisation anywhere?
+\end_layout
+
+\begin_layout Itemize
+Ian's comments
 \end_layout
 
 \end_inset
@@ -314,14 +321,14 @@ Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\
 with the only difference being that the time contour and boundary conditions
  of the functional integral are hidden in the notation and can be re-interpreted
  as needed.
- Then, the generalisation of 
+ Then, the sought after generalisation of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:vacuum-to-vacuum-transition-matrix-element"
 
 \end_inset
 
- that we seek is
+ is
 \begin_inset Formula 
 \begin{equation}
 G^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)\equiv\left\langle \mathrm{T}_{C}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]\right\rangle =\left.\frac{1}{Z\left[J\right]}\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)Z\left[J\right]\right|_{J=0},
@@ -672,7 +679,15 @@ contains many disconnected diagrams, i.e.
 status open
 
 \begin_layout Plain Layout
-It can be found in any quantum field theory book.
+It can be found in many quantum field theory books, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Srednicki2007"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -1470,8 +1485,343 @@ blobs
 one particle irreducible
 \emph default
  (1PI) Feynman diagrams, that is, the set of diagrams which do not fall
- apart upon being cut by any one line.
- The series can be easily summed.
+ apart upon the cutting of any one line.
+ The first few terms of the self-energy are seen to be
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{self-energy-series}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v,o} 
+\backslash
+fmfblob{.15w}{v}
+\backslash
+end{fmfgraph}}&=
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frac{1}{2}
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmf{plain}{i,v,v,o} 
+\backslash
+fmfdot{v}
+\backslash
+end{fmfgraph}} 
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,v2} 
+\backslash
+fmf{phantom}{v2,t}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,v2,t,v2,v1} 
+\backslash
+fmfdot{v1,v2}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{6}
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v1,v2,o} 
+\backslash
+fmf{plain,left,tension=0}{v1,v2,v1} 
+\backslash
+fmfdot{v1,v2}
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{20mm}{ 
+\backslash
+begin{fmfgraph}(40,60) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{v1,v2,v3,t}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left}{v1,v2,v3,t,v3,v2,v1} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\backslash
+nonumber
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+&+
+\backslash
+frac{1}{12}
+\backslash
+parbox{15mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{tl,t1,t2,tr} 
+\backslash
+fmf{plain}{i,x1,v1,x2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{x1,v2,t1}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{x2,v3,t2}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.5}{v1,v2} 
+\backslash
+fmf{plain,right=0.5}{v1,v3} 
+\backslash
+fmf{plain,left=0.5}{v2,v3,v2} 
+\backslash
+fmf{plain}{v2,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{15mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.5}{v1,v3,v2} 
+\backslash
+fmf{plain,right}{v1,v2} 
+\backslash
+fmf{phantom,tension=0.1}{v3,t} 
+\backslash
+fmf{plain,left}{v3,t,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{8}
+\backslash
+parbox{15mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{lm2,lm1,i,l1,l2}
+\backslash
+fmfright{rm2,rm1,o,r1,r2}
+\backslash
+fmftop{tl,t1,t2,t3,tr} 
+\backslash
+fmf{plain}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{l1,v2,v3,r1}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=0.6}{v1,v2} 
+\backslash
+fmf{plain,left=0.4}{v2,v3} 
+\backslash
+fmf{plain,left=0.6}{v3,v1} 
+\backslash
+fmf{plain,left}{v2,t1,v2}
+\backslash
+fmf{plain,left}{v3,t3,v3} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+frac{1}{4}
+\backslash
+parbox{15mm}{ 
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,x1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{phantom}{t,v3,x1}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,right=0.3}{v1,v3,v2} 
+\backslash
+fmf{plain,left=0.5}{v1,v3,v2} 
+\backslash
+fmfdot{v1,v2,v3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+mathcal{O}
+\backslash
+left(
+\backslash
+lambda^4
+\backslash
+right).
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The geometric series can be easily summed.
  Let 
 \begin_inset Formula $-\frac{i}{\hbar}\Sigma$
 \end_inset
@@ -1523,9 +1873,9 @@ Acting on the right with
 
  one finds
 \begin_inset Formula 
-\[
+\begin{equation}
 \Delta^{-1}=\Delta_{0}^{-1}-\Sigma,
-\]
+\end{equation}
 
 \end_inset
 
@@ -1713,34 +2063,34 @@ key "Zinn-Justin1990"
 
  is most often evaluated in a semi-classical or saddle point approximation.
  Here the path integral is expanded around the field configuration 
-\begin_inset Formula $\phi_{c}$
+\begin_inset Formula $\phi_{\mathrm{cl.}}$
 \end_inset
 
  of stationary phase, which is the one that satisfies the classical equation
  of motion 
 \begin_inset Formula 
 \begin{equation}
-\left.\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}\right|_{\phi=\phi_{c}\left[J\right]}+J\left(x\right)=0.
+\left.\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}\right|_{\phi=\phi_{\mathrm{cl.}}\left[J\right]}+J\left(x\right)=0.
 \end{equation}
 
 \end_inset
 
 Writing 
-\begin_inset Formula $\phi=\phi_{c}+\hbar^{1/2}\tilde{\phi}$
+\begin_inset Formula $\phi=\phi_{\mathrm{cl.}}+\hbar^{1/2}\tilde{\phi}$
 \end_inset
 
 ,
 \begin_inset Formula 
 \begin{eqnarray}
-Z\left[J\right] & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{c}\right]\tilde{\phi}+V\left(\phi_{c},\tilde{\phi}\right)\right)\right]\nonumber \\
- & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\int\mathcal{D}\left[\phi\right]\left(1+\mathcal{O}\left(\hbar\right)\right)\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{c}\right]\tilde{\phi}\right)\right]\nonumber \\
- & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{c}\right]+J\phi_{c}\right)\right]\left(N\left(\det\Delta_{0}\left[\phi_{c}\right]\right)^{1/2}+\mathcal{O}\left(\hbar\right)\right),
+Z\left[J\right] & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}+V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\right)\right]\nonumber \\
+ & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\left(1+\mathcal{O}\left(\hbar\right)\right)\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}\right)\right]\nonumber \\
+ & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\left(N\left(\det\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\right)^{-1/2}+\mathcal{O}\left(\hbar\right)\right),
 \end{eqnarray}
 
 \end_inset
 
 where 
-\begin_inset Formula $V\left(\phi_{c},\tilde{\phi}\right)$
+\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)$
 \end_inset
 
  is defined by the first line.
@@ -1749,7 +2099,7 @@ where
 \end_inset
 
  only by virtue of the classical equation of motion, so that 
-\begin_inset Formula $V\left(\phi_{c},\tilde{\phi}\right)\sim\mathcal{O}\left(\hbar^{1/2}\right)$
+\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\sim\mathcal{O}\left(\hbar^{1/2}\right)$
 \end_inset
 
 .
@@ -1772,24 +2122,24 @@ where
 
 .
  Also note that 
-\begin_inset Formula $\Delta_{0}^{-1}\left[\phi_{c}\right]$
+\begin_inset Formula $\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]$
 \end_inset
 
  depends on 
-\begin_inset Formula $\phi_{c}$
+\begin_inset Formula $\phi_{\mathrm{cl.}}$
 \end_inset
 
 .
  Thus
 \begin_inset Formula 
 \begin{equation}
-W\left[J\right]=S\left[\phi_{c}\right]+J\phi_{c}+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{c}\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
+W\left[J\right]=S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
 \end{equation}
 
 \end_inset
 
 To perform the Legendre transform one needs to relate 
-\begin_inset Formula $\phi_{c}$
+\begin_inset Formula $\phi_{\mathrm{cl.}}$
 \end_inset
 
  to 
@@ -1802,7 +2152,7 @@ To perform the Legendre transform one needs to relate
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\varphi=\frac{\delta W}{\delta J}=\frac{\delta\phi_{c}}{\delta J}\frac{\delta S}{\delta\phi_{c}}+\phi_{c}+J\frac{\delta\phi_{c}}{\delta J}+\frac{\delta\phi_{c}}{\delta J}\frac{\delta}{\delta\phi_{c}}\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{c}\right]+\mathcal{O}\left(\hbar^{2}\right)=\phi_{c}+\mathcal{O}\left(\hbar\right).
+\varphi=\frac{\delta W}{\delta J}=\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}\frac{\delta S}{\delta\phi_{\mathrm{cl.}}}+\phi_{\mathrm{cl.}}+J\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}+\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}\frac{\delta}{\delta\phi_{\mathrm{cl.}}}\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]+\mathcal{O}\left(\hbar^{2}\right)=\phi_{\mathrm{cl.}}+\mathcal{O}\left(\hbar\right).
 \]
 
 \end_inset
@@ -1810,7 +2160,7 @@ To perform the Legendre transform one needs to relate
 Now
 \begin_inset Formula 
 \begin{equation}
-S\left[\phi_{c}\right]+J\phi_{c}=S\left[\varphi\right]+J\varphi+\mathcal{O}\left(\hbar^{2}\right),
+S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}=S\left[\varphi\right]+J\varphi+\mathcal{O}\left(\hbar^{2}\right),
 \end{equation}
 
 \end_inset
@@ -2307,7 +2657,7 @@ and the effective interaction Lagrangian
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V\left(\varphi,\tilde{\phi}\right)=-\frac{1}{3!}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}-\frac{1}{4!}\lambda_{abcd}\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}\tilde{\phi}_{d}.
+V\left(\varphi,\tilde{\phi}\right)=-\frac{1}{3!}\hbar^{1/2}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}-\frac{1}{4!}\hbar\lambda_{abcd}\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}\tilde{\phi}_{d}.
 \end{equation}
 
 \end_inset
@@ -3541,6 +3891,19 @@ self-consistently complete
 \end_inset
 
 .
+ Finally, it will be shown in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ that symmetry improvement breaks the equivalence hierarchy, e.g.
+ the symmetry improved 3PIEA 
+\emph on
+does not
+\emph default
+ reduce to the symmetry improved 2PIEA at the two loop level.
 \end_layout
 
 \begin_layout Section
@@ -4716,7 +5079,7 @@ status open
 \end_inset
 
  approximants.
- Hence we test the hypothesis that the 2PI methods should be more accurate
+ This section tests the hypothesis that the 2PI methods should be more accurate
  that Borel-Pad
 \begin_inset ERT
 status open
@@ -4730,7 +5093,7 @@ status open
 
 \end_inset
 
- and, indeed, find this to be the case, at least in certain regimes.
+ and, indeed, finds this to be the case, at least in certain regimes.
 \end_layout
 
 \begin_layout Standard
@@ -5378,7 +5741,7 @@ status collapsed
 Note that the physical interpretation of this spectral function is unrelated
  to the usual one in field theory since, for one thing, there is no such
  thing as energy in zero dimensions.
- We consider
+ One can consider
 \begin_inset Formula $\sigma\left(s\right)$
 \end_inset
 
@@ -5623,7 +5986,7 @@ reference "eq:G-perturbation-series"
 \end_inset
 
 , thus the radius of convergence of the series is zero.
- This is consistent with the fact that we are perturbing around a branch
+ This is consistent with the fact that one is perturbing around a branch
  point of the exact solution: no approximation of 
 \begin_inset Formula $\bar{G}$
 \end_inset
