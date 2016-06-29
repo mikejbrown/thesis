@@ -2080,6 +2080,91 @@ T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\l
 
 \end_inset
 
+A numerical solution of the full gap equations is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2pi-hf-eom-soln"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch3/twopi-hf-soln.pdf
+	width 80col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:2pi-hf-eom-soln"
+
+\end_inset
+
+Solution of the 2PI Hartree-Fock equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+ for 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+, values representative of the linear sigma model effective theory of pions
+ in the limit of unbroken chiral symmetry.
+ 
+\begin_inset Formula $m_{G}\neq0$
+\end_inset
+
+ unphysically at finite temperatures in the broken symmetry phase.
+ The broken symmetry phase persists to temperatures substantially greater
+ than the critical temperature 
+\begin_inset Formula $T_{\star}\approx132\ \mathrm{MeV}$
+\end_inset
+
+, signalling the presence of an unphysical meta-stable phase and a first
+ order phase transition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
