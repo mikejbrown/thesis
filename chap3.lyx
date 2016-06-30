@@ -1361,7 +1361,7 @@ for
  Indeed, in the broken symmetry regime
 \begin_inset Formula 
 \begin{equation}
-m_{G}^{2}=-\frac{i\hbar\lambda}{3}v\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right).
+vm_{G}^{2}=-\frac{i\hbar\lambda}{3}v\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right).
 \end{equation}
 
 \end_inset
@@ -1435,7 +1435,7 @@ Thus
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-m_{G}^{2}=-\frac{\hbar\lambda}{3}v\left[\left(m_{H}^{2}-m_{G}^{2}\right)\left(C+F\left(m_{H}^{2},m_{G}^{2}\right)\right)+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}}\right]+\mathcal{O}\left(\lambda^{2}\right),
+vm_{G}^{2}=-\frac{\hbar\lambda}{3}v\left[\left(m_{H}^{2}-m_{G}^{2}\right)\left(C+F\left(m_{H}^{2},m_{G}^{2}\right)\right)+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}}\right]+\mathcal{O}\left(\lambda^{2}\right),\label{eq:2PI-WI-m_G-HF}
 \end{equation}
 
 \end_inset
@@ -1663,8 +1663,9 @@ B
 The resulting renormalised 2PIEA in the Hartree-Fock approximation is
 \begin_inset Formula 
 \begin{eqnarray}
-\Gamma\left[\varphi,\Delta\right] & = & \frac{1}{2}Z\varphi_{a}\left(-\square\right)\varphi_{a}-\frac{1}{2}Z_{\Delta}^{-1}\varphi_{a}\left(m^{2}+\delta m_{0}^{2}\right)\varphi_{a}-\frac{\lambda+\delta\lambda_{0}}{4!}\left(\varphi_{a}\varphi_{a}\right)^{2}+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta^{-1}\right)\nonumber \\
- &  & -\frac{i\hbar}{2}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}\right)\Delta_{aa}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}\varphi_{a}\varphi_{a}\Delta_{bb}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{B}}{3}\varphi_{a}\varphi_{b}\Delta_{ab}\right]\nonumber \\
+\Gamma\left[\varphi,\Delta\right] & = & \frac{1}{2}Z\varphi_{a}\left(-\square\right)\varphi_{a}-\frac{1}{2}Z_{\Delta}^{-1}\varphi_{a}\left(m^{2}+\delta m_{0}^{2}\right)\varphi_{a}-\frac{\lambda+\delta\lambda_{0}}{4!}\left(\varphi_{a}\varphi_{a}\right)^{2}\nonumber \\
+ &  & +\frac{i\hbar}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta^{-1}\right)-\frac{i\hbar}{2}\int_{x}\left\{ \left[\left(ZZ_{\Delta}\square_{x}+m^{2}+\delta m_{1}^{2}\vphantom{Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}\varphi_{c}\left(x\right)\varphi_{c}\left(x\right)}\right.\right.\right.\nonumber \\
+ &  & \left.\left.\left.+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}\varphi_{c}\left(x\right)\varphi_{c}\left(x\right)\right)\delta_{ab}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{B}}{3}\varphi_{a}\left(x\right)\varphi_{b}\left(x\right)\right]\Delta_{ab}\left(x,y\right)\right\} _{y\to x}\nonumber \\
  &  & +Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)}{24}\Delta_{aa}\Delta_{bb}+Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{B}\right)}{12}\Delta_{ab}\Delta_{ab}+\mathcal{O}\left(\lambda^{2}\right),
 \end{eqnarray}
 
@@ -2008,7 +2009,19 @@ The final renormalisation choice is to take
 \begin_inset Formula $m_{H}^{2}=\lambda v^{2}/3$
 \end_inset
 
- holding at zero temperature.
+ holding at zero temperature (recall this is also the choice that makes
+ the constant 
+\begin_inset Formula $C=0$
+\end_inset
+
+ in the 2PI WI 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-WI-m_G-HF"
+
+\end_inset
+
+).
  It is convenient to denote the zero temperature values with an over-bar,
  so that 
 \begin_inset Formula $\bar{v}^{2}=3\bar{m}_{H}^{2}/\lambda=-6m^{2}/\lambda$
@@ -2080,6 +2093,10 @@ T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\l
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 A numerical solution of the full gap equations is shown in Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2088,19 +2105,160 @@ reference "fig:2pi-hf-eom-soln"
 \end_inset
 
 .
+ The parameters chosen are 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+, values representative of the 
+\emph on
+linear sigma model
+\emph default
+ effective theory of pions in the limit of unbroken chiral symmetry.
+ This model is known to possess a continuous (i.e.
+ second order) phase transition, analogous to the Ising ferromagnet, with
+ a critical temperature 
+\begin_inset Formula $T_{\star}\approx132\ \mathrm{MeV}$
+\end_inset
+
+ on the basis of lattice computation 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFS
+\end_layout
+
+\end_inset
+
+.
+ However Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:2pi-hf-eom-soln"
+
+\end_inset
+
+ shows the existence of a broken symmetry phase extending to temperatures
+ greater than 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+.
+ Physically this signals the existence of a discontinuous (first order)
+ phase transition: if the temperature is carefully raised from zero to 
+\begin_inset Formula $>T_{\star}$
+\end_inset
+
+ the system remains in the broken symmetry phase, now superheated, until
+ a perturbation causes bubbles of symmetric phase to suddenly form and expand
+ with the release of latent heat, eventually filling the whole space with
+ symmetric phase.
+ The upper spinodal point (the maximum temperature which the metastable
+ phase can attain) is seen to be 
+\begin_inset Formula $\approx210\ \mathrm{MeV}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pull out value?
+\end_layout
+
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $v_{\star}\approx80\ \mathrm{MeV}$
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Pull out value?
+\end_layout
+
+\end_inset
+
+ in the broken phase at the critical temperature is a common measure of
+ the strength of a first order phase transition, and since 
+\begin_inset Formula $v_{\star}\approx\bar{v}$
+\end_inset
+
+ the phase transition is 
+\emph on
+strongly
+\emph default
+ first order.
+ Also, the Goldstone theorem clearly is violated in that 
+\begin_inset Formula $m_{G}$
+\end_inset
+
+, the blue curve, is not zero at finite temperature.
+ However, one can check that, by subtracting 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-vev-eom"
+
+\end_inset
+
+ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-G-eom"
+
+\end_inset
+
+ that the 2PI WI 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-WI-m_G-HF"
+
+\end_inset
+
+ 
+\emph on
+is
+\emph default
+ satisfied.
+ Further, it will be shown in the next chapter that the symmetry improvement
+ method, which imposes 1PI style WI on the 2PI solution, restores the second
+ order phase transition in the Hartree-Fock approximation.
+ Thus the unphysical artifacts of the 2PIEA in the Hartree-Fock approximation
+ can be understood as a result of the difference between the 1PI and 2PI
+ Ward identities.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
 \begin_inset Graphics
 	filename images/ch3/twopi-hf-soln.pdf
-	width 80col%
+	width 100col%
 
+\end_inset
+
+
+\begin_inset space \hfill{}
 \end_inset
 
 
@@ -2161,6 +2319,45 @@ reference "eq:fin-2PI-HF-H-eom"
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The External Propagator Method
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:The-External-Propagator"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+NEED:
+\end_layout
+
+\begin_layout Itemize
+The definitive reference(s)
 \end_layout
 
 \end_inset
