@@ -316,6 +316,16 @@ where
 \end_inset
 
  and the first and second lines differ by an irrelevant constant term.
+ For later reference the classical vertex functions for the model are
+\begin_inset Formula 
+\begin{align}
+V_{0abc}\left(x,y,z\right) & =-\frac{\lambda}{3}\left(\delta_{ab}\varphi_{c}+\delta_{ca}\varphi_{b}+\delta_{bc}\varphi_{a}\right)\delta\left(x-y\right)\delta\left(x-z\right),\\
+W_{abcd}\left(x,y,z,w\right) & =-\frac{\lambda}{3}\left(\delta_{ab}\delta_{cd}+\delta_{ca}\delta_{bd}+\delta_{bc}\delta_{ad}\right)\delta\left(x-y\right)\delta\left(x-z\right)\delta\left(x-w\right).
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass jcuthesis
 \options sort&compress
 \use_default_options true
@@ -16,16 +18,16 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -115,7 +117,20 @@ progress{0}
 \end_layout
 
 \begin_layout Standard
-The previous chapter discussed global symmetries and Ward identities in
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ introduced 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs as powerful tools for computations in QFT, particularly used for their
+ ability to handle non-equilibrium situations through time contour methods.
+ The previous chapter discussed global symmetries and Ward identities in
  
 \begin_inset Formula $n$
 \end_inset
@@ -125,23 +140,634 @@ PIEA, showing that the solutions of truncated
 \end_inset
 
 PI equations of motion do not obey the 1PI Ward identities.
- This chapter discusses an attempt to circumvent these problems originated
- by 
+ The violation of the 1PI WIs can also be understood in terms of the resummation
+ of perturbative Feynman diagrams: when an 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA is truncated some subset of perturbative diagrams are summed to infinite
+ order, but the complementary subset is left out entirely.
+ The pattern of resummations does not guarantee that the cancellations between
+ perturbative diagrams needed to maintain the symmetry are kept.
+ In the case of scalar field theories with 
+\begin_inset Formula $\mathrm{O}\left(N\right)\to\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ breaking, the result is that the final 
+\begin_inset Formula $\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ symmetry is maintained, but, at the Hartree-Fock level of approximation,
+ the nonlinearly realised 
+\begin_inset Formula $\mathrm{O}\left(N\right)/\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ is lost, the Goldstone theorem is violated (the 
+\begin_inset Formula $N-1$
+\end_inset
+
+ Goldstone bosons are massive), and the symmetry restoration phase transition
+ is first order in contradiction with the second order transition expected
+ on the basis of universality arguments.
+ A similar problem arises in gauge theories, where the violation of gauge
+ invariance in the 
+\begin_inset Formula $l$
+\end_inset
+
+-loop truncation is due to the missing 
+\begin_inset Formula $\left(l+1\right)$
+\end_inset
+
+-loop diagrams (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{York,York2012}
+\end_layout
+
+\end_inset
+
+ for a discussion of the gauge fixing problem).
+\end_layout
+
+\begin_layout Standard
+Several studies have attempted to find a remedy for this problem.
+ These are discussed in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{Pilaftsis2013}
+\end_layout
+
+\end_inset
+
+ and references therein.
+ The last chapter discussed a technique frequently advocated in the literature
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{*[{See e.g.
+ }] [] VanHees2002,*Berges2005,*Carrington2009}
+\end_layout
+
+\end_inset
+
+: the so called 
+\emph on
+external propagator
+\emph default
+ defined as the second functional derivative of a resummed effective action
+ which depends only on the mean field, obtained by eliminating the 2- through
+ 
+\begin_inset Formula $n$
+\end_inset
+
+-point correlation functions of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA by their equations of motion.
+ The resulting effective action does obey a 1PI type WI and the external
+ propagator yields massless Goldstone bosons.
+ However, the external propagator is not the propagator used in loop graphs,
+ so the loop corrections still contain massive Goldstone bosons leading
+ to incorrect thresholds, decay rates and violations of unitarity.
+ In order to avoid these problems a manifestly self-consistent scheme must
+ be used.
+\end_layout
+
+\begin_layout Standard
+This chapter discusses the symmetry improvement method introduced by Pilaftsis
+ and Teresi to circumvents these difficulties 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{Pilaftsis2013}
+\end_layout
+
+\end_inset
+
+ for the 2PIEA.
+ The idea is simply to impose the desired Ward identities directly on the
+ free correlation functions.
+ This is consistently implemented by using Lagrange multipliers.
+ The remarkable point is that the resulting equations of motion can be put
+ into a form that completely eliminates the Lagrange multiplier field.
+ They achieve this by taking a limit in which the Lagrange multiplier vanishes
+ from all but one of the equations of motion, and this remaining equation
+ of motion is replaced with the constraint to obtain a closed system.
+ Following a review of the symmetry improved 2PIEA (SI-2PIEA), this chapter
+ generalises the procedure to the 3PIEA (reporting on work published by
+ the author 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_symmetry_2015"
+
+\end_inset
+
+).
+ The generalisation is non-trivial, requiring a careful consideration of
+ the variational procedure leading to an infinity of possible schemes.
+ A new principle is required to choose between the schemes and the 
+\emph on
+d'Alembert formalism
+\emph default
+ is introduced for this purpose by analogy to the constrained variational
+ problem in mechanics.
+\end_layout
+
+\begin_layout Standard
+The motivation for extending symmetry improvement to the 3PIEA is threefold.
+ First, the 3PIEA is known to be the required starting point to obtain a
+ self-consistent non-equilibrium kinetic theory of gauge theories.
+ The accurate calculation of transport coefficients and thermalisation times
+ in gauge theories requires the use of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA with
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{Carrington2009,Smolic2012a,Berges2004}
+\end_layout
+
+\end_inset
+
+ and references therein for discussion).
+ The fundamental reason for this is that the 3PIEA includes medium induced
+ effects on the three-point vertex at leading order.
+ The 2PIEA in gauge theory contains a dressed propagator but not a dressed
+ vertex, leading not only to an inconsistency of the resulting kinetic equation
+ but also to a spurious gauge dependence of the kind discussed previously.
+ Thus this work is a stepping stone towards a fully self-consistent, nonperturba
+tive and manifestly gauge invariant treatment of out of equilibrium gauge
+ theories.
+\end_layout
+
+\begin_layout Standard
+Second, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA allows one to accurately describe the initial value problem with 1-
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+-point connected correlation functions in the initial state.
+ For example, the 2PIEA allows one to solve the initial value problem for
+ initial states with a Gaussian density matrix.
+ However, the physical applications one has in mind typically start from
+ a near thermal equilibrium state which is not well approximated by a Gaussian
+ density matrix.
+ This leads to problems with renormalisation, unphysical transient responses
+ and thermalisation to the wrong temperature 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{Garny2009a}
+\end_layout
+
+\end_inset
+
+.
+ This is addressed in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{Garny2009a,*VanLeeuwen2011,*VanLeeuwen2013}
+\end_layout
+
+\end_inset
+
+ by the addition of an infinite set of nonlocal vertices which only have
+ support at the initial time.
+ Going to 
+\begin_inset Formula $n>2$
+\end_inset
+
+ allows one to better describe the initial state, thereby reducing the need
+ for additional nonlocal vertices.
+\end_layout
+
+\begin_layout Standard
+Lastly, the infinite hierarchy of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA is the natural home for the 2PIEA and provides the clearest route for
+ systematic improvements over existing treatments.
+ Thus investigating symmetry improvement of 3PIEA is a well motived step
+ in the development of non-perturbative QFT.
+\end_layout
+
+\begin_layout Section
+Symmetry Improvement of the 2PIEA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SI-2PIEA"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The essence of symmetry improvement is to impose the WIs derived for the
+ 1PI correlation functions on the 
+\begin_inset Formula $n$
+\end_inset
+
+PI correlation functions.
+ Effectively, one changes 
+\begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{\text{1PI}},V_{\text{1PI}},\cdots,V_{\text{1PI}}^{\left(n\right)}\right)\to\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{n\text{PI}},V_{n\text{PI}},\cdots,V_{n\text{PI}}^{\left(n\right)}\right),$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{j}}^{A}$
+\end_inset
+
+ for 
+\begin_inset Formula $j=1,\cdots,n-1$
+\end_inset
+
+ are the WIs and the arguments change but not the functional form.
+ Note that higher order WIs cannot be enforced on an 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA since only the 1- through 
+\begin_inset Formula $n$
+\end_inset
+
+-point functions are free.
+ Thus, in the SI-2PIEA a single constraint is enforced, namely 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
+
+\end_inset
+
+, which is
+\begin_inset Formula 
+\begin{equation}
+0=\mathcal{W}_{c}^{A}=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ is thought of as the 2PI function.
+ 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "Pilaftsis2013"
+key "pilaftsis_symmetry_2013"
+
+\end_inset
+
+ only considered the case 
+\begin_inset Formula $J_{a}=0$
+\end_inset
+
+, which will also be the case here.
+ The situation with 
+\begin_inset Formula $J_{a}\neq0$
+\end_inset
+
+ is discussed in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
 
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Section
-Symmetry Improvement of the 2PIEA
+\begin_layout Standard
+We now wish to impose 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+eqref{eq:w1-WI-1}-
+\backslash
+eqref{eq:w2-WI-1}
+\end_layout
+
+\end_inset
+
+ as constraints on the allowable values of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ in the 2PIEA.
+ This proceeds through the introduction of Lagrange multiplier fields 
+\begin_inset Formula $\ell_{A}^{d}\left(x\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $A$
+\end_inset
+
+ is an 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ adjoint index, and the symmetry improved effective action which we write
+ in manifestly covariant form as 
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Gamma}\left[\varphi,\Delta,\ell\right]=\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]+\frac{i}{2}\int_{x}\ell_{A}^{d}\left(x\right)\mathcal{W}_{c}^{A\left(1\right)}\left(x\right)\left[P_{T}\left(\varphi,x\right)\right]_{cd}.
+\end{equation}
+
+\end_inset
+
+The transverse projector 
+\begin_inset Formula 
+\begin{equation}
+\left[P_{T}\left(\varphi,x\right)\right]_{cd}=\delta_{cd}-\frac{\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)}{\varphi^{2}\left(x\right)},
+\end{equation}
+
+\end_inset
+
+ensures that only the Goldstone modes are involved in the constraint.
+ The equations of motion follow from 
+\begin_inset Formula $\delta\tilde{\Gamma}/\delta\varphi=\delta\tilde{\Gamma}/\delta\Delta=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Substituting the SSB ansatz and using translation invariance gives 
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Gamma}\left[\varphi,\Delta,\ell\right]=\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]-\ell\mathcal{W}_{1},
+\end{equation}
+
+\end_inset
+
+where we have absorbed group theory factors in 
+\begin_inset Formula $\ell$
+\end_inset
+
+.
+ The 2PI equations of motion become 
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\ell\frac{\partial}{\partial v}\mathcal{W}_{1},\\
+\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(x,y\right)} & =-v\ell\left[\int_{x}\Delta_{G}^{-1}\left(x,0\right)\right]^{2},\\
+\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{H}\left(x,y\right)} & =0,\\
+0 & =v\int_{y}\Delta_{G}^{-1}\left(x,y\right).
+\end{align}
+
+\end_inset
+
+The factor of 
+\begin_inset Formula $VT$
+\end_inset
+
+ on the left hand side of the first equation is the volume of spacetime,
+ which we have divided by to give an intensive quantity.
+\end_layout
+
+\begin_layout Standard
+Now applying the constraint with 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ directly in the equations of motion would give zero right hand sides, reducing
+ to the standard 2PI formalism.
+ This is valid in the full theory because the Ward identity is satisfied.
+ However, this is impossible in the case where the 2PI effective action
+ is truncated at finite loop order because the actual Ward identity obeyed
+ by the 2PIEA is 
+\begin_inset Formula $\mathcal{W}_{c}^{A\left(2\right)}\neq\mathcal{W}_{c}^{A\left(1\right)}$
+\end_inset
+
+.
+ The manifestation of this fact in the symmetry improvement formalism is
+ a singularity: 
+\begin_inset Formula $\ell\to\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $v\int\Delta_{G}^{-1}\to0$
+\end_inset
+
+ so as to leave a finite right hand side in the first equation of motion.
+\end_layout
+
+\begin_layout Standard
+It is now necessary to introduce the constraint through a limit process,
+ and choose the scaling of 
+\begin_inset Formula $\ell$
+\end_inset
+
+ in the limit such that the scalar equation of motion is traded for the
+ constraint.
+ To this end we set 
+\begin_inset Formula 
+\begin{equation}
+v\int_{y}\Delta_{G}^{-1}\left(x,y\right)=\eta m^{3},\label{eq:regulated-2pi-WI}
+\end{equation}
+
+\end_inset
+
+and take the limit 
+\begin_inset Formula $\eta\to0$
+\end_inset
+
+.
+ Note that, in extension of 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citet{Pilaftsis2013}
+\end_layout
+
+\end_inset
+
+, one may allow separate regulators 
+\begin_inset Formula $\eta_{i}$
+\end_inset
+
+ for each Goldstone mode 
+\begin_inset Formula $i=1,\ldots,N-1$
+\end_inset
+
+, but there is nothing much to gain from this and it leads to no new difficultie
+s so we take a common regulator 
+\begin_inset Formula $\eta_{i}=\eta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m$
+\end_inset
+
+ is an arbitrary fixed mass scale, conveniently taken to be 
+\begin_inset Formula $\sim m_{H}$
+\end_inset
+
+, which serves to make 
+\begin_inset Formula $\eta$
+\end_inset
+
+ dimensionless.
+ The modified equations of motion become 
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\frac{\ell\eta}{v}m^{3},\\
+\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(z,w\right)} & =-\frac{\ell\eta^{2}}{v}m^{6}.
+\end{align}
+
+\end_inset
+
+If we choose to scale 
+\begin_inset Formula $\eta$
+\end_inset
+
+ and the 
+\begin_inset Formula $\ell$
+\end_inset
+
+ such that 
+\begin_inset Formula $\ell_{0}\equiv\ell\eta/v$
+\end_inset
+
+ is a constant and 
+\begin_inset Formula $\ell\eta^{2}/v\to0$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\ell_{0}m^{3},\\
+\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(z,w\right)} & =0,
+\end{align}
+
+\end_inset
+
+in addition to the Ward identity and the 
+\begin_inset Formula $\Delta_{H}$
+\end_inset
+
+ equation of motion.
+ In practice, in the symmetry broken phase, one simply discards the first
+ equation of motion and solves the second one in conjunction with the Ward
+ identity, which suffices to give a closed system.
+ In the symmetric phase 
+\begin_inset Formula $v=0$
+\end_inset
+
+ and the Ward identity is trivial, but 
+\begin_inset Formula $\Gamma^{\left(2\right)}$
+\end_inset
+
+ also does not depend linearly on 
+\begin_inset Formula $v$
+\end_inset
+
+, hence one can take the previous equations of motion with 
+\begin_inset Formula $\ell_{0}=0$
+\end_inset
+
+.
+ Note that we can, and do, keep a non-zero 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ in the intermediate stages of the computation to serve as an infrared regulator.
+\end_layout
+
+\begin_layout Standard
+To recap the procedure: first we define a symmetry improved effective action
+ using Lagrange multipliers and compute the equations of motion.
+ Second, note that the equations of motion are singular when the constraints
+ are applied.
+ Third, regulate the singularity by slightly violating the constraint.
+ Fourth, pass to a suitable limit where violation of the constraint tends
+ to zero.
+ We require the limiting procedure to be universal in the sense that no
+ additional data (arbitrary forms of the Lagrange multiplier fields) need
+ be introduced into the theory.
+ 
 \end_layout
 
 \begin_layout Section
 Symmetry Improvement of the 3PIEA
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:SI-3PIEA"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
