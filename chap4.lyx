@@ -1168,6 +1168,251 @@ REFS
 \end_inset
 
 .
+ The solution of the SI-2PI gap equations in the Hartree-Fock approximation
+ is shown in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:si2pi-hf-vev-comparison"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:si-2pi-hf-m_H-comparison"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:si-2pi-hf-m_G-comparison"
+
+\end_inset
+
+ using the parameters 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+ to enable direct comparison to the results of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ (which have been reproduced here for ease of comparison).
+ One sees that in the SI-2PI HF approximation the unphysical metastable
+ phase is removed and replaced by a continuous (2nd order) phase transition.
+ Furthermore the Goldstone theorem is satisfied, as expected, in the broken
+ phase, in contrast to the unimproved 2PI solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ch4/si2pi-vev-comparison.pdf
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:si2pi-hf-vev-comparison"
+
+\end_inset
+
+Field expectation value 
+\begin_inset Formula $v$
+\end_inset
+
+ from the unimproved 2PI (solid) and SI-2PI (dash-dot) in the Hartree-Fock
+ approximation with parameters 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ch4/si2pi-higgs-mass-comparison.pdf
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:si-2pi-hf-m_H-comparison"
+
+\end_inset
+
+Higgs mass 
+\begin_inset Formula $m_{H}^{2}$
+\end_inset
+
+ from the unimproved 2PI (solid) and SI-2PI (dash-dot) in the Hartree-Fock
+ approximation with parameters 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ch4/si2pi-goldstone-mass-comparison.pdf
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:si-2pi-hf-m_G-comparison"
+
+\end_inset
+
+Goldstone mass 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ from the unimproved 2PI (solid) and SI-2PI (dash-dot) in the Hartree-Fock
+ approximation with parameters 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{v}=93\ \mathrm{MeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
+\end_inset
+
+.
+ Note that the Goldstone theorem is satisfied, i.e.
+ 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+, in the broken phase for the SI-2PI solution but not the unimproved 2PI
+ solution.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
