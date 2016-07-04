@@ -1565,7 +1565,7 @@ effective field theory
  Elegant general discussions of renormalisation theory can be found in 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Zinn-Justin1990,zinn-justin_phase_2007"
+key "Zinn-Justin1990,Zinn-Justin2007"
 
 \end_inset
 
@@ -1707,7 +1707,7 @@ reference "eq:SSB-ansatz-Delta"
 which matches the expression found in appendix B of the author's paper 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_symmetry_2015"
+key "Brown2015a"
 
 \end_inset
 

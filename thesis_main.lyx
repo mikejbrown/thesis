@@ -209,6 +209,13 @@ update
 
 \end_inset
 
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015a"
+
+\end_inset
+
 ,
 \end_layout
 
@@ -234,6 +241,13 @@ status open
 \begin_layout Plain Layout
 update
 \end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015"
 
 \end_inset
 
@@ -265,6 +279,13 @@ status open
 \begin_layout Plain Layout
 update
 \end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown_2016"
 
 \end_inset
 
@@ -418,7 +439,7 @@ FIX BIBTEX DATABASE!!!
 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "C:/Users/Michael/Dropbox/PhD/Writings/refs,C:/Users/Michael/Dropbox/PhD/Writings/Linear Response Theory for SI-2PIEA/dist/refs"
+bibfiles "refs"
 options "unsrtnat"
 
 \end_inset

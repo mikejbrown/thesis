@@ -275,7 +275,7 @@ citep{Pilaftsis2013}
  the author 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_symmetry_2015"
+key "Brown2015a"
 
 \end_inset
 
@@ -448,7 +448,7 @@ reference "eq:1PI-Delta-WI"
 
 \end_inset
 
-, which is
+, which recall is
 \begin_inset Formula 
 \begin{equation}
 0=\mathcal{W}_{c}^{A}=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A},
@@ -464,7 +464,7 @@ where
  
 \begin_inset CommandInset citation
 LatexCommand citet
-key "pilaftsis_symmetry_2013"
+key "Pilaftsis2013"
 
 \end_inset
 
@@ -488,21 +488,14 @@ reference "chap:chap5"
 \end_layout
 
 \begin_layout Standard
-We now wish to impose 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-eqref{eq:w1-WI-1}-
-\backslash
-eqref{eq:w2-WI-1}
-\end_layout
+Symmetry improvement imposes 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
 
 \end_inset
 
- as constraints on the allowable values of 
+ as a constraint on the allowable values of 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -515,74 +508,218 @@ eqref{eq:w2-WI-1}
 \begin_inset Formula $\ell_{A}^{d}\left(x\right)$
 \end_inset
 
-, where 
-\begin_inset Formula $A$
+ and a shift of the action 
+\begin_inset Formula $\Gamma\to\Gamma-\mathcal{C}$
 \end_inset
 
- is an 
-\begin_inset Formula $\mathrm{O}\left(N\right)$
+ where 
+\begin_inset Formula $\mathcal{C}\sim\ell\mathcal{W}$
 \end_inset
 
- adjoint index, and the symmetry improved effective action which we write
- in manifestly covariant form as 
-\begin_inset Formula 
-\begin{equation}
-\tilde{\Gamma}\left[\varphi,\Delta,\ell\right]=\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]+\frac{i}{2}\int_{x}\ell_{A}^{d}\left(x\right)\mathcal{W}_{c}^{A\left(1\right)}\left(x\right)\left[P_{T}\left(\varphi,x\right)\right]_{cd}.
-\end{equation}
-
-\end_inset
-
-The transverse projector 
-\begin_inset Formula 
-\begin{equation}
-\left[P_{T}\left(\varphi,x\right)\right]_{cd}=\delta_{cd}-\frac{\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)}{\varphi^{2}\left(x\right)},
-\end{equation}
-
-\end_inset
-
-ensures that only the Goldstone modes are involved in the constraint.
- The equations of motion follow from 
-\begin_inset Formula $\delta\tilde{\Gamma}/\delta\varphi=\delta\tilde{\Gamma}/\delta\Delta=0$
-\end_inset
-
-.
+ is the constraint.
+ Note however that Pilaftsis and Teresi introduced symmetry improvement
+ non-covariantly, leading to two possible covariant symmetry improvement
+ schemes that reduce to theirs in equilibrium.
+ The first is to take
 \end_layout
 
 \begin_layout Standard
-Substituting the SSB ansatz and using translation invariance gives 
 \begin_inset Formula 
 \begin{equation}
-\tilde{\Gamma}\left[\varphi,\Delta,\ell\right]=\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]-\ell\mathcal{W}_{1},
+\mathcal{C}=\frac{i}{2}\ell_{A}^{c}\mathcal{W}_{c}^{A}.\label{eq:simple-constraint}
 \end{equation}
 
 \end_inset
 
-where we have absorbed group theory factors in 
-\begin_inset Formula $\ell$
+The second follows the author's previous paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "brown_symmetry_2015"
+
+\end_inset
+
+ by included a transverse projector 
+\begin_inset Formula $P_{ab}^{\perp}\left(x\right)=\delta_{ab}-\varphi_{a}\left(x\right)\varphi_{b}\left(x\right)/\varphi^{2}\left(x\right)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A},\label{eq:projected-constraint}
+\end{equation}
+
+\end_inset
+
+to ensure that only Goldstone modes are involved in the constraint.
+ The choice between 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{C}'$
+\end_inset
+
+ turns out to make no difference in equilibrium.
+ However, the two constraints lead to different schemes beyond equilibrium,
+ both of which are pathological as discussed in the author's paper 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CITE
+\end_layout
+
+\end_inset
+
+ and in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
 \end_inset
 
 .
- The 2PI equations of motion become 
+ For now the simple constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simple-constraint"
+
+\end_inset
+
+ is taken.
+\end_layout
+
+\begin_layout Standard
+The equations of motion following from the symmetry improved effective action
+ are 
 \begin_inset Formula 
 \begin{align}
-\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\ell\frac{\partial}{\partial v}\mathcal{W}_{1},\\
-\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(x,y\right)} & =-v\ell\left[\int_{x}\Delta_{G}^{-1}\left(x,0\right)\right]^{2},\\
-\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{H}\left(x,y\right)} & =0,\\
-0 & =v\int_{y}\Delta_{G}^{-1}\left(x,y\right).
+\mathcal{W}_{c}^{A} & =0,\\
+\frac{\delta\Gamma}{\delta\varphi_{d}\left(z\right)} & =\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{ca}^{-1}\left(x,z\right)T_{ad}^{A}-J_{d}\left(z\right)-\int_{w}K_{de}\left(z,w\right)\varphi_{e}\left(w\right),\label{eq:si-eom-vev}\\
+\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)} & =\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\int_{y}\frac{\delta\Delta_{ca}^{-1}\left(x,y\right)}{\delta\Delta_{de}\left(z,w\right)}T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right),
 \end{align}
 
 \end_inset
 
-The factor of 
-\begin_inset Formula $VT$
+where the last equation simplifies to 
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)}=-\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{cd}^{-1}\left(x,z\right)\int_{y}\Delta_{ea}^{-1}\left(w,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right),\label{eq:si-eom-delta}
+\end{equation}
+
 \end_inset
 
- on the left hand side of the first equation is the volume of spacetime,
- which we have divided by to give an intensive quantity.
+on using the identity 
+\begin_inset Formula $\delta\Delta_{ca}^{-1}/\delta\Delta_{de}=-\Delta_{cd}^{-1}\Delta_{ea}^{-1}$
+\end_inset
+
+.
+ In the present discussion only the equilibrium case with 
+\begin_inset Formula $J=K=0$
+\end_inset
+
+ is relevant (this is reviewing 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013,Brown2015a"
+
+\end_inset
+
+, the more general case is discussed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown_2016"
+
+\end_inset
+
+ and Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+).
+ The only non-trivial WIs are 
+\begin_inset Formula $\mathcal{W}_{c}^{gN}=-ivm_{G}^{2}P_{cg}^{\perp}$
+\end_inset
+
+, so that the constraint enforces 
+\begin_inset Formula $vm_{G}^{2}=0$
+\end_inset
+
+, i.e.
+ the Goldstone mass vanishes if 
+\begin_inset Formula $v\neq0$
+\end_inset
+
+ as expected.
+ Using homogeneity 
+\begin_inset Formula $\ell_{A}^{c}\left(x\right)=\ell_{A}^{c}$
+\end_inset
+
+, and the SSB ansatz 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-ansatz-Delta"
+
+\end_inset
+
+ the other equations of motion become 
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\Gamma/\mathrm{V}T}{\partial v} & =\ell_{cN}^{c}m_{G}^{2},\\
+\frac{\delta\Gamma}{\delta\Delta_{G}\left(z,w\right)} & =\ell_{cN}^{c}vm_{G}^{4},\\
+\frac{\delta\Gamma}{\delta\Delta_{H}\left(z,w\right)} & =0,
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathrm{V}T$
+\end_inset
+
+ is the volume of spacetime
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall that 
+\begin_inset Formula $\left(\delta/\delta\varphi\left(x\right)\right)\int_{y}\varphi\left(y\right)J\left(y\right)\equiv J\left(x\right)$
+\end_inset
+
+, however, for a translation invariant 
+\begin_inset Formula $\varphi\left(x\right)=v$
+\end_inset
+
+ and 
+\begin_inset Formula $J\left(x\right)=J$
+\end_inset
+
+, 
+\begin_inset Formula $\partial_{v}\int_{y}\varphi\left(x\right)J\left(x\right)=\partial_{v}\int_{x}vJ=\mathrm{V}TJ$
+\end_inset
+
+ so that 
+\begin_inset Formula $\delta/\delta\varphi=\left(\mathrm{V}T\right)^{-1}\partial_{v}$
+\end_inset
+
+ for constant fields.
 \end_layout
 
-\begin_layout Standard
-Now applying the constraint with 
+\end_inset
+
+.
+ Now, since 
+\begin_inset Formula $m_{G}^{2}\to0$
+\end_inset
+
+ the right hand sides vanish unless 
+\begin_inset Formula $\ell_{cN}^{c}\to\infty$
+\end_inset
+
+.
+ Applying the constraint with 
 \begin_inset Formula $v\neq0$
 \end_inset
 
@@ -592,7 +729,18 @@ Now applying the constraint with
  However, this is impossible in the case where the 2PI effective action
  is truncated at finite loop order because the actual Ward identity obeyed
  by the 2PIEA is 
-\begin_inset Formula $\mathcal{W}_{c}^{A\left(2\right)}\neq\mathcal{W}_{c}^{A\left(1\right)}$
+\emph on
+not
+\emph default
+ 
+\begin_inset Formula $\mathcal{W}_{c}^{A}$
+\end_inset
+
+ as discussed in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
 \end_inset
 
 .
@@ -606,116 +754,64 @@ Now applying the constraint with
 \end_inset
 
  so as to leave a finite right hand side in the first equation of motion.
+ Thus the constraint is a singular one.
 \end_layout
 
 \begin_layout Standard
-It is now necessary to introduce the constraint through a limit process,
- and choose the scaling of 
-\begin_inset Formula $\ell$
+The divergence is regulated by setting 
+\begin_inset Formula $vm_{G}^{2}=\eta m^{3}$
 \end_inset
 
- in the limit such that the scalar equation of motion is traded for the
- constraint.
- To this end we set 
+ and take the limit 
+\begin_inset Formula $\eta\to0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\eta\ell_{cN}^{c}/v=\ell_{0}$
+\end_inset
+
+ is a constant.
+ This gives
+\begin_inset Formula 
+\begin{align}
+\frac{\partial\Gamma/\mathrm{V}T}{\partial v} & =\ell_{0}m^{3},\\
+\frac{\delta\Gamma}{\delta\Delta_{G}\left(z,w\right)} & =0.
+\end{align}
+
+\end_inset
+
+(Note that one can consistently set 
 \begin_inset Formula 
 \begin{equation}
-v\int_{y}\Delta_{G}^{-1}\left(x,y\right)=\eta m^{3},\label{eq:regulated-2pi-WI}
+\ell_{bN}^{a}=-\ell_{Nb}^{a}=P_{ab}^{\perp}\left(\frac{1}{N-1}\ell_{cN}^{c}\right),\label{eq:lagrange-multipliers}
 \end{equation}
 
 \end_inset
 
-and take the limit 
-\begin_inset Formula $\eta\to0$
+and all other components of 
+\begin_inset Formula $\ell_{A}^{c}$
+\end_inset
+
+ to zero.) Thus the propagator equations of motion are unmodified and the
+ vev equation is modified by the presence of a homogeneous force that acts
+ to push 
+\begin_inset Formula $v$
+\end_inset
+
+ away from the minimum of the effective potential to the point where 
+\begin_inset Formula $m_{G}^{2}=0$
 \end_inset
 
 .
- Note that, in extension of 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citet{Pilaftsis2013}
-\end_layout
-
-\end_inset
-
-, one may allow separate regulators 
-\begin_inset Formula $\eta_{i}$
-\end_inset
-
- for each Goldstone mode 
-\begin_inset Formula $i=1,\ldots,N-1$
-\end_inset
-
-, but there is nothing much to gain from this and it leads to no new difficultie
-s so we take a common regulator 
-\begin_inset Formula $\eta_{i}=\eta$
-\end_inset
-
-.
- 
-\begin_inset Formula $m$
-\end_inset
-
- is an arbitrary fixed mass scale, conveniently taken to be 
-\begin_inset Formula $\sim m_{H}$
-\end_inset
-
-, which serves to make 
-\begin_inset Formula $\eta$
-\end_inset
-
- dimensionless.
- The modified equations of motion become 
-\begin_inset Formula 
-\begin{align}
-\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\frac{\ell\eta}{v}m^{3},\\
-\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(z,w\right)} & =-\frac{\ell\eta^{2}}{v}m^{6}.
-\end{align}
-
-\end_inset
-
-If we choose to scale 
-\begin_inset Formula $\eta$
-\end_inset
-
- and the 
-\begin_inset Formula $\ell$
-\end_inset
-
- such that 
-\begin_inset Formula $\ell_{0}\equiv\ell\eta/v$
-\end_inset
-
- is a constant and 
-\begin_inset Formula $\ell\eta^{2}/v\to0$
-\end_inset
-
- then 
-\begin_inset Formula 
-\begin{align}
-\frac{\partial\Gamma^{\left(2\right)}/VT}{\partial v} & =\ell_{0}m^{3},\\
-\frac{\delta\Gamma^{\left(2\right)}}{\delta\Delta_{G}\left(z,w\right)} & =0,
-\end{align}
-
-\end_inset
-
-in addition to the Ward identity and the 
-\begin_inset Formula $\Delta_{H}$
-\end_inset
-
- equation of motion.
- In practice, in the symmetry broken phase, one simply discards the first
- equation of motion and solves the second one in conjunction with the Ward
- identity, which suffices to give a closed system.
+ In practice, in the symmetry broken phase, one simply discards the vev
+ equation of motion and solves the propagator ones in conjunction with the
+ Ward identity, which suffices to give a closed system.
  In the symmetric phase 
 \begin_inset Formula $v=0$
 \end_inset
 
  and the Ward identity is trivial, but 
-\begin_inset Formula $\Gamma^{\left(2\right)}$
+\begin_inset Formula $\Gamma$
 \end_inset
 
  also does not depend linearly on 
@@ -727,7 +823,7 @@ in addition to the Ward identity and the
 \end_inset
 
 .
- Note that we can, and do, keep a non-zero 
+ Note that one can keep a non-zero 
 \begin_inset Formula $m_{G}^{2}$
 \end_inset
 
@@ -735,17 +831,343 @@ in addition to the Ward identity and the
 \end_layout
 
 \begin_layout Standard
-To recap the procedure: first we define a symmetry improved effective action
+To recap the procedure: first define a symmetry improved effective action
  using Lagrange multipliers and compute the equations of motion.
  Second, note that the equations of motion are singular when the constraints
  are applied.
  Third, regulate the singularity by slightly violating the constraint.
  Fourth, pass to a suitable limit where violation of the constraint tends
  to zero.
- We require the limiting procedure to be universal in the sense that no
- additional data (arbitrary forms of the Lagrange multiplier fields) need
- be introduced into the theory.
+ Requiring the limiting procedure to be universal in the sense that no additiona
+l data (arbitrary forms of the Lagrange multiplier fields) need be introduced
+ into the theory.
+\end_layout
+
+\begin_layout Section
+Renormalisation and solution of the SI-2PI Hartree-Fock gap equations
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Renormalisation-and-solution-SI-2PIEA-HF"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The renormalisation of the SI-2PIEA in the Hartree-Fock approximation follows
+ the same procedure as in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+ with minor alterations.
+ The gap equations 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ren-2PI-HF-G-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+ are the same, as are the finite versions 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-G-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+, reproduced here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),
+\end{align}
+
+\end_inset
+
+however the vev equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-vev-eom"
+
+\end_inset
+
+ is replaced by Goldstone's theorem
+\begin_inset Formula 
+\begin{equation}
+0=vm_{G}^{2},
+\end{equation}
+
+\end_inset
+
+which does not require renormalisation (more precisely, the WI is multiplicative
+ly renormalised, however since 
+\begin_inset Formula $\mathcal{W}_{c}^{A}=0$
+\end_inset
+
+ an overall factor makes no difference).
+ The counter-terms 
+\begin_inset Formula $\delta m_{0}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\lambda_{0}$
+\end_inset
+
+ do not enter into the renormalisation of the equations of motion and 
+\begin_inset Formula $Z_{\Delta}$
+\end_inset
+
+ is again redundant.
+ Altogether there are six remaining constants 
+\begin_inset Formula $Z$
+\end_inset
+
+, 
+\begin_inset Formula $\delta m_{1}^{2}$
+\end_inset
+
+, and 
+\begin_inset Formula $\delta\lambda_{1,2}^{A,B}$
+\end_inset
+
+ which are constrained by eight independent equations.
+ That there is a solution is a non-trivial check on the calculations and
+ one find (for details refer to the Mathematica notebook 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+Z=Z_{\Delta} & =1,\\
+\delta m_{1}^{2} & =-\frac{\hbar\lambda}{6}\left(N+2\right)\left(c_{0}\Lambda^{2}+c_{1}m^{2}\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)\right)\frac{\delta\lambda_{1}^{A}+\lambda}{\delta\lambda_{1}^{B}+\lambda},\\
+\delta\lambda_{1}^{A}=\delta\lambda_{2}^{A} & =\left(1+\frac{3\left(N+2\right)}{6+c_{1}\left(N+2\right)\lambda\hbar\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)}\right)\delta\lambda_{1}^{B},\\
+\delta\lambda_{1}^{B}=\delta\lambda_{2}^{B} & =\left(-1+\frac{3}{3+c_{1}\lambda\hbar\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)}\right)\lambda,
+\end{align}
+
+\end_inset
+
+which is actually identical to the expressions for the counter-terms in
+ the unimproved 2PIEA case.
+ This should accord with intuition: symmetry improvement is an infrared
+ modification of the theory which does not alter the ultraviolet divergence
+ structure at all.
+ However, such a result is not automatically assured in a self-consistent
+ approximation scheme such as 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, since the nonlinearity of the equations of motion results in a coupling
+ of scales.
+ Furthermore, the next section will show that the SI-3PIEA truncated to
+ two loops is 
+\emph on
+not
+\emph default
+ equivalent to the SI-2PIEA.
+ Instead the Higgs propagator equation of motion is modified as are the
+ counter-terms.
+ Full self-consistency of the theory is then lost with various physical
+ effects that will be discussed.
+\end_layout
+
+\begin_layout Standard
+Remarkably there is an exact solution for the Higgs mass in the SI-2PI HF
+ approximation.
+ Subtracting 
+\begin_inset Formula $3m_{G}^{2}$
+\end_inset
+
+ from the 
+\begin_inset Formula $m_{H}^{2}$
+\end_inset
+
+ equation to cancel the 
+\begin_inset Formula $\lambda v^{2}/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\hbar\lambda\mathcal{T}_{H}^{\mathrm{fin}}/2$
+\end_inset
+
+ terms, and using that 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ in the symmetry breaking regime, one finds
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=\bar{m}_{H}^{2}-\frac{\hbar\lambda}{3}\left(N+2\right)\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{T}_{G}^{\mathrm{fin}}=T^{2}/12$
+\end_inset
+
+ since 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+.
+ The critical temperature occurs when 
+\begin_inset Formula $m_{H}^{2}=0$
+\end_inset
+
+, giving
+\begin_inset Formula 
+\begin{equation}
+T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+which is the same as in the unimproved case.
+ However, unlike the unimproved case, the SI-2PI solution has a second order
+ phase transition.
+ Indeed, using the previous expression for 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+ in 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=\bar{m}_{H}^{2}\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)+\mathcal{O}\left(\lambda^{2}\right),
+\end{equation}
+
+\end_inset
+
+which is the classic expression from the Landau theory of second order phase
+ transitions 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF?
+\end_layout
+
+\end_inset
+
+.
+ The value of 
+\begin_inset Formula $v$
+\end_inset
+
+ is found by using this result in the 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ equation, obtaining
+\begin_inset Formula 
+\begin{equation}
+v^{2}=\bar{v}^{2}-\hbar\left(\left(N+1\right)\frac{T^{2}}{12}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\mathcal{O}\left(\lambda\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ is the mass appearing in 
+\begin_inset Formula $\mathcal{T}_{H}^{\mathrm{th}}$
+\end_inset
+
+.
+ At the critical temperature
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v^{2}=0+\mathcal{O}\left(\lambda\right),
+\end{equation}
+
+\end_inset
+
+as expected.
  
+\begin_inset Formula $v^{2}$
+\end_inset
+
+ smoothly interpolates between 
+\begin_inset Formula $\bar{v}^{2}$
+\end_inset
+
+ at 
+\begin_inset Formula $T=0$
+\end_inset
+
+ and zero at 
+\begin_inset Formula $T=T_{\star}$
+\end_inset
+
+, then remains at zero at all higher temperatures.
+ There is no unphysical metastable phase with broken symmetry at high temperatur
+e.
+ This agrees with the behaviour of the 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ model in lattice simulations 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFS
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section

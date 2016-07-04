@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass jcuthesis
 \options sort&compress
 \use_default_options true
@@ -16,16 +18,16 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -145,7 +147,7 @@ This chapter introduces the
  Berges 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Berges2004,Bergesa"
+key "Berges2004,Berges2015"
 
 \end_inset
 
@@ -161,7 +163,7 @@ key "Calzetta2008"
  to resummation methods is from a paper published by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_two-particle_2015"
+key "Brown2015"
 
 \end_inset
 
@@ -197,14 +199,14 @@ Generating functionals and effective action methods form the basis for the
  Originally developed by Goldstone, Salam and Weinberg 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "goldstone_broken_1962"
+key "Goldstone1962"
 
 \end_inset
 
  and, independently, Jona-Lasinio 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "jona-lasinio_relativistic_1964"
+key "Jona-Lasinio1964"
 
 \end_inset
 
@@ -2338,21 +2340,21 @@ brium plasmas/fluids, strongly coupled quantum field theories and systems
  The technique was originally developed by Lee and Yang 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "lee_many-body_1960"
+key "Lee1960"
 
 \end_inset
 
 , Luttinger and Ward 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "luttinger_ground-state_1960"
+key "Luttinger1960"
 
 \end_inset
 
 , Baym 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "baym_self-consistent_1962"
+key "Baym1962"
 
 \end_inset
 
@@ -2360,7 +2362,7 @@ key "baym_self-consistent_1962"
  Jackiw and Tomboulis 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "cornwall_effective_1974"
+key "Cornwall1974"
 
 \end_inset
 
@@ -2673,7 +2675,7 @@ It is convenient to introduce the shorthands
  (this matches then the notation of 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_symmetry_2015"
+key "Brown2015"
 
 \end_inset
 
@@ -3204,7 +3206,7 @@ BBALL,
  respectively, in the nomenclature of 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Carrington2011,Carrington2011a"
+key "Carrington2011,Carrington2012"
 
 \end_inset
 
@@ -3355,7 +3357,7 @@ PIEA.
  Apparently de Dominicis and Martin 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "de_dominicis_stationary_1964"
+key "DeDominicis1964"
 
 \end_inset
 
@@ -3367,7 +3369,7 @@ key "de_dominicis_stationary_1964"
  Early work on higher effective actions was carried on by Vasiliev 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "vasiliev_functional_1998"
+key "Vasiliev1998"
 
 \end_inset
 
@@ -3377,7 +3379,7 @@ key "vasiliev_functional_1998"
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kleinert_higher_1982,haymaker_variational_1991"
+key "Kleinert1982,Haymaker1991"
 
 \end_inset
 
@@ -3390,7 +3392,7 @@ PIEAs has largely been driven by their advantages for nonequilibrium problems
  and can likely be credited to the reviews by Berges 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Berges2004,Bergesa"
+key "Berges2004,Berges2015"
 
 \end_inset
 
@@ -3404,7 +3406,7 @@ PIEA can be found in the literature (e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Berges2004,Berges2004a,Carrington2011a,Carrington2013b"
+key "Berges2004,Berges2004c,Carrington2011,Carrington2012,Carrington2013,Carrington2013b"
 
 \end_inset
 
@@ -4844,7 +4846,7 @@ status open
  Much of this section is based on a publication by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_two-particle_2015"
+key "Brown2015"
 
 \end_inset
 
@@ -6876,7 +6878,7 @@ status open
 
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="2">
-<features rotate="0" booktabs="true" tabularvalignment="middle">
+<features booktabs="true" tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="left" valignment="top" width="0pt">
 <row>
@@ -8918,7 +8920,7 @@ PIEAs are the subject of a rich literature and have found applications in
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Bergesa,Calzetta2008"
+key "Berges2015,Calzetta2008"
 
 \end_inset
 
@@ -8964,7 +8966,7 @@ PIEA which does not derive from a consistent modified variational principle
  properties of 2PIEAs 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "pilaftsis_symmetry_2013"
+key "Pilaftsis2013"
 
 \end_inset
 
@@ -9002,7 +9004,7 @@ tion than a truncation of the diagram series to be used in practice.
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Berges2004,Bergesa"
+key "Berges2004,Berges2015"
 
 \end_inset
 
