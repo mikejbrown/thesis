@@ -562,12 +562,9 @@ to ensure that only Goldstone modes are involved in the constraint.
  turns out to make no difference in equilibrium.
  However, the two constraints lead to different schemes beyond equilibrium,
  both of which are pathological as discussed in the author's paper 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CITE
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown_2016"
 
 \end_inset
 
@@ -2729,19 +2726,125 @@ name "sec:SI-3PIEA"
 \end_layout
 
 \begin_layout Standard
-We now extend this logic to the 3PI case.
- To that end we introduce the symmetry improved 3PIEA
-\begin_inset Formula 
-\begin{align}
-\tilde{\Gamma}^{\left(3\right)} & =\Gamma^{\left(3\right)}+\frac{i}{2}\int_{x}\ell_{A}^{d}\left(x\right)\mathcal{W}_{c}^{A\left(1\right)}\left(x\right)\left[P_{T}\left(\varphi,x\right)\right]_{cd}\nonumber \\
- & -Bf\left[\mathcal{W}_{cd}^{A\left(1\right)}\right],
-\end{align}
+This section examines the extension of symmetry improvement to the 3PIEA,
+ closely following the work published by the author in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015a"
 
 \end_inset
 
- where the second term is the same as the 2PI symmetry improvement term
- and the third term contains the extended symmetry improvement.
+.
+ For ease of reference the explicit forms of the 3PIEA and its equations
+ of motion reproduced from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3piea"
+
+\end_inset
+
+ and following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Gamma^{\left(3\right)}\left[\varphi,\Delta,V\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta^{-1}+\frac{i\hbar}{2}\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta-1\right)+\Gamma_{3}\left[\varphi,\Delta,V\right],
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\Gamma_{3}=\Phi_{1}-\Phi_{2}+\frac{\hbar^{2}}{3!}V_{0abc}\Delta_{ad}\Delta_{be}\Delta_{cf}V_{def}+\Phi_{3}+\Phi_{4}+\Phi_{5}+\mathcal{O}\left(\hbar^{4}\right),
+\end{equation}
+
+\end_inset
+
+where the 
+\begin_inset Formula $\Phi$
+\end_inset
+
+s are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Phi_{1} & = & -\frac{\hbar^{2}}{8}W_{abcd}\Delta_{ab}\Delta_{cd},\\
+\Phi_{2} & = & \frac{\hbar^{2}}{12}V_{abc}V_{def}\Delta_{ad}\Delta_{be}\Delta_{cf},\\
+\Phi_{3} & = & \frac{i\hbar^{3}}{4!}V_{abc}V_{def}V_{ghi}V_{jkl}\Delta_{ad}\Delta_{bg}\Delta_{cj}\Delta_{eh}\Delta_{fk}\Delta_{il},\\
+\Phi_{4} & = & -\frac{i\hbar^{3}}{8}W_{abcd}V_{efg}V_{hij}\Delta_{ae}\Delta_{bf}\Delta_{ch}\Delta_{di}\Delta_{gj},\\
+\Phi_{5} & = & \frac{i\hbar^{3}}{48}W_{abcd}W_{efgh}\Delta_{ae}\Delta_{bf}\Delta_{cg}\Delta_{dh}.
+\end{eqnarray}
+
+\end_inset
+
+The equations of motion are
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & = & -J_{a}-K_{ab}^{\left(2\right)}\varphi_{b}-\frac{1}{2}K_{abc}^{\left(3\right)}\left(i\hbar\Delta_{bc}+\varphi_{b}\varphi_{c}\right),\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & = & -\frac{i\hbar}{2}K_{ab}^{\left(2\right)}-\frac{i\hbar}{2}K_{abc}^{\left(3\right)}\varphi_{c}\nonumber \\
+ &  & -\frac{\hbar^{2}}{3!2}\left(K_{acd}^{\left(3\right)}\Delta_{ce}\Delta_{df}V_{bef}+K_{bcd}^{\left(3\right)}\Delta_{ce}\Delta_{df}V_{aef}\right)\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & -\frac{1}{3!}\hbar^{2}\Delta_{ad}\Delta_{be}\Delta_{cf}K_{def}^{\left(3\right)},
+\end{eqnarray}
+
+\end_inset
+
+where the left hand sides are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & = & \frac{\delta S}{\delta\varphi_{a}}+\frac{i\hbar}{2}V_{0abc}\Delta_{cb}+\frac{\hbar^{2}}{3!}W_{abcd}\Delta_{be}\Delta_{cf}\Delta_{dg}V_{efg}+\mathcal{O}\left(\hbar^{3}\right),\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & = & -\frac{i\hbar}{2}\left(\Delta_{ab}^{-1}+\mathrm{Tr}\Delta_{0ab}^{-1}-\Sigma_{ab}\right)+\mathcal{O}\left(\hbar^{4}\right),\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & \frac{\hbar^{2}}{3!}\left(V_{0def}-V_{def}\right)\Delta_{ad}\Delta_{be}\Delta_{cf}+\frac{i\hbar^{3}}{3!}V_{def}V_{ghi}V_{jkl}\Delta_{ad}\Delta_{bg}\Delta_{cj}\Delta_{eh}\Delta_{fk}\Delta_{il}\nonumber \\
+ &  & -\frac{i\hbar^{3}}{4}W_{hijd}V_{efg}\left(\frac{1}{3}\Delta_{ah}\Delta_{bi}\Delta_{ej}\Delta_{df}\Delta_{cg}+\text{cyclic permutations }\left(a\to b\to c\to a\right)\right)\nonumber \\
+ &  & +\mathcal{O}\left(\hbar^{4}\right),
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is now necessary to impose a WI on the three point vertex function.
+ To that end introduce the symmetry improved 3PIEA
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Gamma}^{\left(3\right)}=\Gamma^{\left(3\right)}-\frac{i}{2}\int_{x}\ell_{A}^{d}\left(x\right)\mathcal{W}_{c}^{A}\left(x\right)\left[P^{\perp}\left(\varphi,x\right)\right]_{cd}-Bf\left[\mathcal{W}_{cd}^{A}\right],
+\end{equation}
+
+\end_inset
+
+where the second term is the same as the 2PI symmetry improvement term (note
+ that the projected version of the constraint is used to match 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015a"
+
+\end_inset
+
+) and the third term contains the extended symmetry improvement where, recall
  
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-V-WI"
+
+\end_inset
+
+, the WI is
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{cd}^{A}=V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},
+\end{equation}
+
+\end_inset
+
+
 \begin_inset Formula $B$
 \end_inset
 
@@ -2750,15 +2853,28 @@ We now extend this logic to the 3PI case.
 \end_inset
 
  is an arbitrary functional which vanishes if and only if its argument vanishes.
- Substituting the SSB ansatz we obtain 
+ Substituting the SSB ansatz gives
 \begin_inset Formula 
 \begin{equation}
-\tilde{\Gamma}^{\left(3\right)}=\Gamma^{\left(3\right)}-\ell\mathcal{W}_{1}-Bf\left[\mathcal{W}_{2}\right].
+\tilde{\Gamma}^{\left(3\right)}=\Gamma^{\left(3\right)}-\ell\mathcal{W}_{1}-Bf\left[\mathcal{W}_{2}\right],
 \end{equation}
 
 \end_inset
 
- The equations of motion are
+where
+\begin_inset Formula 
+\begin{align}
+\mathcal{W}_{1} & =\int_{z}\Delta_{G}^{-1}\left(x,z\right)v,\\
+\mathcal{W}_{2} & =\int_{z}\bar{V}\left(x,y,z\right)v+\Delta_{G}^{-1}\left(x,y\right)-\Delta_{H}^{-1}\left(x,y\right),
+\end{align}
+
+\end_inset
+
+are the WIs in terms of the ansatz variables.
+\end_layout
+
+\begin_layout Standard
+The equations of motion are
 \begin_inset Formula 
 \begin{align}
 \frac{\partial\Gamma^{\left(3\right)}/VT}{\partial v} & =\ell_{0}m^{3}+B\int_{xz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\bar{V}\left(x,y,z\right),\label{eq:si3pi-v-eom}\\
@@ -2773,7 +2889,7 @@ We now extend this logic to the 3PI case.
 
 \end_inset
 
- where we already take the previous limiting procedure to eliminate 
+where the limiting procedure to eliminate 
 \begin_inset Formula $\ell$
 \end_inset
 
@@ -2781,30 +2897,60 @@ We now extend this logic to the 3PI case.
 \begin_inset Formula $\mathcal{W}_{1}$
 \end_inset
 
-.
- In 
-\backslash
-eqref{eq:si3pi-barV-eom} we have inserted a factor of 
+ is already taken as in the 2PI case.
+ A factor of 
 \begin_inset Formula $1=\int_{z}\delta^{\left(4\right)}\left(z-t\right)$
 \end_inset
 
+ has been inserted in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-eom"
+
+\end_inset
+
  for later convenience.
- Now we devise a limiting procedure such that the right hand sides of two
- of 
-\backslash
-eqref{eq:si3pi-deltaG-eom}, 
-\backslash
-eqref{eq:si3pi-deltaN-eom} and 
-\backslash
-eqref{eq:si3pi-barV-eom} vanish.
+ Now a limiting procedure must be found such that the right hand sides of
+ two of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-deltaG-eom"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-deltaN-eom"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-eom"
+
+\end_inset
+
+ vanish.
  The remaining equation must be chosen so that it can be replaced by the
  constraint 
-\backslash
-eqref{eq:si3pi-barV-WI} and still give a closed system.
- Note that 
-\backslash
-eqref{eq:si3pi-barV-eom} cannot be eliminated because there is not enough
- information to reconstruct 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-WI"
+
+\end_inset
+
+ and still give a closed system.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-eom"
+
+\end_inset
+
+ cannot be eliminated because there is not enough information to reconstruct
+ 
 \begin_inset Formula $\bar{V}$
 \end_inset
 
@@ -2816,8 +2962,16 @@ eqref{eq:si3pi-barV-eom} cannot be eliminated because there is not enough
 \begin_inset Formula $\mathcal{W}_{2}$
 \end_inset
 
-.
- Thus we must eliminate either 
+ (the integral in 
+\begin_inset Formula $\mathcal{W}_{2}$
+\end_inset
+
+ irreversibly loses information about 
+\begin_inset Formula $\bar{V}$
+\end_inset
+
+).
+ Thus one must eliminate either 
 \begin_inset Formula $\Delta_{G}$
 \end_inset
 
@@ -2833,8 +2987,8 @@ eqref{eq:si3pi-barV-eom} cannot be eliminated because there is not enough
 \end_layout
 
 \begin_layout Standard
-We show that the desired simplification of the equations of motion can be
- achieved without restricting 
+The desired simplification of the equations of motion can be achieved without
+ restricting 
 \begin_inset Formula $\bar{V}$
 \end_inset
 
@@ -2861,24 +3015,37 @@ status open
 \end_inset
 
  is mandated).
- We temporarily adopt this assumption without further explanation, though
- in Appendix 
-\backslash
-ref{sub:The-d'Alembert-formalism} we will show that it can be justified
- by the introduction of the 
+ This assumption will be justified in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Justifying-the-d'Alembert-Formalism"
+
+\end_inset
+
+ with the introduction of the so-called 
 \emph on
 d'Alembert formalism
 \emph default
 .
+ Proceed now by adopting it for the sake of argument.
 \end_layout
 
 \begin_layout Standard
 Computing the left hand side of 
-\backslash
-eqref{eq:si3pi-barV-eom} using 
-\backslash
-eqref{eq:3piea} and displaying only the two loop terms explicitly we obtain
- 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-eom"
+
+\end_inset
+
+ using the explicit form of the 3PIEA 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3piea"
+
+\end_inset
+
+ and displaying only the two loop terms explicitly gives 
 \begin_inset Formula 
 \begin{align}
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =-\frac{\hbar^{2}}{2}\left(N-1\right)\nonumber \\
@@ -2888,31 +3055,8 @@ eqref{eq:3piea} and displaying only the two loop terms explicitly we obtain
 
 \end_inset
 
- Without symmetry improvement one sets this quantity to zero, giving an
- equation equivalent to the one we derived in the previous section, 
-\backslash
-eqref{eq:3pi-vertex-eom} (up to a group theory factor, since the variables
- in the one case are 
-\begin_inset Formula $\Delta_{ab}$
-\end_inset
-
- and 
-\begin_inset Formula $V$
-\end_inset
-
- and in the other 
-\begin_inset Formula $\Delta_{G}$
-\end_inset
-
-, 
-\begin_inset Formula $\Delta_{H}$
-\end_inset
-
- and 
-\begin_inset Formula $\bar{V}$
-\end_inset
-
-).
+Without symmetry improvement one sets this quantity to zero, giving an equation
+ equivalent to the usual 3PI vertex equation of motion.
  This equation is now modified by the symmetry improvement to
 \begin_inset Formula 
 \begin{multline}
@@ -2923,7 +3067,7 @@ eqref{eq:3pi-vertex-eom} (up to a group theory factor, since the variables
 
 \end_inset
 
- Convolving with the inverse propagators 
+Convolving with the inverse propagators 
 \begin_inset Formula $\Delta_{H}^{-1}\Delta_{G}^{-1}\Delta_{G}^{-1}$
 \end_inset
 
@@ -2937,13 +3081,19 @@ eqref{eq:3pi-vertex-eom} (up to a group theory factor, since the variables
 
 \end_inset
 
- The right hand side now vanishes due to 
-\backslash
-eqref{eq:si3pi-deltaG-WI}.
+The right hand side now vanishes due to 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-deltaG-WI"
+
+\end_inset
+
+.
  With the regulator 
-\backslash
-eqref{eq:regulated-2pi-WI} in place, we have that the symmetry improvement
- term in the 
+\begin_inset Formula $vm_{G}^{2}=\eta m^{3}$
+\end_inset
+
+ in place the symmetry improvement term in the 
 \begin_inset Formula $\bar{V}$
 \end_inset
 
@@ -2952,8 +3102,13 @@ eqref{eq:regulated-2pi-WI} in place, we have that the symmetry improvement
 \end_inset
 
  scaling manifest in 
-\backslash
-eqref{eq:si3pi-barV-eom}.
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-eom"
+
+\end_inset
+
+.
  Schematically, the right hand side scales as 
 \begin_inset Formula $B\left(\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{2}m_{G}^{4}v\sim B\left(\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{8}\eta^{2}/v$
 \end_inset
@@ -2981,15 +3136,21 @@ eqref{eq:si3pi-barV-eom}.
 \begin_layout Standard
 Now we investigate the Goldstone propagator.
  Substituting 
-\backslash
-eqref{eq:3piea} into 
-\backslash
-eqref{eq:si3pi-deltaG-eom} we find the symmetry improved equation of motion
- for 
+\begin_inset Formula $\Gamma^{\left(3\right)}$
+\end_inset
+
+ into 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-deltaG-eom"
+
+\end_inset
+
+ the symmetry improved equation of motion for 
 \begin_inset Formula $\Delta_{G}$
 \end_inset
 
-:
+ is found to be
 \end_layout
 
 \begin_layout Standard
@@ -3000,7 +3161,11 @@ eqref{eq:si3pi-deltaG-eom} we find the symmetry improved equation of motion
 
 \end_inset
 
-where we have defined the 3PI symmetry improved self-energy 
+where the 3PI symmetry improved self-energy 
+\begin_inset Formula $\tilde{\Sigma}_{G}$
+\end_inset
+
+ is 
 \begin_inset Formula 
 \begin{align}
 \tilde{\Sigma}_{G}\left(r,s\right) & \equiv\frac{2i}{\hbar\left(N-1\right)}\left[\frac{\delta\Gamma_{3}}{\delta\Delta_{G}\left(r,s\right)}\right.\nonumber \\
@@ -3009,11 +3174,11 @@ where we have defined the 3PI symmetry improved self-energy
 
 \end_inset
 
- Substituting in 
+Substituting in 
 \begin_inset Formula $\Gamma_{3}^{\left(3\right)}$
 \end_inset
 
- to two loop order we find 
+ to two loop order, 
 \begin_inset Formula 
 \begin{align}
 \tilde{\Sigma}_{G}\left(r,s\right) & =\frac{i\hbar\lambda}{6}\mathrm{Tr}\left[\left(N+1\right)\Delta_{G}+\Delta_{H}\right]\delta^{\left(4\right)}\left(r-s\right)\nonumber \\
@@ -3025,12 +3190,9 @@ where we have defined the 3PI symmetry improved self-energy
 
 \end_inset
 
- The first term corresponds to the Hartree-Fock diagram (Figure 
-\backslash
-ref{fig:hartree-superdaisies}, far left); the second term corresponds to
- the sunset diagrams (Figure 
-\backslash
-ref{fig:sunset-graph}) and the third term is the symmetry improvement term.
+The first term corresponds to the Hartree-Fock diagram, the second term
+ corresponds to the sunset diagrams and the third term is the symmetry improveme
+nt term.
  The equation of motion for 
 \begin_inset Formula $\Delta_{H}$
 \end_inset
@@ -3079,11 +3241,11 @@ end{figure}
 \end_layout
 
 \begin_layout Standard
-If we assume 
+If 
 \begin_inset Formula $\delta f/\delta\mathcal{W}_{2}$
 \end_inset
 
- is constant, we find that 
+ is constant, then 
 \begin_inset Formula $\tilde{\Sigma}_{G}$
 \end_inset
 
@@ -3118,23 +3280,10 @@ If we assume
 
  is modified by a finite term.
  This is the desired limiting procedure.
- Adopting it gives the final set of equations of motion: 
+ Adopting it gives the final set of SI-3PI equations of motion: 
 \end_layout
 
 \begin_layout Standard
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-\lang english
 \begin_inset Formula 
 \begin{align}
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{G}\left(r,s\right)} & =0,\\
@@ -3146,7 +3295,8 @@ If we assume
 
 \end_inset
 
-
+That is the vev and Higgs propagator equations of motion are replaced by
+ WIs, but the Goldstone propagator and vertex equations of motion are unmodified.
 \end_layout
 
 \begin_layout Section
@@ -3177,10 +3327,17 @@ The assumption that
 \end_inset
 
  can be consistently taken to be constant requires explanation.
- Constrained Lagrangian problems are generally under-specified unless one
- invokes some principle like d'Alembert's principle (that the constraint
- forces are ``ideal'', i.e.
- they do no work on the system) to specify the constraint forces.
+ Constrained Lagrangian problems are generally under-specified unless some
+ principle like d'Alembert's principle (that the constraint forces are 
+\begin_inset Quotes eld
+\end_inset
+
+ideal
+\begin_inset Quotes erd
+\end_inset
+
+, i.e.
+ they do no work on the system) is invoked to specify the constraint forces.
  Note that it while it is usually stated that enforcing constraints through
  Lagrange multipliers is equivalent to applying d'Alembert's principle,
  this is no longer automatically the case if the constraints involve a singular
@@ -3189,9 +3346,25 @@ The assumption that
  to input physical information to resolve it.
  In the case of mechanical systems the analyst is expected to be able to
  furnish the correct form of the constraints by inspection of the system.
- However, the interpretation of ``work'' and ``constraint force'' in the
- field theory case is subtle and the appropriate generalization is not obvious.
- Here we argue, by way of a simple mechanical analogy, that the procedure
+ However, the interpretation of 
+\begin_inset Quotes eld
+\end_inset
+
+work
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+constraint force
+\begin_inset Quotes erd
+\end_inset
+
+ in the field theory case is subtle and the appropriate generalisation is
+ not obvious.
+ Here it is argued, by way of a simple mechanical analogy, that the procedure
  which leads to the maximum simplification of the equations of motion is
  the correct field theory analogue of d'Alembert's principle in mechanics.
 \end_layout
@@ -3202,10 +3375,22 @@ d'Alembert's principle is empirically verifiable for a given mechanical
 \emph on
 definition
 \emph default
- of our approximation scheme, which we refer to as the ``d'Alembert formalism.''
+ of the SI-3PIEA approximation scheme, which can be refered to as the 
+\begin_inset Quotes eld
+\end_inset
+
+d'Alembert formalism.
+\begin_inset Quotes erd
+\end_inset
+
  The result of Section 
-\backslash
-ref{sec:Symmetry-improvement} was a set of unambiguous 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SI-3PIEA"
+
+\end_inset
+
+ was a set of unambiguous 
 \begin_inset Formula $f$
 \end_inset
 
@@ -3216,26 +3401,42 @@ ref{sec:Symmetry-improvement} was a set of unambiguous
 
 -loops.
  The use of any other limiting procedure requires the analyst to specify
- a spacetime function's worth of data ahead of time, representing the ``work''
+ a spacetime function's worth of data ahead of time, representing the 
+\begin_inset Quotes eld
+\end_inset
+
+work
+\begin_inset Quotes erd
+\end_inset
+
  that the constraint forces do.
  The resulting equations of motion represent a different formulation of
  the system and will have a different solution depending on the choice of
- ``work'' function.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+work
+\begin_inset Quotes erd
+\end_inset
+
+ function.
 \end_layout
 
 \begin_layout Standard
-Imagine that we are competing against another analyst to find the most accurate
+Imagine that one is competing against another analyst to find the most accurate
  solution for a particular system.
- It is possible that a competing smart analyst could choose a work function
- that results in a more accurate solution than ours, also working at 
+ It is possible that the competing smart analyst could choose a work function
+ that results in a more accurate solution, also working at 
 \begin_inset Formula $l$
 \end_inset
 
 -loops.
- However, we could beat the other analyst by working in the d'Alembert formalism
- but at higher loop order.
- We conjecture that the optimum choice of work function (in the sense of
- guaranteeing the optimum accuracy of the resulting solution of the 
+ However, one could still beat the other analyst by working in the d'Alembert
+ formalism but at higher loop order.
+ A reasonable conjecture is that the optimum choice of work function (in
+ the sense of guaranteeing the optimum accuracy of the resulting solution
+ of the 
 \begin_inset Formula $l$
 \end_inset
 
@@ -3245,12 +3446,12 @@ Imagine that we are competing against another analyst to find the most accurate
 \end_inset
 
 -loop corrections.
- (We have no proof of this conjecture.
+ (This conjecture is given without proof.
  Indeed it is hard to see if any alternative to the d'Alembert formalism
- is practicable.) Thus we choose the d'Alembert formalism, which has the
- virtue of being a definite procedure requiring little cleverness from the
- analyst, at the cost of potentially having a sub-optimal accuracy for a
- given loop order.
+ is practicable.) Additionally the d'Alembert formalism has the virtue of
+ being a definite procedure requiring little cleverness from the analyst,
+ at the cost of potentially having a sub-optimal accuracy for a given loop
+ order.
 \end_layout
 
 \begin_layout Standard
@@ -3309,13 +3510,13 @@ m\ddot{y}\left(t\right) & =-2\lambda\frac{\delta f}{\delta w\left(t\right)}y\lef
 \end_layout
 
 \begin_layout Standard
-In this mechanics problem we could set 
+In this mechanics problem one could set 
 \begin_inset Formula $f\left[w\right]=\int w\left(t\right)\mathrm{d}t$
 \end_inset
 
  and carry through the problem in the standard way without any complications.
  But to mimic the field theory case, where a limiting procedure is required,
- we take 
+ take 
 \begin_inset Formula $f\left[w\right]=\int w\left(t\right)^{2}\mathrm{d}t$
 \end_inset
 
@@ -3328,7 +3529,7 @@ In this mechanics problem we could set
 
 \end_inset
 
- This requires 
+This requires 
 \begin_inset Formula $\lambda\to\infty$
 \end_inset
 
@@ -3366,7 +3567,7 @@ In this mechanics problem we could set
 \end_inset
 
 .
- We want 
+ One needs 
 \begin_inset Formula $\dot{w}\left(t\right)=0$
 \end_inset
 
@@ -3378,7 +3579,8 @@ In this mechanics problem we could set
 \end_layout
 
 \begin_layout Standard
-We are arguing that we only consider variations of this restricted form.
+The present section is arguing that one only consider variations of this
+ restricted form.
  The variations along the constraint surface (i.e.
  variations of 
 \begin_inset Formula $\theta\left(t\right)$
@@ -3386,8 +3588,8 @@ We are arguing that we only consider variations of this restricted form.
 
 ) are unrestricted as they should be.
  Only variations orthogonal to the constraint surface are restricted.
- This is equivalent to d'Alembert's principle.
- To see this we compute the second derivative of 
+ This is equivalent to the classical d'Alembert principle.
+ To see this compute the second derivative of 
 \begin_inset Formula $r^{2}$
 \end_inset
 
@@ -3414,9 +3616,14 @@ We are arguing that we only consider variations of this restricted form.
 \end_layout
 
 \begin_layout Standard
-In the field theory case we have 
-\backslash
-eqref{eq:si3pi-w2-eom}.
+In the field theory case the constraint is 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:si3pi-barV-WI"
+
+\end_inset
+
+.
  For any given value of 
 \begin_inset Formula $\bar{V}$
 \end_inset
@@ -3445,10 +3652,10 @@ where the
 \end_inset
 
  denotes the constraint solution.
- This is a holonomic constraint: in principle we could substitute this into
- the effective action directly and not worry about Lagrange multipliers
+ This is a holonomic constraint: in principle one could substitute this
+ into the effective action directly and not worry about Lagrange multipliers
  at all (this is very messy analytically, though it may be numerically feasible).
- We suggest that one restrict variations of 
+ In the d'Alembert formalism, then, one restrict variations of 
 \begin_inset Formula $\Delta_{H}^{-1}$
 \end_inset
 
@@ -3461,7 +3668,7 @@ where the
 \end_inset
 
  is a spacetime independent constant.
- This way we guarantee 
+ This guarantees 
 \begin_inset Formula 
 \begin{equation}
 \frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}=2\mathcal{W}_{2}\left(x,y\right)=-2\delta k=\text{const},
@@ -3469,7 +3676,7 @@ where the
 
 \end_inset
 
- and all the desired simplifications go through.
+and all the desired simplifications go through.
  Variations of the other variables are unrestricted.
  Because the constraint force 
 \begin_inset Formula $B\delta f/\delta\mathcal{W}_{2}$
@@ -3487,8 +3694,15 @@ where the
 \begin_inset Formula $V_{N}$
 \end_inset
 
- equations of motion the constraint ``does no work'' on these variables,
- and the other variables (
+ equations of motion the constraint 
+\begin_inset Quotes eld
+\end_inset
+
+does no work
+\begin_inset Quotes erd
+\end_inset
+
+ on these variables, and the other variables (
 \begin_inset Formula $v$
 \end_inset
 
@@ -3497,7 +3711,8 @@ where the
 \end_inset
 
 ) are determined solely by the constraint equations.
- This seems a fitting field theory analogy for d'Alembert's principle.
+ This seems a fitting field theory analogy for the classical d'Alembert
+ principle.
 \end_layout
 
 \begin_layout Section
@@ -3523,7 +3738,7 @@ name "sec:Renormalisation-of-the-SI-3PIEA"
 \end_layout
 
 \begin_layout Standard
-Here we undertake a general description of the renormalization problem at
+Here we undertake a general description of the renormalisation problem at
  zero temperature.
  Our detailed considerations follow in Sections 
 \backslash
@@ -3560,13 +3775,23 @@ Generically, modifications of the equations of motion following from the
  Then in Section 
 \backslash
 ref{sub:Three-loop-truncation} we will renormalize the theory at three loops.
- Non-perturbative counter-term calculations are generally much more difficult
+ Nonperturbative counter-term calculations are generally much more difficult
  than the analogous perturbative calculations, hence many of the manipulations
  were performed in a supplemental 
 \backslash
-noun{Mathematica} notebook 
+noun{Mathematica} notebook
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
 \backslash
-citep{supp}.
+citep{supp}
+\end_layout
+
+\end_inset
+
+.
  The results of this section are finite equations of motion for renormalized
  quantities which must be solved numerically.
  We leave the numerical implementation to future work, except in the case
