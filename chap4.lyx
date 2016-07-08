@@ -80,17 +80,6 @@ theorems-sec
 
 \begin_layout Chapter
 Symmetry Improvement of nPIEA through Lagrange Multipliers
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-}{
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -180,14 +169,9 @@ PIEA is truncated some subset of perturbative diagrams are summed to infinite
 
 -loop diagrams (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{York,York2012}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "York2012,York2014"
 
 \end_inset
 
@@ -197,33 +181,23 @@ citep{York,York2012}
 \begin_layout Standard
 Several studies have attempted to find a remedy for this problem.
  These are discussed in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{Pilaftsis2013}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
 
 \end_inset
 
  and references therein.
  The last chapter discussed a technique frequently advocated in the literature
+ (see e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{*[{See e.g.
- }] [] VanHees2002,*Berges2005,*Carrington2009}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanHees2002,Berges2005,Carrington2009"
 
 \end_inset
 
-: the so called 
+): the so called 
 \emph on
 external propagator
 \emph default
@@ -250,14 +224,9 @@ PIEA by their equations of motion.
 \begin_layout Standard
 This chapter discusses the symmetry improvement method introduced by Pilaftsis
  and Teresi to circumvents these difficulties 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{Pilaftsis2013}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
 
 \end_inset
 
@@ -305,14 +274,9 @@ PIEA with
 
  (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{Carrington2009,Smolic2012a,Berges2004}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carrington2009,Smolic2012,Berges2004"
 
 \end_inset
 
@@ -345,27 +309,17 @@ PIEA allows one to accurately describe the initial value problem with 1-
  density matrix.
  This leads to problems with renormalisation, unphysical transient responses
  and thermalisation to the wrong temperature 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{Garny2009a}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Garny2009"
 
 \end_inset
 
 .
  This is addressed in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{Garny2009a,*VanLeeuwen2011,*VanLeeuwen2013}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Garny2009,VanLeeuwen2012,Stefanucci2013"
 
 \end_inset
 

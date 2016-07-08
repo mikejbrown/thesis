@@ -133,8 +133,6 @@ stub
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset ERT
 status open
 
@@ -180,7 +178,8 @@ List of Publications
 \end_layout
 
 \begin_layout Standard
-This thesis is largely based on the following peer reviewed journal articles:
+This thesis is largely based on work published by the author in the following
+ peer reviewed journal articles:
 \end_layout
 
 \begin_layout Itemize
@@ -314,8 +313,6 @@ UPDATE!!!!!
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset FormulaMacro
 \newcommand{\lhook}[1]{#1^{\ulcorner}}
 \end_inset
@@ -324,8 +321,6 @@ UPDATE!!!!!
 \end_layout
 
 \begin_layout Standard
-
-\lang british
 \begin_inset FormulaMacro
 \newcommand{\rhook}[1]{#1^{\urcorner}}
 \end_inset
@@ -411,9 +406,10 @@ filename "chap7.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "appendix.lyx"
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "refs"
+options "unsrtnat"
 
 \end_inset
 
@@ -421,10 +417,9 @@ filename "appendix.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset bibtex
-LatexCommand bibtex
-bibfiles "refs"
-options "unsrtnat"
+\begin_inset CommandInset include
+LatexCommand include
+filename "appendix.lyx"
 
 \end_inset
 
