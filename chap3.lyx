@@ -111,7 +111,8 @@ The previous chapter introduced nPIEA as a technique suitable for studies
  This chapter explores the symmetry properties of nPIEA.
  In particular, it will demonstrate that global symmetries are not generically
  preserved by truncations of nPIEA.
- The causes of this and the consequences for phenomenology will be reviewed.
+ The causes of this, some of the consequences for phenomenology and attempted
+ workarounds will be reviewed.
 \end_layout
 
 \begin_layout Section
@@ -167,11 +168,61 @@ S\left[\phi\right]=\frac{1}{2}\phi_{a}\left(-\square\delta_{ab}-m_{ab}^{2}\right
 
 \end_inset
 
+Without loss of generality 
+\begin_inset Formula $m_{ab}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{abc}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{abcd}$
+\end_inset
+
+ are all real and totally symmetric in their indices.
+ It is assumed also that 
+\begin_inset Formula $m_{ab}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $g_{abc}$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda_{abcd}$
+\end_inset
+
+ are all local (i.e.
+ proportional to appropriate delta functions) and homogeneous in spacetime.
+ It is possible in principle to relax this restriction, but this only adds
+ unnecessary complication for the present discussion.
+\end_layout
+
+\begin_layout Standard
 The derivative term has a 
 \begin_inset Formula $O\left(N\right)$
 \end_inset
 
- symmetry under rotations of the fields
+ symmetry under rotations of the fields 
+\begin_inset Formula $\phi_{a}\to R_{ab}\phi_{b}$
+\end_inset
+
+, where 
+\begin_inset Formula $R$
+\end_inset
+
+ is a rotation (i.e.
+ orthogonal) matrix obeying 
+\begin_inset Formula $R^{T}=R^{-1}$
+\end_inset
+
+.
+ In infinitesimal form the shift of 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+ can be written
 \begin_inset Formula 
 \begin{equation}
 \delta\phi_{a}=iT_{ab}\phi_{b}=i\epsilon_{A}T_{ab}^{A}\phi_{b},\label{eq:field-ON-transformation}
@@ -183,16 +234,16 @@ where
 \begin_inset Formula $T_{ab}=-T_{ba}$
 \end_inset
 
- is a generator of rotations which has been expanded in the second equality
+ is a generator of rotations which in the second equality has been expanded
  in a basis 
 \begin_inset Formula $T_{ab}^{A}$
 \end_inset
 
- of 
+ where 
 \begin_inset Formula $A=1,\cdots,N\left(N-1\right)/2$
 \end_inset
 
- independent generators.
+ runs over the linearly independent generators.
  When an explicit basis of generators is required one can take 
 \begin_inset Formula $T_{ab}^{jk}=i\left(\delta_{ja}\delta_{kb}-\delta_{jb}\delta_{ka}\right)$
 \end_inset
@@ -206,11 +257,13 @@ where
 \begin_inset Formula $T_{ab}^{A}\left(x,y\right)\propto\delta\left(x-y\right)$
 \end_inset
 
- contains a spacetime delta function.
+ contains a spacetime delta function, though in this notation one must remember
+ that the upper indices do not have corresponding spacetime arguments since
+ they merely label the particular generator.
 \end_layout
 
 \begin_layout Standard
-The mass term in general breaks this symmetry.
+The mass term in general breaks the symmetry.
  Using rotations to diagonalise 
 \begin_inset Formula $m_{ab}^{2}$
 \end_inset
@@ -219,11 +272,42 @@ The mass term in general breaks this symmetry.
 \begin_inset Formula $k$
 \end_inset
 
- blocks 
+ blocks
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{ab}^{2}=\left(\begin{array}{ccc|ccc|c|ccc}
+m_{1}^{2} &  & 0 &  &  &  & \\
+ & \ddots &  &  & 0 &  & 0 &  & 0\\
+0 &  & m_{1}^{2} &  &  &  & \\
+\hline  &  &  & m_{2}^{2} &  & 0 & \\
+ & 0 &  &  & \ddots &  & 0 &  & 0\\
+ &  &  & 0 &  & m_{2}^{2} & \\
+\hline  & 0 &  &  & 0 &  & \ddots &  & 0\\
+\hline  &  &  &  &  &  &  & m_{k}^{2} &  & 0\\
+ & 0 &  &  & 0 &  & 0 &  & \ddots\\
+ &  &  &  &  &  &  & 0 &  & m_{k}^{2}
+\end{array}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 \begin_inset Formula 
 \begin{equation}
 m_{ab}^{2}=\mathrm{diag}\left(m_{1}^{2},\cdots,m_{1}^{2},m_{2}^{2},\cdots,m_{2}^{2},m_{3}^{2},\cdots,m_{k}^{2}\right),
 \end{equation}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -249,7 +333,7 @@ where each eigenvalue
 .
  In the case of a non-degenerate eigenvalue the corresponding group factor
  is 
-\begin_inset Formula $\mathbb{Z}_{2}$
+\begin_inset Formula $O\left(1\right)\cong\mathbb{Z}_{2}$
 \end_inset
 
  for the discrete symmetry 
@@ -260,10 +344,13 @@ where each eigenvalue
 \end_layout
 
 \begin_layout Standard
-This thesis focuses on continuous symmetries.
+This thesis focuses only on the continuous symmetries.
  Further, there is clearly nothing essential lost by focusing on a single
  block, since the more general case is a direct product of blocks, each
  block having a simple (in the sense of group theory) symmetry group.
+ That is, there is no reason not to focus on an irreducible representation
+ of a simple symmetry group, at least initially.
+ The general case can be built up from there.
  Therefore, restrict to the case of a single block where 
 \begin_inset Formula $m_{ab}^{2}=m^{2}\delta_{ab}$
 \end_inset
@@ -387,7 +474,7 @@ which must hold independent of
 \begin_layout Standard
 The physical meaning of this can be understood by considering, for example,
  the quadratic term in 
-\begin_inset Formula $Z\left[J\right]=1+\left(\frac{i}{\hbar}\right)J_{a}G_{a}^{\left(1\right)}+\frac{1}{2}\left(\frac{i}{\hbar}\right)^{2}J_{a}J_{b}G_{ab}^{\left(2\right)}+\cdots$
+\begin_inset Formula $Z\left[J\right]=1+\left(\frac{i}{\hbar}\right)J_{a}G_{a}^{\left(1\right)}+\frac{1}{2}\left(\frac{i}{\hbar}\right)^{2}J_{a}J_{b}G_{ab}^{\left(2\right)}+\mathcal{O}\left(J^{3}\right)$
 \end_inset
 
 :
@@ -486,7 +573,7 @@ off-shell
 \begin_inset Formula $\Gamma\left[\varphi\right]$
 \end_inset
 
- is invariant, not just its value at solutions of the equation of motion.
+ is invariant, not just its value at a solution of the equation of motion.
 \end_layout
 
 \begin_layout Standard
@@ -641,7 +728,11 @@ Due to translation invariance the vacuum state has
 \begin_inset Formula $\varphi_{a}=\text{constant}$
 \end_inset
 
-, so that this can be simplified using
+ and 
+\begin_inset Formula $\Delta_{ca}^{-1}\left(x,y\right)=\Delta_{ca}^{-1}\left(x-y\right)$
+\end_inset
+
+, so that this can be simplified using the Fourier transform
 \begin_inset Formula 
 \begin{equation}
 \Delta_{ca}^{-1}\left(x,y\right)=\int_{p}\mathrm{e}^{-ip\left(x-y\right)}\Delta_{ca}^{-1}\left(p\right),
@@ -711,7 +802,7 @@ status collapsed
 \begin_layout Plain Layout
 There is a caveat that this only holds in more than two spacetime dimensions.
  In two or fewer dimensions spontaneous breaking of continuous symmetries
- is impossible and 
+ is impossible due to infrared divergences and 
 \begin_inset Formula $v=0$
 \end_inset
 
@@ -732,7 +823,31 @@ reference "chap:chap4"
 \begin_inset Quotes erd
 \end_inset
 
- The massive mode is called (loosely) 
+ The massive mode is called (loosely
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Strictly speaking a Higgs or Brout-Englert-Higgs
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+CHECK SPELLING
+\end_layout
+
+\end_inset
+
+ boson only exists in theories where the broken symmetries are gauge symmetries.
+ A more accurate term for the case of a global symmetry would be 
+\begin_inset Quotes eld
+\end_inset
+
+the radial mode boson
+\begin_inset Quotes erd
+\end_inset
+
+ or the like, but the usage of 
 \begin_inset Quotes eld
 \end_inset
 
@@ -740,7 +855,12 @@ the Higgs
 \begin_inset Quotes erd
 \end_inset
 
- boson and the massless modes are called Goldstone bosons.
+ as a shorthand in this context is near universal.
+\end_layout
+
+\end_inset
+
+) the Higgs boson and the massless modes are called Goldstone bosons.
 \end_layout
 
 \begin_layout Standard
@@ -999,26 +1119,21 @@ name "sec:Global-Symmetries-in-2PIEA"
 
 \begin_layout Standard
 Correlation functions derived from the 2PIEA obey different Ward identities
- than those derived from the 1PIEA 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFS!
-\end_layout
-
-\end_inset
-
-.
- Applying the same type of analysis as above to the 2PIEA 
-\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
-\end_inset
-
- for the 
+ than those derived from the 1PIEA.
+ Since understanding the difference between the two types of WI is crucial
+ to understanding the phenomenology of 2PI approximations in theories with
+ global or gauge symmetries, the 2PI version of the WIs are now derived
+ for the model 
 \begin_inset Formula $O\left(N\right)$
 \end_inset
 
- symmetric theory one finds that 
+ field theory above.
+ Applying the same type of analysis as above (i.e.
+ changing variables in the functional integral) to the 2PIEA 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ one finds that 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -1036,7 +1151,10 @@ REFS!
 \end_inset
 
  is invariant off-shell.
- The shift of 
+\end_layout
+
+\begin_layout Standard
+The shift of 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -1138,7 +1256,7 @@ where
 \end_inset
 
 .
- Using that 
+ Using this one has 
 \begin_inset Formula 
 \begin{equation}
 \frac{\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}}=\Delta_{ab}^{-1}\left[\varphi\right]=\Delta_{0ab}^{-1}\left[\varphi\right]-\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right],
@@ -1149,12 +1267,12 @@ where
 where 
 \begin_inset Formula 
 \begin{equation}
-\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]=\frac{2i}{\hbar}\left(\frac{\delta\Gamma_{2}\left[\varphi,\Delta\right]}{\delta\Delta_{ab}}\right)_{\Delta=\Delta\left[\varphi\right]},
+\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]=\frac{2i}{\hbar}\left(\frac{\delta\Gamma_{2}\left[\varphi,\Delta\right]}{\delta\Delta_{ab}}\right)_{\Delta=\Delta\left[\varphi\right]}.
 \end{equation}
 
 \end_inset
 
-one can relate derivatives of 
+From these one can relate derivatives of 
 \begin_inset Formula $\Gamma\left[\varphi\right]$
 \end_inset
 
@@ -1248,22 +1366,30 @@ regardless of the values of the external sources.
 \end_layout
 
 \begin_layout Standard
-Taking 
+The profusion of different derivatives of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ and identities between them obscures the physical significance of nearly
+ all of them.
+ The remainder of this section focuses solely on the simplest WI, the 2PI
+ analogue of Goldstone's theorem.
+ This will allow direct comparison with the results of the previous section.
+ Proceed by taking 
 \begin_inset Formula $\delta/\delta\varphi_{c}$
 \end_inset
 
  of the master 2PI WI and using the previous result in the absence of external
- sources one finds
+ sources, giving
 \begin_inset Formula 
 \begin{equation}
-0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ad}^{A}\Delta_{db}+T_{bd}^{A}\Delta_{ad}\right),
+0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ad}^{A}\Delta_{db}+T_{bd}^{A}\Delta_{ad}\right).
 \end{equation}
 
 \end_inset
 
-which is the 2PI analogue of Goldstone's theorem.
- Note that there is no reason for the second term to vanish in generic truncatio
-ns of the 2PIEA, though it must vanish in the exact theory since there 
+Note that there is no reason for the second term to vanish in generic truncation
+s of the 2PIEA, though it must vanish in the exact theory since there 
 \begin_inset Formula $\Delta$
 \end_inset
 
@@ -1360,7 +1486,7 @@ for
  Indeed, in the broken symmetry regime
 \begin_inset Formula 
 \begin{equation}
-vm_{G}^{2}=-\frac{i\hbar\lambda}{3}v\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right).
+m_{G}^{2}=-\frac{i\hbar\lambda}{3}\left(\Delta_{H}\left(z,z\right)-\Delta_{G}\left(z,z\right)\right)+\mathcal{O}\left(\lambda^{2}\right)\neq0.
 \end{equation}
 
 \end_inset
@@ -1411,12 +1537,16 @@ is finite and equal to zero if
 \begin_inset Formula $m_{G}^{2}=0$
 \end_inset
 
- (explicitly 
-\begin_inset Formula $F\left(m_{H}^{2},xm_{H}^{2}\right)=\frac{1}{16\pi^{2}}\frac{x\ln x}{x-1}$
+.
+ Explicitly 
+\begin_inset Formula 
+\begin{equation}
+F\left(m_{H}^{2},xm_{H}^{2}\right)=\frac{1}{16\pi^{2}}\frac{x\ln x}{x-1}.
+\end{equation}
+
 \end_inset
 
-).
- In the modified minimal subtraction scheme (
+In the modified minimal subtraction scheme (
 \begin_inset Formula $\overline{\mathrm{MS}}$
 \end_inset
 
@@ -1434,7 +1564,7 @@ Thus
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-vm_{G}^{2}=-\frac{\hbar\lambda}{3}v\left[\left(m_{H}^{2}-m_{G}^{2}\right)\left(C+F\left(m_{H}^{2},m_{G}^{2}\right)\right)+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}}\right]+\mathcal{O}\left(\lambda^{2}\right),\label{eq:2PI-WI-m_G-HF}
+m_{G}^{2}=-\frac{\hbar\lambda}{3}\left[\left(m_{H}^{2}-m_{G}^{2}\right)\left(C+F\left(m_{H}^{2},m_{G}^{2}\right)\right)+\mathcal{T}_{H}^{\mathrm{th}}-\mathcal{T}_{G}^{\mathrm{th}}\right]+\mathcal{O}\left(\lambda^{2}\right),\label{eq:2PI-WI-m_G-HF}
 \end{equation}
 
 \end_inset
@@ -1463,9 +1593,10 @@ which only admits
 \end_inset
 
  at any other temperature in the symmetry breaking regime.
- As a result Goldstone's theorem is violated at finite temperature and the
- unphysical mass of the Goldstone bosons is responsible for also changing
- the symmetry breaking phase transition from second order to first order.
+ As a result Goldstone's theorem is violated at finite temperature.
+ It will also be shown in the next section that the unphysical mass of the
+ Goldstone bosons is responsible for changing the symmetry breaking phase
+ transition from second order to first order.
  The only other 
 \begin_inset Formula $m_{G}^{2}=0$
 \end_inset
@@ -1476,7 +1607,7 @@ which only admits
 
  which is only possible at the critical temperature of the phase transition.
  To find the critical temperature it is necessary to actually solve the
- 2PI gap equation.
+ 2PI gap equations, which is undertaken in the next section.
 \end_layout
 
 \begin_layout Section
@@ -2362,6 +2493,1178 @@ The definitive reference(s)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Contrast to the Large 
+\begin_inset Formula $N$
+\end_inset
+
+ method
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Contrast-to-the-large-N-method"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is worth contrasting the results obtained above (and in the next chapter)
+ with those for another commonly used non-perturbative technique in QFT:
+ the large 
+\begin_inset Formula $N$
+\end_inset
+
+ expansion.
+ The large 
+\begin_inset Formula $N$
+\end_inset
+
+ expansion is a systematic expansion of field theories in powers of 
+\begin_inset Formula $1/N$
+\end_inset
+
+, where 
+\begin_inset Formula $N$
+\end_inset
+
+ is the number of fields.
+ Surprisingly there are a number of field theories where this limit exists
+ and leads to non-trivial insights.
+ While the method is not always quantitatively useful in the main practical
+ applications, which are quantum chromodynamics with 
+\begin_inset Formula $N=3$
+\end_inset
+
+ and the linear sigma model
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ meson is very broad and identifying it as a real particle is controversial,
+ though there is definitely a pole which can be observed in pion scattering
+ amplitudes 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+PDG ref
+\end_layout
+
+\end_inset
+
+.
+ Likewise the pseudoscalar 
+\begin_inset Formula $a$
+\end_inset
+
+ and charged 
+\begin_inset Formula $\phi^{\pm}$
+\end_inset
+
+ Higgs components are absorbed by the 
+\begin_inset Formula $Z$
+\end_inset
+
+ and 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ gauge bosons respectively and are not observed as scalar states.
+\end_layout
+
+\end_inset
+
+ for the light mesons 
+\begin_inset Formula $\left(\pi^{0},\pi^{\pm},\sigma\right)$
+\end_inset
+
+ or Higgs 
+\begin_inset Formula $\left(h,a,\phi^{\pm}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $N=4$
+\end_inset
+
+, it is responsible for numerous theoretical insights and has rendered some
+ un-calculable models calculable and yielded exact non-perturbative results
+ in the case of supersymmetric and low dimensional field theories.
+\end_layout
+
+\begin_layout Standard
+The main idea of the large 
+\begin_inset Formula $N$
+\end_inset
+
+ approximation is that in the limit of a large number of fields, composites
+ of the fields such as 
+\begin_inset Formula $\phi_{a}\phi_{a}$
+\end_inset
+
+ become self-averaging by the central limit theorem and their behaviour
+ is essentially classical.
+ The method is not the same as a simple loop expansion, however, as loops
+ often contain sums over field components which give factors of 
+\begin_inset Formula $N$
+\end_inset
+
+, partially compensating small couplings.
+ Excellent introductory lectures on the method are found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Coleman1985"
+
+\end_inset
+
+ and an extensive modern review in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Moshe2003"
+
+\end_inset
+
+.
+ The application of the large 
+\begin_inset Formula $N$
+\end_inset
+
+ method to the 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ model has a long history as can be seen from the previous references.
+ Particularly relevant to this section are the connection to the 2PI method,
+ which was published by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Petropoulos2004"
+
+\end_inset
+
+ in essentially the form given here, and the contrast with the SI-2PI method
+ which was originally studied by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Mao2014"
+
+\end_inset
+
+.
+ This section will only consider the leading order of the large 
+\begin_inset Formula $N$
+\end_inset
+
+ expansion.
+\end_layout
+
+\begin_layout Standard
+To see how the large 
+\begin_inset Formula $N$
+\end_inset
+
+ method works in the present case consider again the unimproved 2PI equations
+ of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-2PI-HF-H-eom"
+
+\end_inset
+
+ reproduced here:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =-v\left(m^{2}+\frac{\lambda}{6}v^{2}+\left(N-1\right)\frac{\hbar\lambda}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right).
+\end{align}
+
+\end_inset
+
+One now makes a systematic expansion of these equations in powers of 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ Obviously in order to obtain a sensible limit it is necessary to send 
+\begin_inset Formula $\lambda\to0$
+\end_inset
+
+ as well, otherwise the 
+\begin_inset Formula $\mathcal{T}_{G}^{\mathrm{fin}}$
+\end_inset
+
+ terms dominate and cannot be matched against any other terms.
+ However, in order to obtain a non-trivial limit 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ cannot vanish too fast, so one is forced to take 
+\begin_inset Formula $g\equiv\lambda N$
+\end_inset
+
+ a constant in the 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+ limit.
+ In order to obtain a broken symmetry phase it is also necessary to take
+ 
+\begin_inset Formula $v^{2}\sim\mathcal{O}\left(N\right)$
+\end_inset
+
+ which can be motivated, for example, by a consideration of the central
+ limit theorem with 
+\begin_inset Formula $v^{2}=\left\langle \phi_{a}\phi_{a}\right\rangle =\left\langle \phi_{1}^{2}\right\rangle +\cdots+\left\langle \phi_{N}^{2}\right\rangle \sim N$
+\end_inset
+
+.
+ The equations of motion become
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =-v\left(m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)\right)+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{G}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{6}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{H}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now a comment on an important technicality.
+ While 
+\begin_inset Formula $\lambda\to0$
+\end_inset
+
+ naively sends the 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{2}\right)$
+\end_inset
+
+ terms to zero, these terms contain loops which contain sums over 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ indices which partially compensate the limit as 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+.
+ It is not immediately obvious that the 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{2}\right)$
+\end_inset
+
+ terms can be consistently neglected in the equations of motion.
+ It is a non-trivial fact, the proof of which is too much of a combinatorial
+ aside to give here (see below for another method which bypasses this technicali
+ty altogether), that the maximum amount of compensation is 
+\begin_inset Formula $\mathcal{O}\left(\lambda^{2}\right)\to\mathcal{O}\left(g^{2}/N\right)$
+\end_inset
+
+, so that the higher order graphs can be consistently neglected to leading
+ order in 
+\begin_inset Formula $g/N$
+\end_inset
+
+.
+ As a result,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =-v\left(m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}\right)+\mathcal{O}\left(\frac{g}{N}\right),\\
+m_{G}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right),\\
+m_{H}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that the first equation of motion is now
+\begin_inset Formula 
+\begin{equation}
+0=-vm_{G}^{2}+\mathcal{O}\left(\frac{g}{N}\right),
+\end{equation}
+
+\end_inset
+
+i.e.
+ Goldstone's theorem holds to leading order in the 
+\begin_inset Formula $1/N$
+\end_inset
+
+ and 
+\begin_inset Formula $g$
+\end_inset
+
+ expansion.
+ Then in the broken phase 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=\frac{g}{N}\frac{v^{2}}{3}+\mathcal{O}\left(\frac{g}{N}\right),
+\end{equation}
+
+\end_inset
+
+and the critical temperature
+\begin_inset Formula 
+\[
+T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar N}}+\mathcal{O}\left(\frac{1}{N}\right),
+\]
+
+\end_inset
+
+such that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=\bar{m}_{H}^{2}\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)+\mathcal{O}\left(\frac{g}{N}\right).
+\end{equation}
+
+\end_inset
+
+Unlike the 2PIEA, a second order phase transition is found and Goldstone's
+ theorem is satisfied.
+ However, the large 
+\begin_inset Formula $N$
+\end_inset
+
+ estimate for the critical temperature is larger than the 2PI value by a
+ factor 
+\begin_inset Formula $\sqrt{\left(N+2\right)/N}$
+\end_inset
+
+ which is 
+\begin_inset Formula $\sqrt{3/2}\approx1.22$
+\end_inset
+
+ for 
+\begin_inset Formula $N=4$
+\end_inset
+
+, accurate to the expected 
+\begin_inset Formula $\mathcal{O}\left(1/N\right)=25\%$
+\end_inset
+
+.
+ This makes the critical temperature 
+\begin_inset Formula $\approx162\ \mathrm{MeV}$
+\end_inset
+
+ for the numerical values used previously.
+ This difference is the due to the neglect of the Higgs boson thermal contributi
+on, which is indeed swamped by Goldstone modes as 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+.
+ Note however that Goldstone's theorem is lost again at higher orders of
+ the 
+\begin_inset Formula $1/N$
+\end_inset
+
+ expansion.
+\end_layout
+
+\begin_layout Standard
+There is another way to see the above results that does not rely on any
+ special argument that the Hartree-Fock truncation is consistent to leading
+ order in 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ Start with the partition functional
+\begin_inset Formula 
+\begin{equation}
+Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\frac{1}{2}\phi_{a}\left(-\square-m^{2}\right)\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}+J_{a}\phi_{a}\right)\right],
+\end{equation}
+
+\end_inset
+
+and note that multiplying by a 
+\begin_inset Formula $J$
+\end_inset
+
+-independent overall factor of the form
+\begin_inset Formula 
+\begin{equation}
+\text{const.}=\int\mathcal{D}\left[\sigma\right]\exp\left[\frac{i}{\hbar}\frac{3}{2\lambda}\left(\sigma-\frac{\lambda}{3!}\phi_{a}\phi_{a}\right)^{2}\right],
+\end{equation}
+
+\end_inset
+
+has no physical effect.
+ (Also note that 
+\begin_inset Formula $\left\langle \sigma\right\rangle =\frac{\lambda}{3!}\left\langle \phi_{a}\phi_{a}\right\rangle \sim\mathcal{O}\left(1\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+The new term has the effect of introducing a new field 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ and shifting the action to
+\begin_inset Formula 
+\begin{equation}
+S_{\mathrm{eff}}\left[\phi,\sigma\right]=\frac{1}{2}\phi_{a}\left(-\square-m^{2}\right)\phi_{a}+J_{a}\phi_{a}+\frac{3}{2\lambda}\sigma^{2}-\frac{1}{2}\sigma\phi_{a}\phi_{a},
+\end{equation}
+
+\end_inset
+
+which is now quadratic in the 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+, meaning the functional integral over them can be performed in closed form.
+ In terms of Feynman diagrams the effect of introducing 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ (the 
+\begin_inset Quotes eld
+\end_inset
+
+Hubbard-Stratonovich transformation
+\begin_inset Quotes erd
+\end_inset
+
+) is to 
+\begin_inset Quotes eld
+\end_inset
+
+open up
+\begin_inset Quotes erd
+\end_inset
+
+ four point vertices into a pair of three point vertices with 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ exchange in all possible ways, that is
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{hubbard-stratonovich}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o1,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i1,v,o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i2,v,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$a$}{i1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$b$}{i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$c$}{o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$d$}{o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph*}} =
+\backslash
+quad
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o1,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i1,v1,o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i2,v2,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$a$}{i1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$b$}{i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$c$}{o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$d$}{o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph*}}+
+\backslash
+quad
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o1,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i1,v1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{o1,v2,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$a$}{i1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$b$}{i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$c$}{o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$d$}{o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph*}}+
+\backslash
+quad
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{i1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{o1,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{i1,v1,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{o1,v2,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i1,v1,o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{o1,v2,i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{dashes}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$a$}{i1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$b$}{i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$c$}{o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$d$}{o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph*}}
+\backslash
+quad,
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+where the dashed line is the 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ propagator, equal to 
+\begin_inset Formula $\lambda/3$
+\end_inset
+
+.
+ The vertices conserve 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ flavour, e.g.
+ the first term above is proportional to 
+\begin_inset Formula $\delta_{ac}\delta_{bd}$
+\end_inset
+
+, and so on.
+ This reorganisation of Feynman diagrams dramatically simplifies the combinatori
+cs of the theory.
+\end_layout
+
+\begin_layout Standard
+For the present purposes it is convenient to write 
+\begin_inset Formula $\phi_{a}=\left(\pi_{1},\cdots,\pi_{N-1},h\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\pi$
+\end_inset
+
+s are the Goldstone modes and 
+\begin_inset Formula $h$
+\end_inset
+
+ is the Higgs mode, and only integrate over the 
+\begin_inset Formula $\pi$
+\end_inset
+
+s.
+ It is also convenient to take 
+\begin_inset Formula $J_{a}=\left(0,\cdots,0,J\right)$
+\end_inset
+
+.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{\mathrm{eff}}\left[\pi,h,\sigma\right]=\frac{1}{2}\pi_{a}\left(-\square-m^{2}-\sigma\right)\pi_{a}+\frac{1}{2}h\left(-\square-m^{2}\right)h+Jh+\frac{3}{2\lambda}\sigma^{2}-\frac{1}{2}\sigma h^{2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Performing the functional integral over the 
+\begin_inset Formula $\pi$
+\end_inset
+
+s gives an effective action for the 
+\begin_inset Formula $h$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ fields, given by 
+\begin_inset Formula $\exp\left[\frac{i}{\hbar}S_{\mathrm{eff}}\left[h,\sigma\right]\right]=\int\mathcal{D}\left[\pi\right]\exp\left[\frac{i}{\hbar}S_{\mathrm{eff}}\left[\pi,h,\sigma\right]\right]$
+\end_inset
+
+, which gives
+\begin_inset Formula 
+\begin{equation}
+S_{\mathrm{eff}}\left[h,\sigma\right]=\frac{i\hbar}{2}\left(N-1\right)\mathrm{Tr}\ln\left(-\square-m^{2}-\sigma\right)+\frac{1}{2}h\left(-\square-m^{2}\right)h+Jh+\frac{3N}{2g}\sigma^{2}-\frac{1}{2}\sigma h^{2}.
+\end{equation}
+
+\end_inset
+
+Considering that 
+\begin_inset Formula $\sigma\sim\mathcal{O}\left(1\right)$
+\end_inset
+
+, 
+\begin_inset Formula $h\sim\mathcal{O}\left(\sqrt{N}\right)$
+\end_inset
+
+ and one can take 
+\begin_inset Formula $J\sim\mathcal{O}\left(\sqrt{N}\right)$
+\end_inset
+
+, then the entire action is proportional to 
+\begin_inset Formula $N$
+\end_inset
+
+ in the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, i.e.
+ 
+\begin_inset Formula $S_{\mathrm{eff}}\left[h,\sigma\right]\to N\tilde{S}_{\mathrm{eff}}\left[h,\sigma\right]$
+\end_inset
+
+ as 
+\begin_inset Formula $N\to\infty$
+\end_inset
+
+, where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\tilde{S}_{\mathrm{eff}}\left[h,\sigma\right]=\frac{i\hbar}{2}\mathrm{Tr}\ln\left(-\square-m^{2}-\sigma\right)+\frac{1}{2N}h\left(-\square-m^{2}\right)h+\frac{Jh}{N}+\frac{3}{2g}\sigma^{2}-\frac{1}{2N}\sigma h^{2},
+\end{equation}
+
+\end_inset
+
+is 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+.
+ The effect of the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit in the functional integral 
+\begin_inset Formula 
+\begin{equation}
+\int\mathcal{D}\left[h,\sigma\right]\exp\left[\frac{i}{\hbar}N\tilde{S}_{\mathrm{eff}}\left[h,\sigma\right]\right],
+\end{equation}
+
+\end_inset
+
+is the same as 
+\begin_inset Formula $\hbar\to0$
+\end_inset
+
+, i.e.
+ the classical limit.
+ To leading order in 
+\begin_inset Formula $1/N$
+\end_inset
+
+, then, the dynamics are determined by the 
+\emph on
+classical
+\emph default
+ solution of the equations of motion following from 
+\begin_inset Formula $\tilde{S}_{\mathrm{eff}}\left[h,\sigma\right]$
+\end_inset
+
+.
+ These are
+\begin_inset Formula 
+\begin{align}
+\left(\square+m^{2}+\sigma\right)h & =J,\\
+\frac{i\hbar}{2}\mathrm{Tr}\left(-\square-m^{2}-\sigma\right)^{-1} & =\frac{3}{g}\sigma-\frac{1}{2N}h^{2}.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Looking for uniform solutions 
+\begin_inset Formula $h\left(x\right)=v$
+\end_inset
+
+, 
+\begin_inset Formula $\sigma\left(x\right)=\sigma$
+\end_inset
+
+ in the physical limit 
+\begin_inset Formula $J=0$
+\end_inset
+
+,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\left(m^{2}+\sigma\right)v & =0,\\
+\frac{i\hbar}{2}\int_{k}\frac{1}{k^{2}-\left(m^{2}+\sigma\right)} & =\frac{3}{g}\sigma-\frac{1}{2N}v^{2}.
+\end{align}
+
+\end_inset
+
+In the broken phase the first equation gives 
+\begin_inset Formula $\sigma=-m^{2}$
+\end_inset
+
+, and one recognises that after renormalisation the second equation is just
+ the large 
+\begin_inset Formula $N$
+\end_inset
+
+ gap equation obtained previously for the Goldstone with 
+\begin_inset Formula $m_{G}^{2}=m^{2}+\sigma$
+\end_inset
+
+ as the Goldstone mass.
+ Substituting 
+\begin_inset Formula $m_{G}^{2}-m^{2}$
+\end_inset
+
+ for 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ above one indeed recovers the large 
+\begin_inset Formula $N$
+\end_inset
+
+ gap equation and the Goldstone theorem 
+\begin_inset Formula $m_{G}^{2}v=0$
+\end_inset
+
+ in both phases.
+ The advantage of this method via transformations of the functional integral
+ rather than a direct expansion of the equations of motion is that the systemati
+cs of the large 
+\begin_inset Formula $N$
+\end_inset
+
+ expansion are clearer.
+ In particular, it is now obvious that the gap equations obtained are strictly
+ valid to order 
+\begin_inset Formula $\mathcal{O}\left(1/N\right)$
+\end_inset
+
+ without having to worry about the combinatorics of higher order self-energy
+ graphs.
+ The disadvantage of this method is that the connection to the 2PIEA is
+ less clear.
+\end_layout
+
+\begin_layout Section
+Summary
 \end_layout
 
 \end_body
