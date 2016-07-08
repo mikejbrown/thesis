@@ -2703,6 +2703,240 @@ name "sec:The-Two-Loop-Solution"
 
 \end_layout
 
+\begin_layout Standard
+In order to investigate higher orders in the SI-2PIEA it is necessary to
+ discuss more generally the problem of renormalising 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ Self-consistent equations of motion are in general far harder to renormalise
+ than perturbation theory and several methods of renormalisation have been
+ introduced in the literature, though the general problem is still open.
+ The 2PIEA is known to be renormalisable, either by an implicit construction
+ involving Bethe-Salpeter integral equations or an explicit algebraic BPHZ
+ (Bogoliubov-Parasiuk-Hepp-Zimmerman) style construction which has nontrivial
+ consistency requirements (but which has been shown to be equivalent to
+ the Bethe-Salpeter method) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2005,Fejos2008,Patkos2009,Marko2012"
+
+\end_inset
+
+.
+ A recent discussion of the general theory can be found in Chapter 4 of
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jakov_c_2016"
+
+\end_inset
+
+, which however is light on specific examples.
+ The BPHZ style procedure of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Fejos2008,Patkos2008,Patkos2009"
+
+\end_inset
+
+ was adapted to symmetry improved 2PIEA by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+ and to 3PIEA for three dimensional pure glue QCD (without symmetry improvement)
+ by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "York2012"
+
+\end_inset
+
+ and is the one used here.
+\end_layout
+
+\begin_layout Standard
+The essence of the procedure is quite simple.
+ Consider for example the quadratically divergent integral 
+\begin_inset Formula $\int_{q}i\Delta_{G/H}\left(q\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\Delta_{G/H}\left(q\right)$
+\end_inset
+
+ is determined self-consistently this is a complicated integral which must
+ be evaluated numerically.
+ However, the UV behaviour of the propagator should approach 
+\begin_inset Formula $q^{-2}$
+\end_inset
+
+ as 
+\begin_inset Formula $q\to\infty$
+\end_inset
+
+.
+ Indeed, Weinberg's theorem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weinberg1960"
+
+\end_inset
+
+ implies that the self-consistent propagators have this form up to powers
+ of logarithms 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Patkos2008"
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Though note that renormalization group theory shows the true large-momentum
+ behavior of the propagators is a power law with an anomalous dimension.
+ This implies that a truncated 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA does not effect a resummation of large logarithms.
+ This implies that a 2PI (or indeed 
+\begin_inset Formula $n$
+\end_inset
+
+PI) expansion is generally only valid within a finite energy range about
+ the renormalisation point.
+\end_layout
+
+\end_inset
+
+ Now one can add and subtract an integral with the same UV asymptotic behaviour
+ as the divergent integral: 
+\begin_inset Formula 
+\begin{align}
+\int_{q}i\Delta_{G/H}\left(q\right) & =\int_{q}\left[i\Delta_{G/H}\left(q\right)-\frac{i}{q^{2}-\mu^{2}+i\epsilon}\right]\nonumber \\
+ & +\int_{q}\frac{i}{q^{2}-\mu^{2}+i\epsilon},
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu$
+\end_inset
+
+ is an arbitrary mass subtraction scale (not a cutoff scale).
+ The first term is now only logarithmically divergent and the second term
+ can be evaluated analytically in a chosen regularisation scheme such as
+ dimensional regularisation.
+ A further subtraction of this kind can render the first term finite.
+\end_layout
+
+\begin_layout Standard
+The renormalised propagators can be written as
+\begin_inset Formula 
+\begin{align}
+\Delta_{G/H}^{-1} & =p^{2}-m_{G/H}^{2}-\Sigma_{G/H}\left(p\right),\\
+\Sigma_{G/H}\left(p\right) & =\Sigma_{G/H}^{a}\left(p\right)+\Sigma_{G/H}^{0}\left(p\right)+\Sigma_{G/H}^{r}\left(p\right),
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $m_{G/H}$
+\end_inset
+
+ is the physical mass and the (renormalised) self-energies have been separated
+ into pieces according to their asymptotic behaviour: 
+\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{c_{1}}$
+\end_inset
+
+, 
+\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{c_{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{G/H}^{r}\sim p^{-2}$
+\end_inset
+
+ as 
+\begin_inset Formula $p\to\infty$
+\end_inset
+
+ respectively.
+ The pole condition requires 
+\begin_inset Formula $\Sigma_{G/H}\left(p^{2}=m_{G/H}^{2}\right)=0$
+\end_inset
+
+.
+ It is useful to introduce the auxiliary propagator 
+\begin_inset Formula $\Delta_{G/H}^{\mu}=\left(p^{2}-\mu^{2}-\Sigma_{G/H}^{a}\left(p\right)\right)^{-1}$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $\Delta_{G/H}$
+\end_inset
+
+ can be expanded in 
+\begin_inset Formula $\Delta_{G/H}^{\mu}$
+\end_inset
+
+ as
+\begin_inset Formula 
+\begin{align}
+\Delta_{G/H}\left(p\right) & =\Delta_{G/H}^{\mu}\left(p\right)\nonumber \\
+ & +\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{2}\left(m_{G/H}^{2}-\mu^{2}+\Sigma_{G/H}^{0}+\Sigma_{G/H}^{r}\right)\nonumber \\
+ & +\mathcal{O}\left(\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{3}\left[\Sigma_{G/H}^{0}\left(p\right)\right]^{2}\right).
+\end{align}
+
+\end_inset
+
+Proceeding systematically in this manner allows one to extract the leading
+ order asymptotics of diagrams as 
+\begin_inset Formula $p\to\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO:
+\end_layout
+
+\begin_layout Itemize
+Counter-terms
+\end_layout
+
+\begin_layout Itemize
+Finite EOMs
+\end_layout
+
+\begin_layout Itemize
+Discuss solution in PT13 vs.
+ ...
+\end_layout
+
+\begin_layout Itemize
+Discussion of IR sensitivity and loss of solution
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Symmetry Improvement of the 3PIEA
 \begin_inset ERT
@@ -2787,7 +3021,7 @@ The equations of motion are
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & = & -J_{a}-K_{ab}^{\left(2\right)}\varphi_{b}-\frac{1}{2}K_{abc}^{\left(3\right)}\left(i\hbar\Delta_{bc}+\varphi_{b}\varphi_{c}\right),\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & = & -\frac{i\hbar}{2}K_{ab}^{\left(2\right)}-\frac{i\hbar}{2}K_{abc}^{\left(3\right)}\varphi_{c}\nonumber \\
  &  & -\frac{\hbar^{2}}{3!2}\left(K_{acd}^{\left(3\right)}\Delta_{ce}\Delta_{df}V_{bef}+K_{bcd}^{\left(3\right)}\Delta_{ce}\Delta_{df}V_{aef}\right)\\
-\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & -\frac{1}{3!}\hbar^{2}\Delta_{ad}\Delta_{be}\Delta_{cf}K_{def}^{\left(3\right)},
+\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & -\frac{1}{3!}\hbar^{2}\Delta_{ad}\Delta_{be}\Delta_{cf}K_{def}^{\left(3\right)},\label{eq:3pi-vertex-eom-rhs}
 \end{eqnarray}
 
 \end_inset
@@ -2802,7 +3036,7 @@ where the left hand sides are
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & = & -\frac{i\hbar}{2}\left(\Delta_{ab}^{-1}+\mathrm{Tr}\Delta_{0ab}^{-1}-\Sigma_{ab}\right)+\mathcal{O}\left(\hbar^{4}\right),\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & \frac{\hbar^{2}}{3!}\left(V_{0def}-V_{def}\right)\Delta_{ad}\Delta_{be}\Delta_{cf}+\frac{i\hbar^{3}}{3!}V_{def}V_{ghi}V_{jkl}\Delta_{ad}\Delta_{bg}\Delta_{cj}\Delta_{eh}\Delta_{fk}\Delta_{il}\nonumber \\
  &  & -\frac{i\hbar^{3}}{4}W_{hijd}V_{efg}\left(\frac{1}{3}\Delta_{ah}\Delta_{bi}\Delta_{ej}\Delta_{df}\Delta_{cg}+\text{cyclic permutations }\left(a\to b\to c\to a\right)\right)\nonumber \\
- &  & +\mathcal{O}\left(\hbar^{4}\right),
+ &  & +\mathcal{O}\left(\hbar^{4}\right),\label{eq:3pi-vertex-eom-lhs}
 \end{eqnarray}
 
 \end_inset
@@ -3254,14 +3488,22 @@ If
 \end_inset
 
  scale as 
-\begin_inset Formula $\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{G}^{4}\sim\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{6}\eta^{2}/v^{2}$
+\begin_inset Formula 
+\begin{equation}
+\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{G}^{4}\sim\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{6}\eta^{2}/v^{2},
+\end{equation}
+
 \end_inset
 
- and 
-\begin_inset Formula $\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{4}\sim\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{4}\eta^{0}$
+and 
+\begin_inset Formula 
+\[
+\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{4}\sim\left(B\delta f/\delta\mathcal{W}_{2}\right)m_{H}^{4}\eta^{0},
+\]
+
 \end_inset
 
- respectively.
+respectively.
  Thus, by choosing a regulator such that 
 \begin_inset Formula $B\delta f/\delta\mathcal{W}_{2}$
 \end_inset
@@ -3740,19 +3982,39 @@ name "sec:Renormalisation-of-the-SI-3PIEA"
 \begin_layout Standard
 Here we undertake a general description of the renormalisation problem at
  zero temperature.
- Our detailed considerations follow in Sections 
-\backslash
-ref{sub:Two-loop-truncation} and 
-\backslash
-ref{sub:Three-loop-truncation} for two and three loop truncations respectively.
+ Detailed considerations follow in Sections 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Two-loop-truncation"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Three-loop-truncation"
+
+\end_inset
+
+ for two and three loop truncations respectively.
  Finite temperature results are given for the Hartree-Fock approximation
  in Section 
-\backslash
-ref{sec:Hartree-approximation}.
- The two loop renormalization of the theory in Section 
-\backslash
-ref{sub:Two-loop-truncation} is non-trivial already even though the vertex
- equation of motion can be solved trivially.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Solution-of-the-SI-3PI-HF-Approx"
+
+\end_inset
+
+.
+ The two loop renormalisation of the theory in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Two-loop-truncation"
+
+\end_inset
+
+ is non-trivial already even though the vertex equation of motion can be
+ solved trivially.
  This is because the symmetry improvement breaks the 
 \begin_inset Formula $n$
 \end_inset
@@ -3762,24 +4024,32 @@ PIEA equivalence hierarchy by modifying the Higgs equation of motion.
 
 \begin_layout Standard
 Generically, modifications of the equations of motion following from the
- 2PIEA will lead to an inconsistency of the renormalization procedure since
+ 2PIEA will lead to an inconsistency of the renormalisation procedure since
  the 2PIEA is self-consistently complete at two loop order (in the action,
  i.e.
  one loop order in the equations of motion).
- However, we will see that the wavefunction and propagator renormalization
- constants (normally trivial in 
+ However, the wavefunction and propagator renormalisation constants (normally
+ trivial in 
 \begin_inset Formula $\phi^{4}$
 \end_inset
 
- at one loop) provide the extra freedom required to obtain consistency.
- Then in Section 
-\backslash
-ref{sub:Three-loop-truncation} we will renormalize the theory at three loops.
+ at one loop) provide the extra freedom required to obtain consistency in
+ the present case.
+ The theory will be renormalised at three loops in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Three-loop-truncation"
+
+\end_inset
+
+.
  Nonperturbative counter-term calculations are generally much more difficult
  than the analogous perturbative calculations, hence many of the manipulations
- were performed in a supplemental 
-\backslash
-noun{Mathematica} notebook
+ left in a supplemental 
+\noun on
+Mathematica
+\noun default
+ notebook
 \begin_inset Note Note
 status open
 
@@ -3792,46 +4062,41 @@ citep{supp}
 \end_inset
 
 .
- The results of this section are finite equations of motion for renormalized
+ The results of this section are finite equations of motion for renormalised
  quantities which must be solved numerically.
- We leave the numerical implementation to future work, except in the case
- of the Hartree-Fock approximation.
+ The numerical implementation of the equations of motion is left to future
+ work, except in the case of the Hartree-Fock approximation.
 \end_layout
 
 \begin_layout Standard
-We wish to demonstrate the renormalizability of the equations of motion
- 
-\backslash
-eqref{eq:si3pi-DeltaG-eom}-
-\backslash
-eqref{eq:si3pi-w2-eom}.
- First we examine the symmetric phase, since on physical grounds SSB is
- irrelevant to renormalizability.
+To demonstrate the renormalisability of the SI-3PI equations of motion first
+ consider the symmetric phase, since on physical grounds SSB, an infrared
+ phenomenon, is irrelevant to renormalisability.
  In the symmetric phase 
 \begin_inset Formula $v=0$
 \end_inset
 
  and the Ward identity 
-\backslash
-eqref{eq:si3pi-w1-eom} is trivially satisfied, while 
-\backslash
-eqref{eq:si3pi-w2-eom} requires 
+\begin_inset Formula $\mathcal{W}_{1}$
+\end_inset
+
+ is trivially satisfied, while 
+\begin_inset Formula $\mathcal{W}_{2}$
+\end_inset
+
+ requires 
 \begin_inset Formula $\Delta_{G}=\Delta_{H}$
 \end_inset
 
  as expected.
- Further, iteration shows that 
-\backslash
-eqref{eq:si3pi-Vbar-eom} and 
-\backslash
-eqref{eq:si3pi-VN-eom-1} have the solution 
+ Further, iteration shows that vertex equations have the solution 
 \begin_inset Formula $\bar{V}=V_{N}=0$
 \end_inset
 
  as expected on general grounds: there is no three point vertex in the symmetric
  phase.
  As a result, the symmetry improved 3PIEA in the symmetric phase is equivalent
- to the ordinary 2PIEA 
+ to the ordinary 2PIEA
 \begin_inset Formula 
 \begin{equation}
 \tilde{\Gamma}^{\left(3\right)}\left[\varphi=0,\Delta,V=0\right]=\Gamma^{\left(2\right)}\left[\varphi=0,\Delta\right],
@@ -3839,13 +4104,14 @@ eqref{eq:si3pi-VN-eom-1} have the solution
 
 \end_inset
 
- which is known to be renormalizable, either by an implicit construction
- involving Bethe-Salpeter integral equations or an explicit algebraic BPHZ
- (Bogoliubov-Parasiuk-Hepp-Zimmerman) style construction which has nontrivial
- consistency requirements (but which has been shown to be equivalent to
- the Bethe-Salpeter method) 
-\backslash
-citep{Berges2005,Fejos2008,*Patkos2009,Marko2012}.
+which is known to be renormalisable, as discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-Two-Loop-Solution"
+
+\end_inset
+
+.
  Thus, only divergences arising from nonzero 
 \begin_inset Formula $V$
 \end_inset
@@ -3854,144 +4120,23 @@ citep{Berges2005,Fejos2008,*Patkos2009,Marko2012}.
 \end_layout
 
 \begin_layout Standard
-We will extend the BPHZ style procedure of 
-\backslash
-citep{Fejos2008,Patkos2008,*Patkos2009}, which was adapted to symmetry improved
- 2PIEA by 
-\backslash
-citep{Pilaftsis2013} and to 3PIEA for three dimensional pure glue QCD (without
- symmetry improvement) by 
-\backslash
-citep{York2012}.
- The essence of the procedure is quite simple.
- Consider for example the quadratically divergent integral 
-\begin_inset Formula $\int_{q}i\Delta_{G/H}\left(q\right)$
-\end_inset
-
-.
- Since 
-\begin_inset Formula $\Delta_{G/H}\left(q\right)$
-\end_inset
-
- is determined self-consistently this is a complicated integral which must
- be evaluated numerically.
- However, the UV behavior of the propagator should approach 
-\begin_inset Formula $q^{-2}$
-\end_inset
-
- as 
-\begin_inset Formula $q\to\infty$
-\end_inset
-
-.
- (Note that Weinberg's theorem 
-\backslash
-citep{Weinberg1960} implies that the self-consistent propagators have this
- form up to powers of logarithms 
-\backslash
-citep{Patkos2008}, though renormalization group theory shows the true large-mome
-ntum behavior of the propagators is a power law with an anomalous dimension.
- This implies that a truncated 
-\begin_inset Formula $n$
-\end_inset
-
-PIEA does not effect a resummation of large logarithms.) Now we can add and
- subtract an integral with the same UV asymptotics: 
-\begin_inset Formula 
-\begin{align}
-\int_{q}i\Delta_{G/H}\left(q\right) & =\int_{q}\left[i\Delta_{G/H}\left(q\right)-\frac{i}{q^{2}-\mu^{2}+i\epsilon}\right]\nonumber \\
- & +\int_{q}\frac{i}{q^{2}-\mu^{2}+i\epsilon},
-\end{align}
+Now an analysis similar to the one done for the 2PIEA in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-Two-Loop-Solution"
 
 \end_inset
 
- where 
-\begin_inset Formula $\mu$
+ can be done to isolate the leading asymptotics for 
+\begin_inset Formula $V$
 \end_inset
 
- is an arbitrary mass subtraction scale (not a cutoff scale).
- The first term is now only logarithmically divergent and the second term
- can be evaluated analytically in a chosen regularization scheme such as
- dimensional regularization.
- A further subtraction of this kind can render the first term finite.
-\end_layout
-
-\begin_layout Standard
-We write the renormalized propagators as
-\begin_inset Formula 
-\begin{align}
-\Delta_{G/H}^{-1} & =p^{2}-m_{G/H}^{2}-\Sigma_{G/H}\left(p\right),\\
-\Sigma_{G/H}\left(p\right) & =\Sigma_{G/H}^{a}\left(p\right)+\Sigma_{G/H}^{0}\left(p\right)+\Sigma_{G/H}^{r}\left(p\right),
-\end{align}
-
-\end_inset
-
- where 
-\begin_inset Formula $m_{G/H}$
-\end_inset
-
- is the physical mass and the (renormalized) self-energies have been separated
- into pieces according to their asymptotic behavior: 
-\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{c_{1}}$
-\end_inset
-
-, 
-\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{c_{2}}$
-\end_inset
-
- and 
-\begin_inset Formula $\Sigma_{G/H}^{r}\sim p^{-2}$
-\end_inset
-
- as 
-\begin_inset Formula $p\to\infty$
-\end_inset
-
- respectively.
- The pole condition requires 
-\begin_inset Formula $\Sigma_{G/H}\left(p^{2}=m_{G/H}^{2}\right)=0$
-\end_inset
-
-.
- We also introduce the auxiliary propagator 
-\begin_inset Formula $\Delta_{G/H}^{\mu}=\left(p^{2}-\mu^{2}-\Sigma_{G/H}^{a}\left(p\right)\right)^{-1}$
-\end_inset
-
-.
- The propagator 
-\begin_inset Formula $\Delta_{G/H}$
-\end_inset
-
- can be expanded in 
-\begin_inset Formula $\Delta_{G/H}^{\mu}$
-\end_inset
-
-: 
-\begin_inset Formula 
-\begin{align}
-\Delta_{G/H}\left(p\right) & =\Delta_{G/H}^{\mu}\left(p\right)\nonumber \\
- & +\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{2}\left(m_{G/H}^{2}-\mu^{2}+\Sigma_{G/H}^{0}+\Sigma_{G/H}^{r}\right)\nonumber \\
- & +\mathcal{O}\left(\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{3}\left[\Sigma_{G/H}^{0}\left(p\right)\right]^{2}\right).\label{eq:aux-propagator}
-\end{align}
-
-\end_inset
-
- This allows us to extract the leading order asymptotics of diagrams as
- 
-\begin_inset Formula $p\to\infty$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-We now do a similar analysis to isolate the leading asymptotics for $V$
  at large momentum.
  Suppressing 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
- indices we can write 
+ indices one can write 
 \begin_inset Formula $V\left(p_{1},p_{2},p_{3}\right)=\lambda vf\left(\frac{p_{1}}{v},\frac{p_{2}}{v},\frac{p_{3}}{v}\right)$
 \end_inset
 
@@ -4034,10 +4179,144 @@ We now do a similar analysis to isolate the leading asymptotics for $V$
 
 .
  Now consider the vertex equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3pi-vertex-eom-rhs"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3pi-vertex-eom-lhs"
+
+\end_inset
+
+ or
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
 \backslash
-eqref{eq:3pi-vertex-eom} or Figure 
+begin{fmffile}{v-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
 \backslash
-ref{fig:vertex-eom}.
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmf{plain}{i1,v} 
+\backslash
+fmf{plain}{i2,v} 
+\backslash
+fmf{plain}{i3,v} 
+\backslash
+fmfdot{v} 
+\backslash
+end{fmfgraph}} = 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmf{plain}{i1,v} 
+\backslash
+fmf{plain}{i2,v} 
+\backslash
+fmf{plain}{i3,v} 
+\backslash
+fmfv{decor.shape=circle,decor.filled=empty,decor.size=2thick}{v} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmf{plain}{i1,v1} 
+\backslash
+fmf{plain}{i2,v2} 
+\backslash
+fmf{plain}{i3,v3} 
+\backslash
+fmf{plain,tension=0.25}{v1,v2,v3,v1} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmf{plain}{i1,v} 
+\backslash
+fmf{plain}{i2,w} 
+\backslash
+fmf{plain}{i3,w} 
+\backslash
+fmf{plain,left=1,tension=0.25}{v,w,v} 
+\backslash
+fmfdot{v,w} 
+\backslash
+end{fmfgraph}}.
+\backslash
+label{eq:3pi-vertex-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+where the open circle vertex denotes the bare function 
+\begin_inset Formula $V_{0abc}$
+\end_inset
+
+ and a sum over cyclic permutations of the legs of the last diagram is understoo
+d.
  The triangle graph goes like 
 \begin_inset Formula $\int_{\ell}\ell^{3\alpha-6}\left(\ln\ell\right)^{3c_{3}-3c_{1}}\sim\chi^{3\alpha-2}\left(\ln\chi\right)^{3c_{3}-3c_{1}}$
 \end_inset
@@ -4046,7 +4325,7 @@ ref{fig:vertex-eom}.
 \begin_inset Formula $\alpha\neq2/3$
 \end_inset
 
- or
+ or 
 \begin_inset Formula $\left(\ln\chi\right)^{1+3c_{3}-3c_{1}}$
 \end_inset
 
@@ -4066,14 +4345,14 @@ ref{fig:vertex-eom}.
 \begin_inset Formula $\left(\ln\chi\right)^{1+c_{3}-2c_{1}}$
 \end_inset
 
- if
+ if 
 \begin_inset Formula $\alpha=0$
 \end_inset
 
 .
- Thus to a leading approximation the large momentum behavior is obtained
+ Thus to a leading approximation the large momentum behaviour is obtained
  by dropping the triangle graph from the equation of motion.
- This can also be seen by taking
+ This can also be seen by taking 
 \begin_inset Formula $v\to0$
 \end_inset
 
@@ -4085,7 +4364,7 @@ ref{fig:vertex-eom}.
 \end_layout
 
 \begin_layout Standard
-We now define auxiliary vertex functions 
+Now define auxiliary vertex functions 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
 
@@ -4093,7 +4372,7 @@ We now define auxiliary vertex functions
 \begin_inset Formula $V_{N}^{\mu}$
 \end_inset
 
- which have the same asymptotic behavior as 
+ which have the same asymptotic behaviour as 
 \begin_inset Formula $\bar{V}$
 \end_inset
 
@@ -4102,7 +4381,7 @@ We now define auxiliary vertex functions
 \end_inset
 
  respectively, though depend only on the auxiliary propagators.
- We define 
+ 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
 
@@ -4110,7 +4389,7 @@ We now define auxiliary vertex functions
 \begin_inset Formula $V_{N}^{\mu}$
 \end_inset
 
- by taking the equations of motion for 
+ are defined by taking the equations of motion for 
 \begin_inset Formula $\bar{V}$
 \end_inset
 
@@ -4126,14 +4405,108 @@ We now define auxiliary vertex functions
 \begin_inset Formula $V_{N}\to V_{N}^{\mu}$
 \end_inset
 
-, and 
+ (represented diagrammatically by a blob), and 
 \begin_inset Formula $\Delta_{G/H}\to\Delta_{G/H}^{\mu}$
 \end_inset
 
-.
- These equations are shown in Figure 
+ (represented by dashed lines), resulting in
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
 \backslash
-ref{fig:aux-vertex-eq}.
+begin{fmffile}{aux-v-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmfrpolyn{shaded,tension=0.5}{v}{3} 
+\backslash
+fmf{plain}{i1,v3} 
+\backslash
+fmf{plain}{i2,v2} 
+\backslash
+fmf{plain}{i3,v1} 
+\backslash
+end{fmfgraph}}=
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmf{plain}{i1,v} 
+\backslash
+fmf{plain}{i2,v} 
+\backslash
+fmf{plain}{i3,v} 
+\backslash
+fmfv{decor.shape=circle,decor.filled=empty,decor.size=2thick}{v} 
+\backslash
+end{fmfgraph}}
+\end_layout
+
+\begin_layout Plain Layout
+
++
+\backslash
+parbox{22mm}{
+\backslash
+begin{fmfgraph}(60,40) 
+\backslash
+fmfsurroundn{i}{3} 
+\backslash
+fmfrpolyn{shaded,tension=0.2}{v}{3} 
+\backslash
+fmf{plain}{i1,v3} 
+\backslash
+fmf{plain}{i2,w} 
+\backslash
+fmf{plain}{i3,w} 
+\backslash
+fmf{dashes,left=.75,tension=0.33}{v1,w,v2} 
+\backslash
+fmfdot{w} 
+\backslash
+end{fmfgraph}}.
+\backslash
+label{eq:3pi-aux-vertex-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
  This gives a pair of coupled linear integral equations, analogous to the
  Bethe-Salpeter equations, for 
 \begin_inset Formula $\bar{V}^{\mu}$
@@ -4145,11 +4518,16 @@ ref{fig:aux-vertex-eq}.
 
  which can be solved explicitly by iteration.
  (Details of this calculation are presented in Section 
-\backslash
-ref{sub:Three-loop-truncation}).
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Three-loop-truncation"
+
+\end_inset
+
+).
  Unfortunately the result is only analytically tractable in fewer than 1+3
- dimensions, so we confine the analytical results depending on the explicit
- forms of 
+ dimensions, so for the present any analytical results depending on the
+ explicit forms of 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
 
@@ -4157,7 +4535,7 @@ ref{sub:Three-loop-truncation}).
 \begin_inset Formula $V_{N}^{\mu}$
 \end_inset
 
- to this case.
+ are confined to this case.
  In the physically most interesting case of 1+3 dimensions, 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
@@ -4175,76 +4553,9 @@ ref{sub:Three-loop-truncation}).
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-By using these auxiliary propagators and vertices we can isolate the divergent
+ By using these auxiliary propagators and vertices one can isolate the divergent
  contributions to the equations of motion and so obtain the required set
  of counter-terms to remove them.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{auxiliary_vertex_eq}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:aux-vertex-eq}Defining equation for the auxiliary vertex functions
- $
-\backslash
-bar{V}^{
-\backslash
-mu}$ and $V^{
-\backslash
-mu}_{N}$, obtained by taking the corresponding equations of motion for $
-\backslash
-bar{V}$ and $V_{N}$, dropping the triangle graphs, and making the replacements
- $
-\backslash
-bar{V}
-\backslash
-to
-\backslash
-bar{V}^{
-\backslash
-mu}$, $V_{N}
-\backslash
-to V^{
-\backslash
-mu}_{N}$, and $
-\backslash
-Delta_{G/H}
-\backslash
-to
-\backslash
-Delta^{
-\backslash
-mu}_{G/H}$.
- The filled triangle represents the auxiliary vertices and the lines represent
- the auxiliary propagators.
- Crossed circles are bare vertices as before.} 
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -4272,15 +4583,19 @@ name "subsec:SI-3PIEA-Two-loop-truncation"
 \begin_layout Standard
 The theory simplifies dramatically at two loop order.
  It follows from 
-\backslash
-eqref{eq:3pi-vertex-eom} that at this order 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3pi-vertex-eom-lhs"
+
+\end_inset
+
+ that at this order 
 \begin_inset Formula $V\to V_{0}$
 \end_inset
 
- (up to a renormalization).
+ up to a renormalization (this is just the equivalence hierarchy at work).
  Substituting this into the action gives, apart from the symmetry improvement
  terms, the standard 2PIEA.
- This is an example of the equivalence hierarchy previously discussed.
  Another simplification is that the logarithmic enhancement of the propagators
  in the UV due to 
 \begin_inset Formula $\Sigma_{G/H}^{a}$
@@ -4332,88 +4647,33 @@ The first line is the tree level term, the second and third lines are the
 \end_layout
 
 \begin_layout Standard
-To renormalize the theory we regard all parameters heretofore as bare parameters
- and introduce renormalized counterparts using the same letters: 
+To renormalise the theory one follows the by now standard procedure by introduci
+ng the renormalised parameters 
 \begin_inset Formula 
 \begin{align}
 \left(\phi,\varphi,v\right) & \to Z^{1/2}\left(\phi,\varphi,v\right),\\
 m^{2} & \to Z^{-1}Z_{\Delta}^{-1}\left(m^{2}+\delta m^{2}\right),\\
 \lambda & \to Z^{-2}\left(\lambda+\delta\lambda\right),\\
 \Delta & \to ZZ_{\Delta}\Delta,\\
-V & \to Z^{-3/2}Z_{V}V.
+V & \to Z^{-3/2}Z_{V}V,
 \end{align}
 
 \end_inset
 
+and demanding that all kinematically distinct divergences vanish.
+ Details of this computation and explicit expressions for the counter-terms
+ are given in Appendix 
+\begin_inset Note Note
+status open
 
+\begin_layout Plain Layout
+TODO
 \end_layout
 
-\begin_layout Standard
-The renormalized equations of motion are (see Appendix 
-\backslash
-ref{sec:Deriving-counter-terms-for-2-loops} for more detail) 
-\begin_inset Formula 
-\begin{align}
-\Delta_{G}^{-1}\left(p\right) & =ZZ_{\Delta}p^{2}-m^{2}-\delta m_{1}^{2}-Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\nonumber \\
- & -\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\mathcal{T}_{G}\nonumber \\
- & -\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)Z_{\Delta}^{2}\mathcal{T}_{H}\nonumber \\
- & +i\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\mathcal{I}_{HG}\left(p\right),\label{eq:two-loop-Delta_G-eom-with-cts}\\
-\Delta_{H}^{-1}\left(p\right) & =-Z_{\Delta}\frac{\left(\lambda+\delta\lambda\right)v^{2}}{3}+\Delta_{G}^{-1}\left(p\right),\label{eq:two-loop-Delta_N-eom-with-cts}\\
-vm_{G}^{2} & =0,\label{eq:two-loop-Goldstone-thm-with-cts}
-\end{align}
-
 \end_inset
 
- where for convenience we have defined
-\begin_inset Formula 
-\begin{align}
-\mathcal{T}_{G/H} & =\int_{q}i\Delta_{G/H}\left(q\right),\label{eq:tadpole-integral}\\
-\mathcal{I}_{HG}\left(p\right) & =\int_{q}i\Delta_{H}\left(q\right)i\Delta_{G}\left(p-q\right).\label{eq:Ing-integral}
-\end{align}
-
-\end_inset
-
- The tadpole integrals 
-\begin_inset Formula $\mathcal{T}_{G/H}$
-\end_inset
-
- correspond to the Hartree-Fock graphs and 
-\begin_inset Formula $\mathcal{I}_{HG}\left(p\right)$
-\end_inset
-
- corresponds to the sunset self-energy graph.
- From these we identify the self-energy parts
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\Sigma_{G/H}^{a}\left(p\right) & =\left(ZZ_{\Delta}-1\right)p^{2}=0,\\
-\Sigma_{G/H}^{0}\left(p\right)+\Sigma_{G/H}^{r}\left(p\right) & =-i\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\mathcal{I}_{HG}\left(p\right).
-\end{align}
-
-\end_inset
-
-Note that the Goldstone and Higgs self-energies are equal to this order
- as a consequence of the vertex Ward identity.
- This is essentially where our treatment differs from 
-\backslash
-citep{Pilaftsis2013}.
-\end_layout
-
-\begin_layout Standard
-By using the auxiliary propagators to extract the divergences in 
-\begin_inset Formula $\mathcal{T}_{G/H}$
-\end_inset
-
- and 
-\begin_inset Formula $\mathcal{I}_{HG}\left(p\right)$
-\end_inset
-
- and absorbing them into the counter-terms (see Appendix 
-\backslash
-ref{sec:Deriving-counter-terms-for-2-loops}) we find the finite equations
- of motion
+.
+ The finite equations of motion are found to be
 \end_layout
 
 \begin_layout Standard
@@ -4427,10 +4687,6 @@ ref{sec:Deriving-counter-terms-for-2-loops}) we find the finite equations
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 The finite parts 
 \begin_inset Formula $\mathcal{T}_{G/H}^{\text{fin}}$
 \end_inset
@@ -4449,7 +4705,7 @@ The finite parts
 
 \end_inset
 
- where the auxiliary quantities are 
+where the auxiliary quantities are 
 \begin_inset Formula 
 \begin{align}
 \mathcal{T}^{\mu} & =\int_{q}i\Delta^{\mu}\left(q\right),\\
@@ -4459,15 +4715,23 @@ The finite parts
 
 \end_inset
 
- (For details see Appendix 
-\backslash
-ref{sec:Deriving-counter-terms-for-2-loops}.) These equations are the main
- result of this section.
- We expect they could be solved numerically using techniques similar to
+These equations are the main result of this section.
+ They could presumably be solved numerically using techniques similar to
  
-\backslash
-citep{Marko2012}, though we leave the numerical implementation for later
- work.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2012"
+
+\end_inset
+
+, though is deferred as the analytical results given in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SI-3PIEA-Optical-theorem-and-dispersion-relations"
+
+\end_inset
+
+ indicate this is an unsatisfactory truncation.
 \end_layout
 
 \begin_layout Subsection
@@ -4493,18 +4757,48 @@ name "subsec:SI-3PIEA-Three-loop-truncation"
 \end_layout
 
 \begin_layout Standard
-We consider now the three loop truncation of the effective action.
- The vertex equation of motion is shown in Figure 
-\backslash
-ref{fig:vertex-eom}, and we have already argued that the leading asymptotics
+Now consider the three loop truncation of the SI-3PIEA.
+ The vertex equation of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3pi-vertex-eom"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not broken: refers to an fmffile above
+\end_layout
+
+\end_inset
+
+ now includes one loop corrections and, as shown above, the leading asymptotics
  at large momentum are captured by the auxiliary vertex defined by its equation
- of motion in Figure 
-\backslash
-ref{fig:aux-vertex-eq}.
- Subtracting these two equations we find that the right hand side is finite
+ of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3pi-aux-vertex-eom"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+not broken: refers to an fmffile above
+\end_layout
+
+\end_inset
+
+.
+ Subtracting these two equations shows that the right hand side is finite
  (indeed the auxiliary vertices were constructed to guarantee this).
- Thus the problem of renormalizing the vertex equation of motion reduces
- to the problem of renormalizing the auxiliary vertex equation of motion.
+ Thus the problem of renormalising the vertex equation of motion reduces
+ to the problem of renormalising the auxiliary vertex equation of motion.
 \end_layout
 
 \begin_layout Standard
@@ -4512,7 +4806,7 @@ It is temporarily more convenient to go back to the
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
- covariant form we had before introducing the SSB ansatz.
+ covariant form of the equations of motion before introducing the SSB ansatz.
  Introduce the covariant auxiliary vertex 
 \begin_inset Formula $V_{abc}^{\mu}$
 \end_inset
@@ -4525,10 +4819,12 @@ It is temporarily more convenient to go back to the
 \begin_inset Formula $V_{N}^{\mu}$
 \end_inset
 
- by an equation analogous to 
-\backslash
-eqref{eq:ssb-vertex-ansatz}.
- Iterating the equation of motion we find the solution 
+ by the obvious 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ reduction.
+ Iterating the auxiliary vertex equation of motion gives the solution 
 \begin_inset Formula 
 \begin{equation}
 V_{abc}^{\mu}=\mathcal{K}_{abcdef}V_{0def},\label{eq:aux-vertex-soln}
@@ -4536,7 +4832,7 @@ V_{abc}^{\mu}=\mathcal{K}_{abcdef}V_{0def},\label{eq:aux-vertex-soln}
 
 \end_inset
 
- where the six point kernel 
+where the six point kernel 
 \begin_inset Formula $\mathcal{K}_{abcdef}$
 \end_inset
 
@@ -4549,20 +4845,240 @@ V_{abc}^{\mu}=\mathcal{K}_{abcdef}V_{0def},\label{eq:aux-vertex-soln}
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $\sum_{\pi}$
 \end_inset
 
  is a sum over permutations of the incoming legs.
- This equation is shown in Figure 
+ Graphically this is
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
 \backslash
-ref{fig:aux-vertex-soln-and-6pt-kernel}.
+begin{fmffile}{aux-v-soln} 
+\backslash
+begin{equation} 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfpolyn{shaded}{v}{3} 
+\backslash
+fmfright{p}
+\backslash
+fmf{phantom}{p,v1}
+\backslash
+fmf{phantom}{p,v3} 
+\backslash
+fmf{plain,tension=2}{i2,v2}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,right=.33}{i1,v3} 
+\backslash
+fmf{plain,left=.33}{i3,v1} 
+\backslash
+end{fmfgraph}}=
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfpolyn{shaded,tension=2}{K}{6} 
+\backslash
+fmfright{v} 
+\backslash
+fmf{plain,tension=3}{K1,v} 
+\backslash
+fmf{plain,left=.5,tension=.1}{K2,v} 
+\backslash
+fmf{plain,right=.5,tension=.1}{K6,v} 
+\backslash
+fmf{plain,tension=1}{i1,K5} 
+\backslash
+fmf{plain,tension=1}{i2,K4} 
+\backslash
+fmf{plain,tension=1}{i3,K3} 
+\backslash
+fmfv{decor.shape=circle,decor.filled=empty,decor.size=2thick}{v} 
+\backslash
+end{fmfgraph}},  
+\backslash
+end{equation} 
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+where the shaded hexagonal blob is 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ which obeys
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{BS-kernel-K-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmfpolyn{shaded}{K}{6} 
+\backslash
+fmf{plain}{i1,K5} 
+\backslash
+fmf{plain}{i2,K4} 
+\backslash
+fmf{plain}{i3,K3} 
+\backslash
+fmf{plain}{o1,K6} 
+\backslash
+fmf{plain}{o2,K1} 
+\backslash
+fmf{plain}{o3,K2} 
+\backslash
+end{fmfgraph}} =
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmf{plain}{i1,o1} 
+\backslash
+fmf{plain}{i2,o2} 
+\backslash
+fmf{plain}{i3,o3} 
+\backslash
+end{fmfgraph}} +
+\backslash
+parbox{27mm}{
+\backslash
+begin{fmfgraph}(75,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmfpolyn{full}{Pi}{6} 
+\backslash
+fmf{plain}{i1,Pi5} 
+\backslash
+fmf{plain}{i2,Pi4} 
+\backslash
+fmf{plain}{i3,Pi3} 
+\backslash
+fmfpolyn{shaded}{K}{6} 
+\backslash
+fmf{plain,tension=0.5}{K5,Pi6} 
+\backslash
+fmf{phantom,tension=0.5}{Pi1,K4} 
+\backslash
+fmf{phantom,tension=0.5}{Pi2,K3} 
+\backslash
+fmf{plain}{o1,K6} 
+\backslash
+fmf{plain}{o2,K1} 
+\backslash
+fmf{plain}{o3,K2} 
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{v,Pi1} 
+\backslash
+fmf{plain}{v,Pi2} 
+\backslash
+fmf{plain}{v,K3}
+\backslash
+fmf{plain}{v,K4} 
+\backslash
+fmfdot{v} 
+\backslash
+end{fmfgraph}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+where the solid hexagonal blob is the sum over all permutations of the lines
+ coming in from the left and connecting to those on the right.
  
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:K-6pt-kernel-eom"
+
+\end_inset
+
+ can be written in a form that makes explicit all divergences (see Appendix
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
 \backslash
-eqref{eq:K-6pt-kernel-eom} can be written in a form that makes explicit
- all divergences (see Appendix 
-\backslash
-ref{sec:Auxiliary-vertex-and-renorm}) and replaces the bare vertex 
+ref{sec:Auxiliary-vertex-and-renorm}
+\end_layout
+
+\end_inset
+
+) and replaces the bare vertex 
 \begin_inset Formula $W$
 \end_inset
 
@@ -4586,7 +5102,7 @@ In fewer than four dimensions
 \begin_inset Formula $V_{abc}^{\mu}=V_{0abc}$
 \end_inset
 
-, dramatically simplifying the renormalization theory.
+, dramatically simplifying the renormalisation theory.
  A similar simplification happens to the auxiliary propagator due to the
  logarithmic (rather than quadratic) divergence of 
 \begin_inset Formula $\Phi_{5}$
@@ -4598,16 +5114,21 @@ In fewer than four dimensions
 
  dimensions.
  This confirms statements made in the literature (supported by numerical
- evidence though without proof, to our knowledge) to the effect that the
- asymptotic behavior of Green functions is free (e.g.
+ evidence though without proof, to the author's knowledge) to the effect
+ that the asymptotic behaviour of Green functions is free (e.g.
  
-\backslash
-citep{York2012}).
+\begin_inset CommandInset citation
+LatexCommand citep
+key "York2012"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
 Unfortunately, the situation is much more difficult in four dimensions and
- the renormalization of the 
+ the renormalisation of the 
 \begin_inset Formula $n$
 \end_inset
 
@@ -4622,28 +5143,54 @@ PIEA for
  remains an open problem, both in general and in the present case.
  The problem can be seen from the behaviour of the auxiliary vertex which
  is discussed further in Appendix 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
 \backslash
-ref{sec:Auxiliary-vertex-and-renorm}.
- For the sake of obtaining analytical results we restrict the rest of this
- section to 
+ref{sec:Auxiliary-vertex-and-renorm}
+\end_layout
+
+\end_inset
+
+.
+ For the sake of obtaining analytical results the rest of this section is
+ restricted to 
 \begin_inset Formula $<1+3$
 \end_inset
 
  dimensions.
- The renormalization of the $1+3$ dimensional case is left to future work.
+ The renormalisation of the 
+\begin_inset Formula $1+3$
+\end_inset
+
+ dimensional case is left to future work.
 \end_layout
 
 \begin_layout Standard
-We derive the counter-terms for 
+The counter-terms for 
 \begin_inset Formula $1+2$
 \end_inset
 
- dimensions in Appendix 
+ dimensions are derived following essentially the same procedure used several
+ times now already.
+ Details are given in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Appendix 
 \backslash
-ref{sec:Deriving-Counter-terms-for-3-loops}.
+ref{sec:Deriving-Counter-terms-for-3-loops}
+\end_layout
+
+\end_inset
+
+.
  The are only two interesting comments about this derivation: the first
- is that we require an additional (non-universal) counter-term for the sunset
- graph linear in 
+ is that an additional (non-universal) counter-term is required for the
+ sunset graph linear in 
 \begin_inset Formula $V$
 \end_inset
 
@@ -4659,7 +5206,7 @@ ref{sec:Deriving-Counter-terms-for-3-loops}.
 \begin_inset Formula $\delta m_{1}^{2}$
 \end_inset
 
- is required to UV-renormalize the theory.
+ is required to UV-renormalise the theory.
  Every other counter-term is finite and exists solely to maintain the pole
  condition for the Higgs propagator despite the vertex Ward identity.
  The resulting finite equations of motion are
@@ -4715,16 +5262,24 @@ The finite Goldstone self-energy is
 
 \end_inset
 
-where the 
-\backslash
-noun{bball} integral is 
+where the BBALL integral is 
 \begin_inset Formula $\mathcal{B}^{\mu}=\int_{qp}\Delta^{\mu}\left(q\right)\Delta^{\mu}\left(p\right)\Delta^{\mu}\left(p+q\right)$
 \end_inset
 
 .
- The graph topologies are shown in Figure 
+ The graph topologies are shown in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
 \backslash
-ref{fig:two-loop-self-energy-graphs}.
+ref{fig:two-loop-self-energy-graphs}
+\end_layout
+
+\end_inset
+
+.
  Finally, the Higgs equation of motion is
 \begin_inset Formula 
 \begin{align}
@@ -4739,7 +5294,7 @@ ref{fig:two-loop-self-energy-graphs}.
 \end_inset
 
 .
- We defer the numerical implementation of these equations to future work.
+ Numerical implementation of these equations is defered to future work.
 \end_layout
 
 \begin_layout Standard
@@ -4818,6 +5373,28 @@ label{sec:Hartree-approximation}}
 
 \end_layout
 
+\begin_layout Section
+Solution of the SI-3PI Hartree-Fock Approximation
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Solution-of-the-SI-3PI-HF-Approx"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 In the Hartree-Fock approximation one drops the 
 \begin_inset Formula $\mathcal{I}_{HG}\left(p\right)$
@@ -4834,207 +5411,18 @@ In the Hartree-Fock approximation one drops the
 
  can be written as the sum of divergent and finite parts which can be evaluated
  in closed form.
- 
+ Renormalisation follows through almost exactly as in the unimproved and
+ SI-2PI HF cases, with the resulting renormalisation constants
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
-In the Matsubara formalism at finite temperature $T$ the time contour is
- taken on the imaginary axis with periodic boundary conditions of period
- $-i
-\backslash
-beta$, where $
-\backslash
-beta=1/T$.
- Integration over the timelike momentum component $p^{0}$ becomes a sum
- over discrete Matsubara frequencies $
-\backslash
-omega_{n}=2
-\backslash
-pi n/
-\backslash
-beta$, $n=0,
-\backslash
-pm1,
-\backslash
-pm2,
-\backslash
-cdots$.
- Using standard tricks 
-\backslash
-citep{Kapusta2006} the sum over frequencies can be performed, giving 
-\backslash
-begin{align} 
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-infty} & =-
-\backslash
-frac{m_{G/H}^{2}}{16
-\backslash
-pi^{2}}
-\backslash
-left[
-\backslash
-frac{1}{
-\backslash
-epsilon}-
-\backslash
-gamma+1+
-\backslash
-ln
-\backslash
-left(4
-\backslash
-pi
-\backslash
-right)
-\backslash
-right]+
-\backslash
-mathcal{O}
-\backslash
-left(
-\backslash
-epsilon
-\backslash
-right),
-\backslash
-label{eq:divergent-part-tadpole-msbar}
-\backslash
-
-\backslash
- 
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{fin}} & =
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{vac}}+
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{th}},
-\backslash
-label{eq:finite-part-tadpole}
-\backslash
-
-\backslash
- 
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{vac}} & =
-\backslash
-frac{m_{G/H}^{2}}{16
-\backslash
-pi^{2}}
-\backslash
-ln
-\backslash
-left(
-\backslash
-frac{m_{G/H}^{2}}{
-\backslash
-mu^{2}}
-\backslash
-right),
-\backslash
-label{eq:finite-vacuum-part-tadpole}
-\backslash
-
-\backslash
- 
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{th}} & =
-\backslash
-int_{
-\backslash
-boldsymbol{q}}
-\backslash
-frac{1}{
-\backslash
-omega_{
-\backslash
-boldsymbol{q}}}
-\backslash
-frac{1}{
-\backslash
-mathrm{e}^{
-\backslash
-beta
-\backslash
-omega_{
-\backslash
-boldsymbol{q}}}-1},
-\backslash
-label{eq:bose-einstein-integral} 
-\backslash
-end{align} where the divergent and finite vacuum parts have been evaluated
- using $
-\backslash
-overline{
-\backslash
-text{MS}}$ in $d=4-2
-\backslash
-epsilon$ dimensions at the renormalization point $
-\backslash
-mu$ (note that 
-\backslash
-citep{Pilaftsis2013} adopt a slightly different convention for $
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{vac}}$ which amounts to a redefinition of $
-\backslash
-mu$ not affecting physical results).
- $
-\backslash
-gamma
-\backslash
-approx0.577$ is the Euler-Mascheroni constant.
- In the thermal part $
-\backslash
-boldsymbol{q}$ is the spatial momentum vector and $
-\backslash
-omega_{
-\backslash
-boldsymbol{q}}=
-\backslash
-sqrt{
-\backslash
-boldsymbol{q}^{2}+m_{G/H}^{2}}$.
- We substitute these expressions into the equations of motion 
-\backslash
-eqref{eq:two-loop-Delta_G-eom-with-cts}-
-\backslash
-eqref{eq:two-loop-Goldstone-thm-with-cts} and demand that the kinematically
- distinct divergences proportional to $v$, $
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{vac}}$, $
-\backslash
-mathcal{T}_{G/H}^{
-\backslash
-text{th}}$ independently vanish.
- The other renormalization conditions are that residue of the pole of the
- propagator equals one, which requires $ZZ_{
-\backslash
-Delta}=1$, and that the tree level relation $m_{H}^{2}=
-\backslash
-frac{
-\backslash
-lambda v^{2}}{3}+m_{G}^{2}$ holds at zero temperature.
+TODO: GOTO GENERAL REG SCHEME
 \end_layout
 
 \end_inset
 
- These conditions determine the renormalization constants
+
 \begin_inset Formula 
 \begin{align}
 Z=Z_{\Delta} & =1,\\
@@ -5045,7 +5433,7 @@ Z=Z_{\Delta} & =1,\\
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $\kappa\equiv1-\gamma+\ln4\pi\approx2.95$
 \end_inset
 
@@ -5065,26 +5453,16 @@ vm_{G}^{2} & =0.\label{eq:goldstone-theorem-hartree-gap-eq}
 
 \end_inset
 
- Finally, if we demand the zero temperature tree level relation 
+Finally, as before, requiring the zero temperature tree level relation 
 \begin_inset Formula $v^{2}\left(T=0\right)\equiv\bar{v}^{2}=-6m^{2}/\lambda$
 \end_inset
 
- we must set the renormalization point
+ sets the renormalisation point 
 \begin_inset Formula $\mu^{2}=\bar{m}_{H}^{2}\equiv m_{H}^{2}\left(T=0\right)=\lambda\bar{v}^{2}/3$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The analogue of the equations of motion 
-\backslash
-eqref{eq:mg2-hartree-gap-eq}-
-\backslash
-eqref{eq:goldstone-theorem-hartree-gap-eq} corresponding to previous work
- on the symmetry improved 2PIEA is (
-\backslash
-citep{Pilaftsis2013,Mao2013} generalized to arbitrary $N$)
+ The resulting equations of motion are
 \end_layout
 
 \begin_layout Standard
@@ -5097,34 +5475,14 @@ vm_{G}^{2} & =0.\label{eq:si2pi-goldstone-theorem}
 
 \end_inset
 
-Note that only the Higgs equation of motion differs, as expected.
- In the standard formalism without symmetry improvement one replaces 
-\backslash
-eqref{eq:si2pi-goldstone-theorem} with 
-\begin_inset Formula 
-\begin{equation}
-0=v\left(m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right).\label{eq:nosi-vev-eq}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-These equations of motion, or 
-\backslash
-emph{gap equations}, possess a phase transition and a critical point where
- 
+Note that only the Higgs equation of motion differs from the SI-2PI case
+ as expected.
+ These equations of motion possess a phase transition and a critical point
+ where 
 \begin_inset Formula $m_{H}^{2}=m_{G}^{2}=v^{2}=0$
 \end_inset
 
-.
- Using the result for massless particles 
-\begin_inset Formula $\mathcal{T}_{G/H}^{\text{th}}\left(m_{G/H}=0\right)=T^{2}/12$
-\end_inset
-
-, we find the same value of the critical temperature 
+ with the same value of the critical temperature 
 \begin_inset Formula 
 \begin{equation}
 T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}},
@@ -5132,28 +5490,27 @@ T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}},
 
 \end_inset
 
- independent of the formalism used.
- However, the order of the phase transition differs in the three cases.
- This stands in contrast to the large-
+independent of the formalism used (apart from large 
 \begin_inset Formula $N$
 \end_inset
 
- approximation, which correctly determines the order of the phase transition
- but gives a critical temperature larger by a factor of
-\begin_inset Formula $\sqrt{3/2}+\mathcal{O}\left(N^{-1}\right)$
-\end_inset
-
- (see 
-\backslash
-citep{Petropoulos2004,Mao2013}).
+).
+ However, the order of the phase transition differs in the three cases.
 \end_layout
 
 \begin_layout Standard
-We present numerical solutions of equations 
-\backslash
-eqref{eq:mg2-hartree-gap-eq}-
-\backslash
-eqref{eq:nosi-vev-eq} with 
+Numerical solutions of the SI-3PIEA in the Hartree-Fock approximation are
+ presented in Figures 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+ with the same parameters as before, namely 
 \begin_inset Formula $N=4$
 \end_inset
 
@@ -5167,41 +5524,39 @@ eqref{eq:nosi-vev-eq} with
 
 .
  The solution is implemented in 
-\backslash
-noun{Python} as an iterative root finder based on 
-\backslash
-emph{scipy.optimize.root} 
-\backslash
-citep{*[{}] [{http://www.scipy.org/.}] Jones} with an estimated Jacobian or,
- if that fails to converge, a direct iteration of the gap equations.
- The Bose-Einstein integrals in 
-\backslash
-eqref{eq:bose-einstein-integral} can be precomputed to save time.
- We show the results for the scalar field 
-\begin_inset Formula $v$
+\noun on
+Python
+\noun default
+ as an iterative root finder based on 
+\emph on
+scipy.optimize.root
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jones"
+
 \end_inset
 
-, Higgs mass 
-\begin_inset Formula $m_{H}$
-\end_inset
-
- and Goldstone mass 
-\begin_inset Formula $m_{G}$
-\end_inset
-
- in Figures 
-\backslash
-ref{fig:hartree-fock-vev-comparison}, 
-\backslash
-ref{fig:hartree-fock-mn-comparison}, and 
-\backslash
-ref{fig:hartree-fock-mg-comparison} respectively.
+ with an estimated Jacobian or, if that fails to converge, a direct iteration
+ of the gap equations.
+ The Bose-Einstein integrals are precomputed to save time.
 \end_layout
 
 \begin_layout Standard
-Figure 
+Figure
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
 \backslash
-ref{fig:hartree-fock-vev-comparison} shows 
+ref{fig:hartree-fock-vev-comparison}
+\end_layout
+
+\end_inset
+
+ shows 
 \begin_inset Formula $v\left(T\right)$
 \end_inset
 
@@ -5223,22 +5578,43 @@ ref{fig:hartree-fock-vev-comparison} shows
 , signalling a first order phase transition.
  The symmetry improved 2PIEA correctly predicts the second order nature
  of the phase transition.
- Though unphysical, the symmetry improved 3PIEA behavior is much more reasonable
- than the unimproved 2PIEA: the strength of the first order phase transition
- is reduced and the metastable phase ceases to exist at a temperature much
- closer to the critical temperature than for the unimproved 2PIEA.
+ Though unphysical, the symmetry improved 3PIEA behaviour is much more reasonabl
+e than the unimproved 2PIEA in that the strength of the first order phase
+ transition is greatly reduced and the metastable phase ceases to exist
+ at a temperature much closer to the critical temperature than for the unimprove
+d 2PIEA.
  Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
 \backslash
-ref{fig:hartree-fock-mn-comparison} shows the Higgs mass 
+ref{fig:hartree-fock-mn-comparison}
+\end_layout
+
+\end_inset
+
+ shows the Higgs mass 
 \begin_inset Formula $m_{H}\left(T\right)$
 \end_inset
 
 .
- The phase transition behavior above is seen again, and again all three
+ The same phase transition behaviour is seen again, and again all three
  methods agree in the symmetric phase, giving the usual thermal mass effect.
  Finally, Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
 \backslash
-ref{fig:hartree-fock-mg-comparison} shows the Goldstone boson mass.
+ref{fig:hartree-fock-mg-comparison}
+\end_layout
+
+\end_inset
+
+ shows the Goldstone boson mass.
  The unimproved 2PIEA strongly violates the Goldstone theorem, but both
  symmetry improvement methods satisfy it as expected.
  Note that the Goldstone theorem is even satisfied in the unphysical metastable
