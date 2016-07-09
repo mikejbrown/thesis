@@ -1633,8 +1633,16 @@ name "sec:Renormalisation-and-solution-2PI-HF"
 \end_layout
 
 \begin_layout Standard
-In order to exhibit the properties of solutions of the 2PI equations of
- motion in more detail it is necessary to discuss the renormalisation process.
+This section presents the solution of the 2PI equations of motion in the
+ Hartree-Fock approximation.
+ That is, including only the 
+\begin_inset Formula $\mathcal{O}\left(\lambda\right)$
+\end_inset
+
+ term in the self-energy.
+ The first field theoretical divergences appear at this order.
+ In order to exhibit the solutions in more detail it is then necessary to
+ discuss the renormalisation process.
  Renormalisation is a necessary process to extract any physical observables
  from a QFT.
  In a renormalisable theory all divergences can be absorbed in a redefinition
@@ -1682,7 +1690,8 @@ effective field theory
 \end_inset
 
  spacetime dimensions.
- Elegant general discussions of renormalisation theory can be found in 
+ Elegant general discussions of renormalisation theory in the perturbative
+ context can be found in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Zinn-Justin1990,Zinn-Justin2007"
@@ -1690,6 +1699,131 @@ key "Zinn-Justin1990,Zinn-Justin2007"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+The derivation given previously that 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ is a scalar under 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ rotations also applies order by order in the expansion of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in powers of 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ or 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ That implies that, if 
+\begin_inset Formula $\hbar^{j}\Gamma^{\left(j\right)}$
+\end_inset
+
+ is the 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{j}\right)$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $\lambda^{j}$
+\end_inset
+
+) contribution to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, 
+\begin_inset Formula $\Gamma^{\left(j\right)}$
+\end_inset
+
+ is itself an 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ scalar.
+ Thus any new divergences appearing at 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{j}\right)$
+\end_inset
+
+ must also be an 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ scalar, and thus can be cancelled by the addition of an 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ invariant term to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+.
+ The non-trivial fact that is key to the renormalisability of the 2PIEA
+ is that the divergences appearing take the form of divergent constants
+ multiplied by operators which are already present in 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{j}\right)$
+\end_inset
+
+.
+ A general proof of this statement will not be given here, though arguments
+ that this should be the case can be found in, e.g., 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFS
+\end_layout
+
+\end_inset
+
+.
+ On an intuitive level, the non-linearity of the equations of motion for
+ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ principally effect
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+affect?
+\end_layout
+
+\end_inset
+
+ its long distance behaviour, while the renormalisation problem is one of
+ short distance physics.
+ At short distances, Weinberg's theorem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weinberg1960"
+
+\end_inset
+
+ implies that the self-consistent propagators go over to the perturbative
+ propagators, up to logarithmic corrections which do not effect the renormalisab
+ility of the theory.
+ Thus a theory is 2PI renormalisable if it is perturbatively renormalisable,
+ which is known to be the case for the scalar 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ theory of interest here.
+ Thus the approach taken in the following is simply to trust that the theory
+ will prove to be renormalisable and see that it indeed works.
 \end_layout
 
 \begin_layout Standard
@@ -1739,7 +1873,15 @@ B
 
  etc.
  Due to the presence of composite operators in the effective action, additional
- counterterms are required compared to the standard perturbation theory:
+ renormalisation constants or 
+\begin_inset Quotes eld
+\end_inset
+
+counterterms
+\begin_inset Quotes erd
+\end_inset
+
+ are required compared to the standard perturbative renormalisation theory:
  
 \begin_inset Formula $\delta m_{0}^{2}$
 \end_inset
@@ -1785,6 +1927,9 @@ B
 \end_inset
 
 .
+ The fact that extra conterterms are required to renormalise the 2PIEA is
+ not a problem so long as a sufficient number of renormalisation conditions
+ can be found.
  Altogether there are nine renormalisation constants which must be eliminated
  by imposing nine conditions.
 \end_layout
@@ -1979,7 +2124,7 @@ It remains to determine the renormalisation constants.
 \end_inset
 
 ) which parameterises the arbitrariness of the split.
- The constants 
+ The dimensionless constants 
 \begin_inset Formula $c_{0}$
 \end_inset
 
@@ -2247,7 +2392,7 @@ reference "fig:2pi-hf-eom-soln"
 \begin_inset Formula $\bar{m}_{H}=500\ \mathrm{MeV}$
 \end_inset
 
-, values representative of the 
+, which are representative of the 
 \emph on
 linear sigma model
 \emph default
@@ -2651,7 +2796,7 @@ key "Moshe2003"
 \end_inset
 
  model has a long history as can be seen from the previous references.
- Particularly relevant to this section are the connection to the 2PI method,
+ Particularly relevant to this thesis are the connection to the 2PI method,
  which was published by 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -2659,8 +2804,8 @@ key "Petropoulos2004"
 
 \end_inset
 
- in essentially the form given here, and the contrast with the SI-2PI method
- which was originally studied by 
+ in essentially the form given here, and the contrast with the symmetry
+ improved 2PI method which was originally studied by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Mao2014"
@@ -2680,8 +2825,8 @@ To see how the large
 \begin_inset Formula $N$
 \end_inset
 
- method works in the present case consider again the unimproved 2PI equations
- of motion 
+ method works in the present case consider again the 2PI equations of motion
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:fin-2PI-HF-vev-eom"
@@ -2763,7 +2908,7 @@ m_{H}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{
 \end_layout
 
 \begin_layout Standard
-Now a comment on an important technicality.
+Now an important technicality.
  While 
 \begin_inset Formula $\lambda\to0$
 \end_inset
