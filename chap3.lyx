@@ -108,11 +108,52 @@ progress{0}
 \begin_layout Standard
 The previous chapter introduced nPIEA as a technique suitable for studies
  in non-equilibrium QFT.
- This chapter explores the symmetry properties of nPIEA.
- In particular, it will demonstrate that global symmetries are not generically
- preserved by truncations of nPIEA.
- The causes of this, some of the consequences for phenomenology and attempted
- workarounds will be reviewed.
+ This chapter explores the symmetry properties of nPIEA using the 1PIEA
+ and 2PIEA as specific examples.
+ These cases cover all of the conceptual points required for general 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, with mere increases in technical complexity for 
+\begin_inset Formula $n>2$
+\end_inset
+
+.
+ This chapter demonstrates that global symmetries are not generically preserved
+ by truncations of nPIEA.
+ The causes of this is understood in terms of the difference between 1PI
+ and 2PI (resp.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PI) Ward identities.
+ Phenomenological consequences are reviewed by studying the solution of
+ the 2PI equations of motion in the Hartree-Fock approximation for a theory
+ with spontaneous symmetry breaking and contrasted to the so-called 
+\begin_inset Quotes eld
+\end_inset
+
+external propagator
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+large 
+\begin_inset Formula $N$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ methods which solve some of the phenomenological problems, though not entirely
+ satisfactorily.
+ This sets the stage for the examination of symmetry improvement techniques
+ in the remainder of the thesis.
 \end_layout
 
 \begin_layout Section
@@ -2745,7 +2786,7 @@ Now, as long as the truncation of the 2PIEA is
 
  invariant
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 An example of a non-invariant truncation would be keeping the 
@@ -4015,6 +4056,82 @@ cs of the large
 
 \begin_layout Section
 Summary
+\end_layout
+
+\begin_layout Standard
+This chapter explored the symmetry properties of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs using the 1PIEA and 2PIEA as specific examples.
+ The symmetry properties of a QFT are embodied in a set of identities relating
+ the various correlation functions.
+ In particular, the Ward identities (WIs) encode the underlying global 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ symmetry of the theory studied here in terms of the propagator and proper
+ vertices derived from the 1PIEA.
+ The simplest consequence of these identities is Goldstone's theorem: the
+ existence of massless bosons corresponding to each generator of a broken
+ continuous symmetry.
+ The global symmetries are not generically preserved by truncations of higher
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs because the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs obey different WIs for each 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Phenomenological consequences were studied by the solving the 2PI equations
+ of motion in the Hartree-Fock approximation.
+ The Goldstone bosons were unphysically massive and the phase transition
+ was incorrectly predicted to be first order.
+ These results are in contrast to the so-called 
+\begin_inset Quotes eld
+\end_inset
+
+external propagator
+\begin_inset Quotes erd
+\end_inset
+
+ and 
+\begin_inset Quotes eld
+\end_inset
+
+large 
+\begin_inset Formula $N$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ methods which solve some of the phenomenological problems, though not entirely
+ satisfactorily.
+ The external propagator obeys Goldstone's theorem, but the order of the
+ phase transition is still incorrect, as are reaction thresholds and decay
+ rates.
+ The leading order large 
+\begin_inset Formula $N$
+\end_inset
+
+ approximation correctly predicts a second order phase transition and massless
+ Goldstone bosons, but gives an incorrect transition temperature due to
+ the neglect of Higgs boson thermal contributions.
+ Also, Goldstone's theorem is lost at next-to-leading order in 
+\begin_inset Formula $1/N$
+\end_inset
+
+.
+ This review sets the stage for the examination of symmetry improvement
+ techniques in the remainder of the thesis.
 \end_layout
 
 \end_body
