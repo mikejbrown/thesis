@@ -2624,15 +2624,220 @@ name "sec:The-External-Propagator"
 \end_layout
 
 \begin_layout Standard
+It is possible to derive correlation functions from the 2PIEA which do obey
+ 1PI style WIs.
+ The idea is that one first computes the self-consistent, or 
+\begin_inset Quotes eld
+\end_inset
+
+internal,
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ as solutions of the 2PI equations of motion, and then from these constructs
+ a resummed 1PIEA whose functional derivatives are the 
+\begin_inset Quotes eld
+\end_inset
+
+external
+\begin_inset Quotes erd
+\end_inset
+
+ propagators and vertices.
+ This method is used frequently in the literature 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-NEED:
+REFs
 \end_layout
 
-\begin_layout Itemize
-The definitive reference(s)
+\end_inset
+
+ and was definitively studied by 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanHees2002"
+
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $\Gamma\left[\varphi\right]=\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]$
+\end_inset
+
+ where 
+\begin_inset Formula $\Delta\left[\varphi\right]$
+\end_inset
+
+ is a solution of the 
+\emph on
+exact
+\emph default
+ 2PI equations of motion, the natural definition of the resummed 1PIEA is
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Gamma}\left[\varphi\right]=\tilde{\Gamma}\left[\varphi,\tilde{\Delta}\left[\varphi\right]\right],
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{\Gamma}$
+\end_inset
+
+ is the 
+\emph on
+truncated
+\emph default
+ (not exact) 2PIEA and 
+\begin_inset Formula $\tilde{\Delta}\left[\varphi\right]$
+\end_inset
+
+ is a solution of the 
+\emph on
+truncated
+\emph default
+ equation of motion
+\begin_inset Formula 
+\begin{equation}
+\left.\frac{\delta\tilde{\Gamma}\left[\varphi,\Delta\right]}{\delta\Delta}\right|_{\Delta=\tilde{\Delta}\left[\varphi\right]}=0,
+\end{equation}
+
+\end_inset
+
+which is no longer equal to the exact 
+\begin_inset Formula $\Delta\left[\varphi\right]$
+\end_inset
+
+.
+ The solution of the resummed 1PI equation of motion is the same as the
+ truncated 2PI solution because
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\delta\tilde{\Gamma}\left[\varphi\right]}{\delta\varphi}=\left(\frac{\delta\tilde{\Gamma}\left[\varphi,\Delta\right]}{\delta\varphi}\right)_{\Delta=\tilde{\Delta}\left[\varphi\right]}+\frac{\delta\tilde{\Delta}\left[\varphi\right]}{\delta\varphi}\left(\frac{\delta\tilde{\Gamma}\left[\varphi,\Delta\right]}{\delta\Delta}\right)_{\Delta=\tilde{\Delta}\left[\varphi\right]}=\left(\frac{\delta\tilde{\Gamma}\left[\varphi,\Delta\right]}{\delta\varphi}\right)_{\Delta=\tilde{\Delta}\left[\varphi\right]},
+\end{equation}
+
+\end_inset
+
+by the definition of 
+\begin_inset Formula $\tilde{\Delta}\left[\varphi\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Now, as long as the truncation of the 2PIEA is 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ invariant
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+An example of a non-invariant truncation would be keeping the 
+\begin_inset Formula $\Delta_{G}\Delta_{G}$
+\end_inset
+
+ term, and only that term, in the Hartree-Fock diagram.
+ Any loop or large 
+\begin_inset Formula $N$
+\end_inset
+
+ truncation will be automatically invariant.
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Formula $\tilde{\Delta}\left[\varphi\right]$
+\end_inset
+
+ will transform as a symmetric rank-2 tensor and 
+\begin_inset Formula $\tilde{\Gamma}\left[\varphi\right]$
+\end_inset
+
+ will be a scalar.
+ Thus the derivation of the 1PI WIs carries through without modification
+ for 
+\begin_inset Formula $\tilde{\Gamma}\left[\varphi\right]$
+\end_inset
+
+.
+ Thus the external propagator, defined as
+\begin_inset Formula 
+\begin{equation}
+\Delta_{\mathrm{ext}}^{-1}=\frac{\delta^{2}\tilde{\Gamma}\left[\varphi\right]}{\delta\varphi\delta\varphi},
+\end{equation}
+
+\end_inset
+
+obeys the Goldstone theorem
+\begin_inset Formula 
+\begin{equation}
+0=\left(\Delta_{\mathrm{ext}}^{-1}\right)_{ab}T_{bc}^{A}\varphi_{c},
+\end{equation}
+
+\end_inset
+
+as desired.
+ Similarly defined higher order external vertices all obey the appropriate
+ 1PI type WIs.
+ Clearly these definitions and properties can be extended also to higher
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA with minimal modification.
+\end_layout
+
+\begin_layout Standard
+This technique elegantly accomplishes its main aim: to define correlation
+ functions satisfying 1PI WIs while including some effects of the 2PI resummatio
+n in propagators.
+ Unfortunately, there are several drawbacks to the method which may prompt
+ one to consider alternative solutions to the problem of symmetries in 2PIEA.
+ First, the method is not fully self-consistent in that the external propagators
+ are not involved in the 2PI solution at all.
+ The internal propagators appearing in the 2PI graphs are still unphysical
+ and do not obey the 1PI WIs.
+ As a result of unphysically massive Goldstone bosons in internal propagators,
+ the external propagators are useless to predict decay rates, reaction threshold
+s, absorptive parts of amplitudes, finite width effects and the unitarity
+ of the theory is violated.
+ Also an unphysical first order phase transition is still obtained in the
+ Hartree-Fock approximation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanHees2002"
+
+\end_inset
+
+.
+ Furthermore, the physical quantities (being represented by external rather
+ than internal Green functions) are a further step removed from the underlying
+ formalism of the theory.
+ This greatly complicates the renormalisation procedure, which now requires
+ the solution of non-linear coupled Bethe-Salpeter integral equations in
+ order to find the renormalisation counter-terms.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Any more needed here?
 \end_layout
 
 \end_inset
