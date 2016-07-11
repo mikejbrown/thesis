@@ -1758,6 +1758,350 @@ Proceeding systematically in this manner allows one to extract the leading
 \end_layout
 
 \begin_layout Standard
+Substituting the expressions for bare fields and parameters in terms of
+ the renormalised fields and parameters according to
+\begin_inset Formula 
+\begin{align}
+\left(\phi,\varphi,v\right) & \to Z^{1/2}\left(\phi,\varphi,v\right),\\
+m^{2} & \to Z^{-1}Z_{\Delta}^{-1}\left(m^{2}+\delta m^{2}\right),\\
+\lambda & \to Z^{-2}\left(\lambda+\delta\lambda\right),\\
+\Delta & \to ZZ_{\Delta}\Delta,
+\end{align}
+
+\end_inset
+
+with separate counter-terms 
+\begin_inset Formula $\delta m_{0,1}^{2},\delta\lambda_{0},\delta\lambda_{1,2}^{A,B}$
+\end_inset
+
+ as done before for the Hartree-Fock truncation in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+, with an additional counter-term 
+\begin_inset Formula $\delta\lambda$
+\end_inset
+
+ for the sunset diagram 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmffile}{sunset-diagram}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+Phi_2 = 
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleft{v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfright{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,right=1}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v1,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+ gives the renormalized effective action in momentum space 
+\begin_inset Formula 
+\begin{align}
+\Gamma & =\int_{x}\left(-Z_{\Delta}^{-1}\frac{m^{2}+\delta m_{0}^{2}}{2}v^{2}-\frac{\lambda+\delta\lambda_{0}}{4!}v^{4}\right)+\frac{i\hbar}{2}\left(N-1\right)\mathrm{Tr}\ln\left(\Delta_{G}^{-1}\right)+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(\Delta_{H}^{-1}\right)\nonumber \\
+ & -\frac{i\hbar}{2}\left(N-1\right)\int_{k}\left(-ZZ_{\Delta}k^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\Delta_{G}\left(k\right)\nonumber \\
+ & -\frac{i\hbar}{2}\int_{k}\left(-ZZ_{\Delta}k^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\Delta_{H}\left(k\right)\nonumber \\
+ & +\frac{\hbar^{2}}{24}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\left(N-1\right)\left(\int_{k}\Delta_{G}\left(k\right)\right)^{2}\nonumber \\
+ & +\frac{\hbar^{2}}{24}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\left(\int_{k}\Delta_{H}\left(k\right)\right)^{2}+\frac{\hbar^{2}}{24}2\left(\lambda+\delta\lambda_{2}^{A}\right)Z_{\Delta}^{2}\left(N-1\right)\int_{k}\Delta_{G}\left(k\right)\int_{q}\Delta_{H}\left(q\right)\nonumber \\
+ & +\frac{\hbar^{2}}{4}\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\left(N-1\right)\int_{kl}\Delta_{H}\left(k\right)\Delta_{G}\left(l\right)\Delta_{G}\left(k+l\right)\nonumber \\
+ & +\frac{\hbar^{2}}{12}\left[\left(\lambda+\delta\lambda\right)v\right]^{2}Z_{\Delta}^{3}\int_{kl}\Delta_{H}\left(k\right)\Delta_{H}\left(l\right)\Delta_{H}\left(k+l\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equations of motion following from this are
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1}\left(k\right) & =ZZ_{\Delta}k^{2}-m^{2}-\delta m_{1}^{2}-Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\nonumber \\
+ & -\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\mathcal{T}_{G}\nonumber \\
+ & -\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)Z_{\Delta}^{2}\mathcal{T}_{H}+i\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\mathcal{I}_{HG}\left(k\right),
+\end{align}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align}
+\Delta_{H}^{-1} & =ZZ_{\Delta}k^{2}-m^{2}-\delta m_{1}^{2}-Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\nonumber \\
+ & -\frac{\hbar}{6}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\mathcal{T}_{H}-\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)Z_{\Delta}^{2}\left(N-1\right)\mathcal{T}_{G}\nonumber \\
+ & +\frac{i\hbar}{2}\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\left(N-1\right)\mathcal{I}_{GG}\left(k\right)+\frac{i\hbar}{2}\left[\left(\lambda+\delta\lambda\right)v\right]^{2}Z_{\Delta}^{3}\mathcal{I}_{HH}\left(k\right),
+\end{align}
+
+\end_inset
+
+where the (divergent) integrals are
+\begin_inset Formula 
+\begin{align}
+\mathcal{T}_{G/H} & =i\int_{q}\Delta_{G/H}\left(q\right),\\
+\mathcal{I}_{AB}\left(k\right) & =\int_{q}\Delta_{A}\left(q\right)\Delta_{B}\left(k-q\right),
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $A,B=H,G$
+\end_inset
+
+ in the last equation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{I}_{AB}\left(p\right)$
+\end_inset
+
+ can be rendered finite by a single subtraction 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{I}_{AB}\left(p\right)=\mathcal{I}^{\mu}+\mathcal{I}_{AB}^{\text{fin}}\left(p\right),\label{eq:Ifinng}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{I}^{\mu}=\int_{q}\left[i\Delta^{\mu}\left(q\right)\right]^{2}$
+\end_inset
+
+.
+ Since the propagators are written with the physical masses explicit, it
+ is crucial to also subtract a portion of the finite piece 
+\begin_inset Formula $\mathcal{I}_{HG}^{\text{fin}}\left(m_{G/H}\right)$
+\end_inset
+
+ so that the pole of the propagator is fixed at the physical mass of the
+ Goldstone/Higgs propagator respectively.
+ Making this subtraction separately allows a universal 
+\begin_inset Formula $\mathcal{I}^{\mu}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The tadpole integrals 
+\begin_inset Formula $\mathcal{T}_{G/H}$
+\end_inset
+
+ require two subtractions each since 
+\begin_inset Formula $\int_{q}i\left[\Delta^{\mu}\left(q\right)\right]^{2}\Sigma_{G/H}^{0}\left(q\right)$
+\end_inset
+
+ is logarithmically divergent.
+ To that end we introduce 
+\begin_inset Formula 
+\begin{equation}
+\Sigma^{\mu}\left(q\right)=-i\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\left[\int_{\ell}i\Delta^{\mu}\left(\ell\right)i\Delta^{\mu}\left(q+\ell\right)-\mathcal{I}^{\mu}\right],
+\end{equation}
+
+\end_inset
+
+ which is asymptotically the same as 
+\begin_inset Formula $\Sigma_{G/H}^{0}\left(q\right)$
+\end_inset
+
+, so that 
+\begin_inset Formula $\int_{q}i\left[\Delta^{\mu}\left(q\right)\right]^{2}\left[\Sigma_{G/H}^{0}\left(q\right)-\Sigma^{\mu}\left(q\right)\right]$
+\end_inset
+
+ is finite.
+ For later convenience write
+\begin_inset Formula 
+\begin{equation}
+\int_{q}i\left[\Delta^{\mu}\left(q\right)\right]^{2}\Sigma^{\mu}\left(q\right)=\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}c^{\mu}.
+\end{equation}
+
+\end_inset
+
+Then 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{T}_{G/H}=\mathcal{T}^{\mu}-i\left(m_{G/H}^{2}-\mu^{2}\right)\mathcal{I}^{\mu}+\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}c^{\mu}+\mathcal{T}_{G/H}^{\text{fin}},\label{eq:Tfing}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{T}^{\mu}=\int_{q}i\Delta^{\mu}\left(q\right)$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $\mathcal{T}^{\mu}$
+\end_inset
+
+ and 
+\begin_inset Formula $c^{\mu}$
+\end_inset
+
+ are real and 
+\begin_inset Formula $\mathcal{I}^{\mu}$
+\end_inset
+
+ is imaginary, so that all of the subtractions can be absorbed into real
+ counter-terms.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REDO ALL THIS!! >>>
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The counter-terms are found by eliminating 
+\begin_inset Formula $m_{G/H}^{2}$
+\end_inset
+
+ and demanding that the divergences proportional to different powers of
+ 
+\begin_inset Formula $v^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\text{fin}}$
+\end_inset
+
+ separately vanish.
+ Further renormalisation conditions are the pole conditions 
+\begin_inset Formula $\Delta_{G}^{-1}\left(m_{G}\right)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta_{H}^{-1}\left(m_{H}\right)=0$
+\end_inset
+
+ and that the counter-terms are momentum independent.
+ This gives eight equations for the seven constants 
+\begin_inset Formula $Z,Z_{\Delta},\delta m_{1}^{2},\delta\lambda_{1}^{A},\delta\lambda_{2}^{A},\delta\lambda_{2}^{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\lambda$
+\end_inset
+
+, however one of them is redundant and a solution exists 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+citep{supp}
+\end_layout
+
+\end_inset
+
+.
+ Details of this calculation are included in a Mathematica notebook
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ref
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
 status open
 
