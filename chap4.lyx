@@ -1651,8 +1651,8 @@ key "Patkos2008"
 status collapsed
 
 \begin_layout Plain Layout
-Though note that renormalization group theory shows the true large-momentum
- behavior of the propagators is a power law with an anomalous dimension.
+Though note that renormalisation group theory shows the true large-momentum
+ behaviour of the propagators is a power law with an anomalous dimension.
  This implies that a truncated 
 \begin_inset Formula $n$
 \end_inset
@@ -1752,6 +1752,15 @@ where
 Proceeding systematically in this manner allows one to extract the leading
  order asymptotics of diagrams as 
 \begin_inset Formula $p\to\infty$
+\end_inset
+
+.
+ In the two loop truncation it turns out that 
+\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)=0$
+\end_inset
+
+ so one can simply use a common 
+\begin_inset Formula $\Delta^{\mu}$
 \end_inset
 
 .
@@ -2028,6 +2037,18 @@ where
 
  is imaginary, so that all of the subtractions can be absorbed into real
  counter-terms.
+ By dimensional analysis these can be written in terms of regularisation
+ scheme dependent constants as
+\begin_inset Formula 
+\begin{align}
+\mathcal{T}^{\mu} & =c_{0}\Lambda^{2}+c_{1}\mu^{2}\ln\frac{\Lambda^{2}}{\mu^{2}},\\
+\mathcal{I}^{\mu} & =c_{2}\ln\frac{\Lambda^{2}}{\mu^{2}},\\
+c^{\mu} & =a_{0}\left(\ln\frac{\Lambda^{2}}{\mu^{2}}\right)^{2}+a_{1}\ln\frac{\Lambda^{2}}{\mu^{2}}.
+\end{align}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2099,6 +2120,326 @@ ref
 \end_inset
 
 .
+ After all subtractions the finite equations of motion are
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1}\left(k\right) & =k^{2}-m^{2}-\frac{\lambda}{6}v^{2}-\frac{\hbar}{6}\left(N+1\right)\lambda\mathcal{T}_{G}^{\mathrm{fin}}-\frac{\hbar}{6}\lambda\mathcal{T}_{H}^{\mathrm{fin}}+i\hbar\left(\frac{\lambda v}{3}\right)^{2}\left[\mathcal{I}_{HG}^{\mathrm{fin}}\left(k\right)-\mathcal{I}_{HG}^{\mathrm{fin}}\left(m_{G}\right)\right],
+\end{align}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{align}
+\Delta_{H}^{-1} & =k^{2}-m^{2}-\frac{\lambda}{2}v^{2}-\frac{\hbar}{6}\lambda\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}-\frac{\hbar}{2}\lambda\mathcal{T}_{H}^{\mathrm{fin}}\nonumber \\
+ & +\frac{i\hbar}{2}\left(\frac{\lambda v}{3}\right)^{2}\left(N-1\right)\left[\mathcal{I}_{GG}^{\mathrm{fin}}\left(k\right)-\mathcal{I}_{GG}^{\mathrm{fin}}\left(m_{H}\right)\right]+\frac{i\hbar}{2}\left(\lambda v\right)^{2}\left[\mathcal{I}_{HH}^{\mathrm{fin}}\left(k\right)-\mathcal{I}_{HH}^{\mathrm{fin}}\left(m_{H}\right)\right],
+\end{align}
+
+\end_inset
+
+and, of course, 
+\begin_inset Formula $vm_{G}^{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Note that due to the momentum dependence of the self-energies these equations
+ are significantly more complicated than their Hartree-Fock counter-parts.
+ No analytical solutions of these equations are possible (to the author's
+ knowledge).
+ Numerical solutions have been investigated in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013,Marko2016"
+
+\end_inset
+
+, which have found dramatically differing results using somewhat different
+ methods.
+ These results will be discussed but not reproduced here.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ renormalised using the 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ scheme at zero temperature in four dimensional Euclidean space, then solved
+ the gap equations by an iterative relaxation method in momentum space using
+ a lattice in 
+\begin_inset Formula $\left|k_{E}\right|$
+\end_inset
+
+, using rotational invariance to simplify the numerics, then performing
+ a numerical analytic continuation back to Minkowski space using Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ approximants.
+ They used parameter values relevant to Higgs boson physics, with 
+\begin_inset Formula $m_{H}=125\ \mathrm{GeV}$
+\end_inset
+
+ and 
+\begin_inset Formula $v=246\ \mathrm{GeV}$
+\end_inset
+
+ (though with an unphysical value of 
+\begin_inset Formula $N=2$
+\end_inset
+
+!).
+ The solutions they found were well behaved at all momentum scales included
+ in the calculation and had physically reasonable self-energies, including
+ imaginary parts representing quantitatively accurate decay rates and reaction
+ thresholds for processes such as 
+\begin_inset Formula $H\to GG$
+\end_inset
+
+ and decays of off-shell states such as 
+\begin_inset Formula $G^{\star}\to HG$
+\end_inset
+
+ and 
+\begin_inset Formula $H^{\star}\to HH^{\star}\to HGG$
+\end_inset
+
+.
+ In short, all of the results found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+ indicate that the two loop SI-2PIEA approximation is physically well behaved.
+\end_layout
+
+\begin_layout Standard
+In contrast, 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Marko2016"
+
+\end_inset
+
+ used several different varieties of cutoff regularisation with three different
+ parameter sets (chosen for illustrative, not physical, purposes, and all
+ with 
+\begin_inset Formula $N=2$
+\end_inset
+
+) at zero and finite temperature in 
+\begin_inset Formula $d=4$
+\end_inset
+
+ Euclidean space to argue that, contrary to physical intuition and renormalisati
+on group based experience, the IR behaviour of the SI-2PI propagators is
+ highly sensitive to the UV structure of the regulator used to render the
+ theory finite.
+ The general conclusion of their investigation, not rigorously proven though
+ supported by semi-analytical and numerical arguments, is that for any 
+\begin_inset Quotes eld
+\end_inset
+
+sufficiently smooth
+\begin_inset Quotes erd
+\end_inset
+
+ UV regulator
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Which they define to be any regulator that does not induce an anomalous
+ dimension of the Goldstone propagator in the IR, or in other words any
+ UV regulator which does not directly alter the IR physics.
+\end_layout
+
+\end_inset
+
+, the SI-2PI equations of motion lack a solution in the physical infinite
+ volume limit.
+ Their general argument proceeds in two steps.
+ First: since 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ in the broken phase by construction, 
+\begin_inset Formula $\Delta_{G}\left(k\right)$
+\end_inset
+
+ must have an anomalous behaviour 
+\begin_inset Formula $\sim k^{-2\alpha}$
+\end_inset
+
+ with 
+\begin_inset Formula $\alpha<1$
+\end_inset
+
+ as 
+\begin_inset Formula $k^{2}\to0$
+\end_inset
+
+, otherwise the term 
+\begin_inset Formula $\mathcal{I}_{GG}^{\mathrm{fin}}\left(k\right)$
+\end_inset
+
+ in the Higgs equation of motion diverges in the IR and the only solution
+ is 
+\begin_inset Formula $v=0$
+\end_inset
+
+.
+ Second: if 
+\begin_inset Formula $m_{H}^{2}\neq0$
+\end_inset
+
+ and the UV regulator does not produce an anomalous dimension in 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+, an anomalous dimension in 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+ is incompatible with the Goldstone equation of motion which can be rewritten
+ as
+\begin_inset Formula 
+\begin{equation}
+\Delta_{G}^{-1}\left(k\right)=k^{2}+i\hbar\left(\frac{\lambda v}{3}\right)^{2}\left[\mathcal{I}_{HG}^{\mathrm{fin}}\left(k\right)-\mathcal{I}_{HG}^{\mathrm{fin}}\left(0\right)\right],
+\end{equation}
+
+\end_inset
+
+using 
+\begin_inset Formula $\Delta_{G}^{-1}\left(k=0\right)=m_{G}^{2}=0$
+\end_inset
+
+ to eliminate the constant and 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\mathrm{fin}}$
+\end_inset
+
+ terms.
+ This equation is incompatible with an anomalous dimension because 
+\begin_inset Formula $\mathcal{I}_{HG}^{\mathrm{fin}}\left(k\right)$
+\end_inset
+
+ has a regular (i.e.
+ analytic) dependence on 
+\begin_inset Formula $k$
+\end_inset
+
+ in neighbourhood of zero
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+This follows because the momentum 
+\begin_inset Formula $k$
+\end_inset
+
+ can be routed through the Higgs propagator which is regular in the IR,
+ regardless of the form of 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+ there.
+ This is also the reason for the assumption 
+\begin_inset Formula $m_{H}^{2}=0$
+\end_inset
+
+ in the argument.
+\end_layout
+
+\end_inset
+
+.
+ Hence, in the two loop truncation of the SI-2PIEA 
+\emph on
+either
+\emph default
+ a UV regulator is chosen which produces an anomalous scaling behaviour
+ of 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+ at large distances, in which case the large distance behaviour of the theory
+ is sensitive to the specific UV regulator chosen, 
+\emph on
+or
+\emph default
+ there is no physically reasonable solution for a broken symmetry phase
+ in the infinite volume limit.
+ While 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2016"
+
+\end_inset
+
+ does not directly address the issue, the likely reason these effects are
+ not seen in the analysis of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+ is the latter's use of dimensional regularisation, which 
+\emph on
+does
+\emph default
+ directly alter the IR properties of the theory
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Dimensional regularisation is famous for having problems when the infinite
+ volume limit must be taken carefully since IR divergences automatically
+ vanish in this scheme, see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+This situation is unfortunate, although not necessarily disastrous, since
+ there are situations in which the UV cutoff is physical (e.g.
+ in condensed matter physics) and/or the infinite volume limit is merely
+ an idealisation which may not be strictly required.
+ For example, the universe could be placed in a box with no observable consequen
+ces so long as the box is sufficiently large compared to the Hubble volume.
+ This provides a natural IR regulator which, depending on the parameter
+ values, can allow a physically reasonable solution to exist.
+ The essential message is that the IR and UV sensitivity of solutions of
+ the SI-2PI gap equations should be checked on a case by case basis to establish
+ the plausibility of the results obtained.
 \end_layout
 
 \begin_layout Standard
@@ -2114,16 +2455,7 @@ Counter-terms
 \end_layout
 
 \begin_layout Itemize
-Finite EOMs
-\end_layout
-
-\begin_layout Itemize
-Discuss solution in PT13 vs.
- ...
-\end_layout
-
-\begin_layout Itemize
-Discussion of IR sensitivity and loss of solution
+Anything else...?
 \end_layout
 
 \end_inset
