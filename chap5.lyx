@@ -107,6 +107,14 @@ progress{0}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use in intro???
+\end_layout
+
+\begin_layout Plain Layout
 Quantum field theory is the mathematical language of nature.
  Viewed in this light, much of the last century of theoretical physics can
  be seen as quantum field theory calculations performed in a variety of
@@ -155,24 +163,64 @@ citep{berges_introduction_2004}.
  This work focuses on the latter.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-One of the disadvantages of 
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ introduced 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs as a useful general tool for calculations in QFT which can be extended
+ beyond equilibrium and beyond perturbation theory.
+ However, chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ demonstrated that one of the major disadvantages of 
 \begin_inset Formula $n$
 \end_inset
 
 PIEAs is that finite order truncations of the effective actions generically
  do not respect the symmetry properties one expects from the exact theory.
- This work focuses on the particular scheme devised by Pilaftsis and Teresi
- 
-\backslash
-citep{pilaftsis_symmetry_2013} for improving the symmetry properties of
- 2PIEAs.
- Symmetry improvement enforces 1PI style WIs on the 2PIEA by the use of
- Lagrange multipliers.
- The resulting constraint forces the Goldstone boson correlation functions
- to obey Goldstone's theorem, giving physically correct massless Goldstone
- bosons at all orders and even at finite temperatures below the critical
- temperature of the symmetry breaking phase transition.
+ A particularly promising remedy for this problem is the symmetry improvement
+ formalism introduced by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ for 2PIEAs and reviewed in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ also extended the formalism to the symmetry improvement of 3PIEA and investigat
+ed the properties of this scheme in equilibrium.
+ This chapter focuses on the extension to non-equilibrium problems.
 \end_layout
 
 \begin_layout Standard
@@ -180,22 +228,37 @@ So far symmetry improvement has only been applied to non-gauged scalar field
  theories in equilibrium.
  It restores Goldstone's theorem and produces physically reasonable absorptive
  parts in propagators 
-\backslash
-citep{pilaftsis_symmetry_2013} and has been shown to restore the second
- order phase transition of the 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+ and has been shown to restore the second order phase transition of the
+ 
 \begin_inset Formula $O\left(4\right)$
 \end_inset
 
  linear sigma model in the Hartree-Fock approximation 
-\backslash
-citep{mao_symmetry_2014}.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mao2014"
+
+\end_inset
+
+.
  It has been used to study pion strings evolving in the thermal bath of
  a heavy ion collision 
-\backslash
-citep{lu_pion_2015} (though note that the symmetry improved 2PIEA was only
- used to calculate an equilibrium finite temperature effective potential;
- this work did not constitute what we would call a true non-equilibrium
- calculation using symmetry improved effective actions).
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lu2015"
+
+\end_inset
+
+ (though note that the symmetry improved 2PIEA was only used to calculate
+ an equilibrium finite temperature effective potential; this work did not
+ constitute what a true non-equilibrium calculation using symmetry improved
+ effective actions).
  Symmetry improvement has also been demonstrated to improve the evaluation
  of the effective potential of the standard model by taming the infrared
  divergences of the Higgs sector, treated as an 
@@ -203,22 +266,13 @@ citep{lu_pion_2015} (though note that the symmetry improved 2PIEA was only
 \end_inset
 
  scalar field theory with gauge interactions turned off 
-\backslash
-citep{pilaftsis_symmetry_2015,pilaftsis_symmetry-improved_2015}.
- The symmetry improvement idea can also be extended to 3PIEAs 
-\backslash
-citep{brown_symmetry_2015}, which requires enforcing an additional set of
- WIs for the three point vertex function and the fixing of an ambiguity
- in the constraint procedure.
- During review of this manuscript we became aware of the recent preprint
- 
-\backslash
-citep{marko_loss_2016} which shows that symmetry improved 2PI equations
- of motion can lose solutions even in equilibrium as the result of a truncation
- artifact.
- This loss of solutions is distinct from the one we find below and shows
- that more work is required to understand the domain of applicability of
- symmetry improved effective actions.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2015,Pilaftsis2015a"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -234,47 +288,58 @@ PIEAs in the first place is their ability to handle non-equilibrium situations.
 
 PIEAs give an entirely mechanical way to set up the generic initial value
  problem as a 
-\backslash
-emph{closed} system of integro-differential equations directly for the mean
- fields and low order correlation functions, which are simply related to
- the handful of physical quantities (densities, conserved currents, etc.)
- one is most often interested in.
+\emph on
+closed
+\emph default
+ system of integro-differential equations directly for the mean fields and
+ low order correlation functions, which are simply related to the handful
+ of physical quantities (densities, conserved currents, etc.) one is most
+ often interested in.
  Apart from a truncation to some finite loop order these equations need
  not be subject to any further approximation.
- Hence, apart from the symmetry issue and issues involved in the renormalization
+ Hence, apart from the symmetry issue and issues involved in the renormalisation
  process, 
 \begin_inset Formula $n$
 \end_inset
 
 PIEAs give potentially the most general and accurate framework available
  for the computation of real time properties in quantum field theory.
- Motivated by this, we seek to extend the symmetry improvement technique
- to non-equilibrium situations.
+ Thus an extension of the symmetry improvement technique to non-equilibrium
+ situations is well motivated.
  The ultimate goal of this program would be a tractable and manifestly gauge
  invariant set of equations of motion for highly excited Yang-Mills-Higgs
  theories with chiral fermion matter based on the self-consistently complete
  4PIEA.
- In the meantime we content ourselves with an analysis of the symmetry improved
- 2PIEA for scalar fields in the linear response regime.
+ In the meantime this thesis is restricted to an analysis of the symmetry
+ improved 2PIEA for scalar fields in the linear response regime.
 \end_layout
 
 \begin_layout Standard
-We investigate the linear response approximation rather than a generic non-equil
-ibrium situation for several reasons.
+The linear response approximation is investigated rather than a generic
+ non-equilibrium situation for several reasons.
  First, the linear response approximation is simply far more tractable than
  the general non-equilibrium situation as the response functions only depend
  on the equilibrium properties of the theory.
  Second, linear response is widely applicable in the real world: many systems
- are ``close enough'' to equilibrium for practical purposes.
+ are 
+\begin_inset Quotes eld
+\end_inset
+
+close enough
+\begin_inset Quotes erd
+\end_inset
+
+ to equilibrium for practical purposes.
  Third, the linear response approximation is a nice laboratory to isolate
  the novel features of symmetry improvement constraints in non-equilibrium
  settings.
- Indeed, we can find results that are independent of any truncation of the
- effective action.
- Finally, we expect any physically reasonable formalism to give a well formed
- linear response approximation, though this depends on the assumption that
- the exact behavior is an analytic (or at least not too singular) function
- of the external perturbation within some neighborhood of zero perturbation.
+ Indeed, one can find results that are independent of any truncation of
+ the effective action.
+ Finally, it is expected that any physically reasonable formalism will have
+ a well formed linear response approximation, though this depends on the
+ assumption that the exact behaviour is an analytic (or at least not too
+ singular) function of the external perturbation within some neighbourhood
+ of zero perturbation.
  This is true of all quantum mechanical systems (so long as the Hamiltonian
  remains bounded below), but for field theories the infinite number of degrees
  of freedom may complicate the situation.
@@ -282,54 +347,48 @@ ibrium situation for several reasons.
 
 \begin_layout Standard
 The outline of the remainder of this work is as follows.
- In Section 
-\backslash
-ref{sec:Linear-Response-Theory} we review linear response theory and 2PIEAs.
- Then in Section 
-\backslash
-ref{sec:Symmetry-Improvement} we review the symmetry improvement method,
- re-deriving the WI constraints in the presence of external sources which
- were neglected in previous work.
- In Section 
-\backslash
-ref{sec:Implications-of-Constraints} we derive the consequences of the constrain
-ts for the linear response functions, noting that a careful treatment of
- the constraint procedure requires that not just the WI, but also its derivative
-s, must vanish.
- In Section 
-\backslash
-ref{sec:Discussion} we reach our conclusions about the feasibility of symmetry
- improvement within the linear response approximation and sketch some ideas
- for future work.
- In Appendix 
-\backslash
-ref{sec:The-Alternate-Constraint} we discuss an alternative symmetry improvement
- procedure that relaxes the over-determining WIs, but still leads to difficultie
-s due to the necessity of the derivatives of the constraint to also vanish.
- Finally, Appendix 
-\backslash
-ref{sec:Mechanical-Analogy} includes a mechanical analogy which illustrates
- some of the subtle points about the constraint procedure in a simpler setting.
-\end_layout
+ In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Linear-Response-Theory"
 
-\begin_layout Standard
-Our conventions for a physical quantity 
-\begin_inset Formula $X$
 \end_inset
 
- are to denote its equilibrium value by 
-\begin_inset Formula $\tilde{X}$
+ we review linear response theory and 2PIEAs.
+ In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Mechanical-Analogy-to-constrained-LRT"
+
 \end_inset
 
- and its shift under linear response by 
-\begin_inset Formula $\delta X$
+ a mechanical analogy is used, very similar to the one used to justify the
+ d'Alembert formalism in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
 \end_inset
 
- so that 
-\begin_inset Formula $X=\tilde{X}+\delta X$
+, to illustrate the linear response procedure for constrained systems.
+ In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Symmetry-Improvement-and-LRT"
+
 \end_inset
 
- plus higher order terms.
+ the consequences of the constraints for the linear response functions are
+ derived, noting that a careful treatment of the constraint procedure requires
+ that not just the WI, but also its derivatives, must vanish.
+ Finally the results are discussed and lessons drawn in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:LRT-Discussion"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
@@ -406,24 +465,26 @@ ons on a system initially in equilibrium.
 \begin{align}
 \left\langle \hat{A}\left(t\right)\right\rangle  & =\mathrm{Tr}\left\{ \rho\left(t\right)\hat{A}\left(t\right)\right\} \nonumber \\
  & =\mathrm{Tr}\left\{ U\left(t,t_{0}\right)\rho_{0}U\left(t,t_{0}\right)^{\dagger}\hat{A}\left(t\right)\right\} \nonumber \\
- & =\mathrm{Tr}\left\{ \mathrm{T}\left[\mathrm{e}^{i\int_{t_{0}}^{t}J\left(\tau\right)\hat{B}\left(\tau\right)\mathrm{d}\tau}\right]\rho_{0}\right.\nonumber \\
- & \left.\times\tilde{\mathrm{T}}\left[\mathrm{e}^{-i\int_{t_{0}}^{t}J\left(\tau\right)\hat{B}\left(\tau\right)\mathrm{d}\tau}\right]\hat{A}\left(t\right)\right\} \nonumber \\
- & =\left\langle \tilde{\hat{A}}\left(t\right)\right\rangle +i\int_{t_{0}}^{t}\left\langle \left[\hat{A}\left(t\right),\hat{B}\left(\tau\right)\right]\right\rangle J\left(\tau\right)\mathrm{d}\tau\nonumber \\
- & +\mathcal{O}\left(J^{2}\right),
+ & =\mathrm{Tr}\left\{ \mathrm{T}\left[\mathrm{e}^{i\int_{t_{0}}^{t}J\left(\tau\right)\hat{B}\left(\tau\right)\mathrm{d}\tau}\right]\rho_{0}\tilde{\mathrm{T}}\left[\mathrm{e}^{-i\int_{t_{0}}^{t}J\left(\tau\right)\hat{B}\left(\tau\right)\mathrm{d}\tau}\right]\hat{A}\left(t\right)\right\} \nonumber \\
+ & =\left\langle \tilde{\hat{A}}\left(t\right)\right\rangle +i\int_{t_{0}}^{t}\left\langle \left[\hat{A}\left(t\right),\hat{B}\left(\tau\right)\right]\right\rangle J\left(\tau\right)\mathrm{d}\tau+\mathcal{O}\left(J^{2}\right),
 \end{align}
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $\left\langle \tilde{\hat{A}}\left(t\right)\right\rangle $
 \end_inset
 
  denotes the expected value in the absence of perturbation.
- This leads us to define the response function
-\begin_inset Formula $\chi^{AB}\left(t-\tau\right)=i\left\langle \left[\hat{A}\left(t\right),\hat{B}\left(\tau\right)\right]\right\rangle \Theta\left(t-\tau\right)$
+ This leads to the definition of the response function
+\begin_inset Formula 
+\begin{equation}
+\chi^{AB}\left(t-\tau\right)=i\left\langle \left[\hat{A}\left(t\right),\hat{B}\left(\tau\right)\right]\right\rangle \Theta\left(t-\tau\right),
+\end{equation}
+
 \end_inset
 
- (which only depends on the time difference due to the equilibrium assumption
+(which only depends on the time difference due to the equilibrium assumption
  about 
 \begin_inset Formula $\rho_{0}$
 \end_inset
@@ -436,7 +497,7 @@ ons on a system initially in equilibrium.
 
 \end_inset
 
- (The limits can be pushed to 
+(The limits can be pushed to 
 \begin_inset Formula $\pm\infty$
 \end_inset
 
@@ -459,7 +520,7 @@ ons on a system initially in equilibrium.
 
  of interest.
  The condition for validity of the approximation is that the quadratic term,
- which is 
+ which is
 \begin_inset Formula 
 \begin{equation}
 -\int_{t_{0}}^{t}\int_{t_{0}}^{\tau_{1}}J\left(\tau_{1}\right)J\left(\tau_{2}\right)\left\langle \left[\left[\hat{A}\left(t\right),\hat{B}\left(\tau_{1}\right)\right],\hat{B}\left(\tau_{2}\right)\right]\right\rangle \mathrm{d}\tau_{2}\mathrm{d}\tau_{1},
@@ -467,7 +528,7 @@ ons on a system initially in equilibrium.
 
 \end_inset
 
- is much smaller than the linear term, which occurs for sufficiently small
+is much smaller than the linear term, which occurs for sufficiently small
  sources 
 \begin_inset Formula $J$
 \end_inset
@@ -480,745 +541,16 @@ ons on a system initially in equilibrium.
 \end_layout
 
 \begin_layout Standard
-We now specialize to the scalar 
+Specialising to the scalar 
 \begin_inset Formula $O\left(N\right)$
 \end_inset
 
- field theory defined by the action 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\[
-S\left[\phi\right]=\int_{x}\mathcal{L}\left[\phi\right]=\int_{x}\frac{1}{2}\partial_{\mu}\phi_{a}\partial^{\mu}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2},
-\]
-
-\end_inset
-
- where 
-\begin_inset Formula $a=1,\cdots,N$
-\end_inset
-
- and we choose to operate in the spontaneous symmetry breaking regime with
+ field theory of the previous few chapters, one must consider the 2PIEA
  
-\begin_inset Formula $m^{2}<0$
-\end_inset
-
-.
- The vacuum expectation value 
-\begin_inset Formula $v$
-\end_inset
-
- is given by 
-\begin_inset Formula $v^{2}=-6m^{2}/\lambda$
-\end_inset
-
- and the tree level mass of the radial (``Higgs'') mode is 
-\begin_inset Formula $m_{H}^{2}=\lambda v^{2}/3$
-\end_inset
-
-.
- We take the vacuum expectation value to be in the last component 
-\begin_inset Formula $\varphi_{a}\equiv\left\langle \phi_{a}\right\rangle =\left(0,\cdots,0,v\right)$
-\end_inset
-
-.
- The symmetry transformation is 
-\begin_inset Formula $\delta\phi_{a}=i\epsilon_{A}T_{ab}^{A}\phi_{b}$
-\end_inset
-
- where 
-\begin_inset Formula $T_{ab}^{A}$
-\end_inset
-
- with 
-\begin_inset Formula $A=1,\cdots,N\left(N-1\right)/2$
-\end_inset
-
- are the generators of rotations.
- When we have cause to use specific generators we will write 
-\begin_inset Formula $A=\left(j,k\right)$
-\end_inset
-
- with 
-\begin_inset Formula $j\neq k$
-\end_inset
-
- in 
-\begin_inset Formula $1,\cdots,N$
-\end_inset
-
- to denote the plane of rotation, and have 
-\begin_inset Formula $T_{ab}^{jk}=i\left(\delta_{ja}\delta_{kb}-\delta_{jb}\delta_{ka}\right)$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-Considering this theory in a particle physics context, the most likely external
- perturbations will be linear or quadratic in the fields.
- For example, we could be using this theory to describe mesons coupling
- to hadrons through Yukawa interactions 
-\begin_inset Formula $\sim\phi\bar{\psi}\psi$
-\end_inset
-
-, or Higgs fields coupling to a Yang-Mills sector through (possibly some
- subset of) the conserved currents with terms like 
-\begin_inset Formula $W^{\mu A}\left(i\phi_{a}T_{ab}^{A}\overleftrightarrow{\partial_{\mu}}\phi_{b}\right)$
-\end_inset
-
- and 
-\begin_inset Formula $W^{\mu A}W_{\mu A}\phi_{a}\phi_{a}$
-\end_inset
-
-.
- The theory can also represent an extended Higgs or dark matter sector coupled
- via portal terms to the standard model Higgs with 
-\begin_inset Formula $\sim\phi_{a}\phi_{a}\Phi^{\dagger}\Phi$
-\end_inset
-
-, or coupled to a standard model singlet scalar sector 
-\begin_inset Formula $S$
-\end_inset
-
- through 
-\begin_inset Formula $\sim S\phi\phi$
-\end_inset
-
-.
- Finally the fields could represent a multi-field inflaton, moduli or an
- extended gravitational sector, all of whose interactions to the standard
- model sector will be mediated by terms of the preceding forms to leading
- order in an effective field theory expansion.
- Thus, on very general grounds we expect that the external perturbation
- can be taken as a linear or quadratic function of the fields.
- The only notable exception is the coupling of the field theory to gravity,
- which includes the quartic interaction 
-\begin_inset Formula $\sim\sqrt{-g}\left(\phi_{a}\phi_{a}\right)^{2}$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Plain Layout
-We now consider the notable observables in the theory.
- Chiefly we will be interested in the field expectation values 
-\begin_inset Formula $\varphi_{a}$
-\end_inset
-
-, the conserved 
-\begin_inset Formula $O\left(N\right)$
-\end_inset
-
- currents 
-\begin_inset Formula 
-\[
-j_{\mu}^{A}=i\left\langle \phi_{a}T_{ab}^{A}\overleftrightarrow{\partial_{\mu}}\phi_{b}\right\rangle ,
-\]
-
-\end_inset
-
- and the energy-momentum tensor 
-\begin_inset Formula 
-\begin{align*}
-T_{\mu\nu} & =\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}\vphantom{\left(\frac{1}{2}\right)}\right.\\
- & \left.-\eta_{\mu\nu}\left(\frac{1}{2}\partial_{\rho}\phi_{a}\partial^{\rho}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\right)\right\rangle .
-\end{align*}
-
-\end_inset
-
- Again we see that, apart from the 
-\begin_inset Formula $\left(\phi_{a}\phi_{a}\right)^{2}$
-\end_inset
-
- term in the energy, the observables are also linear or quadratic in the
- fields.
- Note that if desired 
-\begin_inset Formula $\left\langle \left(\phi_{a}\phi_{a}\right)^{2}\right\rangle $
-\end_inset
-
- can be approximated in a mean field approximation by terms of the form
- 
-\begin_inset Formula $\left\langle \phi\phi\right\rangle ^{2}$
-\end_inset
-
-, 
-\begin_inset Formula $\left\langle \phi\phi\right\rangle \left\langle \phi\right\rangle ^{2}$
-\end_inset
-
- and 
-\begin_inset Formula $\left\langle \phi\right\rangle ^{4}$
-\end_inset
-
- plus corrections that can be found diagrammatically.
- This means that many of the local quantities one might want can be determined
- by a method yielding 
-\begin_inset Formula $\varphi_{a}$
-\end_inset
-
- and 
-\begin_inset Formula $i\hbar\Delta_{ab}\equiv\left\langle \mathrm{T}\left[\phi_{a}\phi_{b}\right]\right\rangle -\varphi_{a}\varphi_{b}$
-\end_inset
-
- subject to generic quadratic perturbations of the form 
-\begin_inset Formula $-J_{a}\phi_{a}-\frac{1}{2}K_{ab}\phi_{a}\phi_{b}$
-\end_inset
-
-.
- This problem seems tailor made for the 2PIEA.
-\end_layout
-
-\begin_layout Plain Layout
-The 2PIEA is defined as the double Legendre transform of the connected generatin
-g functional
-\begin_inset Formula 
-\[
-W\left[J,K\right]=-i\hbar\ln Z\left[J,K\right],
-\]
-
-\end_inset
-
- where the partition function is 
-\begin_inset Formula 
-\[
-Z\left[J,K\right]=\int\mathcal{D}\left[\phi\right]\exp\frac{i}{\hbar}\left(S\left[\phi\right]+J_{a}\phi_{a}+\frac{1}{2}\phi_{a}K_{ab}\phi_{b}\right).
-\]
-
-\end_inset
-
- Here 
-\begin_inset Formula $J_{a}$
-\end_inset
-
- and 
-\begin_inset Formula $K_{ab}=K_{ba}$
-\end_inset
-
- are the externally applied sources coupling linearly and quadratically
- to the field respectively.
- Performing the double Legendre transform gives the 2PIEA functional 
-\begin_inset Formula 
-\[
-\Gamma\left[\varphi,\Delta\right]=W-J_{a}\frac{\delta W}{\delta J_{a}}-K_{ab}\frac{\delta W}{\delta K_{ab}},
-\]
-
-\end_inset
-
- where on the right hand side 
-\begin_inset Formula $J_{a}$
-\end_inset
-
- and 
-\begin_inset Formula $K_{ab}$
-\end_inset
-
- are eliminated in terms of 
-\begin_inset Formula $\varphi_{a}$
-\end_inset
-
- and 
-\begin_inset Formula $\Delta_{ab}$
-\end_inset
-
- by inverting 
-\begin_inset Formula 
-\begin{align*}
-\frac{\delta W}{\delta J_{a}} & =\varphi_{a},\\
-\frac{\delta W}{\delta K_{ab}} & =\frac{1}{2}\left(i\hbar\Delta_{ab}+\varphi_{a}\varphi_{b}\right).
-\end{align*}
-
-\end_inset
-
- The equations of motion for 
 \begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
 \end_inset
 
- are then 
-\begin_inset Formula 
-\begin{align*}
-\frac{\delta\Gamma}{\delta\varphi_{a}} & =-J_{a}-K_{ab}\varphi_{b},\\
-\frac{\delta\Gamma}{\delta\Delta_{ab}} & =-\frac{1}{2}i\hbar K_{ab}.
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-The result of performing the Legendre transform is the expression 
-\begin_inset Formula 
-\[
-\Gamma\left[\varphi,\Delta\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(\Delta^{-1}\right)+\frac{i\hbar}{2}\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta\right)+\Gamma_{2}\left[\varphi,\Delta\right],
-\]
-
-\end_inset
-
- where the free propagator is 
-\backslash
-begin{align} 
-\backslash
-Delta_{0ab}^{-1}
-\backslash
-left(x,y
-\backslash
-right)&=
-\backslash
-frac{
-\backslash
-delta S}{
-\backslash
-delta
-\backslash
-phi_{a}
-\backslash
-left(x
-\backslash
-right)
-\backslash
-delta
-\backslash
-phi_{b}
-\backslash
-left(y
-\backslash
-right)}
-\backslash
-left[
-\backslash
-varphi
-\backslash
-right]
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & =
-\backslash
-left[
-\backslash
-left(-
-\backslash
-square_{x}-m^{2}-
-\backslash
-frac{
-\backslash
-lambda}{6}
-\backslash
-varphi_{c}
-\backslash
-varphi^{c}
-\backslash
-right)
-\backslash
-delta_{ab}-
-\backslash
-frac{
-\backslash
-lambda}{3}
-\backslash
-varphi_{a}
-\backslash
-varphi_{b}
-\backslash
-right] 
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & 
-\backslash
-times
-\backslash
-delta
-\backslash
-left(x-y
-\backslash
-right), 
-\backslash
-end{align} and $
-\backslash
-Gamma_{2}
-\backslash
-left[
-\backslash
-varphi,
-\backslash
-Delta
-\backslash
-right]$ is the sum of all two particle irreducible vacuum Feynman diagrams
- with propagators $
-\backslash
-Delta$ and vertices obtained from the cubic and quartic parts of the shifted
- action $S
-\backslash
-left[
-\backslash
-phi+
-\backslash
-varphi
-\backslash
-right]$.
- The equation of motion for $
-\backslash
-Delta$ (in the absence of sources) is simply the Dyson equation: 
-\backslash
-begin{equation} 
-\backslash
-Delta^{-1}=
-\backslash
-Delta_{0}^{-1}-
-\backslash
-Sigma,
-\backslash
-label{eq:dyson-eq} 
-\backslash
-end{equation} where the self-energy is 
-\backslash
-begin{align} 
-\backslash
-Sigma_{ab}
-\backslash
-left(x,y
-\backslash
-right) & =
-\backslash
-frac{2i}{
-\backslash
-hbar}
-\backslash
-frac{
-\backslash
-delta
-\backslash
-Gamma_{2}}{
-\backslash
-delta
-\backslash
-Delta_{ab}
-\backslash
-left(x,y
-\backslash
-right)}
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & =i
-\backslash
-hbar
-\backslash
-frac{
-\backslash
-lambda}{6}
-\backslash
-left[
-\backslash
-delta_{ab}
-\backslash
-Delta_{cc}
-\backslash
-left(x,x
-\backslash
-right)+2
-\backslash
-Delta_{ab}
-\backslash
-left(x,x
-\backslash
-right)
-\backslash
-right]
-\backslash
-delta
-\backslash
-left(x-y
-\backslash
-right)
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & +i
-\backslash
-frac{
-\backslash
-hbar}{2}
-\backslash
-int_{rsuv}V_{acd}
-\backslash
-left(x,r,s
-\backslash
-right)V_{bef}
-\backslash
-left(y,u,v
-\backslash
-right) 
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & 
-\backslash
-times 
-\backslash
-Delta_{ce}
-\backslash
-left(r,u
-\backslash
-right)
-\backslash
-Delta_{df}
-\backslash
-left(s,v
-\backslash
-right) +
-\backslash
-mathcal{O}
-\backslash
-left(
-\backslash
-hbar^{2}
-\backslash
-right), 
-\backslash
-end{align} where the second line is the expansion to one loop order and
- we have introduced the three point vertex function 
-\backslash
-begin{align} V_{abc}
-\backslash
-left(x,y,z
-\backslash
-right)&=-
-\backslash
-frac{
-\backslash
-lambda}{3}
-\backslash
-left[
-\backslash
-delta_{ab}
-\backslash
-varphi_{c}
-\backslash
-left(x
-\backslash
-right)+
-\backslash
-delta_{ca}
-\backslash
-varphi_{b}
-\backslash
-left(x
-\backslash
-right)+
-\backslash
-delta_{bc}
-\backslash
-varphi_{a}
-\backslash
-left(x
-\backslash
-right)
-\backslash
-right]
-\backslash
-nonumber 
-\backslash
-
-\backslash
- & 
-\backslash
-times 
-\backslash
-delta
-\backslash
-left(x-y
-\backslash
-right)
-\backslash
-delta
-\backslash
-left(x-z
-\backslash
-right) 
-\backslash
-end{align} for convenience.
- The 
-\backslash
-emph{Hartree-Fock} approximation is obtained by retaining only the $O
-\backslash
-left(
-\backslash
-lambda
-\backslash
-right)$ term in $
-\backslash
-Sigma$.
- Note that none of our results actually require any truncation of $
-\backslash
-Sigma$.
-\end_layout
-
-\begin_layout Plain Layout
-For the equilibrium solution we make the spontaneous symmetry breaking ansatz
- 
-\backslash
-begin{align} 
-\backslash
-tilde{
-\backslash
-varphi}_{a} & =v
-\backslash
-delta_{aN},
-\backslash
-label{eq:eq-ssb-ansatz-vev}
-\backslash
-
-\backslash
- 
-\backslash
-tilde{
-\backslash
-Delta}_{ab}
-\backslash
-left(x,y
-\backslash
-right) & =
-\backslash
-begin{cases} 
-\backslash
-Delta_{G}
-\backslash
-left(x,y
-\backslash
-right), & a=b
-\backslash
-neq N,
-\backslash
-
-\backslash
- 
-\backslash
-Delta_{H}
-\backslash
-left(x,y
-\backslash
-right), & a=b=N,
-\backslash
-
-\backslash
- 0, & 
-\backslash
-text{otherwise}, 
-\backslash
-end{cases}
-\backslash
-label{eq:eq-ssb-ansatz-delta} 
-\backslash
-end{align} where $
-\backslash
-Delta_{G/H}$ are the Goldstone/Higgs propagators respectively.
- We define the masses $m_{G/H}^{2}$ from the corresponding exact propagators.
- The free propagator is 
-\backslash
-begin{eqnarray} 
-\backslash
-Delta_{0ab}^{-1}
-\backslash
-left(x,y
-\backslash
-right) & = & -
-\backslash
-left(
-\backslash
-square_{x}
-\backslash
-delta_{ab}+m_{ab}^{2}
-\backslash
-right)
-\backslash
-delta
-\backslash
-left(x-y
-\backslash
-right),
-\backslash
-
-\backslash
- m_{ab}^{2} & = & 
-\backslash
-begin{cases} m^{2}+
-\backslash
-frac{
-\backslash
-lambda v^{2}}{6}, & a=b
-\backslash
-neq N,
-\backslash
-
-\backslash
- m^{2}+
-\backslash
-frac{
-\backslash
-lambda v^{2}}{6}+
-\backslash
-frac{
-\backslash
-lambda v^{2}}{3}, & a=b=N,
-\backslash
-
-\backslash
- 0, & 
-\backslash
-text{otherwise}, 
-\backslash
-end{cases} 
-\backslash
-end{eqnarray} so that $m_{G}^{2}=m^{2}+
-\backslash
-lambda v^{2}/6$ and $m_{H}^{2}=m_{G}^{2}+
-\backslash
-lambda v^{2}/3$ to lowest order.
- However, truncations of the vev equation of motion $
-\backslash
-delta
-\backslash
-Gamma/
-\backslash
-delta v=0$ 
-\backslash
-emph{do not} generically obey $v=-6m^{2}/
-\backslash
-lambda$ so that $m_{G}^{2}
-\backslash
-neq0$.
- Symmetry improvement replaces the vev equation of motion by the constraint
- $vm_{G}^{2}=0$ so that Goldstone's theorem is exactly satisfied whenever
- $v
-\backslash
-neq0$.
- The value of $v$ is then determined by the self-consistent solution of
- (
-\backslash
-ref{eq:dyson-eq}).
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To connect this formalism to linear response theory we must expand 
+ which can be connected to the linear response theory by expanding 
 \begin_inset Formula $\varphi\to\tilde{\varphi}+\delta\varphi$
 \end_inset
 
@@ -1234,12 +566,12 @@ To connect this formalism to linear response theory we must expand
 \begin_inset Formula $\tilde{\Delta}$
 \end_inset
 
- in (
-\backslash
-ref{eq:unmodified-vev-eom})-(
-\backslash
-ref{eq:unmodified-Delta-eom}) and match terms order by order in the sources,
- treating the responses 
+ determined by 
+\begin_inset Formula $\left(\delta\Gamma/\delta\varphi\right)_{\varphi=\tilde{\varphi},\Delta=\tilde{\Delta}}=\left(\delta\Gamma/\delta\Delta\right)_{\varphi=\tilde{\varphi},\Delta=\tilde{\Delta}}=0$
+\end_inset
+
+ and matching terms order by order in the sources, treating the responses
+ 
 \begin_inset Formula $\delta\varphi$
 \end_inset
 
@@ -1248,12 +580,9 @@ ref{eq:unmodified-Delta-eom}) and match terms order by order in the sources,
 \end_inset
 
  as first order, as typical of a perturbation theory analysis.
- At lowest order we find (
-\backslash
-ref{eq:unmodified-vev-eom})-(
-\backslash
-ref{eq:unmodified-Delta-eom}) with no sources for the equilibrium solutions
- and at first order we find 
+ At lowest order one finds the usual 2PI equations of motion with no sources
+ for the equilibrium solutions and at first order one finds equations of
+ motion for the perturbations: 
 \begin_inset Formula 
 \begin{align}
 \frac{\delta^{2}\Gamma}{\delta\varphi_{b}\delta\varphi_{a}}\delta\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\Delta_{bc}\delta\varphi_{a}}\delta\Delta_{bc} & =-J_{a}-K_{ab}\tilde{\varphi}_{b},\\
@@ -1262,7 +591,7 @@ ref{eq:unmodified-Delta-eom}) with no sources for the equilibrium solutions
 
 \end_inset
 
- where all derivatives on the left hand sides are evaluated at the equilibrium
+where all derivatives on the left hand sides are evaluated at the equilibrium
  values.
  It is possible to eliminate the fluctuations from these equations by introducin
 g the linear response functions 
@@ -1290,7 +619,7 @@ g the linear response functions
 
 \end_inset
 
- and demanding that the resulting equations hold for any value of the sources
+and demanding that the resulting equations hold for any value of the sources
  
 \begin_inset Formula $J$
 \end_inset
@@ -1311,7 +640,7 @@ g the linear response functions
 
 \end_inset
 
- where note that in the last two equations we have to symmetrize the right
+where note that in the last two equations we have to symmetrise the right
  hand sides before removing the source 
 \begin_inset Formula $K$
 \end_inset
@@ -1329,13 +658,11 @@ g the linear response functions
 \begin_inset Formula $\chi^{\Delta K}$
 \end_inset
 
- by using (
-\backslash
-ref{eq:2piea}) and (
-\backslash
-ref{eq:dyson-eq}) to write the left hand side of (
-\backslash
-ref{eq:unmodified-Delta-eom}) as
+ by using 
+\begin_inset Formula $\Delta^{-1}=\Delta_{0}^{-1}-\Sigma+K$
+\end_inset
+
+ to write
 \begin_inset Formula 
 \begin{align}
 -\Delta_{ab}^{-1}+\Delta_{0ab}^{-1}\left[\varphi\right]-\Sigma_{ab}\left[\varphi,\Delta\right] & =-\Delta_{ab}^{-1}+\left(\Delta_{0ab}^{-1}\left[\varphi\right]-\Delta_{0ab}^{-1}\left[\tilde{\varphi}\right]\right)\nonumber \\
@@ -1353,8 +680,8 @@ then using the identity
 
 \end_inset
 
- and the definitions of the linear response functions followed by some rearrange
-ment to give
+and the definitions of the linear response functions followed by some rearrangem
+ent to give
 \begin_inset Formula 
 \begin{align}
 \chi_{abef}^{\Delta K} & =-\tilde{\Delta}_{ac}\left(\delta_{ce}\delta_{df}+\delta_{cf}\delta_{de}\right)\tilde{\Delta}_{db}\nonumber \\
@@ -1364,7 +691,7 @@ ment to give
 
 \end_inset
 
- This is an equation which determines the four point kernel 
+This is an equation which determines the four point kernel 
 \begin_inset Formula $\chi^{\Delta K}$
 \end_inset
 
@@ -1375,14 +702,14 @@ eter kernel.
 
 \begin_layout Standard
 While this is the general formalism connecting effective actions to linear
- response theory, we do not need to use it because symmetry improvement
- constraints change the picture significantly.
- In particular, we can derive the implications of the constraints for linear
+ response theory, it is not actually required in this chapter because symmetry
+ improvement constraints change the picture significantly.
+ In particular, one can derive the implications of the constraints for linear
  response theory without explicitly computing any equilibrium solutions,
  taking any derivatives of the effective action, performing any truncation
  of the self-energies, or worrying about renormalization of the Bethe-Salpeter
  equation.
- Our results are independent of all of these details.
+ The results given here are independent of all of these details.
 \end_layout
 
 \begin_layout Section
@@ -1408,12 +735,19 @@ name "sec:Mechanical-Analogy-to-constrained-LRT"
 \end_layout
 
 \begin_layout Standard
-Here we investigate a very simple mechanical system which illustrates several
- of the unusual features of the constraint procedure and linear response
- formulation we have used.
- It shows: (a) why the Lagrange multiplier diverges, (b) why constraints
- must be imposed in the linear response approximation to begin with, (c)
- why secondary constraints arise.
+Here follows a brief discussion of a very simple mechanical system which
+ illustrates several of the unusual features of the constraint procedure
+ and linear response formulation which will be used.
+ The chief unusual feature is that the variables being perturbed are constrained
+ by symmetry improvement, so a 
+\emph on
+constrained
+\emph default
+ linear response formalism is required.
+ This mechanical example shows how this can be done and, in particular (a)
+ why the Lagrange multiplier diverges, (b) why constraints must be imposed
+ in the linear response approximation to begin with, (c) why secondary constrain
+ts arise.
  Consider a unit mass classical particle constrained to move without friction
  on a circular hoop of radius 
 \begin_inset Formula $r$
@@ -1433,7 +767,7 @@ W & =\frac{1}{4}\left(x^{2}+y^{2}-r^{2}\right)^{2},
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $\lambda$
 \end_inset
 
@@ -1453,7 +787,7 @@ W & =\frac{1}{4}\left(x^{2}+y^{2}-r^{2}\right)^{2},
 
 \end_inset
 
- We now consider the source free case 
+Now consider the source free case 
 \begin_inset Formula $j_{x}=j_{y}=0$
 \end_inset
 
@@ -1494,7 +828,7 @@ W & =\frac{1}{4}\left(x^{2}+y^{2}-r^{2}\right)^{2},
 
 \end_inset
 
- with the solutions 
+with the solutions 
 \begin_inset Formula 
 \begin{align}
 x & =r\cos\left[\omega\left(t-t_{0}\right)\right],\\
@@ -1503,7 +837,7 @@ y & =r\sin\left[\omega\left(t-t_{0}\right)\right],
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $t_{0}$
 \end_inset
 
@@ -1512,7 +846,7 @@ y & =r\sin\left[\omega\left(t-t_{0}\right)\right],
 \end_inset
 
  are determined by the initial conditions.
- We take as the static solution 
+ For simplicity the equilibrium solution is chosen as 
 \begin_inset Formula $x=r$
 \end_inset
 
@@ -1528,11 +862,11 @@ y & =r\sin\left[\omega\left(t-t_{0}\right)\right],
 \begin_inset Formula $t_{0}=0$
 \end_inset
 
-.
+ (without loss of generality).
 \end_layout
 
 \begin_layout Standard
-Now we turn on the sources 
+Now turn on the sources 
 \begin_inset Formula $j_{x}$
 \end_inset
 
@@ -1561,7 +895,7 @@ Now we turn on the sources
 
 \end_inset
 
- regardless of the behavior of 
+regardless of the behavior of 
 \begin_inset Formula $\delta x$
 \end_inset
 
@@ -1585,7 +919,7 @@ Now we turn on the sources
 
 \end_inset
 
- where we introduce the radial force 
+where the radial force is defined as 
 \begin_inset Formula $\mathbf{F}^{\mathrm{rad}}=-\left[\delta\lambda\eta+\tilde{\lambda}2\left(\tilde{x}\delta x+\tilde{y}\delta y\right)\right]\left(\tilde{x},\tilde{y}\right)$
 \end_inset
 
@@ -1607,7 +941,7 @@ Now notice the terms proportional to
 \begin_inset Formula $\tilde{\lambda}\to\infty$
 \end_inset
 
- we must have 
+ one must have 
 \begin_inset Formula $\tilde{x}\delta x+\tilde{y}\delta y\to0$
 \end_inset
 
@@ -1619,7 +953,7 @@ Now notice the terms proportional to
 
  is required to fully enforce that the response be tangential to the constraint
  surface.
- We also note that by examining the 
+ Also note that by examining the 
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
@@ -1629,7 +963,7 @@ Now notice the terms proportional to
 \end_layout
 
 \begin_layout Standard
-Applying the static solution we find 
+Applying the equilibrium solution one find 
 \begin_inset Formula $\mathbf{F}^{\mathrm{rad}}=-\left[\delta\lambda\eta+\tilde{\lambda}2r\delta x\right]\left(r,0\right)$
 \end_inset
 
@@ -1663,7 +997,7 @@ Applying the static solution we find
 
 \end_inset
 
- with the solution (taking into account the initial conditions 
+with the solution (taking into account the initial conditions 
 \begin_inset Formula $\delta y_{0}=\delta\dot{y}_{0}=0$
 \end_inset
 
@@ -1679,7 +1013,7 @@ Applying the static solution we find
 \end_layout
 
 \begin_layout Standard
-Now we can compare this to the exact solution.
+Now compare this to the exact solution.
  Substituting the ansatz 
 \begin_inset Formula $x=r\cos\theta\left(t\right)$
 \end_inset
@@ -1697,7 +1031,7 @@ L & =\frac{1}{2}r^{2}\dot{\theta}^{2}+j_{x}r\cos\theta+j_{y}r\sin\theta,\\
 
 \end_inset
 
- where 
+where 
 \begin_inset Formula $j_{\theta}=-j_{x}\sin\theta+j_{y}\cos\theta$
 \end_inset
 
@@ -1714,7 +1048,7 @@ L & =\frac{1}{2}r^{2}\dot{\theta}^{2}+j_{x}r\cos\theta+j_{y}r\sin\theta,\\
 
 \end_inset
 
- To linear order in 
+To linear order in 
 \begin_inset Formula $j_{\theta}$
 \end_inset
 
@@ -1735,7 +1069,7 @@ y & =r\sin\theta=\int_{0}^{t}\left(t-\tau\right)j_{\theta}\left(\tau\right)\math
 
 \end_inset
 
- which, on putting 
+which, on putting 
 \begin_inset Formula $j_{\theta}=j_{y}+\mathcal{O}\left(j_{x,y}^{2}\right)$
 \end_inset
 
@@ -1747,12 +1081,12 @@ y & =\int_{0}^{t}\left(t-\tau\right)j_{y}\left(\tau\right)\mathrm{d}\tau,
 
 \end_inset
 
- which is just the solution obtained previously.
+which is just the solution obtained previously.
 \end_layout
 
 \begin_layout Standard
-If in contrast we never imposed the constraints on the linear response solution
- we would have the equations of motion 
+If in contrast one never imposed the constraints on the linear response
+ solution one would obtain the equations of motion 
 \begin_inset Formula 
 \begin{align}
 \delta\ddot{x} & =j_{x},\\
@@ -1761,7 +1095,7 @@ If in contrast we never imposed the constraints on the linear response solution
 
 \end_inset
 
- with the solutions
+with the solutions
 \begin_inset Formula 
 \begin{align}
 \delta x & =\int_{0}^{t}\left(t-\tau\right)j_{x}\left(\tau\right)\mathrm{d}\tau,\\
@@ -1770,7 +1104,7 @@ If in contrast we never imposed the constraints on the linear response solution
 
 \end_inset
 
- The 
+The 
 \begin_inset Formula $\delta y$
 \end_inset
 
