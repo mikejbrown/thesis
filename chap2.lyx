@@ -124,10 +124,6 @@ TODO:
 \end_layout
 
 \begin_layout Itemize
-Discussion of renormalisation anywhere?
-\end_layout
-
-\begin_layout Itemize
 Ian's comments
 \end_layout
 
@@ -136,13 +132,21 @@ Ian's comments
 
 \end_layout
 
+\begin_layout Section
+Synopsis
+\end_layout
+
 \begin_layout Standard
 This chapter introduces the 
 \begin_inset Formula $n$
 \end_inset
 
--particle irreducible effective actions in the context of non-equilibrium
- quantum field theory and discusses their general properties.
+-particle irreducible effective actions (
+\begin_inset Formula $n$
+\end_inset
+
+PIEA) in the context of non-equilibrium quantum field theory and discusses
+ their general properties.
  The general material in this chapter is largely based on the reviews by
  Berges 
 \begin_inset CommandInset citation
@@ -216,7 +220,7 @@ key "Jona-Lasinio1964"
 \begin_inset Formula $Z\left[J\right]$
 \end_inset
 
-, closely related to the partition function describe above.
+, closely related to the partition function described above.
  
 \begin_inset Formula $Z\left[J\right]$
 \end_inset
@@ -315,14 +319,36 @@ reference "eq:transition-amplitude-generating-functional"
  to a quantity usually called the partition function:
 \begin_inset Formula 
 \begin{equation}
-Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\mathcal{L}\left(\phi\right)+J\left(x\right)\phi\left(x\right)\right)\right],\label{eq:partition-function-for-1PIEA}
+Z\left[J\right]=\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(S\left[\phi\right]+\int_{x}J\left(x\right)\phi\left(x\right)\right)\right],\label{eq:partition-function-for-1PIEA}
 \end{equation}
 
 \end_inset
 
-with the only difference being that the time contour and boundary conditions
- of the functional integral are hidden in the notation and can be re-interpreted
- as needed.
+where
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi\right]=\int_{x}\mathcal{L}\left(\phi\right),
+\end{equation}
+
+\end_inset
+
+is the classical action.
+ The only difference between 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:partition-function-for-1PIEA"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:transition-amplitude-generating-functional"
+
+\end_inset
+
+ is that the time contour and boundary conditions of the functional integral
+ are hidden in the notation and can be re-interpreted as needed.
  Then, the sought after generalisation of 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -427,13 +453,13 @@ contact terms
  This ansatz can be physically motivated but always involves some degree
  of arbitrariness and often leads to the violation of some physical principle
  such as time reversal invariance or gauge invariance.
- In contrast, while higher 
+ In contrast, while the higher 
 \begin_inset Formula $n$
 \end_inset
 
-PIEA provide a superficially very similar framework (a hierarchy of equations
- of motion connecting correlation functions of different order), the equations
- of motion resulting from 
+PIEA discussed later provide a superficially very similar framework (a hierarchy
+ of equations of motion connecting correlation functions of different order),
+ the equations of motion resulting from 
 \begin_inset Formula $n$
 \end_inset
 
@@ -681,7 +707,7 @@ contains many disconnected diagrams, i.e.
 status open
 
 \begin_layout Plain Layout
-It can be found in many quantum field theory books, e.g.
+It can be found in many quantum field theory books, see e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -750,7 +776,7 @@ so that, at leading order in interactions,
 \begin_inset Formula 
 \begin{eqnarray}
 G_{C}^{\left(2\right)}\left(x,y\right) & = & \hbar^{2}\Delta_{0}\left(x,y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right),\\
-G_{C}^{1}\left(x\right) & = & G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n}\right)=0+\mathcal{O}\left(V_{\mathrm{int}}\right).
+G_{C}^{\left(1\right)}\left(x\right) & = & G_{C}^{\left(n\geq3\right)}\left(x_{1},\cdots,x_{n}\right)=0+\mathcal{O}\left(V_{\mathrm{int}}\right).
 \end{eqnarray}
 
 \end_inset
@@ -2267,7 +2293,7 @@ loops
 \end_inset
 
  can be extended from planar graphs to all graphs by using the same formula.
- Thus, in the semi-classical expansion powers of 
+ Thus, in the semi-classical expansion, powers of 
 \begin_inset Formula $\hbar$
 \end_inset
 
@@ -2591,7 +2617,7 @@ If a linear term is present, it can be removed by shifting
 \end_inset
 
 .
- Without loss of generality 
+ The couplings 
 \begin_inset Formula $m_{ab}^{2}$
 \end_inset
 
@@ -2603,7 +2629,12 @@ If a linear term is present, it can be removed by shifting
 \begin_inset Formula $\lambda_{abcd}$
 \end_inset
 
- are totally symmetric under permutations of indices.
+ can always be taken to be totally symmetric under permutations of indices
+ since the 
+\begin_inset Formula $\phi_{a}$
+\end_inset
+
+s commute.
  There are 
 \begin_inset Formula $N\left(N+1\right)/2$
 \end_inset
@@ -2648,12 +2679,21 @@ If a linear term is present, it can be removed by shifting
  One has the bare propagator
 \begin_inset Formula 
 \begin{equation}
-\Delta_{0ab}^{-1}\left[\varphi\right]=\left.\frac{\delta^{2}S}{\delta\phi_{a}\delta\phi_{b}}\right|_{\phi=\varphi}=-\left(\square\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}\right),
+\Delta_{0ab}^{-1}\left[\varphi\right]\left(x,y\right)=\left.\frac{\delta^{2}S}{\delta\phi_{a}\left(x\right)\delta\phi_{b}\left(y\right)}\right|_{\phi=\varphi}=-\left(\square_{x}\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}\left(x\right)+\frac{1}{2}\lambda_{abcd}\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)\right)\delta\left(x-y\right),
 \end{equation}
 
 \end_inset
 
-and the effective interaction Lagrangian
+and the effective interaction Lagrangian (i.e.
+ the cubic and quartic part of 
+\begin_inset Formula $S$
+\end_inset
+
+ after shifting the field ala 
+\begin_inset Formula $\phi=\phi_{\mathrm{cl.}}+\hbar^{1/2}\tilde{\phi}$
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
@@ -3290,7 +3330,7 @@ Notice the following phenomenon: a loopwise truncation of the 2PIEA is not
 \end_inset
 
  removes a propagator and therefore opens up a loop.
- This behaviour is holds also in higher 
+ This behaviour holds also in higher 
 \begin_inset Formula $n$
 \end_inset
 
@@ -3463,13 +3503,13 @@ Z^{\left(n\right)}\left[J,K^{\left(2\right)},\cdots,K^{\left(n\right)}\right] & 
 \end_inset
 
 and generating function 
-\begin_inset Formula $W^{\left(n\right)}=-i\hbar\ln Z$
+\begin_inset Formula $W^{\left(n\right)}=-i\hbar\ln Z^{\left(n\right)}$
 \end_inset
 
 , and perform the multiple Legendre transform
 \begin_inset Formula 
 \begin{equation}
-\Gamma^{\left(n\right)}\left[\varphi,\Delta,V,\cdots,V^{\left(n\right)}\right]=W^{\left(n\right)}-J\frac{\delta W^{\left(n\right)}}{\delta J}-K^{\left(2\right)}\frac{\delta W^{\left(n\right)}}{\delta K^{\left(2\right)}}-\cdots-K^{\left(n\right)}\frac{\delta W^{\left(n\right)}}{\delta K^{\left(n\right)}},
+\Gamma^{\left(n\right)}\left[\varphi,\Delta,V,\cdots,V^{\left(n\right)}\right]=W^{\left(n\right)}-J\frac{\delta W^{\left(n\right)}}{\delta J}-K^{\left(2\right)}\frac{\delta W^{\left(n\right)}}{\delta K^{\left(2\right)}}-\cdots-K^{\left(n\right)}\frac{\delta W^{\left(n\right)}}{\delta K^{\left(n\right)}},\label{eq:nPIEA-legendre-transform-def}
 \end{equation}
 
 \end_inset
@@ -3511,7 +3551,7 @@ where the sources
 \begin_inset Formula $V$
 \end_inset
 
-s to the correlation functions can be worked out using the skeleton expansion
+'s to the correlation functions can be worked out using the skeleton expansion
  so that, e.g.,
 \begin_inset Formula 
 \begin{align}
@@ -3540,7 +3580,7 @@ and similar results for the higher order
 \begin_inset Formula $V$
 \end_inset
 
-s.
+'s.
  The 
 \begin_inset Formula $n$
 \end_inset
@@ -3629,7 +3669,7 @@ which can be further simplified using the fact that, by definition of the
 
 where the second line comes from the definitions of the diagrams and the
  third line is from the source term in 
-\begin_inset Formula $\Gamma\left[\varphi,\Delta,V\right]$
+\begin_inset Formula $\Gamma^{\left(3\right)}\left[\varphi,\Delta,V\right]$
 \end_inset
 
 .
@@ -3655,7 +3695,7 @@ where the second line comes from the definitions of the diagrams and the
 \begin_inset Formula $\tilde{V}$
 \end_inset
 
-s in the 
+'s in the 
 \begin_inset Formula $\mathcal{O}\left(\hbar^{3}\right)$
 \end_inset
 
@@ -3663,7 +3703,7 @@ s in the
 \begin_inset Formula $V$
 \end_inset
 
-s.
+'s.
  Then one has
 \begin_inset Formula 
 \begin{align}
@@ -3738,7 +3778,14 @@ s are now the variational function
 \end_inset
 
 .
- The 3PI equations of motion are
+ From 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:nPIEA-legendre-transform-def"
+
+\end_inset
+
+ the 3PI equations of motion are
 \begin_inset Formula 
 \begin{eqnarray}
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & = & -J_{a}-K_{ab}^{\left(2\right)}\varphi_{b}-\frac{1}{2}K_{abc}^{\left(3\right)}\left(i\hbar\Delta_{bc}+\varphi_{b}\varphi_{c}\right),\\
@@ -3749,7 +3796,14 @@ s are now the variational function
 
 \end_inset
 
-where the left hand sides are
+while from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:3piea"
+
+\end_inset
+
+ the left hand sides are
 \end_layout
 
 \begin_layout Standard
@@ -3930,6 +3984,10 @@ name "sec:Analytic-properties-of-2PIEA-and-resummation"
 
 \end_layout
 
+\begin_layout Subsection
+2PIEA as a resummation scheme
+\end_layout
+
 \begin_layout Standard
 One of the advantages of 
 \begin_inset Formula $n$
@@ -3946,7 +4004,7 @@ k approximation.
  The propagator equation of motion reads
 \begin_inset Formula 
 \begin{equation}
-\Delta_{ab}^{-1}=-\left(\square\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}+\frac{1}{2}\lambda_{abcd}\varphi_{c}\varphi_{d}+\frac{i\hbar}{2}\lambda_{abcd}\Delta_{cd}\right).\label{eq:2piea-hartree-fock}
+\Delta_{ab}^{-1}\left(x,y\right)=-\left(\square_{x}\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}\left(x\right)+\frac{1}{2}\lambda_{abcd}\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)+\frac{i\hbar}{2}\lambda_{abcd}\Delta_{cd}\left(x,x\right)\right)\delta\left(x-y\right).\label{eq:2piea-hartree-fock}
 \end{equation}
 
 \end_inset
@@ -4134,7 +4192,7 @@ which is what is obtained by iterating the 2PI equation once and ignoring
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-M_{a}^{2}=M_{a}^{2}\left(\mathrm{1PI}\right)+\frac{\hbar^{2}}{1024\pi^{4}}\sum_{cd}\lambda_{ac}\lambda_{cd}\left[1+\ln\left(\frac{\mu_{c}^{2}}{\mu^{2}}\right)\right]\mu_{d}^{2}\ln\left(\frac{\mu_{d}^{2}}{\mu^{2}}\right)+\mathcal{O}\left(\hbar^{3}\right).
+M_{a}^{2}=M_{a}^{2}\left(\mathrm{1PI}\right)+\frac{\hbar^{2}}{1024\pi^{4}}\sum_{cd}\left\{ \lambda_{ac}\lambda_{cd}\left[1+\ln\left(\frac{\mu_{c}^{2}}{\mu^{2}}\right)\right]\mu_{d}^{2}\ln\left(\frac{\mu_{d}^{2}}{\mu^{2}}\right)\right\} +\mathcal{O}\left(\hbar^{3}\right).
 \end{equation}
 
 \end_inset
@@ -5026,7 +5084,7 @@ status open
 
 \end_inset
 
- approximated Bore transform has poles in the Borel plane, which lead to
+ approximated Borel transform has poles in the Borel plane, which lead to
  branch cuts when the Laplace transform is taken to return to physical variables.
  Similarly, the self-consistent 2PI approximations develop branch point
  non-analyticities and approximate the exact Green function rather well
@@ -6525,7 +6583,7 @@ P_{M}^{N}\left(x\right)=\frac{\sum_{n=0}^{N}A_{n}x^{n}}{\sum_{n=0}^{M}B_{n}x^{n}
 
 \end_inset
 
-where without loss of generality one takes 
+where, without loss of generality, one takes 
 \begin_inset Formula $B_{0}=1$
 \end_inset
 
@@ -6810,6 +6868,10 @@ status open
 
  approximants to 
 \begin_inset Formula $\bar{G}$
+\end_inset
+
+ with 
+\begin_inset Formula $m=1$
 \end_inset
 
 .
@@ -7197,6 +7259,11 @@ status open
 
  consist of an increasingly dense set of delta functions.
  (Note the delta functions have been smoothed for visual purposes only.)
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -7423,6 +7490,11 @@ reference "eq:borel-sum"
 \end_inset
 
 .
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -7477,6 +7549,11 @@ status open
 
  (ratio of approximant / exact).
  Note that the (2,2) approximant is off scale.
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -7791,7 +7868,7 @@ reference "fig:sigma-2pi-2loop"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7987,7 +8064,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8015,6 +8092,11 @@ Comparison of (the real part of) the exact Green function
 
  to each of the approximations discussed to first non-trivial order in each
  case.
+ 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset

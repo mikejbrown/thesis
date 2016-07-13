@@ -97,12 +97,16 @@ status open
 
 
 \backslash
-progress{0}
+progress{30}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Synopsis
 \end_layout
 
 \begin_layout Standard

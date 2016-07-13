@@ -131,6 +131,10 @@ Outline of thesis & summary
 \end_layout
 
 \begin_layout Section
+Synopsis
+\end_layout
+
+\begin_layout Section
 Background and motivation
 \end_layout
 
@@ -335,7 +339,7 @@ Commutators at unequal times must be found by evolving the field with its
  equations of motion.
  For a free field this can be done exactly.
  The free field Hamiltonian is quadratic in fields and momenta, exactly
- analogous to QM harmonic oscillator:
+ analogous to the QM harmonic oscillator:
 \begin_inset Formula 
 \begin{equation}
 \hat{H}_{0}=\int_{\boldsymbol{x}}\frac{1}{2}\hat{\pi}^{2}+\frac{1}{2}\left(\nabla\hat{\phi}\right)^{2}+\frac{1}{2}m^{2}\hat{\phi}^{2}.
@@ -1355,7 +1359,7 @@ formalism
 \begin_inset Formula $\exp\left(-\beta\hat{H}\right)$
 \end_inset
 
- is formally imaginary time evolution 
+ is formally an imaginary time evolution operator 
 \begin_inset Formula $\exp\left(-i\hat{H}t/\hbar\right)$
 \end_inset
 
@@ -1386,6 +1390,7 @@ Wick rotates
 \begin{eqnarray}
 Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\nonumber \\
  & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\nonumber \\
+ & = & \int\mathcal{D}\left[a\right]\int_{\phi\left(t=0\right)=a}^{\phi\left(t=-i\hbar\beta\right)=a}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
  & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
  & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right)
 \end{eqnarray}
@@ -1774,11 +1779,11 @@ where
 
 \end_inset
 
-but for 
+but, for 
 \begin_inset Formula $t_{2}<t_{1}$
 \end_inset
 
- by an 
+, an 
 \emph on
 anti-time ordered
 \emph default
@@ -2048,7 +2053,7 @@ Hamiltonian
 \begin_inset Formula $\tau$
 \end_inset
 
- independent 
+-independent 
 \begin_inset Formula $\hat{H}_{M}$
 \end_inset
 
@@ -2090,7 +2095,7 @@ defining
 \end_inset
 
 where the second line specialises to field theory and extends the path integral
- and Lagrangian to all branches of the controur.
+ and Lagrangian to all branches of the contour.
  The imaginary branch of the contour is called the 
 \emph on
 Matsubara
@@ -2887,7 +2892,7 @@ key "Stefanucci2013"
 \end_inset
 
 where 
-\begin_inset Formula $\square_{x}=\frac{\partial}{\partial x^{\mu}}\frac{\partial}{\partial x_{\mu}}$
+\begin_inset Formula $\square_{x}=\partial_{\mu}^{\left(x\right)}\partial^{\left(x\right)\mu}$
 \end_inset
 
  and the self energy function 
@@ -3044,7 +3049,7 @@ where
 \begin_inset Formula $T_{ab}^{A}=-T_{ba}^{A}$
 \end_inset
 
- is a generator of rotations which has been expanded in a basis of the 
+ is a generator of rotations which has been written in a basis of the 
 \begin_inset Formula $A=1,\cdots,N\left(N-1\right)/2$
 \end_inset
 

@@ -133,22 +133,6 @@ stub
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pagenumbering{arabic}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -178,8 +162,8 @@ List of Publications
 \end_layout
 
 \begin_layout Standard
-This thesis is largely based on work published by the author in the following
- peer reviewed journal articles:
+This thesis is largely based on work published by the author (M.J.
+ Brown) in the following peer reviewed journal articles:
 \end_layout
 
 \begin_layout Itemize
@@ -216,6 +200,20 @@ key "Brown2015a"
 ,
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Statement of author contributions:
+\emph default
+ The authors jointly developed the research question.
+ All initial calculations, figures and the first draft of the manuscript
+ were produced by Brown.
+ The manuscript was revised with checking of results and editorial input
+ from Whittingham.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 M.
  Brown and I.
@@ -249,6 +247,20 @@ key "Brown2015"
 ,
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Statement of author contributions:
+\emph default
+ The authors jointly developed the research question.
+ All initial calculations, figures and the first draft of the manuscript
+ were produced by Brown.
+ The manuscript was revised with checking of results and editorial input
+ from Whittingham.
+\end_layout
+
+\end_deeper
 \begin_layout Itemize
 M.J.
  Brown, I.
@@ -285,6 +297,20 @@ key "Brown_2016"
 ,
 \end_layout
 
+\begin_deeper
+\begin_layout Standard
+
+\emph on
+Statement of author contributions:
+\emph default
+ The authors jointly developed the research question.
+ All initial calculations and the first draft of the manuscript were produced
+ by Brown.
+ The manuscript was revised with checking of results and editorial input
+ from Whittingham and Kosov.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 and the following preprints:
 \end_layout
@@ -332,6 +358,22 @@ UPDATE!!!!!
 \begin_inset CommandInset include
 LatexCommand include
 filename "notation.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
 
 \end_inset
 

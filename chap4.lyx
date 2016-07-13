@@ -97,12 +97,16 @@ status open
 
 
 \backslash
-progress{0}
+progress{30}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Synopsis
 \end_layout
 
 \begin_layout Standard
@@ -2848,7 +2852,7 @@ reference "eq:si3pi-barV-eom"
 \end_layout
 
 \begin_layout Standard
-Now we investigate the Goldstone propagator.
+Now consider the Goldstone propagator.
  Substituting 
 \begin_inset Formula $\Gamma^{\left(3\right)}$
 \end_inset
@@ -3460,8 +3464,7 @@ name "sec:Renormalisation-of-the-SI-3PIEA"
 \end_layout
 
 \begin_layout Standard
-Here we undertake a general description of the renormalisation problem at
- zero temperature.
+Here is a general description of the renormalisation problem at zero temperature.
  Detailed considerations follow in Sections 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -4577,8 +4580,7 @@ In fewer than four dimensions
  is finite and every correction to the tree level value is asymptotically
  sub-dominant.
  Thus the leading term at large momentum is the tree level term and, instead
- of the full auxiliary vertex as we have defined it, one can simply take
- 
+ of the full auxiliary vertex as defined above, one can simply take 
 \begin_inset Formula $V_{abc}^{\mu}=V_{0abc}$
 \end_inset
 
@@ -6616,12 +6618,6 @@ citep{Apo}, though that study was carried out without the gauge sector.
  
 \backslash
 emph{ad hoc} resummation scheme proposed in the prior literature.
- This is heartening, though not wholly surprising due to the inherent self-consi
-stency of 
-\begin_inset Formula $n$
-\end_inset
-
-PIEA, a topic we plan to discuss in a forthcoming publication.
 \end_layout
 
 \end_inset
