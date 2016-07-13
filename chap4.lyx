@@ -129,81 +129,19 @@ PIEA, showing that the solutions of truncated
 \end_inset
 
 PI equations of motion do not obey the 1PI Ward identities.
- The violation of the 1PI WIs can also be understood in terms of the resummation
- of perturbative Feynman diagrams: when an 
-\begin_inset Formula $n$
-\end_inset
-
-PIEA is truncated some subset of perturbative diagrams are summed to infinite
- order, but the complementary subset is left out entirely.
- The pattern of resummations does not guarantee that the cancellations between
- perturbative diagrams needed to maintain the symmetry are kept.
- In the case of scalar field theories with 
-\begin_inset Formula $\mathrm{O}\left(N\right)\to\mathrm{O}\left(N-1\right)$
-\end_inset
-
- breaking, the result is that the final 
-\begin_inset Formula $\mathrm{O}\left(N-1\right)$
-\end_inset
-
- symmetry is maintained, but, at the Hartree-Fock level of approximation,
- the nonlinearly realised 
-\begin_inset Formula $\mathrm{O}\left(N\right)/\mathrm{O}\left(N-1\right)$
-\end_inset
-
- is lost, the Goldstone theorem is violated (the 
-\begin_inset Formula $N-1$
-\end_inset
-
- Goldstone bosons are massive), and the symmetry restoration phase transition
- is first order in contradiction with the second order transition expected
- on the basis of universality arguments.
- A similar problem arises in gauge theories, where the violation of gauge
- invariance in the 
-\begin_inset Formula $l$
-\end_inset
-
--loop truncation is due to the missing 
-\begin_inset Formula $\left(l+1\right)$
-\end_inset
-
--loop diagrams (see, e.g.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "York2012,York2014"
-
-\end_inset
-
- for a discussion of the gauge fixing problem).
-\end_layout
-
-\begin_layout Standard
-Several studies have attempted to find a remedy for this problem.
- These are discussed in 
+ Several studies have attempted to find a remedy for this problem (see,
+ e.g., 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Pilaftsis2013"
 
 \end_inset
 
- and references therein.
- The last chapter discussed a technique frequently advocated in the literature
- (see e.g.
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "VanHees2002,Berges2005,Carrington2009"
-
-\end_inset
-
-): the so called 
-\emph on
-external propagator
-\emph default
- defined as the second functional derivative of a resummed effective action
- which depends only on the mean field, obtained by eliminating the 2- through
- 
+ and references therein).
+ The last chapter discussed the external propagator, which has been frequently
+ used in the literature, defined as the second functional derivative of
+ a resummed effective action which depends only on the mean field, obtained
+ by eliminating the 2- through 
 \begin_inset Formula $n$
 \end_inset
 
@@ -219,6 +157,17 @@ PIEA by their equations of motion.
  to incorrect thresholds, decay rates and violations of unitarity.
  In order to avoid these problems a manifestly self-consistent scheme must
  be used.
+ The large 
+\begin_inset Formula $N$
+\end_inset
+
+ approximation was also briefly reviewed.
+ The Goldstone theorem and second order phase transition do hold to leading
+ order in the large 
+\begin_inset Formula $N$
+\end_inset
+
+ approximation, but these attractive features are lost at higher orders.
 \end_layout
 
 \begin_layout Standard
@@ -268,7 +217,7 @@ The motivation for extending symmetry improvement to the 3PIEA is threefold.
 \begin_inset Formula $n$
 \end_inset
 
-PIEA with
+PIEA with 
 \begin_inset Formula $n\geq3$
 \end_inset
 
@@ -296,7 +245,7 @@ Second,
 \begin_inset Formula $n$
 \end_inset
 
-PIEA allows one to accurately describe the initial value problem with 1-
+PIEAs allow one to accurately describe the initial value problem with 1-
  to 
 \begin_inset Formula $n$
 \end_inset
@@ -488,11 +437,11 @@ reference "eq:1PI-Delta-WI"
 The second follows the author's previous paper 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "brown_symmetry_2015"
+key "Brown2015a"
 
 \end_inset
 
- by included a transverse projector 
+ by including a transverse projector 
 \begin_inset Formula $P_{ab}^{\perp}\left(x\right)=\delta_{ab}-\varphi_{a}\left(x\right)\varphi_{b}\left(x\right)/\varphi^{2}\left(x\right)$
 \end_inset
 
@@ -788,10 +737,9 @@ To recap the procedure: first define a symmetry improved effective action
  are applied.
  Third, regulate the singularity by slightly violating the constraint.
  Fourth, pass to a suitable limit where violation of the constraint tends
- to zero.
- Requiring the limiting procedure to be universal in the sense that no additiona
-l data (arbitrary forms of the Lagrange multiplier fields) need be introduced
- into the theory.
+ to zero while requiring the limiting procedure to be universal in the sense
+ that no additional data (arbitrary forms of the Lagrange multiplier fields)
+ need be introduced into the theory.
 \end_layout
 
 \begin_layout Section
@@ -950,8 +898,14 @@ which is actually identical to the expressions for the counter-terms in
 
 PIEA, since the nonlinearity of the equations of motion results in a coupling
  of scales.
- Furthermore, the next section will show that the SI-3PIEA truncated to
- two loops is 
+ Furthermore, section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:SI-3PIEA"
+
+\end_inset
+
+ shows that the SI-3PIEA truncated to two loops is 
 \emph on
 not
 \emph default
@@ -1985,7 +1939,7 @@ The tadpole integrals
 \end_inset
 
  is logarithmically divergent.
- To that end we introduce 
+ To that end introduce 
 \begin_inset Formula 
 \begin{equation}
 \Sigma^{\mu}\left(q\right)=-i\hbar\left[\frac{\left(\lambda+\delta\lambda\right)v}{3}\right]^{2}Z_{\Delta}^{3}\left[\int_{\ell}i\Delta^{\mu}\left(\ell\right)i\Delta^{\mu}\left(q+\ell\right)-\mathcal{I}^{\mu}\right],
@@ -3139,7 +3093,7 @@ constraint force
 
 \begin_layout Standard
 d'Alembert's principle is empirically verifiable for a given mechanical
- system, but for us it forms part of the 
+ system, but for here it forms part of the 
 \emph on
 definition
 \emph default
@@ -3423,7 +3377,7 @@ where the
  This is a holonomic constraint: in principle one could substitute this
  into the effective action directly and not worry about Lagrange multipliers
  at all (this is very messy analytically, though it may be numerically feasible).
- In the d'Alembert formalism, then, one restrict variations of 
+ In the d'Alembert formalism, then, one restricts variations of 
 \begin_inset Formula $\Delta_{H}^{-1}$
 \end_inset
 
@@ -3666,7 +3620,7 @@ reference "sec:The-Two-Loop-Solution"
 \begin_inset Formula $V\left(p_{1},p_{2},p_{3}\right)=\lambda vf\left(\frac{p_{1}}{v},\frac{p_{2}}{v},\frac{p_{3}}{v}\right)$
 \end_inset
 
- where
+ where 
 \begin_inset Formula $p_{1}+p_{2}+p_{3}=0$
 \end_inset
 
@@ -3711,7 +3665,7 @@ reference "eq:3pi-vertex-eom-rhs"
 
 \end_inset
 
-,
+, 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:3pi-vertex-eom-lhs"
@@ -4634,7 +4588,7 @@ In fewer than four dimensions
 \begin_inset Formula $\Phi_{5}$
 \end_inset
 
--generated self-energy in
+-generated self-energy in 
 \begin_inset Formula $<1+3$
 \end_inset
 
@@ -4701,12 +4655,12 @@ The counter-terms for
 
  dimensions are derived following essentially the same procedure used several
  times now already.
- Details are given in 
+ Details are given in Appendix 
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-Appendix 
+
 \backslash
 ref{sec:Deriving-Counter-terms-for-3-loops}
 \end_layout
@@ -4740,10 +4694,9 @@ ref{sec:Deriving-Counter-terms-for-3-loops}
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{align}
-\Delta_{G}^{-1} & =-\left(\partial_{\mu}\partial^{\mu}+m^{2}+\frac{\lambda}{6}v^{2}\right)\nonumber \\
- & -\left[\Sigma_{G}^{0}\left(p\right)-\Sigma_{G}^{0}\left(m_{G}\right)\right],\label{eq:three-loop-geom-finite}
-\end{align}
+\begin{equation}
+\Delta_{G}^{-1}=-\left(\partial_{\mu}\partial^{\mu}+m^{2}+\frac{\lambda}{6}v^{2}\right)-\left[\Sigma_{G}^{0}\left(p\right)-\Sigma_{G}^{0}\left(m_{G}\right)\right],\label{eq:three-loop-geom-finite}
+\end{equation}
 
 \end_inset
 
@@ -4753,8 +4706,7 @@ for the Goldstone propagator,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\bar{V} & =-\frac{\lambda v}{3}\nonumber \\
- & +i\hbar\left[V_{N}\left(\bar{V}\right)^{2}\left(\Delta_{H}\right)^{2}\Delta_{G}+\left(\bar{V}\right)^{3}\Delta_{H}\left(\Delta_{G}\right)^{2}\right]\nonumber \\
+\bar{V} & =-\frac{\lambda v}{3}+i\hbar\left[V_{N}\left(\bar{V}\right)^{2}\left(\Delta_{H}\right)^{2}\Delta_{G}+\left(\bar{V}\right)^{3}\Delta_{H}\left(\Delta_{G}\right)^{2}\right]\nonumber \\
  & +\frac{i\hbar\lambda}{6}\left[V_{N}\left(\Delta_{H}\right)^{2}+\left(N+1\right)\bar{V}\left(\Delta_{G}\right)^{2}+4\bar{V}\Delta_{G}\Delta_{H}\right],\label{eq:three-loop-Vbar-eom-finite}
 \end{align}
 
@@ -4766,8 +4718,7 @@ for the Higgs-Goldstone-Goldstone vertex, and
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-V_{N} & =-\lambda v\nonumber \\
- & +i\hbar\left[\left(N-1\right)\left(\bar{V}\right)^{3}\left(\Delta_{G}\right)^{3}+\left(V_{N}\right)^{3}\left(\Delta_{H}\right)^{3}\right]\nonumber \\
+V_{N} & =-\lambda v+i\hbar\left[\left(N-1\right)\left(\bar{V}\right)^{3}\left(\Delta_{G}\right)^{3}+\left(V_{N}\right)^{3}\left(\Delta_{H}\right)^{3}\right]\nonumber \\
  & +\frac{i\hbar\lambda}{2}\left[\left(N-1\right)\bar{V}\Delta_{G}\Delta_{G}+3V_{N}\left(\Delta_{H}\right)^{2}\right],\label{eq:three-loop-V_N-eom-finite}
 \end{align}
 
@@ -4798,6 +4749,16 @@ where the BBALL integral is
 status open
 
 \begin_layout Plain Layout
+DO THIS!!!!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Figure 
 \backslash
 ref{fig:two-loop-self-energy-graphs}
@@ -4808,10 +4769,9 @@ ref{fig:two-loop-self-energy-graphs}
 .
  Finally, the Higgs equation of motion is
 \begin_inset Formula 
-\begin{align}
-\Delta_{H}^{-1}\left(p\right) & =\left(m_{G}^{2}+\Sigma_{G}^{0}\left(m_{H}\right)-m_{H}^{2}\right)\nonumber \\
- & \times\frac{\bar{V}\left(p,-p,0\right)}{\bar{V}\left(m_{H},-m_{H},0\right)}+\Delta_{G}^{-1}\left(p\right).\label{eq:three-loop-Higgs-eom-finite}
-\end{align}
+\begin{equation}
+\Delta_{H}^{-1}\left(p\right)=\left(m_{G}^{2}+\Sigma_{G}^{0}\left(m_{H}\right)-m_{H}^{2}\right)\frac{\bar{V}\left(p,-p,0\right)}{\bar{V}\left(m_{H},-m_{H},0\right)}+\Delta_{G}^{-1}\left(p\right).\label{eq:three-loop-Higgs-eom-finite}
+\end{equation}
 
 \end_inset
 
@@ -4964,7 +4924,7 @@ where
 \end_inset
 
 .
- Note that the undetermined constant
+ Note that the undetermined constant 
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
@@ -5070,15 +5030,10 @@ key "Jones"
 \end_layout
 
 \begin_layout Standard
-Figure
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- 
-\backslash
-ref{fig:hartree-fock-vev-comparison}
-\end_layout
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-vev-comparison"
 
 \end_inset
 
@@ -5110,14 +5065,9 @@ e than the unimproved 2PIEA in that the strength of the first order phase
  at a temperature much closer to the critical temperature than for the unimprove
 d 2PIEA.
  Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:hartree-fock-mn-comparison}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-mn-comparison"
 
 \end_inset
 
@@ -5129,14 +5079,9 @@ ref{fig:hartree-fock-mn-comparison}
  The same phase transition behaviour is seen again, and again all three
  methods agree in the symmetric phase, giving the usual thermal mass effect.
  Finally, Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:hartree-fock-mg-comparison}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-mg-comparison"
 
 \end_inset
 
@@ -5153,116 +5098,187 @@ ref{fig:hartree-fock-mg-comparison}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
 
 \begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
 
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{vev-comparison} 
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:hartree-fock-vev-comparison}Expectation value of the scalar field
- $v=
-\backslash
-left
-\backslash
-langle 
-\backslash
-phi
-\backslash
-right
-\backslash
-rangle $ as a function of temperature $T$ computed in the Hartree-Fock approxima
-tion using the unimproved 2PIEA (solid black), the Pilaftsis and Teresi
- symmetry improved 2PIEA (dash dotted blue) and our symmetry improved 3PIEA
- (solid green).
+
+\begin_inset Graphics
+	filename images/ch4/vev-comparison.eps
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hartree-fock-vev-comparison"
+
+\end_inset
+
+Expectation value of the scalar field 
+\begin_inset Formula $v=\left\langle \phi\right\rangle $
+\end_inset
+
+ as a function of temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
+ black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
+ and our symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
- The vertical grey line at $T
-\backslash
-approx131.5
-\backslash
- 
-\backslash
-mathrm{MeV}$ corresponds to the critical temperature which is the same in
- all methods.} 
-\backslash
-end{figure}
+ The vertical grey line at 
+\begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
+\end_inset
+
+ corresponds to the critical temperature which is the same in all methods.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ch4/higgs-mass-comparison.eps
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{higgs-mass-comparison}
-\end_layout
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hartree-fock-mn-comparison"
 
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:hartree-fock-mn-comparison}The Higgs mass $m_{H}$ as a function
- of temperature $T$ computed in the Hartree-Fock approximation using the
- unimproved 2PIEA (solid black), the Pilaftsis and Teresi symmetry improved
- 2PIEA (dash dotted blue) and our symmetry improved 3PIEA (solid green).
+\end_inset
+
+The Higgs mass 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ as a function of temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
+ black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
+ and our symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
- The vertical grey line at $T
-\backslash
-approx131.5
-\backslash
- 
-\backslash
-mathrm{MeV}$ corresponds to the critical temperature which is the same in
- all methods.} 
-\backslash
-end{figure}
+ The vertical grey line at 
+\begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
+\end_inset
+
+ corresponds to the critical temperature which is the same in all methods.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/ch4/goldstone-mass-comparison.eps
+	width 100col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{goldstone-mass-comparison}
-\end_layout
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:hartree-fock-mg-comparison"
 
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:hartree-fock-mg-comparison}The Goldstone mass $m_{G}$ as a function
- of temperature $T$ computed in the Hartree-Fock approximation using the
- unimproved 2PIEA (solid black), the Pilaftsis and Teresi symmetry improved
- 2PIEA (dash dotted blue) and our symmetry improved 3PIEA (solid green).
+\end_inset
+
+The Goldstone mass 
+\begin_inset Formula $m_{G}$
+\end_inset
+
+ as a function of temperature 
+\begin_inset Formula $T$
+\end_inset
+
+ computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
+ black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
+ and our symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
- The vertical grey line at $T
-\backslash
-approx131.5
-\backslash
- 
-\backslash
-mathrm{MeV}$ corresponds to the critical temperature which is the same in
- all methods.} 
-\backslash
-end{figure}
+ The vertical grey line at 
+\begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
+\end_inset
+
+ corresponds to the critical temperature which is the same in all methods.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5293,13 +5309,23 @@ name "sec:SI-3PIEA-Two-dimensions-and-CMW-Thm"
 \end_layout
 
 \begin_layout Standard
-Recall that the Coleman-Mermin-Wagner theorem 
-\backslash
-citep{coleman1973}, which has been interpreted as a breakdown of the Goldstone
- theorem 
-\backslash
-citep{Shifman2012}, is a general result stating that the spontaneous breaking
- of a continuous symmetry is impossible in 
+The Coleman-Mermin-Wagner theorem 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Coleman1973a"
+
+\end_inset
+
+, which has been interpreted as a breakdown of the Goldstone theorem (e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shifman2012"
+
+\end_inset
+
+), is a general result stating that the spontaneous breaking of a continuous
+ symmetry is impossible in 
 \begin_inset Formula $d=2$
 \end_inset
 
@@ -5310,13 +5336,15 @@ citep{Shifman2012}, is a general result stating that the spontaneous breaking
  dimensions.
  This occurs due to the infrared divergence of the massless scalar propagator
  in two dimensions.
- We show that the symmetry improved gap equations satisfy this theorem despite
- the direct imposition of Goldstone's theorem.
- Thus symmetry improvement passes another test that any robust quantum field
- theoretical method must satisfy.
+ The symmetry improved gap equations satisfy this theorem despite the direct
+ imposition of Goldstone's theorem.
+ Thus symmetry improvement passes a test that any robust quantum field theoretic
+al method must satisfy.
  (Note that symmetry improvement is not 
-\backslash
-emph{required} to obtain consistency of 
+\emph on
+required
+\emph default
+ to obtain consistency of 
 \begin_inset Formula $n$
 \end_inset
 
@@ -5332,20 +5360,13 @@ The general statement of the result is that
 \begin_inset Formula $d=2$
 \end_inset
 
-, thus, by 
-\backslash
-eqref{eq:dyson-eq} and 
-\backslash
-eqref{eq:w1-WI-1} 
+, thus, by the Dyson equation and Goldstone theorem 
 \begin_inset Formula $v=0$
 \end_inset
 
  and a mass gap is generated.
- We will show this explicitly using the Hartree-Fock gap equations 
-\backslash
-eqref{eq:mg2-hartree-gap-eq}-
-\backslash
-eqref{eq:goldstone-theorem-hartree-gap-eq}, where in two dimensions 
+ This can be shown explicitly using the Hartree-Fock gap equations where,
+ in two dimensions, 
 \begin_inset Formula 
 \begin{equation}
 \mathcal{T}_{a}^{\text{vac}}\left(\overline{\text{MS}}\right)=-\frac{1}{4\pi}\ln\left(\frac{m_{a}^{2}}{\mu^{2}}\right).
@@ -5353,13 +5374,13 @@ eqref{eq:goldstone-theorem-hartree-gap-eq}, where in two dimensions
 
 \end_inset
 
- (Note that the renormalization can be carried through without difficulty
+(Note that the renormalisation can be carried through without difficulty
  in two dimensions.
  Only the 
 \begin_inset Formula $\delta m_{1}^{2}$
 \end_inset
 
- counter-term is needed.) We must show that the gap equations possess no
+ counter-term is needed.) One must show that the gap equations possess no
  solution for 
 \begin_inset Formula $m_{G}^{2}=0$
 \end_inset
@@ -5377,15 +5398,15 @@ eqref{eq:goldstone-theorem-hartree-gap-eq}, where in two dimensions
 \begin_inset Formula $m_{G}^{2}\to0$
 \end_inset
 
- if we take 
+ if 
 \begin_inset Formula $\mu$
 \end_inset
 
- as a constant, and 
+ is taken as a constant, and 
 \begin_inset Formula $\mathcal{T}_{H}^{\text{vac}}$
 \end_inset
 
- diverges if we take 
+ diverges if one takes 
 \begin_inset Formula $\mu^{2}\propto m_{G}^{2}$
 \end_inset
 
@@ -5395,7 +5416,7 @@ eqref{eq:goldstone-theorem-hartree-gap-eq}, where in two dimensions
 
 .
  Either way there is no solution.
- At finite temperature the Bose-Einstein integral
+ At finite temperature the Bose-Einstein integral 
 \begin_inset Formula $\mathcal{T}_{a}^{\text{th}}$
 \end_inset
 
@@ -5420,12 +5441,12 @@ m_{H}^{2}=m_{G}^{2}=m^{2}-\frac{1}{4\pi}\frac{\hbar}{6}\left(N+2\right)\lambda\l
 
 \end_inset
 
- which always has a positive solution.
+which always has a positive solution.
  If 
 \begin_inset Formula $m^{2}>0$
 \end_inset
 
- then one can choose the renormalization point 
+ then one can choose the renormalisation point 
 \begin_inset Formula $\mu^{2}=m_{G}^{2}$
 \end_inset
 
@@ -5438,12 +5459,12 @@ m_{H}^{2}=m_{G}^{2}=m^{2}-\frac{1}{4\pi}\frac{\hbar}{6}\left(N+2\right)\lambda\l
 \begin_inset Formula $m^{2}<0$
 \end_inset
 
- a positive mass is dynamically generated and one requires a renormalization
+ a positive mass is dynamically generated and one requires a renormalisation
  point 
 \begin_inset Formula $\mu^{2}>m_{G}^{2}\exp\left(\frac{24\pi\left|m^{2}\right|}{\hbar\left(N+2\right)\lambda}\right)$
 \end_inset
 
- non-perturbatively large in the ratio 
+ nonperturbatively large in the ratio 
 \begin_inset Formula $\lambda/\left|m^{2}\right|$
 \end_inset
 
@@ -5474,13 +5495,13 @@ name "sec:SI-3PIEA-Optical-theorem-and-dispersion-relations"
 \end_layout
 
 \begin_layout Standard
-In this section we examine the analytic structure of propagators and self-energi
-es in the symmetry improved 3PI formalism.
+In this section the analytic structure of propagators and self-energies
+ is studied in the symmetry improved 3PI formalism.
  A physical quantity of particular interest is the decay width 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
- of the Higgs, which is dominated by decays to two Goldstones.
+ of the Higgs, which is dominated by decays to two Goldstone bosons.
  
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
@@ -5488,8 +5509,13 @@ es in the symmetry improved 3PI formalism.
  is given by the optical theorem in terms of the imaginary part of the self-ener
 gy evaluated on-shell (see, e.g.
  
-\backslash
-citep{Peskin1995} Chapter 7): 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995"
+
+\end_inset
+
+ Chapter 7): 
 \begin_inset Formula 
 \begin{equation}
 -m_{H}\Gamma_{H}=\mathrm{Im}\Sigma_{H}\left(m_{H}\right).
@@ -5497,7 +5523,7 @@ citep{Peskin1995} Chapter 7):
 
 \end_inset
 
- (This is valid so long as 
+(This is valid so long as 
 \begin_inset Formula $\Gamma_{H}\ll m_{H}$
 \end_inset
 
@@ -5514,11 +5540,21 @@ citep{Peskin1995} Chapter 7):
 
 \end_inset
 
- which comes entirely from the Goldstone loop sunset graph.
+which comes entirely from the Goldstone loop sunset graph.
  Each part of this expression has a simple interpretation in relation to
- the tree level decay graph (Figure 
+ the tree level decay graph 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(Figure 
 \backslash
-ref{fig:tree-level-higgs-decay}).
+ref{fig:tree-level-higgs-decay})
+\end_layout
+
+\end_inset
+
+.
  The 
 \begin_inset Formula $N-1$
 \end_inset
@@ -5553,9 +5589,14 @@ The Hartree-Fock approximation fails to reproduce this result regardless
  still appears in loops.
  Satisfactory results are obtained within the symmetry improved 2PI formalism
  for both on- and off-shell Higgs 
-\backslash
-citep{Pilaftsis2013}.
- Here we show that the symmetry improved 3PIEA can not yield a satisfactory
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+ (so long as the two loop solutions exist).
+ Here it is shown that the symmetry improved 3PIEA can not yield a satisfactory
  value for 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
@@ -5564,20 +5605,23 @@ citep{Pilaftsis2013}.
 \end_layout
 
 \begin_layout Standard
-From 
-\backslash
-eqref{eq:Higgs-eom-finite} 
+From the Higgs equation of motion 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:three-loop-Higgs-eom-finite"
+
+\end_inset
+
+ the two loop truncation gives 
 \begin_inset Formula 
 \begin{align}
-\mathrm{Im}\Sigma_{H}\left(p\right) & =\frac{\hbar}{6}\left(N+1\right)\lambda\mathrm{Im}\mathcal{T}_{G}^{\text{fin}}+\frac{\hbar}{6}\lambda\mathrm{Im}\mathcal{T}_{H}^{\text{fin}}\nonumber \\
- & -\hbar\left(\frac{\lambda v}{3}\right)^{2}\mathrm{Im}\left[i\mathcal{I}_{HG}^{\text{fin}}\left(p\right)\right]\nonumber \\
- & =\frac{\hbar}{6}\left(N+1\right)\lambda\mathrm{Im}\mathcal{T}_{G}+\frac{\hbar}{6}\lambda\mathrm{Im}\mathcal{T}_{H}\nonumber \\
- & -\hbar\left(\frac{\lambda v}{3}\right)^{2}\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right],
+\mathrm{Im}\Sigma_{H}\left(p\right) & =\frac{\hbar}{6}\left(N+1\right)\lambda\mathrm{Im}\mathcal{T}_{G}^{\text{fin}}+\frac{\hbar}{6}\lambda\mathrm{Im}\mathcal{T}_{H}^{\text{fin}}-\hbar\left(\frac{\lambda v}{3}\right)^{2}\mathrm{Im}\left[i\mathcal{I}_{HG}^{\text{fin}}\left(p\right)\right]\nonumber \\
+ & =\frac{\hbar}{6}\left(N+1\right)\lambda\mathrm{Im}\mathcal{T}_{G}+\frac{\hbar}{6}\lambda\mathrm{Im}\mathcal{T}_{H}-\hbar\left(\frac{\lambda v}{3}\right)^{2}\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right],
 \end{align}
 
 \end_inset
 
- which can be written in terms of the un-subtracted 
+which can be written in terms of the un-subtracted 
 \begin_inset Formula $\mathcal{T}_{G/H}$
 \end_inset
 
@@ -5586,12 +5630,12 @@ eqref{eq:Higgs-eom-finite}
 \end_inset
 
  because all of the subtractions are manifestly real.
- Now we show that 
+ Now it is shown that 
 \begin_inset Formula $\mathrm{Im}\mathcal{T}_{G/H}=0$
 \end_inset
 
 .
- To do this we introduce the K
+ To do this introduce the K
 \begin_inset ERT
 status open
 
@@ -5618,8 +5662,13 @@ status open
 \end_inset
 
 n-Lehmann spectral representation of the propagators 
-\backslash
-citep{Weinberg1995} 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weinberg2005"
+
+\end_inset
+
+ 
 \begin_inset Formula 
 \begin{equation}
 \Delta_{G/H}\left(q\right)=\int_{0}^{\infty}\mathrm{d}s\frac{\rho_{G/H}\left(s\right)}{q^{2}-s+i\epsilon},
@@ -5627,7 +5676,7 @@ citep{Weinberg1995}
 
 \end_inset
 
- where the spectral densities 
+where the spectral densities 
 \begin_inset Formula $\rho_{G/H}\left(s\right)$
 \end_inset
 
@@ -5643,12 +5692,13 @@ citep{Weinberg1995}
 
 \end_inset
 
- where the last equality holds at two loop order (we have adapted the standard
- formula to our renormalization scheme).
-\end_layout
+where the last equality holds at two loop order (the standard formula has
+ been adapted for the current renormalization scheme)
+\begin_inset Foot
+status collapsed
 
-\begin_layout Standard
-(Note that this standard theory actually conflicts with the asymptotic 
+\begin_layout Plain Layout
+Note that this standard theory actually conflicts with the asymptotic 
 \begin_inset Formula $p^{2}\left(\ln p^{2}\right)^{c_{1}}$
 \end_inset
 
@@ -5656,7 +5706,7 @@ citep{Weinberg1995}
 \begin_inset Formula $\Phi_{5}$
 \end_inset
 
- graph is included, so that our argument must be refined at the three loop
+ graph is included, so that this argument must be refined at the three loop
  level.
  The essential problem is that the self-consistent 
 \begin_inset Formula $n$
@@ -5677,7 +5727,12 @@ PI propagator is not resumming large logarithms.
 \begin_inset Formula $\rho_{G/H}$
 \end_inset
 
-.)
+.
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -5689,7 +5744,7 @@ Then
 
 \end_inset
 
- This allows us to obtain a dispersion relation relating the real and imaginary
+This allows one to obtain a dispersion relation relating the real and imaginary
  parts of the self-energies 
 \begin_inset Formula 
 \begin{align}
@@ -5703,11 +5758,11 @@ Then
 \end_layout
 
 \begin_layout Standard
-Finally we have left to compute 
+Finally one must compute 
 \begin_inset Formula $\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right]$
 \end_inset
 
- which can be written
+, which can be written
 \begin_inset Formula 
 \begin{align}
 \mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\mathrm{Im}i\int_{q}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\frac{i\rho_{N}\left(s_{1}\right)}{q^{2}-s_{1}+i\epsilon}\frac{i\rho_{G}\left(s_{2}\right)}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
@@ -5717,10 +5772,6 @@ Finally we have left to compute
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 The imaginary part of the 
 \begin_inset Formula $x$
 \end_inset
@@ -5730,7 +5781,7 @@ The imaginary part of the
 \end_inset
 
 .
- We denote the region of 
+ Denote the region of 
 \begin_inset Formula $s_{1,2}$
 \end_inset
 
@@ -5750,8 +5801,7 @@ The imaginary part of the
 \begin_inset Formula 
 \begin{align}
 \mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\frac{1}{16\pi p^{2}}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
- & \times\sqrt{p^{2}-\left(\sqrt{s_{1}}+\sqrt{s_{2}}\right)^{2}}\nonumber \\
- & \times\sqrt{p^{2}-\left(\sqrt{s_{1}}-\sqrt{s_{2}}\right)^{2}}.
+ & \times\sqrt{p^{2}-\left(\sqrt{s_{1}}+\sqrt{s_{2}}\right)^{2}}\sqrt{p^{2}-\left(\sqrt{s_{1}}-\sqrt{s_{2}}\right)^{2}}.
 \end{align}
 
 \end_inset
@@ -5765,7 +5815,7 @@ Now, since the each term of the integrand is positive and the square root
 \begin_inset Formula $\leq p^{2}$
 \end_inset
 
- we have 
+, 
 \begin_inset Formula 
 \begin{equation}
 \mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right]\leq\frac{1}{16\pi}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\leq\frac{1}{16\pi},
@@ -5773,12 +5823,12 @@ Now, since the each term of the integrand is positive and the square root
 
 \end_inset
 
- using the sum rule for 
+using the sum rule for 
 \begin_inset Formula $\rho_{N/G}\left(s\right)$
 \end_inset
 
 .
- Finally we have 
+ Finally, 
 \begin_inset Formula 
 \begin{equation}
 \Gamma_{H}\leq\frac{\hbar}{16\pi m_{H}}\left(\frac{\lambda v}{3}\right)^{2},
@@ -5786,7 +5836,7 @@ Now, since the each term of the integrand is positive and the square root
 
 \end_inset
 
- which is smaller than the expected value for all 
+which is smaller than the expected value for all 
 \begin_inset Formula $N>3$
 \end_inset
 
@@ -5808,12 +5858,8 @@ Now, since the each term of the integrand is positive and the square root
 
  from the symmetry improved 3PIEA at two loops.
  The source of the problem is the derivation of the two loop truncation
- where we dropped the vertex correction term in 
-\backslash
-eqref{eq:wi-for-the-self-energies}, resulting in a truncation of the true
- Ward identity 
-\backslash
-eqref{eq:w2-WI-1} that keeps the one loop graphs in 
+ where the vertex correction term is dropped, resulting in a truncation
+ of the true Ward identity that keeps the one loop graphs in 
 \begin_inset Formula $\Sigma_{G}$
 \end_inset
 
@@ -5826,10 +5872,20 @@ eqref{eq:w2-WI-1} that keeps the one loop graphs in
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
- above is thus the Goldstone self-energy shown in Figure 
+ above is thus the Goldstone self-energy shown in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
 \backslash
-ref{fig:si-3pi-higgs-sunset} which has the incorrect kinematics and lacks
- the required group theory 
+ref{fig:si-3pi-higgs-sunset}
+\end_layout
+
+\end_inset
+
+ which has the incorrect kinematics and lacks the required group theory
+ 
 \begin_inset Formula $\left(N-1\right)$
 \end_inset
 
@@ -5838,9 +5894,19 @@ ref{fig:si-3pi-higgs-sunset} which has the incorrect kinematics and lacks
 \end_inset
 
  factors as well.
- In fact, a perturbative evaluation of Figure 
+ In fact, a perturbative evaluation of 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
 \backslash
-ref{fig:si-3pi-higgs-sunset} gives 
+ref{fig:si-3pi-higgs-sunset}
+\end_layout
+
+\end_inset
+
+ gives 
 \begin_inset Formula $\Gamma_{H}=0$
 \end_inset
 
@@ -5848,9 +5914,9 @@ ref{fig:si-3pi-higgs-sunset} gives
 \begin_inset Formula $p^{2}=m_{H}^{2}$
 \end_inset
 
-! What we have shown is that no matter the form of the exact spectral functions,
- there cannot be a non-perturbative enhancement of this graph large enough
- to give the correct 
+! What has been shown here is that no matter the form of the exact spectral
+ functions, there cannot be a non-perturbative enhancement of this graph
+ large enough to give the correct 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
@@ -5871,8 +5937,9 @@ ref{fig:si-3pi-higgs-sunset} gives
 \end_layout
 
 \begin_layout Standard
-Now we consider the three loop truncation of the symmetry improved 3PIEA.
- Since one loop vertex corrections appear at this order we expect that 
+Now consider the three loop truncation of the symmetry improved 3PIEA.
+ Since one loop vertex corrections appear at this order one expect that
+ 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
@@ -5886,16 +5953,28 @@ Now we consider the three loop truncation of the symmetry improved 3PIEA.
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
- our task simplifies to seeking only the 
+ one is motivated to seeking only the 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
- decay width, and so we make use of only the one loop terms in the Higgs
- equation of motion, which are displayed in Figure 
+ decay width at first, delaying the requirement for numerical computation
+ as much as possible.
+ Thus one can make use of only the one loop terms in the Higgs equation
+ of motion, which are displayed in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
 \backslash
-ref{fig:one-loop-Higgs-self-energy}.
- Furthermore, by iterating the equations of motion we may replace all propagator
-s and vertices by their perturbative values to 
+ref{fig:one-loop-Higgs-self-energy}
+\end_layout
+
+\end_inset
+
+.
+ Furthermore, by iterating the equations of motion one may replace all propagato
+rs and vertices by their perturbative values to 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
@@ -5906,43 +5985,77 @@ s and vertices by their perturbative values to
 \end_inset
 
 .
- We leave the numerical task of computing the exact decay width predicted
- by the symmetry improved 3PIEA to future work.
+ The task of numerically computing the exact decay width predicted by the
+ symmetry improved 3PIEA is left to future work.
 \end_layout
 
 \begin_layout Standard
-The contributions of the various terms in Figure 
+The contributions of the various terms in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
 \backslash
-ref{fig:one-loop-Higgs-self-energy} to the imaginary part of 
+ref{fig:one-loop-Higgs-self-energy}
+\end_layout
+
+\end_inset
+
+ to the imaginary part of 
 \begin_inset Formula $\Sigma_{H}$
 \end_inset
 
  can be determined using Cutkosky cutting rules 
-\backslash
-citep{Peskin1995}.
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995"
+
+\end_inset
+
+.
  In particular, the Hartree-Fock diagram and the first bubble vertex correction
- diagram (left diagram, bottom row Figure 
+ diagram 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(left diagram, bottom row Figure 
 \backslash
-ref{fig:one-loop-Higgs-self-energy}) have no cuts such that all cut lines
- can be put on shell.
+ref{fig:one-loop-Higgs-self-energy})
+\end_layout
+
+\end_inset
+
+ have no cuts such that all cut lines can be put on shell.
  Also, cuts through intermediate states with both Goldstone and Higgs lines
  contribute to the process 
 \begin_inset Formula $H\to HG$
 \end_inset
 
 , which vanishes due to the zero phase space at threshold.
- This means we can drop the sunset diagram and the last bubble vertex correction
- (right diagram, bottom row Figure 
+ This means one can drop the sunset diagram and the last bubble vertex correctio
+n 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+(right diagram, bottom row Figure 
 \backslash
-ref{fig:one-loop-Higgs-self-energy}).
+ref{fig:one-loop-Higgs-self-energy})
+\end_layout
+
+\end_inset
+
+.
  Similarly cuts through two intermediate Higgs lines can be dropped since
  
 \begin_inset Formula $H\to HH$
 \end_inset
 
  is impossible on shell.
- This mean we can drop the contributions to the triangle and remaining bubble
- diagram where the leftmost vertex is 
+ This mean one can drop the contributions to the triangle and remaining
+ bubble diagram where the leftmost vertex is 
 \begin_inset Formula $V_{N}$
 \end_inset
 
@@ -5951,23 +6064,21 @@ ref{fig:one-loop-Higgs-self-energy}).
 \end_inset
 
 .
- The contributions we are interested in can now be displayed explicitly:
+ The relevant contributions can now be displayed explicitly:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
 -\Sigma_{H} & \supset\bar{V}v\nonumber \\
- & \supset v\left[i\hbar\left(-\frac{\lambda v}{3}\right)^{3}\int_{\ell}\frac{1}{\left(\ell-p\right)^{2}-m_{G}^{2}+i\epsilon}\right.\nonumber \\
- & \times\frac{1}{\ell^{2}-m_{G}^{2}+i\epsilon}\frac{1}{\ell^{2}-m_{H}^{2}+i\epsilon}\nonumber \\
- & +\frac{i\hbar\lambda}{6}\left(N+1\right)\left(-\frac{\lambda v}{3}\right)\nonumber \\
- & \times\left.\int_{\ell}\frac{1}{\left(\ell-p\right)^{2}-m_{G}^{2}+i\epsilon}\frac{1}{\ell^{2}-m_{G}^{2}+i\epsilon}\right],
+ & \supset v\left[i\hbar\left(-\frac{\lambda v}{3}\right)^{3}\int_{\ell}\frac{1}{\left(\ell-p\right)^{2}-m_{G}^{2}+i\epsilon}\frac{1}{\ell^{2}-m_{G}^{2}+i\epsilon}\frac{1}{\ell^{2}-m_{H}^{2}+i\epsilon}\right.\nonumber \\
+ & +\left.\frac{i\hbar\lambda}{6}\left(N+1\right)\left(-\frac{\lambda v}{3}\right)\int_{\ell}\frac{1}{\left(\ell-p\right)^{2}-m_{G}^{2}+i\epsilon}\frac{1}{\ell^{2}-m_{G}^{2}+i\epsilon}\right],
 \end{align}
 
 \end_inset
 
 where the first and second term are the triangle and bubble graphs respectively.
- We now cut the Goldstone lines by replacing each cut propagator 
+ Now cut the Goldstone lines by replacing each cut propagator 
 \begin_inset Formula $\left(p^{2}-m_{G}^{2}+i\epsilon\right)^{-1}\to-2\pi i\delta\left(p^{2}-m_{G}^{2}\right)$
 \end_inset
 
@@ -5976,8 +6087,10 @@ where the first and second term are the triangle and bubble graphs respectively.
 \end_inset
 
  (because the cutting rules give the 
-\backslash
-emph{discontinuity} of the diagram, which is 
+\emph on
+discontinuity
+\emph default
+ of the diagram, which is 
 \begin_inset Formula $2i$
 \end_inset
 
@@ -6004,10 +6117,8 @@ The integral can be evaluated by elementary techniques, giving
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\int_{\ell}2\pi\delta\left(\left(\ell-p\right)^{2}\right)2\pi\delta\left(\ell^{2}\right) & =\frac{1}{4\pi^{2}}\int\mathrm{d}^{4}\ell\nonumber \\
- & \times\delta\left(\ell^{2}-2\ell\cdot p+p^{2}\right)\delta\left(\ell^{2}\right)\nonumber \\
- & =\frac{1}{4\pi^{2}}\int\mathrm{d}\ell_{0}\mathrm{d}l4\pi l^{2}\nonumber \\
- & \times\delta\left(-2\ell_{0}m_{H}+m_{H}^{2}\right)\delta\left(\ell_{0}^{2}-l^{2}\right)\nonumber \\
+\int_{\ell}2\pi\delta\left(\left(\ell-p\right)^{2}\right)2\pi\delta\left(\ell^{2}\right) & =\frac{1}{4\pi^{2}}\int\mathrm{d}^{4}\ell\delta\left(\ell^{2}-2\ell\cdot p+p^{2}\right)\delta\left(\ell^{2}\right)\nonumber \\
+ & =\frac{1}{4\pi^{2}}\int\mathrm{d}\ell_{0}\mathrm{d}l4\pi l^{2}\delta\left(-2\ell_{0}m_{H}+m_{H}^{2}\right)\delta\left(\ell_{0}^{2}-l^{2}\right)\nonumber \\
  & =\frac{1}{\pi}\int\mathrm{d}ll^{2}\frac{1}{2m_{H}}\frac{\delta\left(\frac{m_{H}}{2}-l\right)}{2\frac{m_{H}}{2}}\nonumber \\
  & =\frac{1}{8\pi},
 \end{align}
@@ -6036,103 +6147,12 @@ This exactly matches the expected
 \end_inset
 
 .
- We leave the evaluation of this to future work, however, we have shown
- that the one loop vertex corrections are required to get the correct 
+ This evaluation is left to future work, however, it has been shown that
+ the one loop vertex corrections are required to get the correct 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
  at leading order.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=0.5
-\backslash
-columnwidth]{tree-level-higgs-decay}
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:tree-level-higgs-decay}Tree level of decay of the Higgs ($H$)
- to two Goldstone bosons $a=1,
-\backslash
-cdots,N-1$.} 
-\backslash
-end{figure}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=0.5
-\backslash
-columnwidth]{si3pi-higgs-self-energy-sunset}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:si-3pi-higgs-sunset}The self-energy diagram from 
-\backslash
-eqref{eq:Higgs-eom-finite} which, due to the inconsistent truncation of
- the Ward identity, gives the incorrect absorptive part to the Higgs propagator
- in the two loop truncated symmetry improved 3PIEA.
- $a=1,
-\backslash
-cdots,N-1$ labels Goldstone boson lines and $H$ labels the Higgs boson line.}
- 
-\backslash
-end{figure}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{one-loop-higgs-self-energy}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:one-loop-Higgs-self-energy}One loop contribution to the Higgs
- self-energy.
- The tadpole and sunset graphs are from the Higgs self-energy $
-\backslash
-Sigma_{G}$, while the four remaining terms come from vertex corrections
- via the Ward identity 
-\backslash
-eqref{eq:w2-WI-1}.
- The momentum incoming from the lower Goldstone leg is zero, and the crossed
- vertex represents a factor of $v$.} 
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -6163,7 +6183,15 @@ The symmetry improvement formalism of Pilaftsis and Teresi is able to enforce
  actions, allowing among other things the accurate description of phase
  transitions in strongly coupled theories using numerical methods that are
  relatively cheap compared to lattice methods.
- As an example of this, during the preparation of this manuscript it was
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+DO AN UPDATED RUNDOWN OF THE LITERATURE???...
+\end_layout
+
+\begin_layout Plain Layout
+As an example of this, during the preparation of this manuscript it was
  shown that the symmetry improved 2PIEA solves problems with infrared divergence
 s of the standard model effective potential due to massless Goldstone bosons
  
@@ -6181,8 +6209,9 @@ stency of
 PIEA, a topic we plan to discuss in a forthcoming publication.
 \end_layout
 
-\begin_layout Standard
-However, the development of a first principles non-perturbative kinetic
+\end_inset
+
+ However, the development of a first principles non-perturbative kinetic
  theory for the gauge theories of real physical interest requires the use
  of 
 \begin_inset Formula $n$
@@ -6193,27 +6222,28 @@ However, the development of a first principles non-perturbative kinetic
 \end_inset
 
 .
- We have taken a step in this direction by extending the symmetry improvement
- formalism to the 3PIEA for a scalar field theory with spontaneous breaking
+ A step in this direction has been achieved by extending the symmetry improvemen
+t formalism to the 3PIEA for a scalar field theory with spontaneous breaking
  of a global 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  symmetry.
- We found that an extra Ward identity involving the vertex function must
- be imposed.
- Since the constraints are singular this required a careful consideration
+ In the SI-3PIEA formalism an extra Ward identity involving the vertex function
+ must be imposed.
+ Since the constraints are singular this requires a careful consideration
  of the variational procedure, namely one must be careful to impose constraints
  in a way that satisfies d'Alembert's principle.
- Once this is done the theory can be renormalized in a more or less standard
+ Once this is done the theory can be renormalised in a more or less standard
  way, though the counter-terms differ in value from the unimproved case.
- We derived finite equations of motion and counter-terms for the Hartree-Fock
- truncation, two loop truncation, and three loop truncation of the effective
- action.
+ The finite equations of motion and counter-terms for the Hartree-Fock truncatio
+n, two loop truncation, and three loop truncation of the effective action
+ were found.
 \end_layout
 
 \begin_layout Standard
-We found several important qualitative results.
+Several important qualitative results have been found already in this investigat
+ion.
  First, symmetry improvement breaks the equivalence hierarchy of 
 \begin_inset Formula $n$
 \end_inset
@@ -6242,39 +6272,48 @@ PIEA at a truncation to less than
  loops.
  One could test this conjecture further by, for example, computing the symmetry
  improved 4PIEA.
- We predict that unsatisfactory results of some kind will be found for any
- truncation of this to $<4$ loops.
+ The prediction is that unsatisfactory results of some kind will be found
+ for any truncation of this to 
+\begin_inset Formula $<4$
+\end_inset
+
+ loops.
 \end_layout
 
 \begin_layout Standard
-Our renormalization of the theory at two and three loops was performed in
+The renormalisation of the theory at two and three loops was performed in
  vacuum.
  The only finite temperature computation performed here was for the Hartree-Fock
  approximation.
  The extension of the two or three loop truncations to finite temperature,
  or an extension to non-equilibrium situations, will require a much heavier
- numerical effort than what we have attempted.
+ numerical effort than has yet been attempted.
  It would also be interesting to compare the self-consistent Higgs decay
  rate in the symmetry improved 2PI and 3PI formalisms.
- We leave these investigations to future work.
- Similarly, we presented analytical results for the renormalization of the
- three loop truncation only in 
+ These investigations are left to future work.
+ Similarly, analytical results for the renormalisation of the three loop
+ truncation were only presented in 
 \begin_inset Formula $1+2$
 \end_inset
 
- dimensions, since the renormalization was not analytically tractable in
+ dimensions, since the renormalisation was not analytically tractable in
  
 \begin_inset Formula $1+3$
 \end_inset
 
  dimensions.
  This is also left to future work.
- The general renormalization theory presented here, based on counter-terms,
+ The general renormalisation theory presented here, based on counter-terms,
  is difficult to use in practice.
- It will be interesting to see if symmetry improvement could work along
- with the counter-term-free functional renormalization group approach 
-\backslash
-citep{Carrington2014}.
+ It would be interesting to see if symmetry improvement could work along
+ with the counter-term-free functional renormalisation group approach 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carrington2015"
+
+\end_inset
+
+.
  Such an approach may not be easier to set up in the first place, but once
  developed would likely be easier to extend to higher loop order and 
 \begin_inset Formula $n$
@@ -6286,6 +6325,9 @@ citep{Carrington2014}.
  If successful, such an effort could serve to open a new window to the non-pertu
 rbative physics of these theories in high temperature, high density and
  strong coupling regimes.
+ As a stepping stone towards non-equilibrium applications the theory of
+ the linear response of a system to external perturbations is studied in
+ the SI-2PIEA formalism in the next chapter.
 \end_layout
 
 \end_body

@@ -121,16 +121,63 @@ PIEA, with mere increases in technical complexity for
 .
  This chapter demonstrates that global symmetries are not generically preserved
  by truncations of nPIEA.
- The causes of this is understood in terms of the difference between 1PI
- and 2PI (resp.
+ The causes of this can be understood in terms of the difference between
+ 1PI and 2PI (resp.
  
 \begin_inset Formula $n$
 \end_inset
 
 PI) Ward identities.
- Phenomenological consequences are reviewed by studying the solution of
- the 2PI equations of motion in the Hartree-Fock approximation for a theory
- with spontaneous symmetry breaking and contrasted to the so-called 
+ It can also be understood in terms of the resummation of perturbative Feynman
+ diagrams: when an 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA is truncated some subset of perturbative diagrams are summed to infinite
+ order, but the complementary subset is left out entirely.
+ The pattern of resummations does not guarantee that the cancellations between
+ perturbative diagrams needed to maintain the symmetry are kept.
+ In the case of scalar field theories with 
+\begin_inset Formula $\mathrm{O}\left(N\right)\to\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ breaking, the result is that the final 
+\begin_inset Formula $\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ symmetry is maintained, but, at the Hartree-Fock level of approximation,
+ the nonlinearly realised 
+\begin_inset Formula $\mathrm{O}\left(N\right)/\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ is lost, the Goldstone theorem is violated (the 
+\begin_inset Formula $N-1$
+\end_inset
+
+ Goldstone bosons are massive), and the symmetry restoration phase transition
+ is first order in contradiction with the second order transition expected
+ on the basis of universality arguments.
+ A similar problem arises in gauge theories, where the violation of gauge
+ invariance in the 
+\begin_inset Formula $l$
+\end_inset
+
+-loop truncation is due to the missing 
+\begin_inset Formula $\left(l+1\right)$
+\end_inset
+
+-loop diagrams (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "York2012,York2014"
+
+\end_inset
+
+ for a discussion of the gauge fixing problem).
+ These results are reviewed by studying the solution of the 2PI equations
+ of motion in the Hartree-Fock approximation for a theory with spontaneous
+ symmetry breaking and contrasted to the so-called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1820,11 +1867,18 @@ The derivation given previously that
 .
  A general proof of this statement will not be given here, though arguments
  that this should be the case can be found in, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Jakov_c_2016"
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-REFS
+MORE ORIGINAL REFS!!!
 \end_layout
 
 \end_inset
@@ -2693,17 +2747,15 @@ external
 \end_inset
 
  propagators and vertices.
- This method is used frequently in the literature 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ This method is used frequently in the literature (see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "VanHees2002,Berges2005,Carrington2009"
 
 \end_inset
 
- and was definitively studied by 
+) and was definitively studied by 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "VanHees2002"
@@ -2951,17 +3003,30 @@ Note that the
 
  meson is very broad and identifying it as a real particle is controversial,
  though there is definitely a pole which can be observed in pion scattering
- amplitudes 
-\begin_inset Note Note
-status open
+ amplitudes (see 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Plain Layout
-PDG ref
-\end_layout
+NOTE ON SCALAR MESONS BELOW 2 GEV
+\begin_inset Quotes erd
+\end_inset
+
+ from the Review of Particle Physics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PDG"
 
 \end_inset
 
-.
+, available separately at 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
+target "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
+
+\end_inset
+
+).
  Likewise the pseudoscalar 
 \begin_inset Formula $a$
 \end_inset
