@@ -4744,30 +4744,209 @@ where the BBALL integral is
 \end_inset
 
 .
- The graph topologies are shown in 
-\begin_inset Note Note
-status open
+ The graph topologies appearing in this equation are
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
-DO THIS!!!!
-\end_layout
-
-\end_inset
 
 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure 
 \backslash
-ref{fig:two-loop-self-energy-graphs}
+begin{fmffile}{sigma-g-graph-topologies}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v,v,o} 
+\backslash
+fmfdot{v} 
+\backslash
+end{fmfgraph}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{v2,o} 
+\backslash
+fmf{plain,right=1}{v1,v2} 
+\backslash
+fmf{plain,left=1}{v1,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+end{fmfgraph}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmftop{t}
+\backslash
+fmfbottom{b} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{v2,o} 
+\backslash
+fmf{plain}{v1,t,v2,b,v1}
+\backslash
+fmf{plain}{t,b} 
+\backslash
+fmfdot{v1,v2,t,b} 
+\backslash
+end{fmfgraph}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{plain}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{v1,t,v2} 
+\backslash
+fmf{plain,left=1}{t,v2} 
+\backslash
+fmfdot{v1,v2,t} 
+\backslash
+end{fmfgraph}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmftop{t} 
+\backslash
+fmf{phantom}{i,v1,v2,v3,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=1}{v1,v2,v3,v2,v1} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{v3,o} 
+\backslash
+fmfdot{v1,v2,v3} 
+\backslash
+end{fmfgraph}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{i,v1,v2,o} 
+\backslash
+fmf{plain,right=1}{v1,v2} 
+\backslash
+fmf{plain,left=1}{v1,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+end{fmfgraph}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
 \end_layout
 
 \end_inset
 
-.
- Finally, the Higgs equation of motion is
+Finally, the Higgs equation of motion is
 \begin_inset Formula 
 \begin{equation}
 \Delta_{H}^{-1}\left(p\right)=\left(m_{G}^{2}+\Sigma_{G}^{0}\left(m_{H}\right)-m_{H}^{2}\right)\frac{\bar{V}\left(p,-p,0\right)}{\bar{V}\left(m_{H},-m_{H},0\right)}+\Delta_{G}^{-1}\left(p\right).\label{eq:three-loop-Higgs-eom-finite}
@@ -4781,82 +4960,6 @@ ref{fig:two-loop-self-energy-graphs}
 
 .
  Numerical implementation of these equations is defered to future work.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{auxiliary_vertex_soln_and_6pt_kernel}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:aux-vertex-soln-and-6pt-kernel}Solution for the auxiliary vertex
- function in terms of a six point kernel $
-\backslash
-mathcal{K}_{abcdef}$ which is represented by the blue box (the indices run
- from top to bottom down the left side, then the right).
- The vertical black bar in the kernel equation of motion represents symmetrizati
-on of the external lines (with a factor of $1/3!$).} 
-\backslash
-end{figure}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{scalar_self_energy_up_to_2_loops}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:two-loop-self-energy-graphs}Feynman graph topologies appearing
- in the self-energy function $
-\backslash
-Sigma_{G}^{0}
-\backslash
-left(p
-\backslash
-right)$ in 
-\backslash
-eqref{eq:three-loop-goldstone-self-energy-finite}.} 
-\backslash
-end{figure}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-section{Solution of the Hartree-Fock approximation
-\backslash
-label{sec:Hartree-approximation}}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -4987,12 +5090,23 @@ independent of the formalism used (apart from large
 \begin_layout Standard
 Numerical solutions of the SI-3PIEA in the Hartree-Fock approximation are
  presented in Figures 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-vev-comparison"
 
-\begin_layout Plain Layout
-TODO
-\end_layout
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-mn-comparison"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:hartree-fock-mg-comparison"
 
 \end_inset
 
@@ -5542,20 +5656,68 @@ key "Peskin1995"
 
 which comes entirely from the Goldstone loop sunset graph.
  Each part of this expression has a simple interpretation in relation to
- the tree level decay graph 
-\begin_inset Note Note
-status open
+ the tree level decay graph
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
-(Figure 
+
+
 \backslash
-ref{fig:tree-level-higgs-decay})
+begin{fmffile}{Higgs-decay-tree-graph}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph*}(40,20) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o1,o2} 
+\backslash
+fmf{plain}{i,v,o1} 
+\backslash
+fmf{plain}{v,o2} 
+\backslash
+fmfdot{v} 
+\backslash
+fmflabel{$H$}{i} 
+\backslash
+fmflabel{$G$}{o1} 
+\backslash
+fmflabel{$G$}{o2} 
+\backslash
+end{fmfgraph*}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
 \end_layout
 
 \end_inset
 
-.
- The 
+The 
 \begin_inset Formula $N-1$
 \end_inset
 
@@ -5767,7 +5929,8 @@ Finally one must compute
 \begin{align}
 \mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\mathrm{Im}i\int_{q}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\frac{i\rho_{N}\left(s_{1}\right)}{q^{2}-s_{1}+i\epsilon}\frac{i\rho_{G}\left(s_{2}\right)}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
  & =\mathrm{Im}i\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\int_{q}\frac{i}{q^{2}-s_{1}+i\epsilon}\frac{i}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
- & =\frac{1}{16\pi^{2}}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\mathrm{Im}\int_{0}^{1}\mathrm{d}x\ln\left(\frac{\mu^{2}}{-x\left(1-x\right)p^{2}+xs_{1}+\left(1-x\right)s_{2}-i\epsilon}\right).
+ & =\frac{1}{16\pi^{2}}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
+ & \times\mathrm{Im}\int_{0}^{1}\mathrm{d}x\ln\left(\frac{\mu^{2}}{-x\left(1-x\right)p^{2}+xs_{1}+\left(1-x\right)s_{2}-i\epsilon}\right).
 \end{align}
 
 \end_inset
@@ -5872,20 +6035,74 @@ which is smaller than the expected value for all
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
- above is thus the Goldstone self-energy shown in 
-\begin_inset Note Note
-status open
+ above is thus the sunset Goldstone self-energy
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
-Figure 
+
+
 \backslash
-ref{fig:si-3pi-higgs-sunset}
+begin{fmffile}{sunset-g-sigma}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=1,label=$G$}{v1,v2} 
+\backslash
+fmf{plain,right=1,label=$H$}{v1,v2} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{o,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+fmflabel{$G$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+end{fmfgraph*}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
 \end_layout
 
 \end_inset
 
- which has the incorrect kinematics and lacks the required group theory
- 
+which has the incorrect kinematics and lacks the required group theory 
 \begin_inset Formula $\left(N-1\right)$
 \end_inset
 
@@ -5894,19 +6111,7 @@ ref{fig:si-3pi-higgs-sunset}
 \end_inset
 
  factors as well.
- In fact, a perturbative evaluation of 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure 
-\backslash
-ref{fig:si-3pi-higgs-sunset}
-\end_layout
-
-\end_inset
-
- gives 
+ In fact, a perturbative evaluation of this diagram gives 
 \begin_inset Formula $\Gamma_{H}=0$
 \end_inset
 
@@ -5953,23 +6158,264 @@ Now consider the three loop truncation of the symmetry improved 3PIEA.
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
- one is motivated to seeking only the 
+ one is motivated in seeking only the 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
  decay width at first, delaying the requirement for numerical computation
  as much as possible.
  Thus one can make use of only the one loop terms in the Higgs equation
- of motion, which are displayed in 
-\begin_inset Note Note
-status open
+ of motion, which are
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
-Figure 
+
+
 \backslash
-ref{fig:one-loop-Higgs-self-energy}
+begin{fmffile}{higg-one-loop-self-energy}
 \end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+begin{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{plain}{i,v,v,o} 
+\backslash
+fmfdot{v} 
+\backslash
+fmflabel{$G$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+end{fmfgraph*}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=1}{v1,v2} 
+\backslash
+fmf{plain,right=1}{v1,v2} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{o,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+fmflabel{$G$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+end{fmfgraph*}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmfbottom{b} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{i,v1,v2,o} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{o,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+fmfv{decor.shape=cross,decor.filled=full,decor.size=2thick}{b} 
+\backslash
+fmf{plain,tension=2}{b,v3} 
+\backslash
+fmf{plain}{v1,v3,v2} 
+\backslash
+fmfdot{v3} 
+\backslash
+fmflabel{$H$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+end{fmfgraph*}}
+\backslash
+
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o}
+\backslash
+fmfbottom{b} 
+\backslash
+fmf{phantom}{i,v1,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{i,v1,o} 
+\backslash
+fmfv{decor.shape=cross,decor.filled=full,decor.size=2thick}{b} 
+\backslash
+fmf{plain,tension=2}{b,v3} 
+\backslash
+fmf{plain,left=1}{v1,v3,v1} 
+\backslash
+fmfdot{v1,v3} 
+\backslash
+fmflabel{$H$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+end{fmfgraph*}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=1}{v1,v2} 
+\backslash
+fmf{plain,right=1}{v1,v2} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{o,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+fmflabel{$H$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+fmfbottom{b} 
+\backslash
+fmf{plain}{b,v2} 
+\backslash
+fmfv{decor.shape=cross,decor.filled=full,decor.size=2thick}{b} 
+\backslash
+end{fmfgraph*}}&&
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{20mm}{
+\backslash
+begin{fmfgraph*}(40,40) 
+\backslash
+fmfleft{i}
+\backslash
+fmfright{o} 
+\backslash
+fmf{phantom}{i,v1,v2,o}
+\backslash
+fmffreeze 
+\backslash
+fmf{plain,left=1}{v1,v2} 
+\backslash
+fmf{plain,right=1}{v1,v2} 
+\backslash
+fmf{plain}{i,v1}
+\backslash
+fmf{plain}{o,v2} 
+\backslash
+fmfdot{v1,v2} 
+\backslash
+fmflabel{$H$}{i} 
+\backslash
+fmflabel{$G$}{o} 
+\backslash
+fmfbottom{b} 
+\backslash
+fmf{plain}{b,v1} 
+\backslash
+fmfv{decor.shape=cross,decor.filled=full,decor.size=2thick}{b} 
+\backslash
+end{fmfgraph*}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{align*}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
+\end_layout
+
+\end_inset
+
+The crossed vertices represent the injection of a zero momentum Goldstone
+ boson with amplitude 
+\begin_inset Formula $v$
 \end_inset
 
 .
@@ -5990,19 +6436,7 @@ rs and vertices by their perturbative values to
 \end_layout
 
 \begin_layout Standard
-The contributions of the various terms in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure 
-\backslash
-ref{fig:one-loop-Higgs-self-energy}
-\end_layout
-
-\end_inset
-
- to the imaginary part of 
+The contributions of the various terms to the imaginary part of 
 \begin_inset Formula $\Sigma_{H}$
 \end_inset
 
@@ -6015,19 +6449,8 @@ key "Peskin1995"
 
 .
  In particular, the Hartree-Fock diagram and the first bubble vertex correction
- diagram 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(left diagram, bottom row Figure 
-\backslash
-ref{fig:one-loop-Higgs-self-energy})
-\end_layout
-
-\end_inset
-
- have no cuts such that all cut lines can be put on shell.
+ diagram (left diagram, bottom row above) have no cuts such that all cut
+ lines can be put on shell.
  Also, cuts through intermediate states with both Goldstone and Higgs lines
  contribute to the process 
 \begin_inset Formula $H\to HG$
@@ -6035,19 +6458,7 @@ ref{fig:one-loop-Higgs-self-energy})
 
 , which vanishes due to the zero phase space at threshold.
  This means one can drop the sunset diagram and the last bubble vertex correctio
-n 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(right diagram, bottom row Figure 
-\backslash
-ref{fig:one-loop-Higgs-self-energy})
-\end_layout
-
-\end_inset
-
-.
+n (right diagram, bottom row).
  Similarly cuts through two intermediate Higgs lines can be dropped since
  
 \begin_inset Formula $H\to HH$
@@ -6079,10 +6490,14 @@ ref{fig:one-loop-Higgs-self-energy})
 
 where the first and second term are the triangle and bubble graphs respectively.
  Now cut the Goldstone lines by replacing each cut propagator 
-\begin_inset Formula $\left(p^{2}-m_{G}^{2}+i\epsilon\right)^{-1}\to-2\pi i\delta\left(p^{2}-m_{G}^{2}\right)$
+\begin_inset Formula 
+\begin{equation}
+\left(p^{2}-m_{G}^{2}+i\epsilon\right)^{-1}\to-2\pi i\delta\left(p^{2}-m_{G}^{2}\right),
+\end{equation}
+
 \end_inset
 
- to give 
+to give 
 \begin_inset Formula $-2i\mathrm{Im}\Sigma_{H}$
 \end_inset
 
