@@ -143,29 +143,17 @@ key "Pilaftsis2013"
 
  and references therein).
  The last chapter discussed the external propagator, which has been frequently
- used in the literature, defined as the second functional derivative of
- a resummed effective action which depends only on the mean field, obtained
- by eliminating the 2- through 
-\begin_inset Formula $n$
-\end_inset
-
--point correlation functions of the 
-\begin_inset Formula $n$
-\end_inset
-
-PIEA by their equations of motion.
- The resulting effective action does obey a 1PI type WI and the external
- propagator yields massless Goldstone bosons.
+ used in the literature and does yield massless Goldstone bosons.
  However, the external propagator is not the propagator used in loop graphs,
  so the loop corrections still contain massive Goldstone bosons leading
  to incorrect thresholds, decay rates and violations of unitarity.
  In order to avoid these problems a manifestly self-consistent scheme must
  be used.
- The large 
+ One such scheme is the large 
 \begin_inset Formula $N$
 \end_inset
 
- approximation was also briefly reviewed.
+ approximation, which was also briefly reviewed.
  The Goldstone theorem and second order phase transition do hold to leading
  order in the large 
 \begin_inset Formula $N$
@@ -176,7 +164,7 @@ PIEA by their equations of motion.
 
 \begin_layout Standard
 This chapter discusses the symmetry improvement method introduced by Pilaftsis
- and Teresi to circumvents these difficulties 
+ and Teresi to circumvent these difficulties 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Pilaftsis2013"
@@ -192,7 +180,10 @@ key "Pilaftsis2013"
  They achieve this by taking a limit in which the Lagrange multiplier vanishes
  from all but one of the equations of motion, and this remaining equation
  of motion is replaced with the constraint to obtain a closed system.
- Following a review of the symmetry improved 2PIEA (SI-2PIEA), this chapter
+\end_layout
+
+\begin_layout Standard
+Following a review of the symmetry improved 2PIEA (SI-2PIEA), this chapter
  generalises the procedure to the 3PIEA (reporting on work published by
  the author 
 \begin_inset CommandInset citation
@@ -204,12 +195,12 @@ key "Brown2015a"
 ).
  The generalisation is non-trivial, requiring a careful consideration of
  the variational procedure leading to an infinity of possible schemes.
- A new principle is required to choose between the schemes and the 
+ A new principle is introduced to choose between the schemes and is called
+ the 
 \emph on
 d'Alembert formalism
 \emph default
- is introduced for this purpose by analogy to the constrained variational
- problem in mechanics.
+ by analogy to the constrained variational problem in mechanics.
 \end_layout
 
 \begin_layout Standard

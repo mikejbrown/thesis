@@ -107,7 +107,7 @@ status open
 
 
 \backslash
-progress{30}
+progress{50}
 \end_layout
 
 \end_inset
@@ -163,8 +163,15 @@ key "Calzetta2008"
 \end_inset
 
 .
- The sections on the analytic properties of effective actions and the comparison
- to resummation methods is from a paper published by the author 
+ Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Analytic-properties-of-2PIEA-and-resummation"
+
+\end_inset
+
+ on the analytic properties of effective actions and the comparison to resummati
+on methods is largely based on a paper published by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2015"
@@ -8064,7 +8071,7 @@ status open
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
