@@ -95,7 +95,7 @@ Synopsis
 
 \begin_layout Standard
 The previous chapter introduced nPIEA as a technique suitable for studies
- in non-equilibrium QFT.
+ in nonperturbative QFT.
  This chapter explores the symmetry properties of nPIEA using the 1PIEA
  and 2PIEA as specific examples.
  These cases cover all of the conceptual points required for general 
@@ -163,9 +163,18 @@ key "York2012,York2014"
 \end_inset
 
  for a discussion of the gauge fixing problem).
- These results are reviewed by studying the solution of the 2PI equations
- of motion in the Hartree-Fock approximation for a theory with spontaneous
- symmetry breaking and contrasted with the so-called 
+ These results are known in the literature, but the demonstration given
+ here that the 2PI Ward identity is incompatible with the corresponding
+ 1PI Ward identity is (to the author's knowledge)/ new and shows that this
+ result is independent of the renormalisation scheme used.
+ Here the 2PIEA for the 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ scalar field theory is renormalised and solved in the Hartree-Fock approximatio
+n at finite temperature, reproducing independently results known in the
+ literature.
+ The solution is then contrasted with the so-called 
 \begin_inset Quotes eld
 \end_inset
 
@@ -185,8 +194,8 @@ large
 \begin_inset Quotes erd
 \end_inset
 
- methods which solve some of the phenomenological problems, though not entirely
- satisfactorily.
+ methods which have been advocated because they solve some of the phenomenologic
+al problems, though not entirely satisfactorily.
  This sets the stage for the examination of symmetry improvement techniques
  in the remainder of the thesis.
 \end_layout
@@ -504,13 +513,23 @@ reference "eq:field-ON-transformation"
 
  is invariant
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Non-invariance of the functional measure arises in a number of physically
  important cases, none of which are relevant here: chiral transformations
  of fermion fields, non-linear field redefinitions, and scale and diffeomorphism
  transformations of spacetime.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF??
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -757,8 +776,8 @@ reference "eq:1PI-V-WI"
 \end_inset
 
 , though all of them are on equal footing conceptually.
- This thesis restricts to consideration to the lowest few WIs merely for
- technical simplicity.
+ This thesis restricts consideration to the lowest few WIs merely for technical
+ simplicity.
  The methods developed herein can be extended straightforwardly.
  Note that after 
 \begin_inset CommandInset ref
@@ -767,7 +786,7 @@ reference "eq:1PI-Delta-WI"
 
 \end_inset
 
- the WI do not depend explicitly on the source.
+ the WIs do not depend explicitly on the source.
  This is useful in the discussion of linear response for symmetry improved
  effective actions in Chapter 
 \begin_inset CommandInset ref
@@ -795,7 +814,7 @@ reference "eq:1PI-Delta-WI"
  becomes
 \begin_inset Formula 
 \begin{equation}
-0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}.
+0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}.\label{eq:1PI-WI-Goldstone-source-free}
 \end{equation}
 
 \end_inset
@@ -808,7 +827,14 @@ Due to translation invariance the vacuum state has
 \begin_inset Formula $\Delta_{ca}^{-1}\left(x,y\right)=\Delta_{ca}^{-1}\left(x-y\right)$
 \end_inset
 
-, so that this can be simplified using the Fourier transform
+, so that 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-WI-Goldstone-source-free"
+
+\end_inset
+
+ can be simplified using the Fourier transform
 \begin_inset Formula 
 \begin{equation}
 \Delta_{ca}^{-1}\left(x,y\right)=\int_{p}\mathrm{e}^{-ip\left(x-y\right)}\Delta_{ca}^{-1}\left(p\right),
@@ -1063,8 +1089,8 @@ these
 \begin_inset Formula 
 \begin{equation}
 V_{abc}\left(x,y,z\right)=\begin{cases}
-0 & \text{any zero or two indices}=N,\\
-V_{N}\left(x,y,z\right) & a=b=N,\\
+0 & \text{odd number of indices}\neq N,\\
+V_{N}\left(x,y,z\right) & a=b=c=N,\\
 \bar{V}\left(x;y,z\right) & a=N,\ b=c\neq N,\\
  & \text{permutations},
 \end{cases}\label{eq:SSB-ansatz-Vertex}
@@ -1198,8 +1224,8 @@ Correlation functions derived from the 2PIEA obey different Ward identities
  than those derived from the 1PIEA.
  Since understanding the difference between the two types of WI is crucial
  to understanding the phenomenology of 2PI approximations in theories with
- global or gauge symmetries, the 2PI version of the WIs are now derived
- for the model 
+ global or gauge symmetries, the 2PI version of the WIs are derived for
+ the model 
 \begin_inset Formula $O\left(N\right)$
 \end_inset
 
@@ -1259,7 +1285,7 @@ The second term accounts for the additional transformation of
 \begin_inset Formula $i\epsilon_{A}$
 \end_inset
 
- and applying the 2PI equations of motion (recall 
+ and applying the 2PI equations of motion, recall 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:2pi-eom-varphi"
@@ -1273,7 +1299,7 @@ reference "eq:2pi-eom-Delta"
 
 \end_inset
 
- reproduced here for convenience:
+ reproduced here for convenience
 \end_layout
 
 \begin_layout Standard
@@ -1285,7 +1311,7 @@ reference "eq:2pi-eom-Delta"
 
 \end_inset
 
-), gives a set of 2PI WIs which are now complicated by the fact that there
+gives a set of 2PI WIs which are now complicated by the fact that there
  are multiple types of correlation function of the same rank appearing.
  For example, there are now two different two point functions
 \end_layout
@@ -1332,7 +1358,18 @@ where
 \end_inset
 
 .
- Using this one has 
+ Using this one has (recall the Dyson equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-Dyson-equation"
+
+\end_inset
+
+: 
+\begin_inset Formula $\Delta^{-1}=\Delta_{0}^{-1}-\Sigma$
+\end_inset
+
+)
 \begin_inset Formula 
 \begin{equation}
 \frac{\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}}=\Delta_{ab}^{-1}\left[\varphi\right]=\Delta_{0ab}^{-1}\left[\varphi\right]-\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right],
@@ -1372,7 +1409,7 @@ From these one can relate derivatives of
  For example,
 \begin_inset Formula 
 \begin{equation}
-V_{abc}=\frac{\delta^{2}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}\delta\varphi_{c}}=V_{0abc}\left[\varphi\right]-\frac{\delta\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{c}}.
+V_{abc}=\frac{\delta^{3}\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{a}\delta\varphi_{b}\delta\varphi_{c}}=V_{0abc}\left[\varphi\right]-\frac{\delta\Sigma_{ab}\left[\varphi,\Delta\left[\varphi\right]\right]}{\delta\varphi_{c}}.
 \end{equation}
 
 \end_inset
@@ -1710,8 +1747,7 @@ name "sec:Renormalisation-and-solution-2PI-HF"
 
 \begin_layout Standard
 This section presents the solution of the 2PI equations of motion in the
- Hartree-Fock approximation.
- That is, including only the 
+ Hartree-Fock approximation, that is, including only the 
 \begin_inset Formula $\mathcal{O}\left(\lambda\right)$
 \end_inset
 
@@ -1939,7 +1975,7 @@ where
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
- are to chosen to cancel divergences.
+ are chosen to cancel divergences.
  Whenever necessary to refer to bare parameters in the remainder of this
  chapter, the subscript 
 \begin_inset Quotes eld
@@ -2232,7 +2268,7 @@ It remains to determine the renormalisation constants.
 \begin_inset Formula $\Lambda^{2}=4\pi\mu^{2}\exp\left(\frac{1}{\epsilon}-\gamma+1\right)$
 \end_inset
 
- where physical limit is 
+ where the physical limit is 
 \begin_inset Formula $\epsilon=2-d/2\to0$
 \end_inset
 
@@ -2479,7 +2515,17 @@ reference "fig:2pi-hf-eom-soln"
 \emph on
 linear sigma model
 \emph default
- effective theory of pions in the limit of unbroken chiral symmetry.
+ effective theory of pions in the limit of unbroken chiral symmetry
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+.
  This model is known to possess a continuous (i.e.
  second order) phase transition, analogous to the Ising ferromagnet, with
  a critical temperature 
@@ -4142,7 +4188,7 @@ PIEAs obey different WIs for each
 \end_inset
 
 .
- Phenomenological consequences were studied by the solving the 2PI equations
+ Phenomenological consequences were studied by solving the 2PI equations
  of motion in the Hartree-Fock approximation.
  The Goldstone bosons were unphysically massive and the phase transition
  was incorrectly predicted to be first order.

@@ -2666,7 +2666,7 @@ The equation of motion for the propagator becomes
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Delta^{-1}=\Delta_{0}^{-1}-\Sigma,
+\Delta^{-1}=\Delta_{0}^{-1}-\Sigma,\label{eq:2PI-Dyson-equation}
 \end{equation}
 
 \end_inset
