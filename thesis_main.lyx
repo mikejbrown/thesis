@@ -6,7 +6,7 @@
 \origin unavailable
 \textclass jcuthesis
 \begin_preamble
-\usepackage[draft,subsubsection]{progress}
+%\usepackage[draft,subsubsection]{progress}
 \usepackage{braket}
 \usepackage[force]{feynmp-auto}
 \end_preamble
@@ -113,7 +113,7 @@ Doctor of Philosophy (Physics)
 \end_layout
 
 \begin_layout School
-College of Science, Technology and Engineering
+College of Science and Engineering
 \end_layout
 
 \begin_layout University

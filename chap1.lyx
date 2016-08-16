@@ -80,25 +80,9 @@ theorems-sec
 
 \begin_layout Chapter
 Introduction
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Introduction"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-progress{20}
-\end_layout
 
 \end_inset
 
@@ -543,7 +527,7 @@ Now the unequal time commutator can be found:
 \begin_inset Formula 
 \begin{align}
 \left[\hat{\phi}\left(x\right),\hat{\phi}\left(y\right)\right] & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\left[\hat{a}_{\boldsymbol{k}}\mathrm{e}^{ikx}+\hat{a}_{\boldsymbol{k}}^{\dagger}\mathrm{e}^{-ikx},\hat{a}_{\boldsymbol{q}}\mathrm{e}^{iqy}+\hat{a}_{\boldsymbol{q}}^{\dagger}\mathrm{e}^{-iqy}\right]\nonumber \\
- & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right)\nonumber \\
+ & =\int_{\boldsymbol{k}}N_{\boldsymbol{k}}\int_{\boldsymbol{q}}N_{\boldsymbol{q}}\delta^{\left(3\right)}\left(\boldsymbol{k}-\boldsymbol{q}\right)\left(\mathrm{e}^{i\left(kx-qy\right)}-\mathrm{e}^{-i\left(kx-qy\right)}\right)\nonumber \\
  & =\int\frac{\mathrm{d}^{3}\boldsymbol{k}}{2\omega_{\boldsymbol{k}}}\left(\mathrm{e}^{ik\left(x-y\right)}-\mathrm{e}^{-ik\left(x-y\right)}\right),
 \end{align}
 
@@ -674,11 +658,11 @@ where
 \begin_inset Formula $\Ket{\phi\left(x\right);\Sigma}$
 \end_inset
 
- are eigenvectors of the field 
+ are eigenvectors of the field operators 
 \begin_inset Formula $\hat{\phi}\left(x\right)$
 \end_inset
 
- operators on 
+ on 
 \begin_inset Formula $\Sigma$
 \end_inset
 
@@ -835,7 +819,7 @@ obtaining
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\nonumber \\
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{i}\left(x\right);\Sigma_{i}} & = & \int\prod_{k=1}^{N-1}\mathcal{D}\left[\phi_{k}\left(x\in\Sigma_{k}\right)\right]\nonumber \\
  &  & \times\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\phi_{N-1}\left(x\right);\Sigma_{N-1}}\nonumber \\
  &  & \times\cdots\times\Braket{\phi_{k+1}\left(x\right);\Sigma_{k+1}|\phi_{k}\left(x\right);\Sigma_{k}}\nonumber \\
  &  & \times\cdots\times\Braket{\phi_{1}\left(x\right);\Sigma_{1}|\phi_{i}\left(x\right);\Sigma_{i}}.
@@ -933,7 +917,8 @@ Resolving the identity again, this time with
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
- &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+ &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\nonumber \\
+ &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
 \end{eqnarray}
 
 \end_inset
@@ -944,7 +929,7 @@ status open
 
 \begin_layout Plain Layout
 Recall from basic QM that 
-\begin_inset Formula $\Braket{q|p}=\exp\left(\frac{i}{\hbar}qp\right)$
+\begin_inset Formula $\Braket{q|p}=\exp\left(\frac{i}{\hbar}pq\right)$
 \end_inset
 
 .
@@ -964,7 +949,8 @@ Recall from basic QM that
 \begin{eqnarray}
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\int_{\boldsymbol{x}}\pi_{k}\left(\boldsymbol{x},t_{k}\right)\left[\phi_{k+1}\left(\boldsymbol{x},t_{k}\right)-\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right]\right)\nonumber \\
  &  & \times\exp\left[-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\nonumber \\
- & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}\left[\pi_{k}\left(\boldsymbol{x},t_{k}\right)\partial_{t}\phi_{k}\left(\boldsymbol{x},t_{k}\right)-\mathcal{H}\left(\phi_{k},\pi_{k}\right)\right]\right)
+ & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\exp\left(\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}\left[\pi_{k}\left(\boldsymbol{x},t_{k}\right)\partial_{t}\phi_{k}\left(\boldsymbol{x},t_{k}\right)\right.\right.\nonumber \\
+ &  & \left.\left.-\mathcal{H}\left(\phi_{k},\pi_{k}\right)\right]\vphantom{\frac{i}{\hbar}\epsilon\int_{\boldsymbol{x}}}\right)
 \end{eqnarray}
 
 \end_inset
@@ -1561,7 +1547,8 @@ where all the normalisation factors are absorbed in
  & = & \ln N'-\frac{1}{2}\sum_{n\boldsymbol{p}}\left\{ \ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta^{2}\left(\boldsymbol{p}^{2}+m^{2}\right)}\frac{\mathrm{d}\theta^{2}}{\theta^{2}+\left(2\pi n\right)^{2}}\right\} \nonumber \\
  & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\left(1+\frac{2}{\mathrm{e}^{\theta}-1}\right)\right\} \nonumber \\
  & = & \ln N'-\frac{1}{2}\sum_{\boldsymbol{p}}\left\{ \sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\beta\omega_{\boldsymbol{p}}-1+\int_{1}^{\beta\omega_{\boldsymbol{p}}}\mathrm{d}\theta\frac{2}{\mathrm{e}^{\theta}-1}\right\} \nonumber \\
- & = & \ln N'-\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} -\sum_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
+ & = & \ln N'-\sum_{\boldsymbol{p}}\left\{ \frac{1}{2}\sum_{n}\ln\left[\left(2\pi n\right)^{2}+1\right]+\frac{1}{2}+\ln\frac{1}{\mathrm{e}-1}\right\} \nonumber \\
+ &  & -\sum_{\boldsymbol{p}}\left[\frac{1}{2}\beta\omega_{\boldsymbol{p}}+\ln\left(1-\mathrm{e}^{-\beta\omega_{\boldsymbol{p}}}\right)\right].
 \end{eqnarray}
 
 \end_inset
@@ -1790,13 +1777,13 @@ anti-time ordered
  exponential is required:
 \begin_inset Formula 
 \begin{equation}
-\hat{U}\left(t_{2},t_{1}\right)=\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
+\hat{U}\left(t_{2},t_{1}\right)=\tilde{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{1}}^{t_{2}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} ,
 \end{equation}
 
 \end_inset
 
 where 
-\begin_inset Formula $\bar{\mathrm{T}}$
+\begin_inset Formula $\tilde{\mathrm{T}}$
 \end_inset
 
  orders operators in the opposite sense to 
@@ -1815,7 +1802,7 @@ Substituting these in the equation for
  gives
 \begin_inset Formula 
 \begin{equation}
-O\left(t\right)=\Braket{\Psi_{0}|\bar{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t}^{t_{0}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} \hat{O}\left(t\right)\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} |\Psi_{0}}.
+O\left(t\right)=\Braket{\Psi_{0}|\tilde{\mathrm{T}}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t}^{t_{0}}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} \hat{O}\left(t\right)\mathrm{T}\left\{ \exp\left(-\frac{i}{\hbar}\int_{t_{0}}^{t}\mathrm{d}\tau\ \hat{H}\left(\tau\right)\right)\right\} |\Psi_{0}}.
 \end{equation}
 
 \end_inset
@@ -2793,7 +2780,7 @@ i.e.
 \end_inset
 
 .
- So in the lesser function order the fields 
+ So the lesser function orders the fields 
 \emph on
 as if 
 \emph default
@@ -3674,6 +3661,15 @@ name "sec:ch1-Summary"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE WHEN THE REST OF THE INTRODUCTION HAS BEEN WRITTEN!!!!
+\end_layout
+
+\end_inset
+
 This chapter has reviewed quantum field theory focusing on the functional
  integral formalism.
  It has been shown that a common formula for the generating functional can
@@ -3682,6 +3678,154 @@ This chapter has reviewed quantum field theory focusing on the functional
  The fundamental objects of field theory are the Green functions which can
  be straightforwardly connected to physical observables such as densities,
  currents and so forth.
+\end_layout
+
+\begin_layout Standard
+The remainder of this thesis is structured as follows.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ introduces the 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective action (
+\begin_inset Formula $n$
+\end_inset
+
+PIEA) techniques with an emphasis on their application to nonperturbative
+ quantum field theory.
+ This includes of review of the standard theory surrounding the methods
+ and concludes with a novel investigation into the analytic properties of
+ the solution of the 2PIEA in a toy model which can be compared to the exact
+ solution and contrasted with other nonperturbative techniques.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ begins the consideration of symmetries in the thesis by introducing the
+ 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ scalar field theory which forms the basis of the remainder of the work.
+ The Ward identities for the theory (which encode the symmetries of the
+ theory in effective action language) are derived and it is shown that the
+ expected identities no longer hold for truncations of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ This result is known in the literature but is derived here in a way which
+ is, to the author's knowledge, new.
+ The 2PIEA is then solved in the Hartree-Fock approximation demonstrating
+ this result explicitly.
+ A contrast is then drawn between these results and those of the external
+ propagator method and large 
+\begin_inset Formula $N$
+\end_inset
+
+ method.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ introduces the symmetry improved 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA (SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA) as a means of overcoming the difficulty posed by violations of symmetries
+ in truncated 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ The novel work in this chapter is an extension of the symmetry improvement
+ known in the literature from 
+\begin_inset Formula $O\left(2\right),O\left(4\right)\to O\left(N\right)$
+\end_inset
+
+ and from the 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{2}\right)$
+\end_inset
+
+ SI-2PIEA to the 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{3}\right)$
+\end_inset
+
+ SI-3PIEA.
+ Additionally, several ambiguities in the original symmetry improvement
+ procedure are identified and addressed.
+ The renormalisation theory of these actions is discussed and solutions
+ are presented in the Hartree-Fock approximation, as well as a few checks
+ of the basic field theoretical consistency of the new actions.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ studies for the first time the non-equilibrium aspects of the SI-2PIEA
+ by formulating the linear response theory for a system governed by the
+ SI-2PIEA being driven away from equilibrium by a weak external perturbation.
+ It is shown that the SI-2PIEA, and by a simple extension all SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, are inconsistent with the linear response approximation.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+ introduces a novel technique called soft symmetry improvement (SSI) aimed
+ at overcoming the difficulties of the SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ The SSI-2PIEA is derived, renormalised and solved in the Hartree-Fock approxima
+tion.
+ It is shown that the method is sensitive to the way the infinite volume
+ / low temperature limit is taken and there are three limiting cases: a
+ trivial reduction to the unimproved 2PIEA, a reduction to the SI-2PIEA,
+ and a novel limit which possess some unusual features which are discussed.
+ Finally, chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Discussion"
+
+\end_inset
+
+ is the discussion chapter drawing everything together and pinpointing direction
+s for future work.
+ Some derivations and results concerning the renormalisation theory which
+ are inessential to the main flow of the text are collected in appendix
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body

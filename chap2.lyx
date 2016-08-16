@@ -88,27 +88,11 @@ theorems-sec
 \begin_body
 
 \begin_layout Chapter
-Nonequilibrium Quantum Field Theory and n-Particle Irreducible Effective
+Nonperturbative Quantum Field Theory with n-Particle Irreducible Effective
  Action Techniques
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap2"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-progress{50}
-\end_layout
 
 \end_inset
 
@@ -137,6 +121,15 @@ Synopsis
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE
+\end_layout
+
+\end_inset
+
 This chapter introduces the 
 \begin_inset Formula $n$
 \end_inset
@@ -145,8 +138,7 @@ This chapter introduces the
 \begin_inset Formula $n$
 \end_inset
 
-PIEA) in the context of non-equilibrium quantum field theory and discusses
- their general properties.
+PIEA) and discusses their general properties.
  The general material in this chapter is largely based on the reviews by
  Berges 
 \begin_inset CommandInset citation
@@ -227,7 +219,14 @@ key "Jona-Lasinio1964"
 \begin_inset Formula $Z\left[J\right]$
 \end_inset
 
-, closely related to the partition function described above.
+, closely related to the partition function described in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Time-contours-Green-functions-NEQFT"
+
+\end_inset
+
+.
  
 \begin_inset Formula $Z\left[J\right]$
 \end_inset
@@ -453,7 +452,17 @@ contact terms
 
 .
  This is exactly analogous to the Bogoliubov-Born-Green-Kirkwood-Yvon (BBGKY)
- hierarchy in statistical mechanics.
+ hierarchy in statistical mechanics
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF!
+\end_layout
+
+\end_inset
+
+.
  Solving this hierarchy of equations in practice requires truncation at
  some finite order, which necessitates invoking a closure ansatz approximating
  some higher order correlation functions in terms of lower order ones.
@@ -1991,6 +2000,16 @@ There are physically relevant cases where this equation cannot be inverted.
 
  in these cases is given by a Maxwell construction much like that used for
  the free energy in thermodynamics.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2115,34 +2134,105 @@ Writing
 \end_inset
 
 ,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S\left[\phi\right]=S\left[\phi_{\mathrm{cl.}}\right]+\hbar^{1/2}\tilde{\phi}\left.\frac{\delta S\left[\phi\right]}{\delta\phi\left(x\right)}\right|_{\phi=\phi_{\mathrm{cl.}}\left[J\right]}+\hbar\int\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}-V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\right),
+\end{equation}
+
+\end_inset
+
+which defines 
+\begin_inset Formula $\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]$
+\end_inset
+
+ as (up to a factor 
+\begin_inset Formula $\hbar$
+\end_inset
+
+) the part of 
+\begin_inset Formula $S\left[\phi\right]$
+\end_inset
+
+ which is quadratic in 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ and 
+\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)$
+\end_inset
+
+ as (up to a factor 
+\begin_inset Formula $\hbar$
+\end_inset
+
+) the part of 
+\begin_inset Formula $V_{\mathrm{int}}$
+\end_inset
+
+ which is greater than quadratic in 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+.
+ For example, in a theory with cubic and quartic couplings 
+\begin_inset Formula $V_{\mathrm{int}}\left(\phi\right)=\frac{1}{3!}g\phi^{3}+\frac{1}{4!}\lambda\phi^{4}$
+\end_inset
+
+ and 
+\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)=\frac{1}{3!}\hbar^{1/2}\left(g+\lambda\phi_{\mathrm{cl.}}\right)\tilde{\phi}^{3}+\frac{1}{4!}\hbar\lambda\tilde{\phi}^{4}.
+\end{equation}
+
+\end_inset
+
+If one substitutes 
+\begin_inset Formula $S\left[\phi_{\mathrm{cl.}}+\hbar^{1/2}\tilde{\phi}\right]$
+\end_inset
+
+ in 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ the linear term in 
+\begin_inset Formula $\tilde{\phi}$
+\end_inset
+
+ cancels the 
+\begin_inset Formula $J\tilde{\phi}$
+\end_inset
+
+ term due to the equation of motion for 
+\begin_inset Formula $\phi_{\mathrm{cl.}}$
+\end_inset
+
+ and one has
 \begin_inset Formula 
 \begin{eqnarray}
-Z\left[J\right] & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}+V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\right)\right]\nonumber \\
- & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\left(1+\mathcal{O}\left(\hbar\right)\right)\exp\left[i\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}\right)\right]\nonumber \\
+Z\left[J\right] & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[i\int\left(\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}-V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\right)\right]\nonumber \\
+ & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\int\mathcal{D}\left[\phi\right]\left(1+\mathcal{O}\left(\hbar\right)\right)\exp\left[i\int\frac{1}{2}\tilde{\phi}\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\tilde{\phi}\right]\nonumber \\
  & = & \exp\left[\frac{i}{\hbar}\left(S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}\right)\right]\left(N\left(\det\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]\right)^{-1/2}+\mathcal{O}\left(\hbar\right)\right),
 \end{eqnarray}
 
 \end_inset
 
-where 
-\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)$
+Note that while 
+\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)=\mathcal{O}\left(\hbar^{1/2}\right)$
 \end_inset
 
- is defined by the first line.
- Note that it contains cubic and higher terms in 
-\begin_inset Formula $\tilde{\phi}$
-\end_inset
-
- only by virtue of the classical equation of motion, so that 
-\begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)\sim\mathcal{O}\left(\hbar^{1/2}\right)$
-\end_inset
-
-.
- The leading correction to 
+, 
 \begin_inset Formula $Z\left[J\right]$
 \end_inset
 
- necessarily involves two cubic vertices, however, so is 
+ necessarily involves an even number of cubic vertices so the leading correction
+ is 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
@@ -2166,6 +2256,20 @@ where
 
 .
  Thus
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Recall the identity 
+\begin_inset Formula $\ln\det M=M$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 W\left[J\right]=S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
@@ -2192,7 +2296,15 @@ To perform the Legendre transform one needs to relate
 
 \end_inset
 
-Now
+Using 
+\begin_inset Formula $\phi_{\mathrm{cl}.}=\varphi+\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+ in 
+\begin_inset Formula $S$
+\end_inset
+
+ gives
 \begin_inset Formula 
 \begin{equation}
 S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}=S\left[\varphi\right]+J\varphi+\mathcal{O}\left(\hbar^{2}\right),
@@ -2200,7 +2312,15 @@ S\left[\phi_{\mathrm{cl.}}\right]+J\phi_{\mathrm{cl.}}=S\left[\varphi\right]+J\v
 
 \end_inset
 
-because of the classical equation of motion, so that
+because of the classical equation of motion for 
+\begin_inset Formula $\phi_{\mathrm{cl.}}$
+\end_inset
+
+ implies the cancellation of the 
+\begin_inset Formula $\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+ term, so that
 \begin_inset Formula 
 \begin{equation}
 \Gamma\left[\varphi\right]=S\left[\varphi\right]+\frac{i\hbar}{2}\left(\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\varphi\right]-\mathrm{Tr}\ln\Delta_{0}^{-1}\left[0\right]\right)+\mathcal{O}\left(\hbar^{2}\right).
@@ -2697,7 +2817,7 @@ and the effective interaction Lagrangian (i.e.
 \end_inset
 
  after shifting the field ala 
-\begin_inset Formula $\phi=\phi_{\mathrm{cl.}}+\hbar^{1/2}\tilde{\phi}$
+\begin_inset Formula $\phi=\varphi+\hbar^{1/2}\tilde{\phi}$
 \end_inset
 
 )
@@ -2706,28 +2826,28 @@ and the effective interaction Lagrangian (i.e.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-V\left(\varphi,\tilde{\phi}\right)=-\frac{1}{3!}\hbar^{1/2}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}-\frac{1}{4!}\hbar\lambda_{abcd}\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}\tilde{\phi}_{d}.
+-\hbar V\left(\varphi,\tilde{\phi}\right)=-\frac{1}{3!}\hbar^{3/2}\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}-\frac{1}{4!}\hbar^{2}\lambda_{abcd}\tilde{\phi}_{a}\tilde{\phi}_{b}\tilde{\phi}_{c}\tilde{\phi}_{d}.
 \end{equation}
 
 \end_inset
 
 It is convenient to introduce the shorthands 
-\begin_inset Formula $V_{0abc}=-\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right)$
+\begin_inset Formula 
+\begin{align}
+V_{0abc} & \equiv\left.\frac{\delta^{3}S}{\delta\phi_{a}\delta\phi_{b}\delta\phi_{c}}\right|_{\phi=\varphi}=-\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right),\\
+W_{abcd} & \equiv\left.\frac{\delta^{4}S}{\delta\phi_{a}\delta\phi_{b}\delta\phi_{c}\delta\phi_{d}}\right|_{\phi=\varphi}=-\lambda_{abcd}.
+\end{align}
+
 \end_inset
 
- and 
-\begin_inset Formula $W_{abcd}=-\lambda_{abcd}$
-\end_inset
-
- (this matches then the notation of 
+(This matches the notation of 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2015"
 
 \end_inset
 
-).
- 
+.) 
 \begin_inset Formula $\Gamma_{2}\left[\varphi,\Delta\right]$
 \end_inset
 
@@ -5176,7 +5296,7 @@ key "Beneke2013"
 
 .
  They performed an analysis very similar to this one, finding that a non-perturb
-ative treatment is necessary and comparing 2PI and (Borel-)Pad
+ative treatment is necessary and compared 2PI and (Borel-)Pad
 \begin_inset ERT
 status open
 
@@ -5808,7 +5928,7 @@ status collapsed
 Note that the physical interpretation of this spectral function is unrelated
  to the usual one in field theory since, for one thing, there is no such
  thing as energy in zero dimensions.
- One can consider
+ One can consider 
 \begin_inset Formula $\sigma\left(s\right)$
 \end_inset
 
@@ -8745,7 +8865,7 @@ name "sec:ch2-Summary"
 \end_layout
 
 \begin_layout Standard
-This chapter has reviewed 
+This chapter has investigated 
 \begin_inset Formula $n$
 \end_inset
 
@@ -8759,7 +8879,7 @@ PIEA) in quantum field theory.
 \begin_inset Formula $n$
 \end_inset
 
-PIEA, which were reviewed and explicit derivations given for 
+PIEA, which were investigated and explicit derivations given for 
 \begin_inset Formula $n=1,2$
 \end_inset
 
@@ -8803,8 +8923,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-The perturbation theory has zero radius of convergence due to a branch cut
- on the negative coupling (
+The study of the toy model revealed several interesting features.
+ The perturbation theory has zero radius of convergence due to a branch
+ cut on the negative coupling (
 \begin_inset Formula $\lambda$
 \end_inset
 

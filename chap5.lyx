@@ -81,25 +81,9 @@ theorems-sec
 \begin_layout Chapter
 Approaching non-equilibrium: Linear Response Theory for Symmetry Improved
  Effective Actions
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap5"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-progress{30}
-\end_layout
 
 \end_inset
 

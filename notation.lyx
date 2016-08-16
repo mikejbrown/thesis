@@ -80,25 +80,9 @@ theorems-sec
 
 \begin_layout Chapter*
 Notation
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Notation"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-progress{33}
-\end_layout
 
 \end_inset
 
@@ -137,7 +121,7 @@ This thesis uses high-energy physics (HEP) conventions.
 and
 \begin_inset Formula 
 \[
-V_{abc}\phi_{a}\Delta_{bc}=\sum_{a,b,c=1}^{N}\int\mathrm{d}^{4}x\mathrm{d}^{4}y\mathrm{d}^{4}z\ V_{abc}\left(x,y,z\right)\phi_{a}\left(x\right)\Delta_{bc}\left(y,z\right).
+V_{abc}\phi_{a}\Delta_{bc}=\sum_{a,b,c=1}^{N}\int\mathrm{d}^{4}x\ \mathrm{d}^{4}y\ \mathrm{d}^{4}z\ V_{abc}\left(x,y,z\right)\phi_{a}\left(x\right)\Delta_{bc}\left(y,z\right).
 \]
 
 \end_inset
@@ -149,7 +133,7 @@ The final expression can always be reconstructed uniquely from the short
  Often functional convolutions are implied, so for example
 \begin_inset Formula 
 \[
-\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta\right)=\Delta_{0ab}^{-1}\Delta_{ba}=\sum_{a,b=1}^{N}\int\mathrm{d}^{4}x\mathrm{d}^{4}y\ \Delta_{0ab}^{-1}\left(x,y\right)\Delta_{ba}\left(y,x\right),
+\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta\right)=\Delta_{0ab}^{-1}\Delta_{ba}=\sum_{a,b=1}^{N}\int\mathrm{d}^{4}x\ \mathrm{d}^{4}y\ \Delta_{0ab}^{-1}\left(x,y\right)\Delta_{ba}\left(y,x\right),
 \]
 
 \end_inset
@@ -157,7 +141,7 @@ The final expression can always be reconstructed uniquely from the short
 and
 \begin_inset Formula 
 \[
-\varphi K\varphi=\varphi_{a}K_{ab}\varphi_{b}=\sum_{a,b=1}^{N}\int\mathrm{d}^{4}x\mathrm{d}^{4}y\ \varphi_{a}\left(x\right)K_{ab}\left(x,y\right)\varphi_{b}\left(y\right),
+\varphi K\varphi=\varphi_{a}K_{ab}\varphi_{b}=\sum_{a,b=1}^{N}\int\mathrm{d}^{4}x\ \mathrm{d}^{4}y\ \varphi_{a}\left(x\right)K_{ab}\left(x,y\right)\varphi_{b}\left(y\right),
 \]
 
 \end_inset
@@ -166,12 +150,8 @@ etc.
 \end_layout
 
 \begin_layout Standard
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="55" columns="2">
+<lyxtabular version="3" rows="56" columns="2">
 <features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -314,6 +294,26 @@ Symmetry Improved nPIEA
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+SSI-nPIEA
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Soft Symmetry Improved nPIEA
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -398,7 +398,7 @@ Standard Model, Beyond Standard Model
 \begin_inset Text
 
 \begin_layout Plain Layout
-MSSM, NMSSM
+MSSM, 2HDM
 \end_layout
 
 \end_inset
@@ -407,27 +407,7 @@ MSSM, NMSSM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Minimal Supersymmetric extension of the SM, Next to Minimal ...
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-2HDM
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Two Higgs Doublet Model
+Minimal Supersymmetric extension of the SM, Two Higgs Doublet Model
 \end_layout
 
 \end_inset
@@ -635,30 +615,7 @@ Euclidean time coordinate.
 \begin_inset Formula $\partial_{\mu}$
 \end_inset
 
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Spacetime derivative 
-\begin_inset Formula $\partial_{\mu}=\partial/\partial x^{\mu}$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
+; 
 \begin_inset Formula $\partial_{\mu}^{\left(x\right)}$
 \end_inset
 
@@ -675,7 +632,11 @@ Spacetime derivative
 \begin_inset Text
 
 \begin_layout Plain Layout
-Derivative with respect to specified spacetime variable 
+Spacetime derivative 
+\begin_inset Formula $\partial_{\mu}=\partial/\partial x^{\mu}$
+\end_inset
+
+; wrt specified spacetime variable 
 \begin_inset Formula $\partial_{\mu}^{\left(y\right)}=\partial/\partial y^{\mu}$
 \end_inset
 
@@ -889,6 +850,37 @@ with
 \end_inset
 
  is the mass shell condition
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{T}$
+\end_inset
+
+
+\begin_inset Formula $\left(\tilde{\mathrm{T}}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\mathrm{T}_{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Anti-)Time ordered product, Contour time ordered product
 \end_layout
 
 \end_inset
@@ -1334,6 +1326,33 @@ Inverses in the sense of kernels, i.e.
 </cell>
 </row>
 <row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $W$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bare three and four point vertex functions
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
 <cell alignment="left" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
@@ -1573,11 +1592,19 @@ Self-energy of the scalar field
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $T_{\mu\nu}$
+\begin_inset Formula $\mathcal{T}_{G/H}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\mathrm{fin}}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\mathrm{th}}$
 \end_inset
 
 
@@ -1585,11 +1612,11 @@ Self-energy of the scalar field
 
 \end_inset
 </cell>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-Energy-momentum tensor
+Tadpole integrals (bare, finite part of, thermal part of)
 \end_layout
 
 \end_inset

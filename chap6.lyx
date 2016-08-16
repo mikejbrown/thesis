@@ -80,25 +80,9 @@ theorems-sec
 
 \begin_layout Chapter
 Soft Symmetry Improvement
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap6"
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-progress{0}
-\end_layout
 
 \end_inset
 
