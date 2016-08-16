@@ -1153,6 +1153,17 @@ name "sec:Symmetry-Improvement-and-LRT"
 
 \end_layout
 
+\begin_layout Subsection
+The Simple Constraint Scheme
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:The-Simple-Constraint"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 In the linear response approximation 
 \begin_inset Formula $J_{a}$
@@ -1356,7 +1367,7 @@ reference "eq:phiG-eom-w-Higgs-propagator"
 \end_inset
 
  by using the projected constraint instead of the simple one, however this
- leads to further difficulties as discussed in Appendix 
+ leads to further difficulties as discussed in section 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "subsec:The-Alternate-Constraint"
@@ -1374,7 +1385,7 @@ There is further danger lurking in the right hand sides of equations the
 \end_inset
 
  there is a danger that terms on the right hand sides can diverge.
- Consider the expansion of the right hand side of 
+ Consider the expansion of the right hand side of the 
 \begin_inset Formula $\varphi$
 \end_inset
 
@@ -1519,9 +1530,9 @@ which is also automatically satisfied in the
  limit.
  The fact that the secondary constraints automatically vanish is a consequence
  of using the unprojected constraint.
- Had one used the projected constraint instead, the troublesome equation
- of motion would be gone, but the secondary constraints become non-trivial
- and lead again to pathologies.
+ As shown in the next section, using the projected constraint instead removes
+ the troublesome equation of motion, but the secondary constraints become
+ non-trivial and lead again to pathologies.
 \end_layout
 
 \begin_layout Subsection
@@ -1960,7 +1971,7 @@ only now
 \begin_inset Formula $\delta\Delta^{-1}$
 \end_inset
 
- is to be understood as arising purely from the variation
+ is to be understood as arising purely from the variation 
 \begin_inset Formula $\delta\varphi$
 \end_inset
 
@@ -2189,11 +2200,11 @@ One could try to eliminate the second error term by constraining the variation
 \begin_inset Formula $\delta\Delta$
 \end_inset
 
- to be related to
+ to be related to 
 \begin_inset Formula $\delta\varphi$
 \end_inset
 
- in a appropriate way.
+ in an appropriate way.
  This would no longer be working strictly within the 2PIEA formalism.
  Rather, it would define a hybrid 2PI-1PI scheme where one computes the
  equilibrium properties using the symmetry improved 2PIEA, then defines
@@ -2252,8 +2263,9 @@ PIEA scheme only has the power to enforce constraints between the lowest
  However, once external sources are turned on and the system departs from
  equilibrium, variations of the correlation functions appear and these can
  be related to higher order correlation functions.
- Violations of the higher order Ward identities then feedback into the equations
- of motion for the fluctuations, leading to an inconsistent system overall.
+ Violations of the higher order Ward identities then feed back into the
+ equations of motion for the fluctuations, leading to an inconsistent system
+ overall.
  This leads to the general conclusion: 
 \emph on
 all symmetry improved 

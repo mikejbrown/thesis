@@ -164,12 +164,25 @@ key "Pilaftsis2013"
  They achieve this by taking a limit in which the Lagrange multiplier vanishes
  from all but one of the equations of motion, and this remaining equation
  of motion is replaced with the constraint to obtain a closed system.
-\end_layout
+ Here the symmetry improved 2PIEA (SI-2PIEA) is reviewed and extended to
+ general 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
 
-\begin_layout Standard
-Following a review of the symmetry improved 2PIEA (SI-2PIEA), this chapter
- generalises the procedure to the 3PIEA (reporting on work published by
- the author 
+ theories.
+ An ambiguity of the constraint scheme is pointed out which was not recognised
+ in the original literature.
+ This ambiguity has no influence on the equilibrium results of this chapter,
+ but is relevant to the discussion of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+.
+ Following that the method is generalised to the 3PIEA (reporting on work
+ published by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2015a"
@@ -213,7 +226,15 @@ key "Carrington2009,Smolic2012,Berges2004"
  effects on the three-point vertex at leading order.
  The 2PIEA in gauge theory contains a dressed propagator but not a dressed
  vertex, leading not only to an inconsistency of the resulting kinetic equation
- but also to a spurious gauge dependence of the kind discussed previously.
+ but also to a spurious gauge dependence analogous to the failure of global
+ symmetries in truncations as discussed in chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+.
  Thus this work is a stepping stone towards a fully self-consistent, nonperturba
 tive and manifestly gauge invariant treatment of out of equilibrium gauge
  theories.
@@ -787,8 +808,8 @@ reference "eq:fin-2PI-HF-H-eom"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\\
-m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{\hbar\lambda}{6}\left(N+1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{6}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-SI-2PI-HF-G-eom}\\
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{\hbar\lambda}{6}\left(N-1\right)\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar\lambda}{2}\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{O}\left(\lambda^{2}\right),\label{eq:fin-SI-2PI-HF-H-eom}
 \end{align}
 
 \end_inset
@@ -803,7 +824,7 @@ reference "eq:fin-2PI-HF-vev-eom"
  is replaced by Goldstone's theorem
 \begin_inset Formula 
 \begin{equation}
-0=vm_{G}^{2},
+0=vm_{G}^{2},\label{eq:fin-SI-2PI-HF-Goldstone-thm}
 \end{equation}
 
 \end_inset
@@ -946,7 +967,14 @@ T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\l
 
 \end_inset
 
-which is the same as in the unimproved case.
+which is the same as in the unimproved case 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:critical-Temp"
+
+\end_inset
+
+.
  However, unlike the unimproved case, the SI-2PI solution has a second order
  phase transition.
  Indeed, using the previous expression for 
@@ -1230,7 +1258,7 @@ There are some important qualitative differences however.
 \begin_inset Formula $\Delta_{ab}\propto\left\langle \phi_{a}\phi_{b}\right\rangle $
 \end_inset
 
- full self-consistently and hence is a more accurate method when applicable.
+ fully self-consistently and hence is a more accurate method when applicable.
  Finally, the large 
 \begin_inset Formula $N$
 \end_inset
@@ -1601,6 +1629,7 @@ PI) expansion is generally only valid within a finite energy range about
 
 \end_inset
 
+.
  Now one can add and subtract an integral with the same UV asymptotic behaviour
  as the divergent integral: 
 \begin_inset Formula 
@@ -2436,7 +2465,7 @@ reference "eq:3piea"
 
 \end_inset
 
- and following:
+ and following are
 \end_layout
 
 \begin_layout Standard
@@ -2546,7 +2575,14 @@ reference "eq:1PI-V-WI"
 \end_inset
 
  is an arbitrary functional which vanishes if and only if its argument vanishes.
- Substituting the SSB ansatz gives
+ Substituting the SSB ansatz 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-ansatz-Delta"
+
+\end_inset
+
+ gives
 \begin_inset Formula 
 \begin{equation}
 \tilde{\Gamma}^{\left(3\right)}=\Gamma^{\left(3\right)}-\ell\mathcal{W}_{1}-Bf\left[\mathcal{W}_{2}\right],
@@ -2685,7 +2721,7 @@ The desired simplification of the equations of motion can be achieved without
 \begin_inset Formula $\bar{V}$
 \end_inset
 
- under the assumption that
+ under the assumption that 
 \begin_inset Formula $\delta f/\delta\mathcal{W}_{2}\left(x,y\right)$
 \end_inset
 
@@ -3438,8 +3474,20 @@ name "sec:Renormalisation-of-the-SI-3PIEA"
 
 \end_layout
 
+\begin_layout Subsection
+General comments
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:SI-3PIEA-Renormalisation-General-comments"
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Here is a general description of the renormalisation problem at zero temperature.
+Before examining the renormalisation problem for the SI-3PIEA in detail
+ a few general comments are in order.
  Detailed considerations follow in Sections 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3454,16 +3502,7 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 
 \end_inset
 
- for two and three loop truncations respectively.
- Finite temperature results are given for the Hartree-Fock approximation
- in Section 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Solution-of-the-SI-3PI-HF-Approx"
-
-\end_inset
-
-.
+ for the two and three loop truncations at zero temperature respectively.
  The two loop renormalisation of the theory in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -3478,6 +3517,15 @@ reference "subsec:SI-3PIEA-Two-loop-truncation"
 \end_inset
 
 PIEA equivalence hierarchy by modifying the Higgs equation of motion.
+ The renormalisation of the Hartree-Fock approximation is deferred to Section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Solution-of-the-SI-3PI-HF-Approx"
+
+\end_inset
+
+ where it is discussed along with its numerical solution at finite temperature.
 \end_layout
 
 \begin_layout Standard
@@ -3503,7 +3551,7 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 .
  Nonperturbative counter-term calculations are generally much more difficult
  than the analogous perturbative calculations, hence many of the manipulations
- left in a supplemental 
+ are left in a supplemental 
 \noun on
 Mathematica
 \noun default
@@ -3528,7 +3576,7 @@ citep{supp}
 
 \begin_layout Standard
 To demonstrate the renormalisability of the SI-3PI equations of motion first
- consider the symmetric phase, since on physical grounds SSB, an infrared
+ consider the symmetric phase since, on physical grounds SSB, an infrared
  phenomenon, is irrelevant to renormalisability.
  In the symmetric phase 
 \begin_inset Formula $v=0$
@@ -3643,14 +3691,14 @@ reference "eq:3pi-vertex-eom-rhs"
 
 \end_inset
 
-, 
+ and 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:3pi-vertex-eom-lhs"
 
 \end_inset
 
- or
+, or
 \begin_inset ERT
 status collapsed
 
@@ -3775,7 +3823,29 @@ where the open circle vertex denotes the bare function
 
  and a sum over cyclic permutations of the legs of the last diagram is understoo
 d.
- The triangle graph goes like 
+ The triangle graph goes like
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Recall that the asymptotic form of the self-energies as 
+\begin_inset Formula $p\to\infty$
+\end_inset
+
+ is given by terms going like 
+\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{c_{1}}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{c_{2}}$
+\end_inset
+
+ .
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $\int_{\ell}\ell^{3\alpha-6}\left(\ln\ell\right)^{3c_{3}-3c_{1}}\sim\chi^{3\alpha-2}\left(\ln\chi\right)^{3c_{3}-3c_{1}}$
 \end_inset
 
@@ -3863,7 +3933,7 @@ Now define auxiliary vertex functions
 \begin_inset Formula $V_{N}\to V_{N}^{\mu}$
 \end_inset
 
- (represented diagrammatically by a blob), and 
+ (represented diagrammatically by a shaded blob), and 
 \begin_inset Formula $\Delta_{G/H}\to\Delta_{G/H}^{\mu}$
 \end_inset
 
@@ -4651,19 +4721,21 @@ ref{sec:Deriving-Counter-terms-for-3-loops}
 \begin_inset Formula $V$
 \end_inset
 
-; the second is that, consistent with the super-renormalizability of 
-\begin_inset Formula $\phi^{4}$
-\end_inset
-
- theory in 
-\begin_inset Formula $1+2$
-\end_inset
-
- dimensions, only 
+; the second is that only 
 \begin_inset Formula $\delta m_{1}^{2}$
 \end_inset
 
  is required to UV-renormalise the theory.
+ This is consistent with the known fact that 
+\begin_inset Formula $\phi^{4}$
+\end_inset
+
+ theory is 
+\emph on
+super-renormalisable
+\emph default
+ in 2+1 dimensions, that is, only a finite number of primitive divergent
+ graphs exist and these graphs only contribute to the mass shift.
  Every other counter-term is finite and exists solely to maintain the pole
  condition for the Higgs propagator despite the vertex Ward identity.
  The resulting finite equations of motion are
@@ -5028,7 +5100,21 @@ Finally, as before, requiring the zero temperature tree level relation
 \end_inset
 
 .
- The resulting equations of motion are
+ These are to be contrasted with the SI-2PI equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-SI-2PI-HF-G-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-SI-2PI-HF-Goldstone-thm"
+
+\end_inset
+
+ reproduced here
 \end_layout
 
 \begin_layout Standard
@@ -5447,11 +5533,16 @@ The general statement of the result is that
 \begin_inset Formula $\int_{x}\Sigma\left(x,0\right)$
 \end_inset
 
- diverges whenever massless particles appear in loops in 
+ diverges in the IR whenever massless particles appear in loops in 
 \begin_inset Formula $d=2$
 \end_inset
 
-, thus, by the Dyson equation and Goldstone theorem 
+.
+ Since by the Dyson equation Goldstone's theorem can be written 
+\begin_inset Formula $0=\left(m_{G}^{2}+\int_{x}\Sigma_{G}\left(x,0\right)\right)v,$
+\end_inset
+
+ this implies 
 \begin_inset Formula $v=0$
 \end_inset
 
@@ -5508,7 +5599,10 @@ The general statement of the result is that
 .
  Either way there is no solution.
  At finite temperature the Bose-Einstein integral 
-\begin_inset Formula $\mathcal{T}_{a}^{\text{th}}$
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Bose-Einstein-thermal-tadpole"
+
 \end_inset
 
  also has an infrared divergence as 
@@ -5623,7 +5717,16 @@ key "Peskin1995"
 \end_inset
 
  must be taken into account.) The standard one loop perturbative result gives
- 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REF
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \Gamma_{H}=\frac{N-1}{2}\frac{\hbar}{16\pi m_{H}}\left(\frac{\lambda v}{3}\right)^{2},
@@ -5746,7 +5849,7 @@ key "Pilaftsis2013"
 \begin_layout Standard
 From the Higgs equation of motion 
 \begin_inset CommandInset ref
-LatexCommand ref
+LatexCommand eqref
 reference "eq:three-loop-Higgs-eom-finite"
 
 \end_inset
@@ -6120,7 +6223,7 @@ which has the incorrect kinematics and lacks the required group theory
 
 \begin_layout Standard
 Now consider the three loop truncation of the symmetry improved 3PIEA.
- Since one loop vertex corrections appear at this order one expect that
+ Since one loop vertex corrections appear at this order one expects that
  
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
@@ -6442,7 +6545,7 @@ n (right diagram, bottom row).
 \end_inset
 
  is impossible on shell.
- This mean one can drop the contributions to the triangle and remaining
+ This means one can drop the contributions to the triangle and remaining
  bubble diagram where the leftmost vertex is 
 \begin_inset Formula $V_{N}$
 \end_inset

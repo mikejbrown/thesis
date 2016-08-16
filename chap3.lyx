@@ -2306,7 +2306,7 @@ where the thermal contribution is
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mathcal{T}_{G/H}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}-1}.
+\mathcal{T}_{G/H}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}}-1}.\label{eq:Bose-Einstein-thermal-tadpole}
 \end{equation}
 
 \end_inset
@@ -2482,7 +2482,7 @@ In the symmetric regime
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right).
+T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar\left(N+2\right)}}+\mathcal{O}\left(\lambda^{2}\right).\label{eq:critical-Temp}
 \end{equation}
 
 \end_inset
