@@ -3570,8 +3570,12 @@ citep{supp}
 .
  The results of this section are finite equations of motion for renormalised
  quantities which must be solved numerically.
- The numerical implementation of the equations of motion is left to future
- work, except in the case of the Hartree-Fock approximation.
+ Except in the case of the Hartree-Fock approximation, the numerical implementat
+ion of the equations of motion requires a much greater numerical effort
+ than anything else that has been attempted in this thesis and so is left
+ to future work.
+ The results of such an investigation would certainly be interesting and
+ worthy of study, though well beyond the scope of the present work.
 \end_layout
 
 \begin_layout Standard
@@ -4688,7 +4692,19 @@ ref{sec:Auxiliary-vertex-and-renorm}
 \end_inset
 
  dimensions.
- The renormalisation of the 
+ Because of the extra complication of the 
+\begin_inset Formula $d>3$
+\end_inset
+
+ case a full numerical implementation is required before one can 
+\begin_inset Quotes eld
+\end_inset
+
+get off the ground,
+\begin_inset Quotes erd
+\end_inset
+
+ so to speak, so the renormalisation of the 
 \begin_inset Formula $1+3$
 \end_inset
 
@@ -5008,7 +5024,8 @@ Finally, the Higgs equation of motion is
 \end_inset
 
 .
- Numerical implementation of these equations is defered to future work.
+ As discussed previously, numerical implementation of these equations is
+ deferred to future work.
 \end_layout
 
 \begin_layout Section
@@ -6511,8 +6528,9 @@ rs and vertices by their perturbative values to
 \end_inset
 
 .
- The task of numerically computing the exact decay width predicted by the
- symmetry improved 3PIEA is left to future work.
+ Evaluating the decay width predicted by the SI-3PIEA more accurately requires
+ a numerical solution of the equations of motion and so is left to future
+ work.
 \end_layout
 
 \begin_layout Standard
@@ -6642,8 +6660,12 @@ This exactly matches the expected
 \end_inset
 
 .
- This evaluation is left to future work, however, it has been shown that
- the one loop vertex corrections are required to get the correct 
+ While the full evaluation of 
+\begin_inset Formula $\Gamma_{H}$
+\end_inset
+
+ is left to future work as discussed, it has been shown that the one loop
+ vertex corrections are required to get the correct 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
@@ -6770,16 +6792,18 @@ PIEA at a truncation to less than
 \end_layout
 
 \begin_layout Standard
-The renormalisation of the theory at two and three loops was performed in
- vacuum.
+The results presented here are limited in several ways due to the lack of
+ numerical solutions for the full SI-3PI equations of motion.
+ The renormalisation of the theory at two and three loops was performed
+ in vacuum.
  The only finite temperature computation performed here was for the Hartree-Fock
  approximation.
  The extension of the two or three loop truncations to finite temperature,
  or an extension to non-equilibrium situations, will require a much heavier
- numerical effort than has yet been attempted.
- It would also be interesting to compare the self-consistent Higgs decay
- rate in the symmetry improved 2PI and 3PI formalisms.
- These investigations are left to future work.
+ numerical effort than has yet been attempted and so falls beyond the scope
+ of the present thesis.
+ Likewise, it would be interesting to compare the self-consistent Higgs
+ decay rate in the symmetry improved 2PI and 3PI formalisms.
  Similarly, analytical results for the renormalisation of the three loop
  truncation were only presented in 
 \begin_inset Formula $1+2$
@@ -6791,8 +6815,12 @@ The renormalisation of the theory at two and three loops was performed in
 \end_inset
 
  dimensions.
- This is also left to future work.
- The general renormalisation theory presented here, based on counter-terms,
+ Because these investigations involve a numerical effort substantially greater
+ than anything else in this thesis they are left to future work.
+\end_layout
+
+\begin_layout Standard
+The general renormalisation theory presented here, based on counter-terms,
  is difficult to use in practice.
  It would be interesting to see if symmetry improvement could work along
  with the counter-term-free functional renormalisation group approach 
