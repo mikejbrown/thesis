@@ -150,8 +150,115 @@ etc.
 \end_layout
 
 \begin_layout Standard
+Time variables can be chosen to exist on different contours depending on
+ the application being considered.
+ Most manipulations are agnostic about the contour chosen.
+ Where relevant the contour in use is specified.
+ The choices are:
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Zero temperature, Real time
+\emph default
+ or 
+\emph on
+Minkowski time
+\emph default
+ contours: 
+\begin_inset Formula $t$
+\end_inset
+
+ runs from 
+\begin_inset Formula $-\infty+i\epsilon$
+\end_inset
+
+ to 
+\begin_inset Formula $+\infty-i\epsilon$
+\end_inset
+
+ where 
+\begin_inset Formula $\epsilon\to0^{+}$
+\end_inset
+
+ is an infinitesimal convergence parameter,
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Equilibrium, Imaginary time
+\emph default
+ or 
+\emph on
+Matsubara
+\emph default
+ contours: 
+\begin_inset Formula $t$
+\end_inset
+
+ runs from 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $-i\beta$
+\end_inset
+
+ with periodic boundary conditions,
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+Non-equilibrium, Closed time path
+\emph default
+ or 
+\emph on
+Schwinger-Keldysh
+\emph default
+ contours: 
+\begin_inset Formula $t$
+\end_inset
+
+ runs on a multi-branch contour from 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ up to 
+\begin_inset Formula $+\infty$
+\end_inset
+
+, then back down from 
+\begin_inset Formula $+\infty-i\epsilon$
+\end_inset
+
+ to 
+\begin_inset Formula $t_{0}-i\epsilon$
+\end_inset
+
+ then down the imaginary axis to 
+\begin_inset Formula $t_{0}-i\beta$
+\end_inset
+
+ which is identified with 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage clearpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="56" columns="2">
+<lyxtabular version="3" rows="63" columns="2">
 <features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="left" valignment="top" width="0pt">
@@ -398,7 +505,7 @@ Standard Model, Beyond Standard Model
 \begin_inset Text
 
 \begin_layout Plain Layout
-MSSM, 2HDM
+MSSM, NMSSM
 \end_layout
 
 \end_inset
@@ -407,7 +514,54 @@ MSSM, 2HDM
 \begin_inset Text
 
 \begin_layout Plain Layout
-Minimal Supersymmetric extension of the SM, Two Higgs Doublet Model
+Minimal Supersymmetric extension of the SM, Next to Minimal ...
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2HDM
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Two Higgs Doublet Model
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mathrm{MS}$
+\end_inset
+
+(
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Modified) Minimal Subtraction
 \end_layout
 
 \end_inset
@@ -615,14 +769,6 @@ Euclidean time coordinate.
 \begin_inset Formula $\partial_{\mu}$
 \end_inset
 
-; 
-\begin_inset Formula $\partial_{\mu}^{\left(x\right)}$
-\end_inset
-
-, 
-\begin_inset Formula $\partial_{\mu}^{\left(y\right)}$
-\end_inset
-
 
 \end_layout
 
@@ -636,7 +782,35 @@ Spacetime derivative
 \begin_inset Formula $\partial_{\mu}=\partial/\partial x^{\mu}$
 \end_inset
 
-; wrt specified spacetime variable 
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\partial_{\mu}^{\left(x\right)}$
+\end_inset
+
+, 
+\begin_inset Formula $\partial_{\mu}^{\left(y\right)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Derivative w.r.t.
+ specified spacetime variable 
 \begin_inset Formula $\partial_{\mu}^{\left(y\right)}=\partial/\partial y^{\mu}$
 \end_inset
 
@@ -867,7 +1041,26 @@ with
 \begin_inset Formula $\left(\tilde{\mathrm{T}}\right)$
 \end_inset
 
-, 
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+(Anti-)Time ordered product
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 \begin_inset Formula $\mathrm{T}_{C}$
 \end_inset
 
@@ -880,7 +1073,7 @@ with
 \begin_inset Text
 
 \begin_layout Plain Layout
-(Anti-)Time ordered product, Contour time ordered product
+Contour time ordered product
 \end_layout
 
 \end_inset
@@ -1172,6 +1365,52 @@ Lagrangian mass parameter for the scalar field
 
 \begin_layout Plain Layout
 Lagrangian self-coupling parameter for the scalar field
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mu$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Renormalisation subtraction scale
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Lambda$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ultraviolet cutoff scale
 \end_layout
 
 \end_inset
@@ -1644,6 +1883,29 @@ Conserved
 \end_inset
 
  currents
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $T_{\mu\nu}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Energy-momentum tensor
 \end_layout
 
 \end_inset
