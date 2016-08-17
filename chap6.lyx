@@ -91,6 +91,68 @@ name "chap:chap6"
 
 \begin_layout Section
 Synopsis
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-Synopsis"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Soft Symmetry Improvement of 2PIEA
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-SSI-2PIEA"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Renormalisation of the Hartree-Fock truncation
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-Renormalisation-of-the-HF-truncation"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Solution in the infinite volume / low temperature limit
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-Solution-in-the-limit"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Linear response theory
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-Linear-response-theory"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Summary
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:ch6-Summary"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
