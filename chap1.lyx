@@ -2177,7 +2177,7 @@ reference "tab:Keldysh-components-of"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -3697,12 +3697,12 @@ reference "chap:chap2"
 \begin_inset Formula $n$
 \end_inset
 
-PIEA) techniques with an emphasis on their application to nonperturbative
+PIEA) techniques with an emphasis on their application to non-perturbative
  quantum field theory.
  This includes of review of the standard theory surrounding the methods
  and concludes with a novel investigation into the analytic properties of
  the solution of the 2PIEA in a toy model which can be compared to the exact
- solution and contrasted with other nonperturbative techniques.
+ solution and contrasted with other non-perturbative techniques.
  Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref

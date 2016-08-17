@@ -235,8 +235,8 @@ reference "chap:chap3"
 \end_inset
 
 .
- Thus this work is a stepping stone towards a fully self-consistent, nonperturba
-tive and manifestly gauge invariant treatment of out of equilibrium gauge
+ Thus this work is a stepping stone towards a fully self-consistent, non-perturb
+ative and manifestly gauge invariant treatment of out of equilibrium gauge
  theories.
 \end_layout
 
@@ -3549,7 +3549,7 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \end_inset
 
 .
- Nonperturbative counter-term calculations are generally much more difficult
+ Non-perturbative counter-term calculations are generally much more difficult
  than the analogous perturbative calculations, hence many of the manipulations
  are left in a supplemental 
 \noun on
@@ -5666,7 +5666,7 @@ which always has a positive solution.
 \begin_inset Formula $\mu^{2}>m_{G}^{2}\exp\left(\frac{24\pi\left|m^{2}\right|}{\hbar\left(N+2\right)\lambda}\right)$
 \end_inset
 
- nonperturbatively large in the ratio 
+ non-perturbatively large in the ratio 
 \begin_inset Formula $\lambda/\left|m^{2}\right|$
 \end_inset
 
