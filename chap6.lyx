@@ -100,6 +100,134 @@ name "sec:ch6-Synopsis"
 
 \end_layout
 
+\begin_layout Standard
+Chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ investigated the symmetry improvement formalism for 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, an attempt to improve the symmetry properties of solutions of non-perturba
+tive equations of motion by directly imposing the appropriate Ward identities
+ as constraints.
+ As discussed there are some successes attributable to this method.
+ However, there are also pathologies.
+ In particular: truncations of SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA may not admit solutions, too low order truncations of SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA (
+\begin_inset Formula $\mathcal{O}\left(\hbar^{l}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $l<n$
+\end_inset
+
+) are not fully self-consistent due to over-imposed constraints, and solutions
+ of SI-
+\begin_inset Formula $n$
+\end_inset
+
+PI equations of motion likely do not exist beyond equilibrium (certainly
+ not in the linear response approximation) because violations of 
+\begin_inset Formula $>n$
+\end_inset
+
+th order WIs feed back into the solutions for the 
+\begin_inset Formula $\leq n$
+\end_inset
+
+th order correlation functions.
+ All of this suggests that symmetry improvement 
+\emph on
+over-imposes
+\emph default
+ the WIs.
+ This motivates the investigation of methods which only enforce WIs approximatel
+y rather than exactly.
+ The idea is that the extra freedom may allow solutions to exist while violation
+s of the WIs may be acceptably small phenomenologically depending on the
+ application one has in mind.
+ This chapter investigates an entirely novel method called 
+\emph on
+soft symmetry improvement
+\emph default
+ (SSI) with this aim.
+\end_layout
+
+\begin_layout Standard
+The idea of soft symmetry improvement is to relax the WI constraint of the
+ symmetry improvement method.
+ Instead, the WI is enforced 
+\emph on
+softly
+\emph default
+ in the sense of least squares: a solution is found which minimises at the
+ same time violations of the WI and the violation of the unimproved equations
+ of motion.
+ The relative cost of WI violations is controlled by a new 
+\emph on
+stiffness
+\emph default
+ parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+, such that 
+\begin_inset Formula $\xi\to0\left(\infty\right)$
+\end_inset
+
+ reduces to the SI(unimproved)-2PIEA respectively.
+ The motivating hope behind the investigation is that for some range of
+ finite values of 
+\begin_inset Formula $\xi$
+\end_inset
+
+ the extra freedom to allow small violations of the WIs leads to a formalism
+ which is phenomenologically useful in the sense that physical quantities
+ can be computed to some desired accuracy fixed by the particular application
+ in mind.
+ It is shown in this chapter that this program cannot be fully realised,
+ at least in the infinite volume / low temperature limit, due to the infrared
+ sensitivity of the SSI-2PIEA: the limit is a subtle one and the only consistent
+ limiting procedures reduce to either the unimproved or SI-2PIEA, or to
+ a novel limit which has pathological properties of its own.
+\end_layout
+
+\begin_layout Standard
+This chapter formulates the SSI-2PIEA, then renormalises and solves the
+ resulting equations of motion in the Hartree-Fock approximation in thermal
+ equilibrium.
+ The infinite volume / low temperature limit (
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+) is examined carefully and three consistent limiting procedures are found.
+ Two reduce to previous work (the unimproved and SI-2PIEAs respectively)
+ but the third is new.
+ The properties of this new limit are examined in equilibrium and the linear
+ response approximation.
+ All of this work is new and forms the basis of a manuscript which is currently
+ being prepared for publication in a peer reviewed journal by the author.
+\end_layout
+
 \begin_layout Section
 Soft Symmetry Improvement of 2PIEA
 \begin_inset CommandInset label
@@ -109,6 +237,369 @@ name "sec:ch6-SSI-2PIEA"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The simplest way to arrive at the definition of the SSI-2PIEA is to start
+ with the standard 2PIEA 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ (suppressing indices and spacetime arguments where these just clutter)
+ and the trivial identity
+\begin_inset Formula 
+\begin{equation}
+\exp\left(\frac{i}{\hbar}\Gamma\left[\varphi,\Delta\right]\right)=\int\mathcal{D}\phi\delta\left(\phi-\varphi\right)\exp\left(\frac{i}{\hbar}\Gamma\left[\phi,\Delta\right]\right).
+\end{equation}
+
+\end_inset
+
+The usual symmetry improved action 
+\begin_inset Formula $\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ is then defined by inserting a delta function
+\begin_inset Formula 
+\begin{equation}
+\exp\left(\frac{i}{\hbar}\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]\right)=N\int\mathcal{D}\phi\delta\left(\phi-\varphi\right)\exp\left(\frac{i}{\hbar}\Gamma\left[\phi,\Delta\right]\right)\delta\left(\mathcal{W}\left[\phi,\Delta\right]\right)
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{W}\left[\phi,\Delta\right]=0$
+\end_inset
+
+ is the Ward identity and the normalisation factor 
+\begin_inset Formula $N$
+\end_inset
+
+ is chosen so that 
+\begin_inset Formula $\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ numerically equals 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\right]$
+\end_inset
+
+ when the arguments satisfy the Ward identity
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Formally 
+\begin_inset Formula $N=\left[\delta\left(0\right)\right]^{-1}$
+\end_inset
+
+ though it is not necessary to worry about rigorously defining this here.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that if one wants invariance under redefinitions of 
+\begin_inset Formula $\mathcal{W}$
+\end_inset
+
+ then one also needs to insert a factor of 
+\begin_inset Formula $\mathrm{Det}\left(\frac{\delta\mathcal{W}}{\delta\phi}\right)$
+\end_inset
+
+.
+ This can be handled straightforwardly in the functional formalism through
+ the introduction of Faddeev-Popov ghost fields
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+.
+ However, this is not necessary here because there is no strong reason to
+ consider transformations of 
+\begin_inset Formula $\mathcal{W}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ is defined only for field configurations satisfying the Ward identity,
+ and equals the usual effective action on those configurations.
+ Thus 
+\begin_inset Formula $\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ is nothing but the SI-2PIEA as discussed in chapters 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+, arrived at in a new way.
+\end_layout
+
+\begin_layout Standard
+It seems reasonable that the problems encountered with PT symmetry improvement
+ are due to the singular nature of the constraint surface, as embodied by
+ the delta function above.
+ Due to these problems a 
+\emph on
+soft symmetry improved
+\emph default
+ (SSI) effective action 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ can be introduced where the Ward identity is no longer strictly enforced.
+ Small violations 
+\begin_inset Formula $\mathcal{W}\neq0$
+\end_inset
+
+ are allowed but punished in the functional integral.
+ A new free parameter controls how strictly the constraint is enforced.
+ The hope is that the added freedom allows consistent solutions with non-trivial
+ dynamics (e.g.
+ linear response to external sources), while the stiffness can be tuned
+ to make violations of the Ward identity acceptably small in practice.
+ To achieve this replace the delta function by a smoothed version 
+\begin_inset Formula $\delta\left(\mathcal{W}\right)\to\delta_{\xi}\left(\mathcal{W}\right)$
+\end_inset
+
+ defined as follows
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\exp\left(\frac{i}{\hbar}\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right]\right) & =N_{0}\int\mathcal{D}\phi\delta\left(\phi-\varphi\right)\exp\left(\frac{i}{\hbar}\Gamma\left[\phi,\Delta\right]\right)\delta_{\xi}\left(\mathcal{W}\left[\phi,\Delta\right]\right)\nonumber \\
+ & =N_{1}\int\mathcal{D}\left[\phi,\lambda_{\phi},\lambda_{W}\right]\exp\left(\frac{i}{\hbar}\left[\lambda_{\phi}\left(\phi-\varphi\right)+\Gamma\left[\phi,\Delta\right]+\lambda_{W}\mathcal{W}-\frac{1}{2}\xi\lambda_{W}^{2}\right]\right)\nonumber \\
+ & =N_{2}\int\mathcal{D}\left[\phi,\lambda_{\phi}\right]\exp\left(\frac{i}{\hbar}\left[\lambda_{\phi}\left(\phi-\varphi\right)+\Gamma\left[\phi,\Delta\right]+\frac{1}{2\xi}\mathcal{W}^{2}\right]\right)\nonumber \\
+ & =\exp\left(\frac{i}{\hbar}\left[\Gamma\left[\varphi,\Delta\right]+\frac{1}{2\xi}\mathcal{W}^{2}\left[\varphi,\Delta\right]\right]\right).
+\end{align}
+
+\end_inset
+
+The first line is a formal expression that is defined by the next line.
+ The Fourier representation of the delta functions are used to replace 
+\begin_inset Formula $\delta\left(\phi-\varphi\right)\to\int\mathcal{D}\lambda_{\phi}\exp\frac{i}{\hbar}\lambda_{\phi}\left(\phi-\varphi\right)$
+\end_inset
+
+ etc.
+ The 
+\begin_inset Formula $\frac{1}{2}\xi\lambda_{W}^{2}$
+\end_inset
+
+ term is the one responsible for smoothing the delta function, with the
+ limit 
+\begin_inset Formula $\xi\to0$
+\end_inset
+
+ corresponding to a stiffening of the constraint.
+ In the third line the integral over 
+\begin_inset Formula $\lambda_{W}$
+\end_inset
+
+, which is Gaussian, is performed.
+ Finally, the integral over 
+\begin_inset Formula $\lambda_{\phi}$
+\end_inset
+
+ yields a delta function which kills the 
+\begin_inset Formula $\phi$
+\end_inset
+
+ integral, resulting in
+\begin_inset Formula 
+\begin{equation}
+\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right]=\Gamma\left[\varphi,\Delta\right]+\frac{1}{2\xi}\mathcal{W}^{2}\left[\varphi,\Delta\right].
+\end{equation}
+
+\end_inset
+
+In a slight generalisation of this derivation one can use the smoothing
+ term 
+\begin_inset Formula $-\frac{1}{2}\xi\lambda_{W}R^{-1}\lambda_{W}$
+\end_inset
+
+ where 
+\begin_inset Formula $R^{-1}$
+\end_inset
+
+ is an arbitrary positive definite symmetric kernel which may depend on
+ 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+, which gives
+\begin_inset Formula 
+\begin{equation}
+\Gamma_{\xi R}^{\mathrm{SSI}}\left[\varphi,\Delta\right]=\Gamma\left[\varphi,\Delta\right]+\frac{1}{2\xi}\mathcal{W}R\mathcal{W}-\frac{i\hbar}{2}\mathrm{Tr}\ln R.
+\end{equation}
+
+\end_inset
+
+This is the most general form of the definition of the SSI-2PIEA.
+ The simpler form 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ corresponds to a trivial kernel (now with indices explicit) 
+\begin_inset Formula 
+\begin{equation}
+R_{ab}^{AB}\left(x,y\right)=\delta^{AB}\delta_{ab}\delta\left(x-y\right),
+\end{equation}
+
+\end_inset
+
+which is used exclusively in the following, though the freedom to choose
+ a non-trivial 
+\begin_inset Formula $R$
+\end_inset
+
+ in the definition of the SSI effective action may be useful in certain
+ circumstances.
+ The end result is simply that 
+\begin_inset Formula $\mathcal{W}=0$
+\end_inset
+
+ is enforced in the sense of (possibly weighted if 
+\begin_inset Formula $R$
+\end_inset
+
+ is non-trivial) least-squared error, rather than as a strict constraint.
+\end_layout
+
+\begin_layout Standard
+Taking as the SSI equations of motion 
+\begin_inset Formula $\delta\Gamma_{\xi}^{\mathrm{SSI}}=0$
+\end_inset
+
+, it is straightforward to derive the equations of motion, now including
+ indices:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi_{a}} & =-\frac{1}{\xi}\mathcal{W}_{c}^{A}\left[\varphi,\Delta\right]\frac{\delta}{\delta\varphi_{a}}\mathcal{W}_{c}^{A}\left[\varphi,\Delta\right]\nonumber \\
+ & =-\frac{1}{\xi}\left(\Delta_{cf}^{-1}T_{fg}^{A}\varphi_{g}\right)\Delta_{cd}^{-1}T_{da}^{A},\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta_{ab}} & =-\frac{1}{\xi}\mathcal{W}_{c}^{A}\left[\varphi,\Delta\right]\frac{\delta}{\delta\Delta_{ab}}\mathcal{W}_{c}^{A}\left[\varphi,\Delta\right]\nonumber \\
+ & =\frac{1}{\xi}\left(\Delta_{cf}^{-1}T_{fg}^{A}\varphi_{g}\right)\Delta_{ca}^{-1}\left(\Delta_{bd}^{-1}T_{de}^{A}\varphi_{e}\right).
+\end{align}
+
+\end_inset
+
+Now the spontaneous symmetry breaking ansatz 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-ansatz-Delta"
+
+\end_inset
+
+, reproduced here
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\varphi_{a} & =\delta_{aN}v,\\
+\Delta_{ab}^{-1} & =\begin{cases}
+\Delta_{G}^{-1} & a=b\neq N,\\
+\Delta_{H}^{-1} & a=b=N,
+\end{cases}
+\end{align}
+
+\end_inset
+
+can be used, yielding
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi_{g}\left(x\right)} & =0,\ \left(g\neq N\right),\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\varphi_{N}\left(x\right)} & =\frac{1}{\xi}2\left(N-1\right)v\int_{yz}\Delta_{G}^{-1}\left(y,z\right)\Delta_{G}^{-1}\left(y,x\right)\nonumber \\
+ & =\frac{1}{\xi}2\left(N-1\right)vm_{G}^{4},\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta_{G}\left(x,y\right)} & =-\frac{1}{\xi}2v^{2}\int_{wrz}\Delta_{G}^{-1}\left(w,r\right)\Delta_{G}^{-1}\left(w,x\right)\Delta_{G}^{-1}\left(y,z\right)\nonumber \\
+ & =\frac{1}{\xi}2v^{2}m_{G}^{6},\\
+\frac{\delta\Gamma\left[\varphi,\Delta\right]}{\delta\Delta_{H}} & =0.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that if one takes 
+\begin_inset Formula $\xi\to0$
+\end_inset
+
+ proportionally to 
+\begin_inset Formula $vm_{G}^{4}$
+\end_inset
+
+ one obtains for the non-trivial right hand sides above 
+\begin_inset Formula $2\left(N-1\right)vm_{G}^{4}/\xi\to\text{constant}$
+\end_inset
+
+ and 
+\begin_inset Formula $2v^{2}m_{G}^{6}/\xi\to\left(\text{const.}\right)\times vm_{G}^{2}\to0$
+\end_inset
+
+ and one recovers the usual SI-2PIEA scheme in the limit (c.f.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SI-2PIEA-H-eom-general"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SI-2PIEA-G-eom-general"
+
+\end_inset
+
+).
+ This confirms the intuition that 
+\begin_inset Formula $\xi\to0$
+\end_inset
+
+ approaches hard symmetry improvement and that 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right]\to\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
+\end_inset
+
+ which really is just the standard symmetry improved effective action.
+ In the next sections these equations of motion are renormalised and solved
+ in the Hartree-Fock approximation.
 \end_layout
 
 \begin_layout Section

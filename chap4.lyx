@@ -570,7 +570,7 @@ reference "eq:SSB-ansatz-Delta"
 \begin{align}
 \frac{\partial\Gamma/\mathrm{V}T}{\partial v} & =\ell_{cN}^{c}m_{G}^{2},\\
 \frac{\delta\Gamma}{\delta\Delta_{G}\left(z,w\right)} & =\ell_{cN}^{c}vm_{G}^{4},\\
-\frac{\delta\Gamma}{\delta\Delta_{H}\left(z,w\right)} & =0,
+\frac{\delta\Gamma}{\delta\Delta_{H}\left(z,w\right)} & =0,\label{eq:SI-2PIEA-H-eom-general}
 \end{align}
 
 \end_inset
@@ -674,8 +674,8 @@ The divergence is regulated by setting
  This gives
 \begin_inset Formula 
 \begin{align}
-\frac{\partial\Gamma/\mathrm{V}T}{\partial v} & =\ell_{0}m^{3},\\
-\frac{\delta\Gamma}{\delta\Delta_{G}\left(z,w\right)} & =0.
+\frac{\partial\Gamma/\mathrm{V}T}{\partial v} & =\ell_{0}m^{3},\label{eq:SI-2PIEA-v-eom-general}\\
+\frac{\delta\Gamma}{\delta\Delta_{G}\left(z,w\right)} & =0.\label{eq:SI-2PIEA-G-eom-general}
 \end{align}
 
 \end_inset
