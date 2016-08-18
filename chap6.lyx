@@ -589,6 +589,20 @@ reference "eq:SI-2PIEA-G-eom-general"
 \end_inset
 
 ).
+ In fact it is shown through a careful treatment of the infinite volume
+ limit in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Broken-Phase-with-massless-Goldstones"
+
+\end_inset
+
+ that this limit is not quite correct, but there does exist a scaling limit
+ with 
+\begin_inset Formula $\xi\to0$
+\end_inset
+
+ which reduces to the SI-2PIEA.
  This confirms the intuition that 
 \begin_inset Formula $\xi\to0$
 \end_inset
@@ -1693,7 +1707,9 @@ name "subsec:Broken-Phase-with-massive-Goldstones"
 \end_layout
 
 \begin_layout Standard
-Decreasing temperature at 
+Attempting to describe the broken phase with the SSI equations of motion
+ is rather more complicated than the symmetric phase.
+ Decreasing temperature at 
 \emph on
 fixed
 \emph default
@@ -1701,7 +1717,7 @@ fixed
 \begin_inset Formula $\xi$
 \end_inset
 
-, 
+ gives 
 \begin_inset Formula $\hat{\xi}\to0$
 \end_inset
 
@@ -1769,7 +1785,16 @@ Note that all of the soft symmetry improvement terms vanish in the limit
 \end_inset
 
 .
- Thus it is necessary to allow 
+ Thus the SSI-2PIEA reduces to the unimproved 2PIEA if 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ It is necessary to allow 
 \begin_inset Formula $\xi$
 \end_inset
 
@@ -1804,20 +1829,16 @@ This section examines the simplest scheme to find a non-trivial limit, letting
 \end_inset
 
 ).
- The requirement that 
-\begin_inset Formula $\hat{\xi}\sim\mathcal{O}\left(1\right)$
+ If 
+\begin_inset Formula $\alpha\geq1$
 \end_inset
 
- as 
-\begin_inset Formula $\mathrm{V}\beta\to\infty$
-\end_inset
-
- implies 
+ the SSI terms vanish in the limit.
+ If 
 \begin_inset Formula $\alpha<1$
 \end_inset
 
-.
- In that case
+
 \begin_inset Formula 
 \begin{equation}
 \epsilon\to\left(\frac{\left(\mathrm{V}\beta\right)^{\alpha}\zeta}{4v^{2}\mathrm{V}\beta m_{G}^{4}}\right)^{1/3},
@@ -1892,7 +1913,51 @@ m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\lef
 \end_inset
 
 for the Goldstone and Higgs masses, respectively.
- Defining the dimensionless variables
+ Importantly, note that the mass appearing in Goldstone's theorem is 
+\begin_inset Formula $\epsilon m_{G}^{2}$
+\end_inset
+
+ (from the definition of 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+: 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)=\epsilon m_{G}^{2}$
+\end_inset
+
+), which obeys 
+\begin_inset Formula $\epsilon m_{G}^{2}\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ thanks to the scaling chosen for 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Thus this scheme satisfies Goldstone's theorem even if 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+.
+ What 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+ indicates here is not actually a violation of Goldstone's theorem, but
+ a 
+\emph on
+non
+\emph default
+-communication of the masslessness of the Goldstone zero mode to the other
+ modes.
+\end_layout
+
+\begin_layout Standard
+Defining the dimensionless variables
 \end_layout
 
 \begin_layout Standard
@@ -2273,7 +2338,7 @@ which has the solution
 Now consider the case where symmetry improvement is only weakly imposed,
  i.e.
  the SSI terms are a small perturbation.
- We expect this can be achieved by taking 
+ Intuitively this can be achieved by taking 
 \begin_inset Formula $\hat{\zeta}$
 \end_inset
 
@@ -2351,8 +2416,8 @@ Note that this equation is singular in the limit
 \end_layout
 
 \begin_layout Standard
-There is no sense in which the soft symmetry improvement terms are a small
- perturbation, no matter the value of 
+There is no sense in which the SSI terms are a small perturbation, no matter
+ the value of 
 \begin_inset Formula $\hat{\zeta}$
 \end_inset
 
@@ -2383,29 +2448,12 @@ There is no sense in which the soft symmetry improvement terms are a small
 \end_inset
 
  dependent) range of temperatures beneath the critical temperature.
- Note however that 
+ Further, 
 \begin_inset Formula $m_{G}^{2}$
 \end_inset
 
- is not the mass appearing in Goldstone's theorem: rather it is the mass
- corresponding to non-zero energy-momentum modes of the propagator.
- The mass appearing in Goldstone's theorem is 
-\begin_inset Formula $\epsilon m_{G}^{2}$
-\end_inset
-
- which does indeed vanish as 
-\begin_inset Formula $\mathrm{V}\beta\to\infty$
-\end_inset
-
-.
- Goldstone's theorem 
-\emph on
-is
-\emph default
- satisfied in the infinite volume limit, however, unlike the usual symmetry
- improvement method, here the masslessness of the zero mode is not communicated
- to the other modes.
- In fact it seems the opposite happens: the 2PI equations of motion 
+ appears to increase as the SSI terms are more strongly imposed.
+ Physically, the unimproved 2PI equations of motion 
 \begin_inset Quotes eld
 \end_inset
 
@@ -2887,7 +2935,7 @@ reference "fig:loss-of-solution-plots"
 \begin_inset Formula $\hat{\zeta}$
 \end_inset
 
-, which, of course, matches the behavior seen in Figures 
+, which, of course, matches the behaviour seen in Figures 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:ssi-hf-solns"
@@ -3125,6 +3173,684 @@ reference "eq:yb-eom"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Broken Phase with 
+\begin_inset Formula $m_{G}^{2}\to0$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Broken-Phase-with-massless-Goldstones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to find a broken phase solution without the pathological properties
+ of the previous section one can try to find solutions with 
+\begin_inset Formula $m_{G}^{2}\to0$
+\end_inset
+
+ in the 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ limit.
+ To achieve this taking the scalings
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\xi & =\left(\mathrm{V}\beta\right)^{\alpha}\zeta=\left(\mathrm{V}\beta\right)^{\alpha}\mu^{2+4\alpha}\hat{\zeta},\\
+m_{G}^{2} & =\left(\mathrm{V}\beta\right)^{-\gamma}\mu^{2-4\gamma}y,
+\end{align}
+
+\end_inset
+
+where 
+\begin_inset Formula $\gamma>0$
+\end_inset
+
+.
+ The definitions of the other dimensionless variables (
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $z$
+\end_inset
+
+, etc.) are as before.
+ Then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon\sim\begin{cases}
+\left(\frac{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma-1}}{\left(\mu^{-4}\right)^{\alpha+2\gamma-1}}\right)^{1/3}\left(\frac{\hat{\zeta}}{4xy^{2}}\right)^{1/3}, & \alpha+2\gamma-1<0,\\
+1-\frac{\left(\mu^{-4}\right)^{\alpha+2\gamma-1}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma-1}}\frac{4xy^{2}}{\hat{\zeta}}, & \alpha+2\gamma-1>0.
+\end{cases}
+\end{equation}
+
+\end_inset
+
+One can take the equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-H-eom"
+
+\end_inset
+
+ with the prescription 
+\begin_inset Formula $\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\to0$
+\end_inset
+
+ because, as discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:ch6-Renormalisation-of-the-HF-truncation"
+
+\end_inset
+
+, the Goldstone tadpole reduces to the unmodified form in the massless case.
+ The result is the equation of motion
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{2}\left(N-1\right)\frac{\lambda}{3}\frac{T^{2}}{12}+\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2},
+\end{equation}
+
+\end_inset
+
+for the vev, and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{6}\left(N+1\right)\lambda\frac{T^{2}}{12}+\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{equation}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\frac{T^{2}}{12}+\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right).
+\end{equation}
+
+\end_inset
+
+Note that, remarkably, the last two equations are nothing but the SI-2PIEA
+ equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-SI-2PI-HF-G-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fin-SI-2PI-HF-H-eom"
+
+\end_inset
+
+, having used that 
+\begin_inset Formula $\mathcal{T}_{G}^{\mathrm{fin}}=T^{2}/12$
+\end_inset
+
+ for 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+.
+ The only thing new is the modification of the vev equation by the term
+ 
+\begin_inset Formula $\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2}$
+\end_inset
+
+.
+ To examine this further one must consider the three cases 
+\begin_inset Formula $\alpha+2\gamma-1\gtreqless0$
+\end_inset
+
+ which govern the possible scaling behaviours of this term.
+\end_layout
+
+\begin_layout Standard
+In the 
+\begin_inset Formula $\alpha+2\gamma-1>0$
+\end_inset
+
+ case, 
+\begin_inset Formula $\epsilon\to1$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2}\to\mu^{2}\frac{\left(\mu^{-4}\right)^{\alpha+2\gamma}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma}}\frac{\left(N-1\right)2y^{2}}{\hat{\zeta}}\to0.
+\end{equation}
+
+\end_inset
+
+If on the other hand 
+\begin_inset Formula $\alpha+2\gamma-1=0$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ is a constant as 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2}\to\mu^{2}\frac{\left(\mu^{-4}\right)^{\alpha+2\gamma}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma}}\frac{1}{\hat{\zeta}}\left(N-1\right)2y^{2}\epsilon^{2}=\mu^{2}\frac{\left(\mu^{-4}\right)}{\left(\mathrm{V}\beta\right)}\frac{1}{\hat{\zeta}}\left(N-1\right)2y^{2}\epsilon^{2}\to0.
+\end{equation}
+
+\end_inset
+
+In both of these cases the vev equation is unmodified by SSI and cannot
+ hold at the same time as the other two equations of motion.
+ To see this solve the SI-2PI equations (c.f.
+ section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-SI-2PIEA-HF"
+
+\end_inset
+
+) to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{H}^{2}=-2m^{2}-\frac{1}{3}\lambda\left(N+2\right)\frac{T^{2}}{12},
+\end{equation}
+
+\end_inset
+
+and
+\begin_inset Formula 
+\begin{equation}
+\frac{\lambda}{6}v^{2}=-m^{2}-\frac{1}{6}\left(N+1\right)\lambda\frac{T^{2}}{12}-\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right).
+\end{equation}
+
+\end_inset
+
+Now use these in the vev equation to get
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{T^{2}}{12}=\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}},
+\end{equation}
+
+\end_inset
+
+which only holds at 
+\begin_inset Formula $T=0$
+\end_inset
+
+ (for 
+\begin_inset Formula $\mu=\bar{m}_{H}$
+\end_inset
+
+) and 
+\begin_inset Formula $T=T_{\star}$
+\end_inset
+
+.
+ There is no solution at any other temperature.
+\end_layout
+
+\begin_layout Standard
+The remaining case is 
+\begin_inset Formula $\alpha+2\gamma-1<0$
+\end_inset
+
+.
+ For this case the SSI term becomes
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+old ssi2piea.lyx notes are in error here, with an 8 instead of 2 on the RHS
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2}\to\mu^{2}\left(\frac{\left(\mu^{-4}\right)^{\alpha+2\gamma+2}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma+2}}\right)^{1/3}\left(N-1\right)\left(\frac{y^{2}}{2\hat{\zeta}x^{2}}\right)^{1/3}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only consistent solution possible is 
+\begin_inset Formula $\alpha+2\gamma+2=0$
+\end_inset
+
+ (which automatically satisfies the condition 
+\begin_inset Formula $\alpha+2\gamma-1<0$
+\end_inset
+
+).
+ In this case the vev equation of motion reduces to (in terms of dimensionless
+ variables now)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0=-\frac{\lambda}{6}\bar{X}+\frac{\lambda}{6}x+\frac{1}{6}\left(N-1\right)\lambda\frac{T^{2}/\mu^{2}}{12}+\frac{1}{2}\lambda\left(\frac{z}{16\pi^{2}}\ln z+T_{H}\right)+\left(N-1\right)\left(\frac{y^{2}}{2\hat{\zeta}x^{2}}\right)^{1/3}.
+\end{equation}
+
+\end_inset
+
+Subtracting the 
+\begin_inset Formula $m_{H}^{2}$
+\end_inset
+
+ equation from the vev equation gives
+\begin_inset Formula 
+\begin{equation}
+\left(N-1\right)\left(\frac{y^{2}}{2\hat{\zeta}x^{2}}\right)^{1/3}=\frac{\lambda}{3}x-z,
+\end{equation}
+
+\end_inset
+
+which can be easily solved for 
+\begin_inset Formula $y$
+\end_inset
+
+, giving
+\begin_inset Formula 
+\begin{equation}
+y^{2}=2\hat{\zeta}x^{2}\left(\frac{\frac{\lambda}{3}x-z}{N-1}\right)^{3}.
+\end{equation}
+
+\end_inset
+
+Note that 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ regardless of the value of 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ The only constraint is that 
+\begin_inset Formula $0\leq y<\infty$
+\end_inset
+
+ which requires 
+\begin_inset Formula $\lambda x/3\geq z$
+\end_inset
+
+.
+ This can be verified using the solution of the SI-2PI equations of motion
+\begin_inset Formula 
+\begin{align}
+z & =1-\frac{T^{2}}{T_{\star}^{2}},\\
+x & =\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right),
+\end{align}
+
+\end_inset
+
+(recalling 
+\begin_inset Formula $\bar{z}=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{X}=3/\lambda$
+\end_inset
+
+ are the zero temperature solutions and 
+\begin_inset Formula $T_{\star}^{2}=12\bar{X}/\left(N+2\right)$
+\end_inset
+
+) so that
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{\lambda}{3}x-z & =\frac{\lambda}{3}\left[\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right)\right]-\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)\nonumber \\
+ & =\left(N+2\right)\frac{T^{2}}{12\bar{X}}-\left(N+1\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\frac{\lambda}{3}T_{H}\nonumber \\
+ & =\frac{1}{\bar{X}}\left(\frac{T^{2}}{12}-T_{H}\right)\geq0,
+\end{align}
+
+\end_inset
+
+since the thermal integral 
+\begin_inset Formula $T_{H}$
+\end_inset
+
+ is maximised for massless particles.
+ Thus 
+\begin_inset Formula $0\leq y^{2}<\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+ can always be chosen in 
+\begin_inset Formula $0\leq y<\infty$
+\end_inset
+
+.
+ Thus 
+\begin_inset Formula $\xi\sim\left(\mathrm{V}\beta\right)^{-2\gamma-2}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{G}^{2}\sim\left(\mathrm{V}\beta\right)^{-\gamma}$
+\end_inset
+
+ with 
+\begin_inset Formula $\gamma>0$
+\end_inset
+
+ is identified as the unique limiting procedure that gives back the old
+ SI-2PIEA from the SSI-2PIEA.
+\end_layout
+
+\begin_layout Standard
+One can see that this procedure is the unique way of connecting the SI and
+ SSI methods by directly matching the SSI term in 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}$
+\end_inset
+
+ with the Lagrange multiplier term in 
+\begin_inset Formula $\Gamma^{\mathrm{SI}}$
+\end_inset
+
+.
+ Recall that the constraint term in the SI-2PIEA is (c.f.
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:simple-constraint"
+
+\end_inset
+
+)
+\begin_inset Formula 
+\begin{equation}
+\mathcal{C}=\frac{i}{2}\ell_{A}^{a}\mathcal{W}_{a}^{A}.
+\end{equation}
+
+\end_inset
+
+Recall also that the constraint is singular.
+ One must proceed by violating the constraint by an amount 
+\begin_inset Formula $\sim\eta$
+\end_inset
+
+ then taking a limit 
+\begin_inset Formula $\eta\to0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\ell\eta$
+\end_inset
+
+ is a constant.
+ Previously this procedure was carried out at the level of the equations
+ of motion.
+ Now it is convenient to implement this at the level of the action by shifting
+ the constraint term to
+\begin_inset Formula 
+\begin{equation}
+\frac{i}{2}\ell_{A}^{a}\left(\mathcal{W}_{a}^{A}-i\mathcal{F}_{a}^{A}\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{F}_{a}^{A}\sim\eta$
+\end_inset
+
+ is the regulator written in 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+-covariant form.
+ Setting the SI constraint term equal to the SSI term gives
+\begin_inset Formula 
+\begin{equation}
+\frac{i}{2}\ell_{A}^{a}\left(\mathcal{W}_{a}^{A}-i\mathcal{F}_{a}^{A}\right)=-\frac{1}{2\xi}\mathcal{W}_{a}^{A}\mathcal{W}_{a}^{A}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Substituting 
+\begin_inset Formula $\mathcal{W}_{a}^{A}$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\begin{equation}
+2\frac{i}{2}\mathrm{V}\beta\ell_{cN}^{a}\left(iP_{ca}^{\perp}\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]v-i\mathcal{F}_{a}^{cN}\right)=-\frac{1}{2\xi}\left(-2\left(N-1\right)v^{2}\mathrm{V}\beta\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2}\right),
+\end{equation}
+
+\end_inset
+
+having used 
+\begin_inset Formula $\int_{y}\Delta_{G}^{-1}\left(x,y\right)=\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)$
+\end_inset
+
+.
+ Without loss of generality one can set
+\begin_inset Formula 
+\begin{align}
+\ell_{cN}^{a} & =P_{ac}^{\perp}\left(\frac{1}{N-1}\ell_{dN}^{d}\right),\\
+\mathcal{F}_{a}^{cN} & =P_{ac}^{\perp}\mathcal{F},
+\end{align}
+
+\end_inset
+
+and find
+\begin_inset Formula 
+\begin{equation}
+-\ell_{cN}^{c}\left(\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)v-\mathcal{F}\right)=\frac{1}{\xi}\left(N-1\right)v^{2}\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2}.
+\end{equation}
+
+\end_inset
+
+Now recall that the usual form of the SI regulator is 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)v=m_{G}^{2}v=\eta m^{3}$
+\end_inset
+
+ where 
+\begin_inset Formula $m$
+\end_inset
+
+ is some arbitrary mass scale (it is convenient to take 
+\begin_inset Formula $m=\mu$
+\end_inset
+
+).
+ This identifies 
+\begin_inset Formula $\mathcal{F}=\eta m^{3}$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\eta\to0$
+\end_inset
+
+ limit is taken so that 
+\begin_inset Formula $\eta\ell_{cN}^{c}=\ell_{0}v$
+\end_inset
+
+ is a constant.
+ Using this and 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)=\epsilon m_{G}^{2}$
+\end_inset
+
+ gives
+\begin_inset Formula 
+\begin{equation}
+-\frac{\ell_{0}v}{\eta}\left(\epsilon m_{G}^{2}v-\eta\mu^{3}\right)=\frac{1}{\xi}\left(N-1\right)v^{2}\left[\epsilon m_{G}^{2}\right]^{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It is now convenient to take 
+\begin_inset Formula $\eta=\left(\mathrm{V}\beta\right)^{-\delta}\mu^{-4\delta}$
+\end_inset
+
+ with 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+.
+ Taking also the usual scalings for 
+\begin_inset Formula $\xi$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ one finds
+\begin_inset Formula 
+\begin{equation}
+-\left(\mathrm{V}\beta\right)^{\delta-\gamma}\mu^{4\left(\delta-\gamma\right)}\epsilon\ell_{0}xy+\ell_{0}\sqrt{x}=\frac{\mu^{-4\alpha-8\gamma}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma}}\epsilon^{2}\left(N-1\right)\frac{xy^{2}}{\hat{\zeta}}.
+\end{equation}
+
+\end_inset
+
+If 
+\begin_inset Formula $\alpha+2\gamma-1>0$
+\end_inset
+
+ asymptotic balance is impossible (dominant terms can be matched, but not
+ subdominant terms).
+ Likewise, balance cannot be achieved for 
+\begin_inset Formula $\alpha+2\gamma-1=0$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\alpha+2\gamma-1<0$
+\end_inset
+
+, however,
+\begin_inset Formula 
+\begin{multline}
+-\left(\mathrm{V}\beta\right)^{\delta-\gamma}\mu^{4\left(\delta-\gamma\right)}\left(\frac{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma-1}}{\left(\mu^{-4}\right)^{\alpha+2\gamma-1}}\right)^{1/3}\left(\frac{\hat{\zeta}}{4xy^{2}}\right)^{1/3}\ell_{0}xy+\ell_{0}\sqrt{x}\\
+=\frac{\mu^{-4\alpha-8\gamma}}{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma}}\left(\frac{\left(\mathrm{V}\beta\right)^{\alpha+2\gamma-1}}{\left(\mu^{-4}\right)^{\alpha+2\gamma-1}}\right)^{2/3}\left(\frac{\hat{\zeta}}{4xy^{2}}\right)^{2/3}\left(N-1\right)\frac{xy^{2}}{\hat{\zeta}}.
+\end{multline}
+
+\end_inset
+
+Matching powers of 
+\begin_inset Formula $\left(\mathrm{V}\beta\right)$
+\end_inset
+
+ on both sides gives
+\begin_inset Formula 
+\begin{align}
+0 & =3\delta-1+\alpha-\gamma,\\
+0 & =\alpha+2\gamma+2,
+\end{align}
+
+\end_inset
+
+which has the solution
+\begin_inset Formula 
+\begin{align}
+\alpha & =-2\delta,\\
+\gamma & =\delta-1.
+\end{align}
+
+\end_inset
+
+
+\begin_inset Formula $\gamma>0$
+\end_inset
+
+ requires 
+\begin_inset Formula $\delta>1$
+\end_inset
+
+.
+ Substituting this into the SI=SSI equation gives
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+-\left(\frac{\hat{\zeta}}{4xy^{2}}\right)^{1/3}\ell_{0}xy+\ell_{0}\sqrt{x}=\left(\frac{\hat{\zeta}}{4xy^{2}}\right)^{2/3}\left(N-1\right)\frac{xy^{2}}{\hat{\zeta}},
+\end{equation}
+
+\end_inset
+
+which can be solved for 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+, giving
+\begin_inset Formula 
+\begin{equation}
+\hat{\zeta}^{1/3}=\left(\frac{1}{2\sqrt{x}y}\right)^{1/3}\left(1\pm\sqrt{1-\left(N-1\right)\frac{y}{\ell_{0}}}\right).
+\end{equation}
+
+\end_inset
+
+This is the desired connection between the SSI stiffness parameter 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ and the SI Lagrange multiplier 
+\begin_inset Formula $\ell_{0}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
