@@ -528,7 +528,7 @@ reference "eq:SSB-ansatz-Delta"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\varphi_{a} & =\delta_{aN}v,\\
+\varphi_{a} & =v\delta_{aN},\\
 \Delta_{ab}^{-1} & =\begin{cases}
 \Delta_{G}^{-1} & a=b\neq N,\\
 \Delta_{H}^{-1} & a=b=N,
@@ -611,6 +611,929 @@ name "sec:ch6-Renormalisation-of-the-HF-truncation"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Since it turns out that the SSI method is sensitive to the 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ limit the theory will be formulated in Euclidean spacetime (i.e.
+ the Matsubara formalism) in a box of volume 
+\begin_inset Formula $\mathrm{V}=L^{3}$
+\end_inset
+
+ with periodic boundary conditions of period 
+\begin_inset Formula $L$
+\end_inset
+
+ in the space directions and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ in the time 
+\begin_inset Formula $\tau=it$
+\end_inset
+
+ direction.
+ This mirrors the treatment of finite temperature scalar fields in section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Time-contours-Green-functions-NEQFT"
+
+\end_inset
+
+.
+ The Euclidean continuation leads to 
+\begin_inset Formula $\partial_{\mu}\partial^{\mu}\to-\nabla^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\int_{x}\to-i\int_{x_{E}}$
+\end_inset
+
+ and the conventions
+\begin_inset Formula 
+\begin{align}
+f\left(x_{E}\right) & =\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\mathrm{e}^{i\left(\omega_{n}\tau+\boldsymbol{k}\cdot\boldsymbol{x}\right)}f\left(n,\boldsymbol{k}\right),\\
+f\left(n,\boldsymbol{q}\right) & =\int_{x_{E}}\mathrm{e}^{-i\left(\omega_{m}\tau+\boldsymbol{q}\cdot\boldsymbol{x}\right)}f\left(x_{E}\right),
+\end{align}
+
+\end_inset
+
+for Fourier transforms.
+ This leads to the Fourier transforms of the propagators
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Delta_{G/H}\left(x,y\right) & =\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\mathrm{e}^{i\left(\omega_{n}\left(\tau_{x}-\tau_{y}\right)+\boldsymbol{k}\cdot\left(\boldsymbol{x}-\boldsymbol{y}\right)\right)}\Delta_{G/H}\left(n,\boldsymbol{k}\right),\\
+\Delta_{G/H}^{-1}\left(x,y\right) & =\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\mathrm{e}^{i\left(\omega_{n}\left(\tau_{x}-\tau_{y}\right)+\boldsymbol{k}\cdot\left(\boldsymbol{x}-\boldsymbol{y}\right)\right)}\Delta_{G/H}^{-1}\left(n,\boldsymbol{k}\right),
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta_{G/H}\left(n,\boldsymbol{k}\right)=\int_{x-y}\mathrm{e}^{-i\left(\omega_{n}\left(\tau_{x}-\tau_{y}\right)+\boldsymbol{k}\cdot\left(\boldsymbol{x}-\boldsymbol{y}\right)\right)}\Delta_{G/H}\left(x,y\right),
+\end{equation}
+
+\end_inset
+
+etc., where the Matsubara frequencies are 
+\begin_inset Formula $\omega_{n}=2\pi n/\beta$
+\end_inset
+
+ and the wave vectors 
+\begin_inset Formula $\boldsymbol{k}$
+\end_inset
+
+ are discretized on a lattice of spacing 
+\begin_inset Formula $2\pi/L$
+\end_inset
+
+.
+ The four dimensional Euclidean shorthand 
+\begin_inset Formula $k_{E}=\left(\omega_{n},\boldsymbol{k}\right)$
+\end_inset
+
+ is often useful.
+ 
+\end_layout
+
+\begin_layout Standard
+It is straightforward to modify the real time 2PIEA of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ to the Euclidean formalism.
+ The results are collected here for easy reference.
+ The defining functional integral of the field theory is the partition function
+\begin_inset Formula 
+\begin{equation}
+Z\left[J,K\right]=\int\mathcal{D}\left[\phi\right]\exp\left(-S_{E}\left[\phi\right]-J_{a}\phi_{a}-\frac{1}{2}\phi_{a}K_{ab}\phi_{b}\right),
+\end{equation}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+S_{E}\left[\phi\right]=\int_{x}\frac{1}{2}\left(\nabla\phi_{a}\right)^{2}+\frac{1}{2}m^{2}\phi_{a}\phi_{a}+\frac{1}{4!}\lambda\left(\phi_{a}\phi_{a}\right)^{2},
+\end{equation}
+
+\end_inset
+
+is the Euclidean action.
+ Then 
+\begin_inset Formula $W\left[J,K\right]=-\ln Z\left[J,K\right]$
+\end_inset
+
+ is the connected generating functional and
+\begin_inset Formula 
+\begin{equation}
+\Gamma\left[\varphi,\Delta\right]=W-J\frac{\delta W}{\delta J}-K\frac{\delta W}{\delta K},
+\end{equation}
+
+\end_inset
+
+is the standard 2PIEA once 
+\begin_inset Formula $J$
+\end_inset
+
+ and 
+\begin_inset Formula $K$
+\end_inset
+
+ are eliminated in terms of 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ using
+\begin_inset Formula 
+\begin{align}
+\frac{\delta W}{\delta J_{a}} & =\left\langle \phi_{a}\right\rangle =\varphi_{a},\\
+\frac{\delta W}{\delta K_{ab}} & =\frac{1}{2}\left\langle \phi_{a}\phi_{b}\right\rangle =\frac{1}{2}\left(\Delta_{ab}+\varphi_{a}\varphi_{b}\right).
+\end{align}
+
+\end_inset
+
+As before, the Legendre transform can be evaluated by the saddle point method,
+ which results in
+\begin_inset Formula 
+\begin{equation}
+\Gamma=S_{E}\left[\varphi\right]+\frac{1}{2}\mathrm{Tr}\ln\left(\Delta^{-1}\right)+\frac{1}{2}\mathrm{Tr}\left(\Delta_{0}^{-1}\Delta-1\right)+\Gamma_{2},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\Gamma_{2}$
+\end_inset
+
+ is the set of two particle irreducible graphs and 
+\begin_inset Formula $\Delta_{0}^{-1}=\delta^{2}S_{E}/\delta\phi\delta\phi$
+\end_inset
+
+ is the unperturbed propagator
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\Delta_{0ab}^{-1}=\left(-\nabla^{2}+m^{2}+\frac{1}{6}\lambda\varphi^{2}\right)\delta_{ab}+\frac{1}{3}\lambda\varphi_{a}\varphi_{b}.
+\end{equation}
+
+\end_inset
+
+To two loop order
+\begin_inset Formula 
+\begin{align}
+\Gamma_{2} & =\frac{1}{4!}\lambda\Delta_{aa}\Delta_{bb}+\frac{1}{12}\lambda\Delta_{ab}\Delta_{ab}-\frac{1}{36}\lambda^{2}\varphi_{b}\Delta_{ac}\Delta_{ac}\Delta_{bd}\varphi_{d}-\frac{1}{18}\lambda^{2}\varphi_{b}\Delta_{ac}\Delta_{ad}\Delta_{bc}\varphi_{d}+\cdots.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To form 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}$
+\end_inset
+
+ one adds the soft-symmetry improvement term 
+\begin_inset Formula $-\frac{1}{2\xi}\mathcal{W}^{2}$
+\end_inset
+
+ where the Ward identity 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-WI"
+
+\end_inset
+
+ is
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{a}^{A}=\Delta_{ab}^{-1}T_{bc}^{A}\varphi_{c}.
+\end{equation}
+
+\end_inset
+
+(Note that 
+\begin_inset Formula $\mathcal{W}$
+\end_inset
+
+ is pure imaginary due to the 
+\begin_inset Formula $i$
+\end_inset
+
+ in 
+\begin_inset Formula $T^{A}$
+\end_inset
+
+ so 
+\begin_inset Formula $-\mathcal{W}^{2}$
+\end_inset
+
+ is positive definite.) Using the spontaneous symmetry breaking ansatz and
+ inserting the ten renormalisation constants 
+\begin_inset Formula $Z$
+\end_inset
+
+, 
+\begin_inset Formula $Z_{\Delta}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta m_{0,1}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda_{1,2}^{A,B}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda$
+\end_inset
+
+ (c.f.
+ section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+) and a new one 
+\begin_inset Formula $Z_{\xi}$
+\end_inset
+
+ for 
+\begin_inset Formula $\xi$
+\end_inset
+
+ gives the renormalised SSI effective action:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right] & =\int_{x}\left(Z_{\Delta}^{-1}\frac{m^{2}+\delta m_{0}^{2}}{2}v^{2}+\frac{\lambda+\delta\lambda_{0}}{4!}v^{4}\right)\nonumber \\
+ & +\frac{1}{2}\left(N-1\right)\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta_{G}^{-1}\right)+\frac{1}{2}\mathrm{Tr}\ln\left(Z^{-1}Z_{\Delta}^{-1}\Delta_{H}^{-1}\right)\nonumber \\
+ & +\frac{1}{2}\left(N-1\right)\mathrm{Tr}\left[\left(-ZZ_{\Delta}\nabla^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\Delta_{G}\right]\nonumber \\
+ & +\frac{1}{2}\mathrm{Tr}\left[\left(-ZZ_{\Delta}\nabla^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\Delta_{H}\right]\nonumber \\
+ & +\Gamma_{2}+Z_{\xi}^{-1}\frac{1}{\xi}\left(N-1\right)v^{2}Z^{-1}Z_{\Delta}^{-2}\int_{xyz}\Delta_{G}^{-1}\left(x,y\right)\Delta_{G}^{-1}\left(x,z\right)
+\end{align}
+
+\end_inset
+
+with
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Gamma_{2} & =\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)\Delta_{aa}\Delta_{bb}+\frac{1}{12}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{B}\right)\Delta_{ab}\Delta_{ab}\nonumber \\
+ & -\frac{1}{36}Z_{\Delta}^{3}\left(\lambda+\delta\lambda\right)^{2}\varphi_{b}\Delta_{ac}\Delta_{ac}\Delta_{bd}\varphi_{d}-\frac{1}{18}Z_{\Delta}^{3}\left(\lambda+\delta\lambda\right)^{2}\varphi_{b}\Delta_{ac}\Delta_{ad}\Delta_{bc}\varphi_{d}+\cdots\\
+ & =\frac{1}{4!}Z_{\Delta}^{2}\left(N-1\right)\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\Delta_{G}\Delta_{G}\nonumber \\
+ & +\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\left(N-1\right)\Delta_{G}\Delta_{H}+\frac{1}{4!}Z_{\Delta}^{2}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\Delta_{H}\Delta_{H}\nonumber \\
+ & -\frac{1}{36}\left(N-1\right)Z_{\Delta}^{3}\left(\lambda+\delta\lambda\right)^{2}v^{2}\Delta_{G}\Delta_{G}\Delta_{H}-\frac{1}{12}Z_{\Delta}^{3}\left(\lambda+\delta\lambda\right)^{2}v^{2}\Delta_{H}\Delta_{H}\Delta_{H}+\cdots.
+\end{align}
+
+\end_inset
+
+This can be simplified using the mode expansions for 
+\begin_inset Formula $\Delta_{G/H}$
+\end_inset
+
+ and doing the integrals, giving
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Gamma_{\xi}^{\mathrm{SSI}}\left[\varphi,\Delta\right] & =\mathrm{V}\beta\left(Z_{\Delta}^{-1}\frac{m^{2}+\delta m_{0}^{2}}{2}v^{2}+\frac{\lambda+\delta\lambda_{0}}{4!}v^{4}\right)+\frac{1}{2}N\mathrm{V}\beta\ln\left(Z^{-1}Z_{\Delta}^{-1}\right)\nonumber \\
+ & +\frac{1}{2}\left(N-1\right)\sum_{n,\boldsymbol{k}}\ln\frac{1}{\Delta_{G}\left(n,\boldsymbol{k}\right)}+\frac{1}{2}\sum_{n,\boldsymbol{k}}\ln\frac{1}{\Delta_{H}\left(n,\boldsymbol{k}\right)}\nonumber \\
+ & +\frac{1}{2}\left(N-1\right)\sum_{n,\boldsymbol{k}}\left(ZZ_{\Delta}k_{E}^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\Delta_{G}\left(n,\boldsymbol{k}\right)\nonumber \\
+ & +\frac{1}{2}\sum_{n,\boldsymbol{k}}\left(ZZ_{\Delta}k_{E}^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\Delta_{H}\left(n,\boldsymbol{k}\right)\nonumber \\
+ & +\Gamma_{2}+Z_{\xi}^{-1}\frac{1}{\xi}\left(N-1\right)v^{2}Z^{-1}Z_{\Delta}^{-2}\mathrm{V}\beta\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2},
+\end{align}
+
+\end_inset
+
+noting that the integrals in the SSI term give
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\int_{xyz}\Delta_{G}^{-1}\left(x,y\right)\Delta_{G}^{-1}\left(x,z\right)=\mathrm{V}\beta\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now one can make a basic consistency check by examining the tree level equations
+ of motion, which are (setting renormalisation constants to their trivial
+ values)
+\begin_inset Formula 
+\begin{align}
+0 & =\mathrm{V}\beta v\left\{ \left(m^{2}+\frac{\lambda}{6}v^{2}\right)+\frac{2\left(N-1\right)}{\xi}\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2}\right\} ,\\
+\frac{1}{\Delta_{G}\left(n,\boldsymbol{k}\right)} & =k_{E}^{2}+m^{2}+\frac{\lambda}{6}v^{2},\ n,\boldsymbol{k}\neq0,\\
+\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right) & =m^{2}+\frac{\lambda}{6}v^{2}-\frac{4\mathrm{V}\beta}{\xi}v^{2}\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{3},\\
+\frac{1}{\Delta_{H}\left(n,\boldsymbol{k}\right)} & =k_{E}^{2}+m^{2}+\frac{\lambda}{2}v^{2}.
+\end{align}
+
+\end_inset
+
+Indeed these have 
+\begin_inset Formula $v^{2}=-6m^{2}/\lambda$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta_{G}^{-1}\left(n,\boldsymbol{k}\right)=k_{E}^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta_{H}^{-1}\left(n,\boldsymbol{k}\right)=k_{E}^{2}+m_{H}^{2}=k_{E}^{2}+\frac{\lambda}{3}v^{2}$
+\end_inset
+
+ as a consistent solution as expected.
+ Since these equations are self-consistent there is a valid concern about
+ possible spurious solutions.
+ This can be investigated by solving the 
+\begin_inset Formula $v$
+\end_inset
+
+ and 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)$
+\end_inset
+
+ equations together on the assumption that 
+\begin_inset Formula $v^{2}\neq0,-6m^{2}/\lambda$
+\end_inset
+
+.
+ Using the 
+\begin_inset Formula $v$
+\end_inset
+
+ equation to reduce the degree of the 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)$
+\end_inset
+
+ to first order gives the potential spurious solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+-\frac{\xi}{2\left(N-1\right)} & =\left(m^{2}+\frac{\lambda}{6}v^{2}\right)/\left[1-\frac{2\mathrm{V}\beta}{N-1}v^{2}\left(m^{2}+\frac{\lambda}{6}v^{2}\right)\right]^{2},\\
+\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right) & =\left(m^{2}+\frac{\lambda}{6}v^{2}\right)/\left[1-\frac{2\mathrm{V}\beta}{N-1}v^{2}\left(m^{2}+\frac{\lambda}{6}v^{2}\right)\right].
+\end{align}
+
+\end_inset
+
+However, the condition that there are no tachyons (i.e.
+ excitations with 
+\begin_inset Formula $m^{2}<0$
+\end_inset
+
+ indicating the instability of the vacuum) requires 
+\begin_inset Formula $\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\geq0$
+\end_inset
+
+ which implies
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+0\leq m^{2}+\frac{\lambda}{6}v^{2}<\frac{N-1}{2\mathrm{V}\beta v^{2}},
+\end{equation}
+
+\end_inset
+
+which then implies that the right hand side of the first equation is positive,
+ but then the left hand side 
+\begin_inset Formula $\propto-\xi$
+\end_inset
+
+ is negative leading to a contradiction.
+ Thus the only spurious solutions are tachyonic and so easily dismissable.
+\end_layout
+
+\begin_layout Standard
+At the Hartree-Fock level
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Gamma_{2} & =\frac{1}{4!}Z_{\Delta}^{2}\left(N-1\right)\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\Delta_{G}\left(n,\boldsymbol{k}\right)\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\left(N-1\right)\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\Delta_{G}\left(n,\boldsymbol{k}\right)\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +\frac{1}{4!}Z_{\Delta}^{2}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}\sum_{n,\boldsymbol{k}}\Delta_{H}\left(n,\boldsymbol{k}\right)\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right).
+\end{align}
+
+\end_inset
+
+Further, since 
+\begin_inset Formula $\xi$
+\end_inset
+
+ is so far arbitrary, there is no loss of generality in setting 
+\begin_inset Formula $Z_{\xi}=Z_{\Delta}^{-1}$
+\end_inset
+
+.
+ The resulting equations of motion are for the vev:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\mathrm{V}\beta\left(Z_{\Delta}^{-1}\frac{m^{2}+\delta m_{0}^{2}}{2}2v+\frac{\lambda+\delta\lambda_{0}}{4!}4v^{3}\right)+\frac{1}{2}\left(N-1\right)\left(Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}2v\right)\sum_{n,\boldsymbol{k}}\Delta_{G}\left(n,\boldsymbol{k}\right)\nonumber \\
+ & +\frac{1}{2}\left(Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}2v\right)\sum_{n,\boldsymbol{k}}\Delta_{H}\left(n,\boldsymbol{k}\right)+\frac{1}{\xi}\left(N-1\right)2vZ^{-1}Z_{\Delta}^{-1}\mathrm{V}\beta\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{2},
+\end{align}
+
+\end_inset
+
+for the Goldstone propagator:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\Delta_{G}\left(n,\boldsymbol{k}\right)} & =ZZ_{\Delta}k_{E}^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}2\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\frac{1}{\mathrm{V}\beta}\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\delta_{n0}\delta_{\boldsymbol{k}\boldsymbol{0}}\frac{1}{\xi}v^{2}Z^{-1}Z_{\Delta}^{-1}\mathrm{V}\beta\left(-2\right)\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{3},
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\Delta_{H}\left(n,\boldsymbol{k}\right)} & =ZZ_{\Delta}k_{E}^{2}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\left(N-1\right)\frac{1}{\mathrm{V}\beta}\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}2\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)
+\end{align}
+
+\end_inset
+
+for the Higgs propagator.
+\end_layout
+
+\begin_layout Standard
+Since the self-energies are momentum independent (except for the 
+\begin_inset Formula $\delta_{n0}\delta_{\boldsymbol{k}\boldsymbol{0}}$
+\end_inset
+
+ term in 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+) the propagators can be written as
+\begin_inset Formula 
+\begin{eqnarray}
+\Delta_{G}\left(n,\boldsymbol{k}\right) & = & \begin{cases}
+\Delta_{G}\left(0,\boldsymbol{0}\right) & n=\boldsymbol{k}=0\\
+\frac{1}{k_{E}^{2}+m_{G}^{2}} & n,\boldsymbol{k}\neq0
+\end{cases},\\
+\Delta_{H}\left(n,\boldsymbol{k}\right) & = & \frac{1}{k_{E}^{2}+m_{H}^{2}}.
+\end{eqnarray}
+
+\end_inset
+
+Substituting these in the propagator equations of motion gives 
+\begin_inset Formula $ZZ_{\Delta}=1$
+\end_inset
+
+ and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}2\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\frac{1}{\mathrm{V}\beta}\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right),
+\end{align}
+
+\end_inset
+
+from the non-zero Goldstone modes,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\frac{1}{\Delta_{G}\left(0,\boldsymbol{0}\right)} & =m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}2\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\frac{1}{\mathrm{V}\beta}\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{\xi}v^{2}\mathrm{V}\beta\left(-2\right)\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{3}\nonumber \\
+ & =m_{G}^{2}-4\frac{1}{\xi}v^{2}\mathrm{V}\beta\left[\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right)\right]^{3},
+\end{align}
+
+\end_inset
+
+for the zero mode and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{H}^{2} & =m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)2\left(N-1\right)\frac{1}{\mathrm{V}\beta}\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)\nonumber \\
+ & +2\frac{1}{4!}Z_{\Delta}^{2}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\frac{1}{\mathrm{V}\beta}2\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)
+\end{align}
+
+\end_inset
+
+for the Higgs mass.
+\end_layout
+
+\begin_layout Standard
+Now there are two cases which must be distinguished.
+ In the first, 
+\begin_inset Formula $m_{G}^{2}=0$
+\end_inset
+
+ and the zero mode equation has the solutions
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1}\left(0,\boldsymbol{0}\right) & =\begin{cases}
+0,\\
+\pm i\sqrt{\frac{\xi}{4v^{2}\mathrm{V}\beta}},
+\end{cases}
+\end{align}
+
+\end_inset
+
+the latter two of which are clearly unphysical.
+ However the first solution is just what one would have if 
+\begin_inset Formula $\Delta_{G}\left(n,\boldsymbol{k}\right)=k_{E}^{-2}$
+\end_inset
+
+ as usual for a massless particle (i.e.
+ the zero mode need no longer be treated separately).
+ Then 
+\begin_inset Formula $\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{m,\boldsymbol{q}}\Delta_{H}\left(m,\boldsymbol{q}\right)$
+\end_inset
+
+ are just the familiar Hartree-Fock tadpole sums, which in the infinite
+ volume limit are
+\begin_inset Formula 
+\begin{eqnarray}
+\sum_{n,\boldsymbol{k}}\tilde{\Delta}_{G}\left(n,\boldsymbol{k}\right) & = & \beta\mathrm{V}\left(\mathcal{T}_{G}^{\infty}+\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{T}_{G}^{\mathrm{th}}\right),\\
+\sum_{n,\boldsymbol{k}}\Delta_{H}\left(n,\boldsymbol{k}\right) & = & \beta\mathrm{V}\left(\mathcal{T}_{H}^{\infty}+\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{eqnarray}
+
+\end_inset
+
+where
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\mathcal{T}_{G/H}^{\infty} & = & \kappa m_{G/H}^{2},\\
+\mathcal{T}_{G/H}^{\mathrm{fin}} & = & \frac{m_{G/H}^{2}}{16\pi^{2}}\ln\frac{m_{G/H}^{2}}{\mu^{2}},
+\end{eqnarray}
+
+\end_inset
+
+are the vacuum contribution and 
+\begin_inset Formula $\mathcal{T}_{G/H}^{\mathrm{th}}$
+\end_inset
+
+ are the Bose-Einstein integrals 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:Bose-Einstein-thermal-tadpole"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\mathcal{T}_{G/H}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\omega_{\boldsymbol{k}}}\frac{1}{\mathrm{e}^{\beta\omega_{\boldsymbol{k}}}-1},\ \omega_{\boldsymbol{k}}=\sqrt{\boldsymbol{k}^{2}+m_{G/H}^{2}}.
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula $\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ are regularisation scheme dependent constants (
+\begin_inset Formula $\kappa$
+\end_inset
+
+ is divergent).
+ In 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ in 
+\begin_inset Formula $4-2\eta$
+\end_inset
+
+ dimensions, 
+\begin_inset Formula $\kappa=-\left(\frac{1}{\eta}-\gamma+1+\ln4\pi\right)/16\pi^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If, on the other hand, 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+ then 
+\begin_inset Formula $\Delta_{G}$
+\end_inset
+
+ no longer has the usual form and the Goldstone tadpole must be handled
+ differently.
+ In this case it can be rewritten as
+\begin_inset Formula 
+\begin{eqnarray}
+\sum_{m,\boldsymbol{q}}\Delta_{G}\left(m,\boldsymbol{q}\right) & = & \sum_{m,\boldsymbol{q}\neq0}\Delta_{G}\left(m,\boldsymbol{q}\right)+\Delta_{G}\left(0,\boldsymbol{0}\right)\nonumber \\
+ & = & \sum_{m,\boldsymbol{q}\neq0}\Delta_{G}\left(m,\boldsymbol{q}\right)+\frac{1}{m_{G}^{2}}+\Delta_{G}\left(0,\boldsymbol{0}\right)-\frac{1}{m_{G}^{2}}\nonumber \\
+ & = & \sum_{m,\boldsymbol{q}}\tilde{\Delta}_{G}\left(m,\boldsymbol{q}\right)+\Delta_{G}\left(0,\boldsymbol{0}\right)-\frac{1}{m_{G}^{2}}
+\end{eqnarray}
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{\Delta}_{G}$
+\end_inset
+
+ is an auxiliary propagator defined to have the usual form
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Delta}_{G}\left(n,\boldsymbol{k}\right)=\frac{1}{k_{E}^{2}+m_{G}^{2}}.
+\end{equation}
+
+\end_inset
+
+Then 
+\begin_inset Formula $\sum_{m,\boldsymbol{q}}\tilde{\Delta}_{G}\left(m,\boldsymbol{q}\right)$
+\end_inset
+
+ is just the familiar Hartree-Fock tadpole sum for a particle of mass 
+\begin_inset Formula $m_{G}$
+\end_inset
+
+.
+ The terms 
+\begin_inset Formula $\Delta_{G}\left(0,\boldsymbol{0}\right)-\frac{1}{m_{G}^{2}}$
+\end_inset
+
+ in the Goldstone tadpole account for the shift in the zero mode propagator
+ from its usual value.
+ Focusing on the zero mode equation, let
+\begin_inset Formula 
+\begin{equation}
+\Delta_{G}\left(0,\boldsymbol{0}\right)=\frac{1}{m_{G}^{2}\epsilon},
+\end{equation}
+
+\end_inset
+
+which defines 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.
+ Then,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\epsilon & =1-\frac{4v^{2}\mathrm{V}\beta m_{G}^{4}}{\xi}\epsilon^{3}=1-\frac{4\epsilon^{3}}{27\hat{\xi}},
+\end{align}
+
+\end_inset
+
+where
+\begin_inset Formula 
+\begin{equation}
+\hat{\xi}=\frac{\xi}{27v^{2}\mathrm{V}\beta m_{G}^{4}}
+\end{equation}
+
+\end_inset
+
+and the numeric factor is chosen for later convenience.
+ The real solution of this cubic equation is
+\begin_inset Formula 
+\begin{equation}
+\epsilon=\frac{3}{2}\sqrt[3]{\hat{\xi}\left(\sqrt{\hat{\xi}+1}-1\right)}\left(\sqrt[3]{\frac{\hat{\xi}}{\left(\sqrt{\hat{\xi}+1}-1\right)^{2}}}-1\right),
+\end{equation}
+
+\end_inset
+
+which is monotonically increasing from 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $1$
+\end_inset
+
+ as 
+\begin_inset Formula $\hat{\xi}$
+\end_inset
+
+ goes from 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ and behaves asymptotically as
+\begin_inset Formula 
+\begin{equation}
+\epsilon\sim\begin{cases}
+\frac{3\hat{\xi}^{1/3}}{2^{2/3}}+\mathcal{O}\left(\hat{\xi}^{2/3}\right), & \hat{\xi}\to0,\\
+1-\frac{4}{27\hat{\xi}}+\mathcal{O}\left(\hat{\xi}^{-2}\right), & \hat{\xi}\to\infty.
+\end{cases}
+\end{equation}
+
+\end_inset
+
+This is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:goldstone-zero-mode-epsilon"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/zero_mode_epsilon.eps
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:goldstone-zero-mode-epsilon"
+
+\end_inset
+
+Plot of 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ (blue) versus 
+\begin_inset Formula $\hat{\xi}$
+\end_inset
+
+ solving the Goldstone boson zero mode equation.
+ The line at 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+ is to guide the eye.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The remaining equations are renormalised by demanding that kinematically
+ distinct divergences vanish.
+ Details of this laborious and unenlightening calculation are included in
+ the supplemental 
+\noun on
+Mathematica
+\noun default
+ notebook
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+.
+ The resulting renormalisation constants are
+\begin_inset Formula 
+\begin{eqnarray}
+\delta m_{0}^{2} & = & \delta m_{1}^{2}=-\frac{m^{2}\kappa\lambda\hbar}{3}\left(\frac{\delta\lambda_{1}^{A}}{\delta\lambda_{1}^{B}}-1\right),\\
+\delta\lambda_{0} & = & \delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B},\\
+\delta\lambda_{1}^{A} & = & \delta\lambda_{2}^{A}=\frac{3\left(N+4\right)+\left(N+2\right)\kappa\lambda\hbar}{\left(N+2\right)\kappa\lambda\hbar+6}\delta\lambda_{1}^{B},\\
+\delta\lambda_{1}^{B} & = & \delta\lambda_{2}^{B}=-\frac{\kappa\lambda^{2}\hbar}{\kappa\lambda\hbar+3},\\
+Z & = & Z_{\Delta}=Z_{\xi}=1,
+\end{eqnarray}
+
+\end_inset
+
+and the resulting finite equations of motion are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+v & =0,\ \text{or}\\
+0 & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{2}\left(N-1\right)\frac{\lambda}{3}\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2},
+\end{align}
+
+\end_inset
+
+for the vev, and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
+ & +\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{align}
+
+\end_inset
+
+for the Goldstone and Higgs masses, respectively.
 \end_layout
 
 \begin_layout Section
