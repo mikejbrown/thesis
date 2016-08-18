@@ -5335,7 +5335,7 @@ Expectation value of the scalar field
 
  computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
  black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
- and our symmetry improved 3PIEA (solid green).
+ and the symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
  The vertical grey line at 
 \begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
@@ -5398,7 +5398,7 @@ The Higgs mass
 
  computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
  black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
- and our symmetry improved 3PIEA (solid green).
+ and the symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
  The vertical grey line at 
 \begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
@@ -5461,7 +5461,7 @@ The Goldstone mass
 
  computed in the Hartree-Fock approximation using the unimproved 2PIEA (solid
  black), the Pilaftsis and Teresi symmetry improved 2PIEA (dash dotted blue)
- and our symmetry improved 3PIEA (solid green).
+ and the symmetry improved 3PIEA (solid green).
  In the symmetric phase (dashed black) all methods agree.
  The vertical grey line at 
 \begin_inset Formula $T\approx131.5\ \mathrm{MeV}$
