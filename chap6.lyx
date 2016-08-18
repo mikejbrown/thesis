@@ -1367,7 +1367,7 @@ and the numeric factor is chosen for later convenience.
  The real solution of this cubic equation is
 \begin_inset Formula 
 \begin{equation}
-\epsilon=\frac{3}{2}\sqrt[3]{\hat{\xi}\left(\sqrt{\hat{\xi}+1}-1\right)}\left(\sqrt[3]{\frac{\hat{\xi}}{\left(\sqrt{\hat{\xi}+1}-1\right)^{2}}}-1\right),
+\epsilon=\frac{3}{2}\sqrt[3]{\hat{\xi}\left(\sqrt{\hat{\xi}+1}-1\right)}\left(\sqrt[3]{\frac{\hat{\xi}}{\left(\sqrt{\hat{\xi}+1}-1\right)^{2}}}-1\right),\label{eq:epsilon-solution}
 \end{equation}
 
 \end_inset
@@ -1398,7 +1398,7 @@ which is monotonically increasing from
 \epsilon\sim\begin{cases}
 \frac{3\hat{\xi}^{1/3}}{2^{2/3}}+\mathcal{O}\left(\hat{\xi}^{2/3}\right), & \hat{\xi}\to0,\\
 1-\frac{4}{27\hat{\xi}}+\mathcal{O}\left(\hat{\xi}^{-2}\right), & \hat{\xi}\to\infty.
-\end{cases}
+\end{cases}\label{eq:epsilon-asymptotic-behaviour}
 \end{equation}
 
 \end_inset
@@ -1422,7 +1422,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename images/ch6/zero_mode_epsilon.eps
-	width 60col%
+	width 100col%
 
 \end_inset
 
@@ -1447,7 +1447,14 @@ Plot of
 \begin_inset Formula $\hat{\xi}$
 \end_inset
 
- solving the Goldstone boson zero mode equation.
+ solving the Goldstone boson zero mode equation 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:epsilon-solution"
+
+\end_inset
+
+.
  The line at 
 \begin_inset Formula $\epsilon=1$
 \end_inset
@@ -1504,7 +1511,7 @@ and the resulting finite equations of motion are
 \begin{align}
 v & =0,\ \text{or}\\
 0 & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{2}\left(N-1\right)\frac{\lambda}{3}\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
- & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2},
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2},\label{eq:SSI-2PI-HF-vev-eom}
 \end{align}
 
 \end_inset
@@ -1516,7 +1523,7 @@ for the vev, and
 \begin_inset Formula 
 \begin{align}
 m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
- & +\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+ & +\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),\label{eq:SSI-2PI-HF-G-eom}
 \end{align}
 
 \end_inset
@@ -1528,7 +1535,7 @@ and
 \begin_inset Formula 
 \begin{align}
 m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\right)\nonumber \\
- & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),\label{eq:SSI-2PI-HF-H-eom}
 \end{align}
 
 \end_inset
@@ -1541,6 +1548,1579 @@ Solution in the infinite volume / low temperature limit
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:ch6-Solution-in-the-limit"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Symmetric Phase
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Symmetric-Phase"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+At high temperatures there should be a symmetric phase solution to the equations
+ of motion.
+ Therefore examine the 
+\begin_inset Formula $v\to0$
+\end_inset
+
+ limit of the equations of motion.
+ As 
+\begin_inset Formula $v\to0$
+\end_inset
+
+ at fixed 
+\begin_inset Formula $\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\epsilon\to1-\frac{4v^{2}\mathrm{V}\beta m_{G}^{4}}{\xi}$
+\end_inset
+
+ so long as 
+\begin_inset Formula $m_{G}$
+\end_inset
+
+ does not go to infinity faster than 
+\begin_inset Formula $1/\sqrt{v}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\to\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{1-\frac{4v^{2}\mathrm{V}\beta m_{G}^{4}}{\xi}}-1\right)\to\frac{4v^{2}m_{G}^{2}}{\xi}\to0,
+\end{equation}
+
+\end_inset
+
+and the equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-H-eom"
+
+\end_inset
+
+ reduce to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+m_{G}^{2}=m_{H}^{2}=m^{2}+\frac{1}{6}\left(N+2\right)\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{equation}
+
+\end_inset
+
+which is a symmetric (i.e.
+ equal mass) phase as expected.
+ Indeed, the gap equation is unmodified by the presence of soft symmetry
+ improvement in the symmetric phase.
+ This phase terminates at the critical point 
+\begin_inset Formula $m_{G}^{2}=m_{H}^{2}=0$
+\end_inset
+
+ which gives the critical temperature
+\begin_inset Formula 
+\begin{equation}
+T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{N+2}},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $m^{2}=-\lambda\bar{v}^{2}/6$
+\end_inset
+
+.
+ That 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+ is independent of 
+\begin_inset Formula $\xi$
+\end_inset
+
+ follows because 
+\begin_inset Formula $\mathcal{W}=0$
+\end_inset
+
+ trivially in the symmetric phase, and is consistent with the previously
+ noted result that the same critical point is found in all schemes (c.f.
+ chapter 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "chap:chap4"
+
+\end_inset
+
+).
+ There is no subtlety involved in the 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ limit in this case.
+\end_layout
+
+\begin_layout Subsection
+Broken Phase with 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Broken-Phase-with-massive-Goldstones"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Decreasing temperature at 
+\emph on
+fixed
+\emph default
+ 
+\begin_inset Formula $\xi$
+\end_inset
+
+, 
+\begin_inset Formula $\hat{\xi}\to0$
+\end_inset
+
+ and
+\begin_inset Formula 
+\begin{equation}
+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right)\to\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{2^{2/3}}{3\left(\frac{\xi}{27v^{2}\mathrm{V}\beta m_{G}^{4}}\right)^{1/3}}-1\right)\to\left(\frac{4v^{2}}{\xi m_{G}^{2}\left(\mathrm{V}\beta\right)^{2}}\right)^{1/3},
+\end{equation}
+
+\end_inset
+
+so the equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-vev-eom"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSI-2PI-HF-H-eom"
+
+\end_inset
+
+ become
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{2}\left(N-1\right)\frac{\lambda}{3}\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\xi m_{G}^{2}\left(\mathrm{V}\beta\right)^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\xi}\left(N-1\right)\left(\frac{\xi m_{G}^{2}}{\sqrt{2}v^{2}\mathrm{V}\beta}\right)^{2/3},
+\end{align}
+
+\end_inset
+
+for the vev, and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\xi m_{G}^{2}\left(\mathrm{V}\beta\right)^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\xi m_{G}^{2}\left(\mathrm{V}\beta\right)^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right).
+\end{align}
+
+\end_inset
+
+Note that all of the soft symmetry improvement terms vanish in the limit
+ 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+.
+ Thus it is necessary to allow 
+\begin_inset Formula $\xi$
+\end_inset
+
+ to vary as the 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ limit is taken to obtain a non-trivial correction to the unimproved 2PIEA.
+ This is the first sign that the limit is non-trivial.
+\end_layout
+
+\begin_layout Standard
+This section examines the simplest scheme to find a non-trivial limit, letting
+ 
+\begin_inset Formula $\xi$
+\end_inset
+
+ vary with 
+\begin_inset Formula $\mathrm{V}\beta$
+\end_inset
+
+ as 
+\begin_inset Formula $\xi=\left(\mathrm{V}\beta\right)^{\alpha}\zeta$
+\end_inset
+
+ where 
+\begin_inset Formula $\zeta$
+\end_inset
+
+ is a constant (with mass dimension 
+\begin_inset Formula $\left[\zeta\right]=2+4\alpha$
+\end_inset
+
+).
+ The requirement that 
+\begin_inset Formula $\hat{\xi}\sim\mathcal{O}\left(1\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+ implies 
+\begin_inset Formula $\alpha<1$
+\end_inset
+
+.
+ In that case
+\begin_inset Formula 
+\begin{equation}
+\epsilon\to\left(\frac{\left(\mathrm{V}\beta\right)^{\alpha}\zeta}{4v^{2}\mathrm{V}\beta m_{G}^{4}}\right)^{1/3},
+\end{equation}
+
+\end_inset
+
+and the symmetry improvement terms are
+\begin_inset Formula 
+\begin{eqnarray}
+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right) & \to & \frac{1}{m_{G}^{2}}\left(\left(\frac{4v^{2}m_{G}^{4}}{\zeta}\right)^{1/3}\left(\mathrm{V}\beta\right)^{\left(-\alpha-2\right)/3}-\frac{1}{\mathrm{V}\beta}\right),\\
+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2} & \to & \frac{1}{\zeta}\left(N-1\right)\left(\frac{\zeta m_{G}^{2}}{\sqrt{2}v^{2}}\right)^{2/3}\left(\mathrm{V}\beta\right)^{\left(-2-\alpha\right)/3}.
+\end{eqnarray}
+
+\end_inset
+
+The only nontrivial possibility is 
+\begin_inset Formula $\alpha=-2$
+\end_inset
+
+, for which
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\epsilon & \to & \frac{1}{\mathrm{V}\beta}\left(\frac{\zeta}{4v^{2}m_{G}^{4}}\right)^{1/3}\to0,\\
+\frac{1}{\mathrm{V}\beta}\frac{1}{m_{G}^{2}}\left(\frac{1}{\epsilon}-1\right) & \to & \left(\frac{4v^{2}}{\zeta m_{G}^{2}}\right)^{1/3},\\
+\frac{1}{\xi}\left(N-1\right)2\left[m_{G}^{2}\epsilon\right]^{2} & \to & \frac{1}{\zeta}\left(N-1\right)\left(\frac{\zeta m_{G}^{2}}{\sqrt{2}v^{2}}\right)^{2/3}.
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equations of motion are then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{2}\left(N-1\right)\frac{\lambda}{3}\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\zeta m_{G}^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right)+\frac{1}{\zeta}\left(N-1\right)\left(\frac{\zeta m_{G}^{2}}{\sqrt{2}v^{2}}\right)^{2/3},
+\end{align}
+
+\end_inset
+
+for the vev, and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{G}^{2} & =m^{2}+\frac{\lambda}{6}v^{2}+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\zeta m_{G}^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{6}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+m_{H}^{2} & =m^{2}+\frac{\lambda}{2}v^{2}+\frac{1}{6}\lambda\left(N-1\right)\left(\frac{m_{G}^{2}}{16\pi^{2}}\ln\frac{m_{G}^{2}}{\mu^{2}}+\mathcal{T}_{G}^{\mathrm{th}}+\left(\frac{4v^{2}}{\zeta m_{G}^{2}}\right)^{1/3}\right)\nonumber \\
+ & +\frac{1}{2}\lambda\left(\frac{m_{H}^{2}}{16\pi^{2}}\ln\frac{m_{H}^{2}}{\mu^{2}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
+\end{align}
+
+\end_inset
+
+for the Goldstone and Higgs masses, respectively.
+ Defining the dimensionless variables
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{flalign}
+x & =v^{2}/\mu^{2}, & y & =m_{G}^{2}/\mu^{2}, & z & =m_{H}^{2}/\mu^{2},\\
+\bar{x} & =\bar{v}^{2}/\mu^{2}, & \bar{X} & =-6m^{2}/\lambda\mu^{2}, & \hat{\zeta} & =\zeta\mu^{6},\\
+T_{G/H} & =\mu^{-2}\mathcal{T}_{G/H}^{\mathrm{th}},
+\end{flalign}
+
+\end_inset
+
+(note the distinction between the Lagrangian parameter 
+\begin_inset Formula $\bar{X}$
+\end_inset
+
+ and the zero temperature value of the mean field 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+, which happen to be equal at tree level and in the usual renormalisation
+ scheme for the Hartree-Fock approximation) this system becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{\lambda}{6}\left(x-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\left(\frac{1}{16\pi^{2}}y\ln y+T_{G}+\left(\frac{4x}{\hat{\zeta}y}\right)^{1/3}\right)+\frac{1}{2}\lambda\left(\frac{1}{16\pi^{2}}z\ln z+T_{H}\right)\nonumber \\
+ & +\frac{1}{\hat{\zeta}}\left(N-1\right)\left(\frac{\hat{\zeta}y}{\sqrt{2}x}\right)^{2/3},\label{eq:ssi-hf-veom-nondim}\\
+y & =\frac{\lambda}{6}\left(x-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{1}{16\pi^{2}}y\ln y+T_{G}+\left(\frac{4x}{\hat{\zeta}y}\right)^{1/3}\right)+\frac{1}{6}\lambda\left(\frac{1}{16\pi^{2}}z\ln z+T_{H}\right),\label{eq:ssi-hf-geom-nondim}\\
+z & =\frac{\lambda}{3}x-\frac{1}{\hat{\zeta}}\left(N-1\right)\left(\frac{\hat{\zeta}y}{\sqrt{2}x}\right)^{2/3}.\label{eq:ssi-hf-heom-nondim}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Looking for a zero temperature solution gives the system
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{2}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z}+\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3},\\
+\bar{y} & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{6}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z},\\
+\bar{z} & =\frac{\lambda\bar{x}}{3}-\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3}.
+\end{align}
+
+\end_inset
+
+First, ignoring the SSI terms one finds the usual unimproved 2PI solution
+ 
+\begin_inset Formula $\bar{x}=\bar{X}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{z}=\lambda\bar{x}/3=1$
+\end_inset
+
+.
+ Now examine the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit of these equations, taking as the scaling limit 
+\begin_inset Formula $g=\lambda N=\text{constant}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{x},\bar{X}\sim N^{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y},\bar{z}\sim N^{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\zeta}\sim N^{a}$
+\end_inset
+
+ with 
+\begin_inset Formula $a$
+\end_inset
+
+ to be determined.
+ To leading order
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+N^{\left(1-a\right)/3}\left(\frac{4\bar{x}/N}{\left(\hat{\zeta}/N^{a}\right)\bar{y}}\right)^{1/3}\right)+N^{\left(1-a\right)/3}\left(\frac{\bar{y}^{2}}{2\left(\hat{\zeta}/N^{a}\right)\left(\bar{x}/N\right)^{2}}\right)^{1/3},\\
+\bar{y} & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+N^{\left(1-a\right)/3}\left(\frac{4\bar{x}/N}{\left(\hat{\zeta}/N^{a}\right)\bar{y}}\right)^{1/3}\right),\\
+\bar{z} & =\frac{g\bar{x}}{3N}-N^{\left(1-a\right)/3}\left(\frac{\bar{y}^{2}}{2\left(\hat{\zeta}/N^{a}\right)\left(\bar{x}/N\right)^{2}}\right)^{1/3}.
+\end{align}
+
+\end_inset
+
+Scaling limits exist if 
+\begin_inset Formula $a\geq1$
+\end_inset
+
+.
+ Note that the SSI term in 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}$
+\end_inset
+
+ goes as 
+\begin_inset Formula $\xi^{-1}Nv^{2}\sim N^{3-a}$
+\end_inset
+
+ so that one needs 
+\begin_inset Formula $a\geq2$
+\end_inset
+
+ for a scaling limit for 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}$
+\end_inset
+
+ to exist.
+ 
+\begin_inset Formula $a=1$
+\end_inset
+
+ can also be ruled out by considering the equations of motion, for in this
+ case the leading approximation is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}/N}{\left(\hat{\zeta}/N\right)\bar{y}}\right)^{1/3}\right)+\left(\frac{\bar{y}^{2}}{2\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{2}}\right)^{1/3},\\
+\bar{y} & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}/N}{\left(\hat{\zeta}/N\right)\bar{y}}\right)^{1/3}\right),\\
+\bar{z} & =\frac{g\bar{x}}{3N}-\left(\frac{\bar{y}^{2}}{2\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{2}}\right)^{1/3}.
+\end{align}
+
+\end_inset
+
+Using the first equation to simplify the second,
+\begin_inset Formula 
+\begin{equation}
+\bar{y}=-\left(\frac{\bar{y}^{2}}{2\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{2}}\right)^{1/3},
+\end{equation}
+
+\end_inset
+
+which has the solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bar{y}=-\frac{1}{2\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{2}}<0,
+\end{equation}
+
+\end_inset
+
+with an unphysical tachyonic Goldstone 
+\begin_inset Formula $m_{G}^{2}<0$
+\end_inset
+
+.
+ This is not 
+\emph on
+necessarily
+\emph default
+ a problem because the zero mode 
+\begin_inset Formula $\Delta_{G}\left(0,\boldsymbol{0}\right)$
+\end_inset
+
+ is always positive and, in finite volume with 
+\begin_inset Formula $\beta$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ sufficiently small (i.e.
+ 
+\begin_inset Formula $\beta,L<2\pi/\left|m_{G}\right|$
+\end_inset
+
+), each mode 
+\begin_inset Formula $\Delta_{G}\left(n,\boldsymbol{k}\right)=1/\left(\omega_{n}^{2}+\boldsymbol{k}^{2}+m_{G}^{2}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $n,\boldsymbol{k}\neq\boldsymbol{0}$
+\end_inset
+
+ is still positive.
+ Physically, confinement energy is stabilising the tachyon.
+ However, a second condition is that the imaginary part of the first equation
+ of motion vanishes, yielding
+\begin_inset Formula 
+\begin{equation}
+0=-\frac{1}{16\pi^{2}}\left|\bar{y}\right|\left(2k+1\right)\pi-\sin\left(\frac{\left(2k+1\right)\pi}{3}\right)\left(\frac{4\bar{x}/N}{\left(\hat{\zeta}/N\right)\left|\bar{y}\right|}\right)^{1/3},
+\end{equation}
+
+\end_inset
+
+where the branch chosen is 
+\begin_inset Formula $\bar{y}=\left|\bar{y}\right|\exp\left(i\pi\left(2k+1\right)\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $k$
+\end_inset
+
+ is an integer.
+ Using the solution for 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ this becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+k=-\frac{1}{2}-32\pi\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{3}\sin\left(\frac{\left(2k+1\right)\pi}{3}\right),
+\end{equation}
+
+\end_inset
+
+which only has solutions of the form 
+\begin_inset Formula $k=3j$
+\end_inset
+
+ if
+\begin_inset Formula 
+\begin{equation}
+j=-\frac{1}{6}-\frac{16\pi}{\sqrt{3}}\left(\hat{\zeta}/N\right)\left(\bar{x}/N\right)^{3},
+\end{equation}
+
+\end_inset
+
+is an integer.
+ The existence of solutions only for certain discrete values of 
+\begin_inset Formula $\hat{\zeta}\bar{x}^{3}$
+\end_inset
+
+ is troubling and highly counter-intuitive (note especially that the relationshi
+p between 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ for a given 
+\begin_inset Formula $j$
+\end_inset
+
+ is independent of 
+\begin_inset Formula $g$
+\end_inset
+
+, so that no matter how 
+\begin_inset Formula $g$
+\end_inset
+
+ is varied at fixed 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ , 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ is fixed even though one expects 
+\begin_inset Formula $\bar{x}\sim N/g$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $a>1$
+\end_inset
+
+ the SSI terms in the equation of motion are of higher order and the leading
+ large 
+\begin_inset Formula $N$
+\end_inset
+
+ approximation is just the standard one, i.e.
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y},\\
+\bar{y} & =\frac{g}{6N}\left(\bar{x}-\bar{X}\right)+\frac{g}{6}\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y},\\
+\bar{z} & =\frac{g\bar{x}}{3N},
+\end{align}
+
+\end_inset
+
+which has the solution 
+\begin_inset Formula $\bar{x}=\bar{X}$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{y}=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{z}=\lambda\bar{x}/3$
+\end_inset
+
+ as expected.
+ Now note that if 
+\begin_inset Formula $1<a<4$
+\end_inset
+
+ the SSI terms goes as a fractional power of 
+\begin_inset Formula $N$
+\end_inset
+
+ between 
+\begin_inset Formula $N^{0}$
+\end_inset
+
+ and 
+\begin_inset Formula $N^{-1}$
+\end_inset
+
+ which cannot balance any of the terms coming from diagrams, which all go
+ as integer powers of 
+\begin_inset Formula $N^{-1}$
+\end_inset
+
+.
+ This implies that if 
+\begin_inset Formula $a>1$
+\end_inset
+
+ it must be of the form 
+\begin_inset Formula $a=4+3k$
+\end_inset
+
+ where 
+\begin_inset Formula $k=0,1,2,\cdots$
+\end_inset
+
+.
+ The SSI terms then scale as 
+\begin_inset Formula $N^{-\left(1+k\right)}$
+\end_inset
+
+ in the equation of motion and 
+\begin_inset Formula $N^{-1-3k}$
+\end_inset
+
+ in 
+\begin_inset Formula $\Gamma_{\xi}^{\mathrm{SSI}}$
+\end_inset
+
+.
+ Thus the SSI equations of motion possess a satisfactory leading large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit, but only if the scaling is such that the SSI terms are of higher
+ order.
+ This is the first sign that the SSI terms are problematic.
+\end_layout
+
+\begin_layout Standard
+Now consider the case where symmetry improvement is only weakly imposed,
+ i.e.
+ the SSI terms are a small perturbation.
+ We expect this can be achieved by taking 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ sufficiently large.
+ It is thus natural to solve the equations of motion perturbatively in powers
+ of 
+\begin_inset Formula $\hat{\zeta}^{-1/3}$
+\end_inset
+
+ as 
+\begin_inset Formula $\hat{\zeta}\to\infty$
+\end_inset
+
+.
+ Writing 
+\begin_inset Formula $\bar{x}=\bar{x}_{0}+\hat{\zeta}^{-1/3}\bar{x}_{1}+\hat{\zeta}^{-2/3}\bar{x}_{2}+\cdots$
+\end_inset
+
+ and so on, the leading equations of motion are just the unimproved 2PI
+ ones
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{\lambda}{6}\left(\bar{x}_{0}-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\frac{1}{16\pi^{2}}\bar{y}_{0}\ln\bar{y}_{0}+\frac{1}{2}\lambda\frac{1}{16\pi^{2}}\bar{z}_{0}\ln\bar{z}_{0},\\
+\bar{y}_{0} & =\frac{\lambda}{6}\left(\bar{x}_{0}-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\frac{1}{16\pi^{2}}\bar{y}_{0}\ln\bar{y}_{0}+\frac{1}{6}\lambda\frac{1}{16\pi^{2}}\bar{z}_{0}\ln\bar{z}_{0},\\
+\bar{z}_{0} & =\frac{\lambda\bar{x}_{0}}{3}.
+\end{align}
+
+\end_inset
+
+The first order perturbation obeys a system of equations which can be arranged
+ as the matrix equation
+\begin_inset Formula 
+\begin{equation}
+\left(\begin{array}{ccc}
+\frac{\lambda}{6} & \frac{\left(N-1\right)\lambda}{96\pi^{2}}\left(1+\ln\bar{y}_{0}\right) & \frac{\lambda}{32\pi^{2}}\left(1+\ln\bar{z}_{0}\right)\\
+\frac{\lambda}{6} & \frac{\left(N+1\right)\lambda}{96\pi^{2}}\left(1+\ln\bar{y}_{0}\right)-1 & \frac{\lambda}{96\pi^{2}}\left(1+\ln\bar{z}_{0}\right)\\
+\frac{\lambda}{3} & 0 & -1
+\end{array}\right)\left(\begin{array}{c}
+\bar{x}_{1}\\
+\bar{y}_{1}\\
+\bar{z}_{1}
+\end{array}\right)=\left(N-1\right)\left(\frac{\bar{y}_{0}^{2}}{2\bar{x}_{0}^{2}}\right)^{1/3}\left(\begin{array}{c}
+-\frac{\lambda\bar{x}_{0}}{3\bar{y}_{0}}-1\\
+-\frac{N+1}{N-1}\frac{\lambda\bar{x}_{0}}{3\bar{y}_{0}}\\
+1
+\end{array}\right).
+\end{equation}
+
+\end_inset
+
+Note that this equation is singular in the limit 
+\begin_inset Formula $\bar{y}_{0}\to0$
+\end_inset
+
+.
+ The solution for 
+\begin_inset Formula $\bar{y}_{1}$
+\end_inset
+
+ in this limit is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\bar{y}_{1}\to-\frac{32\pi^{2}}{\ln\bar{y}_{0}}\left(\frac{\bar{x}_{0}}{2\bar{y}_{0}}\right)^{1/3}\to\infty.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There is no sense in which the soft symmetry improvement terms are a small
+ perturbation, no matter the value of 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+.
+ This can also be seen from a direct examination of the full equations of
+ motion.
+ In the limit 
+\begin_inset Formula $\bar{y}\to0$
+\end_inset
+
+ the 
+\begin_inset Formula $\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}$
+\end_inset
+
+ terms always dominate for any finite value of 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+.
+ The result is that the SSI solution must always have 
+\begin_inset Formula $\bar{y}\neq0$
+\end_inset
+
+, even at zero temperature.
+ For the same reason a perturbation analysis near the critical temperature
+ also fails and, in fact, real valued solutions do not exist in a (
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ dependent) range of temperatures beneath the critical temperature.
+ Note however that 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ is not the mass appearing in Goldstone's theorem: rather it is the mass
+ corresponding to non-zero energy-momentum modes of the propagator.
+ The mass appearing in Goldstone's theorem is 
+\begin_inset Formula $\epsilon m_{G}^{2}$
+\end_inset
+
+ which does indeed vanish as 
+\begin_inset Formula $\mathrm{V}\beta\to\infty$
+\end_inset
+
+.
+ Goldstone's theorem 
+\emph on
+is
+\emph default
+ satisfied in the infinite volume limit, however, unlike the usual symmetry
+ improvement method, here the masslessness of the zero mode is not communicated
+ to the other modes.
+ In fact it seems the opposite happens: the 2PI equations of motion 
+\begin_inset Quotes eld
+\end_inset
+
+would like to have
+\begin_inset Quotes erd
+\end_inset
+
+ a non-zero Goldstone mass.
+ When the mass of the zero mode is forced to vanish the SSI-2PIEA adjusts
+ by 
+\emph on
+increasing
+\emph default
+ the mass of the other modes.
+ This can be verified by examining numerical solutions.
+\end_layout
+
+\begin_layout Standard
+Numerical solutions of the 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-veom-nondim"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-heom-nondim"
+
+\end_inset
+
+ are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssi-hf-solns"
+
+\end_inset
+
+ for 
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+, 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{X}=0.3$
+\end_inset
+
+ and several values of 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ from 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ to 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+ The critical temperature for these values is 
+\begin_inset Formula $T_{\star}/\mu\approx0.775$
+\end_inset
+
+.
+ For very large 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ the solution is near the unimproved solution.
+ However, as 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ is decreased, 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $z$
+\end_inset
+
+ decrease and 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\emph on
+increases
+\emph default
+ (this is consistent with the perturbation 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ being positive).
+ Broken phase solutions cease to exist above the upper spinodal temperature
+ 
+\begin_inset Formula $T_{\mathrm{us}}\left(\hat{\zeta}\right)$
+\end_inset
+
+ which depends on 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+.
+ Note that 
+\begin_inset Formula $T_{\mathrm{us}}\left(\hat{\zeta}\right)$
+\end_inset
+
+ drops below 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+ for all 
+\begin_inset Formula $\hat{\zeta}<\hat{\zeta}_{c}$
+\end_inset
+
+ where 
+\begin_inset Formula $\hat{\zeta}_{c}$
+\end_inset
+
+ is somewhere between 
+\begin_inset Formula $10^{6}$
+\end_inset
+
+ and 
+\begin_inset Formula $10^{7}$
+\end_inset
+
+.
+ This means that, for 
+\begin_inset Formula $\hat{\zeta}<\hat{\zeta}_{c}$
+\end_inset
+
+ there is 
+\emph on
+no solution
+\emph default
+ between 
+\begin_inset Formula $T_{\mathrm{us}}\left(\hat{\zeta}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+.
+ Further, as 
+\begin_inset Formula $\hat{\zeta}\to0$
+\end_inset
+
+, 
+\begin_inset Formula $T_{\mathrm{us}}\left(\hat{\zeta}\right)\to0$
+\end_inset
+
+.
+ This behaviour can be seen in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssi-hf-spinodal-temps"
+
+\end_inset
+
+.
+ At a critical value 
+\begin_inset Formula $\hat{\zeta}=\hat{\zeta}_{\star}$
+\end_inset
+
+ one has 
+\begin_inset Formula $T_{\mathrm{us}}\left(\hat{\zeta}_{\star}\right)=0$
+\end_inset
+
+ and real solutions cease to exist for all 
+\begin_inset Formula $\hat{\zeta}\leq\hat{\zeta}_{\star}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-solns.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ssi-hf-solns"
+
+\end_inset
+
+Solutions of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-veom-nondim"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-heom-nondim"
+
+\end_inset
+
+, the SSI equations of motion in the Hartree-Fock approximation.
+ Shown are broken phase 
+\begin_inset Formula $x$
+\end_inset
+
+ (solid), 
+\begin_inset Formula $y$
+\end_inset
+
+ (dashed) and 
+\begin_inset Formula $z$
+\end_inset
+
+ (dot-dashed) and symmetric phase 
+\begin_inset Formula $y=z$
+\end_inset
+
+ (solid black) versus temperature for 
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+, 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{X}=0.3$
+\end_inset
+
+ and several values of 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ from 
+\begin_inset Formula $10^{5}$
+\end_inset
+
+ to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ (unimproved).
+ The critical temperature is 
+\begin_inset Formula $T_{\star}/\mu\approx0.775$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-spinodal-temps.eps
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ssi-hf-spinodal-temps"
+
+\end_inset
+
+The upper spinodal temperature 
+\begin_inset Formula $T_{\mathrm{us}}$
+\end_inset
+
+ versus 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ for broken phase solutions of the SSI equations of motion in the Hartree-Fock
+ approximation for 
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+, 
+\begin_inset Formula $N=4$
+\end_inset
+
+, and 
+\begin_inset Formula $\bar{X}=0.3$
+\end_inset
+
+.
+ The critical temperature is 
+\begin_inset Formula $T_{\star}/\mu\approx0.775$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The mathematical origin of this loss of solution can be understood by considerin
+g the zero temperature equations of motion, reproduced below.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{2}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z}+\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3},\label{eq:xb-eom}\\
+\bar{y} & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{6}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z},\label{eq:yb-eom}\\
+\bar{z} & =\frac{\lambda\bar{x}}{3}-\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3}.\label{eq:zb-eom}
+\end{align}
+
+\end_inset
+
+Use 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:zb-eom"
+
+\end_inset
+
+ to eliminate 
+\begin_inset Formula $\bar{z}$
+\end_inset
+
+ in the first two equations and consider the real and imaginary parts of
+ the right hand sides of these equations as functions of 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+and 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+.
+ The relevant regions of the 
+\begin_inset Formula $\bar{x}-\bar{y}$
+\end_inset
+
+ plane are shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:loss-of-solution-plots"
+
+\end_inset
+
+.
+ The blue regions satisfy 
+\begin_inset Formula $\Re\left(\eqref{eq:xb-eom}\right)>0$
+\end_inset
+
+, yellow regions satisfy 
+\begin_inset Formula $\Im\left(\eqref{eq:xb-eom}\right)\neq0$
+\end_inset
+
+ and the green regions satisfy 
+\begin_inset Formula $\Re\left(\eqref{eq:yb-eom}\right)>\bar{y}$
+\end_inset
+
+.
+ Note that, for 
+\begin_inset Formula $\bar{x},\bar{y}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\Im\left(\eqref{eq:xb-eom}\right)\neq0$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $\bar{z}>0$
+\end_inset
+
+, as is 
+\begin_inset Formula $\Im\left(\eqref{eq:yb-eom}\right)\neq0$
+\end_inset
+
+ which does not give anything new.
+\end_layout
+
+\begin_layout Standard
+Valid solutions of the equations of motion are on the boundary of the blue
+ and green regions simultaneously 
+\emph on
+and
+\emph default
+ outside of the yellow region.
+ As 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ is decreased it can be seen that the blue region 
+\begin_inset Quotes eld
+\end_inset
+
+closes in
+\begin_inset Quotes erd
+\end_inset
+
+ towards the origin, the green region grows upwards, and the yellow region
+ grows to the right.
+ Solutions cease to exist for 
+\begin_inset Formula $\hat{\zeta}=\hat{\zeta}_{\star}\approx12200$
+\end_inset
+
+ where all three regions intersect at a common point.
+ For all 
+\begin_inset Formula $\hat{\zeta}<\hat{\zeta}_{\star}$
+\end_inset
+
+ there are no solutions (intersection points between the blue and green
+ curves) which are also real (outside the yellow region).
+ If the temperature is non-zero, the thermal contributions increase the
+ real parts of the right hand sides which, in comparison with Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:loss-of-solution-plots"
+
+\end_inset
+
+, hastens the onset of loss of solutions, which is therefore achieved at
+ a greater value 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+.
+ Conversely, the temperature at which solutions are lost for a given 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+ increases as a function of 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+, which, of course, matches the behavior seen in Figures 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssi-hf-solns"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ssi-hf-spinodal-temps"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-hf-soln-existence-32768.eps
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-hf-soln-existence-16384.eps
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-hf-soln-existence-12200.eps
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch6/ssi-hf-soln-existence-10000.eps
+	width 45col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:loss-of-solution-plots"
+
+\end_inset
+
+Real and imaginary parts of the right hand sides of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:xb-eom"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:yb-eom"
+
+\end_inset
+
+ as functions of 
+\begin_inset Formula $\bar{x}$
+\end_inset
+
+ and 
+\begin_inset Formula $\bar{y}$
+\end_inset
+
+ for 
+\begin_inset Formula $\lambda=10$
+\end_inset
+
+, 
+\begin_inset Formula $N=4$
+\end_inset
+
+, 
+\begin_inset Formula $\bar{X}=0.3$
+\end_inset
+
+ and 
+\begin_inset Formula $\hat{\zeta}=2^{15}$
+\end_inset
+
+ (upper left), 
+\begin_inset Formula $2^{14}$
+\end_inset
+
+ (upper right), 
+\begin_inset Formula $12200$
+\end_inset
+
+ (lower left) and 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ (lower right).
+ The blue regions satisfy 
+\begin_inset Formula $\Re\left(\eqref{eq:xb-eom}\right)>0$
+\end_inset
+
+, the yellow regions satisfy 
+\begin_inset Formula $\Im\left(\eqref{eq:xb-eom}\right)\neq0$
+\end_inset
+
+ and the green regions satisfy 
+\begin_inset Formula $\Re\left(\eqref{eq:yb-eom}\right)>\bar{y}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
