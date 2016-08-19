@@ -3056,10 +3056,9 @@ j_{\mu}^{A}\left(x\right)=iT_{ab}^{A}\left.\left(\partial_{\mu}^{\left(y\right)}
 Similarly, if the theory has a quartic coupling the energy-momentum tensor
  is 
 \begin_inset Formula 
-\begin{align}
-T_{\mu\nu} & =\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}\vphantom{\left(\frac{1}{2}\right)}\right.\nonumber \\
- & \left.-\eta_{\mu\nu}\left(\frac{1}{2}\partial_{\rho}\phi_{a}\partial^{\rho}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\right)\right\rangle ,
-\end{align}
+\begin{equation}
+T_{\mu\nu}=\left\langle \partial_{\mu}\phi_{a}\partial_{\nu}\phi_{a}-\eta_{\mu\nu}\left(\frac{1}{2}\partial_{\rho}\phi_{a}\partial^{\rho}\phi_{a}-\frac{1}{2}m^{2}\phi_{a}\phi_{a}-\frac{\lambda}{4!}\left(\phi_{a}\phi_{a}\right)^{2}\right)\right\rangle ,
+\end{equation}
 
 \end_inset
 

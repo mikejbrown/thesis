@@ -3957,9 +3957,9 @@ s.
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 S_{\mathrm{eff}}\left[\pi,h,\sigma\right]=\frac{1}{2}\pi_{a}\left(-\square-m^{2}-\sigma\right)\pi_{a}+\frac{1}{2}h\left(-\square-m^{2}\right)h+Jh+\frac{3}{2\lambda}\sigma^{2}-\frac{1}{2}\sigma h^{2}.
-\]
+\end{equation}
 
 \end_inset
 

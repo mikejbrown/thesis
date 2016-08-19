@@ -782,9 +782,9 @@ As usual, for most physical purposes the overall normalisation
  is unimportant.
  The connected correlation functions are
 \begin_inset Formula 
-\[
+\begin{equation}
 G_{C}^{\left(n\right)}\left(x_{1},\cdots,x_{n}\right)=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)W\left[J\right]\right|_{J=0},
-\]
+\end{equation}
 
 \end_inset
 
@@ -2290,9 +2290,9 @@ To perform the Legendre transform one needs to relate
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \varphi=\frac{\delta W}{\delta J}=\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}\frac{\delta S}{\delta\phi_{\mathrm{cl.}}}+\phi_{\mathrm{cl.}}+J\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}+\frac{\delta\phi_{\mathrm{cl.}}}{\delta J}\frac{\delta}{\delta\phi_{\mathrm{cl.}}}\frac{i\hbar}{2}\mathrm{Tr}\ln\Delta_{0}^{-1}\left[\phi_{\mathrm{cl.}}\right]+\mathcal{O}\left(\hbar^{2}\right)=\phi_{\mathrm{cl.}}+\mathcal{O}\left(\hbar\right).
-\]
+\end{equation}
 
 \end_inset
 
@@ -4017,7 +4017,7 @@ This is a specific example of a general equivalence hierarchy
 \begin{alignat*}{2}
 \Gamma^{\left(1\right)}\left[\varphi\right] & =\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]=\cdots & \text{at one loop},\\
 \Gamma^{\left(1\right)}\left[\varphi\right] & \neq\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]=\Gamma^{\left(3\right)}\left[\varphi,\Delta,V\right]=\cdots & \text{at two loops},\\
-\Gamma^{\left(1\right)}\left[\varphi\right] & \neq\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]\neq\Gamma^{\left(3\right)}\left[\varphi,\Delta,V\right]=\Gamma^{\left(4\right)}\left[\varphi,\Delta,V,V^{\left(4\right)}\right]=\cdots & \text{at three loops},\\
+\Gamma^{\left(1\right)}\left[\varphi\right] & \neq\Gamma^{\left(2\right)}\left[\varphi,\Delta\right]\neq\Gamma^{\left(3\right)}\left[\varphi,\Delta,V\right]=\Gamma^{\left(4\right)}\left[\varphi,\Delta,V,V^{\left(4\right)}\right]=\cdots & \text{ at three loops},\\
  & \vdots & \vdots
 \end{alignat*}
 
