@@ -36,60 +36,26 @@ PARAMS = {'backend': 'ps',
           'figure.figsize': FIG_SIZE}
 py.rcParams.update(PARAMS)
 
-def gap_eq_plots(vb2, N, save_figs):
-    """ Make various plots of gap equation solutions for thesis chapter 4. """
-    # Numpy array file containing the results array
-    # see help(sym_imp_scalars_hartree.driver) for format details, or:
-#    results[:, 0] = Ts
-#    results[:, 1] = vev computed using asymmetric branch of unimproved EOM
-#    results[:, 2] = Goldstone mass computed using same
-#    results[:, 3] = Higgs mass computed using same
-#    results[:, 4] = Goldstone mass computed using symmetric branch of unimproved
-#    results[:, 5] = Higgs mass computed using same
-#    results[:, 6] = vev computed using Pilaftsis & Teresi symmetry improved EOM
-#    results[:, 7] = Goldstone mass computed using same
-#    results[:, 8] = Higgs mass computed using same
-#    results[:, 9] = vev computed using 3PI symmetry improved (Hartree-Fock) EOM asymmetric branch
-#    results[:, 10]= Goldstone mass computed using same
-#    results[:, 11]= Higgs mass computed using same
-#    results[:, 12]= vev computed using 2PI unimproved asymmetric branch root finder
-#    results[:, 13]= Goldstone mass computed using same
-#    results[:, 14]= Higgs mass computed using same
-#    results[:, 15]= Goldstone mass computed using 2PI unimproved symmetric branch root finder
-#    results[:, 16]= Higgs mass computed using same
-#    results[:, 17] = vev computed using 3PI symmetry improved (Hartree-Fock) EOM symmetric branch
-#    results[:, 18]= Goldstone mass computed using same
-#    results[:, 19]= Higgs mass computed using same
-    results_file = "hartree-results-03102014.npy"
-
-    results = sc.load(results_file)
-
-
-    crit_T = np.sqrt(12. * vb2 / (N + 2.))
-
-    Ts = results[:, 0]
-
-    # VEV
-
+def get_vev(results):
+    """ Get vev data from results in a form suitable for plotting. """
     # Combine both sets of results for the unimproved vev to cover the full
-    # Ts range with a single variable
+    # temps range with a single variable
     _no_si_broken_vev1 = results[:, 1]
     _no_si_broken_vev2 = results[:, 12]
     no_si_broken_vev = np.where(np.isfinite(_no_si_broken_vev1), _no_si_broken_vev1,
                                 _no_si_broken_vev2)
-
-    no_si_sym_vev = sc.zeros_like(results[:, 4])  # symmetric phase vev identically zero
-    no_si_sym_vev[Ts < crit_T] = sc.nan  # no symmetric phase below the critical temperature
 
     pt_vev = results[:, 6]
 
     #si3pi_broken_vev = results[:, 9]
     si3pi_sym_vev = results[:, 17]
 
-    # Higgs mass
+    return no_si_broken_vev, pt_vev, si3pi_sym_vev
 
+def get_higgs(crit_temp, temps, results):
+    """ Get Higgs data from results in a form suitable for plotting. """
     # Combine both sets of results for the unimproved Higgs mass to cover the full
-    # Ts range with a single variable
+    # temps range with a single variable
     _no_si_broken_mn1 = results[:, 3]
     _no_si_broken_mn2 = results[:, 14]
     no_si_broken_mn = np.where(np.isfinite(_no_si_broken_mn1), _no_si_broken_mn1, _no_si_broken_mn2)
@@ -102,31 +68,42 @@ def gap_eq_plots(vb2, N, save_figs):
 
     #si3pi_broken_mn = results[:, 11]
     si3pi_sym_mn = results[:, 19]
-    si3pi_sym_mn[Ts < crit_T] = sc.nan  # no symmetric phase below the critical temperature
+    si3pi_sym_mn[temps < crit_temp] = sc.nan  # no symmetric phase below the critical temperature
 
-    # Goldstone mass
+    return no_si_broken_mn, pt_mn, si3pi_sym_mn
 
+def get_goldstone(crit_temp, temps, results):
+    """ Get Goldstone data from results in a form suitable for plotting. """
     # Combine both sets of results for the unimproved Goldstone mass to cover the full
-    # Ts range with a single variable
+    # temps range with a single variable
     _no_si_broken_mg1 = results[:, 2]
     _no_si_broken_mg2 = results[:, 13]
     no_si_broken_mg = np.where(np.isfinite(_no_si_broken_mg1), _no_si_broken_mg1, _no_si_broken_mg2)
 
-#    _no_si_sym_mg1 = results[:, 4]
-#    _no_si_sym_mg2 = results[:, 15]
-#    no_si_sym_mn = np.where(np.isfinite(_no_si_sym_mn1), _no_si_sym_mn1, _no_si_sym_mn2)
-
     pt_mg = results[:, 7]
 
-    #si3pi_broken_mg = results[:, 10]
     si3pi_sym_mg = results[:, 18]
-    si3pi_sym_mg[Ts < crit_T] = sc.nan  # no symmetric phase below the critical temperature
+    si3pi_sym_mg[temps < crit_temp] = sc.nan  # no symmetric phase below the critical temperature
 
+    return no_si_broken_mg, pt_mg, si3pi_sym_mg
+
+def gap_eq_plots(crit_temp, results, save_figs):
+    """ Make various plots of gap equation solutions for thesis chapter 4. """
+    temps = results[:, 0]
+
+    # VEV
+    no_si_broken_vev, pt_vev, si3pi_sym_vev = get_vev(results)
+
+    # Higgs mass
+    no_si_broken_mn, pt_mn, si3pi_sym_mn = get_higgs(crit_temp, temps, results)
+
+    # Goldstone mass
+    no_si_broken_mg, pt_mg, si3pi_sym_mg = get_goldstone(crit_temp, temps, results)
 
     py.figure()
-    py.plot(Ts, no_si_broken_vev, 'k-', Ts, pt_vev, 'b-.',
-            Ts, si3pi_sym_vev, 'k--')
-    py.vlines(crit_T, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
+    py.plot(temps, no_si_broken_vev, 'k-', temps, pt_vev, 'b-.',
+            temps, si3pi_sym_vev, 'k--')
+    py.vlines(crit_temp, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
     py.axis([-1, 250, -1, 100])
     py.legend(('2PI',
                'SI-2PI',
@@ -143,7 +120,7 @@ def gap_eq_plots(vb2, N, save_figs):
                                 fc="0.6", ec="none",
                                 connectionstyle="angle3,angleA=90,angleB=0"),
                )
-    py.annotate('2nd order phase transition', xy=(crit_T, 15), xycoords='data',
+    py.annotate('2nd order phase transition', xy=(crit_temp, 15), xycoords='data',
                 xytext=(30, 0), textcoords='offset points',
                 size=PARAMS['text.fontsize'],
                 #bbox=dict(boxstyle="round", fc="0.8"),
@@ -151,12 +128,12 @@ def gap_eq_plots(vb2, N, save_figs):
                                 fc="0.6", ec="none",
                                 connectionstyle="angle3,angleA=90,angleB=0"),
                )
-    output_fig("si2pi-vev-comparison.pdf", save_figs, base_path=outputdir, dpi=144)
+    output_fig("si2pi-vev-comparison.pdf", save_figs, base_path=OUTPUTDIR, dpi=144)
 
     py.figure()
-    py.plot(Ts, no_si_broken_mn, 'k-', Ts, pt_mn, 'b-.',
-            Ts, si3pi_sym_mn, 'k--')
-    py.vlines(crit_T, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
+    py.plot(temps, no_si_broken_mn, 'k-', temps, pt_mn, 'b-.',
+            temps, si3pi_sym_mn, 'k--')
+    py.vlines(crit_temp, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
     py.axis([-1, 250, -1, 550])
     py.legend(('2PI',
                'SI-2PI',
@@ -165,7 +142,7 @@ def gap_eq_plots(vb2, N, save_figs):
     py.ylabel('$m_H$ (MeV)')
     py.grid(False)
     py.annotate('Critical Temperature\n$T_c = \\sqrt{\\frac{12 v^2}{N + 2}}$',
-                xy=(crit_T, 0), xycoords='data',
+                xy=(crit_temp, 0), xycoords='data',
                 xytext=(150, 125), textcoords='offset points', ha='center',
                 size=PARAMS['text.fontsize'],
                 #bbox=dict(boxstyle="round", fc="0.8"),
@@ -173,12 +150,12 @@ def gap_eq_plots(vb2, N, save_figs):
                                 fc="0.6", ec="none",
                                 connectionstyle="angle3,angleA=0,angleB=45"),
                )
-    output_fig("si2pi-higgs-mass-comparison.pdf", save_figs, base_path=outputdir, dpi=144)
+    output_fig("si2pi-higgs-mass-comparison.pdf", save_figs, base_path=OUTPUTDIR, dpi=144)
 
     py.figure()
-    py.plot(Ts, no_si_broken_mg, 'k-', Ts, pt_mg, 'b-.',
-            Ts, si3pi_sym_mg, 'k--')
-    py.vlines(crit_T, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
+    py.plot(temps, no_si_broken_mg, 'k-', temps, pt_mg, 'b-.',
+            temps, si3pi_sym_mg, 'k--')
+    py.vlines(crit_temp, 0, 550, color=colorConverter.to_rgba('0.6', alpha=0.6))
     py.axis([-1, 250, -1, 200])
     py.legend(('2PI',
                'SI-2PI',
@@ -202,19 +179,45 @@ def gap_eq_plots(vb2, N, save_figs):
                                 fc="0.6", ec="none",
                                 connectionstyle="angle3,angleA=0,angleB=-30"),
                )
-    output_fig("si2pi-goldstone-mass-comparison.pdf", save_figs, base_path=outputdir, dpi=144)
+    output_fig("si2pi-goldstone-mass-comparison.pdf", save_figs, base_path=OUTPUTDIR, dpi=144)
 
 
 
 if __name__ == "__main__":
-    save_figs = False  # whether to show figures interactively or save to file
-    outputdir = "../images/ch4"
+    SAVE_FIGS = False  # whether to show figures interactively or save to file
+    OUTPUTDIR = "../images/ch4"
 
-    vb2 = 93. ** 2 # Pi-Sigma model
-    mnb2 = 500. ** 2
-    lam = 3. * mnb2 / vb2
+    VB2 = 93. ** 2 # Pi-Sigma model
+    MNB2 = 500. ** 2
+    LAM = 3. * MNB2 / VB2
     N = 4
-    crit_T = np.sqrt(12. * vb2 / (N + 2.))
+    CRIT_TEMP = np.sqrt(12. * VB2 / (N + 2.))
 
-    gap_eq_plots(vb2, N, save_figs)
+# Numpy array file containing the results array
+# see help(sym_imp_scalars_hartree.driver) for format details, or:
+#    results[:, 0] = temps
+#    results[:, 1] = vev computed using asymmetric branch of unimproved EOM
+#    results[:, 2] = Goldstone mass computed using same
+#    results[:, 3] = Higgs mass computed using same
+#    results[:, 4] = Goldstone mass computed using symmetric branch of unimproved
+#    results[:, 5] = Higgs mass computed using same
+#    results[:, 6] = vev computed using Pilaftsis & Teresi symmetry improved EOM
+#    results[:, 7] = Goldstone mass computed using same
+#    results[:, 8] = Higgs mass computed using same
+#    results[:, 9] = vev computed using 3PI symmetry improved (Hartree-Fock) EOM asymmetric branch
+#    results[:, 10]= Goldstone mass computed using same
+#    results[:, 11]= Higgs mass computed using same
+#    results[:, 12]= vev computed using 2PI unimproved asymmetric branch root finder
+#    results[:, 13]= Goldstone mass computed using same
+#    results[:, 14]= Higgs mass computed using same
+#    results[:, 15]= Goldstone mass computed using 2PI unimproved symmetric branch root finder
+#    results[:, 16]= Higgs mass computed using same
+#    results[:, 17] = vev computed using 3PI symmetry improved (Hartree-Fock) EOM symmetric branch
+#    results[:, 18]= Goldstone mass computed using same
+#    results[:, 19]= Higgs mass computed using same
+    RESULTS_FILE = "hartree-results-03102014.npy"
+
+    RESULTS = sc.load(RESULTS_FILE)
+
+    gap_eq_plots(CRIT_TEMP, RESULTS, SAVE_FIGS)
 
