@@ -38,7 +38,7 @@ from common import thermal_tadpole
 # MS-bar renormalisation point (MeV)
 MU = 500.
 
-def no_si_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
+def no_si_rhs(v2, mg2, mn2, temp, vb2, lam, N, symmetric_branch=False):
     """
     TODO: Currently breaks near the critical temperature!
     Right hand side of the equations of motion for the 2PIEA without symmetry
@@ -48,7 +48,7 @@ def no_si_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
     v2   = the Higgs vev squared
     mg2  = the Goldstone mass squared
     mn2  = the Higgs mass squared
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -65,15 +65,15 @@ def no_si_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
     assert v2 >= 0
     assert mg2 >= 0
     assert mn2 >= 0
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
     assert np.floor(N) == N, "N must be an integer"
 
-    if T > 0:
-        tg = thermal_tadpole(sc.sqrt(mg2), T, MU)
-        tn = thermal_tadpole(sc.sqrt(mn2), T, MU)
+    if temp > 0:
+        tg = thermal_tadpole(sc.sqrt(mg2), temp, MU)
+        tn = thermal_tadpole(sc.sqrt(mn2), temp, MU)
     else:
         tg = 0
         tn = 0
@@ -88,14 +88,14 @@ def no_si_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
                 lam * v2 / 3.)
 
 
-def no_si_solution(T, vb2, lam, N, maxsteps=20, tol=1e-3,
+def no_si_solution(temp, vb2, lam, N, maxsteps=20, tol=1e-3,
                    symmetric_branch=False, update_weight=0.2):
     """
     Solution of the equations of motion for the 2PIEA without symmetry
     improvement.
 
     Arguments:
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -119,7 +119,7 @@ def no_si_solution(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     mg2 = the Goldstone mass squared
     mn2 = the Higgs mass squared
     """
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
@@ -134,7 +134,7 @@ def no_si_solution(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     guess = (vb2, 0.0, lam * vb2 / 3.)
 
     for _ in range(maxsteps):
-        new_guess = no_si_rhs(guess[0], guess[1], guess[2], T, vb2, lam, N,
+        new_guess = no_si_rhs(guess[0], guess[1], guess[2], temp, vb2, lam, N,
                               symmetric_branch=symmetric_branch)
         if symmetric_branch:
             new_guess = sc.array(new_guess)
@@ -147,14 +147,14 @@ def no_si_solution(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     return guess
 
 
-def no_si_solution_root(T, vb2, lam, N, maxsteps=20, tol=1e-3,
+def no_si_solution_root(temp, vb2, lam, N, maxsteps=20, tol=1e-3,
                         symmetric_branch=False, update_weight=0.2):
     """
     Solution of the equations of motion for the 2PIEA without symmetry
     improvement. Uses scipy.optimize.root instead of hand-rolled iteration.
 
     Arguments:
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -179,7 +179,7 @@ def no_si_solution_root(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     mn2 = the Higgs mass squared
     """
     from scipy.optimize import root
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
@@ -192,29 +192,29 @@ def no_si_solution_root(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     stepcount = 0
 
     if symmetric_branch:
-        if T < sc.sqrt(12. * vb2 / (N + 2.)):  # T < crit_T => no sym. phase
+        if temp < sc.sqrt(12. * vb2 / (N + 2.)):  # temp < crit_temp => no sym. phase
             return np.array([sc.nan, sc.nan, sc.nan])
 
         while stepcount < maxsteps:
             v2 = 0
 
-            def residual(mn2, v2, T, vb2, lam, N):
+            def residual(mn2, v2, temp, vb2, lam, N):
                 """ Residual lhs - rhs for the mn2 gap equation"""
                 if mn2 < 0:
                     mn2 = 0
-                return mn2 - no_si_rhs(v2, mn2, mn2, T, vb2, lam, N, symmetric_branch=True)[2]
+                return mn2 - no_si_rhs(v2, mn2, mn2, temp, vb2, lam, N, symmetric_branch=True)[2]
 
-            def jac(mn2, v2, T, vb2, lam, N):
+            def jac(mn2, v2, temp, vb2, lam, N):
                 """ Jacobian for the mn2 gap equation rootfinder """
                 eps = 1e-12
                 if mn2 <= 0:
                     mn2 = eps  # regulator for mg=0 case
                 mn = sc.sqrt(mn2)
                 return np.array([1.0 - (lam * (N + 2.) / (12. * mn)) *
-                                 (thermal_tadpole(mn + eps, T, MU)
-                                  - thermal_tadpole(mn, T, MU)) / eps, ])
+                                 (thermal_tadpole(mn + eps, temp, MU)
+                                  - thermal_tadpole(mn, temp, MU)) / eps, ])
 
-            mn2 = root(residual, guess[2], args=(v2, T, vb2, lam, N), jac=jac).x
+            mn2 = root(residual, guess[2], args=(v2, temp, vb2, lam, N), jac=jac).x
             if mn2 < 0:
                 mn2 = 0
 
@@ -225,24 +225,27 @@ def no_si_solution_root(T, vb2, lam, N, maxsteps=20, tol=1e-3,
                      + (1. - update_weight) * sc.array(guess))
     else:
         while stepcount < maxsteps:
-            v2 = no_si_rhs(guess[0], guess[1], guess[2], T, vb2, lam, N, symmetric_branch=False)[0]
-            mn2 = no_si_rhs(v2, guess[1], guess[2], T, vb2, lam, N, symmetric_branch=False)[2]
+            v2 = no_si_rhs(guess[0], guess[1], guess[2], temp, vb2, lam, N,
+                           symmetric_branch=False)[0]
+            mn2 = no_si_rhs(v2, guess[1], guess[2], temp, vb2, lam, N,
+                            symmetric_branch=False)[2]
 
-            def residual(mg2, v2, mn2, T, vb2, lam, N):
+            def residual(mg2, v2, mn2, temp, vb2, lam, N):
                 """ Residual lhs - rhs for the mg2 gap equation"""
                 if mg2 < 0:
                     mg2 = 0
-                return mg2 - no_si_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False)[1]
+                return mg2 - no_si_rhs(v2, mg2, mn2, temp, vb2, lam, N,
+                                       symmetric_branch=False)[1]
 
-            def jac(mg2, v2, mn2, T, vb2, lam, N):
+            def jac(mg2, v2, mn2, temp, vb2, lam, N):
                 """ Jacobian for the mg2 gap equation rootfinder """
                 eps = 1e-12
                 if mg2 <= 0:
                     mg2 = eps  # regulator for mg=0 case
                 mg = sc.sqrt(mg2)
-                return np.array([1.0 - (lam / (6. * mg)) * (thermal_tadpole(mg + eps, T, MU)
-                                                            - thermal_tadpole(mg, T, MU)) / eps, ])
-            mg2 = root(residual, guess[1], args=(v2, mn2, T, vb2, lam, N), jac=jac).x
+                return np.array([1.0 - (lam / (6. * mg)) * (thermal_tadpole(mg + eps, temp, MU)
+                                                            - thermal_tadpole(mg, temp, MU)) / eps, ])
+            mg2 = root(residual, guess[1], args=(v2, mn2, temp, vb2, lam, N), jac=jac).x
             if mg2 < 0:
                 mg2 = 0
             new_guess = np.array([v2, mg2, mn2])
@@ -254,7 +257,7 @@ def no_si_solution_root(T, vb2, lam, N, maxsteps=20, tol=1e-3,
     return guess
 
 
-def si_2pi_hartree_solution(T, vb2, lam, N,
+def si_2pi_hartree_solution(temp, vb2, lam, N,
                             maxsteps=20, tol=1e-3, update_weight=0.2):
     """
     Solution of the equations of motion for the 2PIEA with
@@ -264,7 +267,7 @@ def si_2pi_hartree_solution(T, vb2, lam, N,
     Nucl. Phys. B 874, 594 (2013) http://arxiv.org/abs/1305.3221.
 
     Arguments:
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -283,7 +286,7 @@ def si_2pi_hartree_solution(T, vb2, lam, N,
     mg2 = the Goldstone mass squared
     mn2 = the Higgs mass squared
     """
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
@@ -292,21 +295,21 @@ def si_2pi_hartree_solution(T, vb2, lam, N,
     assert np.floor(maxsteps) == maxsteps, "maxsteps must be an integer"
 
     crit_T2 = 12. * vb2 / (N + 2.)
-    mn2 = (lam * vb2 / 3.) * (1. - T ** 2. / crit_T2)
-    if T == 0:
+    mn2 = (lam * vb2 / 3.) * (1. - temp ** 2. / crit_T2)
+    if temp == 0:
         return (vb2, 0., mn2)
-    elif 0 < T ** 2. <= crit_T2:
+    elif 0 < temp ** 2. <= crit_T2:
         # analytical solution exists!
-        tn = thermal_tadpole(sc.sqrt(mn2), T, MU)
-        return ((3. * mn2 / lam) + ((T ** 2.) / 12.) - tn, 0., mn2)
+        tn = thermal_tadpole(sc.sqrt(mn2), temp, MU)
+        return ((3. * mn2 / lam) + ((temp ** 2.) / 12.) - tn, 0., mn2)
     else:
         # symmetric phase - same solution as the unimproved case
-        return no_si_solution(T, vb2, lam, N, maxsteps=maxsteps, tol=tol,
+        return no_si_solution(temp, vb2, lam, N, maxsteps=maxsteps, tol=tol,
                               symmetric_branch=True,
                               update_weight=update_weight)
 
 
-def si_3pi_hartree_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
+def si_3pi_hartree_rhs(v2, mg2, mn2, temp, vb2, lam, N, symmetric_branch=False):
     """
     Right hand side of the equations of motion for the 2PIEA at the
     Hartree-Fock level with 3PI symmetry improvement. More precisely,
@@ -317,7 +320,7 @@ def si_3pi_hartree_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
     v2   = the Higgs vev squared
     mg2  = the Goldstone mass squared
     mn2  = the Higgs mass squared
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -330,22 +333,22 @@ def si_3pi_hartree_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
     assert v2 >= 0
     assert mg2 >= 0
     assert mn2 >= 0
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
     assert np.floor(N) == N, "N must be an integer"
 
-    if T > 0:
-        tg = thermal_tadpole(sc.sqrt(mg2), T, MU)
-        tn = thermal_tadpole(sc.sqrt(mn2), T, MU)
+    if temp > 0:
+        tg = thermal_tadpole(sc.sqrt(mg2), temp, MU)
+        tn = thermal_tadpole(sc.sqrt(mn2), temp, MU)
     else:
         tg = 0
         tn = 0
 
     if not symmetric_branch:
         # broken symmetry branch
-        return (vb2 - ((N + 1.) * T ** 2.) / 12. - tn,
+        return (vb2 - ((N + 1.) * temp ** 2.) / 12. - tn,
                 0.,
                 lam * v2 / 3.)
     else:
@@ -355,7 +358,7 @@ def si_3pi_hartree_rhs(v2, mg2, mn2, T, vb2, lam, N, symmetric_branch=False):
                 (lam / 6.) * (-vb2 + (N + 1) * tg + tn))
 
 
-def si_3pi_hartree_solution(T, vb2, lam, N,
+def si_3pi_hartree_solution(temp, vb2, lam, N,
                             maxsteps=20, tol=1e-3, update_weight=0.2, symmetric_branch=False):
     """
     Solution of the equations of motion for the 2PIEA with 3PI symmetry
@@ -363,7 +366,7 @@ def si_3pi_hartree_solution(T, vb2, lam, N,
     of the Higgs equation of motion.
 
     Arguments:
-    T    = the temperature
+    temp    = the temperature
     vb2  = the Higgs vev squared at zero temperature
     lam  = the quartic coupling constant at zero temperature
     N    = the number of field components (i.e., O(N) symmetry)
@@ -382,7 +385,7 @@ def si_3pi_hartree_solution(T, vb2, lam, N,
     mg2 = the Goldstone mass squared
     mn2 = the Higgs mass squared
     """
-    assert T >= 0
+    assert temp >= 0
     assert vb2 >= 0
     assert lam > 0
     assert N >= 1
@@ -392,23 +395,23 @@ def si_3pi_hartree_solution(T, vb2, lam, N,
     assert 0 < update_weight <= 1.0
 
 #    if symmetric_branch:
-#        return no_si_solution(T, vb2, lam, N, maxsteps=maxsteps, tol=tol,
+#        return no_si_solution(temp, vb2, lam, N, maxsteps=maxsteps, tol=tol,
 #                              symmetric_branch=True,
 #                              update_weight=update_weight)
 
-    _crit_T = sc.sqrt(12. * vb2 / (N + 2.))
+    crit_temp = sc.sqrt(12. * vb2 / (N + 2.))
     guess = (vb2, 0.0, lam * vb2 / 3.)
 
     for _ in range(maxsteps):
         new_guess = si_3pi_hartree_rhs(guess[0], guess[1], guess[2],
-                                       T, vb2, lam, N, symmetric_branch=symmetric_branch)
+                                       temp, vb2, lam, N, symmetric_branch=symmetric_branch)
         new_guess = sc.array(new_guess)
         new_guess[new_guess < 0] = 0  # fix negative guesses
 
         if sc.all(abs(sc.array(new_guess) - sc.array(guess)) < tol):
-            # if all zeros and not at _crit_T this is a failure case
+            # if all zeros and not at crit_temp this is a failure case
             # otherwise have converged on a solution
-            if np.all(np.abs(sc.array(new_guess)) < 10 * tol) and not np.abs(T - _crit_T) < tol:
+            if np.all(np.abs(sc.array(new_guess)) < 10 * tol) and not np.abs(temp - crit_temp) < tol:
                 return (sc.nan, sc.nan, sc.nan)  # failure
             return new_guess  # success
         guess = (update_weight * sc.array(new_guess)
@@ -460,7 +463,7 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
     assert lam > 0
     assert N >= 1
     assert np.floor(N) == N, "N must be an integer"
-    _crit_T = sc.sqrt(12. * vb2 / (N + 2.))
+    crit_temp = sc.sqrt(12. * vb2 / (N + 2.))
 
     if weights is None:
         weights = 0.2 * sc.ones_like(Ts)
@@ -469,11 +472,11 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
     _results = sc.nan * sc.zeros((len(Ts), 20))
     _results[:, 0] = Ts
     for i in range(len(Ts)):
-        print("Step %d of %d. T/Tc = %f" % (i, len(Ts), Ts[i]/_crit_T))
-        T = Ts[i]
+        print("Step %d of %d. temp/Tc = %f" % (i, len(Ts), Ts[i]/crit_temp))
+        temp = Ts[i]
 
         try:
-            _v2, _mg2, _mn2 = no_si_solution(T, vb2, lam, N,
+            _v2, _mg2, _mn2 = no_si_solution(temp, vb2, lam, N,
                                              maxsteps=maxsteps,
                                              symmetric_branch=False,
                                              update_weight=weights[i])
@@ -482,7 +485,7 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
             pass
 
         try:
-            _, _mg2s, _mn2s = no_si_solution(T, vb2, lam, N,
+            _, _mg2s, _mn2s = no_si_solution(temp, vb2, lam, N,
                                              maxsteps=maxsteps,
                                              symmetric_branch=True,
                                              update_weight=weights[i])
@@ -492,7 +495,7 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
 
         try:
             si_v2, si_mg2, si_mn2 = si_2pi_hartree_solution(
-                T, vb2, lam, N, maxsteps=maxsteps, update_weight=weights[i])
+                temp, vb2, lam, N, maxsteps=maxsteps, update_weight=weights[i])
             _results[i, 6:9] = (sc.sqrt(si_v2), sc.sqrt(si_mg2),
                                 sc.sqrt(si_mn2))
         except AssertionError:
@@ -500,14 +503,15 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
 
         try:
             si3_v2s, si3_mg2s, si3_mn2s = si_3pi_hartree_solution(
-                T, vb2, lam, N, maxsteps=maxsteps, update_weight=weights[i], symmetric_branch=False)
+                temp, vb2, lam, N, maxsteps=maxsteps, update_weight=weights[i],
+                symmetric_branch=False)
             _results[i, 9:12] = (sc.sqrt(si3_v2s), sc.sqrt(si3_mg2s),
                                  sc.sqrt(si3_mn2s))
         except AssertionError:
             pass
 
         try:
-            _v2, _mg2, _mn2 = no_si_solution_root(T, vb2, lam, N,
+            _v2, _mg2, _mn2 = no_si_solution_root(temp, vb2, lam, N,
                                                   maxsteps=maxsteps,
                                                   symmetric_branch=False,
                                                   update_weight=weights[i])
@@ -516,7 +520,7 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
             pass
 
         try:
-            _, _mg2s, _mn2s = no_si_solution_root(T, vb2, lam, N,
+            _, _mg2s, _mn2s = no_si_solution_root(temp, vb2, lam, N,
                                                   maxsteps=maxsteps,
                                                   symmetric_branch=True,
                                                   update_weight=weights[i])
@@ -525,7 +529,7 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
             pass
 
         try:
-            si3_v2s, si3_mg2s, si3_mn2s = si_3pi_hartree_solution(T, vb2, lam, N,
+            si3_v2s, si3_mg2s, si3_mn2s = si_3pi_hartree_solution(temp, vb2, lam, N,
                                                                   maxsteps=maxsteps,
                                                                   update_weight=weights[i],
                                                                   symmetric_branch=True)
@@ -538,59 +542,58 @@ def driver(vb2, lam, N, Ts, maxsteps=1000, weights=None):
 
 #%% Main (spyder cell magic)
 if __name__ == "__main__":
-    start = time.clock()
+    START = time.clock()
     # Vacuum vev and Higgs mass squared in GeV**2
-    _vb2 = 93. ** 2 # Pi-Sigma model
-    _mnb2 = 500. ** 2
-    _lam = 3. * _mnb2 / _vb2
+    VB2 = 93. ** 2 # Pi-Sigma model
+    MNB2 = 500. ** 2
+    LAM = 3. * MNB2 / VB2
     _N = 4
-    crit_T = sc.sqrt(12. * _vb2 / (_N + 2.))
+    CRIT_TEMP = sc.sqrt(12. * VB2 / (_N + 2.))
 
-    _Ts = np.concatenate((sc.linspace(0, 130., 130),
-                          sc.linspace(130., 140., 50),
-                          sc.linspace(140., 200., 50),
-                          sc.linspace(200., 225., 50),
-                          sc.linspace(225., 250., 25)))
+    TEMPS = np.concatenate((sc.linspace(0, 130., 130),
+                            sc.linspace(130., 140., 50),
+                            sc.linspace(140., 200., 50),
+                            sc.linspace(200., 225., 50),
+                            sc.linspace(225., 250., 25)))
 
     # Stepped update_weights to focus computation near the critical temperature
     # where convergence is a bit dicey
-    _weights = sc.zeros_like(_Ts)
-    _weights[_Ts < crit_T] = 0.9
-    _weights[_Ts >= crit_T] = 0.1
-    _weights[_Ts > 1.5 * crit_T] = 0.3
+    WEIGHTS = sc.zeros_like(TEMPS)
+    WEIGHTS[TEMPS < CRIT_TEMP] = 0.9
+    WEIGHTS[TEMPS >= CRIT_TEMP] = 0.1
+    WEIGHTS[TEMPS > 1.5 * CRIT_TEMP] = 0.3
 
     # all the magic
-    results = driver(_vb2, _lam, _N, _Ts, maxsteps=10000, weights=_weights)
+    RESULTS = driver(VB2, LAM, _N, TEMPS, maxsteps=10000, weights=WEIGHTS)
 
     print("*****  Results  *****")
-    print("Higgs model: vev = %.0f mH = %.0f N = %d lambda = %.3f crit_T = %.2f" %
-          (sc.sqrt(_vb2), sc.sqrt(_mnb2), _N, _lam, crit_T))
+    print("Higgs model: vev = %.0f mH = %.0f N = %d lambda = %.3f CRIT_TEMP = %.2f" %
+          (sc.sqrt(VB2), sc.sqrt(MNB2), _N, LAM, CRIT_TEMP))
+    STOP = time.clock()
+    print("Total time: %f" % (STOP - START))
 
 #%% Reproducibility check (spyder cell magic)
     print("*****  Reproducibility Check  *****")
 
-    # Numpy array file containing the results array.
+    # Numpy array file containing the RESULTS array.
     # This is the data file used to produce the thesis plots (TODO: which ones exactly?).
     # It was produced by running this code and saving manually using
-    # np.save("filename.npy", results). Here it is used to check reproducibility.
-    results_file = "hartree-results-03102014.npy"
-    print("Loading results file: '%s'." % results_file)
-    results_old = sc.load(results_file)
+    # np.save("filename.npy", RESULTS). Here it is used to check reproducibility.
+    RESULTS_FILE = "hartree-results-03102014.npy"
+    print("Loading results file: '%s'." % RESULTS_FILE)
+    RESULTS_OLD = sc.load(RESULTS_FILE)
 
-    # Check that results and results_old are the same shape
-    print("Results are the same shape: %s" % (results.shape == results_old.shape))
-    # Check that results and results_old are nans in all the same places
+    # Check that RESULTS and RESULTS_OLD are the same shape
+    print("Results are the same shape: %s" % (RESULTS.shape == RESULTS_OLD.shape))
+    # Check that RESULTS and RESULTS_OLD are nans in all the same places
     print("Results are nans in all the same places: %s" %
-          (sc.isnan(results) == sc.isnan(results_old)).all())
+          (sc.isnan(RESULTS) == sc.isnan(RESULTS_OLD)).all())
     # Check the rms residual where not nan
-    resid = sc.where(sc.isnan(results) | sc.isnan(results_old),
-                     sc.zeros_like(results),
-                     results - results_old)
-    rmsresid = sc.sqrt((resid**2).sum())
-    resultnorm = sc.sqrt((sc.where(sc.isnan(results),
-                                   sc.zeros_like(results),
-                                   results)**2).sum())
-    print("RMS Residual = %f / %f == %f" % (rmsresid, resultnorm, rmsresid/resultnorm))
-
-    stop = time.clock()
-    print("Total time: %f" % (stop - start))
+    RESID = sc.where(sc.isnan(RESULTS) | sc.isnan(RESULTS_OLD),
+                     sc.zeros_like(RESULTS),
+                     RESULTS - RESULTS_OLD)
+    RMSRESID = sc.sqrt((RESID**2).sum())
+    RESULTNORM = sc.sqrt((sc.where(sc.isnan(RESULTS),
+                                   sc.zeros_like(RESULTS),
+                                   RESULTS)**2).sum())
+    print("RMS Residual = %f / %f == %f" % (RMSRESID, RESULTNORM, RMSRESID/RESULTNORM))
