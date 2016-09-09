@@ -4,15 +4,12 @@ Common routines
 
 Created on Tue Aug 26 11:32:25 2014
 
-@author: michael
+@author: Michael Brown
 """
-
-from __future__ import division
 
 import numpy as np
 import scipy as sc
 import matplotlib.pyplot as plt
-
 from scipy.integrate import quad
 from scipy import interpolate
 
@@ -38,20 +35,20 @@ class PrecomputeInterpolate:
         self.__numpoints = numpoints
         self.__xgrid = sc.linspace(xmin, xmax, numpoints, endpoint=True)
 
-    def __call__(self, f):
+    def __call__(self, func):
         import time
-        print("Wrapping %s with PrecomputeInterpolate" % f)
+        print("Wrapping %s with PrecomputeInterpolate" % func)
         start = time.clock()
-        _tmp = np.array([f(x) for x in self.__xgrid])
+        _tmp = np.array([func(x) for x in self.__xgrid])
         stop = time.clock()
         print("Took %f seconds." % (stop - start))
-        self.__func = f
+        self.__func = func
         self.__vals = _tmp[:, 0]
         self.__errs = _tmp[:, 1]
         self.__interp_vals = interpolate.InterpolatedUnivariateSpline(
-                            self.__xgrid, self.__vals)
+            self.__xgrid, self.__vals)
         self.__interp_errs = interpolate.InterpolatedUnivariateSpline(
-                            self.__xgrid, self.__errs)
+            self.__xgrid, self.__errs)
 
         def _wrapped_f(x):
             if self.__xmin <= x <= self.__xmax:
@@ -59,47 +56,50 @@ class PrecomputeInterpolate:
             else:
                 return self.__func(x)
 
-        _wrapped_f.__name__ = f.__name__
-        _wrapped_f.__doc__ = f.__doc__
-        _wrapped_f.__repr__ = f.__repr__
+        _wrapped_f.__name__ = func.__name__
+        _wrapped_f.__doc__ = func.__doc__
+        _wrapped_f.__repr__ = func.__repr__
         return _wrapped_f
 
 
 @PrecomputeInterpolate(numpoints=5000)
-def hartree_integral(m):
+def hartree_integral(mass):
     """
     Calculate the Hartree integral
     Integrate[(4 pi x^2)/((2 pi)^3 omega[x] (exp(omega[x])-1)), {x,0,Inf}]
     where
-    omega[x] = sqrt(x^2+m^2)
+    omega[x] = sqrt(x^2+mass^2)
 
     Returns a tuple (value, estimated_error).
     """
-    if m == 0:  # exact value for massless case
+    if mass == 0:  # exact value for massless case
         return 1. / 12, 0.0
-    _omega = lambda x: np.sqrt(x ** 2. + m ** 2.)
-    _pref  = 1. / (2 * sc.pi ** 2)
+    _omega = lambda x: np.sqrt(x ** 2. + mass ** 2.)
+    _pref = 1. / (2 * sc.pi ** 2)
     _integrand = lambda x: x ** 2. / (_omega(x) * (sc.exp(_omega(x)) - 1.))
     _res, _err = quad(_integrand, 0, sc.inf)
     return _pref * _res, _pref * _err
 
 
-def thermal_tadpole(m, T, mu):
-    """ Thermal tadpole graph (Hartree-Fock) with mass m, temperature T and
+def thermal_tadpole(mass, temp, mu):
+    """ Thermal tadpole graph (Hartree-Fock) with mass mass, temperature temp and
     MS-bar renormalization point mu, all in the same units. """
-#    assert m >= 0
-    assert T >= 0
+#    assert mass >= 0
+    assert temp >= 0
     assert mu > 0
 
-    if m <= 0:
-        return (T ** 2) / 12.
-    if T == 0:
-        return (m ** 2) * 2 * np.log(m / mu) / (16 * sc.pi ** 2)
+    if mass <= 0:
+        return (temp ** 2) / 12.
+    if temp == 0:
+        return (mass ** 2) * 2 * np.log(mass / mu) / (16 * sc.pi ** 2)
 
-    return ((T ** 2) * hartree_integral(m / T)[0]
-            + (m ** 2) * 2 * np.log(m / mu) / (16 * sc.pi ** 2))
+    return ((temp ** 2) * hartree_integral(mass / temp)[0]
+            + (mass ** 2) * 2 * np.log(mass / mu) / (16 * sc.pi ** 2))
 
 def output_fig(name, save_figs, base_path="images", **kwargs):
+    """ If save_figs == True, saves the figure as a file of name 'base_path/name'.
+    If save_figs == False, display the figure interactively instead.
+    kwargs are passed onto matplotlib.pyplot.savefig unmodified"""
     if save_figs:
         import os
         fname = os.path.realpath(os.path.join(base_path, name))
