@@ -373,6 +373,20 @@ pagenumbering{arabic}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Rewrite all chapter starts/ends & crossrefs to make sense with the
+ reordering of chap6 and chap5!
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "chap1.lyx"
@@ -413,9 +427,19 @@ filename "chap4.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Fix labels for chap6 and chap5!
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
-filename "chap5.lyx"
+filename "chap6.lyx"
 
 \end_inset
 
@@ -425,7 +449,7 @@ filename "chap5.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chap6.lyx"
+filename "chap5.lyx"
 
 \end_inset
 
