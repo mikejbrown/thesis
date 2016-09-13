@@ -449,7 +449,7 @@ filename "chap5.lyx"
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "chapX.lyx"
+filename "chap6.lyx"
 
 \end_inset
 
