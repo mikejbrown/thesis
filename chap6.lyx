@@ -82,7 +82,7 @@ theorems-sec
 Soft Symmetry Improvement
 \begin_inset CommandInset label
 LatexCommand label
-name "chap:chap6"
+name "chap:chap5"
 
 \end_inset
 
@@ -93,7 +93,7 @@ name "chap:chap6"
 Synopsis
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-Synopsis"
+name "sec:ch5-Synopsis"
 
 \end_inset
 
@@ -111,7 +111,7 @@ reference "chap:chap4"
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chapX"
 
 \end_inset
 
@@ -232,7 +232,7 @@ This chapter formulates the SSI-2PIEA, then renormalises and solves the
 Soft Symmetry Improvement of 2PIEA
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-SSI-2PIEA"
+name "sec:ch5-SSI-2PIEA"
 
 \end_inset
 
@@ -353,7 +353,7 @@ reference "chap:chap4"
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chapX"
 
 \end_inset
 
@@ -620,7 +620,7 @@ reference "subsec:Broken-Phase-with-massless-Goldstones"
 Renormalisation of the Hartree-Fock truncation
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-Renormalisation-of-the-HF-truncation"
+name "sec:ch5-Renormalisation-of-the-HF-truncation"
 
 \end_inset
 
@@ -1435,7 +1435,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/zero_mode_epsilon.eps
+	filename images/ch5/zero_mode_epsilon.eps
 	width 100col%
 
 \end_inset
@@ -1561,7 +1561,7 @@ for the Goldstone and Higgs masses, respectively.
 Solution in the infinite volume / low temperature limit
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-Solution-in-the-limit"
+name "sec:ch5-Solution-in-the-limit"
 
 \end_inset
 
@@ -2645,7 +2645,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-solns.eps
+	filename images/ch5/ssi-solns.eps
 	width 100col%
 
 \end_inset
@@ -2744,7 +2744,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-spinodal-temps.eps
+	filename images/ch5/ssi-spinodal-temps.eps
 	width 100col%
 
 \end_inset
@@ -2966,7 +2966,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-hf-soln-existence-32768.eps
+	filename images/ch5/ssi-hf-soln-existence-32768.eps
 	width 45col%
 
 \end_inset
@@ -2997,7 +2997,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-hf-soln-existence-16384.eps
+	filename images/ch5/ssi-hf-soln-existence-16384.eps
 	width 45col%
 
 \end_inset
@@ -3030,7 +3030,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-hf-soln-existence-12200.eps
+	filename images/ch5/ssi-hf-soln-existence-12200.eps
 	width 45col%
 
 \end_inset
@@ -3064,7 +3064,7 @@ status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename images/ch6/ssi-hf-soln-existence-10000.eps
+	filename images/ch5/ssi-hf-soln-existence-10000.eps
 	width 45col%
 
 \end_inset
@@ -3262,7 +3262,7 @@ reference "eq:SSI-2PI-HF-H-eom"
  because, as discussed in section 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:ch6-Renormalisation-of-the-HF-truncation"
+reference "sec:ch5-Renormalisation-of-the-HF-truncation"
 
 \end_inset
 
@@ -3857,7 +3857,7 @@ This is the desired connection between the SSI stiffness parameter
 Linear response theory
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-Linear-response-theory"
+name "sec:ch5-Linear-response-theory"
 
 \end_inset
 
@@ -3868,7 +3868,7 @@ name "sec:ch6-Linear-response-theory"
 Summary
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:ch6-Summary"
+name "sec:ch5-Summary"
 
 \end_inset
 
