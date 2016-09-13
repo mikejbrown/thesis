@@ -439,7 +439,7 @@ TODO: Fix labels for chap6 and chap5!
 
 \begin_inset CommandInset include
 LatexCommand include
-filename "chap6.lyx"
+filename "chap5.lyx"
 
 \end_inset
 
