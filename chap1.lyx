@@ -3779,21 +3779,6 @@ reference "chap:chap5"
 
 \end_inset
 
- studies for the first time the non-equilibrium aspects of the SI-2PIEA
- by formulating the linear response theory for a system governed by the
- SI-2PIEA being driven away from equilibrium by a weak external perturbation.
- It is shown that the SI-2PIEA, and by a simple extension all SI-
-\begin_inset Formula $n$
-\end_inset
-
-PIEA, are inconsistent with the linear response approximation.
- Chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chap6"
-
-\end_inset
-
  introduces a novel technique called soft symmetry improvement (SSI) aimed
  at overcoming the difficulties of the SI-
 \begin_inset Formula $n$
@@ -3806,6 +3791,21 @@ tion.
  / low temperature limit is taken and there are three limiting cases: a
  trivial reduction to the unimproved 2PIEA, a reduction to the SI-2PIEA,
  and a novel limit which possess some unusual features which are discussed.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+ studies for the first time the non-equilibrium aspects of the SI-2PIEA
+ by formulating the linear response theory for a system governed by the
+ SI-2PIEA being driven away from equilibrium by a weak external perturbation.
+ It is shown that the SI-2PIEA, and by a simple extension all SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, are inconsistent with the linear response approximation.
  Finally, chapter 
 \begin_inset CommandInset ref
 LatexCommand ref

@@ -176,7 +176,7 @@ key "Pilaftsis2013"
  but is relevant to the discussion of Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chap6"
 
 \end_inset
 
@@ -383,7 +383,7 @@ key "Pilaftsis2013"
  is discussed in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chap6"
 
 \end_inset
 
@@ -474,7 +474,7 @@ key "Brown_2016"
  and in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chap6"
 
 \end_inset
 
@@ -535,7 +535,7 @@ key "Brown_2016"
  and Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chap6"
 
 \end_inset
 
@@ -1286,7 +1286,7 @@ reference "sec:The-Two-Loop-Solution"
 ) and out of equilibrium (see Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:chap5"
+reference "chap:chap6"
 
 \end_inset
 

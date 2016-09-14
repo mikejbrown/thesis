@@ -157,6 +157,19 @@ citep{berges_introduction_2004}.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Say something about linear response of SSI???
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -208,6 +221,16 @@ reference "chap:chap4"
 
  also extended the formalism to the symmetry improvement of 3PIEA and investigat
 ed the properties of this scheme in equilibrium.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ introduced the idea of softly imposed symmetry improvement as an attempt
+ to avoid some of the problems of the symmetry improvement formalism, though
+ this was also considered only in equilibrium.
  This chapter focuses on the extension to non-equilibrium problems, closely
  following the paper 
 \begin_inset CommandInset citation

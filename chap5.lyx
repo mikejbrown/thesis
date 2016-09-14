@@ -101,17 +101,10 @@ name "sec:ch5-Synopsis"
 \end_layout
 
 \begin_layout Standard
-Chapters 
+Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:chap4"
-
-\end_inset
-
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chapX"
 
 \end_inset
 
@@ -140,8 +133,15 @@ PIEA (
 \begin_inset Formula $l<n$
 \end_inset
 
-) are not fully self-consistent due to over-imposed constraints, and solutions
- of SI-
+) are not fully self-consistent due to over-imposed constraints, and, as
+ will be shown in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+, solutions of SI-
 \begin_inset Formula $n$
 \end_inset
 
@@ -343,21 +343,14 @@ REFs
 \begin_inset Formula $\Gamma^{\mathrm{SI}}\left[\varphi,\Delta\right]$
 \end_inset
 
- is nothing but the SI-2PIEA as discussed in chapters 
+ is nothing but the SI-2PIEA as discussed in chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:chap4"
 
 \end_inset
 
- and 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chapX"
-
-\end_inset
-
-, arrived at in a new way.
+ arrived at in a new way.
 \end_layout
 
 \begin_layout Standard
@@ -3853,11 +3846,20 @@ This is the desired connection between the SSI stiffness parameter
 .
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Linear response theory
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:ch5-Linear-response-theory"
+
+\end_inset
+
+??
+\end_layout
 
 \end_inset
 
