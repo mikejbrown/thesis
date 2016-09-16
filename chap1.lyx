@@ -335,12 +335,16 @@ Commutators at unequal times must be found by evolving the field with its
 \begin_inset Formula $m$
 \end_inset
 
- is a parameter with dimensions of inverse length (which is equal to mass
- 
+ is a parameter with dimensions of inverse length (the name is due to a
+ quantity with dimensions of mass 
 \begin_inset Formula $m\hbar/c$
 \end_inset
 
- because 
+, which is equal to 
+\begin_inset Formula $m$
+\end_inset
+
+ in natural units because 
 \begin_inset Formula $\hbar=c=1$
 \end_inset
 
@@ -902,12 +906,17 @@ S
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}=\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}}=\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S},
 \end{equation}
 
 \end_inset
 
-Resolving the identity again, this time with 
+where 
+\begin_inset Formula $\hat{H}\left(\hat{\phi},\hat{\pi}\right)$
+\end_inset
+
+ is the Hamiltonian.
+ Resolving the identity again, this time with 
 \begin_inset Formula $\hat{\pi}$
 \end_inset
 
@@ -1419,7 +1428,7 @@ These aspects can be illustrated by the case of a free field theory, for
  which
 \begin_inset Formula 
 \begin{equation}
-\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\int_{x_{E}}\left(\left(\partial_{x^{4}}\phi\right)^{2}+\left(\nabla\phi\right)^{2}+m^{2}\phi^{2}\right)=-\frac{1}{2}\int_{x_{E}}\phi D\phi
+\int_{x_{E}}\mathcal{L}_{E}=-\frac{1}{2}\int_{x_{E}}\left(\left(\partial_{x^{4}}\phi\right)^{2}+\left(\nabla\phi\right)^{2}+m^{2}\phi^{2}\right)=-\frac{1}{2}\int_{x_{E}}\phi D\phi\label{eq:free-thermal-lagrangian}
 \end{equation}
 
 \end_inset
@@ -1437,7 +1446,20 @@ and
 \end_inset
 
  is the obvious Euclidean space gradient operator.
- The following discussion closely follows 
+ In going from the first form to the second in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:free-thermal-lagrangian"
+
+\end_inset
+
+, an integration by parts was performed and the surface terms were dropped.
+ This is justified by the use of periodic boundary conditions below.
+ The discussion from here to the expression for the energy density 
+\begin_inset Formula $\rho$
+\end_inset
+
+ closely follows 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "kapusta_finite-temperature_2006"

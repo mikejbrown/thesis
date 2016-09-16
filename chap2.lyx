@@ -3588,7 +3588,7 @@ The definition of the
 PIEA is conceptually simple enough, having seen now the 1PIEA and 2PIEA
  cases
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Note however that the 
@@ -3610,7 +3610,7 @@ not
  irreducible 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Carrington2011a"
+key "Carrington2012"
 
 \end_inset
 

@@ -121,7 +121,7 @@ PI) Ward identities.
 \begin_inset Formula $n$
 \end_inset
 
-PIEA is truncated some subset of perturbative diagrams are summed to infinite
+PIEA is truncated some subset of perturbative diagrams is summed to infinite
  order, but the complementary subset is left out entirely.
  The pattern of resummations does not guarantee that the cancellations between
  perturbative diagrams needed to maintain the symmetry are kept.
@@ -165,7 +165,7 @@ key "York2012,York2014"
  for a discussion of the gauge fixing problem).
  These results are known in the literature, but the demonstration given
  here that the 2PI Ward identity is incompatible with the corresponding
- 1PI Ward identity is (to the author's knowledge)/ new and shows that this
+ 1PI Ward identity is (to the author's knowledge) new and shows that this
  result is independent of the renormalisation scheme used.
  Here the 2PIEA for the 
 \begin_inset Formula $O\left(N\right)$
