@@ -3857,5 +3857,191 @@ name "sec:ch5-Summary"
 
 \end_layout
 
+\begin_layout Standard
+This chapter introduced, for the first time to the author's knowledge, a
+ new method of symmetry improvement called 
+\emph on
+soft symmetry improvement
+\emph default
+ or SSI.
+ As opposed to the 
+\emph on
+hard
+\emph default
+ symmetry improvement (SI) of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+, Ward identities are imposed weakly in the sense of least squared error.
+ The relative strength of the soft constraint is determined by a new stiffness
+ parameter 
+\begin_inset Formula $\xi$
+\end_inset
+
+ which can be tuned from zero (equivalent to hard SI) to 
+\begin_inset Formula $\infty$
+\end_inset
+
+ (equivalent to no constraint), with the hope that the added freedom allows
+ the SSI method to circumvent some of the problems of the SI method for
+ some range of finite 
+\begin_inset Formula $\xi$
+\end_inset
+
+.
+ Here the SSI method was studied for the 2PIEA in the Hartree-Fock approximation
+, though the generalisation to the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA and higher order approximations is conceptually straightforward (leading
+ only to greater technical complication).
+\end_layout
+
+\begin_layout Standard
+Unfortunately the goals of this program cannot be fully realised in the
+ most interesting case of the infinite volume limit 
+\begin_inset Formula $\beta\mathrm{V}\to\infty$
+\end_inset
+
+.
+ Due to an infrared sensitivity of the SSI method, 
+\begin_inset Formula $\xi$
+\end_inset
+
+ must be scaled with 
+\begin_inset Formula $\beta\mathrm{V}$
+\end_inset
+
+ in the limit in order to obtain non-trivial behaviour.
+ Three consistent limiting behaviours were found.
+ One of these is equivalent to the unimproved 2PIEA which has already been
+ studied.
+ Another is equivalent to the SI-2PIEA which has also been studied previously.
+ The remaining case is a novel one and was studied in detail in section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Broken-Phase-with-massive-Goldstones"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In the novel limit the Goldstone self-energy is momentum dependent even
+ in the Hartree-Fock approximation.
+ The zero momentum Goldstone mode is massless as required by Goldstone's
+ theorem, but the remaining modes are massive with a constant 
+\begin_inset Formula $m_{G}^{2}\neq0$
+\end_inset
+
+.
+ Perhaps counter-intuitively, 
+\begin_inset Formula $m_{G}^{2}$
+\end_inset
+
+ 
+\emph on
+increases
+\emph default
+ as the symmetry improvement constraint is more strongly imposed.
+ A strong first order phase transition is found for all values of the (scaled)
+ stiffness parameter 
+\begin_inset Formula $\hat{\zeta}$
+\end_inset
+
+.
+ Further, there is a critical value 
+\begin_inset Formula $\hat{\zeta}_{c}$
+\end_inset
+
+ such that for 
+\begin_inset Formula $\hat{\zeta}<\hat{\zeta}_{c}$
+\end_inset
+
+ solutions cease to exist for a range of temperatures below the critical
+ temperature.
+ As 
+\begin_inset Formula $\hat{\zeta}\to0$
+\end_inset
+
+ this range increases and at some finite value 
+\begin_inset Formula $\hat{\zeta}_{\star}$
+\end_inset
+
+ the solution ceases to exist even at zero temperature.
+ This loss of solution was confirmed both analytically and numerically.
+\end_layout
+
+\begin_layout Standard
+This behaviour highlights the difficult faced by the symmetry improvement
+ program.
+ Ward identities are by nature infrared properties of a field theory and
+ imposing them amounts to modifying a theory at large distances, while trying
+ not to modify anything at short distance scales.
+ However, due to the use of self-consistent propagators and vertices, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs inherently couple IR and UV behaviour.
+ This can be seen in the loss of solutions of the SI-2PIEA in the two loop
+ truncation as discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-Two-Loop-Solution"
+
+\end_inset
+
+: it cannot be guaranteed for the SI-2PIEA in a given truncation that all
+ UV regulators lead to the same IR physics.
+ In the SSI method in the new limit, the imposition of the Ward identity
+ (even weakly) is incompatible with the existence of massless non-zero modes
+ of the Goldstone propagator in the 
+\begin_inset Formula $\beta\mathrm{V}\to0$
+\end_inset
+
+ limit.
+ This again leads to loss of solutions.
+ Further, due to the unavoidable scaling of an IR quantity (the SSI term)
+ in the 
+\begin_inset Formula $\beta\mathrm{V}\to\infty$
+\end_inset
+
+ limit, the unimproved, SI and new limits become decoupled.
+ There is no version of the theory which smoothly interpolates between the
+ unimproved and symmetry improved cases in the 
+\begin_inset Formula $\beta\mathrm{V}\to\infty$
+\end_inset
+
+ limit.
+ To put it colloquially, infinite volume is too big a space to 
+\begin_inset Quotes eld
+\end_inset
+
+softly
+\begin_inset Quotes erd
+\end_inset
+
+ impose anything on.
+\end_layout
+
+\begin_layout Standard
+It would be interesting to examine whether at finite 
+\begin_inset Formula $\beta\mathrm{V}$
+\end_inset
+
+ any physically reasonable results could be obtained.
+ This could be studied by, for example, putting the universe in a box the
+ size of the Hubble scale.
+ However, this would required redoing the renormalisation procedure in finite
+ volume and re-evaluating the thermal sums which are no longer trivial.
+ Thus, this investigation is deferred to future work.
+\end_layout
+
 \end_body
 \end_document
