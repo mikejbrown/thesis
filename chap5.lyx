@@ -3846,26 +3846,6 @@ This is the desired connection between the SSI stiffness parameter
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Linear response theory
-\begin_inset CommandInset label
-LatexCommand label
-name "sec:ch5-Linear-response-theory"
-
-\end_inset
-
-??
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Summary
 \begin_inset CommandInset label

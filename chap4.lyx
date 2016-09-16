@@ -6842,9 +6842,26 @@ key "Carrington2015"
  If successful, such an effort could serve to open a new window to the non-pertu
 rbative physics of these theories in high temperature, high density and
  strong coupling regimes.
- As a stepping stone towards non-equilibrium applications the theory of
- the linear response of a system to external perturbations is studied in
- the SI-2PIEA formalism in the next chapter.
+ In an attempt to address some of problems with the SI-nPIEA, a novel method
+ of 
+\begin_inset Quotes eld
+\end_inset
+
+soft
+\begin_inset Quotes erd
+\end_inset
+
+ symmetry improvement is studied in the next chapter.
+ Following that, as a stepping stone towards non-equilibrium applications,
+ the theory of the linear response of a system to external perturbations
+ is studied in the SI-2PIEA formalism in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
