@@ -90,5 +90,69 @@ name "chap:Appendix-Renormalisation-Details"
 
 \end_layout
 
+\begin_layout Standard
+Many of the renormalisation calculations must be performed using a computer
+ algebra package owing to the unwieldy form of the intermediate results.
+ For reference purposes the Mathematica notebooks used to produce the results
+ in this thesis are included here.
+ The text of these notebooks is bulky, however, if one wants the explicit
+ expression for the counter-terms in some approximation, or the explicit
+ steps used to derive them, they can be found in the following pages.
+ The full notebooks will be made available in machine readable form online
+ at 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/mikejbrown/thesis"
+target "https://github.com/mikejbrown/thesis"
+
+\end_inset
+
+ once the thesis has been accepted.
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename code/with-output/twopiea-two-loop-renormalization.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename code/with-output/si2piea-two-loop-renormalization.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename code/with-output/two-loop-renormalization.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename code/with-output/si3piea-two-loop-renormalization.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

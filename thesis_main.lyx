@@ -334,6 +334,19 @@ UPDATE!!!!!
 \end_layout
 
 \begin_layout Standard
+All source code for this thesis document and related programs (Mathematica
+ notebooks etc.) will be made available online at 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/mikejbrown/thesis"
+target "https://github.com/mikejbrown/thesis"
+
+\end_inset
+
+ once the thesis has been accepted.
+\end_layout
+
+\begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\lhook}[1]{#1^{\ulcorner}}
 \end_inset
