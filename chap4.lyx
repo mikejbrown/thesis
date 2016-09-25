@@ -4195,12 +4195,9 @@ V & \to Z^{-3/2}Z_{V}V,
 and demanding that all kinematically distinct divergences vanish.
  Details of this computation and explicit expressions for the counter-terms
  are given in Appendix 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
 
 \end_inset
 
@@ -4599,14 +4596,9 @@ reference "eq:K-6pt-kernel-eom"
 
  can be written in a form that makes explicit all divergences (see Appendix
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{sec:Auxiliary-vertex-and-renorm}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Auxiliary-vertex-and-renorm"
 
 \end_inset
 
@@ -4674,14 +4666,9 @@ PIEA for
  remains an open problem, both in general and in the present case.
  The problem can be seen from the behaviour of the auxiliary vertex which
  is discussed further in Appendix 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{sec:Auxiliary-vertex-and-renorm}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Auxiliary-vertex-and-renorm"
 
 \end_inset
 
@@ -4719,14 +4706,9 @@ The counter-terms for
  dimensions are derived following essentially the same procedure used several
  times now already.
  Details are given in Appendix 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{sec:Deriving-Counter-terms-for-3-loops}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
 
 \end_inset
 

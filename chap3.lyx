@@ -2363,18 +2363,16 @@ reference "eq:ren-2PI-HF-H-eom"
  one.
  There are ten independent equations for the eight remaining constants,
  thus the fact that a solution exists is a non-trivial consistency check.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Mathematica notebook available...
- in appendix??? or public git repo somewhere...?
-\end_layout
+ The details of the computation of the renormalisation constants can be
+ found in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
 
 \end_inset
 
-The resulting renormalisation constants are
+.
+ The resulting renormalisation constants are
 \begin_inset Formula 
 \begin{align}
 Z=Z_{\Delta} & =1,\\
