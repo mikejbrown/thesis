@@ -651,10 +651,10 @@ and demanding that the resulting equations hold for any value of the sources
  Doing this leads to the system 
 \begin_inset Formula 
 \begin{align}
-\frac{\delta^{2}\Gamma}{\delta\varphi_{b}\delta\varphi_{a}}\chi_{bd}^{\phi J}+\frac{\delta^{2}\Gamma}{\delta\Delta_{bc}\delta\varphi_{a}}\chi_{bcd}^{\Delta J} & =-\delta_{ad},\\
-\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\chi_{ce}^{\phi J}+\frac{\delta^{2}\Gamma}{\delta\Delta_{cd}\delta\Delta_{ab}}\chi_{cde}^{\Delta J} & =0,\\
-\frac{\delta^{2}\Gamma}{\delta\varphi_{b}\delta\varphi_{a}}\chi_{bde}^{\phi K}+\frac{\delta^{2}\Gamma}{\delta\Delta_{bc}\delta\varphi_{a}}\chi_{bcde}^{\Delta K} & =-\left(\delta_{ad}\tilde{\varphi}_{e}+\delta_{ae}\tilde{\varphi}_{d}\right),\\
-\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\chi_{cef}^{\phi K}+\frac{\delta^{2}\Gamma}{\delta\Delta_{cd}\delta\Delta_{ab}}\chi_{cdef}^{\Delta K} & =-\frac{1}{2}i\hbar\left(\delta_{ae}\delta_{bf}+\delta_{af}\delta_{be}\right),
+\frac{\delta^{2}\Gamma}{\delta\varphi_{b}\delta\varphi_{a}}\chi_{bd}^{\phi J}+\frac{\delta^{2}\Gamma}{\delta\Delta_{bc}\delta\varphi_{a}}\chi_{bcd}^{\Delta J} & =-\delta_{ad},\label{eq:lrt-response-funtion-eq1}\\
+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\chi_{ce}^{\phi J}+\frac{\delta^{2}\Gamma}{\delta\Delta_{cd}\delta\Delta_{ab}}\chi_{cde}^{\Delta J} & =0,\label{eq:lrt-response-funtion-eq2}\\
+\frac{\delta^{2}\Gamma}{\delta\varphi_{b}\delta\varphi_{a}}\chi_{bde}^{\phi K}+\frac{\delta^{2}\Gamma}{\delta\Delta_{bc}\delta\varphi_{a}}\chi_{bcde}^{\Delta K} & =-\left(\delta_{ad}\tilde{\varphi}_{e}+\delta_{ae}\tilde{\varphi}_{d}\right),\label{eq:lrt-response-funtion-eq3}\\
+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\chi_{cef}^{\phi K}+\frac{\delta^{2}\Gamma}{\delta\Delta_{cd}\delta\Delta_{ab}}\chi_{cdef}^{\Delta K} & =-\frac{1}{2}i\hbar\left(\delta_{ae}\delta_{bf}+\delta_{af}\delta_{be}\right),\label{eq:lrt-response-funtion-eq4}
 \end{align}
 
 \end_inset
@@ -2320,40 +2320,73 @@ non-covariantly
 \emph default
  project out the troublesome constraints, i.e.
  explicitly break the symmetry in order to save it.
-\end_layout
-
-\begin_layout Standard
-It is worth mentioning the logical possibility that the true behaviour of
- the solutions to the truncated SI-2PIEA equations of motion, when solutions
+ It is worth mentioning the logical possibility that the true behaviour
+ of the solutions to the truncated SI-2PIEA equations of motion, when solutions
  exist, is non-analytic as a function of the sources in the neighbourhood
  of equilibrium.
  This would invalidate any attempted Taylor series expansion in the sources
  and so one should expect problems at the linear response level.
  The author does not know how to further analyse this possibility at this
  time.
- It would also be interesting to examine whether alternatives to symmetry
+\end_layout
+
+\begin_layout Standard
+It would also be interesting to examine whether alternatives to symmetry
  improvement can be extended to non-equilibrium situations.
- This motivates the investigation of a scheme with 
-\emph on
-softy
-\emph default
- imposed symmetry improvement as a potential workaround for the issues found
- here and in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Marko2016"
-
-\end_inset
-
- in relation to loss of solutions of the SI-2PIEA (c.f.
- section 
+ This motivates the investigation of the linear response of the soft symmetry
+ improvement formalism as a potential workaround for the issues found here.
+ There are two reasons that the results of this chapter cannot be directly
+ transferred to the SSI formalism of Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sec:The-Two-Loop-Solution"
+reference "chap:chap5"
 
 \end_inset
 
- for further discussion).
+.
+ The first is that the WI is not exactly imposed in the SSI formalism, so
+ that the 
+\begin_inset Quotes eld
+\end_inset
+
+short cut
+\begin_inset Quotes erd
+\end_inset
+
+ taken above no longer applies.
+ Instead, one must explicitly compute the left hand sides of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lrt-response-funtion-eq1"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lrt-response-funtion-eq4"
+
+\end_inset
+
+ and solve for the response functions.
+ This results in a very unwieldy set of equations.
+ The second reason is that, due to the infrared sensitivity of the formalism,
+ the SSI investigation of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ was carried out in finite volume in Euclidean space.
+ However, the linear response equations are formulated in infinite volume
+ and real time.
+ Thus, an analytical continuation from imaginary to real time must be performed.
+ In principle this is straightforward, although in practice it is complicated
+ by the unusual behaviour of the zero mode in the SSI formalism.
+ As a result, though an investigation of the linear response theory of soft
+ symmetry improved effective actions is clearly motivated, it falls beyond
+ the scope of this thesis.
 \end_layout
 
 \end_body
