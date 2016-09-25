@@ -80,6 +80,437 @@ theorems-sec
 
 \begin_layout Chapter
 \start_of_appendix
+The Auxiliary Vertex and its Renormalisation
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Auxiliary-vertex-and-renorm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As described in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Section 
+\backslash
+ref{sub:Three-loop-truncation}
+\end_layout
+
+\end_inset
+
+ the renormalisation of the three loop 3PIEA requires the definition of
+ an auxiliary vertex 
+\begin_inset Formula $V_{abc}^{\mu}$
+\end_inset
+
+ with the same asymptotic behaviour as the full self-consistent solution
+ at large momentum.
+ This auxiliary vertex can be found in terms of a six point kernel which
+ obeys the integral equation 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+eqref{eq:K-6pt-kernel-eom}
+\end_layout
+
+\end_inset
+
+ illustrated in Figure 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+ref{fig:aux-vertex-soln-and-6pt-kernel}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Solving 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+eqref{eq:K-6pt-kernel-eom}
+\end_layout
+
+\end_inset
+
+ by iteration generates an infinite number of terms, one of which is illustrated
+ in Figure
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ 
+\backslash
+ref{fig:K-6pt-contribution-derangement-stab-stab-derangement}
+\end_layout
+
+\end_inset
+
+.
+ Each contribution is in one-to-one correspondence with the sequence of
+ permutations 
+\begin_inset Formula $\pi_{1}\pi_{2}\cdots\pi_{n}\cdots$
+\end_inset
+
+ of the propagator lines (read from left to right in relation to the diagram).
+ Now we divide the permutations into two classes: 
+\begin_inset Quotes eld
+\end_inset
+
+stabilisers,
+\begin_inset Quotes erd
+\end_inset
+
+ for which 
+\begin_inset Formula $\pi\left(a\right)=a$
+\end_inset
+
+, and 
+\begin_inset Quotes eld
+\end_inset
+
+derangements,
+\begin_inset Quotes erd
+\end_inset
+
+ for which 
+\begin_inset Formula $\pi\left(a\right)=b$
+\end_inset
+
+ or 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{figure} 
+\backslash
+includegraphics[width=1
+\backslash
+columnwidth]{derangement-stabilizer-stabilizer-derangement}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+protect
+\backslash
+caption{
+\backslash
+label{fig:K-6pt-contribution-derangement-stab-stab-derangement}A contribution
+ to the six point kernel $
+\backslash
+mathcal{K}_{abcdef}$ resulting from (left to right) a derangement, two stabilize
+rs and another derangement.
+ The dashed boxes surround the permutations (to aid visualization only).
+ Only stabilizers lead to divergent loops.} 
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Any sequence of permutations is of the form of an alternating sequence of
+ runs of (possibly zero) stabilisers, separated by derangements.
+ Consider a run of 
+\begin_inset Formula $n$
+\end_inset
+
+ stabilisers, 
+\begin_inset Formula $\cdots\pi_{a}\left(\pi_{1}\pi_{2}\cdots\pi_{n}\right)\pi_{b}\cdots$
+\end_inset
+
+, where 
+\begin_inset Formula $\pi_{a}$
+\end_inset
+
+ and 
+\begin_inset Formula $\pi_{b}$
+\end_inset
+
+ are derangements and 
+\begin_inset Formula $\pi_{1}$
+\end_inset
+
+ through 
+\begin_inset Formula $\pi_{n}$
+\end_inset
+
+ are all stabilisers.
+ The case for 
+\begin_inset Formula $n=2$
+\end_inset
+
+ is shown in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
+\backslash
+ref{fig:K-6pt-contribution-derangement-stab-stab-derangement}
+\end_layout
+
+\end_inset
+
+.
+ Each stabiliser creates a logarithmically divergent loop on the bottom
+ two lines 
+\begin_inset Formula $\sim-\lambda\mathcal{I}^{\mu}$
+\end_inset
+
+.
+ Derangements on the other hand, if they create loops at all, create loops
+ with 
+\begin_inset Formula $>2$
+\end_inset
+
+ propagators, and hence are convergent.
+ Thus all divergences in 
+\begin_inset Formula $\mathcal{K}_{abcdef}$
+\end_inset
+
+ can be removed by rendering a single primitive divergence finite.
+ Note that the whole series 
+\begin_inset Formula $\sum_{n=0}^{\infty}\cdots\pi_{a}\left(\prod_{i=1}^{n}\pi_{i}\right)\pi_{b}$
+\end_inset
+
+, where again 
+\begin_inset Formula $\pi_{a,b}$
+\end_inset
+
+ are derangements and 
+\begin_inset Formula $\left\{ \pi_{i}\right\} $
+\end_inset
+
+ are stabilisers, can be summed because the series is geometric.
+ The result is that the six point kernel can be determined by an equation
+ like 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+eqref{eq:K-6pt-kernel-eom}
+\end_layout
+
+\end_inset
+
+, except that the sum over all permutations is replaced by a sum over derangemen
+ts only, and the bare vertex 
+\begin_inset Formula $W$
+\end_inset
+
+ is replaced by a four point kernel 
+\begin_inset Formula $\mathcal{K}_{abcd}^{\left(4\right)}\sim\lambda/\left(1+\lambda\mathcal{I}^{\mu}\right)$
+\end_inset
+
+.
+ Denoting this four point kernel by a square vertex we can finally write
+ the solution for 
+\begin_inset Formula $V_{abc}^{\mu}$
+\end_inset
+
+ in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
+\backslash
+ref{fig:aux-vertex-soln}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{figure} 
+\backslash
+includegraphics[width=1
+\backslash
+columnwidth]{auxiliary_vertex_soln}
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+protect
+\backslash
+caption{
+\backslash
+label{fig:aux-vertex-soln}Solution for the auxiliary vertex $V^{
+\backslash
+mu}_{abc}$ in terms of the four point kernel which sums all iterated bubble
+ insertions.} 
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This expression for 
+\begin_inset Formula $V_{abc}^{\mu}$
+\end_inset
+
+ can be dramatically simplified in 
+\begin_inset Formula $3$
+\end_inset
+
+ or 
+\begin_inset Formula $1+2$
+\end_inset
+
+ dimensions because 
+\begin_inset Formula $\mathcal{I}^{\mu}$
+\end_inset
+
+ is finite and the geometric sum in 
+\begin_inset Formula $\mathcal{K}_{abcd}$
+\end_inset
+
+ converges.
+ Indeed 
+\begin_inset Formula $\mathcal{K}_{abcd}^{\left(4\right)}\left(p_{1},p_{2},p_{3},p_{1}+p_{2}-p_{3}\right)\sim\lambda/\left[1+\lambda/\left(p_{1}+p_{2}\right)^{4-d}\right]\to\lambda$
+\end_inset
+
+ as 
+\begin_inset Formula $p_{1,2,3,4}\to\infty$
+\end_inset
+
+.
+ Further, every loop integral in 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Figure 
+\backslash
+ref{fig:aux-vertex-soln}
+\end_layout
+
+\end_inset
+
+ likewise converges, and every loop yields a factor of 
+\begin_inset Formula $\sim1/p^{4-d}$
+\end_inset
+
+.
+ Thus the dominant behaviour as 
+\begin_inset Formula $p\to\infty$
+\end_inset
+
+ is just the tree level behaviour and we can eliminate the auxiliary vertex
+ completely.
+\end_layout
+
+\begin_layout Standard
+However, in 
+\begin_inset Formula $4$
+\end_inset
+
+ or 
+\begin_inset Formula $1+3$
+\end_inset
+
+ dimensions 
+\begin_inset Formula $V_{abc}^{\mu}$
+\end_inset
+
+ apparently cannot be simplified further.
+ First 
+\begin_inset Formula $\mathcal{K}_{abcd}^{\left(4\right)}$
+\end_inset
+
+ must be renormalised, then the bubble appearing in the non-trivial terms
+ in
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ Figure 
+\backslash
+ref{fig:aux-vertex-soln}
+\end_layout
+
+\end_inset
+
+ (or the equivalent integral equation) must be renormalised, then the resulting
+ series must be summed (or the equivalent integral equation solved), noting
+ that on the basis of power counting every term is apparently equally important.
+ On this basis we expect that no compact analytic expression for 
+\begin_inset Formula $V_{abc}^{\mu}$
+\end_inset
+
+, or even its asymptotic behaviour, exists and that the renormalisation
+ must be accomplished as part of the self-consistent numerical solution
+ of the full equations of motion.
+\end_layout
+
+\begin_layout Standard
+This style of argument can be quickly generalised to many other theories,
+ such as gauge theories, where the diagrammatic expansion has a similar
+ combinatorial structure to scalar 
+\begin_inset Formula $O\left(N\right)$
+\end_inset
+
+ theory, showing up the well known problem of the renormalisation of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA for 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ in four dimensions.
+ The discussion here certainly does not solve this problem, which remains
+ open, to our knowledge, though we hope this discussion may be helpful.
+\end_layout
+
+\begin_layout Chapter
 Renormalisation Details
 \begin_inset CommandInset label
 LatexCommand label
