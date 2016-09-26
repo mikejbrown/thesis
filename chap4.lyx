@@ -862,13 +862,21 @@ ly renormalised, however since
 
  which are constrained by eight independent equations.
  That there is a solution is a non-trivial check on the calculations and
- one find (for details refer to the Mathematica notebook 
-\begin_inset Note Note
-status open
+ one find (for details refer to the 
+\noun on
+Mathematica 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mathematica"
 
-\begin_layout Plain Layout
-REF
-\end_layout
+\end_inset
+
+
+\noun default
+ notebook in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
 
 \end_inset
 
@@ -2059,8 +2067,18 @@ The counter-terms are found by eliminating
 \end_inset
 
 , however one of them is redundant and a solution exists.
- Details of this calculation are included in a Mathematica notebook in Appendix
+ Details of this calculation are included in a 
+\noun on
+Mathematica
+\noun default
  
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mathematica"
+
+\end_inset
+
+ notebook in Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Appendix-Renormalisation-Details"
@@ -3541,19 +3559,21 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \noun on
 Mathematica
 \noun default
- notebook
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
  
-\backslash
-citep{supp}
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mathematica"
 
 \end_inset
 
-.
+ notebook (Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+).
  The results of this section are finite equations of motion for renormalised
  quantities which must be solved numerically.
  Except in the case of the Hartree-Fock approximation, the numerical implementat

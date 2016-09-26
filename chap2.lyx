@@ -3471,19 +3471,6 @@ reference "chap:chap4"
  some of the consequences of this for physics will be discussed.
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: What else to discuss? Renormalisation?
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Higher 
 \begin_inset Formula $n$
@@ -6645,13 +6632,10 @@ PadeApproximant
 \noun on
 Mathematica
 \noun default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-C,TM,R...?
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mathematica"
 
 \end_inset
 
