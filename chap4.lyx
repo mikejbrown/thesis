@@ -1004,14 +1004,11 @@ m_{H}^{2}=\bar{m}_{H}^{2}\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)+\mathcal{O}\
 
 \end_inset
 
-which is the classic expression from the Landau theory of second order phase
- transitions 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF?
-\end_layout
+which is the expression obtained from the classic Landau theory of second
+ order phase transitions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Landau2008"
 
 \end_inset
 
