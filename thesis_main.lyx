@@ -334,7 +334,17 @@ UPDATE!!!!!
 \end_layout
 
 \begin_layout Standard
-All source code for this thesis document and related programs (Mathematica
+All source code for this thesis document and related programs (
+\noun on
+Mathematica 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "mathematica"
+
+\end_inset
+
+
+\noun default
  notebooks etc.) will be made available online at 
 \begin_inset CommandInset href
 LatexCommand href
@@ -393,8 +403,7 @@ pagenumbering{arabic}
 status open
 
 \begin_layout Plain Layout
-TODO: Rewrite all chapter starts/ends & crossrefs to make sense with the
- reordering of chap6 and chap5!
+TODO: Check flow for all chapter starts/ends!
 \end_layout
 
 \end_inset
@@ -440,16 +449,6 @@ filename "chap4.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Fix labels for chap6 and chap5!
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset include
 LatexCommand include
 filename "chap5.lyx"
