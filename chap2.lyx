@@ -1963,7 +1963,7 @@ where
 
  by solving
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 There are physically relevant cases where this equation cannot be inverted.
@@ -1982,17 +1982,15 @@ There are physically relevant cases where this equation cannot be inverted.
 \end_inset
 
  in these cases is given by a Maxwell construction much like that used for
- the free energy in thermodynamics.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF!
-\end_layout
+ the free energy in thermodynamics (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Alexandre2012"
 
 \end_inset
 
-
+ and references therein).
 \end_layout
 
 \end_inset
