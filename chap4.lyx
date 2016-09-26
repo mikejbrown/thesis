@@ -1073,17 +1073,15 @@ e.
 \begin_inset Formula $O\left(N\right)$
 \end_inset
 
- model in lattice simulations 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFS
-\end_layout
+ model in lattice simulations (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Strouthos2003,Campostrini2002"
 
 \end_inset
 
-.
+).
 \end_layout
 
 \begin_layout Standard
