@@ -2058,26 +2058,12 @@ The counter-terms are found by eliminating
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
-, however one of them is redundant and a solution exists 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-citep{supp}
-\end_layout
-
-\end_inset
-
-.
- Details of this calculation are included in a Mathematica notebook
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-ref
-\end_layout
+, however one of them is redundant and a solution exists.
+ Details of this calculation are included in a Mathematica notebook in Appendix
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
 
 \end_inset
 
@@ -4708,7 +4694,7 @@ The counter-terms for
  Details are given in Appendix 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Appendix-Renormalisation-Details"
+reference "chap:Deriving-Counter-terms-for-3-Loop-Truncations"
 
 \end_inset
 
@@ -5049,7 +5035,15 @@ In the Hartree-Fock approximation one drops the
  can be written as the sum of divergent and finite parts which can be evaluated
  in closed form.
  Renormalisation follows through almost exactly as in the unimproved and
- SI-2PI HF cases, with the resulting renormalisation constants
+ SI-2PI HF cases, with the resulting renormalisation constants (details
+ in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+)
 \begin_inset Note Note
 status open
 

@@ -92,14 +92,9 @@ name "chap:Auxiliary-vertex-and-renorm"
 
 \begin_layout Standard
 As described in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Section 
-\backslash
-ref{sub:Three-loop-truncation}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Three-loop-truncation"
 
 \end_inset
 
@@ -112,66 +107,415 @@ ref{sub:Three-loop-truncation}
  at large momentum.
  This auxiliary vertex can be found in terms of a six point kernel which
  obeys the integral equation 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:K-6pt-kernel-eom"
+
+\end_inset
+
+ which can be written graphically as
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
+
 \backslash
-eqref{eq:K-6pt-kernel-eom}
+begin{fmffile}{BS-kernel-K-eom}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmfpolyn{shaded}{K}{6} 
+\backslash
+fmf{plain}{i1,K5} 
+\backslash
+fmf{plain}{i2,K4} 
+\backslash
+fmf{plain}{i3,K3} 
+\backslash
+fmf{plain}{o1,K6} 
+\backslash
+fmf{plain}{o2,K1} 
+\backslash
+fmf{plain}{o3,K2} 
+\backslash
+end{fmfgraph}} =
+\backslash
+parbox{15mm}{
+\backslash
+begin{fmfgraph}(40,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmf{plain}{i1,o1} 
+\backslash
+fmf{plain}{i2,o2} 
+\backslash
+fmf{plain}{i3,o3} 
+\backslash
+end{fmfgraph}} +
+\backslash
+parbox{27mm}{
+\backslash
+begin{fmfgraph}(75,40) 
+\backslash
+fmfstraight 
+\backslash
+fmfleftn{i}{3} 
+\backslash
+fmfrightn{o}{3} 
+\backslash
+fmfpolyn{full}{Pi}{6} 
+\backslash
+fmf{plain}{i1,Pi5} 
+\backslash
+fmf{plain}{i2,Pi4} 
+\backslash
+fmf{plain}{i3,Pi3} 
+\backslash
+fmfpolyn{shaded}{K}{6} 
+\backslash
+fmf{plain,tension=0.5}{K5,Pi6} 
+\backslash
+fmf{phantom,tension=0.5}{Pi1,K4} 
+\backslash
+fmf{phantom,tension=0.5}{Pi2,K3} 
+\backslash
+fmf{plain}{o1,K6} 
+\backslash
+fmf{plain}{o2,K1} 
+\backslash
+fmf{plain}{o3,K2} 
+\backslash
+fmffreeze 
+\backslash
+fmf{plain}{v,Pi1} 
+\backslash
+fmf{plain}{v,Pi2} 
+\backslash
+fmf{plain}{v,K3}
+\backslash
+fmf{plain}{v,K4} 
+\backslash
+fmfdot{v} 
+\backslash
+end{fmfgraph}},
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
 \end_layout
 
 \end_inset
 
- illustrated in Figure 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-ref{fig:aux-vertex-soln-and-6pt-kernel}
-\end_layout
-
+where the shaded hexagonal blob is 
+\begin_inset Formula $\mathcal{K}$
 \end_inset
 
-.
+ and the solid hexagonal blob is the sum over all permutations of the lines
+ coming in from the left and connecting to those on the right.
 \end_layout
 
 \begin_layout Standard
 Solving 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:K-6pt-kernel-eom"
+
+\end_inset
+
+ by iteration generates an infinite number of terms, one of which is
+\begin_inset ERT
+status collapsed
 
 \begin_layout Plain Layout
 
+
 \backslash
-eqref{eq:K-6pt-kernel-eom}
+begin{fmffile}{BS-kernel-K-der-stab-stab-der}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+parbox{40mm}{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{fmfgraph*}(100,40)
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfstraight
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfleftn{i}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$a$}{i3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$b$}{i2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$c$}{i1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfrightn{o}{3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$d$}{o3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$e$}{o2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmflabel{$f$}{o1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmftopn{t}{6}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfbottomn{b}{6}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{t2,v1}
+\backslash
+fmf{phantom,tension=2}{v1,b2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{t3,v2}
+\backslash
+fmf{phantom,tension=2}{v2,b3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{t4,v3}
+\backslash
+fmf{phantom,tension=2}{v3,b4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{phantom}{t5,v4}
+\backslash
+fmf{phantom,tension=2}{v4,b5}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmffreeze
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i3,v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i2,t2,t3,t4,v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{i1,v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v1,v2,v1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain,left=1}{v2,v3,v2}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{v3,v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{o3,v3}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{o2,v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmf{plain}{o1,v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+fmfdot{v1}
+\backslash
+fmfdot{v2}
+\backslash
+fmfdot{v3}
+\backslash
+fmfdot{v4}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmfgraph*}}.
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{equation}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{fmffile}
 \end_layout
 
 \end_inset
 
- by iteration generates an infinite number of terms, one of which is illustrated
- in Figure
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- 
-\backslash
-ref{fig:K-6pt-contribution-derangement-stab-stab-derangement}
-\end_layout
-
-\end_inset
-
-.
- Each contribution is in one-to-one correspondence with the sequence of
- permutations 
+Each contribution is in one-to-one correspondence with the sequence of permutati
+ons 
 \begin_inset Formula $\pi_{1}\pi_{2}\cdots\pi_{n}\cdots$
 \end_inset
 
  of the propagator lines (read from left to right in relation to the diagram).
- Now we divide the permutations into two classes: 
+ The permutations fall into two classes: 
 \begin_inset Quotes eld
 \end_inset
 
@@ -200,49 +544,12 @@ derangements,
 \end_inset
 
 .
+ Any sequence of permutations is of the form of an alternating sequence
+ of runs of (possibly zero) stabilisers, separated by derangements.
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{derangement-stabilizer-stabilizer-derangement}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:K-6pt-contribution-derangement-stab-stab-derangement}A contribution
- to the six point kernel $
-\backslash
-mathcal{K}_{abcdef}$ resulting from (left to right) a derangement, two stabilize
-rs and another derangement.
- The dashed boxes surround the permutations (to aid visualization only).
- Only stabilizers lead to divergent loops.} 
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Any sequence of permutations is of the form of an alternating sequence of
- runs of (possibly zero) stabilisers, separated by derangements.
- Consider a run of 
+Consider a run of 
 \begin_inset Formula $n$
 \end_inset
 
@@ -271,19 +578,7 @@ Any sequence of permutations is of the form of an alternating sequence of
 \begin_inset Formula $n=2$
 \end_inset
 
- is shown in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure 
-\backslash
-ref{fig:K-6pt-contribution-derangement-stab-stab-derangement}
-\end_layout
-
-\end_inset
-
-.
+ is shown above.
  Each stabiliser creates a logarithmically divergent loop on the bottom
  two lines 
 \begin_inset Formula $\sim-\lambda\mathcal{I}^{\mu}$
@@ -316,14 +611,9 @@ ref{fig:K-6pt-contribution-derangement-stab-stab-derangement}
  are stabilisers, can be summed because the series is geometric.
  The result is that the six point kernel can be determined by an equation
  like 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-eqref{eq:K-6pt-kernel-eom}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:K-6pt-kernel-eom"
 
 \end_inset
 
@@ -332,63 +622,27 @@ ts only, and the bare vertex
 \begin_inset Formula $W$
 \end_inset
 
- is replaced by a four point kernel 
+ is replaced by a resummed four point kernel 
 \begin_inset Formula $\mathcal{K}_{abcd}^{\left(4\right)}\sim\lambda/\left(1+\lambda\mathcal{I}^{\mu}\right)$
 \end_inset
 
 .
- Denoting this four point kernel by a square vertex we can finally write
- the solution for 
-\begin_inset Formula $V_{abc}^{\mu}$
+ Substituting the solution for 
+\begin_inset Formula $\mathcal{K}$
 \end_inset
 
  in 
-\begin_inset Note Note
-status open
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:aux-vertex-soln"
 
-\begin_layout Plain Layout
-Figure 
-\backslash
-ref{fig:aux-vertex-soln}
-\end_layout
+\end_inset
 
+ gives the solution for 
+\begin_inset Formula $V_{abc}^{\mu}$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=1
-\backslash
-columnwidth]{auxiliary_vertex_soln}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:aux-vertex-soln}Solution for the auxiliary vertex $V^{
-\backslash
-mu}_{abc}$ in terms of the four point kernel which sums all iterated bubble
- insertions.} 
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -409,7 +663,7 @@ This expression for
 \end_inset
 
  is finite and the geometric sum in 
-\begin_inset Formula $\mathcal{K}_{abcd}$
+\begin_inset Formula $\mathcal{K}_{abcd}^{\left(4\right)}$
 \end_inset
 
  converges.
@@ -423,14 +677,9 @@ This expression for
 
 .
  Further, every loop integral in 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Figure 
-\backslash
-ref{fig:aux-vertex-soln}
-\end_layout
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:aux-vertex-soln"
 
 \end_inset
 
@@ -443,7 +692,7 @@ ref{fig:aux-vertex-soln}
 \begin_inset Formula $p\to\infty$
 \end_inset
 
- is just the tree level behaviour and we can eliminate the auxiliary vertex
+ is just the tree level behaviour and the auxiliary vertex can be eliminated
  completely.
 \end_layout
 
@@ -466,22 +715,17 @@ However, in
 \end_inset
 
  must be renormalised, then the bubble appearing in the non-trivial terms
- in
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
- Figure 
-\backslash
-ref{fig:aux-vertex-soln}
-\end_layout
+ in 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:aux-vertex-soln"
 
 \end_inset
 
  (or the equivalent integral equation) must be renormalised, then the resulting
  series must be summed (or the equivalent integral equation solved), noting
  that on the basis of power counting every term is apparently equally important.
- On this basis we expect that no compact analytic expression for 
+ On this basis ones expect that no compact analytic expression for 
 \begin_inset Formula $V_{abc}^{\mu}$
 \end_inset
 
@@ -507,11 +751,372 @@ PIEA for
 
  in four dimensions.
  The discussion here certainly does not solve this problem, which remains
- open, to our knowledge, though we hope this discussion may be helpful.
+ open, to the author's knowledge, though hopefully this discussion may be
+ helpful.
 \end_layout
 
 \begin_layout Chapter
-Renormalisation Details
+Deriving Counter-terms for Three Loop Truncations
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Deriving-Counter-terms-for-3-Loop-Truncations"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here the renormalisation of the three loop truncation of the SI-3PIEA is
+ carried out in 
+\begin_inset Formula $1+2$
+\end_inset
+
+ dimensions as discussed in Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:SI-3PIEA-Three-loop-truncation"
+
+\end_inset
+
+.
+ The effective action is as in the two loop truncations in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+ except for a new counter-term 
+\begin_inset Formula $\delta\lambda\to\delta\lambda_{C}$
+\end_inset
+
+ for the the 
+\begin_inset Formula $\Phi_{2}$
+\end_inset
+
+ term and the addition of the three loop diagrams 
+\begin_inset Formula 
+\begin{align}
+\Phi_{3} & =Z_{V}^{4}Z_{\Delta}^{6}\left[\left(N-1\right)\frac{i\hbar^{3}}{3!}V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{3}+\frac{i\hbar^{3}}{4!}\left(V_{N}\right)^{4}\left(\Delta_{H}\right)^{6}+\left(N-1\right)\frac{i\hbar^{3}}{8}\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{4}\right],\\
+\Phi_{4} & =\frac{i\hbar^{3}\left(\lambda+\delta\lambda\right)}{24}Z_{V}^{2}Z_{\Delta}^{5}\left[2\left(N-1\right)\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}\Delta_{G}\right.+\left(N^{2}-1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{4}+3V_{N}V_{N}\left(\Delta_{H}\right)^{5}\nonumber \\
+ & \left.+2^{2}\left(N-1\right)\bar{V}\bar{V}\left(\Delta_{G}\right)^{3}\Delta_{H}\Delta_{H}\right],\\
+\Phi_{5} & =\frac{i\hbar^{3}\left(\lambda+\delta\lambda\right)^{2}}{144}Z_{\Delta}^{4}\left\{ \left[\left(N-1\right)\Delta_{G}\Delta_{G}+\Delta_{H}\Delta_{H}\right]^{2}+2\left(N-1\right)\left(\Delta_{G}\right)^{4}+2\left(\Delta_{H}\right)^{4}\right\} .
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The equations of motion following from 
+\begin_inset Formula $\Gamma^{\left(3\right)}$
+\end_inset
+
+ are then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1} & =-\left(ZZ_{\Delta}\partial_{\mu}\partial^{\mu}+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\nonumber \\
+ & -\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]Z_{\Delta}^{2}\mathcal{T}_{G}-\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)Z_{\Delta}^{2}\mathcal{T}_{H}\nonumber \\
+ & -i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}\nonumber \\
+ & +\hbar^{2}Z_{V}^{4}Z_{\Delta}^{6}\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)}{3}Z_{V}^{2}Z_{\Delta}^{5}\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)^{2}}{18}Z_{\Delta}^{4}\left[\left(N+1\right)\left(\Delta_{G}\right)^{3}+\Delta_{H}\Delta_{H}\Delta_{G}\right],\label{eq:three-loop-Delta_G-eom}
+\end{align}
+
+\end_inset
+
+for the Goldstone propagator,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\bar{V} & =-\frac{\left(\lambda+\delta\lambda_{C}\right)v}{3}Z_{V}^{-1}\nonumber \\
+ & +i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[V_{N}\left(\bar{V}\right)^{2}\left(\Delta_{H}\right)^{2}\Delta_{G}+\left(\bar{V}\right)^{3}\Delta_{H}\left(\Delta_{G}\right)^{2}\right]\nonumber \\
+ & +\frac{i\hbar\left(\lambda+\delta\lambda\right)}{6}Z_{\Delta}^{2}\left[V_{N}\left(\Delta_{H}\right)^{2}+\left(N+1\right)\bar{V}\left(\Delta_{G}\right)^{2}+4\bar{V}\Delta_{G}\Delta_{H}\right],\label{eq:three-loop-Vbar-eom}
+\end{align}
+
+\end_inset
+
+for the Higgs-Goldstone-Goldstone vertex,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+V_{N} & =-\left(\lambda+\delta\lambda_{C}\right)vZ_{V}^{-1}\nonumber \\
+ & +i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[\left(N-1\right)\left(\bar{V}\right)^{3}\left(\Delta_{G}\right)^{3}+\left(V_{N}\right)^{3}\left(\Delta_{H}\right)^{3}\right]\nonumber \\
+ & +\frac{i\hbar\left(\lambda+\delta\lambda\right)}{2}Z_{\Delta}^{2}\left[\left(N-1\right)\bar{V}\Delta_{G}\Delta_{G}+3V_{N}\left(\Delta_{H}\right)^{2}\right],\label{eq:three-loop-V_N-eom}
+\end{align}
+
+\end_inset
+
+for the triple Higgs vertex, and finally
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+0 & =\Delta_{G}^{-1}\left(p=0\right)v,\label{eq:WI-1-three-loop}\\
+0 & =Z_{V}Z_{\Delta}\bar{V}\left(p,-p,0\right)v+\Delta_{G}^{-1}\left(p\right)-\Delta_{H}^{-1}\left(p\right),\label{eq:WI2-three-loop}
+\end{align}
+
+\end_inset
+
+for the Ward identities.
+\end_layout
+
+\begin_layout Standard
+Note that the only divergent integrals in these equations are the linearly
+ divergent tadpole integrals 
+\begin_inset Formula $\mathcal{T}_{G/H}$
+\end_inset
+
+ and the logarithmically divergent 
+\noun on
+BBALL
+\noun default
+ integrals (last line of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:three-loop-Delta_G-eom"
+
+\end_inset
+
+).
+ By power counting one finds that the third, fourth, and fifth lines of
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:three-loop-Delta_G-eom"
+
+\end_inset
+
+ produce finite self-energy contributions with leading asymptotics 
+\begin_inset Formula $\sim p^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $p^{-4}$
+\end_inset
+
+, and 
+\begin_inset Formula $p^{-2}$
+\end_inset
+
+ respectively.
+ One can separate finite and divergent parts of 
+\begin_inset Formula $\Delta_{G}^{-1}$
+\end_inset
+
+ as 
+\begin_inset Formula 
+\begin{align}
+\Delta_{G}^{-1} & =-\left(\partial_{\mu}\partial^{\mu}+m^{2}+\frac{\lambda}{6}v^{2}\right)\nonumber \\
+ & -\left[\Sigma_{G}^{0}\left(p\right)-\Sigma_{G}^{0}\left(m_{G}\right)\right]-\Sigma_{G}^{\infty}\left(p\right),
+\end{align}
+
+\end_inset
+
+ where 
+\begin_inset Formula 
+\begin{align}
+-\Sigma_{G}^{0}\left(p\right) & =-\frac{\hbar}{6}\left(N+1\right)\lambda\left(\mathcal{T}_{G}-\mathcal{T}^{\mu}\right)-\frac{\hbar}{6}\lambda\left(\mathcal{T}_{H}-\mathcal{T}^{\mu}\right)\nonumber \\
+ & -i\hbar\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}+\hbar^{2}\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}}{3}\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)^{2}Z_{\Delta}^{4}}{18}\left[\left(N+1\right)\left(\Delta_{G}\right)^{3}+\Delta_{H}\Delta_{H}\Delta_{G}-\left(N+2\right)\mathcal{B}^{\mu}\right],
+\end{align}
+
+\end_inset
+
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+-\Sigma_{G}^{\infty}\left(p\right) & =-\Sigma_{G}^{0}\left(m_{G}\right)-\left(\left(ZZ_{\Delta}-1\right)\partial_{\mu}\partial^{\mu}+\delta m_{1}^{2}+\frac{\delta\lambda_{1}^{A}}{6}v^{2}+\left(Z_{\Delta}-1\right)\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\nonumber \\
+ & -\frac{\hbar}{6}\left(N+1\right)\lambda\mathcal{T}^{\mu}-\frac{\hbar}{6}\left[\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\mathcal{T}_{G}\nonumber \\
+ & -\frac{\hbar}{6}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\left(Z_{\Delta}^{2}-1\right)\mathcal{T}_{G}\nonumber \\
+ & -\frac{\hbar}{6}\lambda\mathcal{T}^{\mu}-\frac{\hbar}{6}\delta\lambda_{2}^{A}\mathcal{T}_{H}-\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)\left(Z_{\Delta}^{2}-1\right)\mathcal{T}_{H}\nonumber \\
+ & -i\hbar\left(Z_{V}^{2}Z_{\Delta}^{3}-1\right)\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}\nonumber \\
+ & +\hbar^{2}\left(Z_{V}^{4}Z_{\Delta}^{6}-1\right)\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}}{3}\left(Z_{V}^{2}Z_{\Delta}^{3}-1\right)\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
+ & +\left(N+2\right)\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)^{2}Z_{\Delta}^{4}}{18}\mathcal{B}^{\mu},
+\end{align}
+
+\end_inset
+
+are the finite and divergent parts respectively and we introduced the 
+\noun on
+BBALL
+\noun default
+ integral 
+\begin_inset Formula $\mathcal{B}^{\mu}=\int_{qp}\Delta^{\mu}\left(q\right)\Delta^{\mu}\left(p\right)\Delta^{\mu}\left(p+q\right)$
+\end_inset
+
+.
+ This split has already assumed that 
+\begin_inset Formula $\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}$
+\end_inset
+
+ and 
+\begin_inset Formula $\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}$
+\end_inset
+
+ are finite, which will be demonstrated to be consistent shortly.
+ Renormalisation requires 
+\begin_inset Formula $\Sigma_{G}^{\infty}\left(p\right)=0$
+\end_inset
+
+.
+ Note the explicit subtraction of 
+\begin_inset Formula $\Sigma_{G}^{0}\left(m_{G}\right)$
+\end_inset
+
+ in order to fulfil the mass shell condition.
+ Doing the same now for 
+\begin_inset Formula $\Delta_{H}^{-1}$
+\end_inset
+
+ gives the pole condition 
+\begin_inset Formula 
+\begin{equation}
+0=Z_{V}Z_{\Delta}\bar{V}\left(m_{H},-m_{H},0\right)v+m_{H}^{2}-m_{G}^{2}-\Sigma_{G}^{0}\left(m_{H}\right),
+\end{equation}
+
+\end_inset
+
+ which requires 
+\begin_inset Formula 
+\begin{equation}
+Z_{V}Z_{\Delta}=\frac{m_{G}^{2}+\Sigma_{G}^{0}\left(m_{H}\right)-m_{H}^{2}}{\bar{V}\left(m_{H},-m_{H},0\right)v}\equiv\kappa,
+\end{equation}
+
+\end_inset
+
+ which is finite.
+ Taking for the other renormalisation conditions the separate vanishing
+ of kinematically independent divergences, implies 
+\begin_inset Formula 
+\begin{align}
+ZZ_{\Delta} & =1,\\
+\delta m_{1}^{2} & =-\Sigma_{G}^{0}\left(m_{G}\right)-\frac{\hbar}{6}\left(N+2\right)\lambda\mathcal{T}^{\mu}+\left(N+2\right)\frac{\hbar^{2}\lambda^{2}}{18}\mathcal{B}^{\mu},\\
+\delta\lambda_{1}^{A} & =-\frac{\left(Z_{\Delta}-1\right)\lambda}{Z_{\Delta}}\\
+Z_{V}^{2}Z_{\Delta}^{3} & =1,\\
+0 & =\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\nonumber \\
+ & +\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\left(Z_{\Delta}^{2}-1\right),\\
+0 & =\delta\lambda_{2}^{A}+\left(\lambda+\delta\lambda_{2}^{A}\right)\left(Z_{\Delta}^{2}-1\right).
+\end{align}
+
+\end_inset
+
+The conditions
+\begin_inset Formula 
+\begin{align}
+\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2} & =\lambda,\\
+\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1} & =\lambda,
+\end{align}
+
+\end_inset
+
+can be used to recover the tree level asymptotics for 
+\begin_inset Formula $\bar{V}$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{N}$
+\end_inset
+
+.
+ These conditions give a closed system of nine equations for the nine quantities
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+, 
+\begin_inset Formula $Z_{\Delta}$
+\end_inset
+
+, 
+\begin_inset Formula $Z_{V}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta m_{1}^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda_{1}^{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda_{2}^{A/B}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\lambda$
+\end_inset
+
+, and 
+\begin_inset Formula $\delta\lambda_{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The solution of all these equations can be found in Appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+, with the result that
+\begin_inset Formula 
+\begin{align}
+\delta\lambda_{2}^{A} & =\delta\lambda_{2}^{B}=-\frac{\lambda\left(Z_{\Delta}^{2}-1\right)}{Z_{\Delta}^{2}}=\left(\kappa^{2}-1\right)\lambda,\\
+Z_{V} & =\kappa^{3},\\
+Z_{\Delta} & =\kappa^{-2},\\
+Z & =\kappa^{2},\\
+\delta\lambda & =\left(\kappa^{4}-1\right)\lambda,\\
+\delta\lambda_{C} & =\left(\kappa^{3}-1\right)\lambda.
+\end{align}
+
+\end_inset
+
+Note that if 
+\begin_inset Formula $\kappa=1$
+\end_inset
+
+ all of the counter-terms except 
+\begin_inset Formula $\delta m_{1}^{2}$
+\end_inset
+
+ vanish.
+ This is a manifestation of the super-renormalisability of 
+\begin_inset Formula $\phi^{4}$
+\end_inset
+
+ theory in 
+\begin_inset Formula $1+2$
+\end_inset
+
+ dimensions.
+ The non-zero, indeed finite, values of all of the other counter-terms are
+ not required to UV-renormalise the theory, but only to maintain the pole
+ condition for the Higgs propagator despite the vertex Ward identity.
+ 
+\end_layout
+
+\begin_layout Chapter
+Mathematica Notebooks for Renormalisation
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Appendix-Renormalisation-Details"
