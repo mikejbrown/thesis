@@ -166,7 +166,14 @@ Zero temperature, Real time
 \emph on
 Minkowski time
 \emph default
- contours: 
+ contours (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Minkowski-contour"
+
+\end_inset
+
+): 
 \begin_inset Formula $t$
 \end_inset
 
@@ -194,7 +201,14 @@ Equilibrium, Imaginary time
 \emph on
 Matsubara
 \emph default
- contours: 
+ contours(Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Matsubarai-contour"
+
+\end_inset
+
+): 
 \begin_inset Formula $t$
 \end_inset
 
@@ -218,7 +232,14 @@ Non-equilibrium, Closed time path
 \emph on
 Schwinger-Keldysh
 \emph default
- contours: 
+ contours(Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Schwinger-Keldysh-contour"
+
+\end_inset
+
+): 
 \begin_inset Formula $t$
 \end_inset
 
@@ -247,11 +268,525 @@ Schwinger-Keldysh
 \end_inset
 
 .
-\begin_inset Note Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
 status open
 
 \begin_layout Plain Layout
-TODO: DIAGRAM
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,-1) -- (0,1);  % Axis
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-5.5,0) -- (5.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.8, 1) -- (4.8, 0.7) -- (5.1, 0.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (5, 0.9) { $t$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (-10pt, -5pt) { $0$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Contour line
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,xshift=0pt,yshift=0pt,
+\end_layout
+
+\begin_layout Plain Layout
+
+decoration={ markings,  % This schema allows for fine-tuning the positions
+ of arrows
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.25 with {
+\backslash
+arrow{latex}},
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.75 with {
+\backslash
+arrow{latex}}},
+\end_layout
+
+\begin_layout Plain Layout
+
+      postaction={decorate}]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (-5.5,4pt) -- (5.5,-4pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Minkowski-contour"
+
+\end_inset
+
+The Minkowski contour in the complex time plane.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,-5.5) -- (0,1);  % Axis
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-.5,0) -- (1,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (.8, 1) -- (.8, 0.7) -- (1.1, 0.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (1, 0.9) { $t$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (-10pt, -5pt) { $0$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-4pt,-5) -- (4pt,-5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (-15pt, -5) { $- i 
+\backslash
+beta$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,xshift=2pt,yshift=0pt,
+\end_layout
+
+\begin_layout Plain Layout
+
+decoration={ markings,  % This schema allows for fine-tuning the positions
+ of arrows
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.5 with {
+\backslash
+arrow{latex}}},
+\end_layout
+
+\begin_layout Plain Layout
+
+      postaction={decorate}]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (0,0) -- (0,-5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Matsubarai-contour"
+
+\end_inset
+
+The Matsubara contour in the complex time plane.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $-i\beta$
+\end_inset
+
+ are identified.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (0,-5.5) -- (0,1);  % Axis
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-1,0) -- (5.5,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (4.8, 1) -- (4.8, 0.7) -- (5.1, 0.7);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (5, 0.9) { $t$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (-10pt, -5pt) { $0$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw (-4pt,-5.25) -- (4pt,-5.25);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node at (-15pt, -5.25) { $- i 
+\backslash
+beta$ };
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Contour line
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,xshift=0pt,yshift=-2pt,
+\end_layout
+
+\begin_layout Plain Layout
+
+decoration={ markings,  % This schema allows for fine-tuning the positions
+ of arrows
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.2 with {
+\backslash
+arrow{latex}}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.8 with {
+\backslash
+arrow{latex}}}, 
+\end_layout
+
+\begin_layout Plain Layout
+
+      postaction={decorate}]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (0,0) -- (5.5,0) arc (90:-90:2pt) -- (0.075,-5pt);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw[thick,xshift=2pt,yshift=-7pt,
+\end_layout
+
+\begin_layout Plain Layout
+
+decoration={ markings,  % This schema allows for fine-tuning the positions
+ of arrows
+\end_layout
+
+\begin_layout Plain Layout
+
+      mark=at position 0.5 with {
+\backslash
+arrow{latex}}},
+\end_layout
+
+\begin_layout Plain Layout
+
+      postaction={decorate}]
+\end_layout
+
+\begin_layout Plain Layout
+
+  (0,0) -- (0,-5);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Schwinger-Keldysh-contour"
+
+\end_inset
+
+The Schwinger-Keldysh contour in the complex time plane.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ and 
+\begin_inset Formula $-i\beta$
+\end_inset
+
+ are identified.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
