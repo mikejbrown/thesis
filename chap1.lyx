@@ -416,21 +416,6 @@ N_{\boldsymbol{k}}=\sqrt{\frac{\left(2\pi\right)^{3}}{2\omega_{\boldsymbol{k}}f_
 
 and applying the equal time commutation relations leads then to the commutation
  relations
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Check 
-\begin_inset Formula $2\pi$
-\end_inset
-
-s etc.
- here:
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -609,16 +594,15 @@ The main exception being electromagnetism in the Coulomb gauge, which explicitly
  quantities are physically observable.
  All gauge invariant quantities can be equally well computed in a Lorentz
  covariant gauge in which microcausality is manifest at every step.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF
-\end_layout
+ For further details, consult e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weinberg2005"
 
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
@@ -626,12 +610,9 @@ REF
  and is automatic if the theory is constructed from a Lorentz invariant
  action which is the integral of a local density which is a finite order
  polynomial of fields and their derivatives 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Weinberg2005"
 
 \end_inset
 

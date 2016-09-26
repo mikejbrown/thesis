@@ -2022,19 +2022,6 @@ c^{\mu} & =a_{0}\left(\ln\frac{\Lambda^{2}}{\mu^{2}}\right)^{2}+a_{1}\ln\frac{\L
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REDO ALL THIS!! >>>
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 The counter-terms are found by eliminating 
 \begin_inset Formula $m_{G/H}^{2}$
 \end_inset
@@ -2406,27 +2393,6 @@ ces so long as the box is sufficiently large compared to the Hubble volume.
  The essential message is that the IR and UV sensitivity of solutions of
  the SI-2PI gap equations should be checked on a case by case basis to establish
  the plausibility of the results obtained.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO:
-\end_layout
-
-\begin_layout Itemize
-Counter-terms
-\end_layout
-
-\begin_layout Itemize
-Anything else...?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -2940,37 +2906,6 @@ nt term.
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-begin{figure} 
-\backslash
-includegraphics[width=0.5
-\backslash
-columnwidth]{sunset}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-protect
-\backslash
-caption{
-\backslash
-label{fig:sunset-graph}Sunset self-energy graph} 
-\backslash
-end{figure}
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

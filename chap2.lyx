@@ -99,23 +99,6 @@ name "chap:chap2"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO:
-\end_layout
-
-\begin_layout Itemize
-Ian's comments
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Synopsis
 \end_layout
@@ -2447,19 +2430,6 @@ reference "eq:1piea"
 
 .
  The terms not shown above are the 1PI diagrams with two or more loops.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: What more to say here???
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section

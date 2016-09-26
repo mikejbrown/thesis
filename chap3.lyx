@@ -2513,18 +2513,80 @@ reference "fig:2pi-hf-eom-soln"
 \emph on
 linear sigma model
 \emph default
- effective theory of pions in the limit of unbroken chiral symmetry
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ effective theory of pions in the limit of unbroken chiral symmetry 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Petropoulos2004"
 
 \end_inset
 
 .
- This model is known to possess a continuous (i.e.
+ Because the 
+\begin_inset Quotes eld
+\end_inset
+
+Higgs
+\begin_inset Quotes erd
+\end_inset
+
+ mode of this model corresponds to the poorly constrained 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ meson
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ meson is very broad and identifying it as a real particle is controversial,
+ though there is definitely a pole which can be observed in pion scattering
+ amplitudes (see 
+\begin_inset Quotes eld
+\end_inset
+
+NOTE ON SCALAR MESONS BELOW 2 GEV
+\begin_inset Quotes erd
+\end_inset
+
+ from the Review of Particle Physics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PDG"
+
+\end_inset
+
+, available separately at 
+\begin_inset CommandInset href
+LatexCommand href
+name "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
+target "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+, a range of values for 
+\begin_inset Formula $\bar{m}_{H}$
+\end_inset
+
+ can be used.
+ The value used here is chosen to enable direct comparison with 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mao2014"
+
+\end_inset
+
+, since that paper brings in the concept of symmetry improvement which will
+ be discussed at length in the following chapters of this thesis.
+ The linear sigma model is known to possess a continuous (i.e.
  second order) phase transition, analogous to the Ising ferromagnet, with
  a critical temperature 
 \begin_inset Formula $T_{\star}\approx132\ \mathrm{MeV}$
@@ -2958,16 +3020,6 @@ key "VanHees2002"
  This greatly complicates the renormalisation procedure, which now requires
  the solution of non-linear coupled Bethe-Salpeter integral equations in
  order to find the renormalisation counter-terms.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Any more needed here?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section
@@ -3024,42 +3076,16 @@ It is worth contrasting the results obtained above (and in the next chapter)
 \begin_inset Formula $N=3$
 \end_inset
 
- and the linear sigma model
+ and the linear sigma model for the light mesons 
+\begin_inset Formula $\left(\pi^{0},\pi^{\pm},\sigma\right)$
+\end_inset
+
+ or Higgs
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Note that the 
-\begin_inset Formula $\sigma$
-\end_inset
-
- meson is very broad and identifying it as a real particle is controversial,
- though there is definitely a pole which can be observed in pion scattering
- amplitudes (see 
-\begin_inset Quotes eld
-\end_inset
-
-NOTE ON SCALAR MESONS BELOW 2 GEV
-\begin_inset Quotes erd
-\end_inset
-
- from the Review of Particle Physics 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "PDG"
-
-\end_inset
-
-, available separately at 
-\begin_inset CommandInset href
-LatexCommand href
-name "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
-target "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
-
-\end_inset
-
-).
- Likewise the pseudoscalar 
+The pseudoscalar 
 \begin_inset Formula $a$
 \end_inset
 
@@ -3080,11 +3106,7 @@ target "http://pdg.lbl.gov/2015/reviews/rpp2015-rev-scalar-mesons.pdf"
 
 \end_inset
 
- for the light mesons 
-\begin_inset Formula $\left(\pi^{0},\pi^{\pm},\sigma\right)$
-\end_inset
-
- or Higgs 
+ 
 \begin_inset Formula $\left(h,a,\phi^{\pm}\right)$
 \end_inset
 
