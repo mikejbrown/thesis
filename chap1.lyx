@@ -180,13 +180,14 @@ key "Burgess2004"
 
 .
  The outstanding puzzles where the standard model is know to be inadequate
- can be divided into roughly three areas: questions about the peculiar character
- of the model itself (such as the various fine tuning and hierarchy problems),
- questions about the behaviour of matter at extremely high energies which
- are mainly relevant to the early universe (including questions about quantum
- gravity and the origin of matter), and questions about the behaviour of
- particles that may be abundant today, but are very weakly interacting with
- ordinary matter (neutrinos and dark matter).
+ fall into roughly three areas: questions about the character of the model
+ itself which, although consistent, is arguably peculiar (e.g.
+ the various fine tuning and hierarchy problems); questions about the behaviour
+ of matter at extremely high energies which are mainly relevant to the early
+ universe (e.q.
+ questions about quantum gravity and the origin of matter); and questions
+ about the behaviour of particles that may be abundant today, but are very
+ weakly interacting with ordinary matter (neutrinos and dark matter).
  All of these questions are far removed from ordinary experience.
  The general consensus is that, in the (limited) sense of knowing the underlying
  laws, all ordinary phenomena from atoms to solar systems are completely
@@ -234,7 +235,7 @@ target "https://arxiv.org/"
  to the laws at neighbouring scales so that, for example, the laws of chemistry
  can be derived from the laws governing atoms which can in turn be derived
  from the laws governing sub-atomic particles and so on.
- In the language particle physics and statistical mechanics this intuitive
+ In the language of particle physics and statistical mechanics this intuitive
  idea has been refined into the technically precise notion of effective
  field theories: a mathematical framework that allows one to mechanically
  derive the laws governing phenomena at larger distance scales from those
@@ -265,6 +266,11 @@ fundamental
  Similarly, it is difficult to accurately predict the behaviour of the Higgs
  field in the early universe which is filled with a very hot and dense plasma
  of many particles which may also be strongly interacting.
+ In all cases the difficulty of the problem comes from the importance of
+ a large number of degrees of freedom, a strong coupling between degrees
+ of freedom, or both.
+ Only in the case of very simple systems or systems very close to thermal
+ equilibrium can their properties be determined with confidence.
 \end_layout
 
 \begin_layout Standard
