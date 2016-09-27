@@ -122,6 +122,222 @@ Synopsis
 Background and motivation
 \end_layout
 
+\begin_layout Standard
+There has been remarkable progress in physics in the last century.
+ The revolutions of relativity and quantum mechanics in the first quarter
+ of the 20th century led inevitably to the establishment of what is now
+ know as 
+\begin_inset Quotes eld
+\end_inset
+
+the standard model
+\begin_inset Quotes erd
+\end_inset
+
+ (SM) – the mathematical formulation of the laws of nature at the most fundament
+al level currently known.
+ This model successfully explains phenomena on scales ranging from a few
+ thousands of a proton radius
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Corresponding to energy scales of a few hundreds of GeV (giga-electron-volts).
+\end_layout
+
+\end_inset
+
+ to the size of the observable universe
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+For the cognoscenti: I am including classical general relativity with a
+ cosmological constant in the 
+\begin_inset Quotes eld
+\end_inset
+
+standard model
+\begin_inset Quotes erd
+\end_inset
+
+ for rhetorical purposes.
+ This does not exactly match standard particle physics usage of the term
+ though, despite the famous difficulties of quantum gravity, it is consistent
+ to include general relativity as a low energy effective field theory.
+ See, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Burgess2004"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ The outstanding puzzles where the standard model is know to be inadequate
+ can be divided into roughly three areas: questions about the peculiar character
+ of the model itself (such as the various fine tuning and hierarchy problems),
+ questions about the behaviour of matter at extremely high energies which
+ are mainly relevant to the early universe (including questions about quantum
+ gravity and the origin of matter), and questions about the behaviour of
+ particles that may be abundant today, but are very weakly interacting with
+ ordinary matter (neutrinos and dark matter).
+ All of these questions are far removed from ordinary experience.
+ The general consensus is that, in the (limited) sense of knowing the underlying
+ laws, all ordinary phenomena from atoms to solar systems are completely
+ understood.
+\end_layout
+
+\begin_layout Standard
+This statement should be incredible to anyone without a physics education,
+ but it can be quickly supported by reading the published literature on
+ fundamental physics (as conveniently summarised in, e.g., the annual Review
+ of Particle Physics 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Olive2014"
+
+\end_inset
+
+) or by trawling the daily postings on the physics arXiv
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The openly accessible repository for preprint papers in physics and other
+ quantitative fields, operated on a not-for-profit basis by the Cornell
+ University Library and available at 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://arxiv.org/"
+target "https://arxiv.org/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+: the research topics of interest to modern theoretical physicists lie very
+ far from everyday experience.
+ Physics students are taught to identify the relevant scales of length,
+ time and energy in a problem and use the set of laws appropriate for that
+ scale.
+ However, they are also taught that this procedure is purely one of convenience,
+ and that the laws governing phenomena at one scale can always be connected
+ to the laws at neighbouring scales so that, for example, the laws of chemistry
+ can be derived from the laws governing atoms which can in turn be derived
+ from the laws governing sub-atomic particles and so on.
+ In the language particle physics and statistical mechanics this intuitive
+ idea has been refined into the technically precise notion of effective
+ field theories: a mathematical framework that allows one to mechanically
+ derive the laws governing phenomena at larger distance scales from those
+ governing smaller distance scales.
+\end_layout
+
+\begin_layout Standard
+There are some embarrassing omissions in this tidy picture, however, all
+ of which have to do with the 
+\emph on
+inability to calculate in practice what is calculable in principle
+\emph default
+.
+ For instance, it is extremely difficult to compute, from the basic quantum
+ mechanics of atoms, how a given protein molecule (consisting of many atoms)
+ will fold into a biologically significant three dimensional shape.
+ More relevant to this thesis, it is difficult to connect the 
+\begin_inset Quotes eld
+\end_inset
+
+fundamental
+\begin_inset Quotes erd
+\end_inset
+
+ theory of the standard model of sub-nuclear quarks and gluons (which are
+ strongly interacting) with the very different looking effective theory
+ of protons, neutrons and various mesons that is valid at nuclear scales.
+ Similarly, it is difficult to accurately predict the behaviour of the Higgs
+ field in the early universe which is filled with a very hot and dense plasma
+ of many particles which may also be strongly interacting.
+\end_layout
+
+\begin_layout Standard
+This inability to compute is not simply a philosophical difficulty for those
+ seeking to shore up a reductionistic worldview.
+ It can also hinder efforts to learn new physics.
+ For example, it is believed that the Higgs field undergoes a phase transition
+ at high temperatures which were reached in the early universe (more on
+ this later).
+ The nature of this phase transition (e.g.
+ whether it was first or second order, how much was the latent heat etc.)
+ can have a profound impact on the amount of matter surviving to the present
+ day universe
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+.
+ Hence, cosmological observations of the matter (baryon) density (as well
+ as gravitational waves and primordial magnetic fields) have the potential
+ to constrain this phase transition
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+.
+ However, it is difficult to reliably tell whether a given particle physics
+ model has a phase transition with given properties.
+ For example, it is known that the standard model possesses a second order
+ phase transition, but this finding was the result of a focused effort and
+ could only be established using an expensive computational method (lattice
+ Monte Carlo)
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+.
+ It is practically impossible to scan the parameters of a theory of beyond
+ standard model (BSM) physics using this method.
+ In the BSM context one largely has to make do with a patchwork of semi-empirica
+l curve fitting methods to connect the small scale physics (fundamental
+ parameters of the BSM model) with the large scale physics (phase transition
+ thermodynamics and baryon yield).
+ All of these methods require approximations which are somewhat suspect
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+.
+ Thus, such cosmological observations are of limited usefulness for fundamental
+ physics.
+\end_layout
+
 \begin_layout Section
 Quantum field theory and functional integrals
 \begin_inset ERT
