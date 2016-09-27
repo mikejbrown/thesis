@@ -201,7 +201,7 @@ Equilibrium, Imaginary time
 \emph on
 Matsubara
 \emph default
- contours(Figure 
+ contours (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Matsubarai-contour"
@@ -232,7 +232,7 @@ Non-equilibrium, Closed time path
 \emph on
 Schwinger-Keldysh
 \emph default
- contours(Figure 
+ contours (Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Schwinger-Keldysh-contour"
