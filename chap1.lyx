@@ -459,6 +459,19 @@ key "Zinn-Justin2007"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO: Discuss EWBG here????! non-equilibrium blah blah
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 Although the need to go beyond naive perturbation theory is clear in many
  cases, 
 \emph on
@@ -518,11 +531,20 @@ key "Berges2004"
 \end_inset
 
 .
- This thesis focuses on the latter because of the applicability of 
+ This thesis focuses on the latter.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $n$
 \end_inset
 
-PIEAs to non-equilibrium situations (see, e.g.
+PIEAs are a set of techniques (one for each 
+\begin_inset Formula $n=1,2,3,\cdots$
+\end_inset
+
+) which can be thought of as a generalisation of mean field theory and are
+ (a) elegant, (b) general, (c) in principle exact, and (d) have been promoted
+ for their applicability to non-equilibrium situations (see, e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -530,7 +552,202 @@ key "Berges2015"
 
 \end_inset
 
-).
+ and references therein).
+ Non-perturbative methods are essential in non-equilibrium QFT because secular
+ terms in the time evolution equations invalidate perturbation theory.
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs with 
+\begin_inset Formula $n>1$
+\end_inset
+
+ achieve the required non-perturbative resummation in a manifestly self-consiste
+nt way which can be derived from first principles.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+In principle exact
+\begin_inset Quotes erd
+\end_inset
+
+ here means that the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA equations of motion are exactly equivalent to the original non-perturbative
+ definition of the quantum field theory.
+ The only necessary approximation is in the numerical solution of these
+ equations.
+ The resulting equations of motion are also useful in equilibrium because
+ many-body effects are included self-consistently.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+General
+\begin_inset Quotes erd
+\end_inset
+
+ means that the methods are applicable in principle to any quantum field
+ theory whatsoever (although in a theory with many fields or with large
+ 
+\begin_inset Formula $n$
+\end_inset
+
+ the resulting 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA could be very bulky).
+ Finally, 
+\begin_inset Quotes eld
+\end_inset
+
+elegant
+\begin_inset Quotes erd
+\end_inset
+
+ here means that few conceptually new elements are needed in the formulation
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA in addition to the usual terms of textbook quantum field theory.
+ The complication is mainly of a technical, not conceptual, nature.
+ To the author's knowledge no other techniques satisfy all of these criteria.
+\end_layout
+
+\begin_layout Standard
+These properties make the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs compelling candidates for filling the gap between theory and experiment
+ anywhere the problem is the inability to compute the behaviour of strongly
+ interacting degrees of freedom or degrees of freedom which are out of thermal
+ equilibrium.
+ As such, they form the basis of this thesis.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ of this thesis reviews 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs and then shows, in novel work, how they achieve a re-organisation
+ of perturbation theory which is competitive with or exceeding more traditional
+ resummation methods (using the 2PIEA and a toy model where exact results
+ are available for the comparison).
+ This success is explained in terms of the sensitivity of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA to analytic features of the exact solution which are invisible to perturbat
+ion theory.
+ The remainder of the thesis focuses on one of the major shortcomings of
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs – their poor handling of symmetries – and efforts to overcome it.
+\end_layout
+
+\begin_layout Standard
+Symmetries are central to modern physics.
+ The standard model is not a generic quantum field theory.
+ It is a theory whose structure is determined by a large symmetry group
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Usually written as 
+\begin_inset Formula $\mathrm{P}\times\mathrm{SU}\left(3\right)\times\mathrm{SU}\left(2\right)\times\mathrm{U}\left(1\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathrm{P}$
+\end_inset
+
+ is the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+ group of spacetime transformations and 
+\begin_inset Formula $(\mathrm{S})\mathrm{U}\left(d\right)$
+\end_inset
+
+ are the (special) unitary groups of 
+\begin_inset Formula $d\times d$
+\end_inset
+
+ unitary matrices respectively.
+ Strictly speaking however, the group is 
+\begin_inset Formula $\mathrm{Spin}\left(3,1\right)\times\left(\mathrm{SU}\left(3\right)\times\mathrm{SU}\left(2\right)\times\mathrm{U}\left(1\right)\right)/\mathbb{Z}_{6}$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathrm{Spin}\left(3,1\right)$
+\end_inset
+
+ is the double cover of the Poincar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+ group and the quotient by the discrete group 
+\begin_inset Formula $\mathbb{Z}_{6}$
+\end_inset
+
+ removes transformations which act trivially on the standard model fields.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ The symmetry group of a model determines what types (
+\begin_inset Quotes eld
+\end_inset
+
+representations
+\begin_inset Quotes erd
+\end_inset
+
+) of particles may appear, as well as governing the form of the interactions
+ and the conservation laws of the model.
 \end_layout
 
 \begin_layout Section
