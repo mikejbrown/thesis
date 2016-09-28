@@ -115,10 +115,6 @@ Outline of thesis & summary
 \end_layout
 
 \begin_layout Section
-Synopsis
-\end_layout
-
-\begin_layout Section
 Background and motivation
 \end_layout
 
@@ -276,7 +272,9 @@ fundamental
 \begin_layout Standard
 This inability to compute is not simply a philosophical difficulty for those
  seeking to shore up a reductionistic worldview.
- It can also hinder efforts to learn new physics.
+ Neither is it simply a practical difficulty for those pure theoreticians
+ who only want to better understand their mathematical models.
+ It can also hinder efforts to learn real physics.
  For example, it is believed that the Higgs field undergoes a phase transition
  at high temperatures which were reached in the early universe (more on
  this later).
@@ -307,7 +305,10 @@ REFs?
 \end_inset
 
 .
- However, it is difficult to reliably tell whether a given particle physics
+\end_layout
+
+\begin_layout Standard
+However, it is difficult to reliably tell whether a given particle physics
  model has a phase transition with given properties.
  For example, it is known that the standard model possesses a second order
  phase transition, but this finding was the result of a focused effort and
@@ -326,7 +327,7 @@ REFs
  It is practically impossible to scan the parameters of a theory of beyond
  standard model (BSM) physics using this method.
  In the BSM context one largely has to make do with a patchwork of semi-empirica
-l curve fitting methods to connect the small scale physics (fundamental
+l curve fitting methods to connect the small scale physics (the fundamental
  parameters of the BSM model) with the large scale physics (phase transition
  thermodynamics and baryon yield).
  All of these methods require approximations which are somewhat suspect
@@ -342,6 +343,194 @@ REFs?
 .
  Thus, such cosmological observations are of limited usefulness for fundamental
  physics.
+ New methods of calculation are required to bridge the gap between theory
+ and experiment in this case.
+\end_layout
+
+\begin_layout Standard
+The standard model and the various BSM models are all examples 
+\emph on
+quantum field theories
+\emph default
+ (QFTs).
+ Quantum field theory is the mathematical language of nature.
+ Viewed in this light, much of the last century of theoretical physics can
+ be seen as quantum field theory calculations performed in a variety of
+ approximations.
+ The most fruitful scheme so far is clearly perturbation theory in small
+ couplings, which has seen wide use and great success.
+ The classic example of a successful perturbation theory is the theory of
+ quantum electrodynamics (QED): the quantum field theory of electrons and
+ photons.
+ In this theory the small parameter is the electric charge 
+\begin_inset Formula $e$
+\end_inset
+
+ of the electron, and observables are computed in a series expansion in
+ 
+\begin_inset Formula $e$
+\end_inset
+
+ of the form 
+\begin_inset Formula $a_{0}+a_{1}e+a_{2}e^{2}+a_{3}e^{3}+\cdots$
+\end_inset
+
+.
+ For example, the anomalous magnetic moment 
+\begin_inset Formula $a_{e}$
+\end_inset
+
+ of the electron has been computed to 
+\begin_inset Formula $\mathcal{O}\left(e^{10}\right)$
+\end_inset
+
+ with the result in being in fantastic agreement with experiment 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Aoyama2015"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a_{e}=\begin{cases}
+1159652180.73\left(0.28\right)\times10^{-12} & \text{experiment},\\
+1159652181.643\left(25\right)\left(23\right)\left(16\right)\left(763\right)\times10^{-12} & \text{theory},
+\end{cases}
+\end{equation}
+
+\end_inset
+
+where the numbers in parenthesis represent the uncertainties in the last
+ digits (the theoretical prediction has uncertainties coming from several
+ sources).
+ These high order computations are typically laborious.
+ For instance, the contribution of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Aoyama2015"
+
+\end_inset
+
+ was to recompute a subset of the 
+\begin_inset Formula $\mathcal{O}\left(e^{10}\right)$
+\end_inset
+
+ terms with greater accuracy using Monte Carlo integration, which took 65
+ days on a 128 core computer cluster.
+ Despite the difficulty in improving the accuracy of perturbative predictions,
+ perturbation theory is widely useful.
+\end_layout
+
+\begin_layout Standard
+However, there are important physical situations where naive perturbation
+ theory fails and must be enhanced by partial resummation if it can be used
+ at all.
+ Resummation works by re-organising the terms of the perturbation series
+ so that each term of the resummed series contains contributions from all
+ orders of the original series.
+ This re-organisation can manifest qualitatifely important physical effects
+ which are invisible to the original perturbation theory.
+ For example, massless particles in thermal plasmas produce large loop correctio
+ns which must be resummed, causing thermal mass generation and non-analyticities
+ in thermodynamic functions 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+.
+ Similarly, large logarithms can invalidate naive perturbation theory in
+ problems involving disparate length or energy scales.
+ Resummation of these logarithms leads to the renormalisation group running
+ of coupling constants 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin2007"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Although the need to go beyond naive perturbation theory is clear in many
+ cases, 
+\emph on
+ad hoc
+\emph default
+ resummations are problematic because perturbation series are asymptotic
+ in nature 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dyson1952"
+
+\end_inset
+
+ and the re-organisation of the terms of an asymptotic series is mathematically
+ questionable at best 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1999"
+
+\end_inset
+
+.
+ Systematic resummation schemes are required to guarantee consistency with
+ the original non-perturbative theory.
+ There are three such schemes which can claim to be widely studied and successfu
+l: the renormalisation group (RG) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin2007"
+
+\end_inset
+
+, large 
+\begin_inset Formula $N$
+\end_inset
+
+ expansion 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Moshe2003"
+
+\end_inset
+
+, and 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective actions (
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2004"
+
+\end_inset
+
+.
+ This thesis focuses on the latter because of the applicability of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs to non-equilibrium situations (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2015"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Section
