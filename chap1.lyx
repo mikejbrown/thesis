@@ -116,6 +116,24 @@ Outline of thesis & summary
 
 \begin_layout Section
 Background and motivation
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Background-and-motivation"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -276,8 +294,7 @@ This inability to compute is not simply a philosophical difficulty for those
  who only want to better understand their mathematical models.
  It can also hinder efforts to learn real physics.
  For example, it is believed that the Higgs field undergoes a phase transition
- at high temperatures which were reached in the early universe (more on
- this later).
+ at high temperatures which were reached in the early universe.
  The nature of this phase transition (e.g.
  whether it was first or second order, how much was the latent heat etc.)
  can have a profound impact on the amount of matter surviving to the present
@@ -305,6 +322,13 @@ REFs?
 \end_inset
 
 .
+ This scenario of 
+\emph on
+electroweak baryogenesis
+\emph default
+ is discussed in detail in the next section as a motivating physical example,
+ though the methods discussed in the remainder of the thesis are broadly
+ applicable.
 \end_layout
 
 \begin_layout Standard
@@ -428,12 +452,16 @@ key "Aoyama2015"
 
 \begin_layout Standard
 However, there are important physical situations where naive perturbation
- theory fails and must be enhanced by partial resummation if it can be used
- at all.
+ theory fails.
+ Electroweak baryogenesis is discussed in the next section as a concrete
+ example of a real physics proposal where perturbation theory breaks down
+ in several important steps of the computation.
+ In such cases perturbation theory must be enhanced by resummation if it
+ can be used at all.
  Resummation works by re-organising the terms of the perturbation series
  so that each term of the resummed series contains contributions from all
  orders of the original series.
- This re-organisation can manifest qualitatifely important physical effects
+ This re-organisation can manifest qualitatively important physical effects
  which are invisible to the original perturbation theory.
  For example, massless particles in thermal plasmas produce large loop correctio
 ns which must be resummed, causing thermal mass generation and non-analyticities
@@ -456,19 +484,7 @@ key "Zinn-Justin2007"
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Discuss EWBG here????! non-equilibrium blah blah
-\end_layout
-
-\end_inset
-
-
+ 
 \end_layout
 
 \begin_layout Standard
@@ -542,9 +558,9 @@ PIEAs are a set of techniques (one for each
 \begin_inset Formula $n=1,2,3,\cdots$
 \end_inset
 
-) which can be thought of as a generalisation of mean field theory and are
- (a) elegant, (b) general, (c) in principle exact, and (d) have been promoted
- for their applicability to non-equilibrium situations (see, e.g.
+) which can be thought of as generalisations of mean field theory which
+ are (a) elegant, (b) general, (c) in principle exact, and (d) have been
+ promoted for their applicability to non-equilibrium situations (see, e.g.,
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -552,7 +568,7 @@ key "Berges2015"
 
 \end_inset
 
- and references therein).
+ and references therein for extensive discussion of all these points).
  Non-perturbative methods are essential in non-equilibrium QFT because secular
  terms in the time evolution equations invalidate perturbation theory.
  
@@ -748,6 +764,577 @@ representations
 
 ) of particles may appear, as well as governing the form of the interactions
  and the conservation laws of the model.
+ In the simplest case symmetries are 
+\emph on
+global
+\emph default
+, i.e.
+ the same symmetry transformation applies everywhere in spacetime.
+ In more complicated theories such as the standard model the symmetries
+ are 
+\emph on
+gauge symmetries
+\emph default
+, meaning that independent symmetry transformations can be applied at each
+ event in spacetime without altering the physics.
+ The most important situation phenomenologically is the case of 
+\emph on
+spontaneously broken continuous symmetries
+\emph default
+.
+ In this case the symmetry is not actually broken, merely hidden because
+ there is an interaction which causes a ground state which behaves non-trivially
+ under the symmetry to be energetically preferred.
+ The classic example is the ferromagnet: the underlying dynamics is rotationally
+ symmetric, but there is an interaction which tends to align the spins of
+ neighbouring atoms in the ferromagnet, causing the ground state to be one
+ with all spins aligned.
+ This ground state violates the underlying rotational symmetry and a hypothetica
+l microscopic physicist living inside the ferromagnet may take a long time
+ to notice that there is no such thing as a preferred direction in space.
+ This situation is schematically depicted in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ferromagnet"
+
+\end_inset
+
+.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch1/ordered-phase.eps
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ordered-phase"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/ch1/disordered-phase.eps
+	width 40col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:disordered-phase"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:ferromagnet"
+
+\end_inset
+
+Schematic depiction of the spin orientation of atoms in a ferromagnet in
+ the ordered phase (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:ordered-phase"
+
+\end_inset
+
+) and disordered phase (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:disordered-phase"
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This simple picture is easily generalised and has become central to constructing
+ realistic models of particle physics such as the standard model.
+ In the standard model the symmetry involved is the 
+\begin_inset Formula $\mathrm{SU}\left(2\right)_{L}\times\mathrm{U}\left(1\right)_{Y}$
+\end_inset
+
+ gauge symmetry
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The subscripts on 
+\begin_inset Formula $\mathrm{SU}\left(2\right)_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{U}\left(1\right)_{Y}$
+\end_inset
+
+ imply that the 
+\begin_inset Formula $\mathrm{SU}\left(2\right)$
+\end_inset
+
+ gauge bosons only couple to left chiral fermions and the 
+\begin_inset Formula $\mathrm{U}\left(1\right)$
+\end_inset
+
+ gauge bosons couples to the 
+\emph on
+hypercharge
+\emph default
+ quantum number 
+\begin_inset Formula $Y$
+\end_inset
+
+ rather than the electric charge 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, which is spontaneously broken in the ground state by an ordering interaction
+ of the Higgs field.
+ The result is that only the 
+\begin_inset Formula $\mathrm{U}\left(1\right)_{Q}$
+\end_inset
+
+ symmetry of electromagnetism is manifest at low energies and the remaining
+ gauge bosons (the 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ and 
+\begin_inset Formula $Z^{0}$
+\end_inset
+
+) gain large masses by the Higgs mechanism.
+ This technique is essential to model building in particle and condensed
+ matter physics
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+, as the Higgs mechanism is the only known method to make a consistent theory
+ of massive non-abelian gauge bosons
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Another method by St
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{u}
+\end_layout
+
+\end_inset
+
+ckleberg
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+spelling?
+\end_layout
+
+\end_inset
+
+ can be used to construct theories of massive 
+\begin_inset Formula $\mathrm{U}\left(1\right)$
+\end_inset
+
+ gauge bosons, but 
+\emph on
+only
+\emph default
+ 
+\begin_inset Formula $\mathrm{U}\left(1\right)$
+\end_inset
+
+ gauge bosons.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Thus, for any technique meant to be applicable to the problems of modern
+ physics, a decent handling of symmetries is of paramount importance.
+\end_layout
+
+\begin_layout Standard
+Unfortunately, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are known to violate symmetries when they are truncated to a form
+ that can be solved in practice.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+ This thesis focuses on theories with global symmetries because the issues
+ faced by 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are similar for global and gauge symmetries, the main difference being
+ one of complexity
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+.
+ The symmetries of a quantum field theory are embodied in a set of 
+\emph on
+Ward identities
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The analogous identities for abelian gauge theories are called Ward-Takahashi
+ identities and for non-abelian gauge theories Slavnov-Taylor identities
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ These identities relate, for each 
+\begin_inset Formula $n$
+\end_inset
+
+, the 
+\begin_inset Formula $n$
+\end_inset
+
+-point Green functions of the theory (which can be thought of as scattering
+ amplitudes for 
+\begin_inset Formula $n$
+\end_inset
+
+ particles) to the 
+\begin_inset Formula $n+1$
+\end_inset
+
+-Green functions in the limit that the incoming momentum of the 
+\begin_inset Quotes eld
+\end_inset
+
+extra
+\begin_inset Quotes erd
+\end_inset
+
+ particle goes to zero.
+ From this description it is not obvious that the simplest (
+\begin_inset Formula $n=1$
+\end_inset
+
+) Ward identity also embodies the famous 
+\emph on
+Goldstone theorem
+\emph default
+, which states that 
+\emph on
+in any quantum field theory with a spontaneously broken global symmetry,
+ each broken symmetry has a corresponding massless (
+\begin_inset Quotes eld
+\end_inset
+
+Goldstone
+\begin_inset Quotes erd
+\end_inset
+
+) boson
+\emph default
+ and has profound phenomenological consequences.
+\end_layout
+
+\begin_layout Standard
+The essential problem with symmetries in the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism is that the re-arrangement of the perturbation series accomplishe
+d by 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs violates the Ward identities order by order (this is shown in Chapter
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+).
+ The correct identities are only recovered for the 
+\emph on
+exact
+\emph default
+ solution of the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA (which is just as intractable as solving the quantum field theory exactly
+ in the first place).
+ The result is that practical approximations to 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs often have pathologies such as massive Goldstone bosons, which leads
+ to 
+\emph on
+qualitatively
+\emph default
+ wrong physical predictions.
+ It is important to note that the problem is with the method of calculation,
+ not the underlying theory itself.
+ If one takes the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA predictions at face value one may reject a physically correct model
+ on the basis of an incorrect prediction.
+ Therefore it is critical to gain a better understanding of the symmetry
+ problem in order for 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs to be useful in the future.
+\end_layout
+
+\begin_layout Standard
+This is where this thesis aims to make a contribution.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ examines a method proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ to improve the symmetry properties of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
+ Their 
+\emph on
+symmetry improvement
+\emph default
+ method is generalised and extended, then applied to a number of case studies
+ in equilibrium.
+ It is found to be an effective method with some limitations.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ then introduces a novel technique called 
+\emph on
+soft symmetry improvement
+\emph default
+ which aims to address these limitations.
+ This method is shown to posses as limits both the unimproved and symmetry
+ improved effective actions, as well as a novel limit which is examined
+ in detail.
+ Unfortunately the novel limit is pathological, but the nature of the pathology
+ hopefully sheds some light on the difficulty of handling symmetries in
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA more generally.
+ Then Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+ extends the consideration of symmetry improvement beyond equilibrium for
+ the first time, finding pathologies with the method yet again.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Discussion"
+
+\end_inset
+
+ brings everything together, drawing conclusions and pointing out directions
+ for future work.
+ Finally, there are three appendices which contain intermediate results
+ and code for reference purposes, but which would otherwise interrupt the
+ flow of the text.
+\end_layout
+
+\begin_layout Section
+Electroweak baryogenesis
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Electroweak-baryogenesis"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -4447,8 +5034,15 @@ reference "chap:Discussion"
  is the discussion chapter drawing everything together and pinpointing direction
 s for future work.
  Some derivations and results concerning the renormalisation theory which
- are inessential to the main flow of the text are collected in appendix
+ are inessential to the main flow of the text are collected in the appendices
  
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Auxiliary-vertex-and-renorm"
+
+\end_inset
+
+ through 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Appendix-Renormalisation-Details"
