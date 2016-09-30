@@ -140,7 +140,7 @@ name "sec:Background-and-motivation"
 There has been remarkable progress in physics in the last century.
  The revolutions of relativity and quantum mechanics in the first quarter
  of the 20th century led inevitably to the establishment of what is now
- know as 
+ known as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -193,9 +193,9 @@ key "Burgess2004"
 \end_inset
 
 .
- The outstanding puzzles where the standard model is know to be inadequate
- fall into roughly three areas: questions about the character of the model
- itself which, although consistent, is arguably peculiar (e.g.
+ The outstanding puzzles where the standard model is known to fall short
+ can be grouped into roughly three areas: questions about the character
+ of the model itself which, although consistent, is arguably peculiar (e.g.
  the various fine tuning and hierarchy problems); questions about the behaviour
  of matter at extremely high energies which are mainly relevant to the early
  universe (e.q.
@@ -203,7 +203,7 @@ key "Burgess2004"
  about the behaviour of particles that may be abundant today, but are very
  weakly interacting with ordinary matter (neutrinos and dark matter).
  All of these questions are far removed from ordinary experience.
- The general consensus is that, in the (limited) sense of knowing the underlying
+ The general consensus is that in the (limited) sense of knowing the underlying
  laws, all ordinary phenomena from atoms to solar systems are completely
  understood.
 \end_layout
@@ -281,10 +281,10 @@ fundamental
  field in the early universe which is filled with a very hot and dense plasma
  of many particles which may also be strongly interacting.
  In all cases the difficulty of the problem comes from the importance of
- a large number of degrees of freedom, a strong coupling between degrees
+ a large number of degrees of freedom, or a strong coupling between degrees
  of freedom, or both.
- Only in the case of very simple systems or systems very close to thermal
- equilibrium can their properties be determined with confidence.
+ Only in the case of very simple systems or systems close to thermal equilibrium
+ can their properties be determined with confidence.
 \end_layout
 
 \begin_layout Standard
@@ -293,7 +293,14 @@ This inability to compute is not simply a philosophical difficulty for those
  Neither is it simply a practical difficulty for those pure theoreticians
  who only want to better understand their mathematical models.
  It can also hinder efforts to learn real physics.
- For example, it is believed that the Higgs field undergoes a phase transition
+ For example consider the scenario of 
+\emph on
+electroweak baryogenesis
+\emph default
+, which is discussed in detail in the next section as a motivating physical
+ example, though the methods discussed in the remainder of the thesis are
+ broadly applicable.
+ Briefly, it is believed that the Higgs field undergoes a phase transition
  at high temperatures which were reached in the early universe.
  The nature of this phase transition (e.g.
  whether it was first or second order, how much was the latent heat etc.)
@@ -322,13 +329,7 @@ REFs?
 \end_inset
 
 .
- This scenario of 
-\emph on
-electroweak baryogenesis
-\emph default
- is discussed in detail in the next section as a motivating physical example,
- though the methods discussed in the remainder of the thesis are broadly
- applicable.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -446,7 +447,7 @@ key "Aoyama2015"
 
  terms with greater accuracy using Monte Carlo integration, which took 65
  days on a 128 core computer cluster.
- Despite the difficulty in improving the accuracy of perturbative predictions,
+ Despite the difficulty of improving the accuracy of perturbative predictions,
  perturbation theory is widely useful.
 \end_layout
 
@@ -631,7 +632,7 @@ elegant
 \begin_inset Formula $n$
 \end_inset
 
-PIEA in addition to the usual terms of textbook quantum field theory.
+PIEAs in addition to the usual terms of textbook quantum field theory.
  The complication is mainly of a technical, not conceptual, nature.
  To the author's knowledge no other techniques satisfy all of these criteria.
 \end_layout
@@ -1184,7 +1185,10 @@ Goldstone
 
 ) boson
 \emph default
- and has profound phenomenological consequences.
+.
+ This has profound phenomenological consequences as the existence of massless
+ bosons generates long range interactions which do not exist in a purely
+ massive theory.
 \end_layout
 
 \begin_layout Standard
@@ -1192,8 +1196,8 @@ The essential problem with symmetries in the
 \begin_inset Formula $n$
 \end_inset
 
-PIEA formalism is that the re-arrangement of the perturbation series accomplishe
-d by 
+PIEA formalism is that the rearrangement of the perturbation series accomplished
+ by 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1251,7 +1255,7 @@ reference "chap:chap4"
 
 \end_inset
 
- examines a method proposed by 
+ examines a method recently proposed by 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Pilaftsis2013"
@@ -1286,8 +1290,17 @@ soft symmetry improvement
  improved effective actions, as well as a novel limit which is examined
  in detail.
  Unfortunately the novel limit is pathological, but the nature of the pathology
- hopefully sheds some light on the difficulty of handling symmetries in
- 
+ hopefully
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+weasel?
+\end_layout
+
+\end_inset
+
+ sheds some light on the difficulty of handling symmetries in 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1300,7 +1313,7 @@ reference "chap:chap6"
 \end_inset
 
  extends the consideration of symmetry improvement beyond equilibrium for
- the first time, finding pathologies with the method yet again.
+ the first time, finding new pathologies with the method.
  Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1312,7 +1325,7 @@ reference "chap:Discussion"
  for future work.
  Finally, there are three appendices which contain intermediate results
  and code for reference purposes, but which would otherwise interrupt the
- flow of the text.
+ flow of the main text.
 \end_layout
 
 \begin_layout Section
