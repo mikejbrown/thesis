@@ -1514,8 +1514,8 @@ BBN
 ), about three minutes after the big bang, using the abundances of light
  elements as 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Canetti2012a,Weinberg2008"
+LatexCommand citep
+key "Weinberg2008,Canetti2013"
 
 \end_inset
 
@@ -1570,8 +1570,8 @@ Up to a threshold correction due to electron/positron freeze out
  Thus an independent confirmation can be obtained from the CMB, and the
  latest Planck data 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "PlanckCollaboration2013"
+LatexCommand citep
+key "ThePlanckCollaboration2013"
 
 \end_inset
 
@@ -1929,7 +1929,7 @@ leptogenesis
 , which posits new fermions which couple to the neutrino sector 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Barbieri2000,Blanchet2012,Buchmuller2005,Buchmuller2005a,BuchmÃŒller2013329,Canetti2012a,Davidson2008,Fong2012,Giudice2004,Luty1992,Pilaftsis2009"
+key "Barbieri2000,Blanchet2012,Buchmueller2005,Buchmueller2005a,Buchmuller2012a,Buchmueller2013,Canetti2013a,Davidson2008,Fong2012,Giudice2004,Luty1992,Pilaftsis2009"
 
 \end_inset
 
@@ -1971,7 +1971,7 @@ low-scale
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Canetti2012a"
+key "Canetti2013a"
 
 \end_inset
 
@@ -2026,21 +2026,10 @@ two Higgs doublet models
  to recall the physics, set the notation, and discuss EWBG at first in a
  familiar context.
  This review is by no means extensive, nor suitable for a first introduction.
- Up to date topical reviews are available from the Particle Data Group
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Particle Data Group reviews are updated regularly.
- For the latest go to 
-\begin_inset CommandInset href
-LatexCommand href
-target "http://pdg.lbl.gov/"
-
-\end_inset
-
-.
-\end_layout
+ Up to date topical reviews are available from the Particle Data Group 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PDG"
 
 \end_inset
 
@@ -3252,7 +3241,7 @@ key "Klinkhamer1984"
  in 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Arnold1987,Arnold1988"
+key "Arnold1987"
 
 \end_inset
 
@@ -3891,7 +3880,7 @@ where
  tension and wall velocity 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Rubakov,Huber2013"
+key "Rubakov1996,Huber2013"
 
 \end_inset
 
@@ -4919,7 +4908,7 @@ An example of the second method is the lattice Monte Carlo method, where
  (see 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Moore1997,Bodeker1999"
+key "Moore1997,Boedeker2000"
 
 \end_inset
 
@@ -4980,7 +4969,7 @@ status open
 deker 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Bodeker1998"
+key "Boedeker1998"
 
 \end_inset
 
@@ -4997,7 +4986,7 @@ key "Zahlten2004"
  Other promising new directions are the new perturbation theory of 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Millington2012,Millington2013"
+key "Millington2013,Millington2013a"
 
 \end_inset
 
@@ -5018,7 +5007,7 @@ CJT
  formalism 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Pilaftsis2013,Mao2013"
+key "Pilaftsis2013,Mao2014"
 
 \end_inset
 
@@ -5036,7 +5025,7 @@ key "Garny2008"
  techniques 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Zoller2013"
+key "Zoeller2013"
 
 \end_inset
 
@@ -5053,7 +5042,7 @@ Once a first order phase transition is in hand, the probability of bubble
  At zero temperature the pioneering theory of Coleman and Callan 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Coleman1977,Callan1977a"
+key "Coleman1977,Callan1977"
 
 \end_inset
 
@@ -5061,7 +5050,7 @@ key "Coleman1977,Callan1977a"
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Linde1990,Dine1992,Shifman2012"
+key "Dine1992,Linde2005,Shifman2012"
 
 \end_inset
 
@@ -5151,7 +5140,7 @@ where
  is the three dimensional action 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Dine1992,Linde1990"
+key "Dine1992,Linde2005"
 
 \end_inset
 
