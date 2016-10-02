@@ -93,5 +93,170 @@ name "chap:Discussion"
 Synopsis
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+TODO (dicussion of):
+\end_layout
+
+\begin_layout Itemize
+Chapter 1
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+EWBG
+\end_layout
+
+\begin_layout Itemize
+Non-perturbative, non-equilibrium QFT
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 2
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Analytical properties of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 3
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+WIs
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 4
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SI in equilibrium
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 5
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+SSI in equilibrium
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Chapter 6
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LRT
+\end_layout
+
+\begin_layout Itemize
+General non-equilibrium theory
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This thesis has examined the theory of global symmetries in the 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective action formalism for quantum field theory
+ with the goal of improving the symmetry properties of solutions obtained
+ from practical approximation schemes.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Introduction"
+
+\end_inset
+
+ motivated this investigation by showing that the inability to perform reliable
+ calculations in regimes where there are strongly interacting particles
+ or many particles far from equilibrium has caused gaps to form between
+ theory and experiment in regimes that are otherwise well understood.
+ These gaps are not just a practical problem, but they hinder efforts to
+ learn new physics.
+ This was illustrated with the case study of electroweak baryogenesis (EWBG),
+ a theoretical proposal for the origin of the matter-antimatter asymmetry
+ of the universe.
+ In EWBG, a strong first order phase transition of the Higgs field occurs
+ in the early universe.
+ During the phase transition, bubbles of 
+\begin_inset Quotes eld
+\end_inset
+
+broken
+\begin_inset Quotes erd
+\end_inset
+
+ phase form and expand in a background of 
+\begin_inset Quotes eld
+\end_inset
+
+symmetric
+\begin_inset Quotes erd
+\end_inset
+
+ phase.
+ As the bubbles expand, bubble wall friction drives a flow in the symmetric
+ phase plasma which separates left and right handed particles.
+ This asymmetry between left and right handed particles is converted into
+ a matter-antimatter asymmetry by a complex tunnelling process (
+\begin_inset Quotes eld
+\end_inset
+
+sphalerons
+\begin_inset Quotes erd
+\end_inset
+
+) which is intrinsically non-perturbative, and it is this resulting asymmetry
+ that persists to the present day.
+ Every step of this complex process involves non-perturbative or non-equilibrium
+ physics which is difficult to treat reliably with presently available methods.
+ It is hard to even estimate the uncertainties of the predictions accurately.
+ As a result, it is difficult to say whether a given model can be excluded
+ on the grounds of an incorrect baryogenesis prediction.
+ These challenges motivate the improvement of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA techniques discussed in the remainder of the thesis.
+ Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Introduction"
+
+\end_inset
+
+ then concluded with a review of basic quantum field theory.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
