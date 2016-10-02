@@ -1521,12 +1521,12 @@ key "Canetti2012a,Weinberg2008"
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 \eta\equiv\frac{n_{B}-n_{\bar{B}}}{n_{\gamma}}=\begin{cases}
 \left(5.9\pm0.5\right)\times10^{-10}, & \text{Kirkman \emph{et al.}, cited in Weinberg},\\
 \left(5.8\pm0.27\right)\times10^{-10}, & \text{Steigman, cited in Canetti \emph{et al}}.,
 \end{cases}
-\]
+\end{equation}
 
 \end_inset
 
@@ -3351,7 +3351,7 @@ reference "fig:chern-simons-potential-su2-theory"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -3359,7 +3359,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Confirmation of Candidature materials/chern-simons-potential.eps
+	filename images/ch1/chern-simons-potential.eps
 	width 80col%
 
 \end_inset
@@ -3446,9 +3446,9 @@ key "Klinkhamer1984"
  is the Higgs self-coupling.
  The energy can then be written
 \begin_inset Formula 
-\[
+\begin{equation}
 E=\frac{4\pi v}{g}C\left(\frac{\lambda^{2}}{g^{2}}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -3511,113 +3511,45 @@ The second Sakharov criterion requires that the early universe depart from
  thermal equilibrium at some point.
  This is achieved in EWBG by a first order phase transition associated with
  electroweak symmetry breaking.
- Recall that if the Higgs field(s) has a nonvanishing expectation value
+ Recall that if the Higgs field(s) has a non-vanishing expectation value
  the electroweak symmetry is said to be broken, while if the expectation
  value is zero the symmetry is manifest or unbroken.
  The behaviour of the Higgs field 
 \begin_inset Formula $\phi$
 \end_inset
 
- in equilibrium can be determined by minimizing the effective potential
+ in equilibrium can be determined by minimising the effective potential
  
-\begin_inset Formula $\Gamma\left[\phi\right]$
-\end_inset
-
-, given by the Legendre transform of the free energy 
-\begin_inset Formula $F\left[J\right]=-k_{B}T\ln Z\left[J\right]$
-\end_inset
-
-, where 
-\begin_inset Formula $Z\left[J\right]$
-\end_inset
-
- is the partition function in the presence of an external source 
-\begin_inset Formula $J$
-\end_inset
-
- for the Higgs field
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-It is conceptually cleaner to introduce a source for a gauge invariant operator
- rather than 
-\begin_inset Formula $\phi$
-\end_inset
-
- itself, but using the (gauge-variant) Higgs field instead is technically
- simpler and common in the literature.
- The gauge dependence of the resulting treatment is a subtle and interesting
- question.
- This issue, and the fact that 
-\begin_inset Quotes eld
-\end_inset
-
-spontaneous gauge symmetry breaking
-\begin_inset Quotes erd
-\end_inset
-
- is a terrible misnomer, is well appreciated by the lattice gauge theory
- community, where the average of any local gauge-variant operator is automatical
-ly zero whether in the symmetry broken regime or not 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Straumann2004"
-
-\end_inset
-
-.
- However, unfortunately, the confused terminology and perhaps the confusion
- itself perpetuates in the broader particle physics community.
-\end_layout
-
-\end_inset
-
-, given by
-\begin_inset Formula 
-\[
-Z\left[J\right]=\mathrm{Tr}\exp\left(-\beta\hat{H}_{SM}-\beta\int\mathrm{d}^{3}x\ J\left(x\right)\phi\left(x\right)\right),
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $\hat{H}_{SM}$
-\end_inset
-
- is the Hamiltonian of the SM and the trace is appropriately gauge fixed.
- The expectation value of the Higgs field of the original source free (
-\begin_inset Formula $J=0$
-\end_inset
-
-) theory is found by extremizing 
-\begin_inset Formula $\Gamma\left[\phi\right]$
+\begin_inset Formula $V\left(\phi\right)$
 \end_inset
 
 .
  
+\begin_inset Formula $V\left(\phi\right)$
+\end_inset
+
+ is determined from 
 \begin_inset Formula $\Gamma\left[\phi\right]$
 \end_inset
 
- is the (Euclidean) 
+, which is the (Euclidean) 
+\emph on
+one particle irreducible
+\emph default
+ 
 \emph on
 effective action
 \emph default
  of the Higgs field.
- The effective potential is the lowest order term in the derivative expansion
- 
-\begin_inset Formula $\Gamma\left[\phi\right]=-\int\mathrm{d}^{3}x\ V_{\mathrm{eff}}\left(\phi\right)+\int\mathrm{d}^{3}x\ Z_{\phi}\left(\phi\right)\partial_{\mu}\phi\partial^{\mu}\phi+\cdots$
-\end_inset
+ This formalism will be discussed in detail in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
 
-, so it can be computed using a constant 
-\begin_inset Formula $\phi\left(x\right)=\phi$
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-The effective potential can be computed in a semiclassical expansion in
+ The effective potential can be computed in a semi-classical expansion in
  powers of 
 \begin_inset Formula $\hbar$
 \end_inset
@@ -3669,9 +3601,9 @@ key "Konstandin2013,Dine1992,Kapusta2006"
 
 :
 \begin_inset Formula 
-\[
+\begin{equation}
 V^{\left(1\right)}\left(\phi,T\right)=\frac{T^{4}}{2\pi^{2}}\sum_{i}\mp\int_{0}^{\infty}\mathrm{d}x\ x^{2}\log\left[1\pm\exp\left(-\sqrt{x^{2}+m_{i}^{2}\beta^{2}}+\beta\mu_{i}\right)\right],
-\]
+\end{equation}
 
 \end_inset
 
@@ -3724,10 +3656,10 @@ key "Kapusta2006"
 
 
 \begin_inset Formula 
-\begin{align*}
+\begin{align}
 \Delta V_{\text{fermions}}^{\left(1\right)} & =-\frac{7\pi^{2}}{720}T^{4}+\frac{1}{48}m^{2}T^{2}+\mathcal{O}\left(m^{4}\right),\\
 \Delta V_{\text{bosons}}^{\left(1\right)} & =-\frac{\pi^{2}}{90}T^{4}+\frac{1}{24}m^{2}T^{2}-\frac{1}{12\pi}m^{3}T+\mathcal{O}\left(m^{4}\right).
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -3744,12 +3676,12 @@ The terms independent of the mass
 \begin_inset Formula $\mathrm{d}V/\mathrm{d}\phi$
 \end_inset
 
- or the location of the extrema, hence I ignore them.
+ or the location of the extrema, hence these can be ignored for present
+ purposes.
 \end_layout
 
 \begin_layout Standard
-To illustrate a first order phase transition I shall assume (incorrectly)
- that 
+To illustrate a first order phase transition assume (incorrectly) that 
 \begin_inset Formula $m_{H}<m_{W},m_{Z},m_{t}$
 \end_inset
 
@@ -3829,7 +3761,7 @@ reference "fig:first-order-transition-free-energy"
 \end_inset
 
 .
- In the plots I take 
+ In the plots 
 \begin_inset Formula $m_{h}=0.1v\sim18\ \mathrm{GeV}$
 \end_inset
 
@@ -3917,9 +3849,9 @@ reference "fig:first-order-transition-free-energy"
 
  and a spherical bubble of broken phase has an energy
 \begin_inset Formula 
-\[
+\begin{equation}
 E=4\pi R^{2}\sigma-\frac{4\pi}{3}R^{3}\Delta V,
-\]
+\end{equation}
 
 \end_inset
 
@@ -3941,8 +3873,7 @@ where
 \begin_inset Formula $E_{\star}=\frac{16\pi}{3}\frac{\sigma^{3}}{\Delta V^{2}}$
 \end_inset
 
- is the energy of the critical bubble (I will not attempt to estimate the
- prefactor here, the general problem is unsolved).
+ is the energy of the critical bubble.
  Bubble nucleation becomes cosmologically significant when this rate exceeds
  the Hubble rate, which requires that 
 \begin_inset Formula $T$
@@ -3975,7 +3906,7 @@ key "Huber2013"
 \end_inset
 
 .
- It is the job of a microphysical model to calculate the wall friction,
+ It is the job of a micro-physical model to calculate the wall friction,
  latent heat and surface tension of a phase transition bubble.
 \end_layout
 
@@ -4050,7 +3981,7 @@ The qualitative reason
 \end_inset
 
 .
- I also temporarily 
+ Now, temporarily 
 \begin_inset Quotes eld
 \end_inset
 
@@ -4058,7 +3989,7 @@ turn off
 \begin_inset Quotes erd
 \end_inset
 
- sphalerons.
+ sphalerons for illustrative purposes.
  The 
 \begin_inset Formula $q_{R}+\bar{q}_{L}$
 \end_inset
@@ -4108,8 +4039,11 @@ turn off
 
  in front of the wall.
  Hence a net baryon number is generated in front of the bubble wall.
- Clearly the net baryon asymmetry produced by this mechanism depends on
- a number of factors: how strong is the 
+\end_layout
+
+\begin_layout Standard
+Clearly the net baryon asymmetry produced by this mechanism depends on a
+ number of factors: how strong is the 
 \begin_inset Formula $CP$
 \end_inset
 
@@ -4176,13 +4110,13 @@ key "Morrissey2012"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -4190,7 +4124,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Confirmation of Candidature materials/first_order_free_energy.eps
+	filename images/ch1/first_order_free_energy.eps
 	width 90col%
 
 \end_inset
@@ -4203,8 +4137,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:first-order-transition-free-energy-curves"
@@ -4228,7 +4160,7 @@ name "fig:first-order-transition-free-energy-curves"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -4236,7 +4168,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Confirmation of Candidature materials/first_order_free_energy_critical_pts.eps
+	filename images/ch1/first_order_free_energy_critical_pts.eps
 	width 80col%
 
 \end_inset
@@ -4249,8 +4181,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:first-order-transition-free-energy-critical-pts"
@@ -4274,8 +4204,6 @@ name "fig:first-order-transition-free-energy-critical-pts"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:first-order-transition-free-energy"
@@ -4321,13 +4249,13 @@ reference "fig:first-order-transition-free-energy-critical-pts"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -4335,7 +4263,7 @@ status open
 
 
 \begin_inset Graphics
-	filename ../Confirmation of Candidature materials/second_order_free_energy.eps
+	filename images/ch1/second_order_free_energy.eps
 	width 90col%
 
 \end_inset
@@ -4348,8 +4276,6 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:second-order-transition-free-energy-curves"
@@ -4381,7 +4307,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename ../Confirmation of Candidature materials/second_order_free_energy_critical_pts.eps
+	filename images/ch1/second_order_free_energy_critical_pts.eps
 	width 80col%
 
 \end_inset
@@ -4394,8 +4320,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:second-order-transition-free-energy-critical-pts"
@@ -4419,8 +4343,6 @@ name "fig:second-order-transition-free-energy-critical-pts"
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:second-order-transition-free-energy"
@@ -4448,21 +4370,6 @@ reference "fig:first-order-transition-free-energy"
 \end_layout
 
 \begin_layout Standard
-In this report I have discussed the essential physics behind electroweak
- baryogenesis scenarios and given two examples of nonequilibrium quantum
- field theory techniques applied to simple scalar/fermion theories.
- It was not possible to explore these topics in any great depth in this
- report.
- Indeed the research literature on baryogenesis and nonequilibrium QFT has
- thousands of papers.
- The work presented here is admittedly a somewhat eclectic mix of topics
- taken from these fields, and the connections between them may not be obvious.
- Here I draw out the main lessons learned in this investigation, highlight
- current outstanding problems and potential directions for future work and
- their significance.
-\end_layout
-
-\begin_layout Standard
 The obvious major problem facing EWBG scenarios is the order of the electroweak
  phase transition.
  It is necessary for the transition to proceed through bubble formation
@@ -4470,8 +4377,7 @@ The obvious major problem facing EWBG scenarios is the order of the electroweak
  bubble wall be sufficiently large (a measure of the strength of the phase
  transition) that sphaleron processes are effectively shut off, lest they
  erase the baryon asymmetry that was so painstakingly created.
- We have already seen that lattice methods are required for the EWPT in
- the SM with 
+ Lattice methods are required for the EWPT in the SM with 
 \begin_inset Formula $m_{h}=125\ \mathrm{GeV}$
 \end_inset
 
@@ -4562,6 +4468,16 @@ key "Balazs2013"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4582,10 +4498,9 @@ Non-supersymmetric extensions are possible as well, the most popular being
 FCNC
 \noun default
 ) which are strongly constrained.
- This problem is bypassed by imposing a discrete symmetry on the theory
- to restrict the Yukawa couplings, resulting in four discrete classes of
- 2HDM corresponding to the possible charge assignments under the discrete
- symmetry
+ This problem is bypassed by imposing a discrete symmetry on the theory,
+ resulting in four discrete classes of 2HDM corresponding to the possible
+ charge assignments under the discrete symmetry
 \begin_inset Foot
 status open
 
@@ -4641,6 +4556,16 @@ key "Huber2013"
  violation generation and washout were not addressed in any detail.
  2HDM remains a promising class of models for EWBG and worthy of further
  investigation.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4799,7 +4724,7 @@ Note that such operators are typically constrained to a very high scale
 ).
  Of all of these operators, only one affects the Higgs potential: the dimension
  six term 
-\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\begin_inset Formula $\phi^{6}$
 \end_inset
 
 .
@@ -4807,9 +4732,9 @@ Note that such operators are typically constrained to a very high scale
  modifications to the Higgs potential can be achieved by taking as the Higgs
  potential
 \begin_inset Formula 
-\[
-V\left(\Phi\right)=\mu^{2}\Phi^{\dagger}\Phi+\frac{\lambda^{2}}{2}\left(\Phi^{\dagger}\Phi\right)^{2}+\frac{1}{\Lambda^{2}}\left(\Phi^{\dagger}\Phi\right)^{3}.
-\]
+\begin{equation}
+V\left(\phi\right)=\mu^{2}\phi^{2}+\frac{\lambda^{2}}{2}\phi^{4}+\frac{1}{\Lambda^{2}}\phi^{6}.
+\end{equation}
 
 \end_inset
 
@@ -4831,7 +4756,7 @@ key "Grojean2005"
 
 .
  The 
-\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\begin_inset Formula $\phi^{6}$
 \end_inset
 
  term is very difficult to probe at the LHC, thus the constraints are weak
@@ -4855,11 +4780,21 @@ key "Grojean2005,Chung2013"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-In summary we have seen that it is easy to strengthen the EWPT in BSM models
- of current phenomenological interest.
+In summary it is easy to strengthen the EWPT in BSM models of current phenomenol
+ogical interest.
  This strongly motivates the experimental search for exotic Higgs decays
  and non-SM particles in the scalar sector.
  An extensive review of the experimental prospects for these searches, including
@@ -4871,12 +4806,21 @@ key "Curtin2013"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
  However, questions can be raised about the computation of the phase transition
  thermodynamics.
  A conceptual question of great practical import is the gauge dependence
  of this theory, which is relevant in the Higgs theory because an expectation
  value of a gauge-variant quantity like 
-\begin_inset Formula $\Phi$
+\begin_inset Formula $\phi$
 \end_inset
 
  is physically meaningless.
@@ -4890,11 +4834,7 @@ key "Curtin2013"
 \end_inset
 
  parameter, or develop a formulation using only manifestly gauge invariant
- quantities such as 
-\begin_inset Formula $\Phi^{\dagger}\Phi$
-\end_inset
-
-.
+ quantities.
  An example of the first method is the jump of the order parameter at the
  critical temperature, 
 \begin_inset Formula $\phi_{c}/T_{c}$
@@ -4909,9 +4849,9 @@ key "Patel2011"
 
 :
 \begin_inset Formula 
-\[
+\begin{equation}
 \frac{\phi_{c}}{T_{c}}=\frac{3-\xi^{3/2}}{48\pi\lambda}\left(2g_{2}^{3}+\left(g_{1}^{2}+g_{2}^{2}\right)^{3/2}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -4924,14 +4864,14 @@ where
 \end_inset
 
  are the 
-\begin_inset Formula $U\left(1\right),SU\left(2\right)_{L}$
+\begin_inset Formula $\mathrm{U}\left(1\right),\ \mathrm{SU}\left(2\right)_{L}$
 \end_inset
 
  gauge couplings respectively (note the normalisation convention for 
 \begin_inset Formula $\lambda$
 \end_inset
 
- is different from ours!).
+ is different from the one used here!).
  Note the spurious gauge dependence of this quantity.
  Indeed by choosing 
 \begin_inset Formula $\xi=3^{2/3}$
@@ -4951,6 +4891,26 @@ key "Morrissey2012"
  As a result it is difficult to say whether a given phase transition is
  indeed strong enough to avoid washing out a baryon asymmetry.
  The vast majority of treatments ignore these issues.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs???
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5001,7 +4961,7 @@ hard
  soft modes is captured by an effective noise kernel and one obtains a Langevin
  equation for the soft modes.
  This theory was developed for pure 
-\begin_inset Formula $SU\left(2\right)$
+\begin_inset Formula $\mathrm{SU}\left(2\right)$
 \end_inset
 
  gauge theory by B
@@ -5081,9 +5041,9 @@ key "Zoller2013"
 \end_inset
 
  for abelian gauge theories.
- Clearly a recent trend is the reorganisation of perturbation theory, using
- self-consistent schemes much like those explored in this report, to gain
- access to hitherto inaccessible regimes of quantum field theories.
+ Clearly a recent trend is the reorganisation of perturbation theory using
+ self-consistent schemes to gain access to hitherto inaccessible regimes
+ of quantum field theories.
 \end_layout
 
 \begin_layout Standard
@@ -5126,10 +5086,10 @@ key "Linde1990,Dine1992,Shifman2012"
 
 ) is to leading semi-classical order
 \begin_inset Formula 
-\begin{align*}
-\frac{\Gamma}{V} & =\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\\
+\begin{align}
+\frac{\Gamma}{V} & =\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\nonumber \\
  & \times\left[1+\mathcal{O}\left(\hbar\right)\right],
-\end{align*}
+\end{align}
 
 \end_inset
 
@@ -5141,9 +5101,9 @@ where
 \emph on
 bounce action
 \begin_inset Formula 
-\[
+\begin{equation}
 B=\int\mathrm{d}^{4}x_{E}\ \frac{1}{2}\left(\partial\bar{\phi}\right)^{2}+U\left(\bar{\phi}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -5210,9 +5170,12 @@ thin wall approximation
 \emph default
 , but the evaluation of the functional determinants ranges from very difficult
  to hopeless.
- Thus one typically guesses the prefactor based on scaling and dimensional
- analysis and attempts to validate this guess by comparison to lattice Monte
- Carlo simulations.
+ Thus one typically 
+\emph on
+guesses
+\emph default
+ the pre-factor based on scaling and dimensional analysis and attempts to
+ validate this guess by comparison to lattice Monte Carlo simulations.
  So far this program has only been carried out for a small number of benchmark
  models.
  In cases of phenomenological interest for EWBG where multiple scalar fields
@@ -5221,6 +5184,16 @@ thin wall approximation
  difficulty increases with the complexity of the scalar sector.
  Often one finds thin wall results applied without the validity of the approxima
 tion being checked.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5255,6 +5228,16 @@ Another point worth noting is that there is no real time description of
  different histories of bubble nucleation is probably large, but the author
  knows of no discussion of this topic in the literature.
  A more important practical question is the gauge dependence of the formalism.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5308,9 +5291,9 @@ key "Espinosa2010,Huber2013"
  direction which is taken to be perpendicular to the wall.
  The equation of motion for the mean value of the Higgs field is
 \begin_inset Formula 
-\[
+\begin{equation}
 \square\phi+\frac{\partial F}{\partial\phi}+\sum_{i}\frac{\mathrm{d}m_{i}^{2}}{\mathrm{d}\phi}\int\frac{\mathrm{d}^{3}p}{\left(2\pi\right)^{3}2E_{i}}\delta f_{i}\left(p\right)=0,
-\]
+\end{equation}
 
 \end_inset
 
@@ -5356,6 +5339,16 @@ key "Konstandin2013"
 \end_inset
 
 .
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -5409,7 +5402,7 @@ key "Konstandin2013"
  time require detailed treatment.
  These techniques have not yet seen wide application to BSM models other
  than the MSSM, although the SM with the dimension six term 
-\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\begin_inset Formula $\phi^{6}$
 \end_inset
 
 , a scalar singlet SM extension, 2HDM (Types I and II), MSSM, and NMSSM
@@ -5429,9 +5422,104 @@ key "Konstandin2013"
  asymmetry generated in each model is due to a semi-classical force term
  and that the possibility of resonant enhancement, the topic of much recent
  debate, is unimportant.
- The Kadanoff-Baym framework is a solid foundation, thus I view the problem
- of fermion transport in EWBG as a problem where incremental model-dependent
- progress is an important possibility, but no major advances should be expected.
+ The Kadanoff-Baym framework is a solid foundation, thus the author's view
+ is that fermion transport in EWBG is a problem where incremental model-dependen
+t progress is an important possibility, but no major advances should be
+ expected.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE ALL THIS!!!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In summary, electroweak baryogenesis is a plausible mechanism for explaining
+ one of the greatest mysteries: the matter-antimatter asymmetry of the universe.
+ The size of the asymmetry is well established within seconds of the big
+ bang, and is crucial for the production of light elements in the early
+ universe.
+ If it were not for some mechanism of baryogenesis there would be very little
+ matter in the universe, and essentially no galaxies, stars, heavy elements
+ or life.
+ Yet, remarkably, EWBG provides a testable mechanism for controlling the
+ late time abundance of matter in the universe and is already being constrained
+ by the LHC.
+ EWBG in specific models such as the MSSM is already under a great deal
+ of strain, although ruling it out in a completely model independent test
+ may have to wait for the next collider.
+ At the present time experiments are catching up to theoretical speculations
+ at the electroweak scale, and formulating solid theoretical predictions
+ should be a top priority.
+ In particular, it should be possible to say with confidence whether a first
+ order phase transition exists in any particular extended Higgs sector,
+ and what the critical temperature, nucleation rate, strength of the phase
+ transition, CP violation generation rate and sphaleron rates are in all
+ relevant regimes.
+ These quantities have been well established in a handful of benchmark models
+ but for the most part questionable estimates and conservative rules of
+ thumb are used to establish the viability of EWBG within a particular model.
+\end_layout
+
+\begin_layout Standard
+All of this motivates the investigation of a new approach to non-equilibrium
+ non-abelian gauge theories, incorporating and extending the new insights
+ from recent years to theories of phenomenological interest.
+ The 
+\begin_inset Quotes eld
+\end_inset
+
+holy grail
+\begin_inset Quotes erd
+\end_inset
+
+ of this investigation would be an approach to Yang-Mills-Higgs-Dirac type
+ theories (with chiral fermions) which is manifestly gauge invariant, can
+ solve the initial value problem far from equilibrium, with realistic (i.e.
+ non-Gaussian) initial conditions, with a well established and tractable
+ renormalisation procedure, while avoiding infrared singularities, unphysical
+ transients and secularities though consistent and systematically improvable
+ re-summations.
+ One could track the strongly interacting soft modes separately from the
+ weakly interacting hard modes for practical purposes, but renormalisation
+ group invariance would ideally be manifest.
+ One should be able to track arbitrary desired observables (gauge invariants)
+ through a phase transition in real time.
+ It would be desirable to see the spontaneous symmetry breaking of a non-abelian
+ gauge theory or biased sphaleron transitions in real time, and a controlled
+ analytical framework capable of this would provide a valuable check of
+ lattice calculations and perhaps provide useful 
+\begin_inset Quotes eld
+\end_inset
+
+boundary markers
+\begin_inset Quotes erd
+\end_inset
+
+ in the quest to map out possibilities for beyond standard model physics.
+ It is incredible - maybe wildly optimistic - that such a formulation might
+ be possible.
+ In the meantime one may take some small steps towards this dream by attempting
+ to extend the 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective action formalism, which has already been
+ demonstrated to be useful in non-perturbative and non-equilibrium quantum
+ field theory 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2015"
+
+\end_inset
+
+, to better handle theories with a high degree of symmetry and symmetry
+ changing phase transitions.
 \end_layout
 
 \begin_layout Section
