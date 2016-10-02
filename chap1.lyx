@@ -1350,6 +1350,4964 @@ name "sec:Electroweak-baryogenesis"
 
 \end_layout
 
+\begin_layout Standard
+It is well known that for every type of matter particle (electron, proton,
+ neutron, quarks etc.) there is a corresponding antiparticle with the same
+ mass and opposite charge.
+ This is now understood to be a consequence of combining the principles
+ of special relativity and quantum mechanics, which requires that antiparticles
+ exist and have closely related properties to the corresponding particles.
+ This is a very robust result, requiring only basic physical principles,
+ and it is satisfied by SM.
+ Further, 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+CDM predicts that the early universe was in a very hot and dense state,
+ where the maximum temperature that the universe reaches could be as high
+ as 
+\begin_inset Formula $10^{12}\ \mathrm{GeV}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Buchmuller2012a"
+
+\end_inset
+
+.
+ At extremely high temperatures the universe contains a plasma where particle
+ (
+\begin_inset Formula $\psi$
+\end_inset
+
+)/antiparticle (
+\begin_inset Formula $\bar{\psi}$
+\end_inset
+
+) pair creation and annihilation reactions such as 
+\begin_inset Formula $\gamma\gamma\leftrightarrow\psi\bar{\psi}$
+\end_inset
+
+ are in equilibrium.
+ As the universe expands it cools, and when the temperature drops below
+ 
+\begin_inset Formula $\sim m_{\psi}c^{2}/k_{B}$
+\end_inset
+
+ the creation reactions 
+\begin_inset Formula $\gamma\gamma\to\psi\bar{\psi}$
+\end_inset
+
+ become Boltzmann suppressed.
+ However, the annihilation reaction 
+\begin_inset Formula $\psi\bar{\psi}\to\gamma\gamma$
+\end_inset
+
+ remains efficient as long as the (thermally averaged) reaction rate 
+\begin_inset Formula $\Gamma\sim\left\langle n\sigma v\right\rangle $
+\end_inset
+
+ is more rapid than the Hubble expansion rate of the universe 
+\begin_inset Formula $H=\dot{a}/a$
+\end_inset
+
+, where 
+\begin_inset Formula $a\left(t\right)$
+\end_inset
+
+ is the scale factor.
+ In this regime particle/antiparticle pairs are annihilated, depleting the
+ number densities of both and temporarily slowing the cooling of the plasma.
+ Once 
+\begin_inset Formula $\Gamma\lesssim H$
+\end_inset
+
+ the annihilation reactions shut off and the 
+\begin_inset Formula $\psi,\bar{\psi}$
+\end_inset
+
+ effectively decouple from the plasma, a phenomenon known as 
+\emph on
+freeze out
+\emph default
+.
+ After freeze out the 
+\emph on
+relic densities
+\emph default
+ 
+\begin_inset Formula $n_{\psi\left(\bar{\psi}\right)}\propto a^{-3}$
+\end_inset
+
+ simply track the expansion of the universe.
+ (This story assumes that 
+\begin_inset Formula $\psi$
+\end_inset
+
+ particles are stable for simplicity.) Thus one should expect the number
+ density of any species to be determined by the mass, reaction rates and
+ expansion history in the way described, allowing one to derive from a model
+ of particle physics a prediction for the amount of matter and antimatter
+ in the universe.
+\end_layout
+
+\begin_layout Standard
+The relic densities derived this way for the SM lead immediately to two
+ puzzles: first, they are too small by about ten orders of magnitude 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Cline2006"
+
+\end_inset
+
+, far too small for galaxies to form, and the density of matter and antimatter
+ should be comparable.
+ Yet astronomical observations have convincingly shown that the universe
+ is made of matter.
+ The abundance of antimatter is negligible compared to that of matter 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Canetti2012"
+
+\end_inset
+
+.
+ The BAU (baryons being protons and neutrons) has been measured at the time
+ of 
+\emph on
+big bang nucleosynthesis
+\emph default
+ (
+\noun on
+BBN
+\noun default
+), about three minutes after the big bang, using the abundances of light
+ elements as 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Canetti2012a,Weinberg2008"
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\eta\equiv\frac{n_{B}-n_{\bar{B}}}{n_{\gamma}}=\begin{cases}
+\left(5.9\pm0.5\right)\times10^{-10}, & \text{Kirkman \emph{et al.}, cited in Weinberg},\\
+\left(5.8\pm0.27\right)\times10^{-10}, & \text{Steigman, cited in Canetti \emph{et al}}.,
+\end{cases}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $n_{B\left(\bar{B}\right)}$
+\end_inset
+
+ are the number densities of (anti-)baryons and 
+\begin_inset Formula $n_{\gamma}$
+\end_inset
+
+ is the number density of photons.
+ This ratio should be conserved with the expansion of the universe since
+ 
+\begin_inset Formula $n_{B,\bar{B},\gamma}$
+\end_inset
+
+ all scale the same way with 
+\begin_inset Formula $a\left(t\right)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Up to a threshold correction due to electron/positron freeze out 
+\begin_inset Formula $e\bar{e}\to\gamma\gamma$
+\end_inset
+
+ at temperatures 
+\begin_inset Formula $T\sim m_{e}c^{2}/k_{B}$
+\end_inset
+
+, which is straightforward to correct for.
+\end_layout
+
+\end_inset
+
+.
+ Thus an independent confirmation can be obtained from the CMB, and the
+ latest Planck data 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "PlanckCollaboration2013"
+
+\end_inset
+
+ is in agreement
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Planck measured the parameter 
+\begin_inset Formula $\Omega_{b}h^{2}=0.02207\pm0.00033$
+\end_inset
+
+ which is converted to 
+\begin_inset Formula $\eta$
+\end_inset
+
+ via 
+\begin_inset Formula $\eta=\Omega_{b}h^{2}/\left(3.65\times10^{7}\right)$
+\end_inset
+
+.
+ See 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Canetti2012a,Weinberg2008"
+
+\end_inset
+
+ for further details.
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\eta=\left(6.05\pm0.09\right)\times10^{-10}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The simplest possible explanation for the observed 
+\noun on
+BAU
+\noun default
+ is that it stems from an asymmetry of the initial condition of the universe.
+ However a net baryon number 
+\begin_inset Formula $B\neq0$
+\end_inset
+
+ initial condition for the universe is implausible as a solution to this
+ problem for several reasons.
+ First, if cosmic inflation is indeed the solution to the horizon, flatness
+ and monopole problems in cosmology this requires at least about 60 
+\begin_inset Formula $e$
+\end_inset
+
+-folds of expansion which would greatly dilute any initial baryon asymmetry.
+ Second, if baryon number conservation is violated by any beyond standard
+ model (
+\noun on
+BSM
+\noun default
+) physics at high energies then any initial 
+\begin_inset Formula $B\neq0$
+\end_inset
+
+ would be washed out when the universe comes into chemical equilibrium at
+ a temperature 
+\begin_inset Formula $T\gg T_{EW}$
+\end_inset
+
+, where 
+\begin_inset Formula $T_{EW}\sim100\ \mathrm{GeV}$
+\end_inset
+
+ is the electroweak scale of the SM.
+ Third, the SM itself violates 
+\begin_inset Formula $B$
+\end_inset
+
+ conservation and lepton number 
+\begin_inset Formula $L$
+\end_inset
+
+ conservation through nonperturbative 
+\noun on
+sphaleron
+\noun default
+ processes 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arnold1987"
+
+\end_inset
+
+.
+ The only exactly conserved flavour quantum number of the SM is the combination
+ 
+\begin_inset Formula $B-L$
+\end_inset
+
+.
+ Any initial asymmetry in the orthogonal channel 
+\begin_inset Formula $B+L$
+\end_inset
+
+ will be washed out by sphaleron processes at 
+\begin_inset Formula $T>T_{EW}$
+\end_inset
+
+.
+ Note that at temperatures 
+\begin_inset Formula $T<T_{EW}$
+\end_inset
+
+ sphalerons are exponentially suppressed and unobservable, hence this scenario
+ is compatible with constraints on unobserved processes like proton decay
+ 
+\begin_inset Formula $p\to e^{+}\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+If the BAU cannot be the result of an asymmetric initial condition it must
+ be generated dynamically by some new BSM particle physics.
+ This is called 
+\emph on
+baryogenesis
+\emph default
+.
+ Numerous recent reviews of popular scenarios are available 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cline2006,Dine2003,Morrissey2012,Riotto1999,Shaposhnikov2009,Trodden1998,Trodden2004"
+
+\end_inset
+
+.
+ In 1967 Sakharov 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sakharov1991,Dine2003"
+
+\end_inset
+
+ laid out three general conditions which are required to dynamically generate
+ 
+\begin_inset Formula $B\neq0$
+\end_inset
+
+ from a symmetrical initial state
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that, although the Sakharov's original paper dealt with a particular
+ model of baryogenesis, his three conditions are completely general.
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+Baryon number violation: Obviously if 
+\begin_inset Formula $B$
+\end_inset
+
+ is conserved then 
+\begin_inset Formula $B\neq0$
+\end_inset
+
+ cannot be generated from a state with 
+\begin_inset Formula $B=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Out of equilibrium dynamics: If the universe is in thermal equilibrium then
+ every 
+\begin_inset Formula $B$
+\end_inset
+
+-violating reaction is balanced by the reverse reaction and no net asymmetry
+ can be generated.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $CP$
+\end_inset
+
+ violation: If charge conjugation (
+\begin_inset Formula $C$
+\end_inset
+
+) or charge-parity conjugation (
+\begin_inset Formula $CP$
+\end_inset
+
+) is preserved then for every 
+\begin_inset Formula $B$
+\end_inset
+
+-violating reaction there is a 
+\begin_inset Formula $C$
+\end_inset
+
+ or 
+\begin_inset Formula $CP$
+\end_inset
+
+ conjugate reaction that has the same rate but opposite 
+\begin_inset Formula $B$
+\end_inset
+
+ asymmetry.
+ Hence every 
+\begin_inset Formula $B$
+\end_inset
+
+-violating reaction is balanced by another reaction with the opposite effect
+ and no net 
+\begin_inset Formula $B$
+\end_inset
+
+ can be created.
+\end_layout
+
+\begin_layout Standard
+The SM has all three of the necessary ingredients: 
+\begin_inset Formula $B$
+\end_inset
+
+ violating sphaleron processes come from the nonperturbative electroweak
+ sector of the SM, 
+\begin_inset Formula $C$
+\end_inset
+
+ is maximally violated by the chiral fermion couplings of the weak interactions,
+ 
+\begin_inset Formula $CP$
+\end_inset
+
+ is violated by the complex phase in the Cabibbo-Kobayashi-Maskawa (CKM)
+ mixing matrix in the quark sector, and the SM plasma could be driven out
+ of equilibrium by the electroweak phase transition (EWPT).
+ For sufficiently small Higgs mass the EWPT is a first order transition
+ which proceeds by bubble formation, analogous to boiling water, a violent
+ process that locally departs from thermal equilibrium at the bubble walls.
+ It was within the realm of possibility then, before the late 1990s (when
+ the LEP2 experiment began placing limits on the Higgs mass), that the SM
+ alone could account for baryogenesis.
+ However, it is now known that the Higgs mass 
+\begin_inset Formula $m_{H}=126\ \mathrm{GeV}>72\ \mathrm{GeV}$
+\end_inset
+
+, where 
+\begin_inset Formula $72\ \mathrm{GeV}$
+\end_inset
+
+ is the critical point of the EWPT.
+ For values of 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ greater than the critical value the EWPT is a smooth crossover transition
+ which does not depart from equilibrium.
+ Thus 
+\begin_inset Formula $m_{H}$
+\end_inset
+
+ is too large for the EWPT to depart from equilibrium, violating the second
+ Sakharov condition.
+ Further, detailed computations show that the 
+\begin_inset Formula $CP$
+\end_inset
+
+ violating phase of the CKM matrix is many orders of magnitude too small
+ to account for the observed BAU 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dine2003"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Since the time of Sakharov numerous models have been proposed that satisfy
+ the Sakharov criteria.
+ A recent review counted 44 scenarios in the literature for generating the
+ BAU 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shaposhnikov2009"
+
+\end_inset
+
+.
+ Of those only a handful are well motivated and provide decent prospects
+ for experimental confrontation in the foreseeable future.
+ These are the models that propose new particles at or below the electroweak
+ scale.
+ One prominent option is to include additional scalar fields that couple
+ to the SM Higgs and strengthen the EWPT, and may also provide new sources
+ of CP violation.
+ Such scalars can come from supersymmetric (
+\noun on
+SUSY
+\noun default
+) extensions of the SM, such as the well studied MSSM, or from grand unified
+ theories (GUTs).
+ These models are classified as 
+\emph on
+electroweak baryogenesis
+\emph default
+ (
+\noun on
+EWBG
+\noun default
+) scenarios since they all involve the EWPT in an extended electroweak/Higgs
+ sector.
+ Another popular option is 
+\emph on
+leptogenesis
+\emph default
+, which posits new fermions which couple to the neutrino sector 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Barbieri2000,Blanchet2012,Buchmuller2005,Buchmuller2005a,BuchmÃŒller2013329,Canetti2012a,Davidson2008,Fong2012,Giudice2004,Luty1992,Pilaftsis2009"
+
+\end_inset
+
+.
+ This explains neutrino masses and mixing (which are not a feature of the
+ SM), and is able to provide a strong source of 
+\begin_inset Formula $L$
+\end_inset
+
+ and 
+\begin_inset Formula $CP$
+\end_inset
+
+ violation.
+ In leptogenesis models an 
+\begin_inset Formula $L$
+\end_inset
+
+ asymmetry is generated in heavy neutrino decays which is converted to a
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ asymmetry by SM sphaleron processes.
+ The standard leptogenesis scenarios place the new fermions at a high scale
+ (near the GUT scale or intermediate between the GUT scale and 
+\begin_inset Formula $T_{EW}$
+\end_inset
+
+), which unfortunately makes these models very difficult to test.
+ There are also 
+\emph on
+low-scale
+\emph default
+ leptogenesis models which place one or more of the new fermions at or below
+ the weak scale.
+ An advantage of such low-scale models is that they are able to provide
+ a dark matter candidate, but they also require very weak fine tuned couplings
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Canetti2012a"
+
+\end_inset
+
+.
+ Both types of leptogenesis models can be derived from SUSY extensions of
+ the SM and GUTs.
+ Despite having many appealing features leptogenesis will not be considered
+ further in this report in the interest of space.
+\end_layout
+
+\begin_layout Standard
+EWBG was first investigated in the SM 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "McLerran1989"
+
+\end_inset
+
+.
+ Indeed, this was still phenomenologically viable before the precision electrowe
+ak measurements and Higgs mass limits established during the LEP2 era.
+ Further, modern EWBG scenarios are all formulated in more or less minimal
+ extensions of the SM such as the 
+\emph on
+minimal SUSY extension of the SM
+\emph default
+ (
+\noun on
+MSSM
+\noun default
+), the 
+\emph on
+next to minimal SUSY extension
+\emph default
+ (
+\noun on
+NMSSM
+\noun default
+) with a single extra gauge singlet chiral superfield, and non-SUSY extensions
+ such as the 
+\emph on
+two Higgs doublet models
+\emph default
+ (
+\noun on
+2HDM
+\noun default
+).
+ In all of these models the EWBG scenario relies on nonperturbative processes
+ very similar to those of the original SM.
+ Thus, I will first briefly review the SM to recall the physics, set the
+ notation, and discuss EWBG at first in a familiar context.
+ This review is by no means extensive, nor suitable for a first introduction.
+ Up to date topical reviews are available from the Particle Data Group
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Particle Data Group reviews are updated regularly.
+ For the latest go to 
+\begin_inset CommandInset href
+LatexCommand href
+target "http://pdg.lbl.gov/"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+.
+ The conventions used here mostly follow the Particle Data Group.
+ I take 
+\begin_inset Formula $\hbar=c=1$
+\end_inset
+
+ and 
+\begin_inset Formula $\eta^{\mu\nu}=\mathrm{diag}\left(1,-1,-1,-1\right)$
+\end_inset
+
+ for the spacetime metric unless otherwise noted.
+\end_layout
+
+\begin_layout Standard
+The SM is a relativistic quantum gauge field theory.
+ The gauge group is 
+\begin_inset Formula $SU\left(3\right)\times SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
+\end_inset
+
+, where the 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ is the gauge group of QCD, the theory describing the strong nuclear force,
+ and the three basis states in the fundamental of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ are the three 
+\begin_inset Quotes eld
+\end_inset
+
+colours.
+\begin_inset Quotes erd
+\end_inset
+
+ The QCD gauge bosons are the 
+\emph on
+gluons
+\emph default
+ and the corresponding fields are denoted 
+\begin_inset Formula $\mathcal{A}_{\mu}^{A}$
+\end_inset
+
+ where 
+\begin_inset Formula $A$
+\end_inset
+
+ is an index in the adjoint representation of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+, running from 
+\begin_inset Formula $1$
+\end_inset
+
+ to 
+\begin_inset Formula $3^{2}-1=8$
+\end_inset
+
+.
+ The electroweak gauge group is 
+\begin_inset Formula $SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $SU\left(2\right)_{L}$
+\end_inset
+
+ describes the weak 
+\emph on
+isospin
+\emph default
+ and acts only on left chiral fermions, hence the 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ The corresponding gauge fields are denoted 
+\begin_inset Formula $W_{\mu}^{a}$
+\end_inset
+
+, where 
+\begin_inset Formula $a=1,2,3$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $U\left(1\right)_{Y}$
+\end_inset
+
+ is the weak 
+\emph on
+hypercharge
+\emph default
+ group and the corresponding gauge field is denoted 
+\begin_inset Formula $B_{\mu}$
+\end_inset
+
+.
+ The groups 
+\begin_inset Formula $SU\left(3\right),\ SU\left(2\right)_{L},\ U\left(1\right)_{Y}$
+\end_inset
+
+ have coupling constants 
+\begin_inset Formula $g_{S}$
+\end_inset
+
+, 
+\begin_inset Formula $g$
+\end_inset
+
+ and 
+\begin_inset Formula $g'$
+\end_inset
+
+ respectively.
+\end_layout
+
+\begin_layout Standard
+The gauge kinetic Lagrangian is thus
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}_{\mathrm{gauge}}=-\frac{1}{4}G_{\mu\nu}^{A}G^{A\mu\nu}-\frac{1}{4}W_{\mu\nu}^{a}W^{a\mu\nu}-\frac{1}{4}B_{\mu\nu}B^{\mu\nu},\label{eq:sm-gauge-kinetic-lagrangian}
+\end{equation}
+
+\end_inset
+
+where the field strength tensors are given by
+\begin_inset Formula 
+\begin{align*}
+G_{\mu\nu}^{A} & \equiv\partial_{\mu}\mathcal{A}_{\nu}^{A}-\partial_{\nu}\mathcal{A}_{\mu}^{A}-g_{S}f_{ABC}\mathcal{A}_{\mu}^{B}\mathcal{A}_{\nu}^{C},\\
+W_{\mu\nu}^{a} & \equiv\partial_{\mu}W_{\nu}^{a}-\partial_{\nu}W_{\mu}^{a}-g\epsilon_{abc}W_{\mu}^{b}W_{\nu}^{c},\\
+B_{\mu\nu} & \equiv\partial_{\mu}B_{\nu}-\partial_{\nu}B_{\mu}.
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula $f_{ABC}$
+\end_inset
+
+ are the structure constants of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ given by 
+\begin_inset Formula $\left[t^{A},t^{B}\right]=if_{ABC}t^{C}$
+\end_inset
+
+ where 
+\begin_inset Formula $t^{A}$
+\end_inset
+
+ are representation matrices of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+.
+ The standard basis for the fundamental representation of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ are given by the Gell-Mann matrices.
+ Similarly the standard basis for the generators of the fundamental representati
+on of 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ is given by the matrices 
+\begin_inset Formula $\tau^{a}=\sigma^{a}/2$
+\end_inset
+
+, where 
+\begin_inset Formula $\sigma^{a}$
+\end_inset
+
+ are the Pauli matrices, which obey 
+\begin_inset Formula $\left[\tau^{a},\tau^{b}\right]=i\epsilon^{abc}\tau^{c}$
+\end_inset
+
+ where 
+\begin_inset Formula $\epsilon^{abc}$
+\end_inset
+
+ is the totally antisymmetric symbol with 
+\begin_inset Formula $\epsilon^{123}=+1$
+\end_inset
+
+.
+ The SM Lagrangian is invariant under the gauge transformations
+\begin_inset Formula 
+\begin{align*}
+\mathcal{A}_{\mu}' & =U_{3}^{\dagger}\mathcal{A}_{\mu}U_{3}+\frac{i}{g_{S}}U_{3}^{\dagger}\partial_{\mu}U_{3},\\
+W_{\mu}' & =U_{2}^{\dagger}W_{\mu}U_{2}+\frac{i}{g}U_{2}^{\dagger}\partial_{\mu}U_{2},\\
+B_{\mu}' & =B_{\mu}+\frac{i}{g'}U_{1}^{\dagger}\partial_{\mu}U_{1},
+\end{align*}
+
+\end_inset
+
+where I defined matrix valued fields 
+\begin_inset Formula $\mathcal{A}_{\mu}\equiv\mathcal{A}_{\mu}^{A}t^{A}$
+\end_inset
+
+ and 
+\begin_inset Formula $W_{\mu}\equiv W_{\mu}^{a}\sigma^{a}/2$
+\end_inset
+
+ for simplicity and 
+\begin_inset Formula $U_{3,2,1}$
+\end_inset
+
+ are matrices in 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+, 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $U\left(1\right)$
+\end_inset
+
+ respectively (note that a 
+\begin_inset Quotes eld
+\end_inset
+
+matrix
+\begin_inset Quotes erd
+\end_inset
+
+ in 
+\begin_inset Formula $U\left(1\right)$
+\end_inset
+
+ is just a unimodular complex number 
+\begin_inset Formula $\mathrm{e}^{i\theta}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Now I discuss the fermion content of the SM.
+ The SM is a chiral theory.
+ I briefly recount what this means.
+ Recall that spin-
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ representations of the Lorentz group are constructed using 
+\begin_inset Formula $\gamma^{\mu}$
+\end_inset
+
+ matrices satisfying the Clifford algebra 
+\begin_inset Formula $\left\{ \gamma^{\mu},\gamma^{\nu}\right\} \equiv\gamma^{\mu}\gamma^{\nu}+\gamma^{\nu}\gamma^{\mu}=2\eta^{\mu\nu}$
+\end_inset
+
+.
+ (One also imposes the Hermiticity condition 
+\begin_inset Formula $\gamma^{\mu\dagger}=\gamma^{0}\gamma^{\mu}\gamma^{0}$
+\end_inset
+
+.) Then the generators given by 
+\begin_inset Formula $S^{\mu\nu}=\frac{i}{4}\left[\gamma^{\mu},\gamma^{\nu}\right]$
+\end_inset
+
+ satisfy the Lorentz algebra and indeed give a spin-
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ representation of it.
+ In four dimensions (with generalisation to any even dimensionality) there
+ exists a 
+\begin_inset Formula $\gamma^{5}\equiv i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$
+\end_inset
+
+ which obeys 
+\begin_inset Formula $\gamma^{5\dagger}=\gamma^{5}$
+\end_inset
+
+, 
+\begin_inset Formula $\left(\gamma^{5}\right)^{2}=1$
+\end_inset
+
+, and 
+\begin_inset Formula $\left\{ \gamma^{\mu},\gamma^{5}\right\} =0$
+\end_inset
+
+, meaning it commutes with all the Lorentz generators.
+ This means that the representation just constructed is a reducible one:
+ the spinors satisfying 
+\begin_inset Formula $\gamma^{5}\psi_{\pm}=\pm\psi_{\pm}$
+\end_inset
+
+ transform independently of each other.
+ Spinors with eigenvalue 
+\begin_inset Formula $+1\left(-1\right)$
+\end_inset
+
+ are called right-(left-) handed respectively, although this standard terminolog
+y is confusing as there is no direct connection to helicity.
+ A chiral theory is one where the left and right handed fermions are treated
+ on a different footing.
+ One final thing to note is that charge conjugation reverses the eigenvalue
+ of 
+\begin_inset Formula $\gamma^{5}$
+\end_inset
+
+.
+ Thus it is possible to rewrite all right handed fields as left handed fields
+ of the charge conjugate particle, i.e.
+ replace a right handed electron field with a left handed positron field.
+ This is what I will do when writing down the fermion content of the SM.
+\end_layout
+
+\begin_layout Standard
+The SM fermions appear in three generations with identical representation
+ content.
+ In each generation there are 
+\begin_inset Formula $SU\left(2\right)_{L}$
+\end_inset
+
+ doublets of left handed quark and lepton fields 
+\begin_inset Formula $Q_{i}\equiv\left(\begin{array}{c}
+u_{iL}\\
+d_{iL}
+\end{array}\right),\ L_{i}\equiv\left(\begin{array}{c}
+\nu_{iL}\\
+e_{iL}
+\end{array}\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $i=1,2,3$
+\end_inset
+
+ is a generation index.
+ Then there are 
+\begin_inset Formula $SU\left(2\right)_{L}$
+\end_inset
+
+ singlets for the antiquarks 
+\begin_inset Formula $u_{iL}^{c},d_{iL}^{c}$
+\end_inset
+
+ and charged antileptons 
+\begin_inset Formula $e_{iL}^{c}$
+\end_inset
+
+.
+ The (anti-)quarks come in (anti-)fundamentals of 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ and the (anti-)leptons are 
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ singlets.
+ Finally the hypercharge 
+\begin_inset Formula $Y$
+\end_inset
+
+ assignments are determined by 
+\begin_inset Formula $Q=T_{3}+Y/2$
+\end_inset
+
+ where 
+\begin_inset Formula $Q$
+\end_inset
+
+ is the electromagnetic charge and 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ is the weak isospin.
+ These assignments are summarised in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:standard-model-fermions"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The kinetic Lagrangian for the SM fermions is
+\begin_inset Formula 
+\begin{align}
+\mathcal{L}_{\text{ferm.kin.}} & =\sum_{i=1}^{3}\bar{Q}_{i}i\gamma^{\mu}D_{\mu}Q_{i}+\bar{L}_{i}i\gamma^{\mu}D_{\mu}L_{i}\nonumber \\
+ & +\bar{u}_{iL}^{c}i\gamma^{\mu}D_{\mu}u_{iL}^{c}+\bar{d}_{iL}^{c}i\gamma^{\mu}D_{\mu}d_{iL}^{c}+\bar{e}_{iL}^{c}i\gamma^{\mu}D_{\mu}e_{iL}^{c},\label{eq:standard-model-fermion-kinetic-lagrangian}
+\end{align}
+
+\end_inset
+
+where the 
+\begin_inset Formula $SU\left(3\right)\times SU\left(2\right)_{L}$
+\end_inset
+
+ indices are contracted in the obvious way and have been left implicit.
+ Note that no mass terms are possible due to the charge assignments.
+ The covariant derivatives are
+\begin_inset Formula 
+\[
+D_{\mu}=\partial_{\mu}-ig_{S}\mathcal{A}_{\mu}^{A}t^{A}-igW_{\mu}^{a}\tau^{a}-ig'\frac{Y}{2}B_{\mu},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $t^{A},\tau^{a},Y$
+\end_inset
+
+ are the generators of the representation of the corresponding fermion.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:standard-model-fermions"
+
+\end_inset
+
+SM fermion representations.
+ All fields are left chiral.
+ 
+\begin_inset Formula $Y,Q,B,$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ are weak hypercharge, electric charge, baryon number and lepton number
+ respectively.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="7">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Field
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ rep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ rep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Q_{i}\equiv\left(\begin{array}{c}
+u_{iL}\\
+d_{iL}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\begin{array}{c}
+\frac{2}{3}\\
+-\frac{1}{3}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $L_{i}\equiv\left(\begin{array}{c}
+\nu_{iL}\\
+e_{iL}
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left(\begin{array}{c}
+0\\
+-1
+\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u_{iL}^{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}^{\star}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{4}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{2}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $d_{iL}^{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}^{\star}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-\frac{1}{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e_{iL}^{c}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to generate masses for the weak gauge bosons and fermions one introduce
+s a colourless 
+\begin_inset Formula $SU\left(2\right)_{L}$
+\end_inset
+
+ doublet scalar 
+\begin_inset Formula $\Phi=\left(\begin{array}{c}
+\phi^{+}\\
+\phi^{0}
+\end{array}\right)$
+\end_inset
+
+ with 
+\begin_inset Formula $Y=+1$
+\end_inset
+
+.
+ This is the famous Higgs field.
+ The most general renormalizable Lagrangian for the Higgs field is
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}_{\text{Higgs}}=\left(D_{\mu}\Phi\right)^{\dagger}D^{\mu}\Phi-\mu^{2}\Phi^{\dagger}\Phi-\frac{\lambda^{2}}{2}\left(\Phi^{\dagger}\Phi\right)^{2}.\label{eq:standard-model-higgs-lagrangian}
+\end{equation}
+
+\end_inset
+
+If 
+\begin_inset Formula $\mu^{2}<0$
+\end_inset
+
+ then 
+\begin_inset Formula $\left\langle \Phi^{\dagger}\Phi\right\rangle $
+\end_inset
+
+ develops a nonzero vacuum expectation value 
+\begin_inset Formula $v^{2}=-\mu^{2}/\lambda^{2}$
+\end_inset
+
+ (at tree level).
+ By a gauge transformation the expectation value can be brought to the neutral
+ component of 
+\begin_inset Formula $\Phi$
+\end_inset
+
+, hence I take 
+\begin_inset Formula $\left\langle \phi^{0}\right\rangle =v$
+\end_inset
+
+ without loss of generality.
+ Indeed by choosing 
+\emph on
+unitary gauge
+\emph default
+ the Higgs field can be written as 
+\begin_inset Formula $\left(\begin{array}{c}
+0\\
+v+h/\sqrt{2}
+\end{array}\right)$
+\end_inset
+
+, where the real scalar 
+\begin_inset Formula $h$
+\end_inset
+
+ describes the neutral Higgs boson with (tree level) mass 
+\begin_inset Formula $m_{h}^{2}=2\lambda^{2}v^{2}$
+\end_inset
+
+.
+ This choice of gauge is most convenient for establishing the particle content
+ of the theory but is often not the most convenient for practical calculations.
+\end_layout
+
+\begin_layout Standard
+When the Higgs develops an expectation value the electroweak symmetry 
+\begin_inset Formula $SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
+\end_inset
+
+ is no longer manifest.
+ Instead 
+\begin_inset Formula $W^{\pm}=\left(W^{1}\mp iW^{2}\right)/\sqrt{2}$
+\end_inset
+
+ and a linear combination 
+\begin_inset Formula $Z=\left(\cos\theta_{W}\right)W^{3}-\left(\sin\theta_{W}\right)B$
+\end_inset
+
+ gain mass by the Higgs mechanism, while the orthogonal combination 
+\begin_inset Formula $A=\left(\sin\theta_{W}\right)W^{3}+\left(\cos\theta_{W}\right)B$
+\end_inset
+
+ becomes the massless photon.
+ Expanding 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ about 
+\begin_inset Formula $\left\langle \Phi\right\rangle $
+\end_inset
+
+ I find that the Higgs kinetic term contains a piece
+\begin_inset Formula 
+\[
+\mathcal{L}_{\text{Higgs}}\supset\frac{g^{2}v^{2}}{2}W_{\mu}^{+}W^{-\mu}+\frac{1}{2}\frac{1}{\cos^{2}\theta_{W}}\frac{g^{2}v^{2}}{2}Z_{\mu}Z^{\mu},
+\]
+
+\end_inset
+
+which gives (tree level) masses 
+\begin_inset Formula $m_{W}=gv/\sqrt{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{Z}=m_{W}/\cos\theta_{W}$
+\end_inset
+
+, where 
+\begin_inset Formula $\cos\theta_{W}=g/\sqrt{g^{2}+g'^{2}}$
+\end_inset
+
+, and the photon remains massless as claimed.
+ The electric charge is identified as 
+\begin_inset Formula $e=g\sin\theta_{W}$
+\end_inset
+
+.
+ Note that the relation between 
+\begin_inset Formula $m_{W}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{Z}$
+\end_inset
+
+ is modified by radiative corrections.
+\end_layout
+
+\begin_layout Standard
+Finally to give the fermions masses I add Yukawa couplings with the Higgs.
+ The most general Yukawa Lagrangian consistent with the charge assignments
+ given above and renormalizability is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mathcal{L}_{\text{Yuk.}}=-Y_{ij}^{u}\bar{Q}_{i}\tilde{\Phi}u_{jR}-Y_{ij}^{d}\bar{Q}_{i}\Phi d_{jR}-Y_{ij}^{l}\bar{L}_{i}\Phi e_{jR}+\mathrm{h.c.},\label{eq:standard-model-yukawa-lagrangian}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $u_{jR},d_{jR},e_{jR}$
+\end_inset
+
+ are the conjugates of 
+\begin_inset Formula $u_{jL}^{c},d_{jL}^{c},e_{jL}^{c}$
+\end_inset
+
+ respectively, 
+\begin_inset Formula $Y_{ij}^{u,d,l}$
+\end_inset
+
+ are general complex matrices whose 
+\begin_inset Formula $i,j=1,2,3$
+\end_inset
+
+ indices run over the fermion generations, 
+\begin_inset Formula $\tilde{\Phi}=i\sigma^{2}\Phi^{\star}$
+\end_inset
+
+ is the charge conjugate of the Higgs field and 
+\begin_inset Formula $\mathrm{h.c.}$
+\end_inset
+
+ means Hermitian conjugate as usual.
+ By performing unitary rotations among the generations of the 
+\begin_inset Formula $u_{iL},d_{iL},u_{iR},d_{iR},L_{i},e_{iL}^{c}$
+\end_inset
+
+ fields all the Yukawa matrices can be diagonalised, and all other terms
+ in the Lagrangian are unaffected by these rotations except for the quark-
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ couplings, which are sensitive to a relative rotation of the 
+\begin_inset Formula $u_{iL}$
+\end_inset
+
+ and 
+\begin_inset Formula $d_{iL}$
+\end_inset
+
+ fields.
+ As a result, there is a physically significant inter-generation mixing
+ in the quark-
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ couplings, traditionally written as
+\begin_inset Formula 
+\[
+\mathcal{L}\supset-\frac{g}{\sqrt{2}}W_{\mu}^{+}\bar{u}_{iL}\gamma^{\mu}V_{ij}d_{jL}+\mathrm{h.c.},
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $V_{ij}$
+\end_inset
+
+ is the Cabibbo-Kobayashi-Maskawa (
+\noun on
+CKM
+\noun default
+) matrix, a unitary matrix which can be parameterised by three mixing angles
+ and one CP-violating phase.
+ Apart from the 
+\begin_inset Formula $\theta_{S}$
+\end_inset
+
+ term, to be discussed shortly, this phase is the only source of CP violation
+ in the SM.
+\end_layout
+
+\begin_layout Standard
+There are three more possible terms involving the gauge field strengths
+ which have not been written yet.
+ These terms break time reversal and parity invariance:
+\begin_inset Formula 
+\begin{align*}
+\mathcal{L}_{\theta} & =\theta_{S}\frac{g_{S}^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}F^{A\mu\nu}F^{A\rho\lambda}+\theta_{W}\frac{g^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}W^{a\mu\nu}W^{a\rho\lambda}\\
+ & +\theta'\frac{g'^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}B^{\mu\nu}B^{\rho\lambda}.
+\end{align*}
+
+\end_inset
+
+The 
+\begin_inset Formula $\theta_{W}$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta'$
+\end_inset
+
+ terms can be eliminated by chiral rotations of the leptons and thus have
+ no physical effects, but the 
+\begin_inset Formula $\theta_{S}$
+\end_inset
+
+ term cannot be removed because the strong force couples equally to the
+ left and right handed quarks.
+ Nonzero 
+\begin_inset Formula $\theta_{S}$
+\end_inset
+
+ would give a source of strong CP violation but experiments on neutron dipole
+ moments constrain it to be 
+\begin_inset Formula $\left|\theta_{S}\right|\lesssim10^{-10}$
+\end_inset
+
+.
+ The unnatural smallness of 
+\begin_inset Formula $\theta_{S}$
+\end_inset
+
+ is one of the unexplained mysteries of the SM.
+\end_layout
+
+\begin_layout Standard
+Finally notice that the SM conserves baryon number 
+\begin_inset Formula $B$
+\end_inset
+
+ and lepton number 
+\begin_inset Formula $L$
+\end_inset
+
+ as defined by Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:standard-model-fermions"
+
+\end_inset
+
+.
+ These generate a 
+\emph on
+global 
+\emph default
+(not gauged) 
+\begin_inset Formula $U\left(1\right)_{B}\times U\left(1\right)_{L}$
+\end_inset
+
+ symmetry of the theory.
+ This is an accidental symmetry in that it was not put in by design, but
+ is rather a result of the fact that the only terms possible to write down
+ 
+\emph on
+happen
+\emph default
+ to obey it.
+ It is quite possible that 
+\begin_inset Formula $U\left(1\right)_{B}\times U\left(1\right)_{L}$
+\end_inset
+
+ is not an exact symmetry of the SM, and indeed quantum effects reduce the
+ global symmetry group to 
+\begin_inset Formula $U\left(1\right)_{B-L}$
+\end_inset
+
+.
+ This completes the writing down of the SM.
+\end_layout
+
+\begin_layout Standard
+Just because a classical Lagrangian has a certain symmetry does not mean
+ that the full quantum theory will also have that symmetry.
+ Indeed, symmetries of theories with chiral fermions coupled to gauge bosons
+ are spoiled 
+\emph on
+chiral anomalies
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Peskin1995,Shaposhnikov1991"
+
+\end_inset
+
+.
+ If a classical chiral symmetry is generated by a (in general, reducible)
+ representation matrix 
+\begin_inset Formula $T^{a}$
+\end_inset
+
+ acting on all of the fermions in the theory, which is conveniently written
+ as a column vector of left chiral fields 
+\begin_inset Formula $\Psi$
+\end_inset
+
+, then the anomaly is expressed by the non-conservation of the classical
+ current given by
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+Is this a factor of 2 too big? c.f.
+ Shifman 22.8, 34.19
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\partial_{\mu}j^{\mu5a}\equiv\partial_{\mu}\left(\bar{\Psi}\gamma^{\mu}T^{a}\frac{1-\gamma^{5}}{2}\Psi\right)=\sum_{i}-\frac{g_{i}^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\sigma}F_{i}^{b\mu\nu}F_{i}^{c\rho\sigma}\mathrm{Tr}\left[T^{a}\left\{ t^{b},t^{c}\right\} \right],
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $ $
+\end_inset
+
+the sum over 
+\begin_inset Formula $i$
+\end_inset
+
+ runs over all gauge groups in the theory and 
+\begin_inset Formula $t^{a}$
+\end_inset
+
+ are the generators of the gauge transformations in the (generally reducible)
+ representation acting on 
+\begin_inset Formula $\Psi$
+\end_inset
+
+.
+ The trace runs over all of the fermions in the theory.
+\end_layout
+
+\begin_layout Standard
+It is an important consistency condition that the anomalies for all chiral
+ currents coupled to gauge bosons vanish.
+ Otherwise, unphysical polarisation states of gauge bosons would be created
+ and unitarity constraints would be violated in scattering processes.
+ If one computes the group theory factors 
+\begin_inset Formula $\mathrm{Tr}\left[T^{a}\left\{ t^{b},t^{c}\right\} \right]$
+\end_inset
+
+ for all the gauge generators of the SM one finds that the theory is indeed
+ gauge anomaly free if fermions come in complete generations.
+\end_layout
+
+\begin_layout Standard
+The baryon and lepton currents, on the other hand, are anomalous.
+ Computing the anomaly coefficients from Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:standard-model-fermions"
+
+\end_inset
+
+ I find
+\begin_inset Formula 
+\begin{equation}
+\partial_{\mu}j^{\mu5B}=\partial_{\mu}j^{\mu5L}=-\frac{n_{g}g^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}+\frac{n_{g}g'^{2}}{8\pi^{2}}\epsilon_{\mu\nu\rho\sigma}B^{\mu\nu}B^{\rho\sigma},\label{eq:B-and-L-anomaly}
+\end{equation}
+
+\end_inset
+
+or, adding and subtracting,
+\begin_inset Formula 
+\begin{align*}
+\partial_{\mu}j^{\mu5\left(B-L\right)} & =0,\\
+\partial_{\mu}j^{\mu5\left(B+L\right)} & =-\frac{n_{g}g^{2}}{16\pi^{2}}\epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}+\frac{n_{g}g'^{2}}{4\pi^{2}}\epsilon_{\mu\nu\rho\sigma}B^{\mu\nu}B^{\rho\sigma},
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $n_{g}=3$
+\end_inset
+
+ is the number of fermion generations.
+ Thus 
+\begin_inset Formula $B+L$
+\end_inset
+
+ is 
+\emph on
+not
+\emph default
+ a conserved quantum number of the SM, but 
+\begin_inset Formula $B-L$
+\end_inset
+
+ 
+\emph on
+is
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+To illustrate the mechanism of baryon number violation I will simplify the
+ SM somewhat.
+ It will turn out that the abelian field 
+\begin_inset Formula $B_{\mu}$
+\end_inset
+
+ plays no qualitative role in what follows, so I can take 
+\begin_inset Formula $\theta_{W}\to0$
+\end_inset
+
+, or equivalently 
+\begin_inset Formula $g'\to0$
+\end_inset
+
+, decoupling the 
+\begin_inset Formula $B_{\mu}$
+\end_inset
+
+ field from the theory.
+ I can also take 
+\begin_inset Formula $n_{g}=1$
+\end_inset
+
+ and ignore the Higgs-Yukawa couplings of the fermions as these play no
+ qualitative role.
+ The mechanism of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ violation is topological in nature, invisible to perturbation theory.
+ At zero temperature it proceeds by quantum tunnelling between gauge vacua
+ with different topologies.
+ A potential barrier separates these field configurations and the leading
+ contribution to the transition rate at zero temperature comes from the
+ semi-classical tunnelling trajectory called an 
+\emph on
+instanton
+\emph default
+, discovered by 't Hooft and Polyakov.
+ Later, Kuzmin, Rubakov and Shaposhnikov argued that at finite temperature
+ the transition proceeds by classical fluctuations 
+\emph on
+over the barrier
+\emph default
+ at a rate increasing exponentially with temperature, finally becoming unsuppres
+sed entirely at sufficiently high temperature.
+ The height of the barrier can be computed by finding the (unstable) configurati
+on of the gauge and Higgs fields that maximises the energy atop the barrier.
+ These configurations are called 
+\emph on
+sphalerons
+\emph default
+ and were discovered by Klinkhamer and Manton 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Klinkhamer1984"
+
+\end_inset
+
+.
+ Further early analysis of these configurations in the SM were carried out
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Arnold1987,Arnold1988"
+
+\end_inset
+
+.
+ Pedagogical discussions can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shaposhnikov1991,Shifman2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The topological nature of 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ violating transitions can be seen by integrating 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:B-and-L-anomaly"
+
+\end_inset
+
+ and examining what gauge field configurations can give a non-zero contribution
+ to the right hand side:
+\begin_inset Formula 
+\begin{align*}
+\Delta B=\Delta L & =\int\mathrm{d}^{4}x\ \partial_{\mu}j^{\mu5\left(B,L\right)}\\
+ & =-\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{4}x\ \epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}\\
+ & =\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{4}x\ \partial_{\mu}K^{\mu},
+\end{align*}
+
+\end_inset
+
+where
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\lang british
+Factor of 2 here? c.f.
+ Shifman eq.
+ 18.12 (also note 
+\begin_inset Formula $g\to-g$
+\end_inset
+
+ there c.f.
+ eq.
+ 18.2); Update 25/11/2013 this seems to work with 
+\begin_inset Formula $\mathcal{K}=n_{w}$
+\end_inset
+
+, haven't yet checked with the anomaly eq.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+K^{\mu}=4\epsilon^{\mu\nu\alpha\beta}\left(W_{\nu}^{a}\partial_{\alpha}W_{\beta}^{a}-\frac{g}{3}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\right),
+\]
+
+\end_inset
+
+is the 
+\emph on
+Chern-Simons
+\emph default
+ current.
+ The 
+\emph on
+Chern-Simons number
+\emph default
+ 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ is defined as the charge corresponding to this current:
+\begin_inset Formula 
+\[
+\mathcal{K}=\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{3}x\ K^{0}.
+\]
+
+\end_inset
+
+Then 
+\begin_inset Formula $\Delta B=\Delta L=\Delta\mathcal{K}$
+\end_inset
+
+, i.e.
+ only Chern-Simons number changing transitions contribute to baryon and
+ lepton number violation.
+\end_layout
+
+\begin_layout Standard
+Consider for the moment vacuum field configurations.
+ In this case the gauge fields must be pure gauge: 
+\begin_inset Formula $W_{\mu}=\frac{i}{g}U^{\dagger}\partial_{\mu}U$
+\end_inset
+
+, for 
+\begin_inset Formula $U\in SU\left(2\right)$
+\end_inset
+
+.
+ All of these states have zero energy.
+ Choose the static gauge 
+\begin_inset Formula $W_{0}=0$
+\end_inset
+
+ for simplicity, implying 
+\begin_inset Formula $U\left(\vec{x},t\right)=U\left(\vec{x}\right)$
+\end_inset
+
+.
+ The vacuum configurations must be connectible by trajectories with finite
+ action (any states separated by an infinite action are physically inaccessible,
+ even by quantum tunnelling.) This sets the boundary condition 
+\begin_inset Formula $U\to\text{const.}$
+\end_inset
+
+ as 
+\begin_inset Formula $\left|\vec{x}\right|\to\infty$
+\end_inset
+
+ (
+\begin_inset Formula $U$
+\end_inset
+
+ going to any constant matrix is acceptable, and all choices are physically
+ equivalent).
+ This boundary condition is the same as compactifying the space 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ by adding a point at infinity, resulting in a space topologically equivalent
+ (homeomorphic) to the three-sphere 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ But the group 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ is also homeomorphic to 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+.
+ This can be seen by writing a general matrix in 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+U=\left(\begin{array}{cc}
+a+id & b+ic\\
+-b+ic & a-id
+\end{array}\right)\in SU\left(2\right),
+\]
+
+\end_inset
+
+for real 
+\begin_inset Formula $a,b,c,d$
+\end_inset
+
+ and noting that the condition 
+\begin_inset Formula $\det\left(U\right)=1$
+\end_inset
+
+ is equivalent to 
+\begin_inset Formula $a^{2}+b^{2}+c^{2}+d^{2}=1$
+\end_inset
+
+.
+ This defines a three-sphere of unit radius.
+ Hence 
+\begin_inset Formula $U:\left(\mathbb{R}^{3}\cup\infty\right)\to SU\left(2\right)$
+\end_inset
+
+ is a mapping of three-spheres 
+\begin_inset Formula $S^{3}\to S^{3}$
+\end_inset
+
+.
+ These mappings fall into topologically distinct classes classified by the
+ third homotopy group of the three-sphere 
+\begin_inset Formula $\pi_{3}\left(S^{3}\right)=\mathbb{Z}$
+\end_inset
+
+.
+ The number 
+\begin_inset Formula $n_{w}\in\pi_{3}\left(S^{3}\right)$
+\end_inset
+
+ associated in this way to a mapping is called 
+\emph on
+winding number
+\emph default
+ and counts the number of times the map 
+\begin_inset Formula $U$
+\end_inset
+
+ winds around the group 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+.
+ Both real space and the group space are oriented so it makes sense to talk
+ about negative winding numbers.
+ Maps with the same winding number can be continuously deformed to each
+ other by a 
+\emph on
+small gauge transformation
+\emph default
+, while 
+\emph on
+large gauge transformations
+\emph default
+ change the winding number by an integer.
+\end_layout
+
+\begin_layout Standard
+The Chern-Simons number of the vacuum configurations can be evaluated as
+ follows.
+ First rewrite the Chern-Simons current in terms of 
+\begin_inset Formula $U$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{align*}
+K^{\mu} & =4\epsilon^{\mu\nu\alpha\beta}W_{\nu}^{a}\partial_{\alpha}W_{\beta}^{a}-4\epsilon^{\mu\nu\alpha\beta}\frac{g}{3}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\\
+ & =2\epsilon^{\mu\nu\alpha\beta}W_{\nu}^{a}W_{\alpha\beta}^{a}+\frac{2}{3}g\epsilon^{\mu\nu\alpha\beta}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\\
+ & =-\frac{16}{3g^{2}}i\epsilon^{\mu\nu\alpha\beta}\epsilon^{abc}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\alpha}U\tau^{b}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\beta}U\tau^{c}\right)\\
+ & =-\frac{8}{3g^{2}}\epsilon^{\mu\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right).
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To establish the last equality a useful identity is 
+\begin_inset Formula 
+\begin{align*}
+\epsilon^{abc}\mathrm{Tr}\left(A\tau^{a}\right)\mathrm{Tr}\left(B\tau^{b}\right)\mathrm{Tr}\left(C\tau^{c}\right) & =-\frac{1}{4}i\mathrm{Tr}\left(A\right)\mathrm{Tr}\left(B\right)\mathrm{Tr}\left(C\right)+\frac{1}{4}i\mathrm{Tr}\left(A\right)\mathrm{Tr}\left(BC\right)\\
+ & +\frac{1}{4}i\mathrm{Tr}\left(B\right)\mathrm{Tr}\left(AC\right)+\frac{1}{4}i\mathrm{Tr}\left(C\right)\mathrm{Tr}\left(AB\right)\\
+ & -\frac{1}{2}i\mathrm{Tr}\left(ABC\right),
+\end{align*}
+
+\end_inset
+
+for any 
+\begin_inset Formula $A,B,C\in SU\left(2\right)$
+\end_inset
+
+, which can be proven using the further useful identities 
+\begin_inset Formula $\mathrm{Tr}\left(\tau^{a}\tau^{b}\tau^{c}\right)=\frac{i}{4}\epsilon^{abc}$
+\end_inset
+
+ and the Fierz identity 
+\begin_inset Formula $\tau_{ij}^{a}\tau_{kl}^{a}=-\frac{1}{4}\delta_{ij}\delta_{kl}+\frac{1}{2}\delta_{ik}\delta_{jl}$
+\end_inset
+
+.
+ Applying this with 
+\begin_inset Formula $A=U^{\dagger}\partial_{\nu}U$
+\end_inset
+
+ etc.
+ and noting that the antisymmetry of 
+\begin_inset Formula $\epsilon^{\mu\nu\alpha\beta}$
+\end_inset
+
+ kills all but the last term gives the desired result.
+ Finally evaluate the Chern-Simons number
+\begin_inset Formula 
+\begin{align*}
+\mathcal{K} & =\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{3}x\ K^{0}\\
+ & =-\frac{1}{12\pi^{2}}\int\mathrm{d}^{3}x\ \epsilon^{0\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right)\\
+ & =\frac{1}{2\pi^{2}}\int\mathrm{d}^{3}x\ \frac{1}{6}\epsilon^{\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right)\\
+ & =\frac{1}{2\pi^{2}}\int\mathrm{d}^{3}x\ \frac{\partial^{3}\Omega}{\partial^{3}x},
+\end{align*}
+
+\end_inset
+
+where used 
+\begin_inset Formula $\epsilon^{0\nu\alpha\beta}=\epsilon^{\nu\alpha\beta}$
+\end_inset
+
+ for 
+\begin_inset Formula $\nu,\alpha,\beta=1,2,3$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+\frac{\partial^{3}\Omega}{\partial^{3}x}\equiv\frac{1}{6}\epsilon^{\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right),
+\]
+
+\end_inset
+
+is the natural 
+\emph on
+oriented
+\emph default
+ 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ invariant group volume element (the 
+\emph on
+Haar measure
+\emph default
+).
+ The integral then measures the oriented volume swept out in the group as
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ varies over all space; and since the volume of the group is the volume
+ of 
+\begin_inset Formula $S^{3}$
+\end_inset
+
+ which is 
+\begin_inset Formula $2\pi^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ counts the number of times the full group is swept out as 
+\begin_inset Formula $x$
+\end_inset
+
+ varies over all space.
+ Thus I find that 
+\begin_inset Formula $\mathcal{K}=n_{w}$
+\end_inset
+
+, the Chern-Simons number is just the winding number of the gauge field
+ configuration.
+\end_layout
+
+\begin_layout Standard
+A gauge vacuum with nontrivial winding can be found by choosing
+\begin_inset Formula 
+\[
+U=\exp\left(-i\tau^{a}\frac{x^{a}}{r}f\left(r\right)\right),
+\]
+
+\end_inset
+
+and noting the boundary conditions demand that 
+\begin_inset Formula $f\left(0\right)=2\pi n$
+\end_inset
+
+ and 
+\begin_inset Formula $f\left(\infty\right)=2\pi m$
+\end_inset
+
+ for integers 
+\begin_inset Formula $n,m$
+\end_inset
+
+.
+ I illustrate the calculation of the Chern-Simons number of this configuration
+ because it is hard to find in the literature and it is only straightforward
+ once one knows where to start.
+ It is easiest to use the form of 
+\begin_inset Formula $K^{0}$
+\end_inset
+
+ in terms of 
+\begin_inset Formula $\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)$
+\end_inset
+
+ rather than the form involving the group volume element.
+ Also note that 
+\begin_inset Formula 
+\begin{align*}
+K^{0} & \propto\epsilon^{0\nu\alpha\beta}\epsilon^{abc}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\alpha}U\tau^{b}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\beta}U\tau^{c}\right)\\
+ & =6\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right],
+\end{align*}
+
+\end_inset
+
+thinking of 
+\begin_inset Formula $\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)$
+\end_inset
+
+ as a 
+\begin_inset Formula $3\times3$
+\end_inset
+
+ matrix on the 
+\begin_inset Formula $\nu,a$
+\end_inset
+
+ indices.
+ After a bit of algebra I find
+\begin_inset Formula 
+\[
+\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)=-i\frac{1}{2}\frac{x^{a}}{r}\partial_{\nu}f-i\partial_{\nu}\left(\frac{x^{a}}{r}\right)\sin\left(\frac{f}{2}\right)\cos\left(\frac{f}{2}\right)+i\epsilon^{abc}\frac{x^{b}}{r}\partial_{\nu}\left(\frac{x^{c}}{r}\right)\sin^{2}\left(\frac{f}{2}\right),
+\]
+
+\end_inset
+
+and
+\begin_inset Formula 
+\[
+\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right]=\frac{i}{4r^{2}}\left(1-\cos f\right)f',
+\]
+
+\end_inset
+
+leading to
+\begin_inset Formula 
+\begin{align*}
+\mathcal{K} & =-\frac{i}{2\pi^{2}}\int\mathrm{d}^{3}x\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right]\\
+ & =-\frac{i}{2\pi^{2}}\int\mathrm{d}^{3}x\frac{if'\left(1-\cos f\right)}{4r^{2}}\\
+ & =\frac{1}{2\pi}\int_{0}^{\infty}\mathrm{d}r\ f'\left(1-\cos f\right)\\
+ & =\frac{1}{2\pi}\left[f-\sin f\right]_{0}^{\infty}\\
+ & =m-n.
+\end{align*}
+
+\end_inset
+
+Thus the basic winding configuration has 
+\begin_inset Formula $m=1$
+\end_inset
+
+ and 
+\begin_inset Formula $n=0$
+\end_inset
+
+.
+ Note that only the boundary values of 
+\begin_inset Formula $f$
+\end_inset
+
+ enter into 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+, confirming the topological nature of the Chern-Simons number.
+\end_layout
+
+\begin_layout Standard
+Bringing the argument together: there is an infinitude of gauge vacua characteri
+sed by the topological invariant 
+\begin_inset Formula $n_{w}$
+\end_inset
+
+.
+ If there is a transition from one gauge vacuum to another which changes
+ the winding number by 
+\begin_inset Formula $\Delta n_{w}$
+\end_inset
+
+ then 
+\begin_inset Formula $\Delta B=\Delta L=\Delta\mathcal{K}=\Delta n_{w}$
+\end_inset
+
+.
+ More generally 
+\begin_inset Formula $\Delta B=\Delta L=n_{g}\Delta\mathcal{K}=n_{g}\Delta n_{w}$
+\end_inset
+
+.
+ Note that the relation 
+\begin_inset Formula $\mathcal{K}=n_{w}$
+\end_inset
+
+ only holds for vacuum states.
+ For excited states 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ varies continuous and is not necessarily an integer.
+ Thus I can sketch the potential energy along the 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+direction
+\begin_inset Quotes erd
+\end_inset
+
+ in field space as shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:chern-simons-potential-su2-theory"
+
+\end_inset
+
+.
+ Note that this figure is only illustrative.
+ To find an honest expression for the potential energy one needs to develop
+ a one parameter ansatz for the gauge and Higgs fields which passes through
+ the vacuum and sphaleron field configurations at appropriate parameter
+ values and compute 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ and the energy of the field configuration as a function of the parameter.
+ The resulting figure is somewhat arbitrary, depending on the choice of
+ ansatz.
+ Physically, there are many paths over the ridge in field space represented
+ by the sphaleron.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Confirmation of Candidature materials/chern-simons-potential.eps
+	width 80col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:chern-simons-potential-su2-theory"
+
+\end_inset
+
+Potential energy along the Chern-Simons number 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+direction
+\begin_inset Quotes erd
+\end_inset
+
+ in (infinite dimensional) field space for an 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ gauge theory.
+ Degenerate vacua correspond to integer values of 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+, which is then equal to the winding number of the gauge field.
+ Vertical scale is arbitrary.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The height of the barrier and the sphaleron solution are found from a static
+ configuration of the gauge and Higgs fields that extremises the energy
+\begin_inset Formula 
+\[
+E=\int\mathrm{d}^{3}x\ \frac{1}{4}W_{ij}^{a}W_{ij}^{a}+\left(D_{i}\Phi\right)^{\dagger}D_{i}\Phi+V\left(\Phi^{\dagger}\Phi\right),
+\]
+
+\end_inset
+
+in the 
+\begin_inset Formula $W_{0}^{a}=0$
+\end_inset
+
+ gauge, which is defined up to a time-independent gauge transformation.
+ The sphaleron is an unstable equilibrium solution of the equations of motion,
+ representing a saddle point of 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ The suitable ansatz was first discovered by Klinkhamer and Manton 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Klinkhamer1984"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+W_{i}^{a} & =\frac{1}{g}\epsilon^{iak}\frac{x_{k}}{r}f\left(r\right),\\
+\Phi & =\frac{x_{k}}{r}\sigma_{k}\left(\begin{array}{c}
+1\\
+0
+\end{array}\right)h\left(r\right),
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $f\left(r\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $h\left(r\right)$
+\end_inset
+
+ are profile functions to be determined from the equations of motion and
+ satisfying the boundary conditions 
+\begin_inset Formula $f,h\to0$
+\end_inset
+
+ as 
+\begin_inset Formula $r\to0$
+\end_inset
+
+ and 
+\begin_inset Formula $f\to-2/r+\mathcal{O}\left(r^{-3/2}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $h\to v+\mathcal{O}\left(r^{-3/2}\right)$
+\end_inset
+
+ as 
+\begin_inset Formula $r\to\infty$
+\end_inset
+
+ in order for the energy to be finite.
+ It is also convenient to introduce dimensionless variables 
+\begin_inset Formula $\rho=gvr$
+\end_inset
+
+, 
+\begin_inset Formula $F=f/gv$
+\end_inset
+
+ and 
+\begin_inset Formula $H=h/v$
+\end_inset
+
+, in terms of which the energy can be written as
+\begin_inset Formula 
+\begin{align*}
+E & =\frac{4\pi v}{g}\int_{0}^{\infty}\mathrm{d}\rho\ \rho^{2}\left(F'\right)^{2}+2F^{2}+2\rho F^{3}+\frac{1}{2}\rho^{2}F^{4}\\
+ & +\rho^{2}\left(H'\right)^{2}+2H^{2}\left(1+\rho\frac{F}{2}\right)^{2}+\frac{1}{2}\frac{\lambda^{2}}{g^{2}}\rho^{2}\left(H^{2}-1\right)^{2}.
+\end{align*}
+
+\end_inset
+
+The first line is the energy of the gauge field and the second line is the
+ energy of the Higgs field.
+ The functions 
+\begin_inset Formula $F\left(\rho\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $H\left(\rho\right)$
+\end_inset
+
+ can be found by extremizing the integral (numerically: analytical solutions
+ are not known) and the resulting field profiles depend only on the ratio
+ 
+\begin_inset Formula $\lambda^{2}/g^{2}$
+\end_inset
+
+.
+ The energy can be written
+\begin_inset Formula 
+\[
+E=\frac{4\pi v}{g}C\left(\frac{\lambda^{2}}{g^{2}}\right),
+\]
+
+\end_inset
+
+where the numerical factor 
+\begin_inset Formula $C\left(\lambda^{2}/g^{2}\right)$
+\end_inset
+
+ has been estimated in the original literature.
+ It's precise value is not important here, but 
+\begin_inset Formula $C\sim\mathcal{O}\left(1-3\right)$
+\end_inset
+
+ for the whole range of 
+\begin_inset Formula $\lambda^{2}/g^{2}$
+\end_inset
+
+ from 
+\begin_inset Formula $0$
+\end_inset
+
+ to 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+ Thus the height of the barrier at zero temperature is of the order of 
+\begin_inset Formula $10\ \mathrm{TeV}$
+\end_inset
+
+.
+ One can thus think of the sphaleron, very roughly, as an unstable bound
+ configuration with of the order of 30 each of 
+\begin_inset Formula $W^{+},W^{-},Z$
+\end_inset
+
+ and 10 Higgs particles in a region 
+\begin_inset Formula $\sim10^{-17}\ \mathrm{m}$
+\end_inset
+
+ across.
+ In reality the sphaleron is a coherent state, not a particle number eigenstate,
+ so this picture is at best qualitative.
+ However, this illustrates that, while 
+\begin_inset Formula $10\ \mathrm{TeV}$
+\end_inset
+
+ might not sound like a terribly high energy for modern colliders, sphalerons
+ are difficult if not impossible to produce at collider experiments 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shifman2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The second Sakharov criterion requires that the early universe depart from
+ thermal equilibrium at some point.
+ This is achieved in EWBG by a first order phase transition associated with
+ electroweak symmetry breaking.
+ Recall that if the Higgs field(s) has a nonvanishing expectation value
+ the electroweak symmetry is said to be broken, while if the expectation
+ value is zero the symmetry is manifest or unbroken.
+ The behaviour of the Higgs field in equilibrium can be determined by minimizing
+ the effective potential, given by the Legendre transform of the free energy
+ 
+\begin_inset Formula $F\left[J\right]=-k_{B}T\ln Z\left[J\right]$
+\end_inset
+
+, where 
+\begin_inset Formula $Z\left[J\right]$
+\end_inset
+
+ is the partition function in the presence of an external source 
+\begin_inset Formula $J$
+\end_inset
+
+ for the Higgs field
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It is conceptually cleaner to introduce a source for the gauge invariant
+ operator 
+\begin_inset Formula $\hat{\Phi}^{\dagger}\hat{\Phi}$
+\end_inset
+
+ rather than 
+\begin_inset Formula $\hat{\Phi}$
+\end_inset
+
+ itself, but I go with tradition here.
+ The gauge dependence of the resulting treatment is a subtle and interesting
+ question.
+ This issue, and the fact that 
+\begin_inset Quotes eld
+\end_inset
+
+spontaneous gauge symmetry breaking
+\begin_inset Quotes erd
+\end_inset
+
+ is a terrible misnomer, is well appreciated by the lattice gauge theory
+ community, where the average of any local gauge-variant operator is automatical
+ly zero whether in the symmetry broken regime or not 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Straumann2004"
+
+\end_inset
+
+.
+ However, unfortunately, the confused terminology and perhaps the confusion
+ itself perpetuates in the broader particle physics community.
+\end_layout
+
+\end_inset
+
+, given by
+\begin_inset Formula 
+\[
+Z\left[J\right]=\mathrm{Tr}\exp\left(-\beta\hat{H}_{SM}-\beta\int\mathrm{d}^{3}x\ J\left(x\right)\hat{\Phi}\left(x\right)\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\hat{H}_{SM}$
+\end_inset
+
+ is the Hamiltonian of the SM and the trace is appropriately gauge fixed
+ (I will not worry about this aspect for now).
+ Note that this can be cast as a 
+\emph on
+Euclidean
+\emph default
+ or 
+\emph on
+imaginary time
+\emph default
+ functional integral by comparing the exponent 
+\begin_inset Formula $-\beta\hat{H}_{SM}$
+\end_inset
+
+ to the usual one for real time evolution 
+\begin_inset Formula $-i\hat{H}_{SM}t/\hbar$
+\end_inset
+
+.
+ The functional integral runs over field configurations which are periodic
+ (because of the trace) in imaginary time with period 
+\begin_inset Formula $-i\beta\hbar$
+\end_inset
+
+.
+ This leads to the 
+\emph on
+Matsubara
+\emph default
+ formalism for finite temperature quantum field theory (discussed extensively
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006,Zinn-Justin1990"
+
+\end_inset
+
+), which is subsumed as a special case of the nonequilibrium techniques
+ discussed below.
+ However, following standard treatments, I will compute the equilibrium
+ free energy and attempt to deduce real time behaviour from that.
+\end_layout
+
+\begin_layout Standard
+Taking the functional derivative of 
+\begin_inset Formula $F\left[J\right]$
+\end_inset
+
+ with respect to 
+\begin_inset Formula $J\left(x\right)$
+\end_inset
+
+ gives the expectation value of the Higgs field:
+\begin_inset Formula 
+\[
+\frac{\delta}{\delta J\left(x\right)}F\left[J\right]=-\frac{k_{B}T}{Z\left[J\right]}\frac{\delta}{\delta J\left(x\right)}Z\left[J\right]=\left\langle \hat{\Phi}\left(x\right)\right\rangle \equiv\phi\left(x\right).
+\]
+
+\end_inset
+
+Thus, defining the Legendre transform
+\begin_inset Formula 
+\[
+\Gamma\left[\phi\right]=\int\mathrm{d}^{3}x\ \phi\left(x\right)J\left(x\right)-F\left[J\right],
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $J$
+\end_inset
+
+ is determined from 
+\begin_inset Formula $\phi$
+\end_inset
+
+, I find
+\begin_inset Formula 
+\[
+\frac{\delta}{\delta\phi\left(y\right)}\Gamma\left[\phi\right]=J\left(y\right)+\int\mathrm{d}^{3}x\ \phi\left(x\right)\frac{\delta J\left(x\right)}{\delta\phi\left(y\right)}-\int\mathrm{d}^{3}x\ \frac{\delta J\left(x\right)}{\delta\phi\left(y\right)}\frac{\delta}{\delta J\left(x\right)}F\left[J\right]=J\left(y\right),
+\]
+
+\end_inset
+
+thus the expectation value of the Higgs field of the original source free
+ (
+\begin_inset Formula $J=0$
+\end_inset
+
+) theory is found by extremizing 
+\begin_inset Formula $\Gamma\left[\phi\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\Gamma\left[\phi\right]$
+\end_inset
+
+ is the (Euclidean) 
+\emph on
+effective action
+\emph default
+ of the Higgs field.
+ The effective potential is the lowest order term in the derivative expansion
+ 
+\begin_inset Formula $\Gamma\left[\phi\right]=-\int\mathrm{d}^{3}x\ V_{\mathrm{eff}}\left(\phi\right)+\int\mathrm{d}^{3}x\ Z_{\phi}\left(\phi\right)\partial_{\mu}\phi\partial^{\mu}\phi+\cdots$
+\end_inset
+
+, so it can be computed using a constant 
+\begin_inset Formula $\phi\left(x\right)=\phi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The effective potential can be computed in a semiclassical expansion in
+ powers of 
+\begin_inset Formula $\hbar$
+\end_inset
+
+.
+ The lowest order term is just the classical Higgs potential 
+\begin_inset Formula $V^{\left(0\right)}\left(\phi\right)=\mu^{2}\phi^{2}+\frac{\lambda^{2}}{2}\phi^{4}$
+\end_inset
+
+.
+ The first correction is due to Feynman diagrams with one loop, which can
+ be summed up to 
+\begin_inset Formula $V^{\left(1\right)}\left(\phi\right)=V_{\mathrm{vac}}^{\left(1\right)}\left(\phi\right)+V^{\left(1\right)}\left(\phi,T\right)$
+\end_inset
+
+, where 
+\begin_inset Formula $V_{\mathrm{vac}}^{\left(1\right)}\left(\phi\right)$
+\end_inset
+
+ is the contribution present at 
+\begin_inset Formula $T=0$
+\end_inset
+
+ which serves to renormalise
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+I am ignoring the logarithmic Coleman-Weinberg terms, which can be justified
+ by choosing an appropriate renormalisation scale.
+\end_layout
+
+\end_inset
+
+ the parameters in 
+\begin_inset Formula $V^{\left(0\right)}\left(\phi\right)$
+\end_inset
+
+, and 
+\begin_inset Formula $V^{\left(1\right)}\left(\phi,T\right)$
+\end_inset
+
+ is the temperature dependent correction which is 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Konstandin2013,Dine1992,Kapusta2006"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+V^{\left(1\right)}\left(\phi,T\right)=\frac{T^{4}}{2\pi^{2}}\sum_{i}\mp\int_{0}^{\infty}\mathrm{d}x\ x^{2}\log\left[1\pm\exp\left(-\sqrt{x^{2}+m_{i}^{2}\beta^{2}}+\beta\mu_{i}\right)\right],
+\]
+
+\end_inset
+
+where sum runs over all species, the upper(lower) signs are for fermions(bosons)
+ respectively and 
+\begin_inset Formula $m_{i},\mu_{i}$
+\end_inset
+
+ are the mass and chemical potential of the species.
+ I will assume that 
+\begin_inset Formula $\mu_{i}=0$
+\end_inset
+
+, i.e.
+ that the net value of all conserved charges vanishes.
+ In particular I are assuming that the universe as a whole is neutral and
+ that 
+\begin_inset Formula $B-L=0$
+\end_inset
+
+.
+ This latter assumption is justified by the fact that the baryon asymmetry
+ 
+\begin_inset Formula $\eta\sim6\times10^{-10}$
+\end_inset
+
+ is small and is expected to have only a small impact on the thermal properties
+ of the early plasma.
+ For a species obtaining mass from the Higgs 
+\begin_inset Formula $m\sim g\phi$
+\end_inset
+
+ or 
+\begin_inset Formula $m\sim y\phi$
+\end_inset
+
+ for gauge bosons and fermions respectively.
+ For a quantitative study these integrals can be evaluated numerically,
+ but the physics can be elucidated by performing a high temperature expansion
+ for 
+\begin_inset Formula $m\ll T$
+\end_inset
+
+ of the form 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\Delta V_{\text{fermions}}^{\left(1\right)} & =-\frac{7\pi^{2}}{720}T^{4}+\frac{1}{48}m^{2}T^{2}+\mathcal{O}\left(m^{4}\right),\\
+\Delta V_{\text{bosons}}^{\left(1\right)} & =-\frac{\pi^{2}}{90}T^{4}+\frac{1}{24}m^{2}T^{2}-\frac{1}{12\pi}m^{3}T+\mathcal{O}\left(m^{4}\right).
+\end{align*}
+
+\end_inset
+
+The terms independent of the mass 
+\begin_inset Formula $m$
+\end_inset
+
+ give a 
+\begin_inset Formula $\phi$
+\end_inset
+
+ independent contribution to the potential, thus having no impact on the
+ derivative 
+\begin_inset Formula $\mathrm{d}V/\mathrm{d}\phi$
+\end_inset
+
+ or the location of the extrema, hence I ignore them.
+\end_layout
+
+\begin_layout Standard
+To illustrate a first order phase transition I shall assume (incorrectly)
+ that 
+\begin_inset Formula $m_{H}<m_{W},m_{Z},m_{t}$
+\end_inset
+
+, i.e.
+ that the Higgs boson is lighter than the 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+, 
+\begin_inset Formula $Z$
+\end_inset
+
+ and top quarks, and ignore the contributions of all particles lighter than
+ the 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ bosons since the heavy particles have a correspondingly greater coupling
+ to the Higgs field.
+ The assumption that the Higgs is light allows the use of perturbation theory.
+ Higher order loop corrections involving 
+\begin_inset Formula $W^{\pm}$
+\end_inset
+
+ bosons come in with an expansion parameter 
+\begin_inset Formula $\sim m_{H}^{2}/m_{W}^{2}$
+\end_inset
+
+ and perturbation theory breaks down for 
+\begin_inset Formula $m_{H}\gtrsim m_{W}$
+\end_inset
+
+.
+ Lattice computations have shown that the line of first order phase transitions
+ terminates in a second order critical point at 
+\begin_inset Formula $m_{H}\sim70\ \mathrm{GeV}$
+\end_inset
+
+ and for the physical Higgs mass 
+\begin_inset Formula $m_{h}\sim125\ \mathrm{GeV}$
+\end_inset
+
+ there is no phase transition between the broken and symmetric phases, only
+ a smooth crossover 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The effective potential in this case is shown in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-order-transition-free-energy"
+
+\end_inset
+
+.
+ To leading order in the loop and high 
+\begin_inset Formula $T$
+\end_inset
+
+ expansions 
+\begin_inset Formula $V_{\mathrm{eff}}\left(\phi,T\right)=\left(-\frac{m_{h}^{2}}{2v^{2}}+a\frac{T^{2}}{v^{2}}\right)\frac{\phi^{2}}{v^{2}}-b\frac{T}{v}\frac{\phi^{3}}{v^{3}}+\frac{m_{h}^{2}}{4v^{2}}\frac{\phi^{4}}{v^{4}}$
+\end_inset
+
+ where 
+\begin_inset Formula $a=\frac{1}{8}y_{t}^{2}+\frac{1+2\cos^{2}\theta_{W}}{16\cos^{2}\theta_{W}}g^{2}\sim0.2$
+\end_inset
+
+ is not to be confused with the cosmological scale factor and 
+\begin_inset Formula $b=\frac{1+2\cos^{3}\theta_{W}}{8\pi\sqrt{2}\cos^{3}\theta_{W}}g^{3}\sim0.03$
+\end_inset
+
+.
+ In the plots I take 
+\begin_inset Formula $m_{h}=0.1v\sim18\ \mathrm{GeV}$
+\end_inset
+
+ for illustrative purposes.
+ At temperatures above the upper spinodal temperature 
+\begin_inset Formula $T_{+}=\frac{2m_{h}^{2}}{\sqrt{8am_{h}^{2}-9b^{2}v^{2}}}\sim0.225v$
+\end_inset
+
+ the minimum at 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+ is the only critical point of the effective potential and the electroweak
+ symmetry is manifest.
+ Between the upper and lower spinodal temperatures, 
+\begin_inset Formula $T_{+}>T>T_{-}=\frac{m_{h}}{\sqrt{2a}}\sim0.158v$
+\end_inset
+
+, a second minimum develops at 
+\begin_inset Formula $\phi\neq0$
+\end_inset
+
+ which is separated by a barrier from the minimum at 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+.
+ At the critical temperature 
+\begin_inset Formula $T_{\star}\sim0.213v$
+\end_inset
+
+ the new minimum is degenerate with the minimum at 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+.
+ At temperatures 
+\begin_inset Formula $T<T_{\star}$
+\end_inset
+
+ the broken phase is preferred and for 
+\begin_inset Formula $T<T_{-}$
+\end_inset
+
+ the coefficient of 
+\begin_inset Formula $\phi^{2}$
+\end_inset
+
+ in 
+\begin_inset Formula $V_{\mathrm{eff}}$
+\end_inset
+
+ vanishes and 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+ ceases to be a minimum of the effective potential altogether.
+ The history of the universe in this scenario is as follows.
+ At 
+\begin_inset Formula $T>T_{+}$
+\end_inset
+
+ the electroweak symmetry is unbroken.
+ As the universe expands the temperature drops to 
+\begin_inset Formula $T_{\star}<T<T_{+}$
+\end_inset
+
+.
+ In this regime bubbles of broken phase can form by thermal fluctuations
+ but these are unstable and rapidly disappear.
+ At 
+\begin_inset Formula $T=T_{\star}$
+\end_inset
+
+ the interior of the bubbles of broken phase are degenerate with the unbroken
+ phase, but there is an energy cost associated with the bubble walls that
+ still renders them unstable.
+ At 
+\begin_inset Formula $T_{-}<T<T_{\star}$
+\end_inset
+
+ the broken phase has an energy advantage 
+\begin_inset Formula $\Delta V=-V_{\mathrm{eff}}\left(\phi_{\mathrm{min}},T\right)$
+\end_inset
+
+ and a spherical bubble of broken phase has an energy
+\begin_inset Formula 
+\[
+E=4\pi R^{2}\sigma-\frac{4\pi}{3}R^{3}\Delta V,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is the surface tension of the bubble wall.
+ The bubble will expand if it is larger than the critical size 
+\begin_inset Formula $R_{\star}=2\sigma/\Delta V$
+\end_inset
+
+.
+ The rate of bubble formation is 
+\begin_inset Formula $\Gamma\sim\exp\left(-E_{\star}/T\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $E_{\star}=\frac{16\pi}{3}\frac{\sigma^{3}}{\Delta V^{2}}$
+\end_inset
+
+ is the energy of the critical bubble (I will not attempt to estimate the
+ prefactor here, the general problem is unsolved).
+ Bubble nucleation becomes cosmologically significant when this rate exceeds
+ the Hubble rate, which requires that 
+\begin_inset Formula $T$
+\end_inset
+
+ drop sufficiently below 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+.
+ At this time bubbles begin to form and expand, eventually filling the universe.
+ The volume fraction of broken phase as a function of time and the completion
+ time of the phase transition can be computed from a simple macroscopic
+ model once a few plasma parameters are known, namely the latent heat, surface
+ tension and wall velocity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rubakov,Huber2013"
+
+\end_inset
+
+.
+ The wall velocity in turn can be calculated using a hydrodynamic theory
+ given the friction on the bubble wall, at least for sufficiently large
+ bubbles in the thin wall limit 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Huber2013"
+
+\end_inset
+
+.
+ It is the job of a microphysical model to calculate the wall friction,
+ latent heat and surface tension of a phase transition bubble.
+\end_layout
+
+\begin_layout Standard
+The friction on bubble walls is the result of particles in the unbroken
+ phase scattering on the bubble wall and being driven out of local thermal
+ equilibrium.
+ It is this breaking of local thermal equilibrium which satisfies the Sakharov
+ criterion for baryogenesis in EWBG models.
+ If the scatterings also violate 
+\begin_inset Formula $C$
+\end_inset
+
+ and 
+\begin_inset Formula $CP$
+\end_inset
+
+, e.g.
+ by preferentially scattering left handed particles, then a net asymmetry
+ of left handed particles builds up in the unbroken phase in front of the
+ wall (balanced by an opposite right handed asymmetry which passes through
+ the wall).
+ The left handed particles outside the wall bias sphaleron transitions to
+ produce a net baryon number.
+ It is important that in the broken phase the sphaleron transitions are
+ turned off, otherwise they will wash out the net asymmetry.
+ This requires that the phase transition be sufficiently strong, typically
+ taken to mean 
+\begin_inset Formula $\Delta\phi/T_{\star}\gtrsim1$
+\end_inset
+
+ where 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ is the difference in 
+\begin_inset Formula $\phi$
+\end_inset
+
+ between the phases at 
+\begin_inset Formula $T_{\star}$
+\end_inset
+
+, but it is not trivial to determine how strong is really strong enough.
+ Indeed, a proper determination of the washout factor, beyond a few conservative
+ estimates, is one of the main outstanding problems in EWBG 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Morrissey2012"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The qualitative reason 
+\begin_inset Formula $CP$
+\end_inset
+
+ violation leads to baryogenesis is as follows.
+ Suppose that 
+\begin_inset Formula $CP$
+\end_inset
+
+ is violated in quark-wall scattering such that 
+\begin_inset Formula $q_{L}+\bar{q}_{R}$
+\end_inset
+
+ reflect more readily than 
+\begin_inset Formula $q_{R}+\bar{q}_{L}$
+\end_inset
+
+.
+ I also temporarily 
+\begin_inset Quotes eld
+\end_inset
+
+turn off
+\begin_inset Quotes erd
+\end_inset
+
+ sphalerons.
+ The 
+\begin_inset Formula $q_{R}+\bar{q}_{L}$
+\end_inset
+
+ build up in front of the bubble wall (recall that Higgs-Yukawa interactions
+ change fermion chirality) while a compensating 
+\begin_inset Formula $CP$
+\end_inset
+
+ asymmetry passes through into the broken phase.
+ There is no baryon asymmetry at this stage, and if it were not for sphaleron
+ transitions no asymmetry would be generated: though the 
+\begin_inset Formula $q_{R}+\bar{q}_{L}$
+\end_inset
+
+ tend to reflect from the bubble wall they will all eventually pass through,
+ certainly by the time the broken phase fills all of space.
+ Now turn sphalerons back on.
+ Sphalerons only act on the 
+\begin_inset Formula $L$
+\end_inset
+
+ particles, converting 
+\begin_inset Formula $3n_{f}\bar{q}_{L}\to n_{f}l_{L}$
+\end_inset
+
+ and 
+\begin_inset Formula $3n_{f}q_{L}\to n_{f}\bar{l}_{L}$
+\end_inset
+
+.
+ The rate of the former process, with 
+\begin_inset Formula $\Delta B=+1$
+\end_inset
+
+, exceeds the rate of the latter, with 
+\begin_inset Formula $\Delta B=-1$
+\end_inset
+
+, since there are more 
+\begin_inset Formula $\bar{q}_{L}$
+\end_inset
+
+ than 
+\begin_inset Formula $q_{L}$
+\end_inset
+
+ in front of the wall.
+ Hence a net baryon number is generated in front of the bubble wall.
+ Clearly the net baryon asymmetry produced by this mechanism depends on
+ a number of factors: how strong is the 
+\begin_inset Formula $CP$
+\end_inset
+
+ violation in the reflection/transmission coefficients, how far do reflected
+ particles diffuse into the plasma ahead of the bubble wall and for how
+ long, what is the rate of sphaleron transitions in the plasma ahead of
+ and behind the bubble wall and how fast are other processes besides sphalerons
+ which tend to wash out CP asymmetries (without producing B or L asymmetries)?
+ The current practice for quantitative calculations is to calculate bubble
+ wall reflection/transmission coefficients using a non-equilibrium quantum
+ transport theory or semi-classical Boltzmann equation, using bubble wall
+ velocities obtained from a hydrodynamic treatment and ignoring the back-reactio
+n of the generated asymmetries on the bubble wall; perform lattice Monte
+ Carlo calculations of the sphaleron rate, in one of a few simplified models,
+ in equilibrium at various temperatures to calibrate a semi-empirical formula
+ which hopefully applies out of equilibrium to the required accuracy; and
+ combine these elements in a network of continuity equations which are integrate
+d numerically to find the final baryon (and lepton) asymmetry 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Morrissey2012,Konstandin2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A second order phase transition is illustrated in Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:second-order-transition-free-energy"
+
+\end_inset
+
+.
+ The key difference from a first order phase transition is that there is
+ only ever one minimum of the effective potential.
+ The upper and lower spinodal temperature are equal to the critical temperature
+ 
+\begin_inset Formula $T_{\pm}=T_{\star}$
+\end_inset
+
+.
+ As the temperature decreases the universe smoothly evolves from an unbroken
+ to a broken phase and there is never any bubble nucleation.
+ As a result the plasma never departs from local thermal equilibrium and
+ there is no opportunity for EWBG.
+ In the SM the EWPT is second order for 
+\begin_inset Formula $m_{h}\gtrsim72\ \mathrm{GeV}$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Morrissey2012"
+
+\end_inset
+
+, thus it is necessary to investigate EWBG in the context of SM extensions.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Confirmation of Candidature materials/first_order_free_energy.eps
+	width 90col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:first-order-transition-free-energy-curves"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Confirmation of Candidature materials/first_order_free_energy_critical_pts.eps
+	width 80col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:first-order-transition-free-energy-critical-pts"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:first-order-transition-free-energy"
+
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-order-transition-free-energy-curves"
+
+\end_inset
+
+: Thermal effective potential of a system with a first order phase transition.
+ Curves are shown for the approximation to the SM discussed in text, with
+ the Higgs mass chosen at the un-physical value 
+\begin_inset Formula $m_{h}=0.1v$
+\end_inset
+
+.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-order-transition-free-energy-critical-pts"
+
+\end_inset
+
+: Critical points of the effective potential as functions of the temperature
+ with streamlines illustrating their stability.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Confirmation of Candidature materials/second_order_free_energy.eps
+	width 90col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:second-order-transition-free-energy-curves"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename ../Confirmation of Candidature materials/second_order_free_energy_critical_pts.eps
+	width 80col%
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:second-order-transition-free-energy-critical-pts"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:second-order-transition-free-energy"
+
+\end_inset
+
+Same as Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:first-order-transition-free-energy"
+
+\end_inset
+
+ only for a system with a second order phase transition.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In this report I have discussed the essential physics behind electroweak
+ baryogenesis scenarios and given two examples of nonequilibrium quantum
+ field theory techniques applied to simple scalar/fermion theories.
+ It was not possible to explore these topics in any great depth in this
+ report.
+ Indeed the research literature on baryogenesis and nonequilibrium QFT has
+ thousands of papers.
+ The work presented here is admittedly a somewhat eclectic mix of topics
+ taken from these fields, and the connections between them may not be obvious.
+ Here I draw out the main lessons learned in this investigation, highlight
+ current outstanding problems and potential directions for future work and
+ their significance.
+\end_layout
+
+\begin_layout Standard
+The obvious major problem facing EWBG scenarios is the order of the electroweak
+ phase transition.
+ It is necessary for the transition to proceed through bubble formation
+ as in a first order transition, and also that the scalar field behind the
+ bubble wall be sufficiently large (a measure of the strength of the phase
+ transition) that sphaleron processes are effectively shut off, lest they
+ erase the baryon asymmetry that was so painstakingly created.
+ We have already seen that lattice methods are required for the EWPT in
+ the SM with 
+\begin_inset Formula $m_{h}=125\ \mathrm{GeV}$
+\end_inset
+
+ and that these studies indicates that there is only a smooth crossover
+ transition.
+ In this case there is no bubble nucleation and the plasma never departs
+ far enough from equilibrium to satisfy the Sakharov criteria.
+ Thus it is necessary to extend the SM to obtain EWBG.
+\end_layout
+
+\begin_layout Standard
+The most straightforward approach to strengthening the EWPT is adding new
+ scalar fields which are strongly coupled to the Higgs.
+ In the MSSM the stops (top quark superpartners), particularly the 
+\begin_inset Formula $\tilde{t}_{R}$
+\end_inset
+
+, and the second Higgs doublet are suitable candidates, although current
+ LHC data favours a 
+\begin_inset Quotes eld
+\end_inset
+
+split
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+mini-split
+\begin_inset Quotes erd
+\end_inset
+
+ scenario where the stops are relatively heavy compared to the weak scale
+ and hence decouple from the EWPT-relevant physics (a discussion of the
+ most current constraints on natural SUSY can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Evans2013"
+
+\end_inset
+
+).
+ Thus the standard view in the recent literature is that EWBG in the MSSM
+ is nearly ruled out (see e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Chung2013"
+
+\end_inset
+
+ for a discussion in the MSSM and more generally); however, recent lattice
+ Monte Carlo studies using dimensional reduction 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kajantie1996,Laine2012,Laine2013"
+
+\end_inset
+
+ suggest that the EWPT in the light stop scenario is much stronger than
+ the perturbative estimates previously employed, and the tension with LHC
+ data is further reduced if the 
+\begin_inset Formula $125\ \mathrm{GeV}$
+\end_inset
+
+ Higgs can decay into 
+\begin_inset Formula $m\lesssim60\ \mathrm{GeV}$
+\end_inset
+
+ neutralinos 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carena2012"
+
+\end_inset
+
+.
+ Thus to the author's knowledge EWBG within the MSSM remains worthy of considera
+tion, at least until the end of run 2 of the LHC.
+ The addition of a single gauge singlet chiral superfield, giving the NMSSM,
+ alleviates the constraints considerably 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Balazs2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Non-supersymmetric extensions are possible as well, the most popular being
+ the two Higgs doublet models (
+\noun on
+2HDM
+\noun default
+).
+ Though having two Higgs doublets like the MSSM, these models can differ
+ significantly from the MSSM in terms of phenomenology because of the absence
+ of coloured scalars and the relaxation of SUSY constraints on the scalar
+ potential (i.e., the 2HDM potential does not have to be derivable from a
+ holomorphic superpotential).
+ This extra freedom carries the danger of generating large flavour changing
+ neutral currents (
+\noun on
+FCNC
+\noun default
+) which are strongly constrained.
+ This problem is bypassed by imposing a discrete symmetry on the theory
+ to restrict the Yukawa couplings, resulting in four discrete classes of
+ 2HDM corresponding to the possible charge assignments under the discrete
+ symmetry
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The SUSY pattern of Higgs couplings corresponds to a 
+\begin_inset Quotes eld
+\end_inset
+
+Type II
+\begin_inset Quotes erd
+\end_inset
+
+ 2HDM.
+\end_layout
+
+\end_inset
+
+.
+ This discrete choice has no impact on the EWPT or indeed the goodness-of-fit
+ of the best fit models (which is insignificantly better than the SM at
+ this stage), but does impact the experimental constraints on the parameter
+ space 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cheung2013"
+
+\end_inset
+
+.
+ A recent scan of the parameter space 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dorsch2013"
+
+\end_inset
+
+ finds large regions which are compatible with all LHC constraints and which
+ have strong first order phase transitions (at the one loop, daisy resummed
+ level) and it was argued that these models are generically favourable towards
+ EWBG.
+ However, only a rough estimate of the wall velocities was performed, based
+ on the hydrodynamical model 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Huber2013"
+
+\end_inset
+
+, and 
+\begin_inset Formula $CP$
+\end_inset
+
+ violation generation and washout were not addressed in any detail.
+ 2HDM remains a promising class of models for EWBG and worthy of further
+ investigation.
+\end_layout
+
+\begin_layout Standard
+It is possible to investigate new physics in a fairly model independent
+ way.
+ If the new physics, however complicated, exists at a scale 
+\begin_inset Formula $M$
+\end_inset
+
+ which is heaver than the weak scale 
+\begin_inset Formula $v$
+\end_inset
+
+, and there exists a separation scale 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ such that 
+\begin_inset Formula $v\ll\Lambda\lesssim M$
+\end_inset
+
+ then it is possible to use an effective field theory below the scale 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ with only the SM degrees of freedom.
+ The new physics manifests as additional operators in the Lagrangian:
+\begin_inset Formula 
+\[
+\mathcal{L}=\mathcal{L}_{\mathrm{SM}}+\sum_{i}\frac{1}{\Lambda}c_{i}^{\left(5\right)}\mathcal{O}_{i}^{\left(5\right)}+\sum_{i}\frac{1}{\Lambda^{2}}c_{i}^{\left(3\right)}\mathcal{O}_{i}^{\left(6\right)}+\mathcal{O}\left(\frac{1}{\Lambda^{3}}\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathcal{O}_{i}^{\left(5,6\right)}$
+\end_inset
+
+ are the set of all gauge invariant operators of mass dimension 
+\begin_inset Formula $5$
+\end_inset
+
+ and 
+\begin_inset Formula $6$
+\end_inset
+
+ respectively built only out of SM fields
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Do not confuse the operators 
+\begin_inset Formula $\mathcal{O}_{i}^{\left(5,6\right)}$
+\end_inset
+
+ with the mathematical 
+\begin_inset Quotes eld
+\end_inset
+
+big-oh
+\begin_inset Quotes erd
+\end_inset
+
+ notation 
+\begin_inset Formula $\mathcal{O}\left(\cdot\right)$
+\end_inset
+
+!
+\end_layout
+
+\end_inset
+
+.
+ The 
+\begin_inset Formula $c_{i}^{\left(5,6\right)}$
+\end_inset
+
+ are dimensionless (
+\emph on
+Wilson
+\emph default
+) coefficients which are expected to be 
+\begin_inset Formula $\mathcal{O}\left(1\right)$
+\end_inset
+
+ if they come from a generic model of new physics (if the new physics has
+ a symmetry some of the coefficients can vanish, or be loop suppressed).
+ Amplitudes calculated in the effective theory are expected to be accurate
+ to 
+\begin_inset Formula $\left(E/\Lambda\right)^{3}$
+\end_inset
+
+ corrections, where 
+\begin_inset Formula $E$
+\end_inset
+
+ is energy scale for the process at hand.
+ The Wilson coefficients are typically obtained by matching correlation
+ functions in the effective field theory to those calculated in the full
+ theory to the given order of accuracy.
+ It is possible to remove from the set of operators those which vanish by
+ the SM equations of motion and those which are linearly dependent.
+ Note that linear independence is not always trivial to check due to the
+ possible use Fierz rearrangement identities, integration by parts and equations
+ of motion.
+ A complete basis of linearly independent operators 
+\begin_inset Formula $\mathcal{O}_{i}^{\left(5,6\right)}$
+\end_inset
+
+ has been found for the SM degrees of freedom 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Grzadkowski2010"
+
+\end_inset
+
+.
+ Altogether there are 65 of them: one dimension 5 term that generates Majorana
+ neutrino masses after electroweak symmetry breaking, and 64 dimension 6
+ operators: 59 of which conserve 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+, and 5 four-fermion contact interactions which violate
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that such operators are typically constrained to a very high scale
+ 
+\begin_inset Formula $\Lambda\gtrsim10^{12}\ \mathrm{GeV}$
+\end_inset
+
+ as they generate tree-level proton decay, unlike the non-perturbative sphaleron
+/instanton processes.
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ and 
+\begin_inset Formula $L$
+\end_inset
+
+ (but conserve 
+\begin_inset Formula $B-L$
+\end_inset
+
+).
+ Of all of these operators, only one affects the Higgs potential: the dimension
+ six term 
+\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\end_inset
+
+.
+ Thus a conservative, and largely model independent, exploration of BSM
+ modifications to the Higgs potential can be achieved by taking as the Higgs
+ potential
+\begin_inset Formula 
+\[
+V\left(\Phi\right)=\mu^{2}\Phi^{\dagger}\Phi+\frac{\lambda^{2}}{2}\left(\Phi^{\dagger}\Phi\right)^{2}+\frac{1}{\Lambda^{2}}\left(\Phi^{\dagger}\Phi\right)^{3}.
+\]
+
+\end_inset
+
+EWBG with this potential has been investigated in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Grojean2005"
+
+\end_inset
+
+ which finds that 
+\begin_inset Formula $\Lambda\sim500-800\ \mathrm{GeV}$
+\end_inset
+
+ gives a strong first order phase transition for the physical Higgs mass
+ 
+\begin_inset Formula $m_{h}=125\ \mathrm{GeV}$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\end_inset
+
+ term is very difficult to probe at the LHC, thus the constraints are weak
+ unless the new physics generates other dimension 6 operators at the same
+ scale.
+ As a result, LHC constraints do not yet significantly touch this range
+ of 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+, though with enough luminosity at 
+\begin_inset Formula $14\ \mathrm{TeV}$
+\end_inset
+
+ the LHC could begin to constrain this scenario through measurements of
+ the Higgs cubic self-coupling 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Grojean2005,Chung2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In summary we have seen that it is easy to strengthen the EWPT in BSM models
+ of current phenomenological interest.
+ This strongly motivates the experimental search for exotic Higgs decays
+ and non-SM particles in the scalar sector.
+ An extensive review of the experimental prospects for these searches, including
+ all LHC data to date, can be found in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Curtin2013"
+
+\end_inset
+
+.
+ However, questions can be raised about the computation of the phase transition
+ thermodynamics.
+ A conceptual question of great practical import is the gauge dependence
+ of this theory, which is relevant in the Higgs theory because an expectation
+ value of a gauge-variant quantity like 
+\begin_inset Formula $\Phi$
+\end_inset
+
+ is physically meaningless.
+ Two methods are available to check the gauge dependence of the result:
+ redo the computation in a general class of gauges such as 
+\begin_inset Formula $R_{\xi}$
+\end_inset
+
+ gauge and check the dependence on the 
+\begin_inset Formula $\xi$
+\end_inset
+
+ parameter, or develop a formulation using only manifestly gauge invariant
+ quantities such as 
+\begin_inset Formula $\Phi^{\dagger}\Phi$
+\end_inset
+
+.
+ An example of the first method is the jump of the order parameter at the
+ critical temperature, 
+\begin_inset Formula $\phi_{c}/T_{c}$
+\end_inset
+
+, calculated by standard techniques in the SM 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Patel2011"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\frac{\phi_{c}}{T_{c}}=\frac{3-\xi^{3/2}}{48\pi\lambda}\left(2g_{2}^{3}+\left(g_{1}^{2}+g_{2}^{2}\right)^{3/2}\right),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the Higgs quartic coupling and 
+\begin_inset Formula $g_{1},g_{2}$
+\end_inset
+
+ are the 
+\begin_inset Formula $U\left(1\right),SU\left(2\right)_{L}$
+\end_inset
+
+ gauge couplings respectively (note the normalisation convention for 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is different from ours!).
+ Note the spurious gauge dependence of this quantity.
+ Indeed by choosing 
+\begin_inset Formula $\xi=3^{2/3}$
+\end_inset
+
+ the order parameter can be made to vanish! Similarly, calculations of the
+ sphaleron rate and washout factors are gauge dependent and so far only
+ lattice results are theoretically solid, but these have only been done
+ in a small number of cases 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Morrissey2012"
+
+\end_inset
+
+.
+ As a result it is difficult to say whether a given phase transition is
+ indeed strong enough to avoid washing out a baryon asymmetry.
+ The vast majority of treatments ignore these issues.
+\end_layout
+
+\begin_layout Standard
+An example of the second method is the lattice Monte Carlo method, where
+ it is necessary to use gauge invariant order parameters from the outset
+ (see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Moore1997,Bodeker1999"
+
+\end_inset
+
+ for examples showing how gauge invariant observables can be judiciously
+ chosen to extract the desired physics).
+ Unfortunately it is infeasible to implement and interpret lattice computations
+ for every scenario in every model of interest, so it remains valuable to
+ develop appropriately gauge invariant perturbative methods.
+ Also, lattice methods can only be straightforwardly applied to equilibrium
+ problems.
+ Thus real time methods which allow an extension to non-equilibrium situations
+ 
+\emph on
+and
+\emph default
+ have manifestly good gauge invariance properties are particularly valuable.
+ The chief difficultly with the development of perturbative methods for
+ the phase transition is the infrared divergences associated with the Higgs
+ and gauge bosons near the critical point.
+ Physically, soft modes of these fields become highly occupied.
+\end_layout
+
+\begin_layout Standard
+A promising approach is an effective theory where the soft modes are treated
+ classically, while the 
+\begin_inset Quotes eld
+\end_inset
+
+hard
+\begin_inset Quotes erd
+\end_inset
+
+ modes with 
+\begin_inset Formula $k\gtrsim gT$
+\end_inset
+
+ are treated quantum mechanically.
+ The dynamics of the back-reaction of the fluctuating hard modes on the
+ soft modes is captured by an effective noise kernel and one obtains a Langevin
+ equation for the soft modes.
+ This theory was developed for pure 
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ gauge theory by B
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+"{o}
+\end_layout
+
+\end_inset
+
+deker 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bodeker1998"
+
+\end_inset
+
+ and was originally intended for lattice computations, however a perturbative
+ reformulation using ideas from stochastic quantisation was the topic of
+ recent Ph.D work 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zahlten2004"
+
+\end_inset
+
+ and extensions of this work represent an intriguing possibility.
+ Other promising new directions are the new perturbation theory of 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Millington2012,Millington2013"
+
+\end_inset
+
+ which reorganises the perturbation theory using non-homogeneous propagators
+ and vertices to remove 
+\begin_inset Quotes eld
+\end_inset
+
+pinch
+\begin_inset Quotes erd
+\end_inset
+
+ singularities associated with thermally occupied modes, the symmetry improved
+ 
+\noun on
+CJT
+\noun default
+ formalism 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013,Mao2013"
+
+\end_inset
+
+ which enforces Ward identities by the use of Lagrange multipliers so that
+ truncations of the Schwinger-Dyson hierarchy are manifestly invariant (so
+ far only applied to scalar field theories, not gauge theories), and the
+ development of non-perturbative renormalisation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Garny2008"
+
+\end_inset
+
+ (so far for scalar fields only) and gauge invariant non-equilibrium 2PI
+ techniques 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zoller2013"
+
+\end_inset
+
+ for abelian gauge theories.
+ Clearly a recent trend is the reorganisation of perturbation theory, using
+ self-consistent schemes much like those explored in this report, to gain
+ access to hitherto inaccessible regimes of quantum field theories.
+\end_layout
+
+\begin_layout Standard
+Once a first order phase transition is in hand, the probability of bubble
+ formation can be found in equilibrium by saddle-point evaluation of the
+ Euclidean functional integral.
+ At zero temperature the pioneering theory of Coleman and Callan 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Coleman1977,Callan1977a"
+
+\end_inset
+
+ remains essentially unmodified (c.f.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Linde1990,Dine1992,Shifman2012"
+
+\end_inset
+
+ for more recent, though notably unoriginal with respect to this theory,
+ discussions).
+ They find that the bubble formation probability per unit volume per unit
+ time for a single scalar field 
+\begin_inset Formula $\phi$
+\end_inset
+
+ with potential 
+\begin_inset Formula $U\left(\phi\right)$
+\end_inset
+
+ and false vacuum solution 
+\begin_inset Formula $\phi_{+}$
+\end_inset
+
+ (with the convention 
+\begin_inset Formula $U\left(\phi_{+}\right)=0$
+\end_inset
+
+) is to leading semi-classical order
+\begin_inset Formula 
+\begin{align*}
+\frac{\Gamma}{V} & =\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\\
+ & \times\left[1+\mathcal{O}\left(\hbar\right)\right],
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $B$
+\end_inset
+
+ is the 
+\emph on
+bounce action
+\begin_inset Formula 
+\[
+B=\int\mathrm{d}^{4}x_{E}\ \frac{1}{2}\left(\partial\bar{\phi}\right)^{2}+U\left(\bar{\phi}\right),
+\]
+
+\end_inset
+
+
+\emph default
+where 
+\begin_inset Formula $\bar{\phi}$
+\end_inset
+
+ is the solution of the Euclidean (imaginary time) equations of motion with
+ 
+\begin_inset Formula $\phi\left(x_{E}\to\infty\right)=\phi_{+}$
+\end_inset
+
+.
+ The prime on 
+\begin_inset Formula $\det'$
+\end_inset
+
+ indicates that the zero modes of the differential operator are excluded
+ from the functional determinant.
+ The functional integrals over the zero modes correspond to integrating
+ over all possible bubble centres and nucleation times, which is accounted
+ for by the 
+\begin_inset Formula $B^{2}/4\pi^{2}\hbar^{2}$
+\end_inset
+
+ prefactor.
+ Extension of the theory to finite temperatures is in principle straightforward:
+ one looks for solutions which are periodic in imaginary time with period
+ 
+\begin_inset Formula $\hbar/k_{B}T$
+\end_inset
+
+.
+ At high temperatures the problem is effectively reduced to a three dimensional
+ one and 
+\begin_inset Formula $B\to\frac{\hbar}{k_{B}T}S_{3}$
+\end_inset
+
+, where 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ is the three dimensional action 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dine1992,Linde1990"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Generally the evaluation of 
+\begin_inset Formula $B$
+\end_inset
+
+ is a tractable numerical problem, though analytical results are available
+ for the very widely used 
+\emph on
+thin wall approximation
+\emph default
+, but the evaluation of the functional determinants ranges from very difficult
+ to hopeless.
+ Thus one typically guesses the prefactor based on scaling and dimensional
+ analysis and attempts to validate this guess by comparison to lattice Monte
+ Carlo simulations.
+ So far this program has only been carried out for a small number of benchmark
+ models.
+ In cases of phenomenological interest for EWBG where multiple scalar fields
+ are participating in the phase transition the nucleation rate is in principle
+ a straightforward extension of these standard results, but the computational
+ difficulty increases with the complexity of the scalar sector.
+ Often one finds thin wall results applied without the validity of the approxima
+tion being checked.
+\end_layout
+
+\begin_layout Standard
+Another point worth noting is that there is no real time description of
+ bubble nucleation.
+ The situation is analogous to a particle tunnelling through a barrier in
+ a quantum mechanical system: one does not ask about the time evolution
+ of the particle while the particle is under the barrier.
+ Instead one finds that the wavefunction leaks through the barrier; the
+ particle itself presumably makes some kind of quantum leap.
+ Similarly a real time description of bubble nucleation must involve the
+ wave-functional 
+\begin_inset Formula $\Psi\left[\phi\right]$
+\end_inset
+
+ (or density matrix functional 
+\begin_inset Formula $\boldsymbol{\rho}\left[\phi_{1},\phi_{2}\right]$
+\end_inset
+
+) which is initially, say, a Gaussian centred on 
+\begin_inset Formula $\phi_{+}$
+\end_inset
+
+: 
+\begin_inset Formula $\Psi\sim\exp\left[-\int\mathrm{d}^{3}x\ \frac{\mu}{2}\left(\phi-\phi_{+}\right)^{2}\right]$
+\end_inset
+
+ but which gradually develops a component on the other side of the barrier.
+ It is not clear what, if anything, such a description would yield of practical
+ relevance.
+ In particular, decoherence between branches of the wave-functional with
+ different histories of bubble nucleation is probably large, but the author
+ knows of no discussion of this topic in the literature.
+ A more important practical question is the gauge dependence of the formalism.
+\end_layout
+
+\begin_layout Standard
+After critical bubbles nucleate they expand.
+ Since the scalar fields involved are large it is expected that the evolution
+ of the bubble is classical from this point on, and indeed this approximation
+ is universally made in the literature.
+ In principle one should check to what degree the state resulting from the
+ nucleation process is in fact a coherent state, and allow for the possibilities
+ of quantum particle creation and charge fractionalisation on the bubble
+ wall 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Shifman2012"
+
+\end_inset
+
+, though such effects are almost certainly small once the bubble reaches
+ a macroscopic size.
+ The classical theory of macroscopic bubble expansion is well developed
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Espinosa2010,Huber2013"
+
+\end_inset
+
+.
+ It is assumed that not only is the Higgs field in a coherent state, but
+ that the plasma is well described by quasi-particles with near equilibrium
+ distribution functions (in the rest frame of the plasma) 
+\begin_inset Formula $f_{i}=\left\{ \exp\left[\gamma\left(E-vp_{z}\right)/T\right]\pm1\right\} ^{-1}+\delta f_{i}$
+\end_inset
+
+ where 
+\begin_inset Formula $\delta f_{i}\ll f_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma=1/\sqrt{1-v^{2}}$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ is the plasma velocity in the 
+\begin_inset Formula $z$
+\end_inset
+
+ direction which is taken to be perpendicular to the wall.
+ The equation of motion for the mean value of the Higgs field is
+\begin_inset Formula 
+\[
+\square\phi+\frac{\partial F}{\partial\phi}+\sum_{i}\frac{\mathrm{d}m_{i}^{2}}{\mathrm{d}\phi}\int\frac{\mathrm{d}^{3}p}{\left(2\pi\right)^{3}2E_{i}}\delta f_{i}\left(p\right)=0,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $F$
+\end_inset
+
+ is the finite temperature effective potential for the Higgs and the third
+ term is the friction term, which is due to the deviation of the particle
+ distribution functions from equilibrium.
+ The 
+\begin_inset Formula $\delta f_{i}$
+\end_inset
+
+ are found by solving a network of Boltzmann equations for the particle
+ transport in the vicinity of the bubble wall.
+ This program is very difficult (and questions about the applicability of
+ Boltzmann equations remain), and has only been carried out in any detail
+ in the SM and MSSM.
+ In other models one computes a simple phenomenological friction coefficient
+ and then calibrates it relative to the SM value which has been computed
+ much more accurately.
+ Once the phenomenological friction coefficient is obtained the bubble expansion
+ is a hydrodynamic problem which has essentially been solved.
+\end_layout
+
+\begin_layout Standard
+Boltzmann equations can be derived from first principles quantum transport
+ equations (Kadanoff-Baym equations) under the assumption of weak gradients
+ and the lack of memory effects or coherence.
+ Coherence can arise, for example, as a result of flavour oscillations,
+ in which case the treatment must be extended from single particle distribution
+ functions to two particle density matrices.
+ Recent advances have applied quantum transport techniques to those species
+ involved in the creation of CP violation and baryon number, with the finding
+ that resonant flavour oscillations can lead to an enhancement of the asymmetry
+ produced, however the bulk plasma properties are still treated semi-classically
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Konstandin2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Baryon production is largely dependent on the production of CP violation
+ in fermion scattering off bubble walls and the diffusion of the asymmetric
+ species into the plasma ahead of the bubble wall, which must be subsonic
+ for such diffusion to happen
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Though see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Caprini2011"
+
+\end_inset
+
+ for an alternate EWBG mechanism involving supersonic bubble walls.
+\end_layout
+
+\end_inset
+
+.
+ The faster an asymmetric species diffuses, the longer it remains ahead
+ of the bubble wall, and the longer sphalerons have to convert it into a
+ net baryon asymmetry.
+ Thus a solid understanding of the scattering and transport of plasma particles
+ in the bubble region is essential to a reliable EWBG calculation.
+ Recent progress has achieved this, up to some small open questions, in
+ the context of the MSSM (for a review see 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Konstandin2013"
+
+\end_inset
+
+).
+ Open questions regard the validity of some of the approximations used in
+ deriving Boltzmann equations, then continuity equations, from the Kadanoff-Baym
+ equations.
+ In particular these are the gradient expansion - usually truncated to lowest
+ non-trivial order, the quasiparticle approximation (the applicability of
+ distribution functions), the fluid approximation (distribution functions
+ have the equilibrium form with spacetime varying velocity, temperature
+ and chemical potential) and weak coupling.
+ Also reactions which are very fast compared to the diffusion time are treated
+ by constraining the chemical potentials of the species involved, while
+ those very slow compared to the diffusion time are ignored.
+ Only those reactions which take place on a similar time scale to the diffusion
+ time require detailed treatment.
+ These techniques have not yet seen wide application to BSM models other
+ than the MSSM, although the SM with the dimension six term 
+\begin_inset Formula $\left(\Phi^{\dagger}\Phi\right)^{3}$
+\end_inset
+
+, a scalar singlet SM extension, 2HDM (Types I and II), MSSM, and NMSSM
+ are each briefly discussed in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Konstandin2013"
+
+\end_inset
+
+.
+ The general finding is that apart from the MSSM, the main portion of the
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ asymmetry generated in each model is due to a semi-classical force term
+ and that the possibility of resonant enhancement, the topic of much recent
+ debate, is unimportant.
+ The Kadanoff-Baym framework is a solid foundation, thus I view the problem
+ of fermion transport in EWBG as a problem where incremental model-dependent
+ progress is an important possibility, but no major advances should be expected.
+\end_layout
+
 \begin_layout Section
 Quantum field theory and functional integrals
 \begin_inset ERT
