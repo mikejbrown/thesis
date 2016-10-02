@@ -178,8 +178,8 @@ standard model
  for rhetorical purposes.
  This does not exactly match standard particle physics usage of the term
  though, despite the famous difficulties of quantum gravity, it is consistent
- to include general relativity as a low energy effective field theory.
- See, e.g.
+ to include general relativity as a low energy effective field theory (see,
+ e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -187,7 +187,21 @@ key "Burgess2004"
 
 \end_inset
 
-.
+).
+ The cosmological model is taken as 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+CDM, i.e.
+ the 
+\begin_inset Quotes eld
+\end_inset
+
+dark
+\begin_inset Quotes erd
+\end_inset
+
+ components of the universe are a cosmological constant and cold dark matter.
 \end_layout
 
 \end_inset
@@ -1359,11 +1373,12 @@ It is well known that for every type of matter particle (electron, proton,
  exist and have closely related properties to the corresponding particles.
  This is a very robust result, requiring only basic physical principles,
  and it is satisfied by SM.
- Further, 
+ Further, the standard cosmological model of the universe with a cosmological
+ constant and cold dark matter (
 \begin_inset Formula $\Lambda$
 \end_inset
 
-CDM predicts that the early universe was in a very hot and dense state,
+CDM) predicts that the early universe was in a very hot and dense state,
  where the maximum temperature that the universe reaches could be as high
  as 
 \begin_inset Formula $10^{12}\ \mathrm{GeV}$
@@ -1409,7 +1424,20 @@ key "Buchmuller2012a"
 \begin_inset Formula $\Gamma\sim\left\langle n\sigma v\right\rangle $
 \end_inset
 
- is more rapid than the Hubble expansion rate of the universe 
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the number density, 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ is the annihilation cross section and 
+\begin_inset Formula $v$
+\end_inset
+
+ is the relative velocity, is more rapid than the Hubble expansion rate
+ of the universe 
 \begin_inset Formula $H=\dot{a}/a$
 \end_inset
 
@@ -1474,8 +1502,8 @@ key "Canetti2012"
 \end_inset
 
 .
- The BAU (baryons being protons and neutrons) has been measured at the time
- of 
+ The baryon (baryons being protons and neutrons) asymmetry of the universe
+ (BAU) has been measured at the time of 
 \emph on
 big bang nucleosynthesis
 \emph default
@@ -1637,9 +1665,9 @@ BSM
 \end_inset
 
  conservation through nonperturbative 
-\noun on
+\emph on
 sphaleron
-\noun default
+\emph default
  processes 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -1684,7 +1712,17 @@ If the BAU cannot be the result of an asymmetric initial condition it must
 baryogenesis
 \emph default
 .
- Numerous recent reviews of popular scenarios are available 
+ Numerous recent reviews of popular scenarios are available
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+UPDATE??!
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cline2006,Dine2003,Morrissey2012,Riotto1999,Shaposhnikov2009,Trodden1998,Trodden2004"
@@ -1941,7 +1979,7 @@ key "Canetti2012a"
  Both types of leptogenesis models can be derived from SUSY extensions of
  the SM and GUTs.
  Despite having many appealing features leptogenesis will not be considered
- further in this report in the interest of space.
+ further in this thesis.
 \end_layout
 
 \begin_layout Standard
@@ -1984,8 +2022,9 @@ two Higgs doublet models
 ).
  In all of these models the EWBG scenario relies on nonperturbative processes
  very similar to those of the original SM.
- Thus, I will first briefly review the SM to recall the physics, set the
- notation, and discuss EWBG at first in a familiar context.
+ The SM is briefly reviewed here, without going into the formal field theory,
+ to recall the physics, set the notation, and discuss EWBG at first in a
+ familiar context.
  This review is by no means extensive, nor suitable for a first introduction.
  Up to date topical reviews are available from the Particle Data Group
 \begin_inset Foot
@@ -2006,73 +2045,31 @@ target "http://pdg.lbl.gov/"
 \end_inset
 
 .
- The conventions used here mostly follow the Particle Data Group.
- I take 
-\begin_inset Formula $\hbar=c=1$
-\end_inset
-
- and 
-\begin_inset Formula $\eta^{\mu\nu}=\mathrm{diag}\left(1,-1,-1,-1\right)$
-\end_inset
-
- for the spacetime metric unless otherwise noted.
 \end_layout
 
 \begin_layout Standard
 The SM is a relativistic quantum gauge field theory.
  The gauge group is 
-\begin_inset Formula $SU\left(3\right)\times SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
+\begin_inset Formula $\mathrm{SU}\left(3\right)\times\mathrm{SU}\left(2\right)_{L}\times\mathrm{U}\left(1\right)_{Y}$
 \end_inset
 
 , where the 
-\begin_inset Formula $SU\left(3\right)$
+\begin_inset Formula $\mathrm{SU}\left(3\right)$
 \end_inset
 
- is the gauge group of QCD, the theory describing the strong nuclear force,
- and the three basis states in the fundamental of 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
- are the three 
-\begin_inset Quotes eld
-\end_inset
-
-colours.
-\begin_inset Quotes erd
-\end_inset
-
- The QCD gauge bosons are the 
+ is the gauge group of quantum chromodynamics (QCD).
+ The QCD gauge bosons are the eight 
 \emph on
 gluons
 \emph default
- and the corresponding fields are denoted 
-\begin_inset Formula $\mathcal{A}_{\mu}^{A}$
-\end_inset
-
- where 
-\begin_inset Formula $A$
-\end_inset
-
- is an index in the adjoint representation of 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
-, running from 
-\begin_inset Formula $1$
-\end_inset
-
- to 
-\begin_inset Formula $3^{2}-1=8$
-\end_inset
-
 .
  The electroweak gauge group is 
-\begin_inset Formula $SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
+\begin_inset Formula $\mathrm{SU}\left(2\right)_{L}\times\mathrm{U}\left(1\right)_{Y}$
 \end_inset
 
 .
  
-\begin_inset Formula $SU\left(2\right)_{L}$
+\begin_inset Formula $\mathrm{SU}\left(2\right)_{L}$
 \end_inset
 
  describes the weak 
@@ -2084,30 +2081,17 @@ isospin
 \end_inset
 
 .
- The corresponding gauge fields are denoted 
-\begin_inset Formula $W_{\mu}^{a}$
-\end_inset
-
-, where 
-\begin_inset Formula $a=1,2,3$
-\end_inset
-
-.
  The 
-\begin_inset Formula $U\left(1\right)_{Y}$
+\begin_inset Formula $\mathrm{U}\left(1\right)_{Y}$
 \end_inset
 
  is the weak 
 \emph on
 hypercharge
 \emph default
- group and the corresponding gauge field is denoted 
-\begin_inset Formula $B_{\mu}$
-\end_inset
-
-.
+ group.
  The groups 
-\begin_inset Formula $SU\left(3\right),\ SU\left(2\right)_{L},\ U\left(1\right)_{Y}$
+\begin_inset Formula $\mathrm{SU}\left(3\right),\ \mathrm{SU}\left(2\right)_{L},\ \mathrm{U}\left(1\right)_{Y}$
 \end_inset
 
  have coupling constants 
@@ -2123,306 +2107,16 @@ hypercharge
 \end_inset
 
  respectively.
-\end_layout
-
-\begin_layout Standard
-The gauge kinetic Lagrangian is thus
-\begin_inset Formula 
-\begin{equation}
-\mathcal{L}_{\mathrm{gauge}}=-\frac{1}{4}G_{\mu\nu}^{A}G^{A\mu\nu}-\frac{1}{4}W_{\mu\nu}^{a}W^{a\mu\nu}-\frac{1}{4}B_{\mu\nu}B^{\mu\nu},\label{eq:sm-gauge-kinetic-lagrangian}
-\end{equation}
-
+ There is also a Higgs field which is a scalar (i.e.
+ spinless) and a doublet under 
+\begin_inset Formula $\mathrm{SU}\left(2\right)_{L}$
 \end_inset
 
-where the field strength tensors are given by
-\begin_inset Formula 
-\begin{align*}
-G_{\mu\nu}^{A} & \equiv\partial_{\mu}\mathcal{A}_{\nu}^{A}-\partial_{\nu}\mathcal{A}_{\mu}^{A}-g_{S}f_{ABC}\mathcal{A}_{\mu}^{B}\mathcal{A}_{\nu}^{C},\\
-W_{\mu\nu}^{a} & \equiv\partial_{\mu}W_{\nu}^{a}-\partial_{\nu}W_{\mu}^{a}-g\epsilon_{abc}W_{\mu}^{b}W_{\nu}^{c},\\
-B_{\mu\nu} & \equiv\partial_{\mu}B_{\nu}-\partial_{\nu}B_{\mu}.
-\end{align*}
-
-\end_inset
-
-
-\begin_inset Formula $f_{ABC}$
-\end_inset
-
- are the structure constants of 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
- given by 
-\begin_inset Formula $\left[t^{A},t^{B}\right]=if_{ABC}t^{C}$
-\end_inset
-
- where 
-\begin_inset Formula $t^{A}$
-\end_inset
-
- are representation matrices of 
-\begin_inset Formula $SU\left(3\right)$
+ with hypercharge 
+\begin_inset Formula $+1$
 \end_inset
 
 .
- The standard basis for the fundamental representation of 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
- are given by the Gell-Mann matrices.
- Similarly the standard basis for the generators of the fundamental representati
-on of 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
- is given by the matrices 
-\begin_inset Formula $\tau^{a}=\sigma^{a}/2$
-\end_inset
-
-, where 
-\begin_inset Formula $\sigma^{a}$
-\end_inset
-
- are the Pauli matrices, which obey 
-\begin_inset Formula $\left[\tau^{a},\tau^{b}\right]=i\epsilon^{abc}\tau^{c}$
-\end_inset
-
- where 
-\begin_inset Formula $\epsilon^{abc}$
-\end_inset
-
- is the totally antisymmetric symbol with 
-\begin_inset Formula $\epsilon^{123}=+1$
-\end_inset
-
-.
- The SM Lagrangian is invariant under the gauge transformations
-\begin_inset Formula 
-\begin{align*}
-\mathcal{A}_{\mu}' & =U_{3}^{\dagger}\mathcal{A}_{\mu}U_{3}+\frac{i}{g_{S}}U_{3}^{\dagger}\partial_{\mu}U_{3},\\
-W_{\mu}' & =U_{2}^{\dagger}W_{\mu}U_{2}+\frac{i}{g}U_{2}^{\dagger}\partial_{\mu}U_{2},\\
-B_{\mu}' & =B_{\mu}+\frac{i}{g'}U_{1}^{\dagger}\partial_{\mu}U_{1},
-\end{align*}
-
-\end_inset
-
-where I defined matrix valued fields 
-\begin_inset Formula $\mathcal{A}_{\mu}\equiv\mathcal{A}_{\mu}^{A}t^{A}$
-\end_inset
-
- and 
-\begin_inset Formula $W_{\mu}\equiv W_{\mu}^{a}\sigma^{a}/2$
-\end_inset
-
- for simplicity and 
-\begin_inset Formula $U_{3,2,1}$
-\end_inset
-
- are matrices in 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
-, 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
- and 
-\begin_inset Formula $U\left(1\right)$
-\end_inset
-
- respectively (note that a 
-\begin_inset Quotes eld
-\end_inset
-
-matrix
-\begin_inset Quotes erd
-\end_inset
-
- in 
-\begin_inset Formula $U\left(1\right)$
-\end_inset
-
- is just a unimodular complex number 
-\begin_inset Formula $\mathrm{e}^{i\theta}$
-\end_inset
-
-).
-\end_layout
-
-\begin_layout Standard
-Now I discuss the fermion content of the SM.
- The SM is a chiral theory.
- I briefly recount what this means.
- Recall that spin-
-\begin_inset Formula $\nicefrac{1}{2}$
-\end_inset
-
- representations of the Lorentz group are constructed using 
-\begin_inset Formula $\gamma^{\mu}$
-\end_inset
-
- matrices satisfying the Clifford algebra 
-\begin_inset Formula $\left\{ \gamma^{\mu},\gamma^{\nu}\right\} \equiv\gamma^{\mu}\gamma^{\nu}+\gamma^{\nu}\gamma^{\mu}=2\eta^{\mu\nu}$
-\end_inset
-
-.
- (One also imposes the Hermiticity condition 
-\begin_inset Formula $\gamma^{\mu\dagger}=\gamma^{0}\gamma^{\mu}\gamma^{0}$
-\end_inset
-
-.) Then the generators given by 
-\begin_inset Formula $S^{\mu\nu}=\frac{i}{4}\left[\gamma^{\mu},\gamma^{\nu}\right]$
-\end_inset
-
- satisfy the Lorentz algebra and indeed give a spin-
-\begin_inset Formula $\nicefrac{1}{2}$
-\end_inset
-
- representation of it.
- In four dimensions (with generalisation to any even dimensionality) there
- exists a 
-\begin_inset Formula $\gamma^{5}\equiv i\gamma^{0}\gamma^{1}\gamma^{2}\gamma^{3}$
-\end_inset
-
- which obeys 
-\begin_inset Formula $\gamma^{5\dagger}=\gamma^{5}$
-\end_inset
-
-, 
-\begin_inset Formula $\left(\gamma^{5}\right)^{2}=1$
-\end_inset
-
-, and 
-\begin_inset Formula $\left\{ \gamma^{\mu},\gamma^{5}\right\} =0$
-\end_inset
-
-, meaning it commutes with all the Lorentz generators.
- This means that the representation just constructed is a reducible one:
- the spinors satisfying 
-\begin_inset Formula $\gamma^{5}\psi_{\pm}=\pm\psi_{\pm}$
-\end_inset
-
- transform independently of each other.
- Spinors with eigenvalue 
-\begin_inset Formula $+1\left(-1\right)$
-\end_inset
-
- are called right-(left-) handed respectively, although this standard terminolog
-y is confusing as there is no direct connection to helicity.
- A chiral theory is one where the left and right handed fermions are treated
- on a different footing.
- One final thing to note is that charge conjugation reverses the eigenvalue
- of 
-\begin_inset Formula $\gamma^{5}$
-\end_inset
-
-.
- Thus it is possible to rewrite all right handed fields as left handed fields
- of the charge conjugate particle, i.e.
- replace a right handed electron field with a left handed positron field.
- This is what I will do when writing down the fermion content of the SM.
-\end_layout
-
-\begin_layout Standard
-The SM fermions appear in three generations with identical representation
- content.
- In each generation there are 
-\begin_inset Formula $SU\left(2\right)_{L}$
-\end_inset
-
- doublets of left handed quark and lepton fields 
-\begin_inset Formula $Q_{i}\equiv\left(\begin{array}{c}
-u_{iL}\\
-d_{iL}
-\end{array}\right),\ L_{i}\equiv\left(\begin{array}{c}
-\nu_{iL}\\
-e_{iL}
-\end{array}\right)$
-\end_inset
-
-, where 
-\begin_inset Formula $i=1,2,3$
-\end_inset
-
- is a generation index.
- Then there are 
-\begin_inset Formula $SU\left(2\right)_{L}$
-\end_inset
-
- singlets for the antiquarks 
-\begin_inset Formula $u_{iL}^{c},d_{iL}^{c}$
-\end_inset
-
- and charged antileptons 
-\begin_inset Formula $e_{iL}^{c}$
-\end_inset
-
-.
- The (anti-)quarks come in (anti-)fundamentals of 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
- and the (anti-)leptons are 
-\begin_inset Formula $SU\left(3\right)$
-\end_inset
-
- singlets.
- Finally the hypercharge 
-\begin_inset Formula $Y$
-\end_inset
-
- assignments are determined by 
-\begin_inset Formula $Q=T_{3}+Y/2$
-\end_inset
-
- where 
-\begin_inset Formula $Q$
-\end_inset
-
- is the electromagnetic charge and 
-\begin_inset Formula $T_{3}$
-\end_inset
-
- is the weak isospin.
- These assignments are summarised in Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:standard-model-fermions"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-The kinetic Lagrangian for the SM fermions is
-\begin_inset Formula 
-\begin{align}
-\mathcal{L}_{\text{ferm.kin.}} & =\sum_{i=1}^{3}\bar{Q}_{i}i\gamma^{\mu}D_{\mu}Q_{i}+\bar{L}_{i}i\gamma^{\mu}D_{\mu}L_{i}\nonumber \\
- & +\bar{u}_{iL}^{c}i\gamma^{\mu}D_{\mu}u_{iL}^{c}+\bar{d}_{iL}^{c}i\gamma^{\mu}D_{\mu}d_{iL}^{c}+\bar{e}_{iL}^{c}i\gamma^{\mu}D_{\mu}e_{iL}^{c},\label{eq:standard-model-fermion-kinetic-lagrangian}
-\end{align}
-
-\end_inset
-
-where the 
-\begin_inset Formula $SU\left(3\right)\times SU\left(2\right)_{L}$
-\end_inset
-
- indices are contracted in the obvious way and have been left implicit.
- Note that no mass terms are possible due to the charge assignments.
- The covariant derivatives are
-\begin_inset Formula 
-\[
-D_{\mu}=\partial_{\mu}-ig_{S}\mathcal{A}_{\mu}^{A}t^{A}-igW_{\mu}^{a}\tau^{a}-ig'\frac{Y}{2}B_{\mu},
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $t^{A},\tau^{a},Y$
-\end_inset
-
- are the generators of the representation of the corresponding fermion.
 \end_layout
 
 \begin_layout Standard
@@ -2435,8 +2129,342 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:standard-model-bosons"
 
-\lang british
+\end_inset
+
+SM bosons representations.
+ 
+\begin_inset Formula $Y$
+\end_inset
+
+ is weak hypercharge.
+ The physical photon and 
+\begin_inset Formula $Z^{0}$
+\end_inset
+
+ bosons are both mixtures of the neutral weak boson and the hypercharge
+ boson.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Particle(s)
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Spin
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(3\right)$
+\end_inset
+
+ rep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $SU\left(2\right)$
+\end_inset
+
+ rep
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gluons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Weak bosons
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Hypercharge boson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Higgs boson
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\boldsymbol{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:standard-model-fermions"
@@ -2478,7 +2506,7 @@ SM fermion representations.
 \begin_inset Text
 
 \begin_layout Plain Layout
-Field
+Particle(s)
 \end_layout
 
 \end_inset
@@ -2561,13 +2589,7 @@ Field
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $Q_{i}\equiv\left(\begin{array}{c}
-u_{iL}\\
-d_{iL}
-\end{array}\right)$
-\end_inset
-
-
+Left handed quarks (up type: up, charm, top; down type: down, strange, bottom)
 \end_layout
 
 \end_inset
@@ -2653,13 +2675,7 @@ d_{iL}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $L_{i}\equiv\left(\begin{array}{c}
-\nu_{iL}\\
-e_{iL}
-\end{array}\right)$
-\end_inset
-
-
+Left handed leptons (electron, muon, tau and corresponding neutrinos)
 \end_layout
 
 \end_inset
@@ -2745,10 +2761,7 @@ e_{iL}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $u_{iL}^{c}$
-\end_inset
-
-
+Left handed up-type antiquarks
 \end_layout
 
 \end_inset
@@ -2831,10 +2844,7 @@ e_{iL}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $d_{iL}^{c}$
-\end_inset
-
-
+Left handed down-type antiquarks
 \end_layout
 
 \end_inset
@@ -2917,10 +2927,7 @@ e_{iL}
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $e_{iL}^{c}$
-\end_inset
-
-
+Left handed anti-leptons
 \end_layout
 
 \end_inset
@@ -3008,80 +3015,6 @@ e_{iL}
 \end_layout
 
 \begin_layout Standard
-In order to generate masses for the weak gauge bosons and fermions one introduce
-s a colourless 
-\begin_inset Formula $SU\left(2\right)_{L}$
-\end_inset
-
- doublet scalar 
-\begin_inset Formula $\Phi=\left(\begin{array}{c}
-\phi^{+}\\
-\phi^{0}
-\end{array}\right)$
-\end_inset
-
- with 
-\begin_inset Formula $Y=+1$
-\end_inset
-
-.
- This is the famous Higgs field.
- The most general renormalizable Lagrangian for the Higgs field is
-\begin_inset Formula 
-\begin{equation}
-\mathcal{L}_{\text{Higgs}}=\left(D_{\mu}\Phi\right)^{\dagger}D^{\mu}\Phi-\mu^{2}\Phi^{\dagger}\Phi-\frac{\lambda^{2}}{2}\left(\Phi^{\dagger}\Phi\right)^{2}.\label{eq:standard-model-higgs-lagrangian}
-\end{equation}
-
-\end_inset
-
-If 
-\begin_inset Formula $\mu^{2}<0$
-\end_inset
-
- then 
-\begin_inset Formula $\left\langle \Phi^{\dagger}\Phi\right\rangle $
-\end_inset
-
- develops a nonzero vacuum expectation value 
-\begin_inset Formula $v^{2}=-\mu^{2}/\lambda^{2}$
-\end_inset
-
- (at tree level).
- By a gauge transformation the expectation value can be brought to the neutral
- component of 
-\begin_inset Formula $\Phi$
-\end_inset
-
-, hence I take 
-\begin_inset Formula $\left\langle \phi^{0}\right\rangle =v$
-\end_inset
-
- without loss of generality.
- Indeed by choosing 
-\emph on
-unitary gauge
-\emph default
- the Higgs field can be written as 
-\begin_inset Formula $\left(\begin{array}{c}
-0\\
-v+h/\sqrt{2}
-\end{array}\right)$
-\end_inset
-
-, where the real scalar 
-\begin_inset Formula $h$
-\end_inset
-
- describes the neutral Higgs boson with (tree level) mass 
-\begin_inset Formula $m_{h}^{2}=2\lambda^{2}v^{2}$
-\end_inset
-
-.
- This choice of gauge is most convenient for establishing the particle content
- of the theory but is often not the most convenient for practical calculations.
-\end_layout
-
-\begin_layout Standard
 When the Higgs develops an expectation value the electroweak symmetry 
 \begin_inset Formula $SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
 \end_inset
@@ -3143,138 +3076,6 @@ which gives (tree level) masses
 \end_inset
 
  is modified by radiative corrections.
-\end_layout
-
-\begin_layout Standard
-Finally to give the fermions masses I add Yukawa couplings with the Higgs.
- The most general Yukawa Lagrangian consistent with the charge assignments
- given above and renormalizability is
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-\mathcal{L}_{\text{Yuk.}}=-Y_{ij}^{u}\bar{Q}_{i}\tilde{\Phi}u_{jR}-Y_{ij}^{d}\bar{Q}_{i}\Phi d_{jR}-Y_{ij}^{l}\bar{L}_{i}\Phi e_{jR}+\mathrm{h.c.},\label{eq:standard-model-yukawa-lagrangian}
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $u_{jR},d_{jR},e_{jR}$
-\end_inset
-
- are the conjugates of 
-\begin_inset Formula $u_{jL}^{c},d_{jL}^{c},e_{jL}^{c}$
-\end_inset
-
- respectively, 
-\begin_inset Formula $Y_{ij}^{u,d,l}$
-\end_inset
-
- are general complex matrices whose 
-\begin_inset Formula $i,j=1,2,3$
-\end_inset
-
- indices run over the fermion generations, 
-\begin_inset Formula $\tilde{\Phi}=i\sigma^{2}\Phi^{\star}$
-\end_inset
-
- is the charge conjugate of the Higgs field and 
-\begin_inset Formula $\mathrm{h.c.}$
-\end_inset
-
- means Hermitian conjugate as usual.
- By performing unitary rotations among the generations of the 
-\begin_inset Formula $u_{iL},d_{iL},u_{iR},d_{iR},L_{i},e_{iL}^{c}$
-\end_inset
-
- fields all the Yukawa matrices can be diagonalised, and all other terms
- in the Lagrangian are unaffected by these rotations except for the quark-
-\begin_inset Formula $W^{\pm}$
-\end_inset
-
- couplings, which are sensitive to a relative rotation of the 
-\begin_inset Formula $u_{iL}$
-\end_inset
-
- and 
-\begin_inset Formula $d_{iL}$
-\end_inset
-
- fields.
- As a result, there is a physically significant inter-generation mixing
- in the quark-
-\begin_inset Formula $W^{\pm}$
-\end_inset
-
- couplings, traditionally written as
-\begin_inset Formula 
-\[
-\mathcal{L}\supset-\frac{g}{\sqrt{2}}W_{\mu}^{+}\bar{u}_{iL}\gamma^{\mu}V_{ij}d_{jL}+\mathrm{h.c.},
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $V_{ij}$
-\end_inset
-
- is the Cabibbo-Kobayashi-Maskawa (
-\noun on
-CKM
-\noun default
-) matrix, a unitary matrix which can be parameterised by three mixing angles
- and one CP-violating phase.
- Apart from the 
-\begin_inset Formula $\theta_{S}$
-\end_inset
-
- term, to be discussed shortly, this phase is the only source of CP violation
- in the SM.
-\end_layout
-
-\begin_layout Standard
-There are three more possible terms involving the gauge field strengths
- which have not been written yet.
- These terms break time reversal and parity invariance:
-\begin_inset Formula 
-\begin{align*}
-\mathcal{L}_{\theta} & =\theta_{S}\frac{g_{S}^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}F^{A\mu\nu}F^{A\rho\lambda}+\theta_{W}\frac{g^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}W^{a\mu\nu}W^{a\rho\lambda}\\
- & +\theta'\frac{g'^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\lambda}B^{\mu\nu}B^{\rho\lambda}.
-\end{align*}
-
-\end_inset
-
-The 
-\begin_inset Formula $\theta_{W}$
-\end_inset
-
- and 
-\begin_inset Formula $\theta'$
-\end_inset
-
- terms can be eliminated by chiral rotations of the leptons and thus have
- no physical effects, but the 
-\begin_inset Formula $\theta_{S}$
-\end_inset
-
- term cannot be removed because the strong force couples equally to the
- left and right handed quarks.
- Nonzero 
-\begin_inset Formula $\theta_{S}$
-\end_inset
-
- would give a source of strong CP violation but experiments on neutron dipole
- moments constrain it to be 
-\begin_inset Formula $\left|\theta_{S}\right|\lesssim10^{-10}$
-\end_inset
-
-.
- The unnatural smallness of 
-\begin_inset Formula $\theta_{S}$
-\end_inset
-
- is one of the unexplained mysteries of the SM.
 \end_layout
 
 \begin_layout Standard
