@@ -2117,6 +2117,44 @@ hypercharge
 \end_inset
 
 .
+ There are three generations of fermions which are identical apart from
+ mass.
+ The fermions fall into 
+\emph on
+quarks
+\emph default
+, which are charged under 
+\begin_inset Formula $\mathrm{SU}\left(3\right)$
+\end_inset
+
+ and bind into 
+\emph on
+baryons
+\emph default
+, and 
+\emph on
+leptons 
+\emph default
+which are not charged under 
+\begin_inset Formula $\mathrm{SU}\left(3\right)$
+\end_inset
+
+.
+ The standard model particles are summarised in Tables 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:standard-model-bosons"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:standard-model-fermions"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2472,7 +2510,11 @@ name "tab:standard-model-fermions"
 \end_inset
 
 SM fermion representations.
- All fields are left chiral.
+ All are left chiral spin 
+\begin_inset Formula $1/2$
+\end_inset
+
+.
  
 \begin_inset Formula $Y,Q,B,$
 \end_inset
@@ -2589,7 +2631,14 @@ Particle(s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Left handed quarks (up type: up, charm, top; down type: down, strange, bottom)
+Quarks 
+\begin_inset Formula $\left(\begin{array}{c}
+\text{up type: up, charm, top}\\
+\text{down type: down, strange, bottom}
+\end{array}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2675,7 +2724,14 @@ Left handed quarks (up type: up, charm, top; down type: down, strange, bottom)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Left handed leptons (electron, muon, tau and corresponding neutrinos)
+Leptons 
+\begin_inset Formula $\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2761,7 +2817,7 @@ Left handed leptons (electron, muon, tau and corresponding neutrinos)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Left handed up-type antiquarks
+Up-type antiquarks
 \end_layout
 
 \end_inset
@@ -2844,7 +2900,7 @@ Left handed up-type antiquarks
 \begin_inset Text
 
 \begin_layout Plain Layout
-Left handed down-type antiquarks
+Down-type antiquarks
 \end_layout
 
 \end_inset
@@ -2927,7 +2983,7 @@ Left handed down-type antiquarks
 \begin_inset Text
 
 \begin_layout Plain Layout
-Left handed anti-leptons
+Anti-leptons
 \end_layout
 
 \end_inset
@@ -3015,41 +3071,32 @@ Left handed anti-leptons
 \end_layout
 
 \begin_layout Standard
-When the Higgs develops an expectation value the electroweak symmetry 
+Due to an ordering interaction of the Higgs field, the electrically neutral
+ component of the Higgs develops an expectation value 
+\begin_inset Formula $v$
+\end_inset
+
+.
+ When this happens the electroweak symmetry 
 \begin_inset Formula $SU\left(2\right)_{L}\times U\left(1\right)_{Y}$
 \end_inset
 
  is no longer manifest.
- Instead 
-\begin_inset Formula $W^{\pm}=\left(W^{1}\mp iW^{2}\right)/\sqrt{2}$
+ Instead the weak bosons 
+\begin_inset Formula $W^{\pm}$
 \end_inset
 
- and a linear combination 
-\begin_inset Formula $Z=\left(\cos\theta_{W}\right)W^{3}-\left(\sin\theta_{W}\right)B$
+ and 
+\begin_inset Formula $Z^{0}$
 \end_inset
 
- gain mass by the Higgs mechanism, while the orthogonal combination 
-\begin_inset Formula $A=\left(\sin\theta_{W}\right)W^{3}+\left(\cos\theta_{W}\right)B$
+ gain mass by the Higgs mechanism, while the remaining electroweak boson
+ 
+\begin_inset Formula $A$
 \end_inset
 
  becomes the massless photon.
- Expanding 
-\begin_inset Formula $\Phi$
-\end_inset
-
- about 
-\begin_inset Formula $\left\langle \Phi\right\rangle $
-\end_inset
-
- I find that the Higgs kinetic term contains a piece
-\begin_inset Formula 
-\[
-\mathcal{L}_{\text{Higgs}}\supset\frac{g^{2}v^{2}}{2}W_{\mu}^{+}W^{-\mu}+\frac{1}{2}\frac{1}{\cos^{2}\theta_{W}}\frac{g^{2}v^{2}}{2}Z_{\mu}Z^{\mu},
-\]
-
-\end_inset
-
-which gives (tree level) masses 
+ The masses of the weak gauge bosons are 
 \begin_inset Formula $m_{W}=gv/\sqrt{2}$
 \end_inset
 
@@ -3058,11 +3105,15 @@ which gives (tree level) masses
 \end_inset
 
 , where 
+\begin_inset Formula $\theta_{W}$
+\end_inset
+
+ is the Weinberg angle given by 
 \begin_inset Formula $\cos\theta_{W}=g/\sqrt{g^{2}+g'^{2}}$
 \end_inset
 
-, and the photon remains massless as claimed.
- The electric charge is identified as 
+.
+ The fundamental electric charge is identified as 
 \begin_inset Formula $e=g\sin\theta_{W}$
 \end_inset
 
@@ -3079,7 +3130,11 @@ which gives (tree level) masses
 \end_layout
 
 \begin_layout Standard
-Finally notice that the SM conserves baryon number 
+Finally notice that the 
+\emph on
+classical
+\emph default
+ field equations of the SM conserves baryon number 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3100,35 +3155,19 @@ reference "tab:standard-model-fermions"
 global 
 \emph default
 (not gauged) 
-\begin_inset Formula $U\left(1\right)_{B}\times U\left(1\right)_{L}$
+\begin_inset Formula $\mathrm{U}\left(1\right)_{B}\times\mathrm{U}\left(1\right)_{L}$
 \end_inset
 
  symmetry of the theory.
  This is an accidental symmetry in that it was not put in by design, but
  is rather a result of the fact that the only terms possible to write down
- 
+ with the given fields 
 \emph on
 happen
 \emph default
  to obey it.
- It is quite possible that 
-\begin_inset Formula $U\left(1\right)_{B}\times U\left(1\right)_{L}$
-\end_inset
-
- is not an exact symmetry of the SM, and indeed quantum effects reduce the
- global symmetry group to 
-\begin_inset Formula $U\left(1\right)_{B-L}$
-\end_inset
-
-.
- This completes the writing down of the SM.
-\end_layout
-
-\begin_layout Standard
-Just because a classical Lagrangian has a certain symmetry does not mean
- that the full quantum theory will also have that symmetry.
- Indeed, symmetries of theories with chiral fermions coupled to gauge bosons
- are spoiled 
+ Symmetries of theories with chiral fermions coupled to gauge bosons are
+ spoiled 
 \emph on
 chiral anomalies
 \emph default
@@ -3139,104 +3178,16 @@ key "Peskin1995,Shaposhnikov1991"
 
 \end_inset
 
-.
- If a classical chiral symmetry is generated by a (in general, reducible)
- representation matrix 
-\begin_inset Formula $T^{a}$
+ and it is quite possible that 
+\begin_inset Formula $\mathrm{U}\left(1\right)_{B}\times\mathrm{U}\left(1\right)_{L}$
 \end_inset
 
- acting on all of the fermions in the theory, which is conveniently written
- as a column vector of left chiral fields 
-\begin_inset Formula $\Psi$
-\end_inset
-
-, then the anomaly is expressed by the non-conservation of the classical
- current given by
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang british
-Is this a factor of 2 too big? c.f.
- Shifman 22.8, 34.19
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\partial_{\mu}j^{\mu5a}\equiv\partial_{\mu}\left(\bar{\Psi}\gamma^{\mu}T^{a}\frac{1-\gamma^{5}}{2}\Psi\right)=\sum_{i}-\frac{g_{i}^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\sigma}F_{i}^{b\mu\nu}F_{i}^{c\rho\sigma}\mathrm{Tr}\left[T^{a}\left\{ t^{b},t^{c}\right\} \right],
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $ $
-\end_inset
-
-the sum over 
-\begin_inset Formula $i$
-\end_inset
-
- runs over all gauge groups in the theory and 
-\begin_inset Formula $t^{a}$
-\end_inset
-
- are the generators of the gauge transformations in the (generally reducible)
- representation acting on 
-\begin_inset Formula $\Psi$
+ is not an exact symmetry of the SM.
+ Indeed quantum effects reduce the global symmetry group to 
+\begin_inset Formula $\mathrm{U}\left(1\right)_{B-L}$
 \end_inset
 
 .
- The trace runs over all of the fermions in the theory.
-\end_layout
-
-\begin_layout Standard
-It is an important consistency condition that the anomalies for all chiral
- currents coupled to gauge bosons vanish.
- Otherwise, unphysical polarisation states of gauge bosons would be created
- and unitarity constraints would be violated in scattering processes.
- If one computes the group theory factors 
-\begin_inset Formula $\mathrm{Tr}\left[T^{a}\left\{ t^{b},t^{c}\right\} \right]$
-\end_inset
-
- for all the gauge generators of the SM one finds that the theory is indeed
- gauge anomaly free if fermions come in complete generations.
-\end_layout
-
-\begin_layout Standard
-The baryon and lepton currents, on the other hand, are anomalous.
- Computing the anomaly coefficients from Table 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "tab:standard-model-fermions"
-
-\end_inset
-
- I find
-\begin_inset Formula 
-\begin{equation}
-\partial_{\mu}j^{\mu5B}=\partial_{\mu}j^{\mu5L}=-\frac{n_{g}g^{2}}{32\pi^{2}}\epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}+\frac{n_{g}g'^{2}}{8\pi^{2}}\epsilon_{\mu\nu\rho\sigma}B^{\mu\nu}B^{\rho\sigma},\label{eq:B-and-L-anomaly}
-\end{equation}
-
-\end_inset
-
-or, adding and subtracting,
-\begin_inset Formula 
-\begin{align*}
-\partial_{\mu}j^{\mu5\left(B-L\right)} & =0,\\
-\partial_{\mu}j^{\mu5\left(B+L\right)} & =-\frac{n_{g}g^{2}}{16\pi^{2}}\epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}+\frac{n_{g}g'^{2}}{4\pi^{2}}\epsilon_{\mu\nu\rho\sigma}B^{\mu\nu}B^{\rho\sigma},
-\end{align*}
-
-\end_inset
-
-where 
-\begin_inset Formula $n_{g}=3$
-\end_inset
-
- is the number of fermion generations.
  Thus 
 \begin_inset Formula $B+L$
 \end_inset
@@ -3245,7 +3196,7 @@ where
 \emph on
 not
 \emph default
- a conserved quantum number of the SM, but 
+ a conserved quantum number of the SM at a quantum level, but 
 \begin_inset Formula $B-L$
 \end_inset
 
@@ -3257,32 +3208,7 @@ is
 \end_layout
 
 \begin_layout Standard
-To illustrate the mechanism of baryon number violation I will simplify the
- SM somewhat.
- It will turn out that the abelian field 
-\begin_inset Formula $B_{\mu}$
-\end_inset
-
- plays no qualitative role in what follows, so I can take 
-\begin_inset Formula $\theta_{W}\to0$
-\end_inset
-
-, or equivalently 
-\begin_inset Formula $g'\to0$
-\end_inset
-
-, decoupling the 
-\begin_inset Formula $B_{\mu}$
-\end_inset
-
- field from the theory.
- I can also take 
-\begin_inset Formula $n_{g}=1$
-\end_inset
-
- and ignore the Higgs-Yukawa couplings of the fermions as these play no
- qualitative role.
- The mechanism of 
+The mechanism of 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3290,7 +3216,8 @@ To illustrate the mechanism of baryon number violation I will simplify the
 \begin_inset Formula $L$
 \end_inset
 
- violation is topological in nature, invisible to perturbation theory.
+ violation is topological in nature and as such is invisible to perturbation
+ theory.
  At zero temperature it proceeds by quantum tunnelling between gauge vacua
  with different topologies.
  A potential barrier separates these field configurations and the leading
@@ -3341,7 +3268,27 @@ key "Shaposhnikov1991,Shifman2012"
 \end_layout
 
 \begin_layout Standard
-The topological nature of 
+The weak gauge fields possess a topological invariant called the 
+\emph on
+Chern-Simons
+\emph default
+ number which, effectively, measures how many times the gauge field configuratio
+n 
+\begin_inset Quotes eld
+\end_inset
+
+winds
+\begin_inset Quotes erd
+\end_inset
+
+ around the sphere at infinity.
+ In vacuum 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ is an integer.
+ Transitions from one gauge vacuum to another are possible and when this
+ happens the chiral anomaly is responsible for changing 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3349,480 +3296,21 @@ The topological nature of
 \begin_inset Formula $L$
 \end_inset
 
- violating transitions can be seen by integrating 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:B-and-L-anomaly"
-
-\end_inset
-
- and examining what gauge field configurations can give a non-zero contribution
- to the right hand side:
-\begin_inset Formula 
-\begin{align*}
-\Delta B=\Delta L & =\int\mathrm{d}^{4}x\ \partial_{\mu}j^{\mu5\left(B,L\right)}\\
- & =-\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{4}x\ \epsilon_{\mu\nu\rho\sigma}W^{a\mu\nu}W^{a\rho\sigma}\\
- & =\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{4}x\ \partial_{\mu}K^{\mu},
-\end{align*}
-
-\end_inset
-
-where
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang british
-Factor of 2 here? c.f.
- Shifman eq.
- 18.12 (also note 
-\begin_inset Formula $g\to-g$
-\end_inset
-
- there c.f.
- eq.
- 18.2); Update 25/11/2013 this seems to work with 
-\begin_inset Formula $\mathcal{K}=n_{w}$
-\end_inset
-
-, haven't yet checked with the anomaly eq.
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Formula 
-\[
-K^{\mu}=4\epsilon^{\mu\nu\alpha\beta}\left(W_{\nu}^{a}\partial_{\alpha}W_{\beta}^{a}-\frac{g}{3}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\right),
-\]
-
-\end_inset
-
-is the 
-\emph on
-Chern-Simons
-\emph default
- current.
- The 
-\emph on
-Chern-Simons number
-\emph default
- 
-\begin_inset Formula $\mathcal{K}$
-\end_inset
-
- is defined as the charge corresponding to this current:
-\begin_inset Formula 
-\[
-\mathcal{K}=\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{3}x\ K^{0}.
-\]
-
-\end_inset
-
-Then 
-\begin_inset Formula $\Delta B=\Delta L=\Delta\mathcal{K}$
-\end_inset
-
-, i.e.
- only Chern-Simons number changing transitions contribute to baryon and
- lepton number violation.
-\end_layout
-
-\begin_layout Standard
-Consider for the moment vacuum field configurations.
- In this case the gauge fields must be pure gauge: 
-\begin_inset Formula $W_{\mu}=\frac{i}{g}U^{\dagger}\partial_{\mu}U$
-\end_inset
-
-, for 
-\begin_inset Formula $U\in SU\left(2\right)$
-\end_inset
-
-.
- All of these states have zero energy.
- Choose the static gauge 
-\begin_inset Formula $W_{0}=0$
-\end_inset
-
- for simplicity, implying 
-\begin_inset Formula $U\left(\vec{x},t\right)=U\left(\vec{x}\right)$
-\end_inset
-
-.
- The vacuum configurations must be connectible by trajectories with finite
- action (any states separated by an infinite action are physically inaccessible,
- even by quantum tunnelling.) This sets the boundary condition 
-\begin_inset Formula $U\to\text{const.}$
-\end_inset
-
- as 
-\begin_inset Formula $\left|\vec{x}\right|\to\infty$
-\end_inset
-
- (
-\begin_inset Formula $U$
-\end_inset
-
- going to any constant matrix is acceptable, and all choices are physically
- equivalent).
- This boundary condition is the same as compactifying the space 
-\begin_inset Formula $\mathbb{R}^{3}$
-\end_inset
-
- by adding a point at infinity, resulting in a space topologically equivalent
- (homeomorphic) to the three-sphere 
-\begin_inset Formula $S^{3}$
-\end_inset
-
-.
- But the group 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
- is also homeomorphic to 
-\begin_inset Formula $S^{3}$
-\end_inset
-
-.
- This can be seen by writing a general matrix in 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
-:
-\begin_inset Formula 
-\[
-U=\left(\begin{array}{cc}
-a+id & b+ic\\
--b+ic & a-id
-\end{array}\right)\in SU\left(2\right),
-\]
-
-\end_inset
-
-for real 
-\begin_inset Formula $a,b,c,d$
-\end_inset
-
- and noting that the condition 
-\begin_inset Formula $\det\left(U\right)=1$
-\end_inset
-
- is equivalent to 
-\begin_inset Formula $a^{2}+b^{2}+c^{2}+d^{2}=1$
-\end_inset
-
-.
- This defines a three-sphere of unit radius.
- Hence 
-\begin_inset Formula $U:\left(\mathbb{R}^{3}\cup\infty\right)\to SU\left(2\right)$
-\end_inset
-
- is a mapping of three-spheres 
-\begin_inset Formula $S^{3}\to S^{3}$
-\end_inset
-
-.
- These mappings fall into topologically distinct classes classified by the
- third homotopy group of the three-sphere 
-\begin_inset Formula $\pi_{3}\left(S^{3}\right)=\mathbb{Z}$
-\end_inset
-
-.
- The number 
-\begin_inset Formula $n_{w}\in\pi_{3}\left(S^{3}\right)$
-\end_inset
-
- associated in this way to a mapping is called 
-\emph on
-winding number
-\emph default
- and counts the number of times the map 
-\begin_inset Formula $U$
-\end_inset
-
- winds around the group 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
-.
- Both real space and the group space are oriented so it makes sense to talk
- about negative winding numbers.
- Maps with the same winding number can be continuously deformed to each
- other by a 
-\emph on
-small gauge transformation
-\emph default
-, while 
-\emph on
-large gauge transformations
-\emph default
- change the winding number by an integer.
-\end_layout
-
-\begin_layout Standard
-The Chern-Simons number of the vacuum configurations can be evaluated as
- follows.
- First rewrite the Chern-Simons current in terms of 
-\begin_inset Formula $U$
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{align*}
-K^{\mu} & =4\epsilon^{\mu\nu\alpha\beta}W_{\nu}^{a}\partial_{\alpha}W_{\beta}^{a}-4\epsilon^{\mu\nu\alpha\beta}\frac{g}{3}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\\
- & =2\epsilon^{\mu\nu\alpha\beta}W_{\nu}^{a}W_{\alpha\beta}^{a}+\frac{2}{3}g\epsilon^{\mu\nu\alpha\beta}\epsilon^{abc}W_{\nu}^{a}W_{\alpha}^{b}W_{\beta}^{c}\\
- & =-\frac{16}{3g^{2}}i\epsilon^{\mu\nu\alpha\beta}\epsilon^{abc}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\alpha}U\tau^{b}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\beta}U\tau^{c}\right)\\
- & =-\frac{8}{3g^{2}}\epsilon^{\mu\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right).
-\end{align*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-To establish the last equality a useful identity is 
-\begin_inset Formula 
-\begin{align*}
-\epsilon^{abc}\mathrm{Tr}\left(A\tau^{a}\right)\mathrm{Tr}\left(B\tau^{b}\right)\mathrm{Tr}\left(C\tau^{c}\right) & =-\frac{1}{4}i\mathrm{Tr}\left(A\right)\mathrm{Tr}\left(B\right)\mathrm{Tr}\left(C\right)+\frac{1}{4}i\mathrm{Tr}\left(A\right)\mathrm{Tr}\left(BC\right)\\
- & +\frac{1}{4}i\mathrm{Tr}\left(B\right)\mathrm{Tr}\left(AC\right)+\frac{1}{4}i\mathrm{Tr}\left(C\right)\mathrm{Tr}\left(AB\right)\\
- & -\frac{1}{2}i\mathrm{Tr}\left(ABC\right),
-\end{align*}
-
-\end_inset
-
-for any 
-\begin_inset Formula $A,B,C\in SU\left(2\right)$
-\end_inset
-
-, which can be proven using the further useful identities 
-\begin_inset Formula $\mathrm{Tr}\left(\tau^{a}\tau^{b}\tau^{c}\right)=\frac{i}{4}\epsilon^{abc}$
-\end_inset
-
- and the Fierz identity 
-\begin_inset Formula $\tau_{ij}^{a}\tau_{kl}^{a}=-\frac{1}{4}\delta_{ij}\delta_{kl}+\frac{1}{2}\delta_{ik}\delta_{jl}$
-\end_inset
-
-.
- Applying this with 
-\begin_inset Formula $A=U^{\dagger}\partial_{\nu}U$
-\end_inset
-
- etc.
- and noting that the antisymmetry of 
-\begin_inset Formula $\epsilon^{\mu\nu\alpha\beta}$
-\end_inset
-
- kills all but the last term gives the desired result.
- Finally evaluate the Chern-Simons number
-\begin_inset Formula 
-\begin{align*}
-\mathcal{K} & =\frac{g^{2}}{32\pi^{2}}\int\mathrm{d}^{3}x\ K^{0}\\
- & =-\frac{1}{12\pi^{2}}\int\mathrm{d}^{3}x\ \epsilon^{0\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right)\\
- & =\frac{1}{2\pi^{2}}\int\mathrm{d}^{3}x\ \frac{1}{6}\epsilon^{\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right)\\
- & =\frac{1}{2\pi^{2}}\int\mathrm{d}^{3}x\ \frac{\partial^{3}\Omega}{\partial^{3}x},
-\end{align*}
-
-\end_inset
-
-where used 
-\begin_inset Formula $\epsilon^{0\nu\alpha\beta}=\epsilon^{\nu\alpha\beta}$
-\end_inset
-
- for 
-\begin_inset Formula $\nu,\alpha,\beta=1,2,3$
-\end_inset
-
- and 
-\begin_inset Formula 
-\[
-\frac{\partial^{3}\Omega}{\partial^{3}x}\equiv\frac{1}{6}\epsilon^{\nu\alpha\beta}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}UU^{\dagger}\partial_{\alpha}UU^{\dagger}\partial_{\beta}U\right),
-\]
-
-\end_inset
-
-is the natural 
-\emph on
-oriented
-\emph default
- 
-\begin_inset Formula $SU\left(2\right)$
-\end_inset
-
- invariant group volume element (the 
-\emph on
-Haar measure
-\emph default
-).
- The integral then measures the oriented volume swept out in the group as
- 
-\begin_inset Formula $x$
-\end_inset
-
- varies over all space; and since the volume of the group is the volume
- of 
-\begin_inset Formula $S^{3}$
-\end_inset
-
- which is 
-\begin_inset Formula $2\pi^{2}$
-\end_inset
-
-, 
-\begin_inset Formula $\mathcal{K}$
-\end_inset
-
- counts the number of times the full group is swept out as 
-\begin_inset Formula $x$
-\end_inset
-
- varies over all space.
- Thus I find that 
-\begin_inset Formula $\mathcal{K}=n_{w}$
-\end_inset
-
-, the Chern-Simons number is just the winding number of the gauge field
- configuration.
-\end_layout
-
-\begin_layout Standard
-A gauge vacuum with nontrivial winding can be found by choosing
-\begin_inset Formula 
-\[
-U=\exp\left(-i\tau^{a}\frac{x^{a}}{r}f\left(r\right)\right),
-\]
-
-\end_inset
-
-and noting the boundary conditions demand that 
-\begin_inset Formula $f\left(0\right)=2\pi n$
-\end_inset
-
- and 
-\begin_inset Formula $f\left(\infty\right)=2\pi m$
-\end_inset
-
- for integers 
-\begin_inset Formula $n,m$
-\end_inset
-
-.
- I illustrate the calculation of the Chern-Simons number of this configuration
- because it is hard to find in the literature and it is only straightforward
- once one knows where to start.
- It is easiest to use the form of 
-\begin_inset Formula $K^{0}$
-\end_inset
-
- in terms of 
-\begin_inset Formula $\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)$
-\end_inset
-
- rather than the form involving the group volume element.
- Also note that 
-\begin_inset Formula 
-\begin{align*}
-K^{0} & \propto\epsilon^{0\nu\alpha\beta}\epsilon^{abc}\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\alpha}U\tau^{b}\right)\mathrm{Tr}\left(U^{\dagger}\partial_{\beta}U\tau^{c}\right)\\
- & =6\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right],
-\end{align*}
-
-\end_inset
-
-thinking of 
-\begin_inset Formula $\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)$
-\end_inset
-
- as a 
-\begin_inset Formula $3\times3$
-\end_inset
-
- matrix on the 
-\begin_inset Formula $\nu,a$
-\end_inset
-
- indices.
- After a bit of algebra I find
-\begin_inset Formula 
-\[
-\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)=-i\frac{1}{2}\frac{x^{a}}{r}\partial_{\nu}f-i\partial_{\nu}\left(\frac{x^{a}}{r}\right)\sin\left(\frac{f}{2}\right)\cos\left(\frac{f}{2}\right)+i\epsilon^{abc}\frac{x^{b}}{r}\partial_{\nu}\left(\frac{x^{c}}{r}\right)\sin^{2}\left(\frac{f}{2}\right),
-\]
-
-\end_inset
-
-and
-\begin_inset Formula 
-\[
-\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right]=\frac{i}{4r^{2}}\left(1-\cos f\right)f',
-\]
-
-\end_inset
-
-leading to
-\begin_inset Formula 
-\begin{align*}
-\mathcal{K} & =-\frac{i}{2\pi^{2}}\int\mathrm{d}^{3}x\det\left[\mathrm{Tr}\left(U^{\dagger}\partial_{\nu}U\tau^{a}\right)\right]\\
- & =-\frac{i}{2\pi^{2}}\int\mathrm{d}^{3}x\frac{if'\left(1-\cos f\right)}{4r^{2}}\\
- & =\frac{1}{2\pi}\int_{0}^{\infty}\mathrm{d}r\ f'\left(1-\cos f\right)\\
- & =\frac{1}{2\pi}\left[f-\sin f\right]_{0}^{\infty}\\
- & =m-n.
-\end{align*}
-
-\end_inset
-
-Thus the basic winding configuration has 
-\begin_inset Formula $m=1$
-\end_inset
-
- and 
-\begin_inset Formula $n=0$
-\end_inset
-
-.
- Note that only the boundary values of 
-\begin_inset Formula $f$
-\end_inset
-
- enter into 
-\begin_inset Formula $\mathcal{K}$
-\end_inset
-
-, confirming the topological nature of the Chern-Simons number.
-\end_layout
-
-\begin_layout Standard
-Bringing the argument together: there is an infinitude of gauge vacua characteri
-sed by the topological invariant 
-\begin_inset Formula $n_{w}$
-\end_inset
-
-.
- If there is a transition from one gauge vacuum to another which changes
- the winding number by 
-\begin_inset Formula $\Delta n_{w}$
-\end_inset
-
- then 
-\begin_inset Formula $\Delta B=\Delta L=\Delta\mathcal{K}=\Delta n_{w}$
+ by 
+\begin_inset Formula $\Delta B=\Delta L=3\Delta\mathcal{K}$
 \end_inset
 
 .
  More generally 
-\begin_inset Formula $\Delta B=\Delta L=n_{g}\Delta\mathcal{K}=n_{g}\Delta n_{w}$
+\begin_inset Formula $\Delta B=\Delta L=n_{g}\Delta\mathcal{K}$
 \end_inset
 
-.
- Note that the relation 
-\begin_inset Formula $\mathcal{K}=n_{w}$
+ where 
+\begin_inset Formula $n_{g}$
 \end_inset
 
- only holds for vacuum states.
- For excited states 
-\begin_inset Formula $\mathcal{K}$
-\end_inset
-
- varies continuous and is not necessarily an integer.
- Thus I can sketch the potential energy along the 
+ is the number of fermion generations.
+ One can sketch the potential energy along the 
 \begin_inset Formula $\mathcal{K}$
 \end_inset
 
@@ -3842,6 +3330,8 @@ reference "fig:chern-simons-potential-su2-theory"
 \end_inset
 
 .
+ The sphaleron is the minimal energy configuration interpolating between
+ two adjacent vacua (i.e., the smallest barrier).
  Note that this figure is only illustrative.
  To find an honest expression for the potential energy one needs to develop
  a one parameter ansatz for the gauge and Higgs fields which passes through
@@ -3861,7 +3351,7 @@ reference "fig:chern-simons-potential-su2-theory"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset space \hfill{}
@@ -3885,8 +3375,6 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:chern-simons-potential-su2-theory"
@@ -3931,24 +3419,10 @@ direction
 \begin_layout Standard
 The height of the barrier and the sphaleron solution are found from a static
  configuration of the gauge and Higgs fields that extremises the energy
-\begin_inset Formula 
-\[
-E=\int\mathrm{d}^{3}x\ \frac{1}{4}W_{ij}^{a}W_{ij}^{a}+\left(D_{i}\Phi\right)^{\dagger}D_{i}\Phi+V\left(\Phi^{\dagger}\Phi\right),
-\]
-
-\end_inset
-
-in the 
-\begin_inset Formula $W_{0}^{a}=0$
-\end_inset
-
- gauge, which is defined up to a time-independent gauge transformation.
+ subject to the boundary conditions imposed by the required Chern-Simons
+ number.
  The sphaleron is an unstable equilibrium solution of the equations of motion,
- representing a saddle point of 
-\begin_inset Formula $E$
-\end_inset
-
-.
+ representing a saddle point of the energy.
  The suitable ansatz was first discovered by Klinkhamer and Manton 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -3956,90 +3430,21 @@ key "Klinkhamer1984"
 
 \end_inset
 
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align*}
-W_{i}^{a} & =\frac{1}{g}\epsilon^{iak}\frac{x_{k}}{r}f\left(r\right),\\
-\Phi & =\frac{x_{k}}{r}\sigma_{k}\left(\begin{array}{c}
-1\\
-0
-\end{array}\right)h\left(r\right),
-\end{align*}
-
+.
+ The resulting field profiles must be found numerically, but in the 
+\begin_inset Formula $g'\to0$
 \end_inset
 
-where 
-\begin_inset Formula $f\left(r\right)$
-\end_inset
-
- and 
-\begin_inset Formula $h\left(r\right)$
-\end_inset
-
- are profile functions to be determined from the equations of motion and
- satisfying the boundary conditions 
-\begin_inset Formula $f,h\to0$
-\end_inset
-
- as 
-\begin_inset Formula $r\to0$
-\end_inset
-
- and 
-\begin_inset Formula $f\to-2/r+\mathcal{O}\left(r^{-3/2}\right)$
-\end_inset
-
- and 
-\begin_inset Formula $h\to v+\mathcal{O}\left(r^{-3/2}\right)$
-\end_inset
-
- as 
-\begin_inset Formula $r\to\infty$
-\end_inset
-
- in order for the energy to be finite.
- It is also convenient to introduce dimensionless variables 
-\begin_inset Formula $\rho=gvr$
-\end_inset
-
-, 
-\begin_inset Formula $F=f/gv$
-\end_inset
-
- and 
-\begin_inset Formula $H=h/v$
-\end_inset
-
-, in terms of which the energy can be written as
-\begin_inset Formula 
-\begin{align*}
-E & =\frac{4\pi v}{g}\int_{0}^{\infty}\mathrm{d}\rho\ \rho^{2}\left(F'\right)^{2}+2F^{2}+2\rho F^{3}+\frac{1}{2}\rho^{2}F^{4}\\
- & +\rho^{2}\left(H'\right)^{2}+2H^{2}\left(1+\rho\frac{F}{2}\right)^{2}+\frac{1}{2}\frac{\lambda^{2}}{g^{2}}\rho^{2}\left(H^{2}-1\right)^{2}.
-\end{align*}
-
-\end_inset
-
-The first line is the energy of the gauge field and the second line is the
- energy of the Higgs field.
- The functions 
-\begin_inset Formula $F\left(\rho\right)$
-\end_inset
-
- and 
-\begin_inset Formula $H\left(\rho\right)$
-\end_inset
-
- can be found by extremizing the integral (numerically: analytical solutions
- are not known) and the resulting field profiles depend only on the ratio
- 
+ limit they depend only on the ratio 
 \begin_inset Formula $\lambda^{2}/g^{2}$
 \end_inset
 
-.
- The energy can be written
+ where 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is the Higgs self-coupling.
+ The energy can then be written
 \begin_inset Formula 
 \[
 E=\frac{4\pi v}{g}C\left(\frac{\lambda^{2}}{g^{2}}\right),
@@ -4109,9 +3514,16 @@ The second Sakharov criterion requires that the early universe depart from
  Recall that if the Higgs field(s) has a nonvanishing expectation value
  the electroweak symmetry is said to be broken, while if the expectation
  value is zero the symmetry is manifest or unbroken.
- The behaviour of the Higgs field in equilibrium can be determined by minimizing
- the effective potential, given by the Legendre transform of the free energy
+ The behaviour of the Higgs field 
+\begin_inset Formula $\phi$
+\end_inset
+
+ in equilibrium can be determined by minimizing the effective potential
  
+\begin_inset Formula $\Gamma\left[\phi\right]$
+\end_inset
+
+, given by the Legendre transform of the free energy 
 \begin_inset Formula $F\left[J\right]=-k_{B}T\ln Z\left[J\right]$
 \end_inset
 
@@ -4128,16 +3540,13 @@ The second Sakharov criterion requires that the early universe depart from
 status open
 
 \begin_layout Plain Layout
-It is conceptually cleaner to introduce a source for the gauge invariant
- operator 
-\begin_inset Formula $\hat{\Phi}^{\dagger}\hat{\Phi}$
-\end_inset
-
+It is conceptually cleaner to introduce a source for a gauge invariant operator
  rather than 
-\begin_inset Formula $\hat{\Phi}$
+\begin_inset Formula $\phi$
 \end_inset
 
- itself, but I go with tradition here.
+ itself, but using the (gauge-variant) Higgs field instead is technically
+ simpler and common in the literature.
  The gauge dependence of the resulting treatment is a subtle and interesting
  question.
  This issue, and the fact that 
@@ -4167,7 +3576,7 @@ key "Straumann2004"
 , given by
 \begin_inset Formula 
 \[
-Z\left[J\right]=\mathrm{Tr}\exp\left(-\beta\hat{H}_{SM}-\beta\int\mathrm{d}^{3}x\ J\left(x\right)\hat{\Phi}\left(x\right)\right),
+Z\left[J\right]=\mathrm{Tr}\exp\left(-\beta\hat{H}_{SM}-\beta\int\mathrm{d}^{3}x\ J\left(x\right)\phi\left(x\right)\right),
 \]
 
 \end_inset
@@ -4176,92 +3585,8 @@ where
 \begin_inset Formula $\hat{H}_{SM}$
 \end_inset
 
- is the Hamiltonian of the SM and the trace is appropriately gauge fixed
- (I will not worry about this aspect for now).
- Note that this can be cast as a 
-\emph on
-Euclidean
-\emph default
- or 
-\emph on
-imaginary time
-\emph default
- functional integral by comparing the exponent 
-\begin_inset Formula $-\beta\hat{H}_{SM}$
-\end_inset
-
- to the usual one for real time evolution 
-\begin_inset Formula $-i\hat{H}_{SM}t/\hbar$
-\end_inset
-
-.
- The functional integral runs over field configurations which are periodic
- (because of the trace) in imaginary time with period 
-\begin_inset Formula $-i\beta\hbar$
-\end_inset
-
-.
- This leads to the 
-\emph on
-Matsubara
-\emph default
- formalism for finite temperature quantum field theory (discussed extensively
- in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Kapusta2006,Zinn-Justin1990"
-
-\end_inset
-
-), which is subsumed as a special case of the nonequilibrium techniques
- discussed below.
- However, following standard treatments, I will compute the equilibrium
- free energy and attempt to deduce real time behaviour from that.
-\end_layout
-
-\begin_layout Standard
-Taking the functional derivative of 
-\begin_inset Formula $F\left[J\right]$
-\end_inset
-
- with respect to 
-\begin_inset Formula $J\left(x\right)$
-\end_inset
-
- gives the expectation value of the Higgs field:
-\begin_inset Formula 
-\[
-\frac{\delta}{\delta J\left(x\right)}F\left[J\right]=-\frac{k_{B}T}{Z\left[J\right]}\frac{\delta}{\delta J\left(x\right)}Z\left[J\right]=\left\langle \hat{\Phi}\left(x\right)\right\rangle \equiv\phi\left(x\right).
-\]
-
-\end_inset
-
-Thus, defining the Legendre transform
-\begin_inset Formula 
-\[
-\Gamma\left[\phi\right]=\int\mathrm{d}^{3}x\ \phi\left(x\right)J\left(x\right)-F\left[J\right],
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $J$
-\end_inset
-
- is determined from 
-\begin_inset Formula $\phi$
-\end_inset
-
-, I find
-\begin_inset Formula 
-\[
-\frac{\delta}{\delta\phi\left(y\right)}\Gamma\left[\phi\right]=J\left(y\right)+\int\mathrm{d}^{3}x\ \phi\left(x\right)\frac{\delta J\left(x\right)}{\delta\phi\left(y\right)}-\int\mathrm{d}^{3}x\ \frac{\delta J\left(x\right)}{\delta\phi\left(y\right)}\frac{\delta}{\delta J\left(x\right)}F\left[J\right]=J\left(y\right),
-\]
-
-\end_inset
-
-thus the expectation value of the Higgs field of the original source free
- (
+ is the Hamiltonian of the SM and the trace is appropriately gauge fixed.
+ The expectation value of the Higgs field of the original source free (
 \begin_inset Formula $J=0$
 \end_inset
 
@@ -4321,7 +3646,7 @@ The effective potential can be computed in a semiclassical expansion in
 status open
 
 \begin_layout Plain Layout
-I am ignoring the logarithmic Coleman-Weinberg terms, which can be justified
+This ignores the logarithmic Coleman-Weinberg terms, which can be justified
  by choosing an appropriate renormalisation scale.
 \end_layout
 
@@ -4356,14 +3681,14 @@ where sum runs over all species, the upper(lower) signs are for fermions(bosons)
 \end_inset
 
  are the mass and chemical potential of the species.
- I will assume that 
+ The following assumes that 
 \begin_inset Formula $\mu_{i}=0$
 \end_inset
 
 , i.e.
  that the net value of all conserved charges vanishes.
- In particular I are assuming that the universe as a whole is neutral and
- that 
+ In particular this is assuming that the universe as a whole is neutral
+ and that 
 \begin_inset Formula $B-L=0$
 \end_inset
 
