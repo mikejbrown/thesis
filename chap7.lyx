@@ -468,29 +468,38 @@ reference "chap:chap4"
 d'Alembert
 \emph default
  formalism, which chooses uniquely the simplest possibility.
- The symmetry improved 3PIEA was then renormalised in the Hartree-Fock and
- two loop truncations in four dimensions and in the three loop truncation
- in three dimensions.
+ The SI-3PIEA was then renormalised in the Hartree-Fock and two loop truncations
+ in four dimensions and in the three loop truncation in three dimensions.
  The Hartree-Fock equations of motion were solved and compared to the unimproved
- and symmetry improved 2PIEA Hartree-Fock solutions.
- The result was that in the symmetry improved 2PI solutions the phase transition
- is second order and Goldstone's theorem is satisfied (in agreement with
- previous literature), but in the symmetry improved 3PI solutions the phase
- transition is first order even though Goldstone's theorem is satisfied.
+ and SI-2PI Hartree-Fock solutions.
+ The result was that in the SI-2PI solutions the phase transition is second
+ order and Goldstone's theorem is satisfied (in agreement with previous
+ literature), but in the SI-3PI solutions the phase transition is first
+ order even though Goldstone's theorem is satisfied.
  This showed for the first time that masslessness of the Goldstone bosons
  in the formalism does not imply that the phase transition is computed correctly.
  This is because the Hartree-Fock truncation is not fully self-consistent
  for the 3PIEA.
- However, the first order transition in the symmetry improved 3PI case is
- much weaker than in the unimproved 2PI case, so the symmetry improvement
- does help matters even so.
- Further checks of the formalism were performed: it was shown that the symmetry
- improved 3PIEA obeys the Coleman-Mermin-Wagner theorem and that absorptive
- part of the propagator is consistent with unitarity to 
+ However, the first order transition in the SI-3PI case is much weaker than
+ in the unimproved 2PI case, so the symmetry improvement does help matters
+ even so.
+ Further checks of the formalism were performed: it was shown that the SI-3PIEA
+ obeys the Coleman-Mermin-Wagner theorem and that absorptive part of the
+ propagator is consistent with unitarity to 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
 , but only if the full three loop truncation is kept.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Anything else?
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -501,7 +510,82 @@ reference "chap:chap5"
 
 \end_inset
 
+ introduced a novel method of soft symmetry improvement (SSI) for 
+\begin_inset Formula $n$
+\end_inset
 
+PIEA.
+ SSI differs from SI in that the Ward identities are imposed 
+\emph on
+softly
+\emph default
+ in the sense of (weighted) least squared error rather than as strong constraint
+s on the solutions.
+ A new 
+\emph on
+stiffness
+\emph default
+ parameter controls the strength of the constraint.
+ The motivation for this method is that the singular nature of the constraint
+ in SI leads to pathological behaviour such as the non-existence of solutions
+ in certain truncations and the breakdown of the theory out of equilibrium
+ (which is examined more closely in Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+).
+ The hope was that by relaxing the constraint some solutions with reasonable
+ physical properties could be found interpolating between the unimproved
+ and symmetry improved limits for finite values of the stiffness parameter.
+ The SSI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA is sensitive to the infrared (large distance) boundary conditions of
+ the problem.
+ In order to regulate the IR behaviour the SSI-2PIEA was studied in a box
+ of finite volume with periodic boundary conditions and at finite temperature.
+ The limit of infinite volume and low temperature was examined and three
+ limiting regimes found.
+ Two were equivalent to the unimproved 2PIEA and SI-2PIEA respectively.
+ The third was a novel limit which had pathological behaviour.
+ The zero mode of the Goldstone propagator was massless as expected, but
+ modes with finite energy/momentum had a finite mass.
+ Further, this mass 
+\emph on
+increases
+\emph default
+ as the constraint is more strongly imposed, contrary to intuition.
+ The phase transition is strongly first order in the Hartree-Fock truncation,
+ and there is a critical value of the stiffness parameter 
+\begin_inset Formula $\hat{\zeta}_{c}$
+\end_inset
+
+ such that for 
+\begin_inset Formula $\hat{\zeta}<\hat{\zeta}_{c}$
+\end_inset
+
+ (more strongly imposed constraints) solutions cease to exist for a range
+ of temperatures below the critical temperature.
+ As 
+\begin_inset Formula $\hat{\zeta}\to0$
+\end_inset
+
+ this range increases and at some finite value 
+\begin_inset Formula $\hat{\zeta}_{\star}$
+\end_inset
+
+ the solution ceases to exist even at zero temperature.
+ This loss of solution was confirmed both analytically and numerically.
+ The 2PI, SI-2PI and novel SSI-2PI limits are all disconnected from each
+ other: in infinite volume there is no continuous parameter connecting any
+ two of the limits.
+ Thus the original goal of this program is not achievable in infinite volume.
+ The author has plans of submitting a paper based on this work for publication
+ in a peer reviewed journal after the acceptance of this thesis.
 \end_layout
 
 \begin_layout Standard
