@@ -880,19 +880,6 @@ not
  in general vanish.
  Thus it is important to keep all mixed quantities during the intermediate
  steps of the computation.
- In the spirit of chapter 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chap2"
-
-\end_inset
-
- the author would recommend a first study of symmetry improved 
-\begin_inset Formula $n$
-\end_inset
-
-PIEAs for gauge theories to focus on one of the lower dimensional solvable
- models.
 \begin_inset Note Note
 status open
 
@@ -915,7 +902,99 @@ Chapter 4
 
 \end_inset
 
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
 
+\end_inset
+
+ discussed the symmetry improvement formalism.
+ Apart from the overall limitation of this thesis to pure scalar theories
+ with fields in a single fundamental representation of a global 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ symmetry, the main limitations of this chapter are due to the numerical
+ issues discussed above.
+ The theory is considered in the SI-2PIEA and SI-3PIEA truncated to three
+ loop order.
+ Renormalised equations of motion are derived in the two loop truncation
+ in both schemes in four dimensions, and the three loop truncation in three
+ dimensions.
+ Only the Hartree-Fock approximation is solved.
+ Unfortunately, the most interesting case is the full three loop truncation
+ of the SI-3PIEA in four dimensions.
+ With these solutions a proper check could be made of the (a) existence
+ of solutions, (b) sensitivity of the solutions to the infrared boundary
+ conditions, (c) order and thermodynamics of the phase transition and (d)
+ the predictions for the absorptive part of the Higgs propagator
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+anything else?
+\end_layout
+
+\end_inset
+
+.
+ Unfortunately, finding these solutions requires a numerical effort similar
+ in scope to a large portion of this thesis.
+ The main difficulty is that the renormalisation is not possible to carry
+ out beforehand in four dimensions: quantum corrections to the vertex function
+ alter its large momentum behaviour in such a way that the renormalisation
+ must be carried out at the same time as the iterative solution of the equations
+ of motion themselves.
+ This is one of the main difficulties of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA with 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ in general and this thesis has made no headway on this problem.
+ Solution methods do exist in the literature (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+), but these would have to be modified for the new equations of motion.
+ Also, depending on the scheme, the regularisation method and renormalisation
+ scheme may have to be redone.
+ A conceptually straightforward, though probably laborious, extension would
+ be to the SI-4PIEA or higher.
+ This move is motivated theoretically because the 4PIEA at four loop order
+ is necessary for a fully self-consistent treatment of nonabelian gauge
+ theories.
+ The Ward identity involving the four point vertex would have to be derived
+ and enforced using a new set of Lagrange multipliers, then the equations
+ of motion derived and the Lagrange multipliers eliminated through a suitable
+ limit procedure.
+ Then the equations of motion would have to be renormalised and solved numerical
+ly.
+ Again, this represents a substantial effort in its own right and it is
+ not clear in the present state of the theory what the pay off would be.
+ In the spirit of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ the author would recommend a first study of higher symmetry improved 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs for gauge theories to focus on one of the lower dimensional solvable
+ models.
 \end_layout
 
 \begin_layout Standard
@@ -928,7 +1007,36 @@ Chapter 5
 
 \end_inset
 
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
 
+\end_inset
+
+ introduced the soft symmetry improvement method.
+ Again, the main limitation of this study was the focus on the analytically
+ tractable (or nearly so) aspects of the formalism.
+ Two studies are motivated by this chapter.
+ The first is the numerical study of solutions of the novel limit in higher
+ order truncations.
+ It is possible (though in the author's opinion not very likely) that the
+ unsatisfactory aspects of the solutions obtained are removed by higher
+ order corrections.
+ The second study is a numerical implementation of the method in finite
+ volume with some sort of lattice or momentum cutoff.
+ In this regime one 
+\emph on
+does
+\emph default
+ have a genuine interpolation between the unimproved and symmetry improved
+ cases (since there are only a finite number of degrees of freedom the least
+ squares term in the effective action must work as expected).
+ Once the numerical method is implemented one must do a number of sensitivity
+ studies to determine if, for physically relevant parameter values, there
+ is a regime which (a) approaches the continuum limit, (b) has adequate
+ symmetry properties and (c) is in a box of sufficiently large size for
+ finite size effects to be unimportant.
 \end_layout
 
 \begin_layout Standard
@@ -941,7 +1049,50 @@ Chapter 6
 
 \end_inset
 
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
 
+\end_inset
+
+ started the study of non-equilibrium aspects of symmetry improved effective
+ actions.
+ The SI-2PIEA proved easy to study in the linear response framework because
+ the (strongly enforced) symmetry constraints completely determined the
+ dynamics of linear fluctuations.
+ The corresponding study for the SSI-2PIEA is equally motivated theoretically,
+ but has been deferred because it is significantly more complicated.
+ The reason is that the symmetry constraints are only weakly enforced by
+ the SSI-2PIEA.
+ As a result, the dynamics of linear fluctuations are determined by a mixture
+ of 
+\emph on
+both
+\emph default
+ the 2PIEA and the symmetry constraints (i.e., the dynamics are determined
+ by the full SSI-2PIEA).
+ Thus the full linear response equations must be solved.
+ These equations are a linear system which is in principle straightforward
+ to solve, but the actual equations turn out to be very bulky due to the
+ form of the SSI term and its derivatives.
+ Another issue is that, due to the infrared sensitivity of the formalism,
+ the SSI investigation of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+ was carried out in finite volume in Euclidean space.
+ However, the linear response equations are formulated in infinite volume
+ and real time.
+ Thus, an analytical continuation from imaginary to real time must be performed.
+ In principle this is straightforward, although in practice it is complicated
+ by the unusual behaviour of the zero mode in the SSI formalism.
+ Thus, though the results of a linear response investigation for the SSI-2PIEA
+ would certainly be interesting and perhaps be significant, the above considerat
+ions place it beyond the scope of this thesis.
 \end_layout
 
 \begin_layout Section
