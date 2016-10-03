@@ -803,6 +803,105 @@ Chapter 3
 
 \end_inset
 
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ started the consideration of symmetries in this thesis.
+ The chief limitation of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ is common to the rest of the thesis: only global bosonic symmetries are
+ considered.
+ No attention was paid in this thesis to gauge theories, supersymmetric
+ theories or gravity (i.e.
+ diffeomorphism invariant) theories, all of which are obviously of major
+ importance in high energy and mathematical physics.
+ The main problem hindering the extension to these theories is the proliferation
+ of fields.
+ Many of the existing treatments of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA for these theories neglect or incorrectly treat important phenomena
+ such as fermion-boson mixing.
+ In general, for 
+\emph on
+any
+\emph default
+ two fields 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ in a theory one must have a self-consistent 2PI propagator 
+\begin_inset Formula $\Delta_{AB}$
+\end_inset
+
+, even if 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ have differing charges, spin or statistics.
+ Similar remarks apply for arbitrary vertex functions 
+\begin_inset Formula $V_{ABC}$
+\end_inset
+
+ etc.
+ Thus the number of quantities one must consider in the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism grows rapidly with the number of fields.
+ Note that mixed fermion-boson propagators do indeed vanish on solutions
+ of the equations of motion (as expected from Lorentz invariance, which
+ is why they are often neglected), but 
+\emph on
+derivatives
+\emph default
+ of the effective action with respect to these mixed quantities do 
+\emph on
+not
+\emph default
+ in general vanish.
+ Thus it is important to keep all mixed quantities during the intermediate
+ steps of the computation.
+ In the spirit of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ the author would recommend a first study of symmetry improved 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs for gauge theories to focus on one of the lower dimensional solvable
+ models.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs!!!
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
