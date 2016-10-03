@@ -90,7 +90,7 @@ name "chap:Discussion"
 \end_layout
 
 \begin_layout Section
-Synopsis
+Summary of the thesis
 \end_layout
 
 \begin_layout Standard
@@ -596,7 +596,65 @@ reference "chap:chap6"
 
 \end_inset
 
+ investigated the linear response of a system in equilibrium subject to
+ external perturbations in the SI-2PIEA formalism.
+ This was based on novel work published by the author in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown_2016"
 
+\end_inset
+
+.
+ It was shown that, beyond equilibrium, the two constraint schemes possible
+ in the SI-2PIEA formalism are no longer equivalent.
+ However, both schemes are inconsistent in that the Goldstone boson fluctuations
+ are over-determined.
+ Even if the driving sources of the offending equations of motion are turned
+ off (in which case there are no Goldstone boson fluctuations), the Higgs
+ field fluctuations propagate masslessly.
+ This result is directly due to the constraint and is independent of any
+ truncation, approximation or renormalisation scheme applied to the effective
+ action.
+ Thus, the SI-2PIEA predicts qualitatively incorrect physics out of equilibrium.
+ This result could be understood as a result of two contributions: the decouplin
+g of the propagator fluctuation from the field fluctuation in the 2PIEA
+ formalism and the failure of the higher order Ward identities (ie.e., those
+ involving vertex functions) which is unavoidable even in the SI-2PIEA.
+ This latter source of error is present because an SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA has only 
+\begin_inset Formula $n$
+\end_inset
+
+ independent variables, thus is only capable of imposing 
+\begin_inset Formula $n$
+\end_inset
+
+ Ward identities at most.
+ However, there is an infinite hierarchy of Ward identities involving higher
+ order correlation functions, all of which are violated in truncations.
+ When a system is out of equilibrium these higher order Ward identities
+ feed back into the lower order equations of motion, generating an inconsistency.
+ As a result, SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA are invalid out of equilibrium.
+\end_layout
+
+\begin_layout Section
+Limitations of the Results
+\end_layout
+
+\begin_layout Section
+Directions for Future Work
+\end_layout
+
+\begin_layout Section
+Closing Remarks
 \end_layout
 
 \end_body
