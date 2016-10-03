@@ -224,7 +224,7 @@ symmetric
  As the bubbles expand, bubble wall friction drives a flow in the symmetric
  phase plasma which separates left and right handed particles.
  This asymmetry between left and right handed particles is converted into
- a matter-antimatter asymmetry by a complex tunnelling process (
+ a matter-antimatter asymmetry by a tunnelling process (
 \begin_inset Quotes eld
 \end_inset
 
@@ -255,7 +255,143 @@ reference "chap:Introduction"
 \end_layout
 
 \begin_layout Standard
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
 
+\end_inset
+
+ then reviewed the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism.
+ The 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA were derived for 
+\begin_inset Formula $n=1$
+\end_inset
+
+, 
+\begin_inset Formula $2$
+\end_inset
+
+ and 
+\begin_inset Formula $3$
+\end_inset
+
+ for a generic quartically coupled scalar field theory.
+ Then, in novel work based on the author's publication 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015"
+
+\end_inset
+
+, the properties of the 2PIEA viewed as a resummation scheme were examined.
+ For this purpose a toy model – effectively the quartic scalar field theory
+ in zero dimensions – was used which enabled comparisons with exact results,
+ perturbation theory, Borel, Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+ resummation and a novel hybrid 2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+ resummation scheme.
+ It was shown that the 2PIEA yielded predictions which were competitive
+ with or exceeding standard resummation methods.
+ This result could be understood in terms of the ability of the 2PIEA, due
+ to its self-consistency, to capture intrinsically non-perturbative properties
+ of the theory, in particular the vacuum instability for negative values
+ of the coupling constant.
+\end_layout
+
+\begin_layout Standard
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap3"
+
+\end_inset
+
+ began the study of symmetries in the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs formalism.
+ The generic scalar field theory was specialised to an 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ symmetric scalar field theory which formed the basis of the rest of the
+ thesis.
+ The parameters of the theory were chosen to exhibit spontaneous symmetry
+ breaking from 
+\begin_inset Formula $\mathrm{O}\left(N\right)\to\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ , which results in 
+\begin_inset Formula $N-1$
+\end_inset
+
+ massless Goldstone bosons and one massive 
+\begin_inset Quotes eld
+\end_inset
+
+Higgs
+\begin_inset Quotes erd
+\end_inset
+
+ boson.
+ At high temperatures the symmetry is restored and there are 
+\begin_inset Formula $N$
+\end_inset
+
+ equally massive bosons.
+ On the basis of universality arguments and lattice computations the phase
+ transition is known to be second order in four dimensions.
+ The Ward identities governing the symmetry were derived in the 1PIEA and
+ 2PIEA formalisms and it was shown that solutions of the truncated 2PI equations
+ of motion generically violate the 1PI Ward identities.
+ In particular, the Goldstone bosons are massive in the Hartree-Fock approximati
+on.
+ As a result the phase transition is predicted to be strongly first order.
+ More subtle violations persist in higher order approximation schemes.
+ These results were contrasted with the large 
+\begin_inset Formula $N$
+\end_inset
+
+ method, which satisfied the Ward identities at leading order in 
+\begin_inset Formula $1/N$
+\end_inset
+
+ but violates them again at higher orders, and the external propagator method.
+ The external propagator has been used extensively in the literature on
+ 2PIEA and does obey the lowest order Ward identity (i.e.
+ Goldstone's theorem), but is not self-consistent.
 \end_layout
 
 \end_body
