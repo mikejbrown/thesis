@@ -646,11 +646,203 @@ PIEA are invalid out of equilibrium.
 \end_layout
 
 \begin_layout Section
-Limitations of the Results
+Limitations of the Results and Directions for Future Work
 \end_layout
 
-\begin_layout Section
-Directions for Future Work
+\begin_layout Standard
+The results in this thesis are limited in several respects.
+ Most of the limitations are due to the primarily analytical nature of this
+ thesis.
+ All but the simplest (Hartree-Fock) truncation of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA require numerical solutions which are significantly beyond the scope
+ of anything attempted in this thesis.
+ The reason for the great simplification of the Hartree-Fock truncation
+ (which also requires numerical solution) is that the self-energies are
+ momentum independent.
+ Effectively, the thermal and quantum corrections contribute only to a shift
+ of the mass of the particles involved.
+ These masses can be found self-consistently.
+ In other truncations the propagators are momentum independent.
+ Thus the effort is effectively multiplied by the number of lattice points
+ in the spacetime discretisation used.
+ The effort grows even more rapidly as the 
+\begin_inset Formula $n$
+\end_inset
+
+ in 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA is increased beyond 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ The effort can be reduced somewhat using lattice symmetries and algorithms
+ based on the fast Fourier transform (see, e.g.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+REFs
+\end_layout
+
+\end_inset
+
+), but the author considered the marginal increase in effort to be less
+ than the potential insight to be gained in each case examined in this thesis.
+ Full numerical investigation of solutions of SI- and SSI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs is certainly an intriguing prospect, but has been deferred for future
+ work.
+ Here follows a consideration of the limitations of each chapter.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapter 2
+\end_layout
+
+\end_inset
+
+The novel work of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ is the investigation of the analytical properties of the 2PIEA in contrast
+ to standard resummation schemes.The chief limitation of this study is that
+ it only applies directly to the zero dimensional toy model.
+ Perhaps the most significant extension of this work achievable with minimal
+ effort would a study along the same lines for the quantum mechanical anharmonic
+ oscillator.
+ As a one dimensional system there is a wide variety of relatively inexspensive
+ techniques available to find numerical wavefunctions and energy levels
+ to arbitrary accuracy.
+ Also, individual terms of the perturbation series can be found, as well
+ as accurate asymptotic expansions for the energy levels and wavefunctions
+ in the complex coupling constant 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ plane (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Bender1971,Bender1978"
+
+\end_inset
+
+ for early studies of this system).
+ In order to extend the study of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ to this case one must solve the 2PIEA in such as way as to obtain analytic
+ information about the solution as a function of complex 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Staying in zero dimensions there are several directions for further study.
+ One can easily extend the analysis to the 4PIEA for the toy model by introducin
+g a four-point source that effectively modifies 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ The most difficult step is performing the extra Legendre transform.
+ The resulting effective action should embody an even more compact representatio
+n of the perturbation series than the 2PIEA, however it is not clear what
+ new insights might come from this study.
+ Similarly, all of the results of chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap2"
+
+\end_inset
+
+ could be computed to higher order in the relevant truncations.
+ It would also be interesting to study whether the hybrid 2PI-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'{e}
+\end_layout
+
+\end_inset
+
+ scheme could be extended to a real theory.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapter 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapter 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapter 5
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Chapter 6
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
