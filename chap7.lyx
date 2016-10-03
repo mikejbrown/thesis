@@ -1099,5 +1099,65 @@ ions place it beyond the scope of this thesis.
 Closing Remarks
 \end_layout
 
+\begin_layout Standard
+A case could be made that this thesis is presenting a null result.
+ After all, the dream of an analytically tractable and elegant, fully self-consi
+stent, manifestly gauge invariant, non-perturbative and non-equilibrium
+ formulation of nonabelian gauge theories with chiral fermion matter and
+ Higgs fields remains just that: a dream.
+ Perhaps it is a pipe dream.
+ This thesis has not found the silver bullet for handling symmetries in
+ non-perturbative quantum field theory.
+ Nor does it seem likely that any of the techniques introduced in this thesis
+ will open the door to a world of new discoveries any time soon.
+ Rather this thesis is perhaps more in line with the normal, unglamorous,
+ progress of science which is more akin to the mythic bird who, by aeons
+ of persistence, gradually chips away at the mountain revealing one fleck
+ of unweathered stone at a time.
+\end_layout
+
+\begin_layout Standard
+This thesis has made a contribution to the literature on symmetries in quantum
+ field theory less by finding a solution to the problems of the field and
+ more by, hopefully, revealing some new faces of the same old problems.
+ The 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective action methods are certainly very formally
+ elegant methods capable of handling non-equilibrium situations in quantum
+ fields theories in a fully self-consistent, non-perturbative way which
+ is derived directly from first principles.
+ But difficulties persist.
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective actions derive their strength by re-organising
+ perturbation theory, but this very same act intimately couple the scales
+ in a problem, so the problem of enforcing symmetries at large differences
+ can no longer be separated from the problem of making the theory finite
+ at short distances.
+ Likewise, the theory punishes you for asking the wrong questions.
+ If you ask for strictly massless Goldstone bosons you had better be prepared
+ to work in infinite volume.
+ The price to be paid is that, since scales are now coupled, solutions do
+ not always exist.
+ If you want to impose constraints on the states of the theory (the masses
+ of particles), then the same constraints determine the dynamics (linear
+ response), and the same constraints cannot get both aspects right.
+\end_layout
+
+\begin_layout Standard
+It appears that non-perturbative quantum field theory is a world of trade-offs
+ where no free lunch exists.
+ So it is that I, the author, hope that by navigating these treacherous
+ waters (and perhaps running aground at points), those who come after may
+ more easily find the clear path.
+\end_layout
+
 \end_body
 \end_document
