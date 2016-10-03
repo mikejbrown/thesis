@@ -284,14 +284,14 @@ PIEA were derived for
 \end_inset
 
  for a generic quartically coupled scalar field theory.
- Then, in novel work based on the author's publication 
+ Then, in novel work (published by the author as 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2015"
 
 \end_inset
 
-, the properties of the 2PIEA viewed as a resummation scheme were examined.
+), the properties of the 2PIEA viewed as a resummation scheme were examined.
  For this purpose a toy model – effectively the quartic scalar field theory
  in zero dimensions – was used which enabled comparisons with exact results,
  perturbation theory, Borel, Borel-Pad
@@ -392,6 +392,127 @@ on.
  The external propagator has been used extensively in the literature on
  2PIEA and does obey the lowest order Ward identity (i.e.
  Goldstone's theorem), but is not self-consistent.
+\end_layout
+
+\begin_layout Standard
+Then chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ studied the symmetry improvement method (SI) first proposed by 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ for the 2PIEA.
+ Symmetry improvement imposes the 1PI Ward identities directly onto the
+ solutions of 
+\begin_inset Formula $n$
+\end_inset
+
+PI equations of motion through the use of Lagrange multipliers.
+ The constraint turns out to be singular and a delicate limiting procedure
+ is required to make sense of the theory.
+ It is known that solutions are not guaranteed to exist in arbitrary truncations
+ of the symmetry improved effective action 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2016"
+
+\end_inset
+
+.
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ considered the method for the 2PIEA of a scalar 
+\begin_inset Formula $\mathrm{O}\left(2\right)$
+\end_inset
+
+ theory.
+ In novel work (published by the author as 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2015a"
+
+\end_inset
+
+), chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ extended their formulation to the symmetry improvement of the 3PIEA for
+ an 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ theory.
+ In the process two forms of the constraint procedure and an ambiguity in
+ the limiting process were discovered.
+ The choice of constraint turns out to make no difference in equilibrium,
+ and the ambiguity in the limiting procedure was fixed by introducing the
+ 
+\emph on
+d'Alembert
+\emph default
+ formalism, which chooses uniquely the simplest possibility.
+ The symmetry improved 3PIEA was then renormalised in the Hartree-Fock and
+ two loop truncations in four dimensions and in the three loop truncation
+ in three dimensions.
+ The Hartree-Fock equations of motion were solved and compared to the unimproved
+ and symmetry improved 2PIEA Hartree-Fock solutions.
+ The result was that in the symmetry improved 2PI solutions the phase transition
+ is second order and Goldstone's theorem is satisfied (in agreement with
+ previous literature), but in the symmetry improved 3PI solutions the phase
+ transition is first order even though Goldstone's theorem is satisfied.
+ This showed for the first time that masslessness of the Goldstone bosons
+ in the formalism does not imply that the phase transition is computed correctly.
+ This is because the Hartree-Fock truncation is not fully self-consistent
+ for the 3PIEA.
+ However, the first order transition in the symmetry improved 3PI case is
+ much weaker than in the unimproved 2PI case, so the symmetry improvement
+ does help matters even so.
+ Further checks of the formalism were performed: it was shown that the symmetry
+ improved 3PIEA obeys the Coleman-Mermin-Wagner theorem and that absorptive
+ part of the propagator is consistent with unitarity to 
+\begin_inset Formula $\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+, but only if the full three loop truncation is kept.
+\end_layout
+
+\begin_layout Standard
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap5"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap6"
+
+\end_inset
+
+
 \end_layout
 
 \end_body
