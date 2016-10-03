@@ -126,7 +126,192 @@ stub
 \end_layout
 
 \begin_layout Abstract
-stub
+Quantum field theory is the mathematical language of nature at the deepest
+ levels currently known.
+ Viewed in this light, much of the last century of theoretical physics can
+ be seen as quantum field theory calculations performed in a variety of
+ approximations.
+ However, despite having a very successful standard model of physics and
+ a phenomenally useful perturbation theory for extracting predictions from
+ it, persistent problems remain.
+ Many of these are due to the inability to calculate in practice what is
+ calculable in principle.
+ The difficulty of these problems comes from the importance of a large number
+ of degrees of freedom, or a strong coupling between degrees of freedom,
+ or both.
+ Only in the case of very simple systems or systems close to thermal equilibrium
+ can their properties be determined with confidence.
+ The remaining cases require a resummation, or re-organisation, of perturbation
+ theory.
+ However, 
+\emph on
+ad hoc
+\emph default
+ resummations are problematic because perturbation series are asymptotic
+ in nature and the re-organisation of the terms of an asymptotic series
+ is mathematically questionable.
+ Systematic resummation schemes are required to guarantee consistency with
+ the original non-perturbative theory.
+\end_layout
+
+\begin_layout Abstract
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective actions (
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs; 
+\begin_inset Formula $n=1,2,3,\cdots$
+\end_inset
+
+) are a proven method of resummation which can be thought of as generalisations
+ of mean field theory which are (a) elegant, (b) general, (c) in principle
+ exact, and (d) have been promoted for their applicability to non-equilibrium
+ situations.
+ These properties make the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs compelling candidates for filling the gap between theory and experiment
+ anywhere the problem is the inability to compute the behaviour of strongly
+ interacting degrees of freedom or degrees of freedom which are out of thermal
+ equilibrium.
+ Unfortunately, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are known to violate the symmetries of a field theory when they are
+ truncated to a form that can be solved in practice.
+ This can lead to 
+\emph on
+qualitatively
+\emph default
+ wrong physical predictions as an artefact of the method of calculation.
+ If one takes the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA predictions at face value one may reject a physically correct model
+ on the basis of an incorrect prediction.
+ Therefore it is critical to gain a better understanding of the symmetry
+ problem in order for 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs to be useful in the future.
+\end_layout
+
+\begin_layout Abstract
+This is where this thesis aims to make a contribution.
+ This thesis examines the theory of global symmetries in the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism for quantum field theory with the goal of improving the symmetry
+ properties of solutions obtained from practical approximation schemes.
+ Following pedagogical reviews of quantum field theory and 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs, symmetries are introduced by considering a scalar 
+\begin_inset Formula $\left(\phi^{2}\right)^{2}$
+\end_inset
+
+ field theory with 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ symmetry and spontaneous symmetry breaking.
+ The symmetries are embodied by Ward identities which relate the various
+ correlation functions of the theory.
+ When truncated, the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs for 
+\begin_inset Formula $n>1$
+\end_inset
+
+ violate these identities with phenomenological consequences which are reviewed.
+ The symmetry improvement method (SI) of 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Pilaftsis2013"
+
+\end_inset
+
+ addresses this by imposing the 1PI Ward identities directly onto the solutions
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+PI equations of motion through the use of Lagrange multipliers.
+ In novel work, SI is extended to the 3PIEA.
+ The SI-3PIEA is then renormalised in the Hartree-Fock and two loop truncations
+ in four dimensions and in the three loop truncation in three dimensions.
+ The Hartree-Fock equations of motion are solved and compared to the unimproved
+ and SI-2PI Hartree-Fock solutions.
+ The SI-2PI solutions better model the phase transition as second order
+ and Goldstone's theorem is satisfied (in agreement with previous literature),
+ but in the SI-3PI solutions the phase transition is first order even though
+ Goldstone's theorem is satisfied.
+ However, the first order transition in the SI-3PI case is much weaker than
+ in the unimproved 2PI case.
+ Further checks of the formalism are performed: it is shown that the SI-3PIEA
+ obeys the Coleman-Mermin-Wagner theorem and is consistent with unitarity
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+, but only if the full three loop truncation is kept.
+\end_layout
+
+\begin_layout Abstract
+Following this a novel method of soft symmetry improvement (SSI) is introduced.
+ SSI differs from SI in that the Ward identities are imposed in the sense
+ of least squared error rather than as strong constraints on the solutions.
+ A new 
+\emph on
+stiffness
+\emph default
+ parameter controls the strength of the constraint.
+ The motivation for this method is that the singular nature of the constraint
+ in SI leads to pathological behaviour such as the non-existence of solutions
+ in certain truncations and the breakdown of the theory out of equilibrium.
+ In order to regulate the IR behaviour a box of finite volume is used and
+ the limit of infinite volume taken carefully.
+ Three limiting regimes are found.
+ Two are equivalent to the unimproved 2PIEA and SI-2PIEA respectively.
+ The third is a novel limit which had pathological behaviour including a
+ strongly first order phase transition and a regime where solutions cease
+ to exist for a range of temperatures below the critical temperature.
+ As the stiffness increases this range increases and at some finite value
+ of the stiffness the solution ceases to exist even at zero temperature.
+ This loss of solution was confirmed both analytically and numerically.
+\end_layout
+
+\begin_layout Abstract
+Finally, the linear response of a system in equilibrium subject to external
+ perturbations is studied for the first time in the SI-2PIEA formalism.
+ It is shown that, beyond equilibrium the scheme is inconsistent in that
+ the Goldstone boson fluctuations are over-determined.
+ Even if the driving sources of the offending equations of motion are turned
+ off (in which case there are no Goldstone boson fluctuations), the Higgs
+ field fluctuations propagate masslessly.
+ This result is directly due to the constraint and is independent of any
+ truncation, approximation or renormalisation scheme applied to the effective
+ action.
+ Thus, the SI-2PIEA predicts qualitatively incorrect physics out of equilibrium.
+ This result can be understood as a result of the decoupling of the propagator
+ fluctuation from the field fluctuation in the 2PIEA formalism and the failure
+ of higher order Ward identities.
+ This argument generalises so that, as a result, SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA are invalid out of equilibrium.
 \end_layout
 
 \begin_layout Standard
