@@ -17,3 +17,4 @@ Things I want to do:
 - [ ] Stats file to csv? Script???
 - [x] Add .gitignore for thesis folder ready for splitting the repo
 - [ ] Split thesis repo (add anything else needed before split?)
+- [ ] FIX build_arxiv_dist.sh script to replace `\bibliography{refs}` with contents of the .bbl file in the thesis_main.tex output for arXiv.
