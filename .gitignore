@@ -1,0 +1,57 @@
+# Ignore lyx backups
+*.lyx~
+*.lyx#
+# Ignore MATLAB saves
+*.asv
+# Ignore python compiles
+*.pyc
+# Ignore pdf documents
+*.pdf
+# except for the exception(s)
+!code/*-output/*.pdf
+#!images/ch*/*.pdf
+!jculogo.pdf
+# Ignore vim backups
+*.swp
+# Ignore log files
+*.log
+# Ignore MS Word backup/lock files
+~$*.docx
+# Ignore JabRef backup files
+*.bak
+# Ignore Atom backups
+*.md~
+# Ignore LaTeX auxiliary files
+# Created by https://www.gitignore.io
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdy
+*.tdo
