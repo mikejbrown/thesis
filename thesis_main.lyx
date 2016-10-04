@@ -201,10 +201,7 @@ target "https://github.com/mikejbrown/thesis"
 \end_inset
 
  once the thesis has been accepted.
- This pdf has been built from the following version of the source:
-\end_layout
-
-\begin_layout Plain Layout
+ This pdf has been built from the following version of the source: 
 \begin_inset CommandInset include
 LatexCommand input
 preview true
@@ -348,12 +345,10 @@ PI equations of motion through the use of Lagrange multipliers.
  in four dimensions and in the three loop truncation in three dimensions.
  The Hartree-Fock equations of motion are solved and compared to the unimproved
  and SI-2PI Hartree-Fock solutions.
- The SI-2PI solutions better model the phase transition as second order
- and Goldstone's theorem is satisfied (in agreement with previous literature),
- but in the SI-3PI solutions the phase transition is first order even though
- Goldstone's theorem is satisfied.
- However, the first order transition in the SI-3PI case is much weaker than
- in the unimproved 2PI case.
+ In both the SI-2PI and SI-3PI methods Goldstone's theorem is satisfied.
+ However, the SI-2PI solution correctly predicts that the phase transition
+ is second order while the SI-3PI solution predicts a weak (weaker than
+ the unimproved 2PIEA) first order transition.
  Further checks of the formalism are performed: it is shown that the SI-3PIEA
  obeys the Coleman-Mermin-Wagner theorem and is consistent with unitarity
  to 
@@ -365,8 +360,8 @@ PI equations of motion through the use of Lagrange multipliers.
 
 \begin_layout Abstract
 Following this a novel method of soft symmetry improvement (SSI) is introduced.
- SSI differs from SI in that the Ward identities are imposed in the sense
- of least squared error rather than as strong constraints on the solutions.
+ SSI differs from SI in that the Ward identities are imposed sotfly in the
+ sense of least squared error.
  A new 
 \emph on
 stiffness
@@ -382,15 +377,15 @@ stiffness
  The third is a novel limit which had pathological behaviour including a
  strongly first order phase transition and a regime where solutions cease
  to exist for a range of temperatures below the critical temperature.
- As the stiffness increases this range increases and at some finite value
- of the stiffness the solution ceases to exist even at zero temperature.
+ As the stiffness increases this range increases and at a finite value of
+ the stiffness the solution ceases to exist even at zero temperature.
  This loss of solution was confirmed both analytically and numerically.
 \end_layout
 
 \begin_layout Abstract
 Finally, the linear response of a system in equilibrium subject to external
  perturbations is studied for the first time in the SI-2PIEA formalism.
- It is shown that, beyond equilibrium the scheme is inconsistent in that
+ It is shown that, beyond equilibrium, the scheme is inconsistent in that
  the Goldstone boson fluctuations are over-determined.
  Even if the driving sources of the offending equations of motion are turned
  off (in which case there are no Goldstone boson fluctuations), the Higgs
@@ -598,7 +593,8 @@ M.J.
  B.
  Whittingham and D.
  S.
- Kosov, 
+ Kosov, Soft symmetry improvement of two particle irreducible effective
+ actions, 
 \emph on
 manuscript in preparation
 \emph default
@@ -672,16 +668,6 @@ pagenumbering{arabic}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: Check flow for all chapter starts/ends!
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset include
 LatexCommand include
 filename "chap1.lyx"
