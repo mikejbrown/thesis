@@ -23,6 +23,8 @@ version
 *.bak
 # Ignore Atom backups
 *.md~
+# Ignore Libreoffice lock file
+.~lock.thesis stats.ods\#
 # Ignore LaTeX auxiliary files
 # Created by https://www.gitignore.io
 *.acn
