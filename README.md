@@ -1,12 +1,14 @@
 Symmetry improvement techniques for non-perturbative quantum field theory
 =========================================================================
 
+
 About
 -----
 
 This is the source distribution for Michael J. Brown's PhD thesis entitled "Symmetry improvement techniques for non-perturbative quantum field theory".
 
 Except where otherwise noted, all parts of this thesis are Copyright © 2016 by Michael J. Brown.
+
 
 License
 -------
@@ -23,6 +25,9 @@ Except where otherwise noted, the following licenses apply:
 
 - The James Cook University logo (jcucrestcolour.jpg  jculogo.pdf  jculogo.svg) is the trademark of [James Cook University](https://www.jcu.edu.au/).
   The views expressed in this thesis do not represent any official position of James Cook University.
+
+  ![JCU logo](jculogo.svg)
+
 
 Version Info
 ------------
@@ -51,6 +56,7 @@ Changes which do not alter the rendered `pdf` do not bump the version number.
 
 Occasionally pre-release tags of the form v0.1.0-draft.1, v1.0.0-rc1 or the like may be used if this proves useful for something.
 Such pre-release tags are lower in precedence than the corresponding release tags, e.g. v0.1.0 and v1.0.0 respectively for those examples.
+
 
 Building
 --------
