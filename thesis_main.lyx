@@ -122,7 +122,102 @@ jculogo.pdf
 \end_layout
 
 \begin_layout Acknowledgements
-stub
+I would like to thank my primary advisor, Prof.
+ Ian Whittingham, and secondary advisor A/Prof.
+ Daniel Kosov for their endless patience, encouragement, feedback and support.
+\end_layout
+
+\begin_layout Acknowledgements
+I would also like to thank my friends and family for their love and support.
+ Special thanks go to my wife, without whose regular encouragement this
+ project would have been impossible, and to my parents for encouraging me
+ in the sciences (though I ended up changing my thesis topic from my father's
+ suggestion of basket weaving).
+\end_layout
+
+\begin_layout Acknowledgements
+Thanks to Elwood, who is a glorious bastard.
+\end_layout
+
+\begin_layout Acknowledgements
+Numerous open source tools were used to build this thesis: \SpecialChar LyX
+, \SpecialChar LaTeX2e
+, Python, numpy/sci
+py/matplotlib, git, and more.
+ It is good to live in a world with such a vibrant open source community.
+ Thanks to all who participate.
+\end_layout
+
+\begin_layout Acknowledgements
+This research was supported by an Australian Postgraduate Award 2013-2016.
+\end_layout
+
+\begin_layout Acknowledgements
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Acknowledgements
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+This work is licensed under a 
+\begin_inset CommandInset href
+LatexCommand href
+name "Creative Commons Attribution-ShareAlike 4.0 International License"
+target "https://creativecommons.org/licenses/by-sa/4.0/"
+
+\end_inset
+
+.
+ All source code for this thesis document and related programs (
+\noun on
+Mathematica
+\noun default
+ notebooks etc.) will be made available online at 
+\begin_inset CommandInset href
+LatexCommand href
+name "https://github.com/mikejbrown/thesis"
+target "https://github.com/mikejbrown/thesis"
+
+\end_inset
+
+ once the thesis has been accepted.
+ This pdf has been built from the following version of the source:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset include
+LatexCommand input
+preview true
+filename "version"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Abstract
@@ -520,29 +615,20 @@ UPDATE!!!!!
 .
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
-All source code for this thesis document and related programs (
-\noun on
-Mathematica 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "mathematica"
 
-\end_inset
-
-
-\noun default
- notebooks etc.) will be made available online at 
-\begin_inset CommandInset href
-LatexCommand href
-name "https://github.com/mikejbrown/thesis"
-target "https://github.com/mikejbrown/thesis"
-
-\end_inset
-
- once the thesis has been accepted.
+\emph on
+Statement of author contributions:
+\emph default
+ The authors jointly developed the research question.
+ All initial calculations and the first draft of the manuscript were produced
+ by Brown.
+ The manuscript was revised with checking of results and editorial input
+ from Whittingham and Kosov.
 \end_layout
 
+\end_deeper
 \begin_layout Standard
 \begin_inset FormulaMacro
 \newcommand{\lhook}[1]{#1^{\ulcorner}}

@@ -1,6 +1,6 @@
 Things I want to do:
 
-- [ ] Acknowledgements
+- [X] Acknowledgements
 - [ ] Shorten the abstract
 - [ ] Shorten the electroweak baryogenesis section
 - [ ] Chapter start/finish flow editing
@@ -8,10 +8,12 @@ Things I want to do:
 - [ ] Double check and update all references
 - [ ] Tidy Mathematica notebooks
 - [ ] Convert remaining renormalisations to generic scheme
-- [ ] Double check all spelling
+- [ ] Double check all spelling/grammar
 - [x] Add README.md
 - [x] Add LICENCE
 - [x] Add TODO.md
-- [ ] Smudge/clean filter for git tagging builds
+- [X] Smudge/clean filter for git tagging builds
+    - ended up using a manual version file, with the build scripts running `git describe > version`
 - [ ] Stats file to csv? Script???
-- [ ] Split thesis repo (add gitignore and anything else needed before split?)
+- [X] Add .gitignore for thesis folder ready for splitting the repo
+- [ ] Split thesis repo (add anything else needed before split?)

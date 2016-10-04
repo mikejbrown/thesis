@@ -1,3 +1,5 @@
+# Ignore auto-generated version file
+version
 # Ignore lyx backups
 *.lyx~
 *.lyx#
