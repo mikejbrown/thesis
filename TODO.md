@@ -14,7 +14,7 @@ Things I want to do:
 - [x] Add TODO.md
 - [x] Smudge/clean filter for git tagging builds
     - ended up using a manual version file, with the build scripts running `git describe > version`
-- [ ] Stats file to csv? Script???
+- [ ] Script to generate thesis_stats.ods???
 - [x] Add .gitignore for thesis folder ready for splitting the repo
 - [ ] Split thesis repo (add anything else needed before split?)
 - [x] FIX build_arxiv_dist.sh script to replace `\bibliography{refs}` with contents of the .bbl file in the thesis_main.tex output for arXiv.
