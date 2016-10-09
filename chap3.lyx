@@ -79,7 +79,11 @@ theorems-sec
 \begin_body
 
 \begin_layout Chapter
-Symmetries, Ward Identities and Truncations in nPIEA
+Symmetries, Ward Identities and Truncations in 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap3"
@@ -94,10 +98,16 @@ Synopsis
 \end_layout
 
 \begin_layout Standard
-The previous chapter introduced nPIEA as a technique suitable for studies
- in non-perturbative QFT.
- This chapter explores the symmetry properties of nPIEA using the 1PIEA
- and 2PIEA as specific examples.
+The previous chapter introduced 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA as a technique suitable for studies in non-perturbative QFT.
+ This chapter explores the symmetry properties of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA using the 1PIEA and 2PIEA as specific examples.
  These cases cover all of the conceptual points required for general 
 \begin_inset Formula $n$
 \end_inset
@@ -108,7 +118,11 @@ PIEA, with mere increases in technical complexity for
 
 .
  This chapter demonstrates that global symmetries are not generically preserved
- by truncations of nPIEA.
+ by truncations of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA.
  The causes of this can be understood in terms of the difference between
  1PI and 2PI (resp.
  
