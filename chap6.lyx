@@ -95,68 +95,6 @@ Synopsis
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Use in intro???
-\end_layout
-
-\begin_layout Plain Layout
-Quantum field theory is the mathematical language of nature.
- Viewed in this light, much of the last century of theoretical physics can
- be seen as quantum field theory calculations performed in a variety of
- approximations.
- The most fruitful scheme so far is clearly perturbation theory in small
- couplings, which has seen wide use and great success.
- Nevertheless there are important physical situations where naive perturbation
- theory fails and must be enhanced by partial resummation if it can be used
- at all.
- For example, massless particles in thermal plasmas produce large loop correctio
-ns which must be resummed, causing thermal mass generation and non-analyticities
- in thermodynamic functions.
- Similarly, large logarithms can invalidate naive perturbation theory in
- problems involving disparate length or energy scales.
- Resummation of these logarithms leads to the renormalization group running
- of coupling constants.
- Although the need to go beyond naive perturbation theory is clear in many
- cases, 
-\backslash
-emph{ad hoc} resummations are problematic because perturbation series are
- asymptotic in nature 
-\backslash
-citep{dyson_divergence_1952}.
- Systematic resummation schemes are required to guarantee consistency with
- the original non-perturbative theory.
- There are three such schemes which can claim to be widely studied and successfu
-l: the renormalization group (RG) 
-\backslash
-citep{zinn-justin_phase_2007}, large 
-\begin_inset Formula $N$
-\end_inset
-
- expansion 
-\backslash
-citep{moshe_quantum_2003}, and 
-\begin_inset Formula $n$
-\end_inset
-
--particle irreducible effective actions (
-\begin_inset Formula $n$
-\end_inset
-
-PIEAs) 
-\backslash
-citep{berges_introduction_2004}.
- This work focuses on the latter.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1487,11 +1425,18 @@ primary
 \emph default
  constraint
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 These should not to be confused with the terminology from Dirac's constrained
- quantisation method.
+ quantisation method 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Dirac2001"
+
+\end_inset
+
+.
 \end_layout
 
 \end_inset

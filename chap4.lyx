@@ -323,10 +323,14 @@ The essence of symmetry improvement is to impose the WIs derived for the
 
 PI correlation functions.
  Effectively, one changes 
-\begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{\text{1PI}},V_{\text{1PI}},\cdots,V_{\text{1PI}}^{\left(n\right)}\right)\to\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{n\text{PI}},V_{n\text{PI}},\cdots,V_{n\text{PI}}^{\left(n\right)}\right),$
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{\text{1PI}},V_{\text{1PI}},\cdots,V_{\text{1PI}}^{\left(n\right)}\right)\to\mathcal{W}_{a_{1}\cdots a_{j}}^{A}\left(\Delta_{n\text{PI}},V_{n\text{PI}},\cdots,V_{n\text{PI}}^{\left(n\right)}\right),
+\end{equation}
+
 \end_inset
 
- where 
+where 
 \begin_inset Formula $\mathcal{W}_{a_{1}\cdots a_{j}}^{A}$
 \end_inset
 
@@ -581,7 +585,7 @@ where
 
  is the volume of spacetime
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Recall that 
@@ -4061,7 +4065,7 @@ reference "eq:3pi-vertex-eom-lhs"
 \begin_inset Formula $V\to V_{0}$
 \end_inset
 
- up to a renormalization (this is just the equivalence hierarchy at work).
+ up to a renormalisation (this is just the equivalence hierarchy at work).
  Substituting this into the action gives, apart from the symmetry improvement
  terms, the standard 2PIEA.
  Another simplification is that the logarithmic enhancement of the propagators
@@ -5660,16 +5664,22 @@ key "Peskin1995"
 \end_inset
 
  must be taken into account.) The standard one loop perturbative result gives
-\begin_inset Note Note
-status open
+ (see, e.g., the 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Plain Layout
-REF
-\end_layout
+Kinematics
+\begin_inset Quotes erd
+\end_inset
+
+ review in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PDG"
 
 \end_inset
 
-
+)
 \begin_inset Formula 
 \begin{equation}
 \Gamma_{H}=\frac{N-1}{2}\frac{\hbar}{16\pi m_{H}}\left(\frac{\lambda v}{3}\right)^{2},
@@ -5878,7 +5888,7 @@ where the spectral densities
 \end_inset
 
 where the last equality holds at two loop order (the standard formula has
- been adapted for the current renormalization scheme)
+ been adapted for the current renormalisation scheme)
 \begin_inset Foot
 status collapsed
 
@@ -5962,7 +5972,7 @@ The imaginary part of the
 \begin_inset Formula $x$
 \end_inset
 
- integral is only nonzero for 
+ integral is only non-zero for 
 \begin_inset Formula $\sqrt{s_{1}}+\sqrt{s_{2}}<\sqrt{p^{2}}$
 \end_inset
 
@@ -6624,31 +6634,55 @@ name "sec:ch4-Summary"
 The symmetry improvement formalism of Pilaftsis and Teresi is able to enforce
  the preservation of global symmetries in two particle irreducible effective
  actions, allowing among other things the accurate description of phase
- transitions in strongly coupled theories using numerical methods that are
- relatively cheap compared to lattice methods.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-DO AN UPDATED RUNDOWN OF THE LITERATURE???...
-\end_layout
-
-\begin_layout Plain Layout
-As an example of this, during the preparation of this manuscript it was
- shown that the symmetry improved 2PIEA solves problems with infrared divergence
-s of the standard model effective potential due to massless Goldstone bosons
- 
-\backslash
-citep{Apo}, though that study was carried out without the gauge sector.
- It also shows that the symmetry improved 2PIEA performs better than an
- 
-\backslash
-emph{ad hoc} resummation scheme proposed in the prior literature.
-\end_layout
+ transitions in strongly coupled theories with spontaneously broken global
+ symmetires.
+ It restores Goldstone's theorem and produces physically reasonable absorptive
+ parts in propagators 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
 
 \end_inset
 
- However, the development of a first principles non-perturbative kinetic
+ and has been shown to restore the second order phase transition of the
+ 
+\begin_inset Formula $O\left(4\right)$
+\end_inset
+
+ linear sigma model in the Hartree-Fock approximation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Mao2014"
+
+\end_inset
+
+.
+ It has been used to study pion strings evolving in the thermal bath of
+ a heavy ion collision 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lu2015"
+
+\end_inset
+
+ and has been demonstrated to improve the evaluation of the effective potential
+ of the standard model by taming the infrared divergences of the Higgs sector,
+ treated as an 
+\begin_inset Formula $O\left(4\right)$
+\end_inset
+
+ scalar field theory with gauge interactions turned off 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2015,Pilaftsis2015a"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+However, the development of a first principles non-perturbative kinetic
  theory for the gauge theories of real physical interest requires the use
  of 
 \begin_inset Formula $n$
@@ -6656,6 +6690,13 @@ emph{ad hoc} resummation scheme proposed in the prior literature.
 
 -particle irreducible effective actions with 
 \begin_inset Formula $n\geq3$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carrington2009,Smolic2012,Berges2004"
+
 \end_inset
 
 .
