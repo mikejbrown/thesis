@@ -298,7 +298,7 @@ Formally
 
 
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Note that if one wants invariance under redefinitions of 
@@ -698,7 +698,7 @@ etc., where the Matsubara frequencies are
 \begin_inset Formula $\boldsymbol{k}$
 \end_inset
 
- are discretized on a lattice of spacing 
+ are discretised on a lattice of spacing 
 \begin_inset Formula $2\pi/L$
 \end_inset
 

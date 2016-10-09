@@ -650,7 +650,7 @@ While this is the general formalism connecting effective actions to linear
  In particular, one can derive the implications of the constraints for linear
  response theory without explicitly computing any equilibrium solutions,
  taking any derivatives of the effective action, performing any truncation
- of the self-energies, or worrying about renormalization of the Bethe-Salpeter
+ of the self-energies, or worrying about renormalisation of the Bethe-Salpeter
  equation.
  The results given here are independent of all of these details.
 \end_layout
@@ -854,7 +854,7 @@ Now turn on the sources
 
 \end_inset
 
-regardless of the behavior of 
+regardless of the behaviour of 
 \begin_inset Formula $\delta x$
 \end_inset
 
@@ -1425,7 +1425,7 @@ primary
 \emph default
  constraint
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 These should not to be confused with the terminology from Dirac's constrained
@@ -2030,7 +2030,7 @@ and note that
 \emph on
 exact
 \emph default
- solutions of the un-truncated 2PI equations of motion.
+ solutions of the untruncated 2PI equations of motion.
  This can be extended to the 2PIEA by writing 
 \begin_inset Formula 
 \begin{equation}
