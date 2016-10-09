@@ -2881,7 +2881,7 @@ and the effective interaction Lagrangian (i.e.
 
 \end_inset
 
-It is convenient to introduce the shorthands 
+It is convenient to introduce the shorthands
 \begin_inset Formula 
 \begin{align}
 V_{0abc} & \equiv\left.\frac{\delta^{3}S}{\delta\phi_{a}\delta\phi_{b}\delta\phi_{c}}\right|_{\phi=\varphi}=-\left(g_{abc}+\lambda_{abcd}\varphi_{d}\right),\\
@@ -3592,7 +3592,7 @@ key "Kleinert1982,Haymaker1991"
 \begin_inset Formula $n$
 \end_inset
 
-PIEAs has largely been driven by their advantages for nonequilibrium problems
+PIEAs has largely been driven by their advantages for non-equilibrium problems
  and can likely be credited to the reviews by Berges 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5123,7 +5123,7 @@ The existence of the spectral representation is connected to the branch
  This branch cut is due to the non-existence of the theory at negative couplings
 : the path integral diverges due to a potential unbounded from below.
  In a higher dimensional field theory this has a simple physical interpretation:
- the vacuum is unstable and, after tunneling through a barrier, the system
+ the vacuum is unstable and, after tunnelling through a barrier, the system
  rolls down the potential 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -5132,7 +5132,7 @@ key "Coleman1977"
 \end_inset
 
 .
- For weak coupling the semi-classical approximation is valid and the tunneling
+ For weak coupling the semi-classical approximation is valid and the tunnelling
  is exponentially suppressed, giving an imaginary contribution 
 \begin_inset Formula $\sim\exp\left(-1/\lambda\right)$
 \end_inset
@@ -5169,7 +5169,7 @@ key "Dyson1952"
  like charges attract, it is easy to see that the ordinary vacuum is unstable
  to the production of many electron-positron pairs which separate into clouds
  of like-charged particles.
- At weak coupling there is a large tunneling barrier to overcome because
+ At weak coupling there is a large tunnelling barrier to overcome because
  one must pay for the rest mass of the pairs and separate them far enough
  for the wrong-sign Coulomb potential to compensate.
  Thus there is a finite but exponentially suppressed rate of vacuum decay.
@@ -5452,7 +5452,7 @@ Attention is restricted to the
 \begin_inset Formula $\lambda$
 \end_inset
 
- vacuum due to tunneling away from the local minimum at 
+ vacuum due to tunnelling away from the local minimum at 
 \begin_inset Formula $q\sim0$
 \end_inset
 
@@ -8346,7 +8346,7 @@ reference "eq:2pi-G-eom"
 
  increases to finite values.
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Also note that at least one of the spurious solutions (and always an odd

@@ -908,7 +908,7 @@ which is actually identical to the expressions for the counter-terms in
 \begin_inset Formula $n$
 \end_inset
 
-PIEA, since the nonlinearity of the equations of motion results in a coupling
+PIEA, since the non-linearity of the equations of motion results in a coupling
  of scales.
  Furthermore, section 
 \begin_inset CommandInset ref
@@ -1859,7 +1859,7 @@ end{fmffile}
 
 \end_inset
 
- gives the renormalized effective action in momentum space 
+ gives the renormalised effective action in momentum space 
 \begin_inset Formula 
 \begin{align}
 \Gamma & =\int_{x}\left(-Z_{\Delta}^{-1}\frac{m^{2}+\delta m_{0}^{2}}{2}v^{2}-\frac{\lambda+\delta\lambda_{0}}{4!}v^{4}\right)+\frac{i\hbar}{2}\left(N-1\right)\mathrm{Tr}\ln\left(\Delta_{G}^{-1}\right)+\frac{i\hbar}{2}\mathrm{Tr}\ln\left(\Delta_{H}^{-1}\right)\nonumber \\
@@ -3050,7 +3050,7 @@ d'Alembert's principle is empirically verifiable for a given mechanical
 \emph on
 definition
 \emph default
- of the SI-3PIEA approximation scheme, which can be refered to as the 
+ of the SI-3PIEA approximation scheme, which can be referred to as the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3562,7 +3562,7 @@ reference "sec:The-Two-Loop-Solution"
 \end_inset
 
 .
- Thus, only divergences arising from nonzero 
+ Thus, only divergences arising from non-zero 
 \begin_inset Formula $V$
 \end_inset
 
@@ -6635,7 +6635,7 @@ The symmetry improvement formalism of Pilaftsis and Teresi is able to enforce
  the preservation of global symmetries in two particle irreducible effective
  actions, allowing among other things the accurate description of phase
  transitions in strongly coupled theories with spontaneously broken global
- symmetires.
+ symmetries.
  It restores Goldstone's theorem and produces physically reasonable absorptive
  parts in propagators 
 \begin_inset CommandInset citation

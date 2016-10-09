@@ -303,7 +303,7 @@ fundamental
 
 \begin_layout Standard
 This inability to compute is not simply a philosophical difficulty for those
- seeking to shore up a reductionistic worldview.
+ seeking to shore up a reductionistic world-view.
  Neither is it simply a practical difficulty for those pure theoreticians
  who only want to better understand their mathematical models.
  It can also hinder efforts to learn real physics.
@@ -1664,7 +1664,7 @@ BSM
 \begin_inset Formula $L$
 \end_inset
 
- conservation through nonperturbative 
+ conservation through non-perturbative 
 \emph on
 sphaleron
 \emph default
@@ -1832,7 +1832,7 @@ The SM has all three of the necessary ingredients:
 \begin_inset Formula $B$
 \end_inset
 
- violating sphaleron processes come from the nonperturbative electroweak
+ violating sphaleron processes come from the non-perturbative electroweak
  sector of the SM, 
 \begin_inset Formula $C$
 \end_inset
@@ -4999,12 +4999,8 @@ pinch
 \begin_inset Quotes erd
 \end_inset
 
- singularities associated with thermally occupied modes, the symmetry improved
- 
-\noun on
-CJT
-\noun default
- formalism 
+ singularities associated with thermally occupied modes, the symmetry improvemen
+t formalism 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Pilaftsis2013,Mao2014"
@@ -7025,7 +7021,7 @@ The energy-momentum tensor of a Lorentz invariant state must be proportional
 
 \begin_layout Standard
 The formalisms sketched above for vacuum and finite temperature field theory
- can be naturally generalised to the contour or nonequilibrium Green function
+ can be naturally generalised to the contour or non-equilibrium Green function
  method which also allows the treatment of non-equilibrium field theory.
  The contour method has been used extensively in various fields of condensed
  matter and particle physics, from molecular transport and ultracold atomic
@@ -7078,8 +7074,8 @@ key "Kapusta2006"
 
 \end_inset
 
-), and the nonequilibrium Green function theory developed by Schwinger and
- Keldysh (independently; see 
+), and the non-equilibrium Green function theory developed by Schwinger
+ and Keldysh (independently; see 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kita2010"
@@ -8236,8 +8232,8 @@ which gives
 
 \begin_layout Standard
 When working with the Keldysh components it is convenient to have identities
- for the reduction of frequently occuring convolutions and products of contour
- time functions to their components.
+ for the reduction of frequently occurring convolutions and products of
+ contour time functions to their components.
  These identities are called 
 \emph on
 Langreth rules

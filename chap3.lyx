@@ -148,7 +148,7 @@ PIEA is truncated some subset of perturbative diagrams is summed to infinite
 \end_inset
 
  symmetry is maintained, but, at the Hartree-Fock level of approximation,
- the nonlinearly realised 
+ the non-linearly realised 
 \begin_inset Formula $\mathrm{O}\left(N\right)/\mathrm{O}\left(N-1\right)$
 \end_inset
 
@@ -390,23 +390,6 @@ m_{1}^{2} &  & 0 &  &  &  & \\
  &  &  &  &  &  &  & 0 &  & m_{k}^{2}
 \end{array}\right)
 \end{equation}
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Formula 
-\begin{equation}
-m_{ab}^{2}=\mathrm{diag}\left(m_{1}^{2},\cdots,m_{1}^{2},m_{2}^{2},\cdots,m_{2}^{2},m_{3}^{2},\cdots,m_{k}^{2}\right),
-\end{equation}
-
-\end_inset
-
-
-\end_layout
 
 \end_inset
 
@@ -2060,8 +2043,8 @@ counterterms
 \end_inset
 
 .
- The fact that extra conterterms are required to renormalise the 2PIEA is
- not a problem so long as a sufficient number of renormalisation conditions
+ The fact that extra counterterms are required to renormalise the 2PIEA
+ is not a problem so long as a sufficient number of renormalisation conditions
  can be found.
  Altogether there are nine renormalisation constants which must be eliminated
  by imposing nine conditions.
@@ -3129,7 +3112,7 @@ The pseudoscalar
 \end_inset
 
 , it is responsible for numerous theoretical insights and has rendered some
- un-calculable models calculable and yielded exact non-perturbative results
+ incalculable models calculable and yielded exact non-perturbative results
  in the case of supersymmetric and low dimensional field theories.
 \end_layout
 
