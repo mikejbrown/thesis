@@ -1532,8 +1532,8 @@ PIEA.
  than perturbation theory and several methods of renormalisation have been
  introduced in the literature, though the general problem is still open.
  The 2PIEA is known to be renormalisable, either by an implicit construction
- involving Bethe-Salpeter integral equations or an explicit algebraic BPHZ
- (Bogoliubov-Parasiuk-Hepp-Zimmerman) style construction which has nontrivial
+ involving Bethe-Salpeter integral equations or an explicit algebraic Bogoliubov
+-Parasiuk-Hepp-Zimmerman (BPHZ) style construction which has nontrivial
  consistency requirements (but which has been shown to be equivalent to
  the Bethe-Salpeter method) 
 \begin_inset CommandInset citation

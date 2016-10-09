@@ -104,26 +104,92 @@ Synopsis
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+This chapter reviews the 
+\begin_inset Formula $n$
+\end_inset
 
-\begin_layout Plain Layout
-UPDATE
+-particle irreducible effective action (
+\begin_inset Formula $n$
+\end_inset
+
+PIEA) techniques for quantum field theory.
+ For 
+\begin_inset Formula $n>1$
+\end_inset
+
+ the 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are non-perturbative, effecting resummations of 
+\begin_inset Formula $2$
+\end_inset
+
+- through 
+\begin_inset Formula $n$
+\end_inset
+
+-th order correlation functions to infinite order in perturbation theory.
+ The equations of motion derived from 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs are closed, unlike the otherwise very similar Schwinger-Dyson equations
+ in quantum field theory or Bogoliubov-Born-Green-Kirkwood-Yvon (BBGKY)
+ equations of kinetic theory.
+ Because of this and the fact the the methods can be derived from first
+ principles and are manifestly self-consistent, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs have been advocated for applications in non-equlibrium field theory
+ ranging from cold atom research to cosmology (see, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Berges2004,Berges2015"
+
+\end_inset
+
+).
+ For 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+, 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs can provide the basis for a self-consistent first principles derivation
+ of kinetic theory (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Carrington2009,Smolic2012,Berges2004"
+
+\end_inset
+
+).
 \end_layout
 
+\begin_layout Standard
+In section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-1PI-effective"
+
 \end_inset
 
-This chapter introduces the 
-\begin_inset Formula $n$
+ the venerable (but perturbative) 1PIEA is introduced following standard
+ textbook treatments.
+ Then in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:The-2PI-effective"
+
 \end_inset
 
--particle irreducible effective actions (
-\begin_inset Formula $n$
-\end_inset
-
-PIEA) and discusses their general properties.
- The general material in this chapter is largely based on the reviews by
- Berges 
+ the non-perturbative 2PIEA is reviewed, following the reviews by Berges
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Berges2004,Berges2015"
@@ -138,15 +204,32 @@ key "Calzetta2008"
 \end_inset
 
 .
- Section 
+ Here the full expression for the 2PIEA of a quartically coupled scalar
+ field theory is derived to three loop order.
+ The general pattern of higher 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs is then discussed in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Higher-PI-effective"
+
+\end_inset
+
+, where the 3PIEA is explicitly derived for future reference.
+ Finally, section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:Analytic-properties-of-2PIEA-and-resummation"
 
 \end_inset
 
- on the analytic properties of effective actions and the comparison to resummati
-on methods is largely based on a paper published by the author 
+ contains a novel discussion of the analytic properties of effective actions
+ using the 2PIEA of a toy model where exact results are available, so that
+ the 2PIEA results can be compared to perturbation theory and other resummation
+ methods.
+ This discussion is based on a paper published by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2015"
@@ -434,8 +517,7 @@ contact terms
 \end_inset
 
 .
- This is exactly analogous to the Bogoliubov-Born-Green-Kirkwood-Yvon (BBGKY)
- hierarchy in statistical mechanics
+ This is exactly analogous to the BBGKY hierarchy in statistical mechanics
 \begin_inset Note Note
 status open
 
@@ -8989,7 +9071,45 @@ status open
  spectral function by a continuous distribution.
  However, the 2PI approximation is quantitatively superior at the leading
  truncation.
- A hybrid 2PI-Pad
+ These results are not entirely surprising because while, e.g., the Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+ method is a widely applicable general 
+\begin_inset Quotes eld
+\end_inset
+
+black box
+\begin_inset Quotes erd
+\end_inset
+
+ method, the self-consistent 2PI equations of motion are derived within
+ a 
+\emph on
+particular
+\emph default
+ field theory of interest.
+ This gives the 2PI method 
+\begin_inset Quotes eld
+\end_inset
+
+insider information,
+\begin_inset Quotes erd
+\end_inset
+
+ from which it should be able to construct a better approximation.
+ This comes at the cost of spurious solutions which must be eliminated and
+ the added difficulty of finding the 2PI effective action in the first place.
+ Finally, a hybrid 2PI-Pad
 \begin_inset ERT
 status open
 
@@ -9033,44 +9153,6 @@ status open
  This hybrid approximation performs considerably better than the comparable
  2PI approximation at weak coupling, though not noticeably better at strong
  coupling.
- These results are not entirely surprising because while, e.g., the Borel-Pad
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-'e
-\end_layout
-
-\end_inset
-
- method is a widely applicable general 
-\begin_inset Quotes eld
-\end_inset
-
-black box
-\begin_inset Quotes erd
-\end_inset
-
- method, the self-consistent 2PI equations of motion are derived within
- a 
-\emph on
-particular
-\emph default
- field theory of interest.
- This gives the 2PI method 
-\begin_inset Quotes eld
-\end_inset
-
-insider information,
-\begin_inset Quotes erd
-\end_inset
-
- from which it should be able to construct a better approximation.
- This comes at the cost of spurious solutions which must be eliminated and
- the added difficulty of finding the 2PI effective action in the first place.
 \end_layout
 
 \begin_layout Standard
@@ -9181,8 +9263,8 @@ PIEAs an appealing degree of mechanisation and suitability especially for
  non-linear nature of the equations of motion.
  The first is the renormalisation procedure, which has not been discussed
  in detail here.
- A renormalisation procedure based on a BPHZ type of analysis will be discussed
- in Chapter 
+ A renormalisation procedure based on a Bogoliubov-Parasiuk-Hepp-Zimmerman
+ (BPHZ) type of analysis will be discussed in Chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:chap4"
