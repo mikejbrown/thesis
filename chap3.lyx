@@ -510,23 +510,21 @@ reference "eq:field-ON-transformation"
 
  is invariant
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Non-invariance of the functional measure arises in a number of physically
  important cases, none of which are relevant here: chiral transformations
  of fermion fields, non-linear field redefinitions, and scale and diffeomorphism
- transformations of spacetime.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF??
-\end_layout
+ transformations of spacetime (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
 
 \end_inset
 
-
+).
 \end_layout
 
 \end_inset
@@ -927,18 +925,28 @@ reference "chap:chap4"
 status collapsed
 
 \begin_layout Plain Layout
-Strictly speaking a Higgs or Brout-Englert-Higgs
-\begin_inset Note Note
-status open
+Strictly speaking a Higgs or Brout-Englert-Higgs boson only exists in theories
+ where the broken symmetries are gauge symmetries.
+ (The history of the 
+\begin_inset Quotes eld
+\end_inset
 
-\begin_layout Plain Layout
-CHECK SPELLING
-\end_layout
+Higss
+\begin_inset Quotes erd
+\end_inset
+
+ mechanism is famously convoluted, with important contributions coming from
+ a number of people.
+ See, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Nambu1960,Anderson1963,Englert1964,Guralnik1964,Higgs1964"
 
 \end_inset
 
- boson only exists in theories where the broken symmetries are gauge symmetries.
- A more accurate term for the case of a global symmetry would be 
+ for the original literature.) A more accurate term for the case of a global
+ symmetry would be 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1890,17 +1898,7 @@ The derivation given previously that
  that this should be the case can be found in, e.g., 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Jakov_c_2016"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-MORE ORIGINAL REFS!!!
-\end_layout
+key "Jakov_c_2016,Berges2005,Patkos2008"
 
 \end_inset
 
@@ -1910,18 +1908,8 @@ MORE ORIGINAL REFS!!!
 \begin_inset Formula $\Delta$
 \end_inset
 
- principally effect
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-affect?
-\end_layout
-
-\end_inset
-
- its long distance behaviour, while the renormalisation problem is one of
- short distance physics.
+ principally affect its long distance behaviour, while the renormalisation
+ problem is one of short distance physics.
  At short distances, Weinberg's theorem 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2589,17 +2577,15 @@ key "Mao2014"
 \begin_inset Formula $T_{\star}\approx132\ \mathrm{MeV}$
 \end_inset
 
- on the basis of lattice computation 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFS
-\end_layout
+ on the basis of lattice computation (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Strouthos2003,Campostrini2002"
 
 \end_inset
 
-.
+).
  However Figure 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2696,7 +2682,7 @@ is
  Further, it will be shown in the next chapter that the symmetry improvement
  method, which imposes 1PI style WI on the 2PI solution, restores the second
  order phase transition in the Hartree-Fock approximation.
- Thus the unphysical artifacts of the 2PIEA in the Hartree-Fock approximation
+ Thus the unphysical artefacts of the 2PIEA in the Hartree-Fock approximation
  can be understood as a result of the difference between the 1PI and 2PI
  Ward identities.
 \end_layout
