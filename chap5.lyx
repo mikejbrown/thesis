@@ -298,7 +298,7 @@ Formally
 
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Note that if one wants invariance under redefinitions of 
@@ -312,12 +312,9 @@ Note that if one wants invariance under redefinitions of
 .
  This can be handled straightforwardly in the functional formalism through
  the introduction of Faddeev-Popov ghost fields
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990,Peskin1995,Srednicki2007"
 
 \end_inset
 
