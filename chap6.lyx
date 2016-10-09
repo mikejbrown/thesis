@@ -2321,8 +2321,16 @@ reference "chap:chap5"
  However, the linear response equations are formulated in infinite volume
  and real time.
  Thus, an analytical continuation from imaginary to real time must be performed.
- In principle this is straightforward, although in practice it is complicated
- by the unusual behaviour of the zero mode in the SSI formalism.
+ In principle this is straightforward (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006"
+
+\end_inset
+
+), although in practice it is complicated by the unusual behaviour of the
+ zero mode in the SSI formalism.
  As a result, though an investigation of the linear response theory of soft
  symmetry improved effective actions is clearly motivated, it falls beyond
  the scope of this thesis.
