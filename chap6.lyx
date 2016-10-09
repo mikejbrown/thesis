@@ -363,7 +363,14 @@ name "sec:Linear-Response-Theory"
 
 \begin_layout Standard
 Linear response theory studies the effect of small externally applied perturbati
-ons on a system initially in equilibrium.
+ons on a system initially in equilibrium (see, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kapusta2006,Rammer2007,Stefanucci2013"
+
+\end_inset
+
+ for informative discussions).
  Consider a quantum system which is subjected to an external driving potential
  
 \begin_inset Formula $-J\left(t\right)\hat{B}\left(t\right)$
