@@ -741,7 +741,7 @@ filename "chap7.lyx"
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "refs"
-options "unsrtnat"
+options "bibtotoc,unsrtnat"
 
 \end_inset
 
