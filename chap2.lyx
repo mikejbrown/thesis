@@ -518,16 +518,14 @@ contact terms
 
 .
  This is exactly analogous to the BBGKY hierarchy in statistical mechanics
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REF!
-\end_layout
+ (see, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Born1946,Kirkwood1946"
 
 \end_inset
 
-.
+).
  Solving this hierarchy of equations in practice requires truncation at
  some finite order, which necessitates invoking a closure ansatz approximating
  some higher order correlation functions in terms of lower order ones.
@@ -7863,24 +7861,21 @@ ts of this series or its sum (implicit analytic expressions can be derived;
 \end_inset
 
 , which is not known in closed form).
- However, after the first few terms the coefficients are well approximated
- by 
+ There is a recursion formula for the coefficients 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kleinert1998"
+
+\end_inset
+
+ which, however, will not be needed here.
+ After the first few terms the coefficients are well approximated by 
 \begin_inset Formula $\gamma_{i+1}\sim-\frac{2}{3}i\gamma_{i}$
 \end_inset
 
 , the same as for the perturbation series.
  This has the hallmark of an asymptotic series and, like perturbation theory,
  the 2PI series does not converge.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Discuss Kleinert's recursion formula...?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
