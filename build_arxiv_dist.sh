@@ -1,6 +1,6 @@
 #!/bin/sh
 # Prepares an arxiv distributable latex tarball in $buildTarget
-
+f() {
 if [ -z "$(which lyx | grep 'No lyx in')" ];
 then
   lyxPath="C:\\Program Files (x86)\\LyX 2.2\\bin\\lyx.exe"
@@ -35,14 +35,9 @@ cd dist
 
 # arXiv.org wants \pdfoutput=1 in the latex preamble, but LyX doesn't put it
 # there by default. So put it in manually by applying a patch.
-cat > fixup.patch <<HERE
-3a4
-> \pdfoutput=1
-HERE
 echo
 echo "Applying \\pdfoutput=1 patch for arXiv build system..."
-patch thesis_main.tex fixup.patch
-rm fixup.patch
+sed -i -e '4 i \\\\pdfoutput=1' thesis_main.tex
 
 echo
 echo "Building pdf and aux files..."
@@ -54,7 +49,9 @@ bibtex -quiet thesis_main
 
 echo
 echo "Applying bbl file to thesis_main.tex for arXiv build system..."
-sed -i -e 's/\\bibliographystyle.*//; s/\\bibliography{refs}/cat thesis_main.bbl/e' thesis_main.tex
+sed -i -e 's/\\bibliographystyle.*//' thesis_main.tex
+sed -i -e '/\\bibliography{refs}/ r thesis_main.bbl' thesis_main.tex
+sed -i -e 's/\\bibliography{refs}//' thesis_main.tex
 
 echo
 echo "Cleaning auxiliary files..."
@@ -75,3 +72,6 @@ rm -rf dist/
 
 echo
 echo "*** All done! ***"
+};
+
+time f
