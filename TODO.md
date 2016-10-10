@@ -16,5 +16,5 @@ Things I want to do:
     - ended up using a manual version file, with the build scripts running `git describe > version`
 - [ ] Script to generate thesis_stats.ods???
 - [x] Add .gitignore for thesis folder ready for splitting the repo
-- [ ] Split thesis repo (add anything else needed before split?)
+- [x] Split thesis repo (add anything else needed before split?)
 - [x] FIX build_arxiv_dist.sh script to replace `\bibliography{refs}` with contents of the .bbl file in the thesis_main.tex output for arXiv.
