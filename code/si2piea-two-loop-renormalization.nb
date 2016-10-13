@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    133865,       3623]
-NotebookOptionsPosition[    129827,       3483]
-NotebookOutlinePosition[    130171,       3498]
-CellTagsIndexPosition[    130128,       3495]
+NotebookDataLength[    136455,       3678]
+NotebookOptionsPosition[    132266,       3533]
+NotebookOutlinePosition[    132761,       3553]
+CellTagsIndexPosition[    132718,       3550]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -44,14 +44,14 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"ClearAll", "[", 
    RowBox[{
-   "veom", ",", " ", "geom", ",", "neom", ",", "divergentpartrules", ",", 
+   "veom", ",", " ", "geom", ",", "neom", ",", "regularisedtadpoles", ",", 
     "mg2soln", ",", "cteq", ",", "cts", ",", "\[Delta]m", ",", 
     "\[Delta]\[Lambda]"}], "]"}], ";"}]], "Input",
  CellChangeTimes->{{3.630103867805504*^9, 3.63010386853444*^9}, {
    3.6301039436463327`*^9, 3.6301039449606113`*^9}, 3.63193403661138*^9, {
    3.631945870920216*^9, 3.63194587813556*^9}, {3.6761398572584014`*^9, 
    3.6761398586494017`*^9}, 3.676143084473401*^9, {3.6761448938264017`*^9, 
-   3.676144894065401*^9}}],
+   3.676144894065401*^9}, 3.6853235127762012`*^9}],
 
 Cell[CellGroupData[{
 
@@ -220,7 +220,7 @@ Cell[BoxData[
 
 Cell[BoxData[
  RowBox[{"mg2", " ", "v"}]], "Output",
- CellChangeTimes->{3.6765424788199997`*^9}]
+ CellChangeTimes->{3.6853235388452015`*^9}]
 }, Open  ]],
 
 Cell["Goldstone equation of motion", "Text",
@@ -347,7 +347,7 @@ Cell[BoxData[
       RowBox[{"2", " ", 
        SubscriptBox["\[Delta]\[Lambda]", 
         RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]}]], "Output",
- CellChangeTimes->{3.676542478828*^9}],
+ CellChangeTimes->{3.6853235388542013`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -361,7 +361,7 @@ Cell[BoxData[
     RowBox[{"tfing", " ", "\[Lambda]", " ", "\[HBar]"}], "+", 
     RowBox[{"n", " ", "tfing", " ", "\[Lambda]", " ", "\[HBar]"}], "+", 
     RowBox[{"tfinn", " ", "\[Lambda]", " ", "\[HBar]"}]}], ")"}]}]], "Output",
- CellChangeTimes->{3.676542478833*^9}]
+ CellChangeTimes->{3.6853235388672013`*^9}]
 }, Open  ]],
 
 Cell["Higgs equation of motion", "Text",
@@ -489,7 +489,7 @@ Cell[BoxData[
       RowBox[{"2", " ", 
        SubscriptBox["\[Delta]\[Lambda]", 
         RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]}]], "Output",
- CellChangeTimes->{3.6765424788380003`*^9}],
+ CellChangeTimes->{3.6853235388802013`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -504,7 +504,7 @@ Cell[BoxData[
     RowBox[{"n", " ", "tfing", " ", "\[Lambda]", " ", "\[HBar]"}], "+", 
     RowBox[{"3", " ", "tfinn", " ", "\[Lambda]", " ", "\[HBar]"}]}], 
    ")"}]}]], "Output",
- CellChangeTimes->{3.6765424788389997`*^9}]
+ CellChangeTimes->{3.6853235388882017`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -524,7 +524,7 @@ dependent quantities\
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"divergentpartrules", "=", 
+ RowBox[{"regularisedtadpoles", "=", 
   RowBox[{"{", 
    RowBox[{
     RowBox[{"t\[Infinity]g", "\[Rule]", 
@@ -549,7 +549,7 @@ Cell[BoxData[
    3.630023081143161*^9, 3.630023085799274*^9}, {3.630024250903257*^9, 
    3.630024252815749*^9}, {3.6300255856396933`*^9, 3.6300255887931633`*^9}, {
    3.6742552536282234`*^9, 3.6742552672*^9}, {3.676140381756401*^9, 
-   3.6761404157624016`*^9}, 3.6761430700994015`*^9}],
+   3.6761404157624016`*^9}, 3.6761430700994015`*^9, 3.6853235084912014`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -572,9 +572,9 @@ Cell[BoxData[
        FractionBox[
         SuperscriptBox["\[CapitalLambda]", "2"], 
         SuperscriptBox["\[Mu]", "2"]], "]"}]}]}]}]}], "}"}]], "Output",
- CellChangeTimes->{3.6765424788450003`*^9}]
+ CellChangeTimes->{3.6853235388952017`*^9}]
 }, Open  ]]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -588,9 +588,10 @@ Cell[BoxData[
   RowBox[{
    RowBox[{"Solve", "[", 
     RowBox[{
-     RowBox[{"neom", "/.", "divergentpartrules"}], ",", "mn2"}], "]"}], "[", 
+     RowBox[{"neom", "/.", "regularisedtadpoles"}], ",", "mn2"}], "]"}], "[", 
    RowBox[{"[", "1", "]"}], "]"}]}]], "Input",
- CellChangeTimes->{{3.6761433003304014`*^9, 3.6761433077224016`*^9}}],
+ CellChangeTimes->{{3.6761433003304014`*^9, 3.6761433077224016`*^9}, 
+   3.685323509601201*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -674,7 +675,7 @@ Cell[BoxData[
           SubscriptBox["\[Delta]\[Lambda]", 
            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]}], 
   "}"}]], "Output",
- CellChangeTimes->{3.6765424788599997`*^9}]
+ CellChangeTimes->{3.6853235389202013`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -685,7 +686,7 @@ Cell[BoxData[
    RowBox[{"(", 
     RowBox[{
      RowBox[{
-      RowBox[{"geom", "/.", "divergentpartrules"}], "/.", "mn2fromneom"}], "//", 
+      RowBox[{"geom", "/.", "regularisedtadpoles"}], "/.", "mn2fromneom"}], "//", 
      RowBox[{
       RowBox[{
        RowBox[{"Solve", "[", 
@@ -696,7 +697,7 @@ Cell[BoxData[
    3.630022762696628*^9}, {3.630023309918728*^9, 3.630023312023573*^9}, {
    3.630103888019178*^9, 3.6301038887333*^9}, {3.6742591979618263`*^9, 
    3.674259199665924*^9}, {3.676143078938401*^9, 3.6761430800004015`*^9}, 
-   3.6761433182834015`*^9}],
+   3.6761433182834015`*^9, 3.6853235107842016`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -1137,7 +1138,7 @@ Cell[BoxData[
             SubscriptBox["\[Delta]\[Lambda]", 
              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], 
    ")"}]}]], "Output",
- CellChangeTimes->{3.676542478882*^9}]
+ CellChangeTimes->{3.6853235389572015`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1524,7 +1525,7 @@ Cell[BoxData[
             SubscriptBox["\[Delta]\[Lambda]", 
              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}], 
    ")"}]}]], "Output",
- CellChangeTimes->{3.676542479722*^9}]
+ CellChangeTimes->{3.685323539882201*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -1576,90 +1577,35 @@ Cell[BoxData[
   RowBox[{
    RowBox[{
     RowBox[{"-", 
-     FractionBox[
-      RowBox[{
-       RowBox[{"6", " ", 
-        SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
-       RowBox[{
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"c0", " ", 
-           SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["m", "2"], " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-          RowBox[{"n", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], "+", 
-          RowBox[{"2", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], 
-      RowBox[{
-       RowBox[{"-", "6"}], "+", 
-       RowBox[{"c1", " ", 
-        RowBox[{"(", 
-         RowBox[{"2", "+", "n"}], ")"}], " ", 
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-        "\[HBar]", " ", 
-        RowBox[{"Log", "[", 
-         FractionBox[
-          SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-       RowBox[{"c1", " ", 
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-        RowBox[{"Log", "[", 
-         FractionBox[
-          SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"n", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], "+", 
-          RowBox[{"2", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]]}], "\[Equal]", "0"}], 
-   ",", 
-   RowBox[{
-    RowBox[{
-     RowBox[{"-", 
-      FractionBox[
-       RowBox[{"\[Lambda]", " ", "\[HBar]"}], "6"]}], "+", 
-     FractionBox[
-      RowBox[{"3", " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"(", 
-        RowBox[{"\[Lambda]", "+", 
-         SubscriptBox["\[Delta]\[Lambda]", 
-          RowBox[{"2", " ", "a"}]]}], ")"}]}], 
+     RowBox[{"(", 
       RowBox[{
        RowBox[{"(", 
         RowBox[{
-         RowBox[{"-", "3"}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-          "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-         RowBox[{"c1", " ", 
+         RowBox[{"6", " ", 
+          SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
+         RowBox[{
           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"c0", " ", 
+             SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["m", "2"], " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+            RowBox[{"n", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "a"}]]}], "+", 
+            RowBox[{"2", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}], "/", 
        RowBox[{"(", 
         RowBox[{
          RowBox[{"-", "6"}], "+", 
@@ -1685,78 +1631,142 @@ Cell[BoxData[
               RowBox[{"2", " ", "a"}]]}], "+", 
             RowBox[{"2", " ", 
              SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], "\[Equal]",
-     "0"}], ",", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}], 
+    "\[Equal]", "0"}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox[
+       RowBox[{"\[Lambda]", " ", "\[HBar]"}], "6"]}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"3", " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"(", 
+         RowBox[{"\[Lambda]", "+", 
+          SubscriptBox["\[Delta]\[Lambda]", 
+           RowBox[{"2", " ", "a"}]]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "3"}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+           "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "6"}], "+", 
+          RowBox[{"c1", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+           "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"n", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "a"}]]}], "+", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+    "\[Equal]", "0"}], ",", 
    RowBox[{
     RowBox[{"-", 
-     FractionBox[
-      RowBox[{"6", "+", 
-       RowBox[{"c1", " ", 
-        RowBox[{"(", 
-         RowBox[{"1", "+", "n"}], ")"}], " ", "\[Lambda]", " ", "\[HBar]", 
-        " ", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"6", " ", "c1", " ", 
         RowBox[{"Log", "[", 
          FractionBox[
           SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-       FractionBox["18", 
-        RowBox[{"n", " ", 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}]], 
+      RowBox[{"(", 
+       RowBox[{"6", "+", 
+        RowBox[{"c1", " ", 
          RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "3"}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            SubscriptBox["\[Delta]\[Lambda]", 
-             RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
-       FractionBox[
-        RowBox[{"36", " ", 
+          RowBox[{"1", "+", "n"}], ")"}], " ", "\[Lambda]", " ", "\[HBar]", 
+         " ", 
+         RowBox[{"Log", "[", 
+          FractionBox[
+           SuperscriptBox["\[CapitalLambda]", "2"], 
+           SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+        FractionBox["18", 
+         RowBox[{"n", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "3"}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
+        RowBox[{
          RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
-        RowBox[{"n", " ", 
+          RowBox[{"36", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "n"}], ")"}]}], ")"}], "/", 
          RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "6"}], "+", 
-           RowBox[{"c1", " ", 
-            RowBox[{"(", 
-             RowBox[{"2", "+", "n"}], ")"}], " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"n", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "a"}]]}], "+", 
-              RowBox[{"2", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], 
-      RowBox[{"6", " ", "c1", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}]]}], "\[Equal]", "0"}], ",", 
-   "True", ",", 
+          RowBox[{"n", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "6"}], "+", 
+             RowBox[{"c1", " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", "n"}], ")"}], " ", 
+              SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+              "\[HBar]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                SuperscriptBox["\[CapitalLambda]", "2"], 
+                SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+             RowBox[{"c1", " ", 
+              SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                SuperscriptBox["\[CapitalLambda]", "2"], 
+                SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"n", " ", 
+                 SubscriptBox["\[Delta]\[Lambda]", 
+                  RowBox[{"2", " ", "a"}]]}], "+", 
+                RowBox[{"2", " ", 
+                 SubscriptBox["\[Delta]\[Lambda]", 
+                  RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}],
+        ")"}]}]}], "\[Equal]", "0"}], ",", "True", ",", 
    RowBox[{
     RowBox[{
      RowBox[{"-", 
@@ -1785,77 +1795,81 @@ Cell[BoxData[
             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
           SubscriptBox["\[Delta]\[Lambda]", 
            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "-", 
-     FractionBox[
-      RowBox[{"Z\[CapitalDelta]", " ", 
-       RowBox[{"(", 
-        RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Z\[CapitalDelta]", " ", 
+        RowBox[{"(", 
          RowBox[{
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], 
-      RowBox[{"n", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"-", "6"}], "+", 
-         RowBox[{"c1", " ", 
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-          "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"n", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "a"}]]}], "+", 
-            RowBox[{"2", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], "\[Equal]",
-     "0"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"n", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "6"}], "+", 
+          RowBox[{"c1", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+           "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"n", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "a"}]]}], "+", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+    "\[Equal]", "0"}], ",", 
    RowBox[{
-    FractionBox[
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"6", " ", "Z", " ", "Z\[CapitalDelta]"}]}], 
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"c1", " ", 
-       RowBox[{"(", 
-        RowBox[{"2", "+", "n"}], ")"}], " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-       "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      RowBox[{"c1", " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "a"}]]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]], "\[Equal]", "0"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.676542486751*^9}]
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"6", " ", "Z", " ", "Z\[CapitalDelta]"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"c1", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "n"}], ")"}], " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+        "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       RowBox[{"c1", " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "a"}]]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], "\[Equal]", 
+    "0"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6853235479852014`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1892,125 +1906,132 @@ Cell[BoxData[
   RowBox[{
    RowBox[{
     RowBox[{"-", 
-     FractionBox[
+     RowBox[{"(", 
       RowBox[{
-       RowBox[{"6", " ", 
-        SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
-       RowBox[{
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-        RowBox[{"(", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"6", " ", 
+          SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
          RowBox[{
-          RowBox[{"c0", " ", 
-           SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["m", "2"], " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{
-           RowBox[{"(", 
-            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-          RowBox[{"n", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], "+", 
-          RowBox[{"2", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], 
-      RowBox[{
-       RowBox[{"-", "6"}], "+", 
-       RowBox[{"c1", " ", 
-        RowBox[{"(", 
-         RowBox[{"2", "+", "n"}], ")"}], " ", 
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-        "\[HBar]", " ", 
-        RowBox[{"Log", "[", 
-         FractionBox[
-          SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-       RowBox[{"c1", " ", 
-        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-        RowBox[{"Log", "[", 
-         FractionBox[
-          SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"n", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], "+", 
-          RowBox[{"2", " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]]}], "\[Equal]", "0"}], 
-   ",", 
+          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"c0", " ", 
+             SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["m", "2"], " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+            RowBox[{"n", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "a"}]]}], "+", 
+            RowBox[{"2", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"-", "6"}], "+", 
+         RowBox[{"c1", " ", 
+          RowBox[{"(", 
+           RowBox[{"2", "+", "n"}], ")"}], " ", 
+          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+          "\[HBar]", " ", 
+          RowBox[{"Log", "[", 
+           FractionBox[
+            SuperscriptBox["\[CapitalLambda]", "2"], 
+            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+         RowBox[{"c1", " ", 
+          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+          RowBox[{"Log", "[", 
+           FractionBox[
+            SuperscriptBox["\[CapitalLambda]", "2"], 
+            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"n", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "a"}]]}], "+", 
+            RowBox[{"2", " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}], 
+    "\[Equal]", "0"}], ",", 
    RowBox[{
     RowBox[{"-", 
-     FractionBox[
-      RowBox[{"2", "+", 
-       RowBox[{"c1", " ", "\[Lambda]", " ", "\[HBar]", " ", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", "c1", " ", 
         RowBox[{"Log", "[", 
          FractionBox[
           SuperscriptBox["\[CapitalLambda]", "2"], 
-          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-       FractionBox[
-        RowBox[{"6", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
-        RowBox[{"n", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "3"}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            SubscriptBox["\[Delta]\[Lambda]", 
-             RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
-       FractionBox["12", 
-        RowBox[{"n", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "6"}], "+", 
-           RowBox[{"c1", " ", 
-            RowBox[{"(", 
-             RowBox[{"2", "+", "n"}], ")"}], " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"n", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "a"}]]}], "+", 
-              RowBox[{"2", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], 
-      RowBox[{"2", " ", "c1", " ", 
-       RowBox[{"Log", "[", 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}]], 
+      RowBox[{"(", 
+       RowBox[{"2", "+", 
+        RowBox[{"c1", " ", "\[Lambda]", " ", "\[HBar]", " ", 
+         RowBox[{"Log", "[", 
+          FractionBox[
+           SuperscriptBox["\[CapitalLambda]", "2"], 
+           SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
         FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}]]}], "\[Equal]", "0"}], ",", 
+         RowBox[{"6", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
+         RowBox[{"n", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "3"}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
+        RowBox[{"12", "/", 
+         RowBox[{"(", 
+          RowBox[{"n", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "6"}], "+", 
+             RowBox[{"c1", " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", "n"}], ")"}], " ", 
+              SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+              "\[HBar]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                SuperscriptBox["\[CapitalLambda]", "2"], 
+                SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+             RowBox[{"c1", " ", 
+              SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+              RowBox[{"Log", "[", 
+               FractionBox[
+                SuperscriptBox["\[CapitalLambda]", "2"], 
+                SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"n", " ", 
+                 SubscriptBox["\[Delta]\[Lambda]", 
+                  RowBox[{"2", " ", "a"}]]}], "+", 
+                RowBox[{"2", " ", 
+                 SubscriptBox["\[Delta]\[Lambda]", 
+                  RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}],
+        ")"}]}]}], "\[Equal]", "0"}], ",", 
    RowBox[{
     RowBox[{
      RowBox[{"(", 
@@ -2190,77 +2211,81 @@ Cell[BoxData[
             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
           SubscriptBox["\[Delta]\[Lambda]", 
            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "-", 
-     FractionBox[
-      RowBox[{"Z\[CapitalDelta]", " ", 
-       RowBox[{"(", 
-        RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"Z\[CapitalDelta]", " ", 
+        RowBox[{"(", 
          RowBox[{
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], 
-      RowBox[{"n", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"-", "6"}], "+", 
-         RowBox[{"c1", " ", 
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-          "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"n", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "a"}]]}], "+", 
-            RowBox[{"2", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], "\[Equal]",
-     "0"}], ",", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"n", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "6"}], "+", 
+          RowBox[{"c1", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+           "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"n", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "a"}]]}], "+", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+    "\[Equal]", "0"}], ",", 
    RowBox[{
-    FractionBox[
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"6", " ", "Z", " ", "Z\[CapitalDelta]"}]}], 
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"c1", " ", 
-       RowBox[{"(", 
-        RowBox[{"2", "+", "n"}], ")"}], " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-       "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      RowBox[{"c1", " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "a"}]]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]], "\[Equal]", "0"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{3.676542499605*^9}]
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"6", " ", "Z", " ", "Z\[CapitalDelta]"}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"c1", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "n"}], ")"}], " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+        "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       RowBox[{"c1", " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "a"}]]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], "\[Equal]", 
+    "0"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6853235617472014`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -2291,70 +2316,140 @@ Cell[BoxData[
  RowBox[{"{", 
   RowBox[{
    RowBox[{
-    FractionBox[
-     RowBox[{
-      RowBox[{"6", " ", 
-       SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
       RowBox[{
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"c0", " ", 
-          SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["m", "2"], " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
-       RowBox[{"(", 
-        RowBox[{
+       RowBox[{"6", " ", 
+        SubsuperscriptBox["\[Delta]m", "1", "2"]}], "+", 
+       RowBox[{
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"(", 
          RowBox[{
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "a"}]]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], 
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"c1", " ", 
-       RowBox[{"(", 
-        RowBox[{"2", "+", "n"}], ")"}], " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-       "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      RowBox[{"c1", " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "a"}]]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]], "\[Equal]", "0"}], ",", 
+          RowBox[{"c0", " ", 
+           SuperscriptBox["\[CapitalLambda]", "2"]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["m", "2"], " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "a"}]]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}], "/", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"c1", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "n"}], ")"}], " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+        "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       RowBox[{"c1", " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "a"}]]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], "\[Equal]", 
+    "0"}], ",", 
    RowBox[{
     RowBox[{"\[HBar]", " ", 
      RowBox[{"(", 
       RowBox[{"\[Lambda]", "-", 
-       FractionBox[
-        RowBox[{"18", " ", 
-         SuperscriptBox["Z\[CapitalDelta]", "2"], " ", 
-         RowBox[{"(", 
-          RowBox[{"\[Lambda]", "+", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], ")"}]}], 
-        RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"18", " ", 
+          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"\[Lambda]", "+", 
+            SubscriptBox["\[Delta]\[Lambda]", 
+             RowBox[{"2", " ", "a"}]]}], ")"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "3"}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "6"}], "+", 
+            RowBox[{"c1", " ", 
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"n", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "a"}]]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+      ")"}]}], "\[Equal]", "0"}], ",", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"c1", " ", 
+       RowBox[{"Log", "[", 
+        FractionBox[
+         SuperscriptBox["\[CapitalLambda]", "2"], 
+         SuperscriptBox["\[Mu]", "2"]], "]"}]}]], 
+     RowBox[{"(", 
+      RowBox[{"6", "+", 
+       RowBox[{"c1", " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", "n"}], ")"}], " ", "\[Lambda]", " ", "\[HBar]", 
+        " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       FractionBox["18", 
+        RowBox[{"n", " ", 
          RowBox[{"(", 
           RowBox[{
            RowBox[{"-", "3"}], "+", 
@@ -2372,69 +2467,57 @@ Cell[BoxData[
               SuperscriptBox["\[CapitalLambda]", "2"], 
               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
             SubscriptBox["\[Delta]\[Lambda]", 
-             RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "6"}], "+", 
-           RowBox[{"c1", " ", 
-            RowBox[{"(", 
-             RowBox[{"2", "+", "n"}], ")"}], " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"n", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "a"}]]}], "+", 
-              RowBox[{"2", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], ")"}]}], 
-    "\[Equal]", "0"}], ",", 
+             RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"36", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "1"}], "+", "n"}], ")"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{"n", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "6"}], "+", 
+            RowBox[{"c1", " ", 
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"n", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "a"}]]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+      ")"}]}], "\[Equal]", "0"}], ",", "True", ",", 
    RowBox[{
-    FractionBox[
-     RowBox[{"6", "+", 
-      RowBox[{"c1", " ", 
-       RowBox[{"(", 
-        RowBox[{"1", "+", "n"}], ")"}], " ", "\[Lambda]", " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      FractionBox["18", 
-       RowBox[{"n", " ", 
+    RowBox[{"\[Lambda]", "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"6", " ", "Z\[CapitalDelta]", " ", 
         RowBox[{"(", 
          RowBox[{
-          RowBox[{"-", "3"}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-           "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
-      FractionBox[
-       RowBox[{"36", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
        RowBox[{"n", " ", 
         RowBox[{"(", 
          RowBox[{
@@ -2461,53 +2544,8 @@ Cell[BoxData[
                RowBox[{"2", " ", "a"}]]}], "+", 
              RowBox[{"2", " ", 
               SubscriptBox["\[Delta]\[Lambda]", 
-               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], 
-     RowBox[{"c1", " ", 
-      RowBox[{"Log", "[", 
-       FractionBox[
-        SuperscriptBox["\[CapitalLambda]", "2"], 
-        SuperscriptBox["\[Mu]", "2"]], "]"}]}]], "\[Equal]", "0"}], ",", 
-   "True", ",", 
-   RowBox[{
-    RowBox[{"\[Lambda]", "+", 
-     FractionBox[
-      RowBox[{"6", " ", "Z\[CapitalDelta]", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], 
-      RowBox[{"n", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"-", "6"}], "+", 
-         RowBox[{"c1", " ", 
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-          "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"n", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "a"}]]}], "+", 
-            RowBox[{"2", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], "\[Equal]", 
+               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+    "\[Equal]", 
     FractionBox[
      RowBox[{"6", " ", "Z\[CapitalDelta]", " ", 
       RowBox[{"(", 
@@ -2533,115 +2571,59 @@ Cell[BoxData[
          SubscriptBox["\[Delta]\[Lambda]", 
           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]]}], ",", 
    RowBox[{
-    FractionBox[
-     RowBox[{
-      RowBox[{"-", "1"}], "+", 
-      RowBox[{"Z", " ", "Z\[CapitalDelta]"}]}], 
-     RowBox[{
-      RowBox[{"-", "6"}], "+", 
-      RowBox[{"c1", " ", 
-       RowBox[{"(", 
-        RowBox[{"2", "+", "n"}], ")"}], " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-       "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      RowBox[{"c1", " ", 
-       SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "a"}]]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", 
-           RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}]], "\[Equal]", "0"}], ",", 
-   RowBox[{
-    FractionBox[
-     RowBox[{"2", "+", 
-      RowBox[{"c1", " ", "\[Lambda]", " ", "\[HBar]", " ", 
-       RowBox[{"Log", "[", 
-        FractionBox[
-         SuperscriptBox["\[CapitalLambda]", "2"], 
-         SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-      FractionBox[
-       RowBox[{"6", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
-       RowBox[{"n", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "3"}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-           "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-           SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
-      FractionBox["12", 
-       RowBox[{"n", " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"-", "6"}], "+", 
-          RowBox[{"c1", " ", 
-           RowBox[{"(", 
-            RowBox[{"2", "+", "n"}], ")"}], " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-           "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-          RowBox[{"c1", " ", 
-           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-           RowBox[{"Log", "[", 
-            FractionBox[
-             SuperscriptBox["\[CapitalLambda]", "2"], 
-             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-           RowBox[{"(", 
-            RowBox[{
-             RowBox[{"n", " ", 
-              SubscriptBox["\[Delta]\[Lambda]", 
-               RowBox[{"2", " ", "a"}]]}], "+", 
-             RowBox[{"2", " ", 
-              SubscriptBox["\[Delta]\[Lambda]", 
-               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], 
-     RowBox[{"c1", " ", 
-      RowBox[{"Log", "[", 
-       FractionBox[
-        SuperscriptBox["\[CapitalLambda]", "2"], 
-        SuperscriptBox["\[Mu]", "2"]], "]"}]}]], "\[Equal]", "0"}], ",", 
-   RowBox[{
     RowBox[{
      RowBox[{"(", 
       RowBox[{
-       RowBox[{"-", "1"}], "+", "n"}], ")"}], " ", "\[HBar]", " ", 
+       RowBox[{"-", "1"}], "+", 
+       RowBox[{"Z", " ", "Z\[CapitalDelta]"}]}], ")"}], "/", 
      RowBox[{"(", 
-      RowBox[{"\[Lambda]", "-", 
-       FractionBox[
-        RowBox[{"18", " ", 
-         SuperscriptBox["Z\[CapitalDelta]", "2"], " ", 
-         RowBox[{"(", 
-          RowBox[{"\[Lambda]", "+", 
+      RowBox[{
+       RowBox[{"-", "6"}], "+", 
+       RowBox[{"c1", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "n"}], ")"}], " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+        "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       RowBox[{"c1", " ", 
+        SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"n", " ", 
            SubscriptBox["\[Delta]\[Lambda]", 
-            RowBox[{"2", " ", "a"}]]}], ")"}]}], 
-        RowBox[{
+            RowBox[{"2", " ", "a"}]]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", 
+            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], "\[Equal]", 
+    "0"}], ",", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"c1", " ", 
+       RowBox[{"Log", "[", 
+        FractionBox[
+         SuperscriptBox["\[CapitalLambda]", "2"], 
+         SuperscriptBox["\[Mu]", "2"]], "]"}]}]], 
+     RowBox[{"(", 
+      RowBox[{"2", "+", 
+       RowBox[{"c1", " ", "\[Lambda]", " ", "\[HBar]", " ", 
+        RowBox[{"Log", "[", 
+         FractionBox[
+          SuperscriptBox["\[CapitalLambda]", "2"], 
+          SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+       FractionBox[
+        RowBox[{"6", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "1"}], "+", "n"}], ")"}]}], 
+        RowBox[{"n", " ", 
          RowBox[{"(", 
           RowBox[{
            RowBox[{"-", "3"}], "+", 
@@ -2659,34 +2641,99 @@ Cell[BoxData[
               SuperscriptBox["\[CapitalLambda]", "2"], 
               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
             SubscriptBox["\[Delta]\[Lambda]", 
-             RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"-", "6"}], "+", 
-           RowBox[{"c1", " ", 
-            RowBox[{"(", 
-             RowBox[{"2", "+", "n"}], ")"}], " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-            "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-           RowBox[{"c1", " ", 
-            SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-            RowBox[{"Log", "[", 
-             FractionBox[
-              SuperscriptBox["\[CapitalLambda]", "2"], 
-              SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-            RowBox[{"(", 
-             RowBox[{
-              RowBox[{"n", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "a"}]]}], "+", 
-              RowBox[{"2", " ", 
-               SubscriptBox["\[Delta]\[Lambda]", 
-                RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], ")"}]}], 
-    "\[Equal]", "0"}], ",", 
+             RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
+       RowBox[{"12", "/", 
+        RowBox[{"(", 
+         RowBox[{"n", " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "6"}], "+", 
+            RowBox[{"c1", " ", 
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"n", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "a"}]]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+      ")"}]}], "\[Equal]", "0"}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "+", "n"}], ")"}], " ", "\[HBar]", " ", 
+     RowBox[{"(", 
+      RowBox[{"\[Lambda]", "-", 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"18", " ", 
+          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"\[Lambda]", "+", 
+            SubscriptBox["\[Delta]\[Lambda]", 
+             RowBox[{"2", " ", "a"}]]}], ")"}]}], ")"}], "/", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "3"}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             SubscriptBox["\[Delta]\[Lambda]", 
+              RowBox[{"2", " ", "b"}]]}]}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "6"}], "+", 
+            RowBox[{"c1", " ", 
+             RowBox[{"(", 
+              RowBox[{"2", "+", "n"}], ")"}], " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+             "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+            RowBox[{"c1", " ", 
+             SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+             RowBox[{"Log", "[", 
+              FractionBox[
+               SuperscriptBox["\[CapitalLambda]", "2"], 
+               SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"n", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "a"}]]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[Delta]\[Lambda]", 
+                 RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+      ")"}]}], "\[Equal]", "0"}], ",", 
    RowBox[{
     RowBox[{"\[Lambda]", "+", 
      FractionBox[
@@ -2716,46 +2763,48 @@ Cell[BoxData[
             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
           SubscriptBox["\[Delta]\[Lambda]", 
            RowBox[{"2", " ", "b"}]]}]}], ")"}]}]], "+", 
-     FractionBox[
-      RowBox[{"2", " ", "Z\[CapitalDelta]", " ", 
-       RowBox[{"(", 
-        RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"2", " ", "Z\[CapitalDelta]", " ", 
+        RowBox[{"(", 
          RowBox[{
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
-         RowBox[{"n", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
-         RowBox[{"2", " ", 
-          SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], 
-      RowBox[{"n", " ", 
-       RowBox[{"(", 
-        RowBox[{
-         RowBox[{"-", "6"}], "+", 
-         RowBox[{"c1", " ", 
-          RowBox[{"(", 
-           RowBox[{"2", "+", "n"}], ")"}], " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
-          "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
-         RowBox[{"c1", " ", 
-          SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
-          RowBox[{"Log", "[", 
-           FractionBox[
-            SuperscriptBox["\[CapitalLambda]", "2"], 
-            SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
-          RowBox[{"(", 
-           RowBox[{
-            RowBox[{"n", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "a"}]]}], "+", 
-            RowBox[{"2", " ", 
-             SubscriptBox["\[Delta]\[Lambda]", 
-              RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}]]}], "\[Equal]",
-     "0"}]}], "}"}]], "Output",
- CellChangeTimes->{3.676542531119*^9}]
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", "\[Lambda]"}], "+", 
+          RowBox[{"n", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "a"]}], "+", 
+          RowBox[{"2", " ", 
+           SubscriptBox["\[Delta]\[Lambda]", "b"]}]}], ")"}]}], ")"}], "/", 
+      RowBox[{"(", 
+       RowBox[{"n", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "6"}], "+", 
+          RowBox[{"c1", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "n"}], ")"}], " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[Lambda]", " ", 
+           "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}]}], "+", 
+          RowBox[{"c1", " ", 
+           SuperscriptBox["Z\[CapitalDelta]", "2"], " ", "\[HBar]", " ", 
+           RowBox[{"Log", "[", 
+            FractionBox[
+             SuperscriptBox["\[CapitalLambda]", "2"], 
+             SuperscriptBox["\[Mu]", "2"]], "]"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"n", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "a"}]]}], "+", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[Delta]\[Lambda]", 
+               RowBox[{"2", " ", "b"}]]}]}], ")"}]}]}], ")"}]}], ")"}]}]}], 
+    "\[Equal]", "0"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.6853236004172015`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2807,7 +2856,7 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6765425338900003`*^9}],
+ CellChangeTimes->{3.685323603462201*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -2921,7 +2970,7 @@ Cell[BoxData[
     ",", 
     FractionBox["1", "Z\[CapitalDelta]"], ",", "Z\[CapitalDelta]"}], "}"}], 
   "}"}]], "Output",
- CellChangeTimes->{3.6765425350360003`*^9}]
+ CellChangeTimes->{3.6853236044932013`*^9}]
 }, Open  ]],
 
 Cell["Z\[CapitalDelta] is redundant in this truncation, can remove it :", \
@@ -3040,7 +3089,7 @@ Cell[BoxData[
             SuperscriptBox["\[CapitalLambda]", "2"], 
             SuperscriptBox["\[Mu]", "2"]], "]"}]}]}]]}], ")"}]}], ",", "1", 
     ",", "1"}], "}"}], "}"}]], "Output",
- CellChangeTimes->{3.676542535283*^9}]
+ CellChangeTimes->{3.6853236047612014`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -3089,7 +3138,7 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542538623*^9}],
+ CellChangeTimes->{3.685323608443201*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -3134,10 +3183,10 @@ tfing\\\\ \\(\\(\[LeftSkeleton] 1 \[RightSkeleton]\\)\\)\\\\ \[HBar]\\\\ \
 \[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
 ButtonData:>\\\"paclet:ref/message/FullSimplify/infd\\\", ButtonNote -> \
 \\\"FullSimplify::infd\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542538689*^9}],
+ CellChangeTimes->{3.6853236085292015`*^9}],
 
 Cell[BoxData["True"], "Output",
- CellChangeTimes->{3.6765425388640003`*^9}]
+ CellChangeTimes->{3.685323608719201*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3154,7 +3203,7 @@ Cell[BoxData[
         RowBox[{
          RowBox[{
           RowBox[{
-           RowBox[{"neom", "/.", "divergentpartrules"}], "/.", 
+           RowBox[{"neom", "/.", "regularisedtadpoles"}], "/.", 
            RowBox[{"mg2", "\[Rule]", "mg2soln"}]}], "/.", 
           RowBox[{"Solve", "[", 
            RowBox[{"cteqs", ",", 
@@ -3181,7 +3230,8 @@ Cell[BoxData[
    3.674259714213354*^9}, {3.674259751316477*^9, 3.6742598237676206`*^9}, {
    3.674262012783825*^9, 3.6742620134338627`*^9}, 3.6742620572893705`*^9, 
    3.674263233030619*^9, {3.6742632795062776`*^9, 3.6742633117461214`*^9}, 
-   3.6761430818824015`*^9, {3.6761446541144013`*^9, 3.6761446569624014`*^9}}],
+   3.6761430818824015`*^9, {3.6761446541144013`*^9, 3.6761446569624014`*^9}, 
+   3.6853235116952014`*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -3192,11 +3242,11 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.6765425412200003`*^9}],
+ CellChangeTimes->{3.6853236112662015`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", "True", "}"}]], "Output",
- CellChangeTimes->{3.676542542084*^9}]
+ CellChangeTimes->{3.6853236118692017`*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -3267,11 +3317,11 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542544349*^9}],
+ CellChangeTimes->{3.6853236143172016`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", "True", "}"}]], "Output",
- CellChangeTimes->{3.6765425443599997`*^9}]
+ CellChangeTimes->{3.685323614342201*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3323,11 +3373,11 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542546582*^9}],
+ CellChangeTimes->{3.6853236169062014`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", "True", "}"}]], "Output",
- CellChangeTimes->{3.6765425465950003`*^9}]
+ CellChangeTimes->{3.6853236169242015`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3375,7 +3425,7 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542548822*^9}],
+ CellChangeTimes->{3.6853236193802013`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -3392,7 +3442,7 @@ Cell[BoxData[
        FractionBox[
         SuperscriptBox["\[CapitalLambda]", "2"], 
         SuperscriptBox["\[Mu]", "2"]], "]"}]}]}]]}], "}"}]], "Output",
- CellChangeTimes->{3.676542548885*^9}]
+ CellChangeTimes->{3.685323619448201*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3431,7 +3481,7 @@ Cell[BoxData[
 variables. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
 \\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Solve/svars\\\", \
 ButtonNote -> \\\"Solve::svars\\\"]\\)\"\>"}]], "Message", "MSG",
- CellChangeTimes->{3.676542551118*^9}],
+ CellChangeTimes->{3.6853236219202013`*^9}],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -3447,7 +3497,7 @@ Cell[BoxData[
           SuperscriptBox["\[CapitalLambda]", "2"], 
           SuperscriptBox["\[Mu]", "2"]], "]"}]}]}]]}], ")"}]}], 
   "}"}]], "Output",
- CellChangeTimes->{3.676542551127*^9}]
+ CellChangeTimes->{3.685323621941201*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -3475,14 +3525,19 @@ Cell[BoxData[
   3.6765413700959997`*^9, 3.676541370264*^9}}],
 
 Cell[BoxData["8"], "Output",
- CellChangeTimes->{3.676542566734*^9}]
+ CellChangeTimes->{3.6853236401362014`*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1105, 360},
-WindowMargins->{{228, Automatic}, {12, Automatic}},
+WindowSize->{1105, 567},
+WindowMargins->{{Automatic, 234}, {Automatic, 34}},
+PrintingCopies->1,
+PrintingPageRange->{32000, 32000},
+PrintingOptions->{"Magnification"->1.,
+"PaperOrientation"->"Portrait",
+"PaperSize"->{612, 792}},
 FrontEndVersion->"10.2 for Microsoft Windows (64-bit) (July 29, 2015)",
 StyleDefinitions->"Default.nb"
 ]
@@ -3500,127 +3555,127 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 334, 6, 144, "Title"],
 Cell[917, 30, 520, 10, 87, "Text"],
-Cell[1440, 42, 570, 11, 31, "Input"],
+Cell[1440, 42, 595, 11, 31, "Input"],
 Cell[CellGroupData[{
-Cell[2035, 57, 132, 1, 43, "Subsection"],
-Cell[2170, 60, 2991, 80, 269, "Text"]
+Cell[2060, 57, 132, 1, 43, "Subsection"],
+Cell[2195, 60, 2991, 80, 269, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5198, 145, 106, 1, 63, "Section"],
-Cell[5307, 148, 106, 1, 30, "Text"],
+Cell[5223, 145, 106, 1, 63, "Section"],
+Cell[5332, 148, 106, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[5438, 153, 2501, 65, 84, "Input"],
-Cell[7942, 220, 96, 2, 31, "Output"]
+Cell[5463, 153, 2501, 65, 84, "Input"],
+Cell[7967, 220, 96, 2, 31, "Output"]
 }, Open  ]],
-Cell[8053, 225, 114, 1, 30, "Text"],
+Cell[8078, 225, 114, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[8192, 230, 2559, 72, 82, "Input"],
-Cell[10754, 304, 1542, 45, 46, "Output"],
-Cell[12299, 351, 468, 12, 46, "Output"]
+Cell[8217, 230, 2559, 72, 82, "Input"],
+Cell[10779, 304, 1547, 45, 46, "Output"],
+Cell[12329, 351, 473, 12, 46, "Output"]
 }, Open  ]],
-Cell[12782, 366, 106, 1, 30, "Text"],
+Cell[12817, 366, 106, 1, 30, "Text"],
 Cell[CellGroupData[{
-Cell[12913, 371, 2617, 73, 118, "Input"],
-Cell[15533, 446, 1569, 45, 67, "Output"],
-Cell[17105, 493, 497, 13, 46, "Output"]
+Cell[12948, 371, 2617, 73, 118, "Input"],
+Cell[15568, 446, 1569, 45, 67, "Output"],
+Cell[17140, 493, 497, 13, 46, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17651, 512, 139, 2, 63, "Section"],
-Cell[17793, 516, 240, 5, 30, "Text"],
+Cell[17686, 512, 139, 2, 63, "Section"],
+Cell[17828, 516, 240, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[18058, 525, 1106, 26, 33, "Input"],
-Cell[19167, 553, 747, 21, 70, "Output"]
-}, Open  ]]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[19963, 580, 146, 1, 49, "Section"],
-Cell[CellGroupData[{
-Cell[20134, 585, 288, 7, 31, "Input"],
-Cell[20425, 594, 3075, 82, 95, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23537, 681, 757, 17, 31, "Input"],
-Cell[24297, 700, 16199, 439, 547, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[40533, 1144, 438, 9, 31, "Input"],
-Cell[40974, 1155, 16293, 371, 434, "Output"]
+Cell[18093, 525, 1131, 26, 33, "Input"],
+Cell[19227, 553, 747, 21, 52, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57316, 1532, 173, 4, 63, "Section"],
-Cell[57492, 1538, 258, 5, 30, "Text"],
+Cell[20023, 580, 146, 1, 63, "Section"],
 Cell[CellGroupData[{
-Cell[57775, 1547, 1054, 24, 52, "Input"],
-Cell[58832, 1573, 10545, 284, 337, "Output"]
+Cell[20194, 585, 315, 8, 31, "Input"],
+Cell[20512, 595, 3075, 82, 95, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[69414, 1862, 1105, 25, 52, "Input"],
-Cell[70522, 1889, 14465, 373, 450, "Output"]
+Cell[23624, 682, 782, 17, 31, "Input"],
+Cell[24409, 701, 16204, 439, 547, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40650, 1145, 438, 9, 31, "Input"],
+Cell[41091, 1156, 16296, 371, 434, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[85036, 2268, 109, 1, 63, "Section"],
+Cell[57436, 1533, 173, 4, 63, "Section"],
+Cell[57612, 1539, 258, 5, 30, "Text"],
 Cell[CellGroupData[{
-Cell[85170, 2273, 133, 1, 43, "Subsection"],
-Cell[CellGroupData[{
-Cell[85328, 2278, 342, 9, 31, "Input"],
-Cell[85673, 2289, 17756, 468, 566, "Output"]
+Cell[57895, 1548, 1054, 24, 52, "Input"],
+Cell[58952, 1574, 11234, 297, 337, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[103466, 2762, 1554, 36, 33, "Input"],
-Cell[105023, 2800, 444, 9, 21, "Message"],
-Cell[105470, 2811, 4011, 112, 218, "Output"]
-}, Open  ]],
-Cell[109496, 2926, 151, 2, 30, "Text"],
-Cell[CellGroupData[{
-Cell[109672, 2932, 201, 5, 31, "Input"],
-Cell[109876, 2939, 3606, 103, 147, "Output"]
+Cell[70223, 1876, 1105, 25, 52, "Input"],
+Cell[71331, 1903, 15014, 384, 450, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[113531, 3048, 143, 1, 43, "Subsection"],
+Cell[86394, 2293, 109, 1, 63, "Section"],
 Cell[CellGroupData[{
-Cell[113699, 3053, 1101, 27, 52, "Input"],
-Cell[114803, 3082, 439, 9, 21, "Message"],
-Cell[115245, 3093, 2813, 43, 123, "Message"],
-Cell[118061, 3138, 75, 1, 31, "Output"]
+Cell[86528, 2298, 133, 1, 43, "Subsection"],
+Cell[CellGroupData[{
+Cell[86686, 2303, 342, 9, 31, "Input"],
+Cell[87031, 2314, 18765, 492, 566, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[118173, 3144, 1671, 39, 72, "Input"],
-Cell[119847, 3185, 444, 9, 21, "Message"],
-Cell[120294, 3196, 92, 2, 31, "Output"]
+Cell[105833, 2811, 1554, 36, 33, "Input"],
+Cell[107390, 2849, 442, 9, 21, "Message"],
+Cell[107835, 2860, 4011, 112, 218, "Output"]
+}, Open  ]],
+Cell[111861, 2975, 151, 2, 30, "Text"],
+Cell[CellGroupData[{
+Cell[112037, 2981, 201, 5, 31, "Input"],
+Cell[112241, 2988, 3611, 103, 147, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[120435, 3204, 129, 1, 43, "Subsection"],
+Cell[115901, 3097, 143, 1, 43, "Subsection"],
 Cell[CellGroupData[{
-Cell[120589, 3209, 1792, 49, 76, "Input"],
-Cell[122384, 3260, 439, 9, 21, "Message"],
-Cell[122826, 3271, 97, 2, 31, "Output"]
+Cell[116069, 3102, 1101, 27, 52, "Input"],
+Cell[117173, 3131, 442, 9, 21, "Message"],
+Cell[117618, 3142, 2818, 43, 123, "Message"],
+Cell[120439, 3187, 73, 1, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[122960, 3278, 1379, 36, 52, "Input"],
-Cell[124342, 3316, 439, 9, 21, "Message"],
-Cell[124784, 3327, 97, 2, 31, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[124918, 3334, 1275, 32, 31, "Input"],
-Cell[126196, 3368, 439, 9, 21, "Message"],
-Cell[126638, 3379, 502, 15, 61, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[127177, 3399, 849, 23, 31, "Input"],
-Cell[128029, 3424, 439, 9, 21, "Message"],
-Cell[128471, 3435, 454, 14, 74, "Output"]
+Cell[120549, 3193, 1700, 40, 72, "Input"],
+Cell[122252, 3235, 444, 9, 21, "Message"],
+Cell[122699, 3246, 97, 2, 31, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[128974, 3455, 142, 1, 43, "Subsection"],
+Cell[122845, 3254, 129, 1, 43, "Subsection"],
 Cell[CellGroupData[{
-Cell[129141, 3460, 564, 14, 52, "Input"],
-Cell[129708, 3476, 67, 1, 64, "Output"]
+Cell[122999, 3259, 1792, 49, 76, "Input"],
+Cell[124794, 3310, 444, 9, 21, "Message"],
+Cell[125241, 3321, 95, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[125373, 3328, 1379, 36, 52, "Input"],
+Cell[126755, 3366, 444, 9, 21, "Message"],
+Cell[127202, 3377, 97, 2, 31, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[127336, 3384, 1275, 32, 31, "Input"],
+Cell[128614, 3418, 444, 9, 21, "Message"],
+Cell[129061, 3429, 505, 15, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[129603, 3449, 849, 23, 31, "Input"],
+Cell[130455, 3474, 444, 9, 21, "Message"],
+Cell[130902, 3485, 457, 14, 74, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[131408, 3505, 142, 1, 43, "Subsection"],
+Cell[CellGroupData[{
+Cell[131575, 3510, 564, 14, 52, "Input"],
+Cell[132142, 3526, 72, 1, 64, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
