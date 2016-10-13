@@ -4998,32 +4998,17 @@ reference "chap:Appendix-Renormalisation-Details"
 \end_inset
 
 )
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO: GOTO GENERAL REG SCHEME
-\end_layout
-
-\end_inset
-
-
 \begin_inset Formula 
 \begin{align}
 Z=Z_{\Delta} & =1,\\
-\delta m_{1}^{2} & =\frac{\left(N+2\right)\hbar\lambda m^{2}}{96\pi^{2}\epsilon}\frac{\left(\epsilon\kappa+1\right)}{1-\frac{\hbar\lambda\left(N+2\right)\left(\epsilon\kappa+1\right)}{96\pi^{2}\epsilon}},\\
-\delta\lambda_{1}^{A} & =\frac{\left(N+4\right)\lambda}{\left(N+2\right)m^{2}}\delta m_{1}^{2},\\
-\delta\lambda_{2}^{A} & =\delta\lambda_{2}^{B}=\frac{N+2}{N+4}\delta\lambda_{1}^{A},
+\delta m_{1}^{2} & =-\frac{\left(N+2\right)\hbar\lambda\left(c_{0}\Lambda^{2}+c_{1}m^{2}\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)\right)}{6+c_{1}\left(N+2\right)\hbar\lambda\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)},\\
+\delta\lambda_{1}^{A} & =-\frac{c_{1}\left(N+4\right)\hbar\lambda^{2}\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)}{6+c_{1}\left(N+2\right)\hbar\lambda\ln\left(\frac{\Lambda^{2}}{\mu^{2}}\right)},\\
+\delta\lambda_{2}^{A} & =\delta\lambda_{2}^{B}=\frac{N+2}{N+4}\delta\lambda_{1}^{A}.
 \end{align}
 
 \end_inset
 
-where 
-\begin_inset Formula $\kappa\equiv1-\gamma+\ln4\pi\approx2.95$
-\end_inset
-
-.
- Note that the undetermined constant 
+Note that the undetermined constant 
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
