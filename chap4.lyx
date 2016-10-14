@@ -666,7 +666,7 @@ The divergence is regulated by setting
 \begin_inset Formula $vm_{G}^{2}=\eta m^{3}$
 \end_inset
 
- and take the limit 
+ and taking the limit 
 \begin_inset Formula $\eta\to0$
 \end_inset
 
@@ -1625,8 +1625,8 @@ Though note that renormalisation group theory shows the true large-momentum
 \begin_inset Formula $n$
 \end_inset
 
-PIEA does not effect a resummation of large logarithms.
- This implies that a 2PI (or indeed 
+PIEA does not effect a resummation of large logarithms, and that a 2PI (or
+ indeed 
 \begin_inset Formula $n$
 \end_inset
 
@@ -3046,7 +3046,7 @@ constraint force
 
 \begin_layout Standard
 d'Alembert's principle is empirically verifiable for a given mechanical
- system, but for here it forms part of the 
+ system, but here it forms part of the 
 \emph on
 definition
 \emph default
@@ -4288,11 +4288,14 @@ It is temporarily more convenient to go back to the
 \begin_inset Formula $V_{N}^{\mu}$
 \end_inset
 
- by the obvious 
-\begin_inset Formula $O\left(N\right)$
+ by the analogue of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-ansatz-Vertex"
+
 \end_inset
 
- reduction.
+.
  Iterating the auxiliary vertex equation of motion gives the solution 
 \begin_inset Formula 
 \begin{equation}
@@ -4567,7 +4570,7 @@ In fewer than four dimensions
 
 , dramatically simplifying the renormalisation theory.
  A similar simplification happens to the auxiliary propagator due to the
- logarithmic (rather than quadratic) divergence of 
+ logarithmic (rather than quadratic) divergence of the 
 \begin_inset Formula $\Phi_{5}$
 \end_inset
 
@@ -5945,9 +5948,9 @@ Finally one must compute
 , which can be written
 \begin_inset Formula 
 \begin{align}
-\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\mathrm{Im}i\int_{q}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\frac{i\rho_{N}\left(s_{1}\right)}{q^{2}-s_{1}+i\epsilon}\frac{i\rho_{G}\left(s_{2}\right)}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
- & =\mathrm{Im}i\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\int_{q}\frac{i}{q^{2}-s_{1}+i\epsilon}\frac{i}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
- & =\frac{1}{16\pi^{2}}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
+\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\mathrm{Im}i\int_{q}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\frac{i\rho_{H}\left(s_{1}\right)}{q^{2}-s_{1}+i\epsilon}\frac{i\rho_{G}\left(s_{2}\right)}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
+ & =\mathrm{Im}i\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{H}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\int_{q}\frac{i}{q^{2}-s_{1}+i\epsilon}\frac{i}{\left(p-q\right)^{2}-s_{2}+i\epsilon}\nonumber \\
+ & =\frac{1}{16\pi^{2}}\int_{0}^{\infty}\mathrm{d}s_{1}\int_{0}^{\infty}\mathrm{d}s_{2}\rho_{H}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
  & \times\mathrm{Im}\int_{0}^{1}\mathrm{d}x\ln\left(\frac{\mu^{2}}{-x\left(1-x\right)p^{2}+xs_{1}+\left(1-x\right)s_{2}-i\epsilon}\right).
 \end{align}
 
@@ -5981,7 +5984,7 @@ The imaginary part of the
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\frac{1}{16\pi p^{2}}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
+\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right] & =\frac{1}{16\pi p^{2}}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{H}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\nonumber \\
  & \times\sqrt{p^{2}-\left(\sqrt{s_{1}}+\sqrt{s_{2}}\right)^{2}}\sqrt{p^{2}-\left(\sqrt{s_{1}}-\sqrt{s_{2}}\right)^{2}}.
 \end{align}
 
@@ -5999,13 +6002,13 @@ Now, since the each term of the integrand is positive and the square root
 , 
 \begin_inset Formula 
 \begin{equation}
-\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right]\leq\frac{1}{16\pi}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{N}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\leq\frac{1}{16\pi},
+\mathrm{Im}\left[i\mathcal{I}_{HG}\left(p\right)\right]\leq\frac{1}{16\pi}\int_{\Omega}\mathrm{d}s_{1}\mathrm{d}s_{2}\rho_{H}\left(s_{1}\right)\rho_{G}\left(s_{2}\right)\leq\frac{1}{16\pi},
 \end{equation}
 
 \end_inset
 
 using the sum rule for 
-\begin_inset Formula $\rho_{N/G}\left(s\right)$
+\begin_inset Formula $\rho_{H/G}\left(s\right)$
 \end_inset
 
 .
@@ -6022,7 +6025,7 @@ which is smaller than the expected value for all
 \end_inset
 
 .
- 
+ For the 
 \begin_inset Formula $N=2$
 \end_inset
 
@@ -6030,10 +6033,9 @@ which is smaller than the expected value for all
 \begin_inset Formula $3$
 \end_inset
 
- are cases where one could possibly obtain an (accidentally) reasonable
- result, depending on the precise form of the spectral functions, but it
- is clear that one should not generically expect a correct prediction of
- 
+ cases one could possibly obtain an (accidentally) reasonable result, depending
+ on the precise form of the spectral functions, but it is clear that one
+ should not generically expect a correct prediction of 
 \begin_inset Formula $\Gamma_{H}$
 \end_inset
 
