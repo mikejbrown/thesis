@@ -360,7 +360,7 @@ PI equations of motion through the use of Lagrange multipliers.
 
 \begin_layout Abstract
 Following this a novel method of soft symmetry improvement (SSI) is introduced.
- SSI differs from SI in that the Ward identities are imposed sotfly in the
+ SSI differs from SI in that the Ward identities are imposed softly in the
  sense of least squared error.
  A new 
 \emph on
