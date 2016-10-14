@@ -91,7 +91,7 @@ name "chap:Auxiliary-vertex-and-renorm"
 \end_layout
 
 \begin_layout Standard
-As described in 
+As described in Section 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:SI-3PIEA-Three-loop-truncation"
@@ -105,15 +105,27 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 
  with the same asymptotic behaviour as the full self-consistent solution
  at large momentum.
- This auxiliary vertex can be found in terms of a six point kernel which
- obeys the integral equation 
+ This auxiliary vertex can be found in terms of a six point kernel 
+\begin_inset Formula $\mathcal{K}_{abcdef}$
+\end_inset
+
+ which obeys the integral equation 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:K-6pt-kernel-eom"
 
 \end_inset
 
- which can be written graphically as
+, reproduced here
+\begin_inset Formula 
+\begin{align}
+\mathcal{K}_{abcdef} & =\delta_{ad}\delta_{be}\delta_{cf}+\frac{1}{3!}\sum_{\pi}\left(-\frac{3i\hbar}{2}\right)\delta_{\pi\left(a\right)h}\nonumber \\
+ & \times W_{\pi\left(b\right)\pi\left(c\right)kg}\Delta_{ki}^{\mu}\Delta_{gj}^{\mu}\mathcal{K}_{hijdef}.
+\end{align}
+
+\end_inset
+
+This can be written graphically as
 \begin_inset ERT
 status collapsed
 

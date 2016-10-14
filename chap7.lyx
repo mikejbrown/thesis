@@ -94,91 +94,6 @@ Summary of the thesis
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO (dicussion of):
-\end_layout
-
-\begin_layout Itemize
-Chapter 1
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-EWBG
-\end_layout
-
-\begin_layout Itemize
-Non-perturbative, non-equilibrium QFT
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Chapter 2
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Analytical properties of 
-\begin_inset Formula $n$
-\end_inset
-
-PIEA
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Chapter 3
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-WIs
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Chapter 4
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-SI in equilibrium
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Chapter 5
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-SSI in equilibrium
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Chapter 6
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-LRT
-\end_layout
-
-\begin_layout Itemize
-General non-equilibrium theory
-\end_layout
-
-\end_deeper
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 This thesis has examined the theory of global symmetries in the 
 \begin_inset Formula $n$
 \end_inset
@@ -484,22 +399,12 @@ d'Alembert
  in the unimproved 2PI case, so the symmetry improvement does help matters
  even so.
  Further checks of the formalism were performed: it was shown that the SI-3PIEA
- obeys the Coleman-Mermin-Wagner theorem and that absorptive part of the
- propagator is consistent with unitarity to 
+ obeys the Coleman-Mermin-Wagner theorem and that the absorptive part of
+ the propagator is consistent with unitarity to 
 \begin_inset Formula $\mathcal{O}\left(\hbar\right)$
 \end_inset
 
 , but only if the full three loop truncation is kept.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Anything else?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -581,11 +486,10 @@ increases
  the solution ceases to exist even at zero temperature.
  This loss of solution was confirmed both analytically and numerically.
  The 2PI, SI-2PI and novel SSI-2PI limits are all disconnected from each
- other: in infinite volume there is no continuous parameter connecting any
- two of the limits.
+ other: in an infinite volume there is no continuous parameter connecting
+ any two of the limits.
  Thus the original goal of this program is not achievable in infinite volume.
- The author has plans of submitting a paper based on this work for publication
- in a peer reviewed journal after the acceptance of this thesis.
+ A paper based on this work will be submitted for publication.
 \end_layout
 
 \begin_layout Standard
@@ -619,7 +523,7 @@ key "Brown_2016"
  Thus, the SI-2PIEA predicts qualitatively incorrect physics out of equilibrium.
  This result could be understood as a result of two contributions: the decouplin
 g of the propagator fluctuation from the field fluctuation in the 2PIEA
- formalism and the failure of the higher order Ward identities (ie.e., those
+ formalism and the failure of the higher order Ward identities (i.e., those
  involving vertex functions) which is unavoidable even in the SI-2PIEA.
  This latter source of error is present because an SI-
 \begin_inset Formula $n$
@@ -665,7 +569,7 @@ PIEA require numerical solutions which are significantly beyond the scope
  Effectively, the thermal and quantum corrections contribute only to a shift
  of the mass of the particles involved.
  These masses can be found self-consistently.
- In other truncations the propagators are momentum independent.
+ In other truncations the propagators are momentum dependent.
  Thus the effort is effectively multiplied by the number of lattice points
  in the spacetime discretisation used.
  The effort grows even more rapidly as the 
@@ -684,22 +588,19 @@ PIEA is increased beyond
  The effort can be reduced somewhat using lattice symmetries and algorithms
  based on the fast Fourier transform (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2012,Marko2013,Carrington2013"
 
 \end_inset
 
-), but the author considered the marginal increase in effort to be less
- than the potential insight to be gained in each case examined in this thesis.
- Full numerical investigation of solutions of SI- and SSI-
+), however the increase in complexity over the Hartree-Fock case remains
+ substantial.
+ As such, while full numerical investigation of solutions of SI- and SSI-
 \begin_inset Formula $n$
 \end_inset
 
-PIEAs is certainly an intriguing prospect, but has been deferred for future
+PIEAs is certainly an intriguing prospect, it has been deferred for future
  work.
  Here follows a consideration of the limitations of each chapter.
 \end_layout
@@ -879,17 +780,14 @@ not
 \emph default
  in general vanish.
  Thus it is important to keep all mixed quantities during the intermediate
- steps of the computation.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs!!!
-\end_layout
+ steps of the computation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Reinosa2007,Reinosa2010"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -928,17 +826,7 @@ reference "chap:chap4"
  With these solutions a proper check could be made of the (a) existence
  of solutions, (b) sensitivity of the solutions to the infrared boundary
  conditions, (c) order and thermodynamics of the phase transition and (d)
- the predictions for the absorptive part of the Higgs propagator
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-anything else?
-\end_layout
-
-\end_inset
-
-.
+ the predictions for the absorptive part of the Higgs propagator.
  Unfortunately, finding these solutions requires a numerical effort similar
  in scope to a large portion of this thesis.
  The main difficulty is that the renormalisation is not possible to carry
@@ -955,18 +843,6 @@ PIEA with
 \end_inset
 
  in general and this thesis has made no headway on this problem.
- Solution methods do exist in the literature (see, e.g.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
-
-\end_inset
-
-), but these would have to be modified for the new equations of motion.
  Also, depending on the scheme, the regularisation method and renormalisation
  scheme may have to be redone.
  A conceptually straightforward, though probably laborious, extension would
@@ -1084,8 +960,8 @@ reference "chap:chap5"
 
 \end_inset
 
- was carried out in finite volume in Euclidean space.
- However, the linear response equations are formulated in infinite volume
+ was carried out in a finite volume in Euclidean space.
+ However, the linear response equations are formulated in an infinite volume
  and real time.
  Thus, an analytical continuation from imaginary to real time must be performed.
  In principle this is straightforward, although in practice it is complicated
@@ -1137,7 +1013,7 @@ The
 \end_inset
 
 -particle irreducible effective actions derive their strength by re-organising
- perturbation theory, but this very same act intimately couple the scales
+ perturbation theory, but this very same act intimately couples the scales
  in a problem, so the problem of enforcing symmetries at large differences
  can no longer be separated from the problem of making the theory finite
  at short distances.
