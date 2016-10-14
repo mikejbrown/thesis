@@ -374,12 +374,12 @@ stiffness
  the limit of infinite volume taken carefully.
  Three limiting regimes are found.
  Two are equivalent to the unimproved 2PIEA and SI-2PIEA respectively.
- The third is a novel limit which had pathological behaviour including a
+ The third is a novel limit which has pathological behaviour including a
  strongly first order phase transition and a regime where solutions cease
  to exist for a range of temperatures below the critical temperature.
  As the stiffness increases this range increases and at a finite value of
  the stiffness the solution ceases to exist even at zero temperature.
- This loss of solution was confirmed both analytically and numerically.
+ This loss of solution is confirmed both analytically and numerically.
 \end_layout
 
 \begin_layout Abstract
