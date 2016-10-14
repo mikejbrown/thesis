@@ -2242,7 +2242,7 @@ which defines
 \begin_inset Formula $V_{\mathrm{int}}\left(\phi\right)=\frac{1}{3!}g\phi^{3}+\frac{1}{4!}\lambda\phi^{4}$
 \end_inset
 
- and 
+, 
 \begin_inset Formula $V\left(\phi_{\mathrm{cl.}},\tilde{\phi}\right)$
 \end_inset
 
@@ -2322,7 +2322,7 @@ status open
 
 \begin_layout Plain Layout
 Recall the identity 
-\begin_inset Formula $\ln\det M=M$
+\begin_inset Formula $\ln\det M=\mathrm{Tr}\ln M$
 \end_inset
 
 .
@@ -5087,7 +5087,7 @@ field theory
 
  in zero spacetime dimensions (i.e.
  probability theory) allows for exact results to be obtained and removes
- all complications due to renormalisation etc.
+ all complications due to renormalisation, etc.
  This model nevertheless accurately represents the typical combinatoric
  structure of large order perturbation theory, at least in those cases where
  the behaviour is known in more interesting field theories.
@@ -7416,13 +7416,12 @@ status open
 \begin_inset Formula $\sigma\left(\lambda\right)$
 \end_inset
 
- consist of an increasingly dense set of delta functions.
- (Note the delta functions have been smoothed for visual purposes only.)
- 
+ (for 
 \begin_inset Formula $m=1$
 \end_inset
 
-.
+) consist of an increasingly dense set of delta functions.
+ (Note the delta functions have been smoothed for visual purposes only.)
 \end_layout
 
 \end_inset
@@ -7640,17 +7639,16 @@ status open
 \begin_inset Formula $\bar{G}\left(\lambda\right)$
 \end_inset
 
- (ratio of approximant / exact).
+ (ratio of approximant / exact) for 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
  Approximants are calculated by numerical integration of 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:borel-sum"
 
-\end_inset
-
-.
- 
-\begin_inset Formula $m=1$
 \end_inset
 
 .
@@ -7706,13 +7704,12 @@ status open
 \begin_inset Formula $\sigma\left(\lambda\right)$
 \end_inset
 
- (ratio of approximant / exact).
- Note that the (2,2) approximant is off scale.
- 
+ (ratio of approximant / exact) for 
 \begin_inset Formula $m=1$
 \end_inset
 
 .
+ Note that the (2,2) approximant is off scale.
 \end_layout
 
 \end_inset
@@ -8247,8 +8244,7 @@ Comparison of (the real part of) the exact Green function
 \end_inset
 
  to each of the approximations discussed to first non-trivial order in each
- case.
- 
+ case, for 
 \begin_inset Formula $m=1$
 \end_inset
 
@@ -8311,7 +8307,7 @@ reference "eq:2pi-G-eom"
 \begin_inset Formula $\lambda$
 \end_inset
 
- is tricky in general and left to the reader.
+ is tricky in general and not pursued further here.
  However, one can see on general grounds that truncations of 
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -8636,7 +8632,11 @@ status open
 
 \end_inset
 
- hybrid solutions at small coupling.
+ hybrid solutions for 
+\begin_inset Formula $m=1$
+\end_inset
+
+ at small coupling.
  The 
 \begin_inset Formula $\left(2,2\right)$
 \end_inset
@@ -8705,7 +8705,11 @@ status open
 
 \end_inset
 
- hybrid solutions at large coupling.
+ hybrid solutions at large coupling for 
+\begin_inset Formula $m=1$
+\end_inset
+
+.
 \end_layout
 
 \end_inset
@@ -9201,7 +9205,7 @@ PIEA in terms of the Legendre transform is crucial for the self-consistency
 
 PIEA which does not derive from a consistent modified variational principle
  is very likely to be inconsistent.
- So for instance, the consistency of recent attempts to improve the symmetry
+ So, for instance, the consistency of recent attempts to improve the symmetry
  properties of 2PIEAs 
 \begin_inset CommandInset citation
 LatexCommand citep
