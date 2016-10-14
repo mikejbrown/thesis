@@ -405,16 +405,6 @@ d'Alembert
 \end_inset
 
 , but only if the full three loop truncation is kept.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Anything else?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -598,12 +588,9 @@ PIEA is increased beyond
  The effort can be reduced somewhat using lattice symmetries and algorithms
  based on the fast Fourier transform (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2012,Marko2013,Carrington2013"
 
 \end_inset
 
@@ -793,17 +780,14 @@ not
 \emph default
  in general vanish.
  Thus it is important to keep all mixed quantities during the intermediate
- steps of the computation.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs!!!
-\end_layout
+ steps of the computation 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Reinosa2007,Reinosa2010"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -842,17 +826,7 @@ reference "chap:chap4"
  With these solutions a proper check could be made of the (a) existence
  of solutions, (b) sensitivity of the solutions to the infrared boundary
  conditions, (c) order and thermodynamics of the phase transition and (d)
- the predictions for the absorptive part of the Higgs propagator
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-anything else?
-\end_layout
-
-\end_inset
-
-.
+ the predictions for the absorptive part of the Higgs propagator.
  Unfortunately, finding these solutions requires a numerical effort similar
  in scope to a large portion of this thesis.
  The main difficulty is that the renormalisation is not possible to carry
@@ -869,18 +843,6 @@ PIEA with
 \end_inset
 
  in general and this thesis has made no headway on this problem.
- Solution methods do exist in the literature (see, e.g.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
-
-\end_inset
-
-), but these would have to be modified for the new equations of motion.
  Also, depending on the scheme, the regularisation method and renormalisation
  scheme may have to be redone.
  A conceptually straightforward, though probably laborious, extension would
