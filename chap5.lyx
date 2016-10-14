@@ -225,7 +225,7 @@ This chapter formulates the SSI-2PIEA, then renormalises and solves the
  The properties of this new limit are examined in equilibrium at finite
  and zero temperature.
  All of this work is new and forms the basis of a manuscript which is currently
- being prepared for publication in a peer reviewed journal by the author.
+ being prepared for publication by the author.
 \end_layout
 
 \begin_layout Section
@@ -1222,7 +1222,7 @@ the latter two of which are clearly unphysical.
  volume limit are
 \begin_inset Formula 
 \begin{eqnarray}
-\sum_{n,\boldsymbol{k}}\tilde{\Delta}_{G}\left(n,\boldsymbol{k}\right) & = & \beta\mathrm{V}\left(\mathcal{T}_{G}^{\infty}+\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{T}_{G}^{\mathrm{th}}\right),\\
+\sum_{n,\boldsymbol{k}}\Delta_{G}\left(n,\boldsymbol{k}\right) & = & \beta\mathrm{V}\left(\mathcal{T}_{G}^{\infty}+\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{T}_{G}^{\mathrm{th}}\right),\\
 \sum_{n,\boldsymbol{k}}\Delta_{H}\left(n,\boldsymbol{k}\right) & = & \beta\mathrm{V}\left(\mathcal{T}_{H}^{\infty}+\mathcal{T}_{H}^{\mathrm{fin}}+\mathcal{T}_{H}^{\mathrm{th}}\right),
 \end{eqnarray}
 
@@ -1997,9 +1997,9 @@ Looking for a zero temperature solution gives the system
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-0 & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{2}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z}+\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3},\\
-\bar{y} & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{6}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z},\\
-\bar{z} & =\frac{\lambda\bar{x}}{3}-\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3}.
+0 & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N-1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{2}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z}+\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3},\label{eq:ssi-hf-veom-nondim-zerot}\\
+\bar{y} & =\frac{\lambda}{6}\left(\bar{x}-\bar{X}\right)+\frac{1}{6}\left(N+1\right)\lambda\left(\frac{1}{16\pi^{2}}\bar{y}\ln\bar{y}+\left(\frac{4\bar{x}}{\hat{\zeta}\bar{y}}\right)^{1/3}\right)+\frac{1}{6}\lambda\frac{1}{16\pi^{2}}\bar{z}\ln\bar{z},\label{eq:ssi-hf-geom-nondim-zerot}\\
+\bar{z} & =\frac{\lambda\bar{x}}{3}-\left(N-1\right)\left(\frac{\bar{y}^{2}}{2\hat{\zeta}\bar{x}^{2}}\right)^{1/3}.\label{eq:ssi-hf-heom-nondim-zerot}
 \end{align}
 
 \end_inset
@@ -2337,8 +2337,21 @@ Now consider the case where symmetry improvement is only weakly imposed,
 \end_inset
 
  sufficiently large.
- It is thus natural to solve the equations of motion perturbatively in powers
- of 
+ It is thus natural to solve the equations of motion 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-veom-nondim-zerot"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:ssi-hf-heom-nondim-zerot"
+
+\end_inset
+
+ perturbatively in powers of 
 \begin_inset Formula $\hat{\zeta}^{-1/3}$
 \end_inset
 
@@ -2826,7 +2839,7 @@ reference "eq:zb-eom"
 \begin_inset Formula $\bar{x}$
 \end_inset
 
-and 
+ and 
 \begin_inset Formula $\bar{y}$
 \end_inset
 
@@ -3195,7 +3208,7 @@ In order to find a broken phase solution without the pathological properties
 \end_inset
 
  limit.
- To achieve this taking the scalings
+ To achieve this, take the scalings
 \end_layout
 
 \begin_layout Standard
