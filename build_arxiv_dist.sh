@@ -19,7 +19,7 @@ rm -rf dist/
 mkdir dist
 
 # make sure the version number is up to date
-git describe > version
+git describe --dirty --always > version
 
 echo "Exporting lyx -> pdflatex..."
 "$lyxPath" -E pdflatex dist/thesis_main.tex thesis_main.lyx

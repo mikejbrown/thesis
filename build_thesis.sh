@@ -10,6 +10,6 @@ fi
 fname=thesis-"$(date '+%d%m%Y-%H%M%S')".pdf
 
 # make sure the version number is up to date
-git describe > version
+git describe --dirty --always > version
 
 "$lyxPath" -E pdf2 $fname thesis_main.lyx
