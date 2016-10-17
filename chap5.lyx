@@ -1234,7 +1234,7 @@ where
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-\mathcal{T}_{G/H}^{\infty} & = & \kappa m_{G/H}^{2},\\
+\mathcal{T}_{G/H}^{\infty} & = & c_{0}\Lambda^{2}+c_{1}m_{G/H}^{2}\ln\frac{\Lambda^{2}}{\mu^{2}},\\
 \mathcal{T}_{G/H}^{\mathrm{fin}} & = & \frac{m_{G/H}^{2}}{16\pi^{2}}\ln\frac{m_{G/H}^{2}}{\mu^{2}},
 \end{eqnarray}
 
@@ -1263,15 +1263,19 @@ reference "eq:Bose-Einstein-thermal-tadpole"
 \begin_inset Formula $\mu$
 \end_inset
 
+, 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ and the dimensionless constants 
+\begin_inset Formula $c_{0}$
+\end_inset
+
  and 
-\begin_inset Formula $\kappa$
+\begin_inset Formula $c_{1}$
 \end_inset
 
- are regularisation scheme dependent constants (
-\begin_inset Formula $\kappa$
-\end_inset
-
- is divergent).
+ are regularisation scheme dependent.
  In 
 \begin_inset Formula $\overline{\mathrm{MS}}$
 \end_inset
@@ -1281,7 +1285,15 @@ reference "eq:Bose-Einstein-thermal-tadpole"
 \end_inset
 
  dimensions, 
-\begin_inset Formula $\kappa=-\left(\frac{1}{\eta}-\gamma+1+\ln4\pi\right)/16\pi^{2}$
+\begin_inset Formula $c_{0}=0$
+\end_inset
+
+, 
+\begin_inset Formula $c_{1}=-1/16\pi^{2}$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda^{2}=4\pi\mu^{2}\exp\left(\frac{1}{\eta}-\gamma+1\right)$
 \end_inset
 
 .
@@ -1502,10 +1514,10 @@ reference "chap:Appendix-Renormalisation-Details"
  The resulting renormalisation constants are
 \begin_inset Formula 
 \begin{eqnarray}
-\delta m_{0}^{2} & = & \delta m_{1}^{2}=-\frac{m^{2}\kappa\lambda\hbar}{3}\left(\frac{\delta\lambda_{1}^{A}}{\delta\lambda_{1}^{B}}-1\right),\\
+\delta m_{0}^{2} & = & \delta m_{1}^{2}=-\frac{\hbar\lambda}{3}\left(c_{0}\Lambda^{2}+c_{1}m^{2}\ln\frac{\Lambda^{2}}{\mu^{2}}\right)\left(\frac{\delta\lambda_{1}^{A}}{\delta\lambda_{1}^{B}}-1\right),\\
 \delta\lambda_{0} & = & \delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B},\\
-\delta\lambda_{1}^{A} & = & \delta\lambda_{2}^{A}=\frac{3\left(N+4\right)+\left(N+2\right)\kappa\lambda\hbar}{\left(N+2\right)\kappa\lambda\hbar+6}\delta\lambda_{1}^{B},\\
-\delta\lambda_{1}^{B} & = & \delta\lambda_{2}^{B}=-\frac{\kappa\lambda^{2}\hbar}{\kappa\lambda\hbar+3},\\
+\delta\lambda_{1}^{A} & = & \delta\lambda_{2}^{A}=\left(1+\frac{3\left(N+2\right)}{6+\left(N+2\right)\hbar\lambda c_{1}\ln\frac{\Lambda^{2}}{\mu^{2}}}\right)\delta\lambda_{1}^{B},\\
+\delta\lambda_{1}^{B} & = & \delta\lambda_{2}^{B}=\lambda\left(-1+\frac{3}{3+\hbar\lambda c_{1}\ln\frac{\Lambda^{2}}{\mu^{2}}}\right),\\
 Z & = & Z_{\Delta}=Z_{\xi}=1,
 \end{eqnarray}
 
