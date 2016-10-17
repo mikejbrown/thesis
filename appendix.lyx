@@ -1154,7 +1154,7 @@ target "https://github.com/mikejbrown/thesis"
 
 \end_inset
 
- once the thesis has been accepted.
+.
 \end_layout
 
 \begin_layout Standard
@@ -1194,6 +1194,17 @@ target "https://github.com/mikejbrown/thesis"
 \begin_inset External
 	template PDFPages
 	filename code/with-output/si3piea-two-loop-renormalization.pdf
+	extra LaTeX "pages=-"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset External
+	template PDFPages
+	filename code/with-output/ssi2piea-hf-renormalization.pdf
 	extra LaTeX "pages=-"
 
 \end_inset
