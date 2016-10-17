@@ -180,7 +180,7 @@ key "Pilaftsis2013"
 
  and has been shown to restore the second order phase transition of the
  
-\begin_inset Formula $O\left(4\right)$
+\begin_inset Formula $\mathrm{O}\left(4\right)$
 \end_inset
 
  linear sigma model in the Hartree-Fock approximation 
@@ -205,7 +205,7 @@ key "Lu2015"
  Symmetry improvement has also been demonstrated to improve the evaluation
  of the effective potential of the standard model by taming the infrared
  divergences of the Higgs sector, treated as an 
-\begin_inset Formula $O\left(4\right)$
+\begin_inset Formula $\mathrm{O}\left(4\right)$
 \end_inset
 
  scalar field theory with gauge interactions turned off 
@@ -493,7 +493,7 @@ is much smaller than the linear term, which occurs for sufficiently small
 
 \begin_layout Standard
 Specialising to the scalar 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  field theory of the previous few chapters, one must consider the 2PIEA
@@ -1528,7 +1528,7 @@ Now consider using the projected constraint instead of the simple constraint
  are obeyed by the 1PIEA.
  This alternate scheme consists of picking a subset of the WIs to enforce,
  chosen in the only 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
 -covariant way available.
@@ -1860,7 +1860,7 @@ This chapter has shown that the imposition of symmetry improvement constraints
  is incompatible with the linear response approximation.
  Since the original symmetry improvement scheme of Pilaftsis and Teresi
  was not formulated 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
 -covariantly there are actually two natural generalisations: a scheme used
@@ -2253,7 +2253,7 @@ It is interesting that the same number of non-trivial constraints is found
 
 , so it has non-trivial derivatives.
  This will be the case for any 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
 -covariant projection scheme.
@@ -2336,8 +2336,8 @@ key "Kapusta2006"
 ), although in practice it is complicated by the unusual behaviour of the
  zero mode in the SSI formalism.
  As a result, though an investigation of the linear response theory of soft
- symmetry improved effective actions is clearly motivated, it falls beyond
- the scope of this thesis.
+ symmetry improved effective actions is clearly motivated, it is deferred
+ to future work.
 \end_layout
 
 \end_body

@@ -3653,7 +3653,7 @@ where
 \end_inset
 
  is the regulator written in 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
 -covariant form.

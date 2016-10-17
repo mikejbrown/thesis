@@ -166,7 +166,7 @@ key "Pilaftsis2013"
  of motion is replaced with the constraint to obtain a closed system.
  Here the symmetry improved 2PIEA (SI-2PIEA) is reviewed and extended to
  general 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  theories.
@@ -1074,7 +1074,7 @@ as expected.
  There is no unphysical metastable phase with broken symmetry at high temperatur
 e.
  This agrees with the behaviour of the 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  model in lattice simulations (see, e.g.
@@ -3514,8 +3514,6 @@ reference "chap:Appendix-Renormalisation-Details"
 ion of the equations of motion requires a much greater numerical effort
  than anything else that has been attempted in this thesis and so is left
  to future work.
- The results of such an investigation would certainly be interesting and
- worthy of study, though well beyond the scope of the present work.
 \end_layout
 
 \begin_layout Standard
@@ -6633,7 +6631,7 @@ key "Pilaftsis2013"
 
  and has been shown to restore the second order phase transition of the
  
-\begin_inset Formula $O\left(4\right)$
+\begin_inset Formula $\mathrm{O}\left(4\right)$
 \end_inset
 
  linear sigma model in the Hartree-Fock approximation 
@@ -6655,7 +6653,7 @@ key "Lu2015"
  and has been demonstrated to improve the evaluation of the effective potential
  of the standard model by taming the infrared divergences of the Higgs sector,
  treated as an 
-\begin_inset Formula $O\left(4\right)$
+\begin_inset Formula $\mathrm{O}\left(4\right)$
 \end_inset
 
  scalar field theory with gauge interactions turned off 

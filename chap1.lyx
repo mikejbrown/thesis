@@ -4237,7 +4237,7 @@ reference "fig:first-order-transition-free-energy-curves"
 : Thermal effective potential of a system with a first order phase transition.
  Curves are shown for the approximation to the SM discussed in text, with
  the Higgs mass chosen at the un-physical value 
-\begin_inset Formula $m_{h}=0.1v$
+\begin_inset Formula $m_{H}=0.1v$
 \end_inset
 
 .
@@ -8431,11 +8431,11 @@ Other observables of the theory are simply related to the Green functions
 \end_inset
 
 , with an 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  symmetry, the conserved 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  currents are 
@@ -9125,7 +9125,7 @@ reference "chap:chap3"
 
  begins the consideration of symmetries in the thesis by introducing the
  
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  scalar field theory which forms the basis of the remainder of the work.
@@ -9169,7 +9169,7 @@ PIEA) as a means of overcoming the difficulty posed by violations of symmetries
 PIEA.
  The novel work in this chapter is an extension of the symmetry improvement
  known in the literature from 
-\begin_inset Formula $O\left(2\right),O\left(4\right)\to O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(2\right),\mathrm{O}\left(4\right)\to\mathrm{O}\left(N\right)$
 \end_inset
 
  and from the 

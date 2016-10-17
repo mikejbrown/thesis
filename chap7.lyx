@@ -561,8 +561,8 @@ The results in this thesis are limited in several respects.
 \begin_inset Formula $n$
 \end_inset
 
-PIEA require numerical solutions which are significantly beyond the scope
- of anything attempted in this thesis.
+PIEA require numerical solutions which are significantly more difficult
+ than anything attempted in this thesis.
  The reason for the great simplification of the Hartree-Fock truncation
  (which also requires numerical solution) is that the self-energies are
  momentum independent.

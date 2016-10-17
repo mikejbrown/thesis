@@ -1709,7 +1709,7 @@ Matsubara frequencies
 
 \begin_layout Plain Layout
 Fundamental 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  group indices ranging from 
@@ -1752,7 +1752,7 @@ Fundamental
 
 \begin_layout Plain Layout
 Adjoint 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  group indices ranging from 
@@ -1787,7 +1787,7 @@ Adjoint
 
 \begin_layout Plain Layout
 (Hermitian) 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  generators
@@ -2429,7 +2429,7 @@ Tadpole integrals (bare, finite part of, thermal part of)
 
 \begin_layout Plain Layout
 Conserved 
-\begin_inset Formula $O\left(N\right)$
+\begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
  currents
