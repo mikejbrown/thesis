@@ -98,10 +98,6 @@ TODO:
 \end_layout
 
 \begin_layout Itemize
-Work out what to discuss for motivation and background
-\end_layout
-
-\begin_layout Itemize
 Tie in QFT sections better
 \end_layout
 
@@ -387,7 +383,7 @@ REFs?
 \end_layout
 
 \begin_layout Standard
-The standard model and the various BSM models are all examples 
+The standard model and the various BSM models are all examples of 
 \emph on
 quantum field theories
 \emph default
@@ -402,7 +398,7 @@ quantum field theories
  quantum electrodynamics (QED): the quantum field theory of electrons and
  photons.
  In this theory the small parameter is the electric charge 
-\begin_inset Formula $e$
+\begin_inset Formula $e\approx0.3$
 \end_inset
 
  of the electron, and observables are computed in a series expansion in
@@ -423,7 +419,7 @@ quantum field theories
 \begin_inset Formula $\mathcal{O}\left(e^{10}\right)$
 \end_inset
 
- with the result in being in fantastic agreement with experiment 
+ with the result being in fantastic agreement with experiment 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Aoyama2015"
@@ -1300,7 +1296,7 @@ reference "chap:chap5"
 soft symmetry improvement
 \emph default
  which aims to address these limitations.
- This method is shown to posses as limits both the unimproved and symmetry
+ This method is shown to possess as limits both the unimproved and symmetry
  improved effective actions, as well as a novel limit which is examined
  in detail.
  Unfortunately the novel limit is pathological, but the nature of the pathology
@@ -1365,6 +1361,15 @@ name "sec:Electroweak-baryogenesis"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Rework section intro to better tie in
+\end_layout
+
+\end_inset
+
 It is well known that for every type of matter particle (electron, proton,
  neutron, quarks etc.) there is a corresponding antiparticle with the same
  mass and opposite charge.
@@ -1372,7 +1377,7 @@ It is well known that for every type of matter particle (electron, proton,
  of special relativity and quantum mechanics, which requires that antiparticles
  exist and have closely related properties to the corresponding particles.
  This is a very robust result, requiring only basic physical principles,
- and it is satisfied by SM.
+ and it is satisfied by the SM.
  Further, the standard cosmological model of the universe with a cosmological
  constant and cold dark matter (
 \begin_inset Formula $\Lambda$
@@ -1445,7 +1450,7 @@ key "Buchmuller2012a"
 \begin_inset Formula $a\left(t\right)$
 \end_inset
 
- is the scale factor.
+ is the cosmic scale factor.
  In this regime particle/antiparticle pairs are annihilated, depleting the
  number densities of both and temporarily slowing the cooling of the plasma.
  Once 
@@ -1523,8 +1528,8 @@ key "Weinberg2008,Canetti2013"
 \begin_inset Formula 
 \begin{equation}
 \eta\equiv\frac{n_{B}-n_{\bar{B}}}{n_{\gamma}}=\begin{cases}
-\left(5.9\pm0.5\right)\times10^{-10}, & \text{Kirkman \emph{et al.}, cited in Weinberg},\\
-\left(5.8\pm0.27\right)\times10^{-10}, & \text{Steigman, cited in Canetti \emph{et al}}.,
+\left(5.9\pm0.5\right)\times10^{-10}, & \text{Kirkman \emph{et al.}, cited in {\citep{Weinberg2008}}},\\
+\left(5.8\pm0.27\right)\times10^{-10}, & \text{Steigman, cited in {\citep{Canetti2013}}},
 \end{cases}
 \end{equation}
 
@@ -1577,7 +1582,7 @@ key "ThePlanckCollaboration2013"
 
  is in agreement
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Planck measured the parameter 
@@ -1595,8 +1600,8 @@ Planck measured the parameter
 .
  See 
 \begin_inset CommandInset citation
-LatexCommand cite
-key "Canetti2012a,Weinberg2008"
+LatexCommand citep
+key "Canetti2012,Weinberg2008"
 
 \end_inset
 
@@ -1910,8 +1915,11 @@ key "Shaposhnikov2009"
 \noun on
 SUSY
 \noun default
-) extensions of the SM, such as the well studied MSSM, or from grand unified
- theories (GUTs).
+) extensions of the SM, such as the well studied 
+\emph on
+minimal SUSY extension of the SM
+\emph default
+ (MSSM), or from grand unified theories (GUTs).
  These models are classified as 
 \emph on
 electroweak baryogenesis
@@ -1995,14 +2003,10 @@ key "McLerran1989"
 ak measurements and Higgs mass limits established during the LEP2 era.
  Further, modern EWBG scenarios are all formulated in more or less minimal
  extensions of the SM such as the 
-\emph on
-minimal SUSY extension of the SM
-\emph default
- (
 \noun on
 MSSM
 \noun default
-), the 
+, the 
 \emph on
 next to minimal SUSY extension
 \emph default
@@ -2065,7 +2069,7 @@ gluons
 \emph on
 isospin
 \emph default
- and acts only on left chiral fermions, hence the 
+ and acts only on left chiral fermions, hence the subscript 
 \begin_inset Formula $L$
 \end_inset
 
@@ -3061,7 +3065,7 @@ Anti-leptons
 
 \begin_layout Standard
 Due to an ordering interaction of the Higgs field, the electrically neutral
- component of the Higgs develops an expectation value 
+ component of the Higgs doublet develops an expectation value 
 \begin_inset Formula $v$
 \end_inset
 
@@ -3123,7 +3127,7 @@ Finally notice that the
 \emph on
 classical
 \emph default
- field equations of the SM conserves baryon number 
+ field equations of the SM conserve baryon number 
 \begin_inset Formula $B$
 \end_inset
 
@@ -3215,9 +3219,24 @@ The mechanism of
 \emph on
 instanton
 \emph default
-, discovered by 't Hooft and Polyakov.
- Later, Kuzmin, Rubakov and Shaposhnikov argued that at finite temperature
- the transition proceeds by classical fluctuations 
+ (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Coleman1985"
+
+\end_inset
+
+).
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Kuzmin1985"
+
+\end_inset
+
+ argued that at finite temperature the transition proceeds by classical
+ fluctuations 
 \emph on
 over the barrier
 \emph default
@@ -3261,8 +3280,12 @@ The weak gauge fields possess a topological invariant called the
 \emph on
 Chern-Simons
 \emph default
- number which, effectively, measures how many times the gauge field configuratio
-n 
+ number 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ which, effectively, measures how many times the gauge field configuration
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -3446,7 +3469,7 @@ where the numerical factor
 \end_inset
 
  has been estimated in the original literature.
- It's precise value is not important here, but 
+ Its precise value is not important here, but 
 \begin_inset Formula $C\sim\mathcal{O}\left(1-3\right)$
 \end_inset
 
@@ -3581,7 +3604,7 @@ This ignores the logarithmic Coleman-Weinberg terms, which can be justified
 \begin_inset Formula $V^{\left(1\right)}\left(\phi,T\right)$
 \end_inset
 
- is the temperature dependent correction which is 
+ is the temperature dependent correction 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Konstandin2013,Dine1992,Kapusta2006"
@@ -3596,8 +3619,8 @@ V^{\left(1\right)}\left(\phi,T\right)=\frac{T^{4}}{2\pi^{2}}\sum_{i}\mp\int_{0}^
 
 \end_inset
 
-where sum runs over all species, the upper(lower) signs are for fermions(bosons)
- respectively and 
+where the sum runs over all species, the upper(lower) signs are for fermions(bos
+ons) respectively and 
 \begin_inset Formula $m_{i},\mu_{i}$
 \end_inset
 
@@ -3621,7 +3644,7 @@ where sum runs over all species, the upper(lower) signs are for fermions(bosons)
 
  is small and is expected to have only a small impact on the thermal properties
  of the early plasma.
- For a species obtaining mass from the Higgs 
+ For a species obtaining mass from the Higgs, 
 \begin_inset Formula $m\sim g\phi$
 \end_inset
 
@@ -3710,7 +3733,7 @@ To illustrate a first order phase transition assume (incorrectly) that
 \end_inset
 
  and for the physical Higgs mass 
-\begin_inset Formula $m_{h}\sim125\ \mathrm{GeV}$
+\begin_inset Formula $m_{H}\sim125\ \mathrm{GeV}$
 \end_inset
 
  there is no phase transition between the broken and symmetric phases, only
@@ -3738,25 +3761,30 @@ reference "fig:first-order-transition-free-energy"
 \end_inset
 
  expansions 
-\begin_inset Formula $V_{\mathrm{eff}}\left(\phi,T\right)=\left(-\frac{m_{h}^{2}}{2v^{2}}+a\frac{T^{2}}{v^{2}}\right)\frac{\phi^{2}}{v^{2}}-b\frac{T}{v}\frac{\phi^{3}}{v^{3}}+\frac{m_{h}^{2}}{4v^{2}}\frac{\phi^{4}}{v^{4}}$
+\begin_inset Formula $V_{\mathrm{eff}}\left(\phi,T\right)=\left(-\frac{m_{H}^{2}}{2v^{2}}+a\frac{T^{2}}{v^{2}}\right)\frac{\phi^{2}}{v^{2}}-b\frac{T}{v}\frac{\phi^{3}}{v^{3}}+\frac{m_{H}^{2}}{4v^{2}}\frac{\phi^{4}}{v^{4}}$
 \end_inset
 
  where 
-\begin_inset Formula $a=\frac{1}{8}y_{t}^{2}+\frac{1+2\cos^{2}\theta_{W}}{16\cos^{2}\theta_{W}}g^{2}\sim0.2$
+\begin_inset Formula $a=\frac{1}{8}y_{t}^{2}+\frac{1+2\cos^{2}\theta_{W}}{16\cos^{2}\theta_{W}}g^{2}\approx0.2$
 \end_inset
 
- is not to be confused with the cosmological scale factor and 
-\begin_inset Formula $b=\frac{1+2\cos^{3}\theta_{W}}{8\pi\sqrt{2}\cos^{3}\theta_{W}}g^{3}\sim0.03$
+ (where 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ is the top quark Yukawa coupling) is not to be confused with the cosmological
+ scale factor and 
+\begin_inset Formula $b=\frac{1+2\cos^{3}\theta_{W}}{8\pi\sqrt{2}\cos^{3}\theta_{W}}g^{3}\approx0.03$
 \end_inset
 
 .
  In the plots 
-\begin_inset Formula $m_{h}=0.1v\sim18\ \mathrm{GeV}$
+\begin_inset Formula $m_{H}=0.1v\sim18\ \mathrm{GeV}$
 \end_inset
 
  for illustrative purposes.
  At temperatures above the upper spinodal temperature 
-\begin_inset Formula $T_{+}=\frac{2m_{h}^{2}}{\sqrt{8am_{h}^{2}-9b^{2}v^{2}}}\sim0.225v$
+\begin_inset Formula $T_{+}=\frac{2m_{H}^{2}}{\sqrt{8am_{H}^{2}-9b^{2}v^{2}}}\approx0.225v$
 \end_inset
 
  the minimum at 
@@ -3766,7 +3794,7 @@ reference "fig:first-order-transition-free-energy"
  is the only critical point of the effective potential and the electroweak
  symmetry is manifest.
  Between the upper and lower spinodal temperatures, 
-\begin_inset Formula $T_{+}>T>T_{-}=\frac{m_{h}}{\sqrt{2a}}\sim0.158v$
+\begin_inset Formula $T_{+}>T>T_{-}=\frac{m_{H}}{\sqrt{2a}}\approx0.158v$
 \end_inset
 
 , a second minimum develops at 
@@ -3779,7 +3807,7 @@ reference "fig:first-order-transition-free-energy"
 
 .
  At the critical temperature 
-\begin_inset Formula $T_{\star}\sim0.213v$
+\begin_inset Formula $T_{\star}\approx0.213v$
 \end_inset
 
  the new minimum is degenerate with the minimum at 
@@ -4082,7 +4110,7 @@ reference "fig:second-order-transition-free-energy"
  As a result the plasma never departs from local thermal equilibrium and
  there is no opportunity for EWBG.
  In the SM the EWPT is second order for 
-\begin_inset Formula $m_{h}\gtrsim72\ \mathrm{GeV}$
+\begin_inset Formula $m_{H}\gtrsim72\ \mathrm{GeV}$
 \end_inset
 
  
@@ -4367,11 +4395,10 @@ The obvious major problem facing EWBG scenarios is the order of the electroweak
  transition) that sphaleron processes are effectively shut off, lest they
  erase the baryon asymmetry that was so painstakingly created.
  Lattice methods are required for the EWPT in the SM with 
-\begin_inset Formula $m_{h}=125\ \mathrm{GeV}$
+\begin_inset Formula $m_{H}=125\ \mathrm{GeV}$
 \end_inset
 
- and that these studies indicates that there is only a smooth crossover
- transition.
+ and these studies indicate that there is only a smooth crossover transition.
  In this case there is no bubble nucleation and the plasma never departs
  far enough from equilibrium to satisfy the Sakharov criteria.
  Thus it is necessary to extend the SM to obtain EWBG.
@@ -4420,8 +4447,8 @@ key "Chung2013"
 
 \end_inset
 
- for a discussion in the MSSM and more generally); however, recent lattice
- Monte Carlo studies using dimensional reduction 
+ for a discussion of EWBG in the MSSM and more generally); however, recent
+ lattice Monte Carlo studies using dimensional reduction 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kajantie1996,Laine2012,Laine2013"
@@ -4527,9 +4554,9 @@ key "Dorsch2013"
 \end_inset
 
  finds large regions which are compatible with all LHC constraints and which
- have strong first order phase transitions (at the one loop, daisy resummed
- level) and it was argued that these models are generically favourable towards
- EWBG.
+ have strong first order phase transitions (at the one loop, daisy diagram
+ resummed level) and it was argued that these models are generically favourable
+ towards EWBG.
  However, only a rough estimate of the wall velocities was performed, based
  on the hydrodynamical model 
 \begin_inset CommandInset citation
@@ -4584,7 +4611,7 @@ It is possible to investigate new physics in a fairly model independent
  The new physics manifests as additional operators in the Lagrangian:
 \begin_inset Formula 
 \[
-\mathcal{L}=\mathcal{L}_{\mathrm{SM}}+\sum_{i}\frac{1}{\Lambda}c_{i}^{\left(5\right)}\mathcal{O}_{i}^{\left(5\right)}+\sum_{i}\frac{1}{\Lambda^{2}}c_{i}^{\left(3\right)}\mathcal{O}_{i}^{\left(6\right)}+\mathcal{O}\left(\frac{1}{\Lambda^{3}}\right),
+\mathcal{L}=\mathcal{L}_{\mathrm{SM}}+\sum_{i}\frac{1}{\Lambda}c_{i}^{\left(5\right)}\mathcal{O}_{i}^{\left(5\right)}+\sum_{i}\frac{1}{\Lambda^{2}}c_{i}^{\left(6\right)}\mathcal{O}_{i}^{\left(6\right)}+\mathcal{O}\left(\frac{1}{\Lambda^{3}}\right),
 \]
 
 \end_inset
@@ -4658,8 +4685,8 @@ Wilson
  It is possible to remove from the set of operators those which vanish by
  the SM equations of motion and those which are linearly dependent.
  Note that linear independence is not always trivial to check due to the
- possible use Fierz rearrangement identities, integration by parts and equations
- of motion.
+ possible use of Fierz rearrangement identities, integration by parts and
+ equations of motion.
  A complete basis of linearly independent operators 
 \begin_inset Formula $\mathcal{O}_{i}^{\left(5,6\right)}$
 \end_inset
@@ -4740,7 +4767,7 @@ key "Grojean2005"
 
  gives a strong first order phase transition for the physical Higgs mass
  
-\begin_inset Formula $m_{h}=125\ \mathrm{GeV}$
+\begin_inset Formula $m_{H}=125\ \mathrm{GeV}$
 \end_inset
 
 .
@@ -4814,7 +4841,7 @@ UPDATE ALL THIS!!!
 
  is physically meaningless.
  Two methods are available to check the gauge dependence of the result:
- redo the computation in a general class of gauges such as 
+ redo the computation in a general class of gauges such as the 
 \begin_inset Formula $R_{\xi}$
 \end_inset
 
@@ -5050,8 +5077,7 @@ key "Dine1992,Linde2005,Shifman2012"
 
 \end_inset
 
- for more recent, though notably unoriginal with respect to this theory,
- discussions).
+ for more recent discussions).
  They find that the bubble formation probability per unit volume per unit
  time for a single scalar field 
 \begin_inset Formula $\phi$
@@ -5069,7 +5095,7 @@ key "Dine1992,Linde2005,Shifman2012"
 \begin_inset Formula $U\left(\phi_{+}\right)=0$
 \end_inset
 
-) is to leading semi-classical order
+) is, to leading semi-classical order,
 \begin_inset Formula 
 \begin{align}
 \frac{\Gamma}{V} & =\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\nonumber \\
@@ -5087,14 +5113,14 @@ where
 bounce action
 \begin_inset Formula 
 \begin{equation}
-B=\int\mathrm{d}^{4}x_{E}\ \frac{1}{2}\left(\partial\bar{\phi}\right)^{2}+U\left(\bar{\phi}\right),
+B=\int\mathrm{d}^{4}x_{E}\ \left[\frac{1}{2}\left(\partial\bar{\phi}\right)^{2}+U\left(\bar{\phi}\right)\right],
 \end{equation}
 
 \end_inset
 
 
 \emph default
-where 
+and 
 \begin_inset Formula $\bar{\phi}$
 \end_inset
 
@@ -5382,7 +5408,7 @@ key "Konstandin2013"
  and chemical potential) and weak coupling.
  Also reactions which are very fast compared to the diffusion time are treated
  by constraining the chemical potentials of the species involved, while
- those very slow compared to the diffusion time are ignored.
+ those that are very slow compared to the diffusion time are ignored.
  Only those reactions which take place on a similar time scale to the diffusion
  time require detailed treatment.
  These techniques have not yet seen wide application to BSM models other
@@ -6828,7 +6854,7 @@ reference "eq:free-thermal-lagrangian"
  closely follows 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "kapusta_finite-temperature_2006"
+key "Kapusta2006"
 
 \end_inset
 
