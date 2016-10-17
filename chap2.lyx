@@ -3713,7 +3713,7 @@ where the sources
 \begin_inset Formula $V$
 \end_inset
 
-'s to the correlation functions can be worked out using the skeleton expansion
+s to the correlation functions can be worked out using the skeleton expansion
  so that, e.g.,
 \begin_inset Formula 
 \begin{align}
@@ -3742,7 +3742,7 @@ and similar results for the higher order
 \begin_inset Formula $V$
 \end_inset
 
-'s.
+s.
  The 
 \begin_inset Formula $n$
 \end_inset
@@ -3857,7 +3857,7 @@ where the second line comes from the definitions of the diagrams and the
 \begin_inset Formula $\tilde{V}$
 \end_inset
 
-'s in the 
+s in the 
 \begin_inset Formula $\mathcal{O}\left(\hbar^{3}\right)$
 \end_inset
 
@@ -3865,7 +3865,7 @@ where the second line comes from the definitions of the diagrams and the
 \begin_inset Formula $V$
 \end_inset
 
-'s.
+s.
  Then one has
 \begin_inset Formula 
 \begin{align}
