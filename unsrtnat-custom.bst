@@ -1,5 +1,5 @@
 %% File: `unsrtnat.bst'
-%% A modification of `unsrt.bst' for use with natbib package 
+%% A modification of `unsrt.bst' for use with natbib package
 %%
 %% Copyright 1993-2007 Patrick W Daly
 %% Max-Planck-Institut f\"ur Sonnensystemforschung
@@ -221,7 +221,16 @@ FUNCTION {format.names}
     { namesleft #0 > }
     { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
       nameptr #1 >
-        { namesleft #1 >
+        {
+          nameptr #3
+          #1 + =
+          numnames #5
+          > and
+              { "others" 't :=
+                #1 'namesleft := }
+                'skip$
+          if$
+          namesleft #1 >
             { ", " * t * }
             { numnames #2 >
                 { "," * }
