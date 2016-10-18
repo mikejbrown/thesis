@@ -89,27 +89,6 @@ name "chap:Introduction"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO:
-\end_layout
-
-\begin_layout Itemize
-Tie in QFT sections better
-\end_layout
-
-\begin_layout Itemize
-Outline of thesis & summary
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Background and motivation
 \begin_inset ERT
@@ -315,31 +294,10 @@ electroweak baryogenesis
  The nature of this phase transition (e.g.
  whether it was first or second order, how much was the latent heat etc.)
  can have a profound impact on the amount of matter surviving to the present
- day universe
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
- Hence, cosmological observations of the matter (baryon) density (as well
- as gravitational waves and primordial magnetic fields) have the potential
- to constrain this phase transition
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
- 
+ day universe.
+ Hence, cosmological observations of the matter (baryon) density, as well
+ as gravitational waves and primordial magnetic fields, have the potential
+ to constrain this phase transition.
 \end_layout
 
 \begin_layout Standard
@@ -348,34 +306,22 @@ However, it is difficult to reliably tell whether a given particle physics
  For example, it is known that the standard model possesses a second order
  phase transition, but this finding was the result of a focused effort and
  could only be established using an expensive computational method (lattice
- Monte Carlo)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ Monte Carlo; see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DOnofrio2014"
 
 \end_inset
 
-.
+).
  It is practically impossible to scan the parameters of a theory of beyond
  standard model (BSM) physics using this method.
  In the BSM context one largely has to make do with a patchwork of semi-empirica
 l curve fitting methods to connect the small scale physics (the fundamental
  parameters of the BSM model) with the large scale physics (phase transition
  thermodynamics and baryon yield).
- All of these methods require approximations which are somewhat suspect
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
+ All of these methods require approximations which are somewhat suspect.
  Thus, such cosmological observations are of limited usefulness for fundamental
  physics.
  New methods of calculation are required to bridge the gap between theory
@@ -457,8 +403,8 @@ key "Aoyama2015"
 
  terms with greater accuracy using Monte Carlo integration, which took 65
  days on a 128 core computer cluster.
- Despite the difficulty of improving the accuracy of perturbative predictions,
- perturbation theory is widely useful.
+ Perturbation theory is widely useful in practice despite the difficulty
+ of improving its accuracy to high orders.
 \end_layout
 
 \begin_layout Standard
@@ -811,16 +757,6 @@ reference "fig:ferromagnet"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -1008,20 +944,17 @@ hypercharge
 
 ) gain large masses by the Higgs mechanism.
  This technique is essential to model building in particle and condensed
- matter physics
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ matter physics, as the Higgs mechanism is the only known method to make
+ a consistent theory of massive non-abelian gauge bosons
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
 
 \end_inset
 
-, as the Higgs mechanism is the only known method to make a consistent theory
- of massive non-abelian gauge bosons
+
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Another method by St
@@ -1037,17 +970,7 @@ status open
 
 \end_inset
 
-ckleberg
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-spelling?
-\end_layout
-
-\end_inset
-
- can be used to construct theories of massive 
+ckelberg can be used to construct theories of massive 
 \begin_inset Formula $\mathrm{U}\left(1\right)$
 \end_inset
 
@@ -1060,12 +983,10 @@ only
 \end_inset
 
  gauge bosons.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ See, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "RUEGG2004"
 
 \end_inset
 
@@ -1085,47 +1006,26 @@ Unfortunately,
 \end_inset
 
 PIEAs are known to violate symmetries when they are truncated to a form
- that can be solved in practice.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ that can be solved in practice (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
 
 \end_inset
 
+ and references therein).
  This thesis focuses on theories with global symmetries because the issues
  faced by 
 \begin_inset Formula $n$
 \end_inset
 
 PIEAs are similar for global and gauge symmetries, the main difference being
- one of complexity
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
+ one of complexity.
  The symmetries of a quantum field theory are embodied in a set of 
 \emph on
 Ward identities
 \emph default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
 
 \begin_inset Foot
 status collapsed
@@ -1133,12 +1033,10 @@ status collapsed
 \begin_layout Plain Layout
 The analogous identities for abelian gauge theories are called Ward-Takahashi
  identities and for non-abelian gauge theories Slavnov-Taylor identities
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
 
 \end_inset
 
@@ -1165,7 +1063,7 @@ REFs
 \begin_inset Formula $n+1$
 \end_inset
 
--Green functions in the limit that the incoming momentum of the 
+-point Green functions in the limit that the incoming momentum of the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1195,6 +1093,13 @@ Goldstone
 
 ) boson
 \emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Goldstone1962"
+
+\end_inset
+
 .
  This has profound phenomenological consequences as the existence of massless
  bosons generates long range interactions which do not exist in a purely
@@ -1300,17 +1205,8 @@ soft symmetry improvement
  improved effective actions, as well as a novel limit which is examined
  in detail.
  Unfortunately the novel limit is pathological, but the nature of the pathology
- hopefully
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-weasel?
-\end_layout
-
-\end_inset
-
- sheds some light on the difficulty of handling symmetries in 
+ hopefully sheds some light on the difficulty of handling symmetries in
+ 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1361,21 +1257,54 @@ name "sec:Electroweak-baryogenesis"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Rework section intro to better tie in
-\end_layout
-
+Electroweak baryogenesis (EWBG) is a hypothetical process which may have
+ taken place in the very early universe, when the temperature of the universe
+ was of the order of 
+\begin_inset Formula $\sim100\ \mathrm{GeV}$
 \end_inset
 
+.
+ EWBG creates an asymmetry in the abundance of baryons (protons, neutrons
+ and related particles which also have the quantum numbers of three bound
+ quarks) and anti-baryons.
+ This asymmetry persists after the universe cools down and is ultimately
+ responsible for the abundance of matter in the universe.
+ EWBG is considered in this section as a case study of a real physics proposal
+ intimately involving both non-perturbative and non-equilibrium aspects.
+ As such, it is difficult compute accurate and reliable EWBG predictions
+ from fundamental physics.
+ The purpose of the following discussion is to highlight these aspects of
+ EWBG, not to give a comprehensive review of the current state of the field.
+ For more detailed treatments the reader is encouraged to consult the original
+ literature cited below.
+\end_layout
+
+\begin_layout Standard
 It is well known that for every type of matter particle (electron, proton,
  neutron, quarks etc.) there is a corresponding antiparticle with the same
  mass and opposite charge.
  This is now understood to be a consequence of combining the principles
  of special relativity and quantum mechanics, which requires that antiparticles
- exist and have closely related properties to the corresponding particles.
+ exist and have closely related properties to the corresponding particles
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+It is sometimes said that neutral particles such as the photon and Higgs
+ boson have no anti-particles, or that they are their own anti-particles.
+ This is a matter of semantics, not physics, and the two descriptions are
+ equivalent.
+ The convention of this thesis is that 
+\emph on
+all
+\emph default
+ particle species have a corresponding anti-particle species (which is sometimes
+ identical to the particle species).
+\end_layout
+
+\end_inset
+
+.
  This is a very robust result, requiring only basic physical principles,
  and it is satisfied by the SM.
  Further, the standard cosmological model of the universe with a cosmological
@@ -1411,8 +1340,10 @@ key "Buchmuller2012a"
 \end_inset
 
  are in equilibrium.
- As the universe expands it cools, and when the temperature drops below
- 
+\end_layout
+
+\begin_layout Standard
+As the universe expands it cools, and when the temperature drops below 
 \begin_inset Formula $\sim m_{\psi}c^{2}/k_{B}$
 \end_inset
 
@@ -1507,8 +1438,8 @@ key "Canetti2012"
 \end_inset
 
 .
- The baryon (baryons being protons and neutrons) asymmetry of the universe
- (BAU) has been measured at the time of 
+ The baryon asymmetry of the universe (BAU) has been measured at the time
+ of 
 \emph on
 big bang nucleosynthesis
 \emph default
@@ -1572,8 +1503,8 @@ Up to a threshold correction due to electron/positron freeze out
 \end_inset
 
 .
- Thus an independent confirmation can be obtained from the CMB, and the
- latest Planck data 
+ Thus an independent confirmation can be obtained from the cosmic microwave
+ background, and the latest Planck data 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "ThePlanckCollaboration2013"
@@ -1582,7 +1513,7 @@ key "ThePlanckCollaboration2013"
 
  is in agreement
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Planck measured the parameter 
@@ -1717,17 +1648,7 @@ If the BAU cannot be the result of an asymmetric initial condition it must
 baryogenesis
 \emph default
 .
- Numerous recent reviews of popular scenarios are available
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE??!
-\end_layout
-
-\end_inset
-
- 
+ Numerous recent reviews of popular scenarios are available 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cline2006,Dine2003,Morrissey2012,Riotto1999,Shaposhnikov2009,Trodden1998,Trodden2004"
@@ -1749,7 +1670,7 @@ key "Sakharov1991,Dine2003"
 
  from a symmetrical initial state
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Note that, although the Sakharov's original paper dealt with a particular
@@ -1850,9 +1771,12 @@ The SM has all three of the necessary ingredients:
  is violated by the complex phase in the Cabibbo-Kobayashi-Maskawa (CKM)
  mixing matrix in the quark sector, and the SM plasma could be driven out
  of equilibrium by the electroweak phase transition (EWPT).
- For sufficiently small Higgs mass the EWPT is a first order transition
- which proceeds by bubble formation, analogous to boiling water, a violent
- process that locally departs from thermal equilibrium at the bubble walls.
+\end_layout
+
+\begin_layout Standard
+For sufficiently small Higgs mass the EWPT is a first order transition which
+ proceeds by bubble formation, analogous to boiling water, a violent process
+ that locally departs from thermal equilibrium at the bubble walls.
  It was within the realm of possibility then, before the late 1990s (when
  the LEP2 experiment began placing limits on the Higgs mass), that the SM
  alone could account for baryogenesis.
@@ -1930,64 +1854,6 @@ EWBG
 \noun default
 ) scenarios since they all involve the EWPT in an extended electroweak/Higgs
  sector.
- Another popular option is 
-\emph on
-leptogenesis
-\emph default
-, which posits new fermions which couple to the neutrino sector 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Barbieri2000,Blanchet2012,Buchmueller2005,Buchmueller2005a,Buchmuller2012a,Buchmueller2013,Canetti2013a,Davidson2008,Fong2012,Giudice2004,Luty1992,Pilaftsis2009"
-
-\end_inset
-
-.
- This explains neutrino masses and mixing (which are not a feature of the
- SM), and is able to provide a strong source of 
-\begin_inset Formula $L$
-\end_inset
-
- and 
-\begin_inset Formula $CP$
-\end_inset
-
- violation.
- In leptogenesis models an 
-\begin_inset Formula $L$
-\end_inset
-
- asymmetry is generated in heavy neutrino decays which is converted to a
- 
-\begin_inset Formula $B$
-\end_inset
-
- asymmetry by SM sphaleron processes.
- The standard leptogenesis scenarios place the new fermions at a high scale
- (near the GUT scale or intermediate between the GUT scale and 
-\begin_inset Formula $T_{EW}$
-\end_inset
-
-), which unfortunately makes these models very difficult to test.
- There are also 
-\emph on
-low-scale
-\emph default
- leptogenesis models which place one or more of the new fermions at or below
- the weak scale.
- An advantage of such low-scale models is that they are able to provide
- a dark matter candidate, but they also require very weak fine tuned couplings
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Canetti2013a"
-
-\end_inset
-
-.
- Both types of leptogenesis models can be derived from SUSY extensions of
- the SM and GUTs.
- Despite having many appealing features leptogenesis will not be considered
- further in this thesis.
 \end_layout
 
 \begin_layout Standard
@@ -1998,11 +1864,8 @@ key "McLerran1989"
 
 \end_inset
 
-.
- Indeed, this was still phenomenologically viable before the precision electrowe
-ak measurements and Higgs mass limits established during the LEP2 era.
- Further, modern EWBG scenarios are all formulated in more or less minimal
- extensions of the SM such as the 
+, however, with the measured Higgs mass, modern EWBG scenarios are all formulate
+d in more or less minimal extensions of the SM such as the 
 \noun on
 MSSM
 \noun default
@@ -2027,9 +1890,8 @@ two Higgs doublet models
  In all of these models the EWBG scenario relies on nonperturbative processes
  very similar to those of the original SM.
  The SM is briefly reviewed here, without going into the formal field theory,
- to recall the physics, set the notation, and discuss EWBG at first in a
- familiar context.
- This review is by no means extensive, nor suitable for a first introduction.
+ to recall the physics and discuss EWBG at first in a familiar context.
+ This review is by no means comprehensive, nor suitable for a first introduction.
  Up to date topical reviews are available from the Particle Data Group 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2046,7 +1908,8 @@ The SM is a relativistic quantum gauge field theory.
 \begin_inset Formula $\mathrm{SU}\left(3\right)\times\mathrm{SU}\left(2\right)_{L}\times\mathrm{U}\left(1\right)_{Y}$
 \end_inset
 
-, where the 
+.
+ 
 \begin_inset Formula $\mathrm{SU}\left(3\right)$
 \end_inset
 
@@ -2166,7 +2029,7 @@ name "tab:standard-model-bosons"
 
 \end_inset
 
-SM bosons representations.
+SM bosonic representations.
  
 \begin_inset Formula $Y$
 \end_inset
@@ -2502,7 +2365,7 @@ name "tab:standard-model-fermions"
 
 \end_inset
 
-SM fermion representations.
+SM fermionic representations.
  All are left chiral spin 
 \begin_inset Formula $1/2$
 \end_inset
@@ -2529,7 +2392,7 @@ SM fermion representations.
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="32page%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2624,7 +2487,11 @@ Particle(s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Quarks 
+Quarks
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Formula $\left(\begin{array}{c}
 \text{up type: up, charm, top}\\
 \text{down type: down, strange, bottom}
@@ -2717,7 +2584,11 @@ Quarks
 \begin_inset Text
 
 \begin_layout Plain Layout
-Leptons 
+Leptons
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Formula $\left(\begin{array}{c}
 e-,\ \mu-,\ \tau-\text{neutrinos}\\
 \text{\text{electron, muon, tau}}
@@ -2811,6 +2682,13 @@ e-,\ \mu-,\ \tau-\text{neutrinos}\\
 
 \begin_layout Plain Layout
 Up-type antiquarks
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2894,6 +2772,13 @@ Up-type antiquarks
 
 \begin_layout Plain Layout
 Down-type antiquarks
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2977,6 +2862,13 @@ Down-type antiquarks
 
 \begin_layout Plain Layout
 Anti-leptons
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -3089,7 +2981,25 @@ Due to an ordering interaction of the Higgs field, the electrically neutral
 \end_inset
 
  becomes the massless photon.
- The masses of the weak gauge bosons are 
+ The masses of the weak gauge bosons are
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that the relation between 
+\begin_inset Formula $m_{W}$
+\end_inset
+
+ and 
+\begin_inset Formula $m_{Z}$
+\end_inset
+
+ is modified by radiative corrections.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $m_{W}=gv/\sqrt{2}$
 \end_inset
 
@@ -3111,15 +3021,20 @@ Due to an ordering interaction of the Higgs field, the electrically neutral
 \end_inset
 
 .
- Note that the relation between 
-\begin_inset Formula $m_{W}$
+ The fermions couple to the Higgs doublet with 
+\emph on
+Yukawa
+\emph default
+ couplings 
+\begin_inset Formula $y_{i}$
 \end_inset
 
- and 
-\begin_inset Formula $m_{Z}$
+ which, after symmetry breaking, result in fermion masses 
+\begin_inset Formula $m_{i}=y_{i}v$
 \end_inset
 
- is modified by radiative corrections.
+.
+ All of the SM fermions gain their mass in this way.
 \end_layout
 
 \begin_layout Standard
@@ -3159,8 +3074,8 @@ global
 happen
 \emph default
  to obey it.
- Symmetries of theories with chiral fermions coupled to gauge bosons are
- spoiled 
+ However, symmetries of theories with chiral fermions coupled to gauge bosons
+ are spoiled 
 \emph on
 chiral anomalies
 \emph default
@@ -3171,12 +3086,7 @@ key "Peskin1995,Shaposhnikov1991"
 
 \end_inset
 
- and it is quite possible that 
-\begin_inset Formula $\mathrm{U}\left(1\right)_{B}\times\mathrm{U}\left(1\right)_{L}$
-\end_inset
-
- is not an exact symmetry of the SM.
- Indeed quantum effects reduce the global symmetry group to 
+ and indeed quantum effects reduce the global symmetry group to 
 \begin_inset Formula $\mathrm{U}\left(1\right)_{B-L}$
 \end_inset
 
@@ -3433,17 +3343,14 @@ The height of the barrier and the sphaleron solution are found from a static
  configuration of the gauge and Higgs fields that extremises the energy
  subject to the boundary conditions imposed by the required Chern-Simons
  number.
- The sphaleron is an unstable equilibrium solution of the equations of motion,
- representing a saddle point of the energy.
- The suitable ansatz was first discovered by Klinkhamer and Manton 
+ The resulting field profiles must be found numerically 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Klinkhamer1984"
 
 \end_inset
 
-.
- The resulting field profiles must be found numerically, but in the 
+, but in the 
 \begin_inset Formula $g'\to0$
 \end_inset
 
@@ -3508,7 +3415,8 @@ where the numerical factor
 \end_inset
 
  might not sound like a terribly high energy for modern colliders, sphalerons
- are difficult if not impossible to produce at collider experiments 
+ are difficult if not impossible to produce at present day collider experiments
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Shifman2012"
@@ -3587,7 +3495,7 @@ reference "chap:chap2"
 
  which serves to renormalise
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This ignores the logarithmic Coleman-Weinberg terms, which can be justified
@@ -3614,47 +3522,27 @@ key "Konstandin2013,Dine1992,Kapusta2006"
 :
 \begin_inset Formula 
 \begin{equation}
-V^{\left(1\right)}\left(\phi,T\right)=\frac{T^{4}}{2\pi^{2}}\sum_{i}\mp\int_{0}^{\infty}\mathrm{d}x\ x^{2}\log\left[1\pm\exp\left(-\sqrt{x^{2}+m_{i}^{2}\beta^{2}}+\beta\mu_{i}\right)\right],
+V^{\left(1\right)}\left(\phi,T\right)=\sum_{i}\Delta V_{i}^{\left(1\right)},
 \end{equation}
 
 \end_inset
 
-where the sum runs over all species, the upper(lower) signs are for fermions(bos
-ons) respectively and 
-\begin_inset Formula $m_{i},\mu_{i}$
-\end_inset
-
- are the mass and chemical potential of the species.
- The following assumes that 
-\begin_inset Formula $\mu_{i}=0$
-\end_inset
-
-, i.e.
- that the net value of all conserved charges vanishes.
- In particular this is assuming that the universe as a whole is neutral
- and that 
+where the sum runs over all species.
+ One can assume that the universe as a whole is neutral and that 
 \begin_inset Formula $B-L=0$
 \end_inset
 
-.
- This latter assumption is justified by the fact that the baryon asymmetry
- 
+ because the baryon asymmetry 
 \begin_inset Formula $\eta\sim6\times10^{-10}$
 \end_inset
 
  is small and is expected to have only a small impact on the thermal properties
  of the early plasma.
- For a species obtaining mass from the Higgs, 
-\begin_inset Formula $m\sim g\phi$
+ For illustrative purposes it is good enough to perform a high temperature
+ expansion of the 
+\begin_inset Formula $\Delta V_{i}^{\left(1\right)}$
 \end_inset
 
- or 
-\begin_inset Formula $m\sim y\phi$
-\end_inset
-
- for gauge bosons and fermions respectively.
- For a quantitative study these integrals can be evaluated numerically,
- but the physics can be elucidated by performing a high temperature expansion
  for 
 \begin_inset Formula $m\ll T$
 \end_inset
@@ -3675,7 +3563,16 @@ key "Kapusta2006"
 
 \end_inset
 
-The terms independent of the mass 
+For a species obtaining mass from the Higgs, 
+\begin_inset Formula $m\sim g\phi$
+\end_inset
+
+ or 
+\begin_inset Formula $m\sim y\phi$
+\end_inset
+
+ for gauge bosons and fermions respectively.
+ Thus the terms independent of the mass 
 \begin_inset Formula $m$
 \end_inset
 
@@ -3836,7 +3733,10 @@ reference "fig:first-order-transition-free-energy"
 \end_inset
 
  ceases to be a minimum of the effective potential altogether.
- The history of the universe in this scenario is as follows.
+\end_layout
+
+\begin_layout Standard
+The history of the universe in this scenario is as follows.
  At 
 \begin_inset Formula $T>T_{+}$
 \end_inset
@@ -4089,7 +3989,8 @@ key "Morrissey2012,Konstandin2013"
 \end_layout
 
 \begin_layout Standard
-A second order phase transition is illustrated in Figure 
+By way of contrast, a second order phase transition is illustrated in Figure
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:second-order-transition-free-energy"
@@ -4394,199 +4295,37 @@ The obvious major problem facing EWBG scenarios is the order of the electroweak
  bubble wall be sufficiently large (a measure of the strength of the phase
  transition) that sphaleron processes are effectively shut off, lest they
  erase the baryon asymmetry that was so painstakingly created.
- Lattice methods are required for the EWPT in the SM with 
-\begin_inset Formula $m_{H}=125\ \mathrm{GeV}$
-\end_inset
-
- and these studies indicate that there is only a smooth crossover transition.
- In this case there is no bubble nucleation and the plasma never departs
- far enough from equilibrium to satisfy the Sakharov criteria.
- Thus it is necessary to extend the SM to obtain EWBG.
-\end_layout
-
-\begin_layout Standard
-The most straightforward approach to strengthening the EWPT is adding new
+ The most straightforward approach to strengthening the EWPT is adding new
  scalar fields which are strongly coupled to the Higgs.
- In the MSSM the stops (top quark superpartners), particularly the 
-\begin_inset Formula $\tilde{t}_{R}$
-\end_inset
-
-, and the second Higgs doublet are suitable candidates, although current
- LHC data favours a 
-\begin_inset Quotes eld
-\end_inset
-
-split
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-mini-split
-\begin_inset Quotes erd
-\end_inset
-
- scenario where the stops are relatively heavy compared to the weak scale
- and hence decouple from the EWPT-relevant physics (a discussion of the
- most current constraints on natural SUSY can be found in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Evans2013"
-
-\end_inset
-
-).
- Thus the standard view in the recent literature is that EWBG in the MSSM
- is nearly ruled out (see e.g.
- 
+ However, any models with new particles necessarily have undetermined parameters
+ which must be scanned to assess the range of EWBG predictions possible.
+ Typically perturbation theory is used since it is relatively easy to scan
+ parameters, however perturbative results do not necessarily agree with
+ more accurate (but harder to scan) lattice methods.
+ See, e.g., 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chung2013"
 
 \end_inset
 
- for a discussion of EWBG in the MSSM and more generally); however, recent
- lattice Monte Carlo studies using dimensional reduction 
+ for a perturbative discussion of EWBG in the MSSM and contrast this with
+ the lattice Monte Carlo studies using dimensional reduction 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kajantie1996,Laine2012,Laine2013"
 
 \end_inset
 
- suggest that the EWPT in the light stop scenario is much stronger than
- the perturbative estimates previously employed, and the tension with LHC
- data is further reduced if the 
-\begin_inset Formula $125\ \mathrm{GeV}$
-\end_inset
-
- Higgs can decay into 
-\begin_inset Formula $m\lesssim60\ \mathrm{GeV}$
-\end_inset
-
- neutralinos 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Carena2012"
-
-\end_inset
-
-.
- Thus to the author's knowledge EWBG within the MSSM remains worthy of considera
-tion, at least until the end of run 2 of the LHC.
- The addition of a single gauge singlet chiral superfield, giving the NMSSM,
- alleviates the constraints considerably 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Balazs2013"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Non-supersymmetric extensions are possible as well, the most popular being
- the two Higgs doublet models (
-\noun on
-2HDM
-\noun default
-).
- Though having two Higgs doublets like the MSSM, these models can differ
- significantly from the MSSM in terms of phenomenology because of the absence
- of coloured scalars and the relaxation of SUSY constraints on the scalar
- potential (i.e., the 2HDM potential does not have to be derivable from a
- holomorphic superpotential).
- This extra freedom carries the danger of generating large flavour changing
- neutral currents (
-\noun on
-FCNC
-\noun default
-) which are strongly constrained.
- This problem is bypassed by imposing a discrete symmetry on the theory,
- resulting in four discrete classes of 2HDM corresponding to the possible
- charge assignments under the discrete symmetry
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-The SUSY pattern of Higgs couplings corresponds to a 
-\begin_inset Quotes eld
-\end_inset
-
-Type II
-\begin_inset Quotes erd
-\end_inset
-
- 2HDM.
-\end_layout
-
-\end_inset
-
-.
- This discrete choice has no impact on the EWPT or indeed the goodness-of-fit
- of the best fit models (which is insignificantly better than the SM at
- this stage), but does impact the experimental constraints on the parameter
- space 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Cheung2013"
-
-\end_inset
-
-.
- A recent scan of the parameter space 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Dorsch2013"
-
-\end_inset
-
- finds large regions which are compatible with all LHC constraints and which
- have strong first order phase transitions (at the one loop, daisy diagram
- resummed level) and it was argued that these models are generically favourable
- towards EWBG.
- However, only a rough estimate of the wall velocities was performed, based
- on the hydrodynamical model 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Huber2013"
-
-\end_inset
-
-, and 
-\begin_inset Formula $CP$
-\end_inset
-
- violation generation and washout were not addressed in any detail.
- 2HDM remains a promising class of models for EWBG and worthy of further
- investigation.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
+ which suggest that the EWPT can be much stronger than the perturbative
+ estimates.
+ Unfortunately these lattice methods have been applied only to a few well
+ studied models such as the MSSM.
 \end_layout
 
 \begin_layout Standard
 It is possible to investigate new physics in a fairly model independent
- way.
+ way if a few simplifying assumptions are satisfied.
  If the new physics, however complicated, exists at a scale 
 \begin_inset Formula $M$
 \end_inset
@@ -4679,15 +4418,10 @@ Wilson
 \end_inset
 
  is energy scale for the process at hand.
- The Wilson coefficients are typically obtained by matching correlation
- functions in the effective field theory to those calculated in the full
- theory to the given order of accuracy.
- It is possible to remove from the set of operators those which vanish by
- the SM equations of motion and those which are linearly dependent.
- Note that linear independence is not always trivial to check due to the
- possible use of Fierz rearrangement identities, integration by parts and
- equations of motion.
- A complete basis of linearly independent operators 
+\end_layout
+
+\begin_layout Standard
+A complete basis of linearly independent operators 
 \begin_inset Formula $\mathcal{O}_{i}^{\left(5,6\right)}$
 \end_inset
 
@@ -4796,41 +4530,11 @@ key "Grojean2005,Chung2013"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
-In summary it is easy to strengthen the EWPT in BSM models of current phenomenol
-ogical interest.
- This strongly motivates the experimental search for exotic Higgs decays
- and non-SM particles in the scalar sector.
- An extensive review of the experimental prospects for these searches, including
- all LHC data to date, can be found in 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Curtin2013"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
+Thus it is easy to strengthen the EWPT in BSM models of current phenomenological
+ interest.
  However, questions can be raised about the computation of the phase transition
  thermodynamics.
  A conceptual question of great practical import is the gauge dependence
@@ -4906,27 +4610,6 @@ key "Morrissey2012"
 .
  As a result it is difficult to say whether a given phase transition is
  indeed strong enough to avoid washing out a baryon asymmetry.
- The vast majority of treatments ignore these issues.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs???
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -4952,110 +4635,6 @@ key "Moore1997,Boedeker2000"
 and
 \emph default
  have manifestly good gauge invariance properties are particularly valuable.
- The chief difficultly with the development of perturbative methods for
- the phase transition is the infrared divergences associated with the Higgs
- and gauge bosons near the critical point.
- Physically, soft modes of these fields become highly occupied.
-\end_layout
-
-\begin_layout Standard
-A promising approach is an effective theory where the soft modes are treated
- classically, while the 
-\begin_inset Quotes eld
-\end_inset
-
-hard
-\begin_inset Quotes erd
-\end_inset
-
- modes with 
-\begin_inset Formula $k\gtrsim gT$
-\end_inset
-
- are treated quantum mechanically.
- The dynamics of the back-reaction of the fluctuating hard modes on the
- soft modes is captured by an effective noise kernel and one obtains a Langevin
- equation for the soft modes.
- This theory was developed for pure 
-\begin_inset Formula $\mathrm{SU}\left(2\right)$
-\end_inset
-
- gauge theory by B
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-"{o}
-\end_layout
-
-\end_inset
-
-deker 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Boedeker1998"
-
-\end_inset
-
- and was originally intended for lattice computations, however a perturbative
- reformulation using ideas from stochastic quantisation was the topic of
- recent Ph.D work 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Zahlten2004"
-
-\end_inset
-
- and extensions of this work represent an intriguing possibility.
- Other promising new directions are the new perturbation theory of 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Millington2013,Millington2013a"
-
-\end_inset
-
- which reorganises the perturbation theory using non-homogeneous propagators
- and vertices to remove 
-\begin_inset Quotes eld
-\end_inset
-
-pinch
-\begin_inset Quotes erd
-\end_inset
-
- singularities associated with thermally occupied modes, the symmetry improvemen
-t formalism 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Pilaftsis2013,Mao2014"
-
-\end_inset
-
- which enforces Ward identities by the use of Lagrange multipliers so that
- truncations of the Schwinger-Dyson hierarchy are manifestly invariant (so
- far only applied to scalar field theories, not gauge theories), and the
- development of non-perturbative renormalisation 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Garny2008"
-
-\end_inset
-
- (so far for scalar fields only) and gauge invariant non-equilibrium 2PI
- techniques 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Zoeller2013"
-
-\end_inset
-
- for abelian gauge theories.
- Clearly a recent trend is the reorganisation of perturbation theory using
- self-consistent schemes to gain access to hitherto inaccessible regimes
- of quantum field theories.
 \end_layout
 
 \begin_layout Standard
@@ -5204,162 +4783,7 @@ REFs?
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Another point worth noting is that there is no real time description of
- bubble nucleation.
- The situation is analogous to a particle tunnelling through a barrier in
- a quantum mechanical system: one does not ask about the time evolution
- of the particle while the particle is under the barrier.
- Instead one finds that the wavefunction leaks through the barrier; the
- particle itself presumably makes some kind of quantum leap.
- Similarly a real time description of bubble nucleation must involve the
- wave-functional 
-\begin_inset Formula $\Psi\left[\phi\right]$
-\end_inset
-
- (or density matrix functional 
-\begin_inset Formula $\boldsymbol{\rho}\left[\phi_{1},\phi_{2}\right]$
-\end_inset
-
-) which is initially, say, a Gaussian centred on 
-\begin_inset Formula $\phi_{+}$
-\end_inset
-
-: 
-\begin_inset Formula $\Psi\sim\exp\left[-\int\mathrm{d}^{3}x\ \frac{\mu}{2}\left(\phi-\phi_{+}\right)^{2}\right]$
-\end_inset
-
- but which gradually develops a component on the other side of the barrier.
- It is not clear what, if anything, such a description would yield of practical
- relevance.
- In particular, decoherence between branches of the wave-functional with
- different histories of bubble nucleation is probably large, but the author
- knows of no discussion of this topic in the literature.
- A more important practical question is the gauge dependence of the formalism.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-After critical bubbles nucleate they expand.
- Since the scalar fields involved are large it is expected that the evolution
- of the bubble is classical from this point on, and indeed this approximation
- is universally made in the literature.
- In principle one should check to what degree the state resulting from the
- nucleation process is in fact a coherent state, and allow for the possibilities
- of quantum particle creation and charge fractionalisation on the bubble
- wall 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Shifman2012"
-
-\end_inset
-
-, though such effects are almost certainly small once the bubble reaches
- a macroscopic size.
- The classical theory of macroscopic bubble expansion is well developed
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Espinosa2010,Huber2013"
-
-\end_inset
-
-.
- It is assumed that not only is the Higgs field in a coherent state, but
- that the plasma is well described by quasi-particles with near equilibrium
- distribution functions (in the rest frame of the plasma) 
-\begin_inset Formula $f_{i}=\left\{ \exp\left[\gamma\left(E-vp_{z}\right)/T\right]\pm1\right\} ^{-1}+\delta f_{i}$
-\end_inset
-
- where 
-\begin_inset Formula $\delta f_{i}\ll f_{i}$
-\end_inset
-
-, 
-\begin_inset Formula $\gamma=1/\sqrt{1-v^{2}}$
-\end_inset
-
- and 
-\begin_inset Formula $v$
-\end_inset
-
- is the plasma velocity in the 
-\begin_inset Formula $z$
-\end_inset
-
- direction which is taken to be perpendicular to the wall.
- The equation of motion for the mean value of the Higgs field is
-\begin_inset Formula 
-\begin{equation}
-\square\phi+\frac{\partial F}{\partial\phi}+\sum_{i}\frac{\mathrm{d}m_{i}^{2}}{\mathrm{d}\phi}\int\frac{\mathrm{d}^{3}p}{\left(2\pi\right)^{3}2E_{i}}\delta f_{i}\left(p\right)=0,
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $F$
-\end_inset
-
- is the finite temperature effective potential for the Higgs and the third
- term is the friction term, which is due to the deviation of the particle
- distribution functions from equilibrium.
- The 
-\begin_inset Formula $\delta f_{i}$
-\end_inset
-
- are found by solving a network of Boltzmann equations for the particle
- transport in the vicinity of the bubble wall.
- This program is very difficult (and questions about the applicability of
- Boltzmann equations remain), and has only been carried out in any detail
- in the SM and MSSM.
- In other models one computes a simple phenomenological friction coefficient
- and then calibrates it relative to the SM value which has been computed
- much more accurately.
- Once the phenomenological friction coefficient is obtained the bubble expansion
- is a hydrodynamic problem which has essentially been solved.
-\end_layout
-
-\begin_layout Standard
-Boltzmann equations can be derived from first principles quantum transport
- equations (Kadanoff-Baym equations) under the assumption of weak gradients
- and the lack of memory effects or coherence.
- Coherence can arise, for example, as a result of flavour oscillations,
- in which case the treatment must be extended from single particle distribution
- functions to two particle density matrices.
- Recent advances have applied quantum transport techniques to those species
- involved in the creation of CP violation and baryon number, with the finding
- that resonant flavour oscillations can lead to an enhancement of the asymmetry
- produced, however the bulk plasma properties are still treated semi-classically
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Konstandin2013"
-
-\end_inset
-
-.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
+ Another important question concerns the gauge dependence of the formalism.
 \end_layout
 
 \begin_layout Standard
@@ -5398,19 +4822,6 @@ key "Konstandin2013"
 \end_inset
 
 ).
- Open questions regard the validity of some of the approximations used in
- deriving Boltzmann equations, then continuity equations, from the Kadanoff-Baym
- equations.
- In particular these are the gradient expansion - usually truncated to lowest
- non-trivial order, the quasiparticle approximation (the applicability of
- distribution functions), the fluid approximation (distribution functions
- have the equilibrium form with spacetime varying velocity, temperature
- and chemical potential) and weak coupling.
- Also reactions which are very fast compared to the diffusion time are treated
- by constraining the chemical potentials of the species involved, while
- those that are very slow compared to the diffusion time are ignored.
- Only those reactions which take place on a similar time scale to the diffusion
- time require detailed treatment.
  These techniques have not yet seen wide application to BSM models other
  than the MSSM, although the SM with the dimension six term 
 \begin_inset Formula $\phi^{6}$
@@ -5425,28 +4836,6 @@ key "Konstandin2013"
 \end_inset
 
 .
- The general finding is that apart from the MSSM, the main portion of the
- 
-\begin_inset Formula $B$
-\end_inset
-
- asymmetry generated in each model is due to a semi-classical force term
- and that the possibility of resonant enhancement, the topic of much recent
- debate, is unimportant.
- The Kadanoff-Baym framework is a solid foundation, thus the author's view
- is that fermion transport in EWBG is a problem where incremental model-dependen
-t progress is an important possibility, but no major advances should be
- expected.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5490,17 +4879,12 @@ holy grail
 \end_inset
 
  of this investigation would be an approach to Yang-Mills-Higgs-Dirac type
- theories (with chiral fermions) which is manifestly gauge invariant, can
+ theories with chiral fermions which is manifestly gauge invariant, can
  solve the initial value problem far from equilibrium, with realistic (i.e.
  non-Gaussian) initial conditions, with a well established and tractable
  renormalisation procedure, while avoiding infrared singularities, unphysical
  transients and secularities though consistent and systematically improvable
  re-summations.
- One could track the strongly interacting soft modes separately from the
- weakly interacting hard modes for practical purposes, but renormalisation
- group invariance would ideally be manifest.
- One should be able to track arbitrary desired observables (gauge invariants)
- through a phase transition in real time.
  It would be desirable to see the spontaneous symmetry breaking of a non-abelian
  gauge theory or biased sphaleron transitions in real time, and a controlled
  analytical framework capable of this would provide a valuable check of
@@ -5513,7 +4897,7 @@ boundary markers
 \end_inset
 
  in the quest to map out possibilities for beyond standard model physics.
- It is incredible - maybe wildly optimistic - that such a formulation might
+ It is incredible – maybe wildly optimistic – that such a formulation might
  be possible.
  In the meantime one may take some small steps towards this dream by attempting
  to extend the 
@@ -5531,6 +4915,7 @@ key "Berges2015"
 
 , to better handle theories with a high degree of symmetry and symmetry
  changing phase transitions.
+ This hypothesis provides the launching point for this thesis.
 \end_layout
 
 \begin_layout Section
@@ -5553,6 +4938,24 @@ name "sec:Quantum-field-theory"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+The review of electroweak baryogenesis in the preceding section motivates
+ the development of new techniques for non-perturbative quantum field theory
+ based on the 
+\begin_inset Formula $n$
+\end_inset
+
+-particle irreducible effective action formalism.
+ However, before diving into that work a brief review of basic quantum field
+ theory is worthwhile.
+ This is provided here.
+ The following review is not comprehensive and cannot replace an actual
+ course in quantum field theory, but it does suffice to establish the notation
+ and basic framework which forms the basis of the rest of this thesis.
+ Further, the original references cited below can provide a jumping off
+ point for further investigation.
 \end_layout
 
 \begin_layout Standard
@@ -5602,12 +5005,9 @@ The generalisation to curved spacetimes is in some respects straightforward
  In any event, quantum field theory in curved spacetime is standard lore
  (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CITE
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Birrell1984"
 
 \end_inset
 
@@ -5652,18 +5052,7 @@ topological field theories
 \emph default
 ).
  Still, there is a close relation between QM and QFT: for each formalism
- available for QM there is a corresponding QFT formalism
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Do Bohm, QBism...
- matter?
-\end_layout
-
-\end_inset
-
-.
+ available for QM there is a corresponding QFT formalism.
  Thus, for example, one could study quantum fields in the Schr
 \begin_inset ERT
 status open
@@ -5692,12 +5081,9 @@ wavefunctional
 .
  However, in QFT it is often far more convenient to use the functional integral
  formalism, originally due to Feynman 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CITE
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Feynman2010"
 
 \end_inset
 
@@ -6326,7 +5712,7 @@ where
 
 Using
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Recall from basic QM that 
@@ -6629,7 +6015,7 @@ any
 \emph default
  physically reasonable initial and final states
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The only condition is that they have non-zero overlap with the vacuum state.
@@ -6663,7 +6049,7 @@ reference "eq:phi-eigenstate-transition-amplitude-pi"
  vacuum, state.
  So finally in the limit only the vacuum-to-vacuum matrix element survives
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This assumes that the vacuum state is non-degenerate and separated by a
@@ -7050,8 +6436,8 @@ The formalisms sketched above for vacuum and finite temperature field theory
  can be naturally generalised to the contour or non-equilibrium Green function
  method which also allows the treatment of non-equilibrium field theory.
  The contour method has been used extensively in various fields of condensed
- matter and particle physics, from molecular transport and ultracold atomic
- gases to nanoelectronics, nuclear physics and cosmology.
+ matter and particle physics, from molecular transport and ultra-cold atomic
+ gases to nano-electronics, nuclear physics and cosmology.
  The research literature using these techniques is vast, and there are good
  recent books introducing them in condensed matter 
 \begin_inset CommandInset citation
@@ -7112,16 +6498,6 @@ key "Kita2010"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Stefanucci2013"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Primary refs???
-\end_layout
 
 \end_inset
 
@@ -7591,22 +6967,18 @@ reference "tab:Keldysh-components-of"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Keldysh-components-of"
 
 \end_inset
 
-
-\lang australian
 Keldysh components for any function 
 \begin_inset Formula $k\left(z,z'\right)$
 \end_inset
@@ -8497,16 +7869,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Langreth-rules"
 
 \end_inset
 
-
-\lang australian
 Langreth rules for convolutions and products (with 
 \begin_inset Formula $f\cdot g\equiv\int_{0}^{\infty}\mathrm{d}t\ f\left(t\right)g\left(t\right)$
 \end_inset
@@ -9074,17 +8442,16 @@ name "sec:ch1-Summary"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE WHEN THE REST OF THE INTRODUCTION HAS BEEN WRITTEN!!!!
-\end_layout
-
-\end_inset
-
-This chapter has reviewed quantum field theory focusing on the functional
- integral formalism.
+This chapter has tried to motivate the investigation which forms the remainder
+ of this thesis.
+ This started with a general discussion of the gaps which exist between
+ theory and experiment in situations involving strongly interacting particles
+ and many particles out of equilibrium.
+ Electroweak baryogenesis was then given as a concrete example and discussed
+ in some detail, with an emphasis on those areas which have been hindered
+ by an inability to compute.
+ Then, laying the groundwork for the remainder of the thesis, basic quantum
+ field theory was reviewed focusing on the functional integral formalism.
  It has been shown that a common formula for the generating functional can
  be used for scattering, thermal equilibrium and generic non-equilibrium
  problems by specifying a choice of time contour.
