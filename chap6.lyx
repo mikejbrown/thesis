@@ -336,7 +336,7 @@ reference "sec:LRT-Discussion"
 \end_layout
 
 \begin_layout Section
-Linear Response Theory and 
+Linear response theory and 
 \begin_inset Formula $n$
 \end_inset
 
@@ -663,7 +663,7 @@ While this is the general formalism connecting effective actions to linear
 \end_layout
 
 \begin_layout Section
-Mechanical Analogy to Illustrate Constrained Linear Response Theory
+Mechanical analogy to illustrate constrained linear response theory
 \begin_inset ERT
 status open
 
@@ -1087,7 +1087,7 @@ The
 \end_layout
 
 \begin_layout Section
-Symmetry Improvement and Linear Response
+Symmetry improvement and linear response
 \begin_inset ERT
 status open
 
@@ -1109,7 +1109,7 @@ name "sec:Symmetry-Improvement-and-LRT"
 \end_layout
 
 \begin_layout Subsection
-The Simple Constraint Scheme
+The simple constraint scheme
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:The-Simple-Constraint"
@@ -1498,7 +1498,7 @@ which is also automatically satisfied in the
 \end_layout
 
 \begin_layout Subsection
-The Projected Constraint Scheme
+The projected constraint scheme
 \begin_inset ERT
 status open
 
@@ -1834,7 +1834,7 @@ different
 \end_layout
 
 \begin_layout Section
-Discussion and Summary
+Discussion and summary
 \begin_inset ERT
 status open
 

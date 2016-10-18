@@ -80,7 +80,7 @@ theorems-sec
 
 \begin_layout Chapter
 \start_of_appendix
-The Auxiliary Vertex and its Renormalisation
+The auxiliary vertex and its renormalisation
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Auxiliary-vertex-and-renorm"
@@ -768,7 +768,7 @@ PIEA for
 \end_layout
 
 \begin_layout Chapter
-Deriving Counter-terms for Three Loop Truncations
+Deriving counter-terms for three loop truncations
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Deriving-Counter-terms-for-3-Loop-Truncations"
@@ -1127,7 +1127,7 @@ Note that if
 \end_layout
 
 \begin_layout Chapter
-Mathematica Notebooks for Renormalisation
+Mathematica notebooks for renormalisation
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:Appendix-Renormalisation-Details"

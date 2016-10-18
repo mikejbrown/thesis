@@ -1575,7 +1575,7 @@ name "sec:ch5-Solution-in-the-limit"
 \end_layout
 
 \begin_layout Subsection
-Symmetric Phase
+Symmetric phase
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Symmetric-Phase"
@@ -1698,7 +1698,7 @@ reference "chap:chap4"
 \end_layout
 
 \begin_layout Subsection
-Broken Phase with 
+Broken phase with 
 \begin_inset Formula $m_{G}^{2}\neq0$
 \end_inset
 
@@ -3195,7 +3195,7 @@ reference "eq:yb-eom"
 \end_layout
 
 \begin_layout Subsection
-Broken Phase with 
+Broken phase with 
 \begin_inset Formula $m_{G}^{2}\to0$
 \end_inset
 
