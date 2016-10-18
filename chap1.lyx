@@ -315,31 +315,10 @@ electroweak baryogenesis
  The nature of this phase transition (e.g.
  whether it was first or second order, how much was the latent heat etc.)
  can have a profound impact on the amount of matter surviving to the present
- day universe
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
- Hence, cosmological observations of the matter (baryon) density (as well
- as gravitational waves and primordial magnetic fields) have the potential
- to constrain this phase transition
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
- 
+ day universe.
+ Hence, cosmological observations of the matter (baryon) density, as well
+ as gravitational waves and primordial magnetic fields, have the potential
+ to constrain this phase transition.
 \end_layout
 
 \begin_layout Standard
@@ -457,8 +436,8 @@ key "Aoyama2015"
 
  terms with greater accuracy using Monte Carlo integration, which took 65
  days on a 128 core computer cluster.
- Despite the difficulty of improving the accuracy of perturbative predictions,
- perturbation theory is widely useful.
+ Perturbation theory is widely useful in practice despite the difficulty
+ of improving its accuracy to high orders.
 \end_layout
 
 \begin_layout Standard
@@ -1165,7 +1144,7 @@ REFs
 \begin_inset Formula $n+1$
 \end_inset
 
--Green functions in the limit that the incoming momentum of the 
+-point Green functions in the limit that the incoming momentum of the 
 \begin_inset Quotes eld
 \end_inset
 
