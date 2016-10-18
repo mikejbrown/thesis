@@ -2520,7 +2520,7 @@ Higgs
 
  meson
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The 
@@ -2540,7 +2540,7 @@ NOTE ON SCALAR MESONS BELOW 2 GEV
  from the Review of Particle Physics 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "PDG"
+key "Olive2014"
 
 \end_inset
 
