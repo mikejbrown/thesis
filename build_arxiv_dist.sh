@@ -30,6 +30,7 @@ cp jcuthesis.cls dist
 cp jculogo.pdf dist
 mkdir -p dist/code/with-output
 cp code/with-output/*.pdf dist/code/with-output
+cp unsrtnat-custom.bst dist
 
 cd dist
 
