@@ -2029,7 +2029,7 @@ name "tab:standard-model-bosons"
 
 \end_inset
 
-SM bosons representations.
+SM bosonic representations.
  
 \begin_inset Formula $Y$
 \end_inset
@@ -2365,7 +2365,7 @@ name "tab:standard-model-fermions"
 
 \end_inset
 
-SM fermion representations.
+SM fermionic representations.
  All are left chiral spin 
 \begin_inset Formula $1/2$
 \end_inset
@@ -2392,7 +2392,7 @@ SM fermion representations.
 \begin_inset Tabular
 <lyxtabular version="3" rows="6" columns="7">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="middle" width="32page%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -2487,7 +2487,11 @@ Particle(s)
 \begin_inset Text
 
 \begin_layout Plain Layout
-Quarks 
+Quarks
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Formula $\left(\begin{array}{c}
 \text{up type: up, charm, top}\\
 \text{down type: down, strange, bottom}
@@ -2580,7 +2584,11 @@ Quarks
 \begin_inset Text
 
 \begin_layout Plain Layout
-Leptons 
+Leptons
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Formula $\left(\begin{array}{c}
 e-,\ \mu-,\ \tau-\text{neutrinos}\\
 \text{\text{electron, muon, tau}}
@@ -2674,6 +2682,13 @@ e-,\ \mu-,\ \tau-\text{neutrinos}\\
 
 \begin_layout Plain Layout
 Up-type antiquarks
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2757,6 +2772,13 @@ Up-type antiquarks
 
 \begin_layout Plain Layout
 Down-type antiquarks
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -2840,6 +2862,13 @@ Down-type antiquarks
 
 \begin_layout Plain Layout
 Anti-leptons
+\begin_inset Formula $\vphantom{\left(\begin{array}{c}
+e-,\ \mu-,\ \tau-\text{neutrinos}\\
+\text{\text{electron, muon, tau}}
+\end{array}\right)}$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -6938,7 +6967,7 @@ reference "tab:Keldysh-components-of"
 \begin_inset Float table
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
