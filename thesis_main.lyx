@@ -200,7 +200,7 @@ target "https://github.com/mikejbrown/thesis"
 
 \end_inset
 
- once the thesis has been accepted.
+.
  This pdf has been built from the following version of the source: 
 \begin_inset CommandInset include
 LatexCommand input
