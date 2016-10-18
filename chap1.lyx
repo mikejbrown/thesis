@@ -89,27 +89,6 @@ name "chap:Introduction"
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-TODO:
-\end_layout
-
-\begin_layout Itemize
-Tie in QFT sections better
-\end_layout
-
-\begin_layout Itemize
-Outline of thesis & summary
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 Background and motivation
 \begin_inset ERT
@@ -327,34 +306,22 @@ However, it is difficult to reliably tell whether a given particle physics
  For example, it is known that the standard model possesses a second order
  phase transition, but this finding was the result of a focused effort and
  could only be established using an expensive computational method (lattice
- Monte Carlo)
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ Monte Carlo; see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DOnofrio2014"
 
 \end_inset
 
-.
+).
  It is practically impossible to scan the parameters of a theory of beyond
  standard model (BSM) physics using this method.
  In the BSM context one largely has to make do with a patchwork of semi-empirica
 l curve fitting methods to connect the small scale physics (the fundamental
  parameters of the BSM model) with the large scale physics (phase transition
  thermodynamics and baryon yield).
- All of these methods require approximations which are somewhat suspect
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
+ All of these methods require approximations which are somewhat suspect.
  Thus, such cosmological observations are of limited usefulness for fundamental
  physics.
  New methods of calculation are required to bridge the gap between theory
@@ -790,16 +757,6 @@ reference "fig:ferromagnet"
 \end_inset
 
 .
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -987,20 +944,17 @@ hypercharge
 
 ) gain large masses by the Higgs mechanism.
  This technique is essential to model building in particle and condensed
- matter physics
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ matter physics, as the Higgs mechanism is the only known method to make
+ a consistent theory of massive non-abelian gauge bosons
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
 
 \end_inset
 
-, as the Higgs mechanism is the only known method to make a consistent theory
- of massive non-abelian gauge bosons
+
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Another method by St
@@ -1016,17 +970,7 @@ status open
 
 \end_inset
 
-ckleberg
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-spelling?
-\end_layout
-
-\end_inset
-
- can be used to construct theories of massive 
+ckelberg can be used to construct theories of massive 
 \begin_inset Formula $\mathrm{U}\left(1\right)$
 \end_inset
 
@@ -1039,12 +983,10 @@ only
 \end_inset
 
  gauge bosons.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ See, e.g., 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "RUEGG2004"
 
 \end_inset
 
@@ -1064,47 +1006,26 @@ Unfortunately,
 \end_inset
 
 PIEAs are known to violate symmetries when they are truncated to a form
- that can be solved in practice.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ that can be solved in practice (see, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
 
 \end_inset
 
+ and references therein).
  This thesis focuses on theories with global symmetries because the issues
  faced by 
 \begin_inset Formula $n$
 \end_inset
 
 PIEAs are similar for global and gauge symmetries, the main difference being
- one of complexity
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
-.
+ one of complexity.
  The symmetries of a quantum field theory are embodied in a set of 
 \emph on
 Ward identities
 \emph default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
 
 \begin_inset Foot
 status collapsed
@@ -1112,12 +1033,10 @@ status collapsed
 \begin_layout Plain Layout
 The analogous identities for abelian gauge theories are called Ward-Takahashi
  identities and for non-abelian gauge theories Slavnov-Taylor identities
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs
-\end_layout
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Zinn-Justin1990"
 
 \end_inset
 
@@ -1174,6 +1093,13 @@ Goldstone
 
 ) boson
 \emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Goldstone1962"
+
+\end_inset
+
 .
  This has profound phenomenological consequences as the existence of massless
  bosons generates long range interactions which do not exist in a purely
@@ -1279,17 +1205,8 @@ soft symmetry improvement
  improved effective actions, as well as a novel limit which is examined
  in detail.
  Unfortunately the novel limit is pathological, but the nature of the pathology
- hopefully
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-weasel?
-\end_layout
-
-\end_inset
-
- sheds some light on the difficulty of handling symmetries in 
+ hopefully sheds some light on the difficulty of handling symmetries in
+ 
 \begin_inset Formula $n$
 \end_inset
 
@@ -1596,7 +1513,7 @@ key "ThePlanckCollaboration2013"
 
  is in agreement
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Planck measured the parameter 
@@ -1731,17 +1648,7 @@ If the BAU cannot be the result of an asymmetric initial condition it must
 baryogenesis
 \emph default
 .
- Numerous recent reviews of popular scenarios are available
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE??!
-\end_layout
-
-\end_inset
-
- 
+ Numerous recent reviews of popular scenarios are available 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Cline2006,Dine2003,Morrissey2012,Riotto1999,Shaposhnikov2009,Trodden1998,Trodden2004"
@@ -1763,7 +1670,7 @@ key "Sakharov1991,Dine2003"
 
  from a symmetrical initial state
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Note that, although the Sakharov's original paper dealt with a particular
@@ -3047,7 +2954,7 @@ Due to an ordering interaction of the Higgs field, the electrically neutral
  becomes the massless photon.
  The masses of the weak gauge bosons are
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Note that the relation between 
@@ -3559,7 +3466,7 @@ reference "chap:chap2"
 
  which serves to renormalise
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This ignores the logarithmic Coleman-Weinberg terms, which can be justified
@@ -4848,16 +4755,6 @@ REFs?
 \end_inset
 
  Another important question concerns the gauge dependence of the formalism.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE ALL THIS!!!
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5079,12 +4976,9 @@ The generalisation to curved spacetimes is in some respects straightforward
  In any event, quantum field theory in curved spacetime is standard lore
  (see, e.g.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CITE
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Birrell1984"
 
 \end_inset
 
@@ -5158,12 +5052,9 @@ wavefunctional
 .
  However, in QFT it is often far more convenient to use the functional integral
  formalism, originally due to Feynman 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-CITE
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Feynman2010"
 
 \end_inset
 
@@ -5792,7 +5683,7 @@ where
 
 Using
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Recall from basic QM that 
@@ -6095,7 +5986,7 @@ any
 \emph default
  physically reasonable initial and final states
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The only condition is that they have non-zero overlap with the vacuum state.
@@ -6129,7 +6020,7 @@ reference "eq:phi-eigenstate-transition-amplitude-pi"
  vacuum, state.
  So finally in the limit only the vacuum-to-vacuum matrix element survives
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 This assumes that the vacuum state is non-degenerate and separated by a
@@ -6516,8 +6407,8 @@ The formalisms sketched above for vacuum and finite temperature field theory
  can be naturally generalised to the contour or non-equilibrium Green function
  method which also allows the treatment of non-equilibrium field theory.
  The contour method has been used extensively in various fields of condensed
- matter and particle physics, from molecular transport and ultracold atomic
- gases to nanoelectronics, nuclear physics and cosmology.
+ matter and particle physics, from molecular transport and ultra-cold atomic
+ gases to nano-electronics, nuclear physics and cosmology.
  The research literature using these techniques is vast, and there are good
  recent books introducing them in condensed matter 
 \begin_inset CommandInset citation
@@ -6578,16 +6469,6 @@ key "Kita2010"
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Stefanucci2013"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Primary refs???
-\end_layout
 
 \end_inset
 
@@ -7063,16 +6944,12 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Keldysh-components-of"
 
 \end_inset
 
-
-\lang australian
 Keldysh components for any function 
 \begin_inset Formula $k\left(z,z'\right)$
 \end_inset
@@ -7963,16 +7840,12 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\lang british
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Langreth-rules"
 
 \end_inset
 
-
-\lang australian
 Langreth rules for convolutions and products (with 
 \begin_inset Formula $f\cdot g\equiv\int_{0}^{\infty}\mathrm{d}t\ f\left(t\right)g\left(t\right)$
 \end_inset
