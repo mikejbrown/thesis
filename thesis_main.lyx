@@ -201,7 +201,8 @@ target "https://github.com/mikejbrown/thesis"
 \end_inset
 
 .
- This pdf has been built from the following version of the source: 
+ This document has been built from the following version of the source:
+ 
 \begin_inset CommandInset include
 LatexCommand input
 preview true
