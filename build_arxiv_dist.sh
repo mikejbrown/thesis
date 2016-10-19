@@ -56,7 +56,8 @@ sed -i -e 's/\\bibliography{refs}//' thesis_main.tex
 
 echo
 echo "Cleaning auxiliary files..."
-rm *.aux *.log *.{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15} *.mp *.t{1,2,3,4,5,6}
+rm *.aux # comment this if you want the aux files to extract a trimmed bibtex database
+rm *.log *.{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15} *.mp *.t{1,2,3,4,5,6}
 rm refs.bib
 rm thesis_main.blg thesis_main.lof thesis_main.lot thesis_main.out thesis_main.toc
 rm thesis_main.pdf
