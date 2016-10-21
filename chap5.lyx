@@ -3569,8 +3569,7 @@ x & =\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right),
 \begin_inset Formula 
 \begin{align}
 \frac{\lambda}{3}x-z & =\frac{\lambda}{3}\left[\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right)\right]-\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)\nonumber \\
- & =\left(N+2\right)\frac{T^{2}}{12\bar{X}}-\left(N+1\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\frac{\lambda}{3}T_{H}\nonumber \\
- & =\frac{1}{\bar{X}}\left(\frac{T^{2}}{12}-T_{H}\right)\geq0,
+ & =\left(N+2\right)\frac{T^{2}}{12\bar{X}}-\left(N+1\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\frac{\lambda}{3}T_{H}=\frac{1}{\bar{X}}\left(\frac{T^{2}}{12}-T_{H}\right)\geq0,
 \end{align}
 
 \end_inset
@@ -3945,9 +3944,8 @@ Unfortunately the goals of this program cannot be fully realised in the
 
  in the limit in order to obtain non-trivial behaviour.
  Three consistent limiting behaviours were found.
- One of these is equivalent to the unimproved 2PIEA which has already been
- studied.
- Another is equivalent to the SI-2PIEA which has also been studied previously.
+ Two of these are equivalent to the unimproved 2PIEA and SI-2PIEA, respectively,
+ both of which have been studied previously.
  The remaining case is a novel one and was studied in detail in section
  
 \begin_inset CommandInset ref

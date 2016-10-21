@@ -2579,7 +2579,17 @@ The equations of motion are
 \frac{\partial\Gamma^{\left(3\right)}/VT}{\partial v} & =\ell_{0}m^{3}+B\int_{xz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\bar{V}\left(x,y,z\right),\label{eq:si3pi-v-eom}\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{G}\left(r,s\right)} & =-B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right),\label{eq:si3pi-deltaG-eom}\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{H}\left(r,s\right)} & =B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,r\right)\Delta_{H}^{-1}\left(s,y\right),\label{eq:si3pi-deltaN-eom}\\
-\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\delta^{\left(4\right)}\left(x-r\right)\delta^{\left(4\right)}\left(y-s\right)\delta^{\left(4\right)}\left(z-t\right),\label{eq:si3pi-barV-eom}\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\delta^{\left(4\right)}\left(x-r\right)\delta^{\left(4\right)}\left(y-s\right)\delta^{\left(4\right)}\left(z-t\right),\label{eq:si3pi-barV-eom}
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
 \frac{\delta\Gamma^{\left(3\right)}}{\delta V_{N}\left(r,s,t\right)} & =0,\label{eq:si3pi-VN-eom}\\
 \mathcal{W}_{1} & =0,\label{eq:si3pi-deltaG-WI}\\
 \mathcal{W}_{2} & =0,\label{eq:si3pi-barV-WI}
@@ -2772,9 +2782,19 @@ Convolving with the inverse propagators
 \begin_inset Formula 
 \begin{multline}
 -\frac{\hbar^{2}}{2}\left(N-1\right)\left(\bar{V}\left(a,b,c\right)+\frac{\lambda v}{3}\delta\left(a-b\right)\delta\left(a-c\right)\right)+\mathcal{O}\left(\hbar^{3}\right)\\
-=vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,a\right)\Delta_{G}^{-1}\left(y,b\right)\Delta_{G}^{-1}\left(z,c\right)\\
-=\left[B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,a\right)\Delta_{G}^{-1}\left(y,b\right)\right]\mathcal{W}_{1}.
+=vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,a\right)\Delta_{G}^{-1}\left(y,b\right)\Delta_{G}^{-1}\left(z,c\right),
 \end{multline}
+
+\end_inset
+
+which can be recognised as
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\left[B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,a\right)\Delta_{G}^{-1}\left(y,b\right)\right]\mathcal{W}_{1}.
+\end{equation}
 
 \end_inset
 

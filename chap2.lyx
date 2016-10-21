@@ -580,8 +580,41 @@ where the first term is the quadratic part of the Lagrangian,
 \begin_inset Formula 
 \begin{eqnarray}
 Z\left[J\right] & = & \int\mathcal{D}\left[\phi\right]\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(\phi\right)\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
- & = & \int\mathcal{D}\left[\phi\right]\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
- & = & \exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
+ & = & \int\mathcal{D}\left[\phi\right]\exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right].
+\end{eqnarray}
+
+\end_inset
+
+The 
+\begin_inset Formula $V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)$
+\end_inset
+
+ term can now be extracted from the integral
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+It is this step that is responsible for the asymptotic nature of perturbation
+ theory, c.f.
+ section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Analytic-properties-of-2PIEA-and-resummation"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, giving
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+Z\left[J\right] & = & \exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\int\mathcal{D}\left[\phi\right]\exp\left[\frac{i}{\hbar}\left(\int_{x}\frac{1}{2}\phi\Delta_{0}^{-1}\phi+J\left(x\right)\phi\left(x\right)\right)\right]\nonumber \\
  & = & \exp\left[-\frac{i}{\hbar}\int_{x}V_{\mathrm{int}}\left(-i\hbar\frac{\delta}{\delta J}\right)\right]\exp\left[-\frac{i}{\hbar}\frac{1}{2}J\Delta_{0}J\right]Z\left[0\right],
 \end{eqnarray}
 
@@ -2938,7 +2971,7 @@ For easy copy'n'pasting:
 
 where
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -3194,11 +3227,21 @@ Delta_{eh}
 \backslash
 Delta_{fk}
 \backslash
-Delta_{il}, 
-\backslash
+Delta_{il},
+\end_layout
+
+\begin_layout Plain Layout
+
 
 \backslash
+end{eqnarray}
+\end_layout
 
+\begin_layout Plain Layout
+
+
+\backslash
+begin{eqnarray}
 \end_layout
 
 \begin_layout Plain Layout
