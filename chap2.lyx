@@ -2853,9 +2853,10 @@ s commute.
 .
  One has the bare propagator
 \begin_inset Formula 
-\begin{equation}
-\Delta_{0ab}^{-1}\left[\varphi\right]\left(x,y\right)=\left.\frac{\delta^{2}S}{\delta\phi_{a}\left(x\right)\delta\phi_{b}\left(y\right)}\right|_{\phi=\varphi}=-\left(\square_{x}\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}\left(x\right)+\frac{1}{2}\lambda_{abcd}\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)\right)\delta\left(x-y\right),
-\end{equation}
+\begin{align}
+\Delta_{0ab}^{-1}\left[\varphi\right]\left(x,y\right) & =\left.\frac{\delta^{2}S}{\delta\phi_{a}\left(x\right)\delta\phi_{b}\left(y\right)}\right|_{\phi=\varphi}\nonumber \\
+ & =-\left(\square_{x}\delta_{ab}+m_{ab}^{2}+g_{abc}\varphi_{c}\left(x\right)+\frac{1}{2}\lambda_{abcd}\varphi_{c}\left(x\right)\varphi_{d}\left(x\right)\right)\delta\left(x-y\right),
+\end{align}
 
 \end_inset
 

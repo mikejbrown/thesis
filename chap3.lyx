@@ -299,7 +299,7 @@ Without loss of generality
 \end_layout
 
 \begin_layout Standard
-The derivative term has a 
+The derivative term has an 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
@@ -1625,9 +1625,9 @@ is logarithmically divergent and requires renormalisation.
 
  are the finite thermal Bose-Einstein contributions
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{T}_{H/G}^{\mathrm{th}}=\int_{\boldsymbol{k}}\frac{1}{\sqrt{\boldsymbol{k}^{2}+m_{H/G}^{2}}}\frac{1}{\mathrm{e}^{\beta\sqrt{\boldsymbol{k}^{2}+m_{H/G}^{2}}}-1}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -2068,7 +2068,8 @@ reference "eq:SSB-ansatz-Delta"
  & -\left(N-1\right)\frac{i\hbar}{2}\mathrm{Tr}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{\lambda+\delta\lambda_{1}^{A}}{6}v^{2}\right)\Delta_{G}\right]\nonumber \\
  & -\frac{i\hbar}{2}\mathrm{Tr}\left[\left(ZZ_{\Delta}\square+m^{2}+\delta m_{1}^{2}+Z_{\Delta}\frac{3\lambda+\delta\lambda_{1}^{A}+2\delta\lambda_{1}^{B}}{6}v^{2}\right)\Delta_{H}\right]\nonumber \\
  & +Z_{\Delta}^{2}\frac{\hbar^{2}}{24}\left[\left(N+1\right)\lambda+\left(N-1\right)\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\left(N-1\right)\Delta_{G}\Delta_{G}\nonumber \\
- & +Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)}{12}\left(N-1\right)\Delta_{G}\Delta_{H}+Z_{\Delta}^{2}\frac{\hbar^{2}}{24}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\Delta_{H}\Delta_{H}+\mathcal{O}\left(\lambda^{2}\right),
+ & +Z_{\Delta}^{2}\frac{\hbar^{2}\left(\lambda+\delta\lambda_{2}^{A}\right)}{12}\left(N-1\right)\Delta_{G}\Delta_{H}\nonumber \\
+ & +Z_{\Delta}^{2}\frac{\hbar^{2}}{24}\left[3\lambda+\delta\lambda_{2}^{A}+2\delta\lambda_{2}^{B}\right]\Delta_{H}\Delta_{H}+\mathcal{O}\left(\lambda^{2}\right),
 \end{align}
 
 \end_inset
@@ -2520,7 +2521,7 @@ Higgs
 
  meson
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 The 

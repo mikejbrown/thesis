@@ -118,10 +118,9 @@ reference "eq:K-6pt-kernel-eom"
 
 , reproduced here
 \begin_inset Formula 
-\begin{align}
-\mathcal{K}_{abcdef} & =\delta_{ad}\delta_{be}\delta_{cf}+\frac{1}{3!}\sum_{\pi}\left(-\frac{3i\hbar}{2}\right)\delta_{\pi\left(a\right)h}\nonumber \\
- & \times W_{\pi\left(b\right)\pi\left(c\right)kg}\Delta_{ki}^{\mu}\Delta_{gj}^{\mu}\mathcal{K}_{hijdef}.
-\end{align}
+\begin{equation}
+\mathcal{K}_{abcdef}=\delta_{ad}\delta_{be}\delta_{cf}+\frac{1}{3!}\sum_{\pi}\left(-\frac{3i\hbar}{2}\right)\delta_{\pi\left(a\right)h}W_{\pi\left(b\right)\pi\left(c\right)kg}\Delta_{ki}^{\mu}\Delta_{gj}^{\mu}\mathcal{K}_{hijdef}.
+\end{equation}
 
 \end_inset
 
@@ -810,9 +809,10 @@ reference "chap:Appendix-Renormalisation-Details"
  term and the addition of the three loop diagrams 
 \begin_inset Formula 
 \begin{align}
-\Phi_{3} & =Z_{V}^{4}Z_{\Delta}^{6}\left[\left(N-1\right)\frac{i\hbar^{3}}{3!}V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{3}+\frac{i\hbar^{3}}{4!}\left(V_{N}\right)^{4}\left(\Delta_{H}\right)^{6}+\left(N-1\right)\frac{i\hbar^{3}}{8}\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{4}\right],\\
-\Phi_{4} & =\frac{i\hbar^{3}\left(\lambda+\delta\lambda\right)}{24}Z_{V}^{2}Z_{\Delta}^{5}\left[2\left(N-1\right)\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}\Delta_{G}\right.+\left(N^{2}-1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{4}+3V_{N}V_{N}\left(\Delta_{H}\right)^{5}\nonumber \\
- & \left.+2^{2}\left(N-1\right)\bar{V}\bar{V}\left(\Delta_{G}\right)^{3}\Delta_{H}\Delta_{H}\right],\\
+\Phi_{3} & =Z_{V}^{4}Z_{\Delta}^{6}\left[\left(N-1\right)\frac{i\hbar^{3}}{3!}V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{3}+\frac{i\hbar^{3}}{4!}\left(V_{N}\right)^{4}\left(\Delta_{H}\right)^{6}\right.\nonumber \\
+ & \left.+\left(N-1\right)\frac{i\hbar^{3}}{8}\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{4}\right],\\
+\Phi_{4} & =\frac{i\hbar^{3}\left(\lambda+\delta\lambda\right)}{24}Z_{V}^{2}Z_{\Delta}^{5}\left[2\left(N-1\right)\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}\Delta_{G}\right.+\left(N^{2}-1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{4}\nonumber \\
+ & \left.+3V_{N}V_{N}\left(\Delta_{H}\right)^{5}+2^{2}\left(N-1\right)\bar{V}\bar{V}\left(\Delta_{G}\right)^{3}\Delta_{H}\Delta_{H}\right],\\
 \Phi_{5} & =\frac{i\hbar^{3}\left(\lambda+\delta\lambda\right)^{2}}{144}Z_{\Delta}^{4}\left\{ \left[\left(N-1\right)\Delta_{G}\Delta_{G}+\Delta_{H}\Delta_{H}\right]^{2}+2\left(N-1\right)\left(\Delta_{G}\right)^{4}+2\left(\Delta_{H}\right)^{4}\right\} .
 \end{align}
 
@@ -848,8 +848,7 @@ for the Goldstone propagator,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-\bar{V} & =-\frac{\left(\lambda+\delta\lambda_{C}\right)v}{3}Z_{V}^{-1}\nonumber \\
- & +i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[V_{N}\left(\bar{V}\right)^{2}\left(\Delta_{H}\right)^{2}\Delta_{G}+\left(\bar{V}\right)^{3}\Delta_{H}\left(\Delta_{G}\right)^{2}\right]\nonumber \\
+\bar{V} & =-\frac{\left(\lambda+\delta\lambda_{C}\right)v}{3}Z_{V}^{-1}+i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[V_{N}\left(\bar{V}\right)^{2}\left(\Delta_{H}\right)^{2}\Delta_{G}+\left(\bar{V}\right)^{3}\Delta_{H}\left(\Delta_{G}\right)^{2}\right]\nonumber \\
  & +\frac{i\hbar\left(\lambda+\delta\lambda\right)}{6}Z_{\Delta}^{2}\left[V_{N}\left(\Delta_{H}\right)^{2}+\left(N+1\right)\bar{V}\left(\Delta_{G}\right)^{2}+4\bar{V}\Delta_{G}\Delta_{H}\right],\label{eq:three-loop-Vbar-eom}
 \end{align}
 
@@ -861,8 +860,7 @@ for the Higgs-Goldstone-Goldstone vertex,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-V_{N} & =-\left(\lambda+\delta\lambda_{C}\right)vZ_{V}^{-1}\nonumber \\
- & +i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[\left(N-1\right)\left(\bar{V}\right)^{3}\left(\Delta_{G}\right)^{3}+\left(V_{N}\right)^{3}\left(\Delta_{H}\right)^{3}\right]\nonumber \\
+V_{N} & =-\left(\lambda+\delta\lambda_{C}\right)vZ_{V}^{-1}+i\hbar Z_{V}^{2}Z_{\Delta}^{3}\left[\left(N-1\right)\left(\bar{V}\right)^{3}\left(\Delta_{G}\right)^{3}+\left(V_{N}\right)^{3}\left(\Delta_{H}\right)^{3}\right]\nonumber \\
  & +\frac{i\hbar\left(\lambda+\delta\lambda\right)}{2}Z_{\Delta}^{2}\left[\left(N-1\right)\bar{V}\Delta_{G}\Delta_{G}+3V_{N}\left(\Delta_{H}\right)^{2}\right],\label{eq:three-loop-V_N-eom}
 \end{align}
 
@@ -928,10 +926,9 @@ reference "eq:three-loop-Delta_G-eom"
 
  as 
 \begin_inset Formula 
-\begin{align}
-\Delta_{G}^{-1} & =-\left(\partial_{\mu}\partial^{\mu}+m^{2}+\frac{\lambda}{6}v^{2}\right)\nonumber \\
- & -\left[\Sigma_{G}^{0}\left(p\right)-\Sigma_{G}^{0}\left(m_{G}\right)\right]-\Sigma_{G}^{\infty}\left(p\right),
-\end{align}
+\begin{equation}
+\Delta_{G}^{-1}=-\left(\partial_{\mu}\partial^{\mu}+m^{2}+\frac{\lambda}{6}v^{2}\right)-\left[\Sigma_{G}^{0}\left(p\right)-\Sigma_{G}^{0}\left(m_{G}\right)\right]-\Sigma_{G}^{\infty}\left(p\right),
+\end{equation}
 
 \end_inset
 
@@ -939,7 +936,8 @@ reference "eq:three-loop-Delta_G-eom"
 \begin_inset Formula 
 \begin{align}
 -\Sigma_{G}^{0}\left(p\right) & =-\frac{\hbar}{6}\left(N+1\right)\lambda\left(\mathcal{T}_{G}-\mathcal{T}^{\mu}\right)-\frac{\hbar}{6}\lambda\left(\mathcal{T}_{H}-\mathcal{T}^{\mu}\right)\nonumber \\
- & -i\hbar\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}+\hbar^{2}\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
+ & -i\hbar\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}\nonumber \\
+ & +\hbar^{2}\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
  & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}}{3}\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
  & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)^{2}Z_{\Delta}^{4}}{18}\left[\left(N+1\right)\left(\Delta_{G}\right)^{3}+\Delta_{H}\Delta_{H}\Delta_{G}-\left(N+2\right)\mathcal{B}^{\mu}\right],
 \end{align}
@@ -958,7 +956,8 @@ and
  & -\frac{\hbar}{6}\lambda\mathcal{T}^{\mu}-\frac{\hbar}{6}\delta\lambda_{2}^{A}\mathcal{T}_{H}-\frac{\hbar}{6}\left(\lambda+\delta\lambda_{2}^{A}\right)\left(Z_{\Delta}^{2}-1\right)\mathcal{T}_{H}\nonumber \\
  & -i\hbar\left(Z_{V}^{2}Z_{\Delta}^{3}-1\right)\left[-2\frac{\left(\lambda+\delta\lambda_{C}\right)Z_{V}^{-1}v}{3}-\bar{V}\right]\Delta_{H}\Delta_{G}\bar{V}\nonumber \\
  & +\hbar^{2}\left(Z_{V}^{4}Z_{\Delta}^{6}-1\right)\left[V_{N}\left(\bar{V}\right)^{3}\left(\Delta_{H}\right)^{3}\left(\Delta_{G}\right)^{2}+\left(\bar{V}\right)^{4}\Delta_{H}\Delta_{H}\left(\Delta_{G}\right)^{3}\right]\nonumber \\
- & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}}{3}\left(Z_{V}^{2}Z_{\Delta}^{3}-1\right)\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
+ & +\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)Z_{\Delta}^{2}}{3}\left(Z_{V}^{2}Z_{\Delta}^{3}-1\right)\nonumber \\
+ & \times\left[\bar{V}V_{N}\left(\Delta_{H}\right)^{3}\Delta_{G}+\left(N+1\right)\bar{V}\bar{V}\Delta_{H}\left(\Delta_{G}\right)^{3}+3\bar{V}\bar{V}\left(\Delta_{G}\right)^{2}\Delta_{H}\Delta_{H}\right]\nonumber \\
  & +\left(N+2\right)\frac{\hbar^{2}\left(\lambda+\delta\lambda\right)^{2}Z_{\Delta}^{4}}{18}\mathcal{B}^{\mu},
 \end{align}
 

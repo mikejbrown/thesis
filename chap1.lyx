@@ -1546,9 +1546,9 @@ key "Canetti2012,Weinberg2008"
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
+\begin{equation}
 \eta=\left(6.05\pm0.09\right)\times10^{-10}.
-\]
+\end{equation}
 
 \end_inset
 
@@ -4349,9 +4349,9 @@ It is possible to investigate new physics in a fairly model independent
  with only the SM degrees of freedom.
  The new physics manifests as additional operators in the Lagrangian:
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathcal{L}=\mathcal{L}_{\mathrm{SM}}+\sum_{i}\frac{1}{\Lambda}c_{i}^{\left(5\right)}\mathcal{O}_{i}^{\left(5\right)}+\sum_{i}\frac{1}{\Lambda^{2}}c_{i}^{\left(6\right)}\mathcal{O}_{i}^{\left(6\right)}+\mathcal{O}\left(\frac{1}{\Lambda^{3}}\right),
-\]
+\end{equation}
 
 \end_inset
 
@@ -4676,10 +4676,9 @@ key "Dine1992,Linde2005,Shifman2012"
 
 ) is, to leading semi-classical order,
 \begin_inset Formula 
-\begin{align}
-\frac{\Gamma}{V} & =\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\nonumber \\
- & \times\left[1+\mathcal{O}\left(\hbar\right)\right],
-\end{align}
+\begin{equation}
+\frac{\Gamma}{V}=\mathrm{e}^{-B/\hbar}\frac{B^{2}}{4\pi^{2}\hbar^{2}}\left|\frac{\det'\left[-\partial^{2}+U''\left(\bar{\phi}\right)\right]}{\det\left[-\partial^{2}+U''\left(\phi_{+}\right)\right]}\right|^{-\frac{1}{2}}\left[1+\mathcal{O}\left(\hbar\right)\right],
+\end{equation}
 
 \end_inset
 
@@ -4705,11 +4704,14 @@ and
 
  is the solution of the Euclidean (imaginary time) equations of motion with
  
-\begin_inset Formula $\phi\left(x_{E}\to\infty\right)=\phi_{+}$
+\begin_inset Formula 
+\begin{equation}
+\mbox{\phi\left(x\to\infty\right)=\phi_{+}}.
+\end{equation}
+
 \end_inset
 
-.
- The prime on 
+The prime on 
 \begin_inset Formula $\det'$
 \end_inset
 
@@ -5704,8 +5706,7 @@ where
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
- &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\nonumber \\
- &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
+ &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
 \end{eqnarray}
 
 \end_inset
@@ -5905,7 +5906,7 @@ reference "eq:phi-eigenstate-transition-amplitude-pi"
 Then
 \begin_inset Formula 
 \begin{equation}
-\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\hat{\phi}\left(x_{2}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
+\Braket{\phi_{f}\left(x\right);\Sigma_{f}|\mathrm{T}\left[\hat{\phi}\left(x_{1}\right)\cdots\hat{\phi}\left(x_{n}\right)\right]|\phi_{i}\left(x\right);\Sigma_{i}}=\left.\left(-i\hbar\frac{\delta}{\delta J\left(x_{1}\right)}\right)\cdots\left(-i\hbar\frac{\delta}{\delta J\left(x_{n}\right)}\right)\mathcal{A}_{fi}\left[J\left(x\right)\right]\right|_{J\to0}
 \end{equation}
 
 \end_inset

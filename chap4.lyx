@@ -1640,10 +1640,9 @@ PI) expansion is generally only valid within a finite energy range about
  Now one can add and subtract an integral with the same UV asymptotic behaviour
  as the divergent integral: 
 \begin_inset Formula 
-\begin{align}
-\int_{q}i\Delta_{G/H}\left(q\right) & =\int_{q}\left[i\Delta_{G/H}\left(q\right)-\frac{i}{q^{2}-\mu^{2}+i\epsilon}\right]\nonumber \\
- & +\int_{q}\frac{i}{q^{2}-\mu^{2}+i\epsilon},
-\end{align}
+\begin{equation}
+\int_{q}i\Delta_{G/H}\left(q\right)=\int_{q}\left[i\Delta_{G/H}\left(q\right)-\frac{i}{q^{2}-\mu^{2}+i\epsilon}\right]+\int_{q}\frac{i}{q^{2}-\mu^{2}+i\epsilon},
+\end{equation}
 
 \end_inset
 
@@ -1691,11 +1690,14 @@ where
 
  respectively.
  The pole condition requires 
-\begin_inset Formula $\Sigma_{G/H}\left(p^{2}=m_{G/H}^{2}\right)=0$
+\begin_inset Formula 
+\begin{equation}
+\Sigma_{G/H}\left(p^{2}=m_{G/H}^{2}\right)=0.
+\end{equation}
+
 \end_inset
 
-.
- It is useful to introduce the auxiliary propagator 
+It is useful to introduce the auxiliary propagator 
 \begin_inset Formula $\Delta_{G/H}^{\mu}=\left(p^{2}-\mu^{2}-\Sigma_{G/H}^{a}\left(p\right)\right)^{-1}$
 \end_inset
 
@@ -1711,8 +1713,7 @@ where
  as
 \begin_inset Formula 
 \begin{align}
-\Delta_{G/H}\left(p\right) & =\Delta_{G/H}^{\mu}\left(p\right)\nonumber \\
- & +\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{2}\left(m_{G/H}^{2}-\mu^{2}+\Sigma_{G/H}^{0}+\Sigma_{G/H}^{r}\right)\nonumber \\
+\Delta_{G/H}\left(p\right) & =\Delta_{G/H}^{\mu}\left(p\right)+\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{2}\left(m_{G/H}^{2}-\mu^{2}+\Sigma_{G/H}^{0}+\Sigma_{G/H}^{r}\right)\nonumber \\
  & +\mathcal{O}\left(\left[\Delta_{G/H}^{\mu}\left(p\right)\right]^{3}\left[\Sigma_{G/H}^{0}\left(p\right)\right]^{2}\right).
 \end{align}
 
@@ -2488,13 +2489,13 @@ where the left hand sides are
 
 \begin_layout Standard
 \begin_inset Formula 
-\begin{eqnarray}
-\frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & = & \frac{\delta S}{\delta\varphi_{a}}+\frac{i\hbar}{2}V_{0abc}\Delta_{cb}+\frac{\hbar^{2}}{3!}W_{abcd}\Delta_{be}\Delta_{cf}\Delta_{dg}V_{efg}+\mathcal{O}\left(\hbar^{3}\right),\\
-\frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & = & -\frac{i\hbar}{2}\left(\Delta_{ab}^{-1}+\mathrm{Tr}\Delta_{0ab}^{-1}-\Sigma_{ab}\right)+\mathcal{O}\left(\hbar^{4}\right),\\
-\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & = & \frac{\hbar^{2}}{3!}\left(V_{0def}-V_{def}\right)\Delta_{ad}\Delta_{be}\Delta_{cf}+\frac{i\hbar^{3}}{3!}V_{def}V_{ghi}V_{jkl}\Delta_{ad}\Delta_{bg}\Delta_{cj}\Delta_{eh}\Delta_{fk}\Delta_{il}\nonumber \\
- &  & -\frac{i\hbar^{3}}{4}W_{hijd}V_{efg}\left(\frac{1}{3}\Delta_{ah}\Delta_{bi}\Delta_{ej}\Delta_{df}\Delta_{cg}+\text{cyclic permutations }\left(a\to b\to c\to a\right)\right)\nonumber \\
- &  & +\mathcal{O}\left(\hbar^{4}\right),\label{eq:3pi-vertex-eom-lhs}
-\end{eqnarray}
+\begin{align}
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\varphi_{a}} & =\frac{\delta S}{\delta\varphi_{a}}+\frac{i\hbar}{2}V_{0abc}\Delta_{cb}+\frac{\hbar^{2}}{3!}W_{abcd}\Delta_{be}\Delta_{cf}\Delta_{dg}V_{efg}+\mathcal{O}\left(\hbar^{3}\right),\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{ab}} & =-\frac{i\hbar}{2}\left(\Delta_{ab}^{-1}+\mathrm{Tr}\Delta_{0ab}^{-1}-\Sigma_{ab}\right)+\mathcal{O}\left(\hbar^{4}\right),\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta V_{abc}} & =\frac{\hbar^{2}}{3!}\left(V_{0def}-V_{def}\right)\Delta_{ad}\Delta_{be}\Delta_{cf}+\frac{i\hbar^{3}}{3!}V_{def}V_{ghi}V_{jkl}\Delta_{ad}\Delta_{bg}\Delta_{cj}\Delta_{eh}\Delta_{fk}\Delta_{il}\nonumber \\
+ & -\frac{i\hbar^{3}}{4}W_{hijd}V_{efg}\left(\frac{1}{3}\Delta_{ah}\Delta_{bi}\Delta_{ej}\Delta_{df}\Delta_{cg}+\text{cyclic permutations }\left(a\to b\to c\to a\right)\right)\nonumber \\
+ & +\mathcal{O}\left(\hbar^{4}\right),\label{eq:3pi-vertex-eom-lhs}
+\end{align}
 
 \end_inset
 
@@ -2578,8 +2579,7 @@ The equations of motion are
 \frac{\partial\Gamma^{\left(3\right)}/VT}{\partial v} & =\ell_{0}m^{3}+B\int_{xz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\bar{V}\left(x,y,z\right),\label{eq:si3pi-v-eom}\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{G}\left(r,s\right)} & =-B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right),\label{eq:si3pi-deltaG-eom}\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta\Delta_{H}\left(r,s\right)} & =B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{H}^{-1}\left(x,r\right)\Delta_{H}^{-1}\left(s,y\right),\label{eq:si3pi-deltaN-eom}\\
-\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\nonumber \\
- & \times\delta^{\left(4\right)}\left(x-r\right)\delta^{\left(4\right)}\left(y-s\right)\delta^{\left(4\right)}\left(z-t\right),\label{eq:si3pi-barV-eom}\\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =vB\int_{xyz}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\delta^{\left(4\right)}\left(x-r\right)\delta^{\left(4\right)}\left(y-s\right)\delta^{\left(4\right)}\left(z-t\right),\label{eq:si3pi-barV-eom}\\
 \frac{\delta\Gamma^{\left(3\right)}}{\delta V_{N}\left(r,s,t\right)} & =0,\label{eq:si3pi-VN-eom}\\
 \mathcal{W}_{1} & =0,\label{eq:si3pi-deltaG-WI}\\
 \mathcal{W}_{2} & =0,\label{eq:si3pi-barV-WI}
@@ -2746,8 +2746,7 @@ reference "eq:3piea"
  and displaying only the two loop terms explicitly gives 
 \begin_inset Formula 
 \begin{align}
-\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =-\frac{\hbar^{2}}{2}\left(N-1\right)\nonumber \\
- & \times\int_{xyz}\left(\bar{V}\left(x,y,z\right)+\frac{\lambda v}{3}\delta\left(x-y\right)\delta\left(x-z\right)\right)\nonumber \\
+\frac{\delta\Gamma^{\left(3\right)}}{\delta\bar{V}\left(r,s,t\right)} & =-\frac{\hbar^{2}}{2}\left(N-1\right)\int_{xyz}\left(\bar{V}\left(x,y,z\right)+\frac{\lambda v}{3}\delta\left(x-y\right)\delta\left(x-z\right)\right)\nonumber \\
  & \times\Delta_{H}\left(x,r\right)\Delta_{G}\left(y,s\right)\Delta_{G}\left(z,t\right)+\mathcal{O}\left(\hbar^{3}\right).
 \end{align}
 
@@ -2866,8 +2865,7 @@ where the 3PI symmetry improved self-energy
  is 
 \begin_inset Formula 
 \begin{align}
-\tilde{\Sigma}_{G}\left(r,s\right) & \equiv\frac{2i}{\hbar\left(N-1\right)}\left[\frac{\delta\Gamma_{3}}{\delta\Delta_{G}\left(r,s\right)}\right.\nonumber \\
- & \left.+B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right)\right].
+\tilde{\Sigma}_{G}\left(r,s\right) & \equiv\frac{2i}{\hbar\left(N-1\right)}\left[\frac{\delta\Gamma_{3}}{\delta\Delta_{G}\left(r,s\right)}+B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right)\right].
 \end{align}
 
 \end_inset
@@ -2880,10 +2878,8 @@ Substituting in
 \begin_inset Formula 
 \begin{align}
 \tilde{\Sigma}_{G}\left(r,s\right) & =\frac{i\hbar\lambda}{6}\mathrm{Tr}\left[\left(N+1\right)\Delta_{G}+\Delta_{H}\right]\delta^{\left(4\right)}\left(r-s\right)\nonumber \\
- & -i\hbar\int_{abcd}\left(\bar{V}\left(a,b,r\right)+\frac{2\lambda v}{3}\delta^{\left(4\right)}\left(a-r\right)\delta^{\left(4\right)}\left(b-r\right)\right)\nonumber \\
- & \times\bar{V}\left(c,d,s\right)\Delta_{H}\left(a,c\right)\Delta_{G}\left(b,d\right)\nonumber \\
- & +\frac{2i}{\hbar\left(N-1\right)}B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right)\nonumber \\
- & +\mathcal{O}\left(\hbar^{2}\right).
+ & -i\hbar\int_{abcd}\left(\bar{V}\left(a,b,r\right)+\frac{2\lambda v}{3}\delta^{\left(4\right)}\left(a-r\right)\delta^{\left(4\right)}\left(b-r\right)\right)\bar{V}\left(c,d,s\right)\Delta_{H}\left(a,c\right)\Delta_{G}\left(b,d\right)\nonumber \\
+ & +\frac{2i}{\hbar\left(N-1\right)}B\int_{xy}\frac{\delta f}{\delta\mathcal{W}_{2}\left(x,y\right)}\Delta_{G}^{-1}\left(x,r\right)\Delta_{G}^{-1}\left(s,y\right)+\mathcal{O}\left(\hbar^{2}\right).
 \end{align}
 
 \end_inset
@@ -4166,8 +4162,7 @@ The finite parts
 \begin_inset Formula 
 \begin{align}
 \mathcal{I}_{HG}^{\text{fin}}\left(p\right) & =\mathcal{I}_{HG}\left(p\right)-\mathcal{I}^{\mu},\\
-\mathcal{T}_{G/H}^{\text{fin}} & =\mathcal{T}_{G/H}-\mathcal{T}^{\mu}+i\left(m_{G/H}^{2}-\mu^{2}\right)\mathcal{I}^{\mu}\nonumber \\
- & -\int_{q}i\left[\Delta^{\mu}\left(q\right)\right]^{2}\Sigma^{\mu}\left(q\right),
+\mathcal{T}_{G/H}^{\text{fin}} & =\mathcal{T}_{G/H}-\mathcal{T}^{\mu}+i\left(m_{G/H}^{2}-\mu^{2}\right)\mathcal{I}^{\mu}-\int_{q}i\left[\Delta^{\mu}\left(q\right)\right]^{2}\Sigma^{\mu}\left(q\right),
 \end{align}
 
 \end_inset
@@ -4308,10 +4303,9 @@ where the six point kernel
 
  obeys the Bethe-Salpeter like equation 
 \begin_inset Formula 
-\begin{align}
-\mathcal{K}_{abcdef} & =\delta_{ad}\delta_{be}\delta_{cf}+\frac{1}{3!}\sum_{\pi}\left(-\frac{3i\hbar}{2}\right)\delta_{\pi\left(a\right)h}\nonumber \\
- & \times W_{\pi\left(b\right)\pi\left(c\right)kg}\Delta_{ki}^{\mu}\Delta_{gj}^{\mu}\mathcal{K}_{hijdef},\label{eq:K-6pt-kernel-eom}
-\end{align}
+\begin{equation}
+\mathcal{K}_{abcdef}=\delta_{ad}\delta_{be}\delta_{cf}+\frac{1}{3!}\sum_{\pi}\left(-\frac{3i\hbar}{2}\right)\delta_{\pi\left(a\right)h}W_{\pi\left(b\right)\pi\left(c\right)kg}\Delta_{ki}^{\mu}\Delta_{gj}^{\mu}\mathcal{K}_{hijdef},\label{eq:K-6pt-kernel-eom}
+\end{equation}
 
 \end_inset
 
@@ -6534,8 +6528,7 @@ discontinuity
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
--2i\mathrm{Im}\Sigma_{H} & \supset-i\hbar v\left[\left(-\frac{\lambda v}{3}\right)^{3}\frac{1}{-m_{H}^{2}}+\frac{\lambda}{6}\left(N+1\right)\left(-\frac{\lambda v}{3}\right)\right]\nonumber \\
- & \times\int_{\ell}2\pi\delta\left(\left(\ell-p\right)^{2}\right)2\pi\delta\left(\ell^{2}\right)\nonumber \\
+-2i\mathrm{Im}\Sigma_{H} & \supset-i\hbar v\left[\left(-\frac{\lambda v}{3}\right)^{3}\frac{1}{-m_{H}^{2}}+\frac{\lambda}{6}\left(N+1\right)\left(-\frac{\lambda v}{3}\right)\right]\int_{\ell}2\pi\delta\left(\left(\ell-p\right)^{2}\right)2\pi\delta\left(\ell^{2}\right)\nonumber \\
  & =i\hbar\frac{\lambda^{2}v^{2}}{3^{2}2}\left(N-1\right)\int_{\ell}2\pi\delta\left(\left(\ell-p\right)^{2}\right)2\pi\delta\left(\ell^{2}\right),
 \end{align}
 

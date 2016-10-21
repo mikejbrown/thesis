@@ -1746,9 +1746,8 @@ reference "eq:si-eom-phi-projected-scheme"
  and simplifying gives 
 \begin_inset Formula 
 \begin{align}
-0 & =\frac{1}{v}F_{fchd}\delta\varphi_{h}\left(z\right)m_{G}^{2}P_{fc}^{\perp}+\int_{y}\delta\Delta_{Na}^{-1}\left(z,y\right)P_{ad}^{\perp}\nonumber \\
- & -\frac{1}{v}\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)P_{db}^{\perp}\delta\varphi_{b}\left(y\right)-\frac{1}{v}P_{da}^{\perp}J_{a}\left(z\right)\nonumber \\
- & -\frac{1}{v}\int_{x}\delta\varphi_{g}\left(x\right)\tilde{\Delta}_{H}^{-1}\left(x,z\right)P_{gd}^{\perp}+i\int_{x}\delta\Delta_{ga}^{-1}\left(x,z\right)T_{ad}^{gN}.
+0 & =\frac{1}{v}F_{fchd}\delta\varphi_{h}\left(z\right)m_{G}^{2}P_{fc}^{\perp}+\int_{y}\delta\Delta_{Na}^{-1}\left(z,y\right)P_{ad}^{\perp}-\frac{1}{v}\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)P_{db}^{\perp}\delta\varphi_{b}\left(y\right)\nonumber \\
+ & -\frac{1}{v}P_{da}^{\perp}J_{a}\left(z\right)-\frac{1}{v}\int_{x}\delta\varphi_{g}\left(x\right)\tilde{\Delta}_{H}^{-1}\left(x,z\right)P_{gd}^{\perp}+i\int_{x}\delta\Delta_{ga}^{-1}\left(x,z\right)T_{ad}^{gN}.
 \end{align}
 
 \end_inset
