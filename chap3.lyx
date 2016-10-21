@@ -3341,9 +3341,9 @@ m_{H}^{2}=\frac{g}{N}\frac{v^{2}}{3}+\mathcal{O}\left(\frac{g}{N}\right),
 
 and the critical temperature
 \begin_inset Formula 
-\[
+\begin{equation}
 T_{\star}=\sqrt{\frac{12\bar{v}^{2}}{\hbar N}}+\mathcal{O}\left(\frac{1}{N}\right),
-\]
+\end{equation}
 
 \end_inset
 

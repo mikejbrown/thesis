@@ -1953,10 +1953,9 @@ only now
 
 Substituting this into the WI gives 
 \begin_inset Formula 
-\begin{align}
-0 & =-\frac{\lambda v^{2}}{3}\left(\delta\varphi_{N}\left(x\right)\delta_{ac}+\delta\varphi_{a}\left(x\right)\delta_{cN}\right)T_{aN}^{A}\nonumber \\
- & +\int_{y}\tilde{\Delta}_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\delta\varphi_{b}\left(y\right)-J_{a}T_{ac}^{A},
-\end{align}
+\begin{equation}
+0=-\frac{\lambda v^{2}}{3}\left(\delta\varphi_{N}\left(x\right)\delta_{ac}+\delta\varphi_{a}\left(x\right)\delta_{cN}\right)T_{aN}^{A}+\int_{y}\tilde{\Delta}_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\delta\varphi_{b}\left(y\right)-J_{a}T_{ac}^{A},
+\end{equation}
 
 \end_inset
 
