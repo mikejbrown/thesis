@@ -371,7 +371,7 @@ stiffness
  The motivation for this method is that the singular nature of the constraint
  in SI leads to pathological behaviour such as the non-existence of solutions
  in certain truncations and the breakdown of the theory out of equilibrium.
- In order to regulate the IR behaviour a box of finite volume is used and
+ In order to regulate the IR behaviour, a box of finite volume is used and
  the limit of infinite volume taken carefully.
  Three limiting regimes are found.
  Two are equivalent to the unimproved 2PIEA and SI-2PIEA respectively.

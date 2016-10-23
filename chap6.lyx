@@ -157,14 +157,14 @@ reference "chap:chap5"
  to avoid some of the problems of the symmetry improvement formalism, though
  this was also considered only in equilibrium.
  This chapter focuses on the extension to non-equilibrium problems, closely
- following the paper 
+ following the paper by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown_2016"
 
 \end_inset
 
- by the author.
+.
 \end_layout
 
 \begin_layout Standard

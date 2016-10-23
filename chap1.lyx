@@ -1656,7 +1656,7 @@ key "Cline2006,Dine2003,Morrissey2012,Riotto1999,Shaposhnikov2009,Trodden1998,Tr
 \end_inset
 
 .
- In 1967 Sakharov 
+ In 1967, Sakharov 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Sakharov1991,Dine2003"
@@ -1817,7 +1817,7 @@ key "Dine2003"
 \end_layout
 
 \begin_layout Standard
-Since the time of Sakharov numerous models have been proposed that satisfy
+Since the time of Sakharov, numerous models have been proposed that satisfy
  the Sakharov criteria.
  A recent review counted 44 scenarios in the literature for generating the
  BAU 
@@ -3964,21 +3964,22 @@ Clearly the net baryon asymmetry produced by this mechanism depends on a
 \begin_inset Formula $CP$
 \end_inset
 
- violation in the reflection/transmission coefficients, how far do reflected
+ violation in the reflection/transmission coefficients; how far do reflected
  particles diffuse into the plasma ahead of the bubble wall and for how
- long, what is the rate of sphaleron transitions in the plasma ahead of
- and behind the bubble wall and how fast are other processes besides sphalerons
+ long; what is the rate of sphaleron transitions in the plasma ahead of
+ and behind the bubble wall; and how fast are other processes besides sphalerons
  which tend to wash out CP asymmetries (without producing B or L asymmetries)?
- The current practice for quantitative calculations is to calculate bubble
- wall reflection/transmission coefficients using a non-equilibrium quantum
- transport theory or semi-classical Boltzmann equation, using bubble wall
- velocities obtained from a hydrodynamic treatment and ignoring the back-reactio
-n of the generated asymmetries on the bubble wall; perform lattice Monte
- Carlo calculations of the sphaleron rate, in one of a few simplified models,
- in equilibrium at various temperatures to calibrate a semi-empirical formula
- which hopefully applies out of equilibrium to the required accuracy; and
- combine these elements in a network of continuity equations which are integrate
-d numerically to find the final baryon (and lepton) asymmetry 
+ The current practice for quantitative calculations is to: (1) calculate
+ bubble wall reflection/transmission coefficients using a non-equilibrium
+ quantum transport theory or semi-classical Boltzmann equation, using bubble
+ wall velocities obtained from a hydrodynamic treatment and ignoring the
+ back-reaction of the generated asymmetries on the bubble wall; (2) perform
+ lattice Monte Carlo calculations of the sphaleron rate, in one of a few
+ simplified models, in equilibrium at various temperatures to calibrate
+ a semi-empirical formula which hopefully applies out of equilibrium to
+ the required accuracy; and (3) combine these elements in a network of continuit
+y equations which are integrated numerically to find the final baryon (and
+ lepton) asymmetry 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Morrissey2012,Konstandin2013"
@@ -4302,7 +4303,8 @@ The obvious major problem facing EWBG scenarios is the order of the electroweak
  Typically perturbation theory is used since it is relatively easy to scan
  parameters, however perturbative results do not necessarily agree with
  more accurate (but harder to scan) lattice methods.
- See, e.g., 
+ See e.g.
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Chung2013"
@@ -7001,7 +7003,7 @@ Keldysh components for any function
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="4">
 <features tabularvalignment="middle">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="10page%">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top" width="0pt">

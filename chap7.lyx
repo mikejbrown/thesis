@@ -623,10 +623,11 @@ reference "chap:chap2"
 \end_inset
 
  is the investigation of the analytical properties of the 2PIEA in contrast
- to standard resummation schemes.The chief limitation of this study is that
- it only applies directly to the zero dimensional toy model.
- Perhaps the most significant extension of this work achievable with minimal
- effort would a study along the same lines for the quantum mechanical anharmonic
+ to standard resummation schemes.
+ The chief limitation of this study is that it only applies directly to
+ the zero dimensional toy model.
+ Perhaps the most significant extension of this work achievable in the near
+ term would a study along the same lines for the quantum mechanical anharmonic
  oscillator.
  As a one dimensional system there is a wide variety of relatively inexpensive
  techniques available to find numerical wavefunctions and energy levels
