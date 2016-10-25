@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    151634,       3306]
-NotebookOptionsPosition[    150011,       3248]
-NotebookOutlinePosition[    150355,       3263]
-CellTagsIndexPosition[    150312,       3260]
+NotebookDataLength[    152100,       3320]
+NotebookOptionsPosition[    150477,       3262]
+NotebookOutlinePosition[    150821,       3277]
+CellTagsIndexPosition[    150778,       3274]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2739,7 +2739,9 @@ Cell[BoxData[
             RowBox[{"Log10", "[", "#", "]"}], "\[Element]", " ", "Integers"}],
             ",", 
            RowBox[{"{", 
-            RowBox[{"#", ",", "#", ",", ".02"}], "}"}], ",", 
+            RowBox[{"#", ",", 
+             SuperscriptBox["\"\<10\>\"", 
+              RowBox[{"Log10", "[", "#", "]"}]], ",", ".02"}], "}"}], ",", 
            RowBox[{"{", 
             RowBox[{"#", ",", "\"\<\>\""}], "}"}]}], "]"}], "&"}], "/@", 
         RowBox[{"(", 
@@ -2760,7 +2762,8 @@ Cell[BoxData[
    3.6864075748034053`*^9, 3.686407582286405*^9}, 3.686407659529405*^9, {
    3.686407796872405*^9, 3.6864077972244053`*^9}, {3.6864078487694054`*^9, 
    3.6864078699844055`*^9}, {3.686407908753405*^9, 3.6864079441684055`*^9}, {
-   3.686407975855405*^9, 3.686407980080405*^9}}],
+   3.686407975855405*^9, 3.686407980080405*^9}, {3.6864086479204054`*^9, 
+   3.686408663785405*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {{}, 
@@ -2812,7 +2815,8 @@ BhR8ea/sATD+uLk=
   Ticks->{{{
       NCache[
        Log[10000], 9.210340371976184], 
-      FormBox["10000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "4"], TraditionalForm], 0.02}, {
       NCache[
        Log[20000], 9.903487552536127], 
       FormBox["\"\"", TraditionalForm]}, {
@@ -2839,10 +2843,12 @@ BhR8ea/sATD+uLk=
       FormBox["\"\"", TraditionalForm]}, {
       NCache[
        Log[100000], 11.512925464970229`], 
-      FormBox["100000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "5"], TraditionalForm], 0.02}, {
       NCache[
        Log[100000], 11.512925464970229`], 
-      FormBox["100000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "5"], TraditionalForm], 0.02}, {
       NCache[
        Log[200000], 12.206072645530174`], 
       FormBox["\"\"", TraditionalForm]}, {
@@ -2869,10 +2875,12 @@ BhR8ea/sATD+uLk=
       FormBox["\"\"", TraditionalForm]}, {
       NCache[
        Log[1000000], 13.815510557964274`], 
-      FormBox["1000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "6"], TraditionalForm], 0.02}, {
       NCache[
        Log[1000000], 13.815510557964274`], 
-      FormBox["1000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "6"], TraditionalForm], 0.02}, {
       NCache[
        Log[2000000], 14.508657738524219`], 
       FormBox["\"\"", TraditionalForm]}, {
@@ -2899,10 +2907,12 @@ BhR8ea/sATD+uLk=
       FormBox["\"\"", TraditionalForm]}, {
       NCache[
        Log[10000000], 16.11809565095832], 
-      FormBox["10000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "7"], TraditionalForm], 0.02}, {
       NCache[
        Log[10000000], 16.11809565095832], 
-      FormBox["10000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "7"], TraditionalForm], 0.02}, {
       NCache[
        Log[20000000], 16.811242831518264`], 
       FormBox["\"\"", TraditionalForm]}, {
@@ -2929,10 +2939,12 @@ BhR8ea/sATD+uLk=
       FormBox["\"\"", TraditionalForm]}, {
       NCache[
        Log[100000000], 18.420680743952367`], 
-      FormBox["100000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "8"], TraditionalForm], 0.02}, {
       NCache[
        Log[100000000], 18.420680743952367`], 
-      FormBox["100000000", TraditionalForm], 0.02}, {
+      FormBox[
+       SuperscriptBox["\"10\"", "8"], TraditionalForm], 0.02}, {
       NCache[
        Log[200000000], 19.11382792451231], 
       FormBox["\"\"", TraditionalForm]}, {
@@ -2959,13 +2971,15 @@ BhR8ea/sATD+uLk=
       FormBox["\"\"", TraditionalForm]}, {
       NCache[
        Log[1000000000], 20.72326583694641], 
-      FormBox["1000000000", TraditionalForm], 0.02}}, Automatic}]], "Output",
+      FormBox[
+       SuperscriptBox["\"10\"", "9"], TraditionalForm], 0.02}}, 
+    Automatic}]], "Output",
  CellChangeTimes->{
   3.685696509843*^9, 3.685699713763*^9, 3.6864070691984053`*^9, {
    3.686407331206405*^9, 3.6864073699744053`*^9}, 3.686407583167405*^9, 
    3.686407660225405*^9, 3.6864077979284053`*^9, {3.6864078493664055`*^9, 
    3.6864078702084055`*^9}, {3.686407909169405*^9, 3.686407944381405*^9}, {
-   3.686407976225405*^9, 3.686407980716405*^9}}]
+   3.686407976225405*^9, 3.686407980716405*^9}, 3.686408664858405*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2989,7 +3003,7 @@ Cell[BoxData[
 Cell[BoxData["\<\"C:\\\\Users\\\\Michael\\\\Dropbox\\\\PhD-thesis\\\\images\\\
 \\ch5\\\\ssi-spinodal-temps.eps\"\>"], "Output",
  CellChangeTimes->{3.685696510025*^9, 3.685699111907*^9, 3.685699717652*^9, 
-  3.6864070701024055`*^9, 3.686407993765405*^9}]
+  3.6864070701024055`*^9, 3.686407993765405*^9, 3.6864086703494053`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -3297,16 +3311,16 @@ Cell[121937, 2575, 7103, 131, 207, "Input"],
 Cell[129043, 2708, 155, 3, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[129235, 2716, 1892, 46, 57, "Input"],
-Cell[131130, 2764, 7331, 203, 395, "Output"]
+Cell[129235, 2716, 2032, 49, 57, "Input"],
+Cell[131270, 2767, 7633, 214, 397, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[138498, 2972, 600, 14, 52, "Input"],
-Cell[139101, 2988, 253, 3, 31, "Output"]
+Cell[138940, 2986, 600, 14, 52, "Input"],
+Cell[139543, 3002, 277, 3, 31, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[139391, 2996, 10022, 237, 352, "Input"],
-Cell[149416, 3235, 579, 10, 92, "Output"]
+Cell[139857, 3010, 10022, 237, 352, "Input"],
+Cell[149882, 3249, 579, 10, 92, "Output"]
 }, Open  ]]
 }
 ]
