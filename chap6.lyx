@@ -1225,7 +1225,7 @@ The first equation is simply the equilibrium constraint as expected since
 
 \end_inset
 
-The first term vanishes by virtue of zeroth order WI, thus 
+The first term vanishes by virtue of the zeroth order WI, thus 
 \begin_inset Formula 
 \begin{equation}
 \tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}=J_{a}T_{ac}^{A}.\label{eq:first-order-constraint-simple-scheme}
@@ -1610,8 +1610,8 @@ The first order constraint is
 
 \end_inset
 
-The second term vanishes due to zeroth order WI and the first term is just
- 
+The second term vanishes due to the zeroth order WI and the first term is
+ just 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:first-order-constraint-simple-scheme"

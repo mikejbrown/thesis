@@ -2681,7 +2681,7 @@ is
 \emph default
  satisfied.
  Further, it will be shown in the next chapter that the symmetry improvement
- method, which imposes 1PI style WI on the 2PI solution, restores the second
+ method, which imposes 1PI style WIs on the 2PI solution, restores the second
  order phase transition in the Hartree-Fock approximation.
  Thus the unphysical artefacts of the 2PIEA in the Hartree-Fock approximation
  can be understood as a result of the difference between the 1PI and 2PI

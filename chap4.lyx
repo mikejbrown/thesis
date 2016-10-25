@@ -126,8 +126,8 @@ key "Pilaftsis2013"
 \end_inset
 
  and references therein).
- The last chapter discussed the external propagator, which has been frequently
- used in the literature and does yield massless Goldstone bosons.
+ The last chapter discussed the external propagator method, which has been
+ frequently used in the literature and does yield massless Goldstone bosons.
  However, the external propagator is not the propagator used in loop graphs,
  so the loop corrections still contain massive Goldstone bosons leading
  to incorrect thresholds, decay rates and violations of unitarity.
@@ -1673,11 +1673,11 @@ where
 
  is the physical mass and the (renormalised) self-energies have been separated
  into pieces according to their asymptotic behaviour: 
-\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{c_{1}}$
+\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{d_{1}}$
 \end_inset
 
 , 
-\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{c_{2}}$
+\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{d_{2}}$
 \end_inset
 
  and 
@@ -3618,7 +3618,7 @@ reference "sec:The-Two-Loop-Solution"
 \end_inset
 
  implies that 
-\begin_inset Formula $f\left(\chi_{1},\chi_{2},\chi_{3}\right)\sim\chi^{\alpha}\left(\ln\chi\right)^{c_{3}}$
+\begin_inset Formula $f\left(\chi_{1},\chi_{2},\chi_{3}\right)\sim\chi^{\alpha}\left(\ln\chi\right)^{d_{3}}$
 \end_inset
 
 , where 
@@ -3791,11 +3791,11 @@ Recall that the asymptotic form of the self-energies as
 \end_inset
 
  is given by terms going like 
-\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{c_{1}}$
+\begin_inset Formula $\Sigma_{G/H}^{a}\left(p\right)\sim p^{2}\left(\ln p\right)^{d_{1}}$
 \end_inset
 
  and 
-\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{c_{2}}$
+\begin_inset Formula $\Sigma_{G/H}^{0}\sim\left(\ln p\right)^{d_{2}}$
 \end_inset
 
  .
@@ -3804,7 +3804,7 @@ Recall that the asymptotic form of the self-energies as
 \end_inset
 
  
-\begin_inset Formula $\int_{\ell}\ell^{3\alpha-6}\left(\ln\ell\right)^{3c_{3}-3c_{1}}\sim\chi^{3\alpha-2}\left(\ln\chi\right)^{3c_{3}-3c_{1}}$
+\begin_inset Formula $\int_{\ell}\ell^{3\alpha-6}\left(\ln\ell\right)^{3d_{3}-3d_{1}}\sim\chi^{3\alpha-2}\left(\ln\chi\right)^{3d_{3}-3d_{1}}$
 \end_inset
 
  if 
@@ -3812,7 +3812,7 @@ Recall that the asymptotic form of the self-energies as
 \end_inset
 
  or 
-\begin_inset Formula $\left(\ln\chi\right)^{1+3c_{3}-3c_{1}}$
+\begin_inset Formula $\left(\ln\chi\right)^{1+3d_{3}-3d_{1}}$
 \end_inset
 
  if 
@@ -3820,7 +3820,7 @@ Recall that the asymptotic form of the self-energies as
 \end_inset
 
 , which is dominated by the bubble graph which goes like 
-\begin_inset Formula $\int_{\ell}\ell^{\alpha-4}\left(\ln\ell\right)^{c_{3}-2c_{1}}\sim\chi^{\alpha}\left(\ln\chi\right)^{c_{3}-2c_{1}}$
+\begin_inset Formula $\int_{\ell}\ell^{\alpha-4}\left(\ln\ell\right)^{d_{3}-2d_{1}}\sim\chi^{\alpha}\left(\ln\chi\right)^{d_{3}-2d_{1}}$
 \end_inset
 
  if 
@@ -3828,7 +3828,7 @@ Recall that the asymptotic form of the self-energies as
 \end_inset
 
  or 
-\begin_inset Formula $\left(\ln\chi\right)^{1+c_{3}-2c_{1}}$
+\begin_inset Formula $\left(\ln\chi\right)^{1+d_{3}-2d_{1}}$
 \end_inset
 
  if 
@@ -5175,8 +5175,8 @@ reference "fig:hartree-fock-vev-comparison"
 \end_inset
 
  above the critical temperature.
- Note, however, that the unimproved and symmetry improved 3PIEA have unphysical
- metastable broken phases at 
+ Note, however, that the unimproved 2PIEA and symmetry improved 3PIEA have
+ unphysical metastable broken phases at 
 \begin_inset Formula $T>T_{\star}$
 \end_inset
 
@@ -5894,7 +5894,7 @@ status collapsed
 
 \begin_layout Plain Layout
 Note that this standard theory actually conflicts with the asymptotic 
-\begin_inset Formula $p^{2}\left(\ln p^{2}\right)^{c_{1}}$
+\begin_inset Formula $p^{2}\left(\ln p^{2}\right)^{d_{1}}$
 \end_inset
 
  form assumed for the self-energy when the 

@@ -1271,7 +1271,7 @@ Electroweak baryogenesis (EWBG) is a hypothetical process which may have
  responsible for the abundance of matter in the universe.
  EWBG is considered in this section as a case study of a real physics proposal
  intimately involving both non-perturbative and non-equilibrium aspects.
- As such, it is difficult compute accurate and reliable EWBG predictions
+ As such, it is difficult to compute accurate and reliable EWBG predictions
  from fundamental physics.
  The purpose of the following discussion is to highlight these aspects of
  EWBG, not to give a comprehensive review of the current state of the field.
@@ -5385,12 +5385,12 @@ microcausality
  Microcausality holds for the free field theory, but also for the interacting
  theories of physical interest
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
 The main exception being electromagnetism in the Coulomb gauge, which explicitly
  breaks Lorentz invariance.
- In this cause the (gauge variant) commutators do not vanish at spacelike
+ In this case the (gauge variant) commutators do not vanish at spacelike
  separations but causality problems are avoided because only gauge invariant
  quantities are physically observable.
  All gauge invariant quantities can be equally well computed in a Lorentz
