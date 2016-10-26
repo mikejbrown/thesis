@@ -527,7 +527,9 @@ key "Berges2015"
 
  and references therein for extensive discussion of all these points).
  Non-perturbative methods are essential in non-equilibrium QFT because secular
- terms in the time evolution equations invalidate perturbation theory.
+ terms (i.e.
+ terms which grow without bound over time) in the time evolution equations
+ invalidate perturbation theory.
  
 \begin_inset Formula $n$
 \end_inset
@@ -5706,8 +5708,18 @@ where
 \begin_inset Formula 
 \begin{eqnarray}
 \Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
- &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
- & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
+ &  & \times\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\left[\hat{\mathbb{I}}-\frac{i}{\hbar}\epsilon\hat{H}\left(\hat{\phi},\hat{\pi}\right)\right]|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S},
+\end{eqnarray}
+
+\end_inset
+
+which becomes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+\Braket{\phi_{k+1}\left(x\right);t_{k}+\epsilon|\phi_{k}\left(x\right);t_{k}} & = & \int\mathcal{D}\left[\pi_{k}\left(x\right)\right]\Braket{\phi_{k+1}\left(\boldsymbol{x}\right);t_{k}|\pi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}\nonumber \\
  &  & \times\left[1-\frac{i}{\hbar}\epsilon H\left(\phi_{k},\pi_{k}\right)\right]\Braket{\pi_{k}\left(\boldsymbol{x}\right);t_{k}|\phi_{k}\left(\boldsymbol{x}\right);t_{k}}_{S}.
 \end{eqnarray}
 
@@ -6165,10 +6177,20 @@ Wick rotates
 \begin_inset Formula 
 \begin{eqnarray}
 Z & = & \mathrm{Tr}\mathrm{e}^{-\beta\hat{H}}\nonumber \\
- & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}\nonumber \\
- & = & \int\mathcal{D}\left[a\right]\int_{\phi\left(t=0\right)=a}^{\phi\left(t=-i\hbar\beta\right)=a}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
+ & = & \sum_{a}\Braket{a|\mathrm{e}^{-\beta\hat{H}}|a}.
+\end{eqnarray}
+
+\end_inset
+
+Writing the matrix element in terms of the functional integral,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray}
+Z & = & \int\mathcal{D}\left[a\right]\int_{\phi\left(t=0\right)=a}^{\phi\left(t=-i\hbar\beta\right)=a}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
  & = & \int_{\phi\left(t=0\right)=\phi\left(t=-i\hbar\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\frac{i}{\hbar}\int_{0}^{-i\hbar\beta}\mathrm{d}t\int_{\boldsymbol{x}}\mathcal{L}\right)\nonumber \\
- & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right)
+ & = & \int_{\phi\left(x^{4}=0\right)=\phi\left(x^{4}=\beta\right)}\mathcal{D}\left[\phi\right]\exp\left(\int_{0}^{\beta}\mathrm{d}x^{4}\int_{\boldsymbol{x}}\mathcal{L}_{E}\right),
 \end{eqnarray}
 
 \end_inset

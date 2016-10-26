@@ -3458,7 +3458,8 @@ which is now quadratic in the
 \begin_inset Formula $\phi_{a}$
 \end_inset
 
-, meaning the functional integral over them can be performed in closed form.
+s, meaning the functional integral over them can be performed in closed
+ form.
  In terms of Feynman diagrams the effect of introducing 
 \begin_inset Formula $\sigma$
 \end_inset
