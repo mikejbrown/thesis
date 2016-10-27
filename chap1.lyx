@@ -1453,7 +1453,7 @@ BBN
  elements as 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Weinberg2008,Canetti2013"
+key "Weinberg2008,Steigman2010"
 
 \end_inset
 
@@ -1462,7 +1462,7 @@ key "Weinberg2008,Canetti2013"
 \begin{equation}
 \eta\equiv\frac{n_{B}-n_{\bar{B}}}{n_{\gamma}}=\begin{cases}
 \left(5.9\pm0.5\right)\times10^{-10}, & \text{Kirkman \emph{et al.}, cited in {\citep{Weinberg2008}}},\\
-\left(5.8\pm0.27\right)\times10^{-10}, & \text{Steigman, cited in {\citep{Canetti2013}}},
+\left(5.8\pm0.27\right)\times10^{-10}, & \text{{\citet{Steigman2010}}},
 \end{cases}
 \end{equation}
 
