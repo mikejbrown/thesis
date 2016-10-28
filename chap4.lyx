@@ -79,7 +79,11 @@ theorems-sec
 \begin_body
 
 \begin_layout Chapter
-Symmetry Improvement of nPIEA through Lagrange Multipliers
+Symmetry Improvement of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA through Lagrange Multipliers
 \begin_inset CommandInset label
 LatexCommand label
 name "chap:chap4"
@@ -6808,8 +6812,11 @@ key "Carrington2015"
  If successful, such an effort could serve to open a new window to the non-pertu
 rbative physics of these theories in high temperature, high density and
  strong coupling regimes.
- In an attempt to address some of problems with the SI-nPIEA, a novel method
- of 
+ In an attempt to address some of problems with the SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEA, a novel method of 
 \begin_inset Quotes eld
 \end_inset
 

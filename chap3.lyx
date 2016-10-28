@@ -2614,29 +2614,9 @@ reference "fig:2pi-hf-eom-soln"
 \begin_inset Formula $\approx210\ \mathrm{MeV}$
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Pull out value?
-\end_layout
-
-\end_inset
-
 .
  The value of 
 \begin_inset Formula $v_{\star}\approx80\ \mathrm{MeV}$
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Pull out value?
-\end_layout
-
 \end_inset
 
  in the broken phase at the critical temperature is a common measure of
