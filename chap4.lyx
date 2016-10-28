@@ -272,14 +272,14 @@ key "Garny2009,VanLeeuwen2012,Stefanucci2013"
 
 \end_inset
 
- by the addition of an infinite set of nonlocal vertices which only have
+ by the addition of an infinite set of non-local vertices which only have
  support at the initial time.
  Going to 
 \begin_inset Formula $n>2$
 \end_inset
 
  allows one to better describe the initial state, thereby reducing the need
- for additional nonlocal vertices.
+ for additional non-local vertices.
 \end_layout
 
 \begin_layout Standard
@@ -1533,7 +1533,7 @@ PIEA.
  introduced in the literature, though the general problem is still open.
  The 2PIEA is known to be renormalisable, either by an implicit construction
  involving Bethe-Salpeter integral equations or an explicit algebraic Bogoliubov
--Parasiuk-Hepp-Zimmerman (BPHZ) style construction which has nontrivial
+-Parasiuk-Hepp-Zimmerman (BPHZ) style construction which has non-trivial
  consistency requirements (but which has been shown to be equivalent to
  the Bethe-Salpeter method) 
 \begin_inset CommandInset citation

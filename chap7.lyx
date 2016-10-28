@@ -849,7 +849,7 @@ PIEA with
  A conceptually straightforward, though probably laborious, extension would
  be to the SI-4PIEA or higher.
  This move is motivated theoretically because the 4PIEA at four loop order
- is necessary for a fully self-consistent treatment of nonabelian gauge
+ is necessary for a fully self-consistent treatment of non-abelian gauge
  theories.
  The Ward identity involving the four point vertex would have to be derived
  and enforced using a new set of Lagrange multipliers, then the equations
@@ -980,7 +980,7 @@ Closing remarks
 A case could be made that this thesis is presenting a null result.
  After all, the dream of an analytically tractable and elegant, fully self-consi
 stent, manifestly gauge invariant, non-perturbative and non-equilibrium
- formulation of nonabelian gauge theories with chiral fermion matter and
+ formulation of non-abelian gauge theories with chiral fermion matter and
  Higgs fields remains just that: a dream.
  Perhaps it is a pipe dream.
  This thesis has not found the silver bullet for handling symmetries in

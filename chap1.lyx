@@ -1889,7 +1889,7 @@ two Higgs doublet models
 2HDM
 \noun default
 ).
- In all of these models the EWBG scenario relies on nonperturbative processes
+ In all of these models the EWBG scenario relies on non-perturbative processes
  very similar to those of the original SM.
  The SM is briefly reviewed here, without going into the formal field theory,
  to recall the physics and discuss EWBG at first in a familiar context.
@@ -4780,15 +4780,6 @@ guesses
  difficulty increases with the complexity of the scalar sector.
  Often one finds thin wall results applied without the validity of the approxima
 tion being checked.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-REFs?
-\end_layout
-
-\end_inset
-
  Another important question concerns the gauge dependence of the formalism.
 \end_layout
 
@@ -7613,7 +7604,7 @@ as if
 \end_inset
 
  as usual.
- The only nontrivial reduction to an ordinary delta function is when (taking
+ The only non-trivial reduction to an ordinary delta function is when (taking
  
 \begin_inset Formula $t_{0}=0$
 \end_inset
