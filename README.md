@@ -7,6 +7,12 @@ About
 
 This is the source distribution for Michael J. Brown's PhD thesis entitled "Symmetry improvement techniques for non-perturbative quantum field theory".
 
+**WARNING**: This is a pre-examination version of the thesis.
+I, the author, am making it available now in the interest of scientific openness.
+While I have made a good faith effort to ensure the validity of all results contained herein, this thesis has not yet passed the most rigorous independent scrutiny to which all theses are eventually subjected.
+As such, the reader is encouraged to take all claims herein with a healthy dose of salt.
+Use at your own risk.
+
 Except where otherwise noted, all parts of this thesis are Copyright © 2016 by Michael J. Brown.
 
 
