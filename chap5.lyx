@@ -3549,7 +3549,7 @@ x & =\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right),
 \end_inset
 
  are the zero temperature solutions and 
-\begin_inset Formula $T_{\star}^{2}=12\bar{X}/\left(N+2\right)$
+\begin_inset Formula $T_{\star}^{2}=12\bar{X}\mu^{2}/\left(N+2\right)$
 \end_inset
 
 ) so that
@@ -3559,7 +3559,7 @@ x & =\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right),
 \begin_inset Formula 
 \begin{align}
 \frac{\lambda}{3}x-z & =\frac{\lambda}{3}\left[\bar{X}-\left(\left(N+1\right)\frac{T^{2}/\mu^{2}}{12}+T_{H}\right)\right]-\left(1-\frac{T^{2}}{T_{\star}^{2}}\right)\nonumber \\
- & =\left(N+2\right)\frac{T^{2}}{12\bar{X}}-\left(N+1\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\frac{\lambda}{3}T_{H}=\frac{1}{\bar{X}}\left(\frac{T^{2}}{12}-T_{H}\right)\geq0,
+ & =\left(N+2\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\left(N+1\right)\frac{T^{2}/\mu^{2}}{12\bar{X}}-\frac{\lambda}{3}T_{H}=\frac{1}{\bar{X}}\left(\frac{T^{2}/\mu^{2}}{12}-T_{H}\right)\geq0,
 \end{align}
 
 \end_inset
