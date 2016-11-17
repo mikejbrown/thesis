@@ -590,26 +590,26 @@ and the following preprints:
 
 \begin_layout Itemize
 M.J.
- Brown, I.
+ Brown and I.
  B.
- Whittingham and D.
- S.
- Kosov, Soft symmetry improvement of two particle irreducible effective
- actions, 
-\emph on
-manuscript in preparation
-\emph default
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-UPDATE!!!!!
-\end_layout
+ Whittingham, Soft symmetry improvement of two particle irreducible effective
+ actions.
+ arXiv: 
+\begin_inset CommandInset href
+LatexCommand href
+name "1611.05226"
+target "https://arxiv.org/abs/1611.05226"
 
 \end_inset
 
-.
+, 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2016"
+
+\end_inset
+
+,
 \end_layout
 
 \begin_deeper
@@ -622,7 +622,7 @@ Statement of author contributions:
  All initial calculations and the first draft of the manuscript were produced
  by Brown.
  The manuscript was revised with checking of results and editorial input
- from Whittingham and Kosov.
+ from Whittingham.
 \end_layout
 
 \end_deeper
