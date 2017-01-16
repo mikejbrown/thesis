@@ -99,7 +99,8 @@ stub
 \end_layout
 
 \begin_layout Enumerate
-stub
+It was a case of premature simplification (not affecting results).
+ The linear term has been added in equation (2.14).
 \end_layout
 
 \begin_layout Enumerate
@@ -228,7 +229,16 @@ Minor points
 \end_layout
 
 \begin_layout Enumerate
-stub
+The term 
+\begin_inset Quotes eld
+\end_inset
+
+sunset
+\begin_inset Quotes erd
+\end_inset
+
+ for this diagram comes from Pilaftsis and Teresi.
+ I'm not sure what a better term would be?
 \end_layout
 
 \begin_layout Enumerate
@@ -258,7 +268,7 @@ Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-stub
+Added a clarifying sentence to this effect immediately after.
 \end_layout
 
 \begin_layout Enumerate

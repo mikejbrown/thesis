@@ -866,7 +866,7 @@ The diagram expansion for
  Note that to lowest order
 \begin_inset Formula 
 \begin{equation}
-W\left[J\right]=W\left[0\right]-\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
+W\left[J\right]=W\left[0\right]+\int_{x}J\left(x\right)\left\langle \phi\left(x\right)\right\rangle -\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
 \end{equation}
 
 \end_inset
@@ -5051,7 +5051,15 @@ superdaisy
  (i.e., daisies within daisies in a fractal pattern) diagrams.
  The highly non-trivial fact about 2PI approximation schemes is that all
  of these diagrams appear with the correct combinatoric factors.
- From the point of view of someone engineering 
+ (This no longer holds for all diagrams in 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA with 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+.) From the point of view of someone engineering 
 \emph on
 ad hoc
 \emph default
