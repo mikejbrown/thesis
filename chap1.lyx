@@ -4002,7 +4002,7 @@ reference "fig:second-order-transition-free-energy"
 
 .
  The key difference from a first order phase transition is that there is
- only ever one minimum of the effective potential.
+ never more than one minimum of the effective potential.
  The upper and lower spinodal temperature are equal to the critical temperature
  
 \begin_inset Formula $T_{\pm}=T_{\star}$
@@ -4487,7 +4487,7 @@ Note that such operators are typically constrained to a very high scale
  potential
 \begin_inset Formula 
 \begin{equation}
-V\left(\phi\right)=\mu^{2}\phi^{2}+\frac{\lambda^{2}}{2}\phi^{4}+\frac{1}{\Lambda^{2}}\phi^{6}.
+V\left(\phi\right)=\mu^{2}\phi^{2}+\frac{\lambda}{2}\phi^{4}+\frac{1}{\Lambda^{2}}\phi^{6}.
 \end{equation}
 
 \end_inset
@@ -8495,9 +8495,9 @@ reference "chap:chap2"
 
 PIEA) techniques with an emphasis on their application to non-perturbative
  quantum field theory.
- This includes of review of the standard theory surrounding the methods
- and concludes with a novel investigation into the analytic properties of
- the solution of the 2PIEA in a toy model which can be compared to the exact
+ This includes a review of the standard theory surrounding the methods and
+ concludes with a novel investigation into the analytic properties of the
+ solution of the 2PIEA in a toy model which can be compared to the exact
  solution and contrasted with other non-perturbative techniques.
  Chapter 
 \begin_inset CommandInset ref

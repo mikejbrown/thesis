@@ -2898,7 +2898,20 @@ and the effective interaction Lagrangian (i.e.
 \begin_inset Formula $S$
 \end_inset
 
- after shifting the field ala 
+ after shifting the field 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+`{a}
+\end_layout
+
+\end_inset
+
+ la 
 \begin_inset Formula $\phi=\varphi+\hbar^{1/2}\tilde{\phi}$
 \end_inset
 
@@ -4332,8 +4345,12 @@ where
 \end_inset
 
  is the Euler-Mascheroni constant.
- The three terms are the divergent contribution, the finite vacuum contribution
- and the finite temperature Bose-Einstein contribution respectively.
+ The three terms are the 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ divergent contribution, the finite vacuum contribution and the finite temperatu
+re Bose-Einstein contribution respectively.
  The renormalisation procedure (not carried out in full here), effectively
  results in the removal of the infinite part.
  The ambiguity in the removal of a finite part is reflected in the freedom
@@ -4591,11 +4608,11 @@ end{fmffile}
 \end_inset
 
 where the full propagator represents 
-\begin_inset Formula $\Delta$
+\begin_inset Formula $i\Delta$
 \end_inset
 
  and the dashed propagator 
-\begin_inset Formula $\Delta_{0}$
+\begin_inset Formula $i\Delta_{0}$
 \end_inset
 
 .
@@ -5346,7 +5363,7 @@ status open
 
  approximants.
  This section tests the hypothesis that the 2PI methods should be more accurate
- that Borel-Pad
+ than Borel-Pad
 \begin_inset ERT
 status open
 
@@ -5359,7 +5376,7 @@ status open
 
 \end_inset
 
- and, indeed, finds this to be the case, at least in certain regimes.
+ and, indeed, one finds this to be the case, at least in certain regimes.
 \end_layout
 
 \begin_layout Standard
@@ -9008,7 +9025,7 @@ The study of the toy model revealed several interesting features.
 
 ) axis, a fact which is invisible to perturbation theory.
  The theory is Borel summable, with the Borel sum giving the exact answer.
- However, Borel summation alone is not usually this helpful in practice.
+ However, Borel summation alone is not usually very helpful in practice.
  Pad
 \begin_inset ERT
 status open

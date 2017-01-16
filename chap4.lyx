@@ -372,6 +372,11 @@ where
 \end_inset
 
  is thought of as the 2PI function.
+ Only the case 
+\begin_inset Formula $J_{a}=0$
+\end_inset
+
+ will be considered here.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -379,12 +384,12 @@ key "Pilaftsis2013"
 
 \end_inset
 
- only considered the case 
-\begin_inset Formula $J_{a}=0$
+ considered the case of a translationally invariant 
+\begin_inset Formula $J_{a}\neq0$
 \end_inset
 
-, which will also be the case here.
- The situation with 
+ to define a symmetry improved effective potential.
+ The situation with a general 
 \begin_inset Formula $J_{a}\neq0$
 \end_inset
 
@@ -3033,7 +3038,7 @@ ideal
 
 , i.e.
  they do no work on the system) is invoked to specify the constraint forces.
- Note that it while it is usually stated that enforcing constraints through
+ Note that while it is usually stated that enforcing constraints through
  Lagrange multipliers is equivalent to applying d'Alembert's principle,
  this is no longer automatically the case if the constraints involve a singular
  limit as happens in the field theory case.
@@ -6493,7 +6498,11 @@ key "Peskin1995"
 \begin_inset Formula $H\to HG$
 \end_inset
 
-, which vanishes due to the zero phase space at threshold.
+, which is prohibited due to the unbroken 
+\begin_inset Formula $\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ symmetry and anyway vanishes due to the zero phase space at threshold.
  This means one can drop the sunset diagram and the last bubble vertex correctio
 n (right diagram, bottom row).
  Similarly cuts through two intermediate Higgs lines can be dropped since

@@ -931,7 +931,7 @@ Strictly speaking a Higgs or Brout-Englert-Higgs boson only exists in theories
 \begin_inset Quotes eld
 \end_inset
 
-Higss
+Higgs
 \begin_inset Quotes erd
 \end_inset
 
@@ -1158,7 +1158,14 @@ and
 \end_inset
 
 .
- Then the WI becomes
+ Then using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-Dyson-equation"
+
+\end_inset
+
+ the WI becomes
 \end_layout
 
 \begin_layout Standard
@@ -1265,7 +1272,14 @@ The shift of
 \begin_inset Formula $\Gamma$
 \end_inset
 
- gives the 2PI version of the master Ward identity
+ gives the 2PI version of the master Ward identity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
 \frac{\delta\Gamma}{\delta\varphi_{a}}i\epsilon_{A}T_{ab}^{A}\varphi_{b}+\frac{\delta\Gamma}{\delta\Delta_{ab}}i\epsilon_{A}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right)=0.
