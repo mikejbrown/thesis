@@ -270,7 +270,20 @@ stub
 \end_layout
 
 \begin_layout Enumerate
-stub
+\begin_inset Formula $M_{ac}^{2}$
+\end_inset
+
+ is symmetric in general.
+ In the symmetric phase it becomes proportional to the identity matrix.
+ In the broken phase it becomes diagonal (with 
+\begin_inset Formula $N-1$
+\end_inset
+
+ zero eigenvalues) in the SSB ansatz basis adopted on the line below equation
+ (3.20).
+ In bases that mix the Higgs and Goldstone components there will be off
+ diagonal terms.
+ I have clarified the text below (3.20).
 \end_layout
 
 \begin_layout Enumerate
@@ -282,11 +295,12 @@ stub
 \end_layout
 
 \begin_layout Enumerate
-stub
+Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-stub
+The suggested notation is introduced above equation (3.93) and propagated
+ through the section.
 \end_layout
 
 \begin_layout Enumerate
