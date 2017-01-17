@@ -2372,9 +2372,9 @@ does
 status collapsed
 
 \begin_layout Plain Layout
-Dimensional regularisation is famous for having problems when the infinite
- volume limit must be taken carefully since IR divergences automatically
- vanish in this scheme, see e.g.
+Dimensional regularisation requires careful treatment of the infinite volume
+ limit since IR divergences automatically vanish in the standard version
+ of the scheme, see e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2388,6 +2388,21 @@ key "Zinn-Justin1990"
 \end_inset
 
 .
+ One should also note that there was no conclusive (numerical) observation
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2016"
+
+\end_inset
+
+ of loss of solution for sufficiently small 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ with a smooth UV regulator.
+ Also, the behaviour of the IR regulator at higher loop orders remains an
+ open problem.
 \end_layout
 
 \begin_layout Standard
