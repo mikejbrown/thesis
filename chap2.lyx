@@ -863,7 +863,7 @@ The diagram expansion for
 \end_inset
 
 .
- Note that to lowest order
+ To lowest order
 \begin_inset Formula 
 \begin{equation}
 W\left[J\right]=W\left[0\right]+\int_{x}J\left(x\right)\left\langle \phi\left(x\right)\right\rangle -\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
@@ -871,7 +871,16 @@ W\left[J\right]=W\left[0\right]+\int_{x}J\left(x\right)\left\langle \phi\left(x\
 
 \end_inset
 
-As usual, for most physical purposes the overall normalisation 
+Note that 
+\begin_inset Formula $\left\langle \phi\left(x\right)\right\rangle \sim\mathcal{O}\left(V_{\mathrm{int}}\right)$
+\end_inset
+
+ if there is no linear term in 
+\begin_inset Formula $\mathcal{L}\left(\phi\right)$
+\end_inset
+
+, which will be assumed below.
+ As usual, for most physical purposes the overall normalisation 
 \begin_inset Formula $W\left[0\right]$
 \end_inset
 
@@ -2783,6 +2792,30 @@ two particle irreducible
 \emph default
  (2PI) graphs, i.e.
  those which do not fall apart under any cutting of two lines.
+ Note that 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ depends on 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ through 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-Dyson-equation"
+
+\end_inset
+
+, which must be accounted for when comparing 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]$
+\end_inset
+
+ to the 1PIEA order by order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -4351,8 +4384,22 @@ where
 
  divergent contribution, the finite vacuum contribution and the finite temperatu
 re Bose-Einstein contribution respectively.
- The renormalisation procedure (not carried out in full here), effectively
- results in the removal of the infinite part.
+ The renormalisation procedure (not carried out in full here; see section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+ and appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+ for details), effectively results in the removal of the infinite part.
  The ambiguity in the removal of a finite part is reflected in the freedom
  to choose 
 \begin_inset Formula $\mu$
