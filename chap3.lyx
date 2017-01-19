@@ -1068,6 +1068,15 @@ where
 \end_inset
 
 .
+ Note that the free propagators are
+\begin_inset Formula 
+\begin{equation}
+\Delta_{0G/H}^{-1}=p^{2}-m_{G/H}^{2}.\label{eq:SSB-free-propagators}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -2162,6 +2171,13 @@ for
 .
  Matching these to 
 \begin_inset Formula $\Delta_{G/H}^{-1}\left(x,y\right)=-\left(\square_{x}+m_{G/H}^{2}\right)\delta\left(x-y\right)$
+\end_inset
+
+ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-free-propagators"
+
 \end_inset
 
  gives the gap equations

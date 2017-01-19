@@ -623,11 +623,21 @@ Recall that
 \end_inset
 
 .
- Now, since 
+ The symmetry improvement constraint is a singular one: one must require
+ 
+\begin_inset Formula $\ell\to\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $v\int\Delta_{G}^{-1}\to0$
+\end_inset
+
+.
+ The reason for this is that 
 \begin_inset Formula $m_{G}^{2}\to0$
 \end_inset
 
- the right hand sides vanish unless 
+ so the right hand sides vanish unless 
 \begin_inset Formula $\ell_{cN}^{c}\to\infty$
 \end_inset
 
@@ -657,17 +667,6 @@ reference "chap:chap3"
 \end_inset
 
 .
- The manifestation of this fact in the symmetry improvement formalism is
- a singularity: 
-\begin_inset Formula $\ell\to\infty$
-\end_inset
-
- as 
-\begin_inset Formula $v\int\Delta_{G}^{-1}\to0$
-\end_inset
-
- so as to leave a finite right hand side in the first equation of motion.
- Thus the constraint is a singular one.
 \end_layout
 
 \begin_layout Standard
