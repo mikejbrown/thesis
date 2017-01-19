@@ -403,5 +403,18 @@ Higgs
 .
 \end_layout
 
+\begin_layout Enumerate
+Updated the list of publications on page vii with publication details for
+ the soft symmetry improvement paper.
+\end_layout
+
+\begin_layout Enumerate
+Fixed a dimensional inconsistency in equation (5.136) and the paragraph above
+ (not affecting results).
+ This is the same inconsistency that was noticed during the preparation
+ of the soft symmetry improvement paper for publication after having sent
+ the thesis for examination.
+\end_layout
+
 \end_body
 \end_document
