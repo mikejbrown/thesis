@@ -72,6 +72,18 @@
 
 \begin_layout Title
 Responses to Examiner Comments / Corrections
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Check all page, eq.
+ & ref.
+ numbers!
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -79,7 +91,8 @@ Examiner 1
 \end_layout
 
 \begin_layout Enumerate
-stub
+Added the reference as Ref.
+ [37] to the instanton discussion on page 11.
 \end_layout
 
 \begin_layout Enumerate
@@ -87,7 +100,8 @@ Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-stub
+Added the reference as Ref.
+ [65] to the discussion on page 31.
 \end_layout
 
 \begin_layout Enumerate
@@ -95,7 +109,7 @@ Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-stub
+Removed the unwarranted claim (does not affect any results).
 \end_layout
 
 \begin_layout Enumerate
@@ -112,7 +126,9 @@ Added a clarifying statement to the paragraph below equation (2.52).
 \end_layout
 
 \begin_layout Enumerate
-stub
+Note: there is a typo in the examiner comment.
+ They clearly mean page 49, not 9.
+ Have added the references requested (refs [77] and [81]) to the discussion.
 \end_layout
 
 \begin_layout Enumerate
@@ -277,7 +293,25 @@ Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-stub
+Lack of letters is always a problem.
+ During peer review of the SI-3PIEA paper (Ref.
+ [2]) I was asked to change the (admittedly more systematic) 
+\begin_inset Formula $V^{\left(4\right)}$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ to reduce clutter.
+ I'm not sure there will be a solution that pleases everybody.
+ I have changed eq.
+ (3.17) to use 
+\begin_inset Formula $W$
+\end_inset
+
+, which should cause no confusion with the generating functional because
+ it appears with subscripts here.
 \end_layout
 
 \begin_layout Enumerate

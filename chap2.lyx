@@ -530,8 +530,7 @@ key "Born1946,Kirkwood1946"
  some finite order, which necessitates invoking a closure ansatz approximating
  some higher order correlation functions in terms of lower order ones.
  This ansatz can be physically motivated but always involves some degree
- of arbitrariness and often leads to the violation of some physical principle
- such as time reversal invariance or gauge invariance.
+ of arbitrariness.
  In contrast, while the higher 
 \begin_inset Formula $n$
 \end_inset
@@ -3658,7 +3657,23 @@ key "DeDominicis1964"
 \end_inset
 
 .
- Early work on higher effective actions was carried on by Vasiliev 
+ They were mentioned, but not used, in the pioneering 2PIEA paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cornwall1974"
+
+\end_inset
+
+ and developed further in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Norton1975"
+
+\end_inset
+
+.
+ More early work on higher effective actions was carried on by Vasiliev
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Vasiliev1998"

@@ -3135,7 +3135,7 @@ instanton
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Coleman1985"
+key "Hooft1976,Coleman1985"
 
 \end_inset
 
@@ -4031,7 +4031,7 @@ key "Morrissey2012"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -4170,7 +4170,7 @@ reference "fig:first-order-transition-free-energy-critical-pts"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Float figure
@@ -6506,7 +6506,7 @@ key "Kapusta2006"
  and Keldysh (independently; see 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Kita2010"
+key "Kita2010,Millington2012"
 
 \end_inset
 
