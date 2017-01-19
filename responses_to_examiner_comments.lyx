@@ -425,5 +425,29 @@ Fixed a dimensional inconsistency in equation (5.136) and the paragraph above
  the thesis for examination.
 \end_layout
 
+\begin_layout Enumerate
+Second paragraph of section 7.2 
+\begin_inset Quotes eld
+\end_inset
+
+in such as way
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+in such a way
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document
