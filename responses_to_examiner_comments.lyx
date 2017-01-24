@@ -6,6 +6,9 @@
 \origin unavailable
 \textclass article
 \use_default_options true
+\begin_modules
+enumitem
+\end_modules
 \maintain_unincluded_children false
 \language english
 \language_package default
@@ -27,6 +30,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -235,6 +239,43 @@ Examiner 2
 
 \begin_layout Subsection*
 Criticisms
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+stub
+\end_layout
+
+\begin_layout Enumerate
+stub
+\end_layout
+
+\begin_layout Enumerate
+stub
+\end_layout
+
+\begin_layout Enumerate
+stub
 \end_layout
 
 \begin_layout Subsection*

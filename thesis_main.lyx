@@ -584,16 +584,22 @@ Statement of author contributions:
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-and the following preprints:
-\end_layout
-
 \begin_layout Itemize
 M.J.
  Brown and I.
  B.
  Whittingham, Soft symmetry improvement of two particle irreducible effective
- actions.
+ actions, Phys.
+ Rev.
+ D 95, 025018 (2017).
+ DOI: 
+\begin_inset CommandInset href
+LatexCommand href
+name "10.1103/PhysRevD.95.025018"
+target "http://dx.doi.org/10.1103/PhysRevD.95.025018"
+
+\end_inset
+
  arXiv: 
 \begin_inset CommandInset href
 LatexCommand href
