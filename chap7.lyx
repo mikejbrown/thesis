@@ -489,7 +489,14 @@ increases
  other: in an infinite volume there is no continuous parameter connecting
  any two of the limits.
  Thus the original goal of this program is not achievable in infinite volume.
- A paper based on this work will be submitted for publication.
+ A paper based on this work has been published 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brown2016"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
