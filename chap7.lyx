@@ -940,6 +940,54 @@ reference "chap:chap5"
 ions place it beyond the scope of this thesis.
 \end_layout
 
+\begin_layout Standard
+An evaluation of the overall status of symmetry improvement methods is in
+ order.
+ SI methods have been applied with some success to the 2PIEA at the Hartree-Fock
+ and two loop levels.
+ However, the non-existence of solutions of the two loop truncation with
+ certain cutoff regulators is deeply troubling.
+ It implies that the symmetry improvement method is coupling short distance
+ and long distance physics in ways that are still poorly understood.
+ This defies the traditional understanding of the renormalisation group
+ and perhaps relates to the long standing difficulty with the renormalisation
+ of 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs generally.
+ It is clear from the results of Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ that SI methods can, at least formally, be extended to all 
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs straightforwardly.
+ However, the properties of solutions of these SI-
+\begin_inset Formula $n$
+\end_inset
+
+PIEAs is still poorly understood.
+ Only results for the Hartree-Fock truncation of the SI-3PIEA are known,
+ and it is likely that these results will change qualitatively when higher
+ order computations are done.
+ The study of these methods is hampered by the difficulty with renormalisation
+ in four dimensions, which has largely been sidestepped in this thesis.
+ Similarly, the SSI method has only been applied in the Hartree-Fock truncation.
+ It is certainly reasonable to hope that the difficulties with the SSI method
+ are removed, or at least ameliorated, at higher orders.
+ So far the hints are that carefully taking the infinite volume limit is
+ critical in all cases, a result that is suggestive when seen alongside
+ the IR problems of the SI-2PIEA at two loops.
+ There is much that remains unknown about these methods.
+ Progress is slow, but monotonic.
+\end_layout
+
 \begin_layout Section
 Closing remarks
 \end_layout

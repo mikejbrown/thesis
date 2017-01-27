@@ -267,7 +267,26 @@ Added the requested table (table 0.2 on page xii).
 \end_layout
 
 \begin_layout Enumerate
-stub
+The request for an evaluation of the SI method is clearly reasonable.
+ However, the examiner confuses the Marko et.
+ al.
+ study, which used the two loop approximation, with the results Hartree-Fock
+ approximation (indeed there is no problem for the SI-2PIEA in the Hartree-Fock
+ approximation) which are directly comparable to the SI-3PI results presented
+ in chapter 4.
+ The Marko et.
+ al.
+ study is indeed disturbing regarding the validity of the symmetry improvement
+ method, at least with a cutoff regulator.
+ This is due to the appearance of IR divergences at the two loop level.
+ To make any statements about the existence (or otherwise) of SI-3PI solutions
+ requires solutions in truncations which can in principle produce IR divergences
+, i.e.
+ the two or three loop truncations, which remain to be solved.
+ Therefore the existence criteria for SI-3PI solutions remains a totally
+ open problem.
+ A discussion along these lines has been added as the final paragraph of
+ section 7.2.
 \end_layout
 
 \begin_layout Enumerate
