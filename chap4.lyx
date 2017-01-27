@@ -2450,6 +2450,19 @@ key "Brown2015a"
 \end_inset
 
 .
+ In this section the equations of motion are derived but not solved.
+ Solutions for the (over simplified) Hartree-Fock truncation are presented
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Solution-of-the-SI-3PI-HF-Approx"
+
+\end_inset
+
+.
+ Unfortunately, due to the added numerical difficulty, solutions of the
+ more interesting (and physically informative) two and three loop truncations
+ are left for future work.
  For ease of reference the explicit forms of the 3PIEA and its equations
  of motion reproduced from 
 \begin_inset CommandInset ref
@@ -6786,6 +6799,16 @@ PIEA at a truncation to less than
 \begin_layout Standard
 The results presented here are limited in several ways due to the lack of
  numerical solutions for the full SI-3PI equations of motion.
+ The results presented are for the Hartree-Fock truncation, which completely
+ misses vertex corrections and therefore most of the physical content of
+ the 3PI scheme.
+ In other words, the results presented are essentially those for the SI-2PI
+ effective action with the Higgs propagator equation of motion replaced
+ by a truncated version of the vertex Ward identity.
+ There is therefore no basis, given the results presented here, to conclude
+ that the SI-3PI is problematic or not once the vertex corrections are taken
+ into account.
+ Further limitations consider the renormalisation procedure.
  The renormalisation of the theory at two and three loops was performed
  in vacuum.
  The only finite temperature computation performed here was for the Hartree-Fock

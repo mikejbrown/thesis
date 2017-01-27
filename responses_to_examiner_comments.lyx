@@ -271,7 +271,17 @@ stub
 \end_layout
 
 \begin_layout Enumerate
-stub
+I am not sure it is really fair to say the thesis overstates what has been
+ done at the 3PI level.
+ The scope and limitations of each calculation are clearly specified and
+ discussed in the relevant sections.
+ In particular, the limitations of the 3PI calculation are discussed in
+ sections 4.11 and 7.2.
+ The lack of full 3PI numerical solutions is referred to at several points
+ as possibly the primary limitation of this thesis.
+ To forestall any further concern, clarifying comments have been added at
+ the start of section 4.5, in the second last paragraph of section 4.11 and
+ in the fourth paragraph of 7.2.
 \end_layout
 
 \begin_layout Enumerate

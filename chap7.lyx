@@ -826,6 +826,12 @@ PIEA with
  in general and this thesis has made no headway on this problem.
  Also, depending on the scheme, the regularisation method and renormalisation
  scheme may have to be redone.
+ The only numerical 3PI solutions actually presented are given in the Hartree-Fo
+ck truncation, an extremely simplified and not fully self-consistent truncation
+ that completely misses vertex corrections.
+ As a result, the conclusions based on the Hartree-Fock results may not
+ hold in the more physically relevant two and three loop truncations.
+ A numerical effort to find these solutions is therefore strongly motivated.
  A conceptually straightforward, though probably laborious, extension would
  be to the SI-4PIEA or higher.
  This move is motivated theoretically because the 4PIEA at four loop order
