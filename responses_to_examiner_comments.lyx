@@ -409,6 +409,26 @@ where
 
 , which is found from (6.8), which requires solving the full system of linear
  response equations (6.9)-(6.12).
+ Explicitly, the vanishing of the right hand sides becomes a set of conditions
+ on the linear response functions 
+\begin_inset Formula $\chi^{\phi J}$
+\end_inset
+
+ etc., which are the solutions of (6.9)-(6.12):
+\begin_inset Formula 
+\begin{align*}
+0 & =\chi_{df}^{\phi J}\left(V_{dca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\left(-\tilde{\Delta}_{cd}^{-1}\chi_{def}^{\Delta J}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{df}^{\phi J}\right)T_{ab}^{A}\tilde{\varphi}_{b},\\
+0 & =\chi_{dfg}^{\phi K}\left(V_{dca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\left(-\tilde{\Delta}_{cd}^{-1}\chi_{defg}^{\Delta K}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{dfg}^{\phi K}\right)T_{ab}^{A}\tilde{\varphi}_{b}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It remains an open problem to determine when these constraints admit solutions
+ along with (6.9)-(6.12).
 \end_layout
 
 \end_deeper
