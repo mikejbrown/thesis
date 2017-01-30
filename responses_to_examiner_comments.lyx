@@ -350,12 +350,15 @@ higher order
  (6.85)-(6.90) and the subsequent discussion.
  I cannot find any divergence or invalid step in this argument.
  Indeed, this derivation was given to avoid all such subtleties.
- Explicitly, the nontrivial component of (6.89), assuming the Goldstone sources
- vanish as discussed above, is
+ Explicitly, the nontrivial components of (6.89), assuming the Goldstone
+ sources vanish as discussed above, are
 \begin_inset Formula 
-\[
-\tilde{\Delta}_{H}^{-1}\left(p\right)\delta\varphi_{N}\left(p\right)+J_{N}\left(p\right)=-\delta\varphi_{N}\left(p\right)\left[V_{HGG}\left(p,-p,0\right)v+\Delta_{G}^{-1}\left(p\right)-\Delta_{H}^{-1}\left(p\right)\right]-\mathcal{K}_{gg}\left(0\right)v
-\]
+\begin{align*}
+0 & =\delta\varphi_{g}\left(V_{GHG}v-\tilde{\Delta}_{H}^{-1}+\tilde{\Delta}_{G}^{-1}\right)+\mathcal{K}_{Ng}v,\\
+\delta\varphi_{N}\tilde{\Delta}_{H}^{-1}+J_{N} & =-\delta\varphi_{N}\left(V_{HGG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\mathcal{K}_{gg}v,\\
+0 & =\mathcal{K}_{g'g},\\
+\delta\varphi_{g}\tilde{\Delta}_{G}^{-1} & =0,
+\end{align*}
 
 \end_inset
 
@@ -365,7 +368,11 @@ higher order
 \begin_deeper
 \begin_layout Standard
 where 
-\begin_inset Formula $g\neq N$
+\begin_inset Formula $g,g'\neq N$
+\end_inset
+
+, 
+\begin_inset Formula $g\neq g'$
 \end_inset
 
  and there is no sum on 
@@ -373,24 +380,35 @@ where
 \end_inset
 
 .
- The equation of motion is correct if the right hand side vanishes.
+ The equations of motion are correct if the right hand sides vanish.
  To 
 \begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
 \end_inset
 
- the two terms on the right hand side do indeed vanish.
- However, at higher orders the term in brackets (the vertex WI) is generically
- nonzero.
+ the terms on the right hand side do indeed vanish.
+ However, at higher orders the term in brackets in the first two equations
+ (the vertex WI) is generically nonzero.
  This is in fact the original motivation for considering the SI-3PIEA.
  In order for the right hand side to vanish then, one must have a conspiratorial
  cancellation between the vertex WI term and the 
-\begin_inset Formula $\mathcal{K}_{gg}$
+\begin_inset Formula $\mathcal{K}$
 \end_inset
 
  term.
  These quantities are logically independent.
  The only connection between them is mediated by the equations of motion.
  Therefore, such a cancellation seems highly nontrivial and truncation dependent.
+ A full analysis of this scenario in a particular truncation requires computing
+ 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+, which is found from 
+\begin_inset Formula $\delta\Delta^{-1}$
+\end_inset
+
+, which is found from (6.8), which requires solving the full system of linear
+ response equations (6.9)-(6.12).
 \end_layout
 
 \end_deeper
