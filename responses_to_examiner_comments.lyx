@@ -10,7 +10,7 @@
 enumitem
 \end_modules
 \maintain_unincluded_children false
-\language english
+\language australian
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -222,9 +222,194 @@ In fact the process if forbidden by the unbroken
 \end_layout
 
 \begin_layout Enumerate
-stub
+I am very confused by the examiner's comments here.
+ They make two claims: first, that the master Ward identity (3.14) does not
+ necessarily hold for all sources 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+ and second, that the derivation of a contradiction between the WI constraint
+ and linear response theory fails due to an IR divergence of the fluctuation
+ 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ which therefore cancels against the zero of the first term of (6.46), leaving
+ a finite contribution of the correct magnitude to restore the 1PI relationship
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+.
+ It appears that the first claim is incorrect and the second claim does
+ not have the stated implication.
+ 
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+First, (3.14) is 
+\emph on
+not
+\emph default
+ the master WI from which equations (3.15)-(3.17) are derived.
+ Equation (3.12) is.
+ Equation (3.14) is a consequence of (3.12) and is on a logically equivalent
+ footing as (3.15)-(3.17).
+ The master WI (3.12) holds identically independent of the form of the 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+.
+ The zeroth order WI (3.14) does in fact have physical meaning which has
+ been so far ignored in the symmetry improvement literature: it implies
+ that 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ is parallel (in 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ space) to the source 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+.
+ Note that this has 
+\emph on
+not
+\emph default
+ been enforced in any of the previous treatments of symmetry improvement
+ (this thesis included), though logically it has an equivalent standing
+ as any other WI and should be enforced.
+ Had it been enforced in the SI scheme, the consequence for the linear response
+ calculation is that one should not consider sources for the Goldstone component
+s within the linear response approximation.
+ This removes the contradiction between equations (6.49) and (6.50) (or (6.67)
+ and (6.78) for the projected constraint scheme).
+ Note that this contradiction is removed not by reconciling the equations,
+ but instead by saying that the nontrivial case falls beyond the validity
+ of the linear response approximation.
+ Therefore in the linear response approximation Goldstone fluctuations are
+ 
+\begin_inset Quotes eld
+\end_inset
+
+pinned
+\begin_inset Quotes erd
+\end_inset
+
+ to zero.
+ Solutions for nontrivial Higgs field fluctuations exist, though note that
+ these still propagate masslessly.
+\end_layout
+
+\begin_layout Enumerate
+There is indeed an IR divergence in 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ and the examiner is correct that the first term of (6.46) cannot be dropped.
+ There is an error in the step from (6.46) to (6.47).
+ The examiner then claims that the finite contribution that was neglected
+ is of the correct magnitude to remove the contradiction to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+, and therefore the SI scheme is fine at the linear response level.
+ The antecedent is not really surprising, as the theory is classical to
+ 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ so none of the subtleties arise.
+ However the consequent does not follow: what is at issue in this chapter
+ is precisely the 
+\emph on
+higher order
+\emph default
+ behaviour of (6.46).
+ For the linear response approximation to be valid one must require solutions
+ to exist to arbitrary order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ (though to only linear order in 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+).
+ I believe that the claim that a contradiction exists (now arising at higher
+ order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+) is still generally true.
+ This is because of the second derivation of the contradiction given in
+ (6.85)-(6.90) and the subsequent discussion.
+ I cannot find any divergence or invalid step in this argument.
+ Indeed, this derivation was given to avoid all such subtleties.
+ Explicitly, the nontrivial component of (6.89), assuming the Goldstone sources
+ vanish as discussed above, is
+\begin_inset Formula 
+\[
+\tilde{\Delta}_{H}^{-1}\left(p\right)\delta\varphi_{N}\left(p\right)+J_{N}\left(p\right)=-\delta\varphi_{N}\left(p\right)\left[V_{HGG}\left(p,-p,0\right)v+\Delta_{G}^{-1}\left(p\right)-\Delta_{H}^{-1}\left(p\right)\right]-\mathcal{K}_{gg}\left(0\right)v
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+where 
+\begin_inset Formula $g\neq N$
+\end_inset
+
+ and there is no sum on 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ The equation of motion is correct if the right hand side vanishes.
+ To 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ the two terms on the right hand side do indeed vanish.
+ However, at higher orders the term in brackets (the vertex WI) is generically
+ nonzero.
+ This is in fact the original motivation for considering the SI-3PIEA.
+ In order for the right hand side to vanish then, one must have a conspiratorial
+ cancellation between the vertex WI term and the 
+\begin_inset Formula $\mathcal{K}_{gg}$
+\end_inset
+
+ term.
+ These quantities are logically independent.
+ The only connection between them is mediated by the equations of motion.
+ Therefore, such a cancellation seems highly nontrivial and truncation dependent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The correct conclusion of this investigation then is that it may be possible
+ to find truncations for which the linear response approximation (restricted
+ to the case of vanishing Goldstone sources) exists.
+ However, this a 
+\begin_inset Quotes eld
+\end_inset
+
+fine tuned
+\begin_inset Quotes erd
+\end_inset
+
+ situation and cannot be expected to hold generically.
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 stub
 \end_layout
