@@ -148,6 +148,16 @@ key "Pilaftsis2013"
 \end_inset
 
  approximation, but these attractive features are lost at higher orders.
+ Another approach which is not discussed in detail here is to abandon the
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism entirely, using instead the Schwinger-Dyson equations.
+ The Schwinger-Dyson equations require a closure ansatz which can be chosen
+ to respect appropriate Ward identities.
+ However, this choice still involves some degree of arbitrariness and self-consi
+stency is not guaranteed.
 \end_layout
 
 \begin_layout Standard
