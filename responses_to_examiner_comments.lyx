@@ -561,7 +561,8 @@ sunset
 \end_layout
 
 \begin_layout Enumerate
-stub
+Made the suggested changes to Fig.
+ 1.3(a).
 \end_layout
 
 \begin_layout Enumerate
@@ -686,6 +687,17 @@ Other changes
 \end_layout
 
 \begin_layout Enumerate
+Updated the list of publications on page vii with publication details for
+ the soft symmetry improvement paper.
+\end_layout
+
+\begin_layout Enumerate
+Changed Fig.
+ 1.4(a) to show the critical temperature and sort the legend in the same
+ order as the lines on the plot.
+\end_layout
+
+\begin_layout Enumerate
 Footnote 3 on page 80 
 \begin_inset Quotes eld
 \end_inset
@@ -703,11 +715,6 @@ Higgs
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Enumerate
-Updated the list of publications on page vii with publication details for
- the soft symmetry improvement paper.
 \end_layout
 
 \begin_layout Enumerate
