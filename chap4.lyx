@@ -1772,7 +1772,29 @@ reference "sec:Renormalisation-and-solution-2PI-HF"
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
- for the sunset diagram 
+ for the sunset diagram
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the majority of the quantum field theory literature does not call
+ this the sunset diagram, instead using that to refer to the self-energy
+ term with two four point vertices.
+ This thesis follows the convention that has appeared in the symmetry improvemen
+t literature, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset ERT
 status collapsed
 
