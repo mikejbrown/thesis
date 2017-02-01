@@ -1221,6 +1221,15 @@ The only effect of the new WI on the previously established equations of
 \end_inset
 
  so none of the previous results are affected.
+ Also note that the new Lagrange multipliers 
+\begin_inset Formula $\ell_{A}$
+\end_inset
+
+ are finite because the term on the right hand side of the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ equation of motion does not vanish identically.
 \begin_inset Note Note
 status collapsed
 
@@ -1584,6 +1593,27 @@ vertex
 \end_inset
 
  to be linked according to the 1PI relations.
+ Generically one cannot expect these terms to cancel as they are logically
+ independent (i.e., they do not cancel as the result of any basic identity).
+ The vanishing of the right hand side of 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fluctuation-eom-vertex-WI-1"
+
+\end_inset
+
+ is an additional constraint on the linear response functions, which are
+ fully determined by the 2PI equations of motion.
+ Therefore the existence of a physically reasonable linear response approximatio
+n is a 
+\begin_inset Quotes eld
+\end_inset
+
+fine tuned
+\begin_inset Quotes erd
+\end_inset
+
+ property of particular truncations.
 \end_layout
 
 \begin_layout Standard
@@ -1645,10 +1675,6 @@ The anomalous right hand side becomes
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Demanding that this vanishes independent of the sources gives the pair of
  conditions
 \begin_inset Formula 
@@ -1665,8 +1691,62 @@ which must be satisfied by the linear response functions in order for the
 \end_layout
 
 \begin_layout Standard
-There is further danger lurking in the right hand sides of the SI-2PI equations
- of motion.
+The equations of motion following from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fluctuation-eom-vertex-WI-1"
+
+\end_inset
+
+ can be worked out by substituting particular values for 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ and working out the components.
+ The nontrivial components are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{\Delta}_{G}^{-1}\delta\varphi_{g}+J_{g} & =\delta\varphi_{g}\left(V_{GHG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)+\mathcal{K}_{Ng}v, & A=\left(g,N\right),\ c=N,\\
+0 & =\mathcal{K}_{cg}v, & A=\left(g,N\right),\ c\neq g,N,\\
+\tilde{\Delta}_{H}^{-1}\delta\varphi_{N}+J_{N} & =-\delta\varphi_{N}\left(V_{HGG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\mathcal{K}_{gg}v, & A=\left(g,N\right),\ c=g,\\
+\tilde{\Delta}_{G}^{-1}\delta\varphi_{g}+J_{g} & =0, & A=\left(g,g'\right),\ g,g'\neq N,\ c=g',c\neq g.
+\end{align}
+
+\end_inset
+
+These equations are not completely independent but neither are they trivial.
+ In particular, the consistency of the first and fourth equation in particular
+ requires
+\begin_inset Formula 
+\begin{equation}
+\delta\varphi_{g}\left(V_{GHG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)+\mathcal{K}_{Ng}v=0,
+\end{equation}
+
+\end_inset
+
+which is not guaranteed by the SI-2PI equations of motion.
+ The corresponding conditions on the response functions are
+\begin_inset Formula 
+\begin{align}
+0 & =\chi_{kf}^{\phi J}\left(\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\tilde{\Delta}_{H}^{-1}\chi_{Nkf}^{\Delta J}\tilde{\Delta}_{G}^{-1}v,\\
+0 & =\chi_{kfg}^{\phi K}\left(\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\tilde{\Delta}_{H}^{-1}\chi_{Nkfg}^{\Delta K}\tilde{\Delta}_{G}^{-1}v.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are further constraints lurking in the right hand sides of the SI-2PI
+ equations of motion.
  Since the constraint procedure involves a limit 
 \begin_inset Formula $\tilde{\ell}\to\infty$
 \end_inset
