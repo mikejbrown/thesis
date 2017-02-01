@@ -745,7 +745,7 @@ reference "eq:master-WI"
  are
 \begin_inset Formula 
 \begin{eqnarray}
-\mathcal{W}^{A} & = & -J_{a}T_{ab}^{A}\varphi_{b},\\
+\mathcal{W}^{A} & = & -J_{a}T_{ab}^{A}\varphi_{b},\label{eq:1PI-Jphi-WI}\\
 \mathcal{W}_{c}^{A} & = & \Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A},\label{eq:1PI-Delta-WI}\\
 \mathcal{W}_{cd}^{A} & = & V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},\label{eq:1PI-V-WI}\\
 \mathcal{W}_{cde}^{A} & = & W_{edca}T_{ab}^{A}\varphi_{b}+V_{dca}T_{ae}^{A}+V_{eca}T_{ad}^{A}+V_{eda}T_{ac}^{A},

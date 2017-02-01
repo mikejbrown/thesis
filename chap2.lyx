@@ -2150,7 +2150,7 @@ so that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}=\Delta^{-1}\left(x,y\right).
+\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}=\Delta^{-1}\left(x,y\right).\label{eq:1PI-Delta-def-from-Gamma}
 \end{equation}
 
 \end_inset
