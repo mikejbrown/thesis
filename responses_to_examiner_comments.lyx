@@ -96,7 +96,7 @@ Examiner 1
 
 \begin_layout Enumerate
 Added the reference as Ref.
- [37] to the instanton discussion on page 11.
+ [38] to the instanton discussion on page 11.
 \end_layout
 
 \begin_layout Enumerate
@@ -105,7 +105,7 @@ Correction made as requested.
 
 \begin_layout Enumerate
 Added the reference as Ref.
- [65] to the discussion on page 31.
+ [66] to the discussion on page 31.
 \end_layout
 
 \begin_layout Enumerate
@@ -134,11 +134,13 @@ Added a clarifying statement to the paragraph below equation (2.52).
 \begin_layout Enumerate
 Note: there is a typo in the examiner comment.
  They clearly mean page 49, not 9.
- Have added the references requested (refs [77] and [81]) to the discussion.
+ Have added the references requested (refs [78] and [82]) to the discussion
+ which is now on page 50.
 \end_layout
 
 \begin_layout Enumerate
-Added a cross-reference to the relevant sections.
+Added a cross-reference to the paragraph below (2.89) referring to the relevant
+ sections.
 \end_layout
 
 \begin_layout Enumerate
@@ -193,25 +195,30 @@ status open
 \end_layout
 
 \begin_layout Enumerate
-Added a citation to Ref [1].
+Added a citation to Ref [1] above the relevant equation, which is now numbered
+ (3.38).
 \end_layout
 
 \begin_layout Enumerate
-The end of the first paragraph of section 4.2 was rewritten to address what
- was done in the literature.
+The end of the first paragraph of section 4.2 (now on page 101) was rewritten
+ to address what was done in the literature.
 \end_layout
 
 \begin_layout Enumerate
-Added an explanatory note to the end of the paragraph.
+Added an explanatory note to the end of the paragraph, now on page 111.
+ Also note former Ref.
+ [119] is now Ref.
+ [6].
 \end_layout
 
 \begin_layout Enumerate
-Have reworded the footnote to make clear that alternate versions of dimensional
- regularisation may not have this issue.
+Have reworded the footnote (now footnote 6) to make clear that alternate
+ versions of dimensional regularisation may not have this issue.
 \end_layout
 
 \begin_layout Enumerate
 Correction made as requested.
+ Now on page 116.
 \end_layout
 
 \begin_layout Enumerate
@@ -220,7 +227,7 @@ In fact the process if forbidden by the unbroken
 \end_inset
 
  symmetry, of which the discrete symmetry mentioned is a subgroup.
- The text has been changed to reflect this.
+ The text above (4.150) on page 131 has been changed to reflect this.
 \end_layout
 
 \begin_layout Enumerate
@@ -578,7 +585,7 @@ The Schwinger-Dyson approach is briefly discussed at a few points already,
 
 \begin_layout Enumerate
 Have added the references (refs.
- [101] and [102]) to the discussion at the start of chapter 3.
+ [102] and [103]) to the discussion at the start of chapter 3.
 \end_layout
 
 \begin_layout Subsection*
@@ -597,7 +604,7 @@ sunset
  for this diagram comes from Pilaftsis and Teresi.
  I definitely want some quick way to refer to the diagram but am not sure
  what a better term would be.
- Have added an explanatory footnote above (4.36) on page 107.
+ Have added an explanatory footnote above (4.36) on page 108.
 \end_layout
 
 \begin_layout Enumerate
@@ -676,6 +683,7 @@ Lack of letters is always a problem.
 
 \begin_layout Enumerate
 Correction made as requested.
+ The relevant equation is now (3.35).
 \end_layout
 
 \begin_layout Enumerate
@@ -685,10 +693,11 @@ Added the equation below eq.
 
 \begin_layout Enumerate
 Correction made as requested.
+ The equation is now (3.38) and is referenced on page 85.
 \end_layout
 
 \begin_layout Enumerate
-The suggested notation is introduced above equation (3.93) and propagated
+The suggested notation is introduced above equation (3.94) and propagated
  through the section.
 \end_layout
 
@@ -715,11 +724,12 @@ a novel
 \begin_inset Quotes erd
 \end_inset
 
-.
+ in the last sentence of the first paragraph of chapter 5.
 \end_layout
 
 \begin_layout Enumerate
 Correction made as requested.
+ Now on page 160 (1st sentence of 2nd last paragraph).
 \end_layout
 
 \begin_layout Section
@@ -738,7 +748,7 @@ Changed Fig.
 \end_layout
 
 \begin_layout Enumerate
-Footnote 3 on page 80 
+Footnote 3 on page 81 
 \begin_inset Quotes eld
 \end_inset
 
