@@ -991,7 +991,7 @@ Closing remarks
 \end_layout
 
 \begin_layout Standard
-A case could be made that this thesis is presenting a null result.
+A case could perhaps be made that this thesis is presenting a null result.
  After all, the dream of an analytically tractable and elegant, fully self-consi
 stent, manifestly gauge invariant, non-perturbative and non-equilibrium
  formulation of non-abelian gauge theories with chiral fermion matter and
@@ -1029,7 +1029,7 @@ The
 
 -particle irreducible effective actions derive their strength by re-organising
  perturbation theory, but this very same act intimately couples the scales
- in a problem, so the problem of enforcing symmetries at large differences
+ in a problem, so the problem of enforcing symmetries at large distances
  can no longer be separated from the problem of making the theory finite
  at short distances.
  Likewise, the theory punishes you for asking the wrong questions.
@@ -1045,6 +1045,9 @@ The
 \begin_layout Standard
 It appears that non-perturbative quantum field theory is a world of trade-offs
  where no free lunch exists.
+ The good news is that the journey is still just beginning.
+ The techniques studied in this thesis were originally proposed less than
+ four years ago as I write this.
  So it is that I, the author, hope that by navigating these treacherous
  waters (and perhaps running aground at points), those who come after may
  more easily find the clear path.

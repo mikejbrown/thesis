@@ -457,11 +457,20 @@ Sections 6.4 and 6.5 have been largely rewritten with this updated discussion.
 
 \end_deeper
 \begin_layout Enumerate
-stub
+See point 18 above.
 \end_layout
 
 \begin_layout Enumerate
-stub
+Added 
+\begin_inset Quotes eld
+\end_inset
+
+perhaps
+\begin_inset Quotes erd
+\end_inset
+
+ to the first sentence and edited the final paragraph of section 7.3 to make
+ the conclusion a little less stark.
 \end_layout
 
 \begin_layout Section
@@ -755,6 +764,30 @@ in such as way
 \end_inset
 
 in such a way
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Second last paragraph of section 7.3 
+\begin_inset Quotes eld
+\end_inset
+
+enforcing symmetries at large differences
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+enforcing symmetries at large distances
 \begin_inset Quotes erd
 \end_inset
 
