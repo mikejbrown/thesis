@@ -546,7 +546,24 @@ I am not sure it is really fair to say the thesis overstates what has been
 \end_layout
 
 \begin_layout Enumerate
-stub
+The renormalisation issues brought up by the examiner, so far as I understand
+ them, do not apparently affect any of the results presented.
+ They only affect the 3 loop 4 dimensional case which was alluded to but
+ said to be beyond the scope of the thesis 
+\emph on
+because of the increased difficulty of the renormalisation theory
+\emph default
+.
+ Have added the fourth paragraph of section 4.7.1 to clarify these points
+ and removed the confusing 
+\begin_inset Quotes eld
+\end_inset
+
+analytically tractable
+\begin_inset Quotes erd
+\end_inset
+
+ from the end of section 4.7.1 and added some clarification there.
 \end_layout
 
 \begin_layout Subsection*

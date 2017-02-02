@@ -3659,12 +3659,25 @@ reference "sec:The-Two-Loop-Solution"
 
 \end_inset
 
- can be done to isolate the leading asymptotics for 
+ is done to isolate the leading asymptotics for 
 \begin_inset Formula $V$
 \end_inset
 
  at large momentum.
- Suppressing 
+ This thesis follows this approach because it maps easily to that used for
+ the SI-2PIEA above and in the literature.
+ However, it is not known whether this procedure works in four dimensions.
+ So far, counter-term renormalisation has not been applied to 3PIEA in four
+ dimensions and it is unknown whether subdivergences, which are ignored
+ here, are fully controlled in this method.
+ In three dimensions the renormalisation theory of the 3PIEA is much simpler
+ and this method goes through.
+ However, the argument given here falls short of a proof of renormalisability
+ of the SI-3PIEA in four dimensions and the general problem remains open.
+\end_layout
+
+\begin_layout Standard
+Suppressing 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
@@ -4079,9 +4092,9 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \end_inset
 
 ).
- Unfortunately the result is only analytically tractable in fewer than 1+3
- dimensions, so for the present any analytical results depending on the
- explicit forms of 
+ Unfortunately the problem is only tractable in fewer than 1+3 dimensions,
+ so for the present any analytical results depending on the explicit forms
+ of 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
 
@@ -4090,6 +4103,16 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \end_inset
 
  are confined to this case.
+ In 
+\begin_inset Formula $1+2$
+\end_inset
+
+ or 
+\begin_inset Formula $3$
+\end_inset
+
+ dimensions the problem simplifies dramatically as there are no divergent
+ vertex corrections.
  In the physically most interesting case of 1+3 dimensions, 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
@@ -4106,10 +4129,7 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \begin_inset Formula $V_{N}$
 \end_inset
 
-.
- By using these auxiliary propagators and vertices one can isolate the divergent
- contributions to the equations of motion and so obtain the required set
- of counter-terms to remove them.
+ and it is unkown whether this renormalisation procedure actually works.
 \end_layout
 
 \begin_layout Subsection
