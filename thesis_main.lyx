@@ -387,13 +387,7 @@ stiffness
 Finally, the linear response of a system in equilibrium subject to external
  perturbations is studied for the first time in the SI-2PIEA formalism.
  It is shown that, beyond equilibrium, the scheme is inconsistent in that
- the Goldstone boson fluctuations are over-determined.
- Even if the driving sources of the offending equations of motion are turned
- off (in which case there are no Goldstone boson fluctuations), the Higgs
- field fluctuations propagate masslessly.
- This result is directly due to the constraint and is independent of any
- truncation, approximation or renormalisation scheme applied to the effective
- action.
+ the equations of motion are generically over-constrained.
  Thus, the SI-2PIEA predicts qualitatively incorrect physics out of equilibrium.
  This result can be understood as a result of the decoupling of the propagator
  fluctuation from the field fluctuation in the 2PIEA formalism and the failure
@@ -402,7 +396,8 @@ Finally, the linear response of a system in equilibrium subject to external
 \begin_inset Formula $n$
 \end_inset
 
-PIEA are invalid out of equilibrium.
+PIEA are invalid out of equilibrium, at least within the linear response
+ approximation in generic truncations.
 \end_layout
 
 \begin_layout Standard

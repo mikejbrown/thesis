@@ -276,8 +276,6 @@ close enough
  Third, the linear response approximation is a nice laboratory to isolate
  the novel features of symmetry improvement constraints in non-equilibrium
  settings.
- Indeed, one can find results that are independent of any truncation of
- the effective action.
  Finally, it is expected that any physically reasonable formalism will have
  a well formed linear response approximation, though this depends on the
  assumption that the exact behaviour is an analytic (or at least not too
@@ -1143,7 +1141,7 @@ reference "eq:projected-constraint"
 
 \begin_inset Formula 
 \begin{equation}
-\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A},
+\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A}
 \end{equation}
 
 \end_inset
@@ -1151,7 +1149,7 @@ reference "eq:projected-constraint"
 for symmetry improvement.
  In this section only the simple constraint is considered.
  The projected constraint is considered in the next section.
- The equations of motion were given in chapter 
+ The SI-2PI equations of motion were given in chapter 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:chap4"
@@ -1165,7 +1163,7 @@ reference "chap:chap4"
 
 \end_inset
 
- (along with all of the published SI literature to date) neglected the WI
+ (along with all of the published SI literature to date) neglects the WI
  
 \begin_inset CommandInset ref
 LatexCommand eqref
@@ -1173,7 +1171,7 @@ reference "eq:1PI-Jphi-WI"
 
 \end_inset
 
-, reproduced here
+, reproduced here:
 \begin_inset Formula 
 \begin{equation}
 \mathcal{W}^{A}=-J_{a}T_{ab}^{A}\varphi_{b}.
@@ -1209,6 +1207,10 @@ The consistency of the linear response theory requires that this identity
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 The only effect of the new WI on the previously established equations of
  motion is the addition of a term 
 \begin_inset Formula $\propto J$
@@ -1481,7 +1483,34 @@ anomalous
 \begin_inset Formula $\mathcal{K}_{ca}$
 \end_inset
 
- using the identity 
+ using the identity
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that one must be careful using this identity because 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ can develop an IR divergence.
+ 
+\begin_inset Formula $\delta\Delta^{-1}$
+\end_inset
+
+ is at least 
+\begin_inset Quotes eld
+\end_inset
+
+infrared safe.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset Formula $\delta\Delta_{ca}^{-1}=-\Delta_{cd}^{-1}\delta\Delta_{de}\Delta_{ea}^{-1}+\mathcal{O}\left(\delta\Delta^{2}\right)$
 \end_inset
 
@@ -1770,7 +1799,33 @@ reference "eq:fluctuation-eom-vertex-WI-1"
 \begin_layout Standard
 With one exception it is not known whether any truncation satisfies all
  of these conditions.
- The exception is the truncation to lowest order in 
+ The exception is the truncation of the 
+\emph on
+equations of motion
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The truncation of 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ leaves 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ undetermined.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ to lowest order in 
 \begin_inset Formula $\hbar$
 \end_inset
 
@@ -1784,7 +1839,7 @@ With one exception it is not known whether any truncation satisfies all
 
 \end_inset
 
-Substituting this into the WI gives 
+Substituting this into the WI gives
 \begin_inset Formula 
 \begin{equation}
 0=-\frac{\lambda v^{2}}{3}\left(\delta\varphi_{N}\left(x\right)\delta_{ac}+\delta\varphi_{a}\left(x\right)\delta_{cN}\right)T_{aN}^{A}+\int_{y}\tilde{\Delta}_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\delta\varphi_{b}\left(y\right)-J_{a}T_{ac}^{A},
@@ -1811,7 +1866,44 @@ This system is consistent if
  with the correct masses and source terms.
  This is expected because the WI was constructed to be satisfied by the
  1PI correlation functions.
- There is no longer any reason for this to work if 
+ One further has that 
+\begin_inset Formula $\delta\varphi_{g}=0$
+\end_inset
+
+ as a consequence of 
+\begin_inset Formula $J_{g}=0$
+\end_inset
+
+.
+ Furthermore, from the 
+\begin_inset Formula $d=N$
+\end_inset
+
+ component of the secondary constraint one has
+\begin_inset Formula 
+\begin{align}
+0 & =P_{cg}^{\perp}\int_{x}\delta\Delta_{cg}^{-1}\left(x,z\right)\nonumber \\
+ & =-\frac{\lambda}{3}vP_{cg}^{\perp}\int_{x}\left(\delta\varphi_{N}\delta_{gc}+\delta\varphi_{g}\delta_{cN}+\delta_{gN}\delta\varphi_{c}\right)\delta\left(x-z\right)\nonumber \\
+ & =-\frac{\lambda}{3}v\left(N-1\right)\delta\varphi_{N}\left(z\right),
+\end{align}
+
+\end_inset
+
+which implies that 
+\begin_inset Formula $\delta\varphi_{N}=0$
+\end_inset
+
+, which in turn implies 
+\begin_inset Formula $\delta\Delta^{-1}=0$
+\end_inset
+
+, which in turn requires 
+\begin_inset Formula $K=0$
+\end_inset
+
+ which is a consequence of the 2PI equation of motion.
+ Thus the classical approximation is consistent, but trivial.
+ There is no longer any reason for this to go through if 
 \begin_inset Formula $\delta\Delta$
 \end_inset
 
