@@ -2098,7 +2098,15 @@ There are physically relevant cases where this equation cannot be inverted.
  The non-convex portion of the potential is unphysical, corresponding to
  a metastable state, and the imaginary part of the potential is related
  to the lifetime of that state.
- The true form of 
+ The quantity actually found by the saddle point method is an effective
+ action which expands about a single classical configuration.
+ This is equal to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in the case that it is convex.
+ However, for a non-convex effective potential the two quantities differ
+ and the true form of 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -2107,7 +2115,7 @@ There are physically relevant cases where this equation cannot be inverted.
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Alexandre2012"
+key "Zinn-Justin1990,Alexandre2012"
 
 \end_inset
 
