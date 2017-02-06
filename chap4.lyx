@@ -148,6 +148,16 @@ key "Pilaftsis2013"
 \end_inset
 
  approximation, but these attractive features are lost at higher orders.
+ Another approach which is not discussed in detail here is to abandon the
+ 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA formalism entirely, using instead the Schwinger-Dyson equations.
+ The Schwinger-Dyson equations require a closure ansatz which can be chosen
+ to respect appropriate Ward identities.
+ However, this choice still involves some degree of arbitrariness and self-consi
+stency is not guaranteed.
 \end_layout
 
 \begin_layout Standard
@@ -372,6 +382,11 @@ where
 \end_inset
 
  is thought of as the 2PI function.
+ Only the case 
+\begin_inset Formula $J_{a}=0$
+\end_inset
+
+ will be considered here.
  
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -379,12 +394,12 @@ key "Pilaftsis2013"
 
 \end_inset
 
- only considered the case 
-\begin_inset Formula $J_{a}=0$
+ considered the case of a translationally invariant 
+\begin_inset Formula $J_{a}\neq0$
 \end_inset
 
-, which will also be the case here.
- The situation with 
+ to define a symmetry improved effective potential.
+ The situation with a general 
 \begin_inset Formula $J_{a}\neq0$
 \end_inset
 
@@ -618,11 +633,21 @@ Recall that
 \end_inset
 
 .
- Now, since 
+ The symmetry improvement constraint is a singular one: one must require
+ 
+\begin_inset Formula $\ell\to\infty$
+\end_inset
+
+ as 
+\begin_inset Formula $v\int\Delta_{G}^{-1}\to0$
+\end_inset
+
+.
+ The reason for this is that 
 \begin_inset Formula $m_{G}^{2}\to0$
 \end_inset
 
- the right hand sides vanish unless 
+ so the right hand sides vanish unless 
 \begin_inset Formula $\ell_{cN}^{c}\to\infty$
 \end_inset
 
@@ -652,17 +677,6 @@ reference "chap:chap3"
 \end_inset
 
 .
- The manifestation of this fact in the symmetry improvement formalism is
- a singularity: 
-\begin_inset Formula $\ell\to\infty$
-\end_inset
-
- as 
-\begin_inset Formula $v\int\Delta_{G}^{-1}\to0$
-\end_inset
-
- so as to leave a finite right hand side in the first equation of motion.
- Thus the constraint is a singular one.
 \end_layout
 
 \begin_layout Standard
@@ -1768,7 +1782,29 @@ reference "sec:Renormalisation-and-solution-2PI-HF"
 \begin_inset Formula $\delta\lambda$
 \end_inset
 
- for the sunset diagram 
+ for the sunset diagram
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Note that the majority of the quantum field theory literature does not call
+ this the sunset diagram, instead using that to refer to the self-energy
+ term with two four point vertices.
+ This thesis follows the convention that has appeared in the symmetry improvemen
+t literature, e.g.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+ 
 \begin_inset ERT
 status collapsed
 
@@ -2367,9 +2403,9 @@ does
 status collapsed
 
 \begin_layout Plain Layout
-Dimensional regularisation is famous for having problems when the infinite
- volume limit must be taken carefully since IR divergences automatically
- vanish in this scheme, see e.g.
+Dimensional regularisation requires careful treatment of the infinite volume
+ limit since IR divergences automatically vanish in the standard version
+ of the scheme, see e.g.
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -2383,6 +2419,21 @@ key "Zinn-Justin1990"
 \end_inset
 
 .
+ One should also note that there was no conclusive (numerical) observation
+ in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Marko2016"
+
+\end_inset
+
+ of loss of solution for sufficiently small 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ with a smooth UV regulator.
+ Also, the behaviour of the IR regulator at higher loop orders remains an
+ open problem.
 \end_layout
 
 \begin_layout Standard
@@ -2431,6 +2482,19 @@ key "Brown2015a"
 \end_inset
 
 .
+ In this section the equations of motion are derived but not solved.
+ Solutions for the (over simplified) Hartree-Fock truncation are presented
+ in section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Solution-of-the-SI-3PI-HF-Approx"
+
+\end_inset
+
+.
+ Unfortunately, due to the added numerical difficulty, solutions of the
+ more interesting (and physically informative) two and three loop truncations
+ are left for future work.
  For ease of reference the explicit forms of the 3PIEA and its equations
  of motion reproduced from 
 \begin_inset CommandInset ref
@@ -3033,7 +3097,7 @@ ideal
 
 , i.e.
  they do no work on the system) is invoked to specify the constraint forces.
- Note that it while it is usually stated that enforcing constraints through
+ Note that while it is usually stated that enforcing constraints through
  Lagrange multipliers is equivalent to applying d'Alembert's principle,
  this is no longer automatically the case if the constraints involve a singular
  limit as happens in the field theory case.
@@ -3595,12 +3659,25 @@ reference "sec:The-Two-Loop-Solution"
 
 \end_inset
 
- can be done to isolate the leading asymptotics for 
+ is done to isolate the leading asymptotics for 
 \begin_inset Formula $V$
 \end_inset
 
  at large momentum.
- Suppressing 
+ This thesis follows this approach because it maps easily to that used for
+ the SI-2PIEA above and in the literature.
+ However, it is not known whether this procedure works in four dimensions.
+ So far, counter-term renormalisation has not been applied to 3PIEA in four
+ dimensions and it is unknown whether subdivergences, which are ignored
+ here, are fully controlled in this method.
+ In three dimensions the renormalisation theory of the 3PIEA is much simpler
+ and this method goes through.
+ However, the argument given here falls short of a proof of renormalisability
+ of the SI-3PIEA in four dimensions and the general problem remains open.
+\end_layout
+
+\begin_layout Standard
+Suppressing 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
@@ -4015,9 +4092,9 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \end_inset
 
 ).
- Unfortunately the result is only analytically tractable in fewer than 1+3
- dimensions, so for the present any analytical results depending on the
- explicit forms of 
+ Unfortunately the problem is only tractable in fewer than 1+3 dimensions,
+ so for the present any analytical results depending on the explicit forms
+ of 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
 
@@ -4026,6 +4103,16 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \end_inset
 
  are confined to this case.
+ In 
+\begin_inset Formula $1+2$
+\end_inset
+
+ or 
+\begin_inset Formula $3$
+\end_inset
+
+ dimensions the problem simplifies dramatically as there are no divergent
+ vertex corrections.
  In the physically most interesting case of 1+3 dimensions, 
 \begin_inset Formula $\bar{V}^{\mu}$
 \end_inset
@@ -4042,10 +4129,7 @@ reference "subsec:SI-3PIEA-Three-loop-truncation"
 \begin_inset Formula $V_{N}$
 \end_inset
 
-.
- By using these auxiliary propagators and vertices one can isolate the divergent
- contributions to the equations of motion and so obtain the required set
- of counter-terms to remove them.
+ and it is unkown whether this renormalisation procedure actually works.
 \end_layout
 
 \begin_layout Subsection
@@ -6493,7 +6577,11 @@ key "Peskin1995"
 \begin_inset Formula $H\to HG$
 \end_inset
 
-, which vanishes due to the zero phase space at threshold.
+, which is prohibited due to the unbroken 
+\begin_inset Formula $\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ symmetry and anyway vanishes due to the zero phase space at threshold.
  This means one can drop the sunset diagram and the last bubble vertex correctio
 n (right diagram, bottom row).
  Similarly cuts through two intermediate Higgs lines can be dropped since
@@ -6763,6 +6851,16 @@ PIEA at a truncation to less than
 \begin_layout Standard
 The results presented here are limited in several ways due to the lack of
  numerical solutions for the full SI-3PI equations of motion.
+ The results presented are for the Hartree-Fock truncation, which completely
+ misses vertex corrections and therefore most of the physical content of
+ the 3PI scheme.
+ In other words, the results presented are essentially those for the SI-2PI
+ effective action with the Higgs propagator equation of motion replaced
+ by a truncated version of the vertex Ward identity.
+ There is therefore no basis, given the results presented here, to conclude
+ that the SI-3PI is problematic or not once the vertex corrections are taken
+ into account.
+ Further limitations consider the renormalisation procedure.
  The renormalisation of the theory at two and three loops was performed
  in vacuum.
  The only finite temperature computation performed here was for the Hartree-Fock

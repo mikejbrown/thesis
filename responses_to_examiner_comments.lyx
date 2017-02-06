@@ -1,0 +1,827 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+enumitem
+\end_modules
+\maintain_unincluded_children false
+\language australian
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Responses to Examiner Comments / Corrections
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Check all page, eq.
+ & ref.
+ numbers!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Examiner 1
+\end_layout
+
+\begin_layout Enumerate
+Added the reference as Ref.
+ [38] to the instanton discussion on page 11.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Added the reference as Ref.
+ [66] to the discussion on page 31.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Removed the unwarranted claim (does not affect any results).
+\end_layout
+
+\begin_layout Enumerate
+It was a case of premature simplification (not affecting results).
+ The linear term has been added in equation (2.14).
+\end_layout
+
+\begin_layout Enumerate
+Have extended the discussion in the footnote to address the confusion, and
+ added a reference that covers the difference between the two definitions
+ of the effective action.
+\end_layout
+
+\begin_layout Enumerate
+Added a clarifying statement to the paragraph below equation (2.52).
+\end_layout
+
+\begin_layout Enumerate
+Note: there is a typo in the examiner comment.
+ They clearly mean page 49, not 9.
+ Have added the references requested (refs [78] and [82]) to the discussion
+ which is now on page 50.
+\end_layout
+
+\begin_layout Enumerate
+Added a cross-reference to the paragraph below (2.89) referring to the relevant
+ sections.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+ Also 
+\begin_inset Quotes eld
+\end_inset
+
+more accurate that Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+more accurate than Borel-Pad
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+'e
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Added a citation to Ref [1] above the relevant equation, which is now numbered
+ (3.38).
+\end_layout
+
+\begin_layout Enumerate
+The end of the first paragraph of section 4.2 (now on page 101) was rewritten
+ to address what was done in the literature.
+\end_layout
+
+\begin_layout Enumerate
+Added an explanatory note to the end of the paragraph, now on page 111.
+ Also note former Ref.
+ [119] is now Ref.
+ [6].
+\end_layout
+
+\begin_layout Enumerate
+Have reworded the footnote (now footnote 6) to make clear that alternate
+ versions of dimensional regularisation may not have this issue.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+ Now on page 116.
+\end_layout
+
+\begin_layout Enumerate
+In fact the process is forbidden by the unbroken 
+\begin_inset Formula $\mathrm{O}\left(N-1\right)$
+\end_inset
+
+ symmetry, of which the discrete symmetry mentioned is a subgroup.
+ The text above (4.150) on page 131 has been changed to reflect this.
+\end_layout
+
+\begin_layout Enumerate
+I am very confused by the examiner's comments here.
+ They make two claims: first, that the master Ward identity (3.14) does not
+ necessarily hold for all sources 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+ and second, that the derivation of a contradiction between the WI constraint
+ and linear response theory fails due to an IR divergence of the fluctuation
+ 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ which therefore cancels against the zero of the first term of (6.46), leaving
+ a finite contribution of the correct magnitude to restore the 1PI relationship
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+.
+ It appears that the first claim is incorrect and the second claim does
+ not have the stated implication.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+First, (3.14) is 
+\emph on
+not
+\emph default
+ the master WI from which equations (3.15)-(3.17) are derived.
+ Equation (3.12) is.
+ Equation (3.14) is a consequence of (3.12) and is on a logically equivalent
+ footing as (3.15)-(3.17).
+ The master WI (3.12) holds identically independent of the form of the 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+.
+ The zeroth order WI (3.14) does in fact have physical meaning which has
+ been so far ignored in the symmetry improvement literature: it implies
+ that 
+\begin_inset Formula $\varphi_{a}$
+\end_inset
+
+ is parallel (in 
+\begin_inset Formula $\mathrm{O}\left(N\right)$
+\end_inset
+
+ space) to the source 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+.
+ Note that this has 
+\emph on
+not
+\emph default
+ been enforced in any of the previous treatments of symmetry improvement
+ (this thesis included), though logically it has an equivalent standing
+ as any other WI and should be enforced.
+ Had it been enforced in the SI scheme, the consequence for the linear response
+ calculation is that one should not consider sources for the Goldstone component
+s within the linear response approximation.
+ This removes the contradiction between equations (6.49) and (6.50) (or (6.67)
+ and (6.78) for the projected constraint scheme).
+ Note that this contradiction is removed not by reconciling the equations,
+ but instead by saying that the nontrivial case falls beyond the validity
+ of the linear response approximation.
+ Therefore in the linear response approximation Goldstone fluctuations are
+ 
+\begin_inset Quotes eld
+\end_inset
+
+pinned
+\begin_inset Quotes erd
+\end_inset
+
+ to zero.
+ Solutions for nontrivial Higgs field fluctuations exist, though note that
+ these still propagate masslessly.
+\end_layout
+
+\begin_layout Enumerate
+There is indeed an IR divergence in 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ and the examiner is correct that the first term of (6.46) cannot be dropped.
+ There is an error in the step from (6.46) to (6.47).
+ The examiner then claims that the finite contribution that was neglected
+ is of the correct magnitude to remove the contradiction to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+, and therefore the SI scheme is fine at the linear response level.
+ The antecedent is not really surprising, as the theory is classical to
+ 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ so none of the subtleties arise.
+ However the consequent does not follow: what is at issue in this chapter
+ is precisely the 
+\emph on
+higher order
+\emph default
+ behaviour of (6.46).
+ For the linear response approximation to be valid one must require solutions
+ to exist to arbitrary order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ (though to only linear order in 
+\begin_inset Formula $J_{a}$
+\end_inset
+
+).
+ I believe that the claim that a contradiction exists (now arising at higher
+ order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+) is still generally true.
+ This is because of the second derivation of the contradiction given in
+ (6.85)-(6.90) and the subsequent discussion.
+ I cannot find any divergence or invalid step in this argument.
+ Indeed, this derivation was given to avoid all such subtleties.
+ Explicitly, the nontrivial components of (6.89), assuming the Goldstone
+ sources vanish as discussed above, are
+\begin_inset Formula 
+\begin{align*}
+0 & =\delta\varphi_{g}\left(V_{GHG}v-\tilde{\Delta}_{H}^{-1}+\tilde{\Delta}_{G}^{-1}\right)+\mathcal{K}_{Ng}v,\\
+\delta\varphi_{N}\tilde{\Delta}_{H}^{-1}+J_{N} & =-\delta\varphi_{N}\left(V_{HGG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\mathcal{K}_{gg}v,\\
+0 & =\mathcal{K}_{g'g},\\
+\delta\varphi_{g}\tilde{\Delta}_{G}^{-1} & =0,
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+where 
+\begin_inset Formula $g,g'\neq N$
+\end_inset
+
+, 
+\begin_inset Formula $g\neq g'$
+\end_inset
+
+ and there is no sum on 
+\begin_inset Formula $g$
+\end_inset
+
+.
+ The equations of motion are correct if the right hand sides vanish.
+ To 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ the terms on the right hand side do indeed vanish.
+ However, at higher orders the term in brackets in the first two equations
+ (the vertex WI) is generically nonzero.
+ This is in fact the original motivation for considering the SI-3PIEA.
+ In order for the right hand side to vanish then, one must have a conspiratorial
+ cancellation between the vertex WI term and the 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+ term.
+ These quantities are logically independent.
+ The only connection between them is mediated by the equations of motion.
+ Therefore, such a cancellation seems highly nontrivial and truncation dependent.
+ A full analysis of this scenario in a particular truncation requires computing
+ 
+\begin_inset Formula $\mathcal{K}$
+\end_inset
+
+, which is found from 
+\begin_inset Formula $\delta\Delta^{-1}$
+\end_inset
+
+, which is found from (6.8), which requires solving the full system of linear
+ response equations (6.9)-(6.12).
+ Explicitly, the vanishing of the right hand sides becomes a set of conditions
+ on the linear response functions 
+\begin_inset Formula $\chi^{\phi J}$
+\end_inset
+
+ etc., which are the solutions of (6.9)-(6.12):
+\begin_inset Formula 
+\begin{align*}
+0 & =\chi_{df}^{\phi J}\left(V_{dca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\left(-\tilde{\Delta}_{cd}^{-1}\chi_{def}^{\Delta J}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{df}^{\phi J}\right)T_{ab}^{A}\tilde{\varphi}_{b},\\
+0 & =\chi_{dfg}^{\phi K}\left(V_{dca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\left(-\tilde{\Delta}_{cd}^{-1}\chi_{defg}^{\Delta K}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{dfg}^{\phi K}\right)T_{ab}^{A}\tilde{\varphi}_{b}.
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+It remains an open problem to determine when these constraints admit solutions
+ along with (6.9)-(6.12).
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The correct conclusion of this investigation then is that it may be possible
+ to find truncations for which the linear response approximation (restricted
+ to the case of vanishing Goldstone sources) exists.
+ However, this a 
+\begin_inset Quotes eld
+\end_inset
+
+fine tuned
+\begin_inset Quotes erd
+\end_inset
+
+ situation and cannot be expected to hold generically.
+\end_layout
+
+\begin_layout Enumerate
+Sections 6.4 and 6.5 have been largely rewritten with this updated discussion.
+ The last paragraph of section 6.2 was deleted.
+ Likewise, that last paragraph of the abstract, last paragraph of section
+ 7.1 and second to last paragraph of section 7.2 have been updated to reflect
+ the new conclusions.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+See point 18 above.
+\end_layout
+
+\begin_layout Enumerate
+Added 
+\begin_inset Quotes eld
+\end_inset
+
+perhaps
+\begin_inset Quotes erd
+\end_inset
+
+ to the first sentence and edited the final paragraph of section 7.3 to make
+ the conclusion a little less stark.
+\end_layout
+
+\begin_layout Section
+Examiner 2
+\end_layout
+
+\begin_layout Subsection*
+Criticisms
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+label=
+\backslash
+Alph{enumi}.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Added the requested table (table 0.2 on page xii).
+\end_layout
+
+\begin_layout Enumerate
+The request for an evaluation of the SI method is clearly reasonable.
+ However, the examiner confuses the Marko et.
+ al.
+ study, which used the two loop approximation, with the results of the Hartree-F
+ock approximation (indeed there is no problem for the SI-2PIEA in the Hartree-Fo
+ck approximation) which are directly comparable to the SI-3PI results presented
+ in chapter 4.
+ The Marko et.
+ al.
+ study is indeed disturbing regarding the validity of the symmetry improvement
+ method, at least with a cutoff regulator.
+ This is due to the appearance of IR divergences at the two loop level.
+ To make any statements about the existence (or otherwise) of SI-3PI solutions
+ requires solutions in truncations which can in principle produce IR divergences
+, i.e.
+ the two or three loop truncations, which remain to be solved.
+ Therefore the existence criteria for SI-3PI solutions remains a totally
+ open problem.
+ A discussion along these lines has been added as the final paragraph of
+ section 7.2.
+\end_layout
+
+\begin_layout Enumerate
+I am not sure it is really fair to say the thesis overstates what has been
+ done at the 3PI level.
+ The scope and limitations of each calculation are clearly specified and
+ discussed in the relevant sections.
+ In particular, the limitations of the 3PI calculation are discussed in
+ sections 4.11 and 7.2.
+ The lack of full 3PI numerical solutions is referred to at several points
+ as possibly the primary limitation of this thesis.
+ To forestall any further concern, clarifying comments have been added at
+ the start of section 4.5, in the second last paragraph of section 4.11 and
+ in the fourth paragraph of 7.2.
+\end_layout
+
+\begin_layout Enumerate
+The renormalisation issues brought up by the examiner, so far as I understand
+ them, do not apparently affect any of the results presented.
+ They only affect the 3 loop 4 dimensional case which was alluded to but
+ said to be beyond the scope of the thesis 
+\emph on
+because of the increased difficulty of the renormalisation theory
+\emph default
+.
+ Have added the fourth paragraph of section 4.7.1 to clarify these points
+ and removed the confusing 
+\begin_inset Quotes eld
+\end_inset
+
+analytically tractable
+\begin_inset Quotes erd
+\end_inset
+
+ from the end of section 4.7.1 and added some clarification there.
+\end_layout
+
+\begin_layout Subsection*
+Additional suggestions
+\end_layout
+
+\begin_layout Enumerate
+The Schwinger-Dyson approach is briefly discussed at a few points already,
+ principally below (2.6).
+ Have added a further mention to the first paragraph of section 4.1.
+\end_layout
+
+\begin_layout Enumerate
+Have added the references (refs.
+ [102] and [103]) to the discussion at the start of chapter 3.
+\end_layout
+
+\begin_layout Subsection*
+Minor points
+\end_layout
+
+\begin_layout Enumerate
+The term 
+\begin_inset Quotes eld
+\end_inset
+
+sunset
+\begin_inset Quotes erd
+\end_inset
+
+ for this diagram comes from Pilaftsis and Teresi.
+ I definitely want some quick way to refer to the diagram but am not sure
+ what a better term would be.
+ Have added an explanatory footnote above (4.36) on page 108.
+\end_layout
+
+\begin_layout Enumerate
+Made the suggested changes to Fig.
+ 1.3(a).
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Yes.
+ Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Specified that it is in fact the 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ divergent contribution, which includes also the finite terms shown in the
+ square bracket by convention.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Added a clarifying sentence to this effect immediately after.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+\end_layout
+
+\begin_layout Enumerate
+Lack of letters is always a problem.
+ During peer review of the SI-3PIEA paper (Ref.
+ [2]) I was asked to change the (admittedly more systematic) 
+\begin_inset Formula $V^{\left(4\right)}$
+\end_inset
+
+ to 
+\begin_inset Formula $W$
+\end_inset
+
+ to reduce clutter.
+ I'm not sure there will be a solution that pleases everybody.
+ I have changed eq.
+ (3.17) to use 
+\begin_inset Formula $W$
+\end_inset
+
+, which should cause no confusion with the generating functional because
+ it appears with subscripts here.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M_{ac}^{2}$
+\end_inset
+
+ is symmetric in general.
+ In the symmetric phase it becomes proportional to the identity matrix.
+ In the broken phase it becomes diagonal (with 
+\begin_inset Formula $N-1$
+\end_inset
+
+ zero eigenvalues) in the SSB ansatz basis adopted on the line below equation
+ (3.20).
+ In bases that mix the Higgs and Goldstone components there will be off
+ diagonal terms.
+ I have clarified the text below (3.20).
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+ The relevant equation is now (3.35).
+\end_layout
+
+\begin_layout Enumerate
+Added the equation below eq.
+ (3.30) and referred to it below (3.71).
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+ The equation is now (3.38) and is referenced on page 85.
+\end_layout
+
+\begin_layout Enumerate
+The suggested notation is introduced above equation (3.94) and propagated
+ through the section.
+\end_layout
+
+\begin_layout Enumerate
+Have reworded the paragraph below eq.
+ (4.11) to clarify the argument.
+\end_layout
+
+\begin_layout Enumerate
+This is fair.
+ Have replaced 
+\begin_inset Quotes eld
+\end_inset
+
+an entirely novel
+\begin_inset Quotes erd
+\end_inset
+
+ with 
+\begin_inset Quotes eld
+\end_inset
+
+a novel
+\begin_inset Quotes erd
+\end_inset
+
+ in the last sentence of the first paragraph of chapter 5.
+\end_layout
+
+\begin_layout Enumerate
+Correction made as requested.
+ Now on page 160 (1st sentence of 2nd last paragraph).
+\end_layout
+
+\begin_layout Section
+Other changes
+\end_layout
+
+\begin_layout Enumerate
+Updated the list of publications on page vii with publication details for
+ the soft symmetry improvement paper.
+\end_layout
+
+\begin_layout Enumerate
+Changed Fig.
+ 1.4(a) to show the critical temperature and sort the legend in the same
+ order as the lines on the plot.
+\end_layout
+
+\begin_layout Enumerate
+Footnote 3 on page 81 
+\begin_inset Quotes eld
+\end_inset
+
+Higss
+\begin_inset Quotes erd
+\end_inset
+
+ was corrected to 
+\begin_inset Quotes eld
+\end_inset
+
+Higgs
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Fixed a dimensional inconsistency in equation (5.136) and the paragraph above
+ (not affecting results).
+ This is the same inconsistency that was noticed during the preparation
+ of the soft symmetry improvement paper for publication after having sent
+ the thesis for examination.
+\end_layout
+
+\begin_layout Enumerate
+Second paragraph of section 7.2 
+\begin_inset Quotes eld
+\end_inset
+
+in such as way
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+in such a way
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Second last paragraph of section 7.3 
+\begin_inset Quotes eld
+\end_inset
+
+enforcing symmetries at large differences
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+enforcing symmetries at large distances
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

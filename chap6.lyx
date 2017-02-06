@@ -276,8 +276,6 @@ close enough
  Third, the linear response approximation is a nice laboratory to isolate
  the novel features of symmetry improvement constraints in non-equilibrium
  settings.
- Indeed, one can find results that are independent of any truncation of
- the effective action.
  Finally, it is expected that any physically reasonable formalism will have
  a well formed linear response approximation, though this depends on the
  assumption that the exact behaviour is an analytic (or at least not too
@@ -564,8 +562,8 @@ g the linear response functions
 : 
 \begin_inset Formula 
 \begin{align}
-\delta\varphi_{a} & =\chi_{ab}^{\phi J}J_{b}+\frac{1}{2}\chi_{abc}^{\phi K}K_{bc},\\
-\delta\Delta_{ab} & =\chi_{abc}^{\Delta J}J_{c}+\frac{1}{2}\chi_{abcd}^{\Delta K}K_{cd},
+\delta\varphi_{a} & =\chi_{ab}^{\phi J}J_{b}+\frac{1}{2}\chi_{abc}^{\phi K}K_{bc},\label{eq:lrt-dphi-from-response-functions}\\
+\delta\Delta_{ab} & =\chi_{abc}^{\Delta J}J_{c}+\frac{1}{2}\chi_{abcd}^{\Delta K}K_{cd},\label{eq:lrt-dDelta-from-response-functions}
 \end{align}
 
 \end_inset
@@ -648,18 +646,6 @@ This is an equation which determines the four point kernel
  iteratively, i.e.
  a Bethe-Salpeter equation with the last quantity in braces being the Bethe-Salp
 eter kernel.
-\end_layout
-
-\begin_layout Standard
-While this is the general formalism connecting effective actions to linear
- response theory, it is not actually required in this chapter because symmetry
- improvement constraints change the picture significantly.
- In particular, one can derive the implications of the constraints for linear
- response theory without explicitly computing any equilibrium solutions,
- taking any derivatives of the effective action, performing any truncation
- of the self-energies, or worrying about renormalisation of the Bethe-Salpeter
- equation.
- The results given here are independent of all of these details.
 \end_layout
 
 \begin_layout Section
@@ -1130,31 +1116,14 @@ In the linear response approximation
 
  no longer vanish, and the SI-2PI equations of motion must be solved to
  first order in the sources without any assumption of homogeneity.
- These equations were given in chapter 
+ Now it makes a difference whether one uses the simple constraint 
 \begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:chap4"
+LatexCommand eqref
+reference "eq:simple-constraint"
 
 \end_inset
 
- and are reproduced here for convenience:
-\end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\begin{align}
-\mathcal{W}_{c}^{A} & =\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A}=0,\\
-\frac{\delta\Gamma}{\delta\varphi_{d}\left(z\right)} & =\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{ca}^{-1}\left(x,z\right)T_{ad}^{A}-J_{d}\left(z\right)-\int_{w}K_{de}\left(z,w\right)\varphi_{e}\left(w\right),\\
-\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)} & =-\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{cd}^{-1}\left(x,z\right)\int_{y}\Delta_{ea}^{-1}\left(w,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right).
-\end{align}
-
-\end_inset
-
-Recall also that symmetry improvement can be implemented through a simple
- constraint
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 \mathcal{C}=\frac{i}{2}\ell_{A}^{c}\mathcal{W}_{c}^{A},
@@ -1162,23 +1131,122 @@ Recall also that symmetry improvement can be implemented through a simple
 
 \end_inset
 
-or a projected constraint 
+or projected constraint 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:projected-constraint"
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
-\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A}.
+\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A}
 \end{equation}
 
 \end_inset
 
-The remainder of this section will consider the simple constraint.
- The projected constraint is considered in section 
+for symmetry improvement.
+ In this section only the simple constraint is considered.
+ The projected constraint is considered in the next section.
+ The SI-2PI equations of motion were given in chapter 
 \begin_inset CommandInset ref
-LatexCommand eqref
-reference "subsec:The-Alternate-Constraint"
+LatexCommand ref
+reference "chap:chap4"
 
 \end_inset
 
+, though chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:chap4"
+
+\end_inset
+
+ (along with all of the published SI literature to date) neglects the WI
+ 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Jphi-WI"
+
+\end_inset
+
+, reproduced here:
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}^{A}=-J_{a}T_{ab}^{A}\varphi_{b}.
+\end{equation}
+
+\end_inset
+
+The consistency of the linear response theory requires that this identity
+ also be enforced if 
+\begin_inset Formula $J_{a}\neq0$
+\end_inset
+
 .
+ Therefore a new constraint 
+\begin_inset Formula $\mathcal{C}''=i\ell_{A}\mathcal{W}^{A}$
+\end_inset
+
+ must be added to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ and the symmetry improved equations of motion are altered to
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\mathcal{W}^{A} & =-J_{a}T_{ab}^{A}\varphi_{b}=0,\\
+\mathcal{W}_{c}^{A} & =\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A}=0,\\
+\frac{\delta\Gamma}{\delta\varphi_{d}\left(z\right)} & =-iJ_{a}\left(z\right)\ell_{A}T_{ad}^{A}+\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{ca}^{-1}\left(x,z\right)T_{ad}^{A}-J_{d}\left(z\right)-\int_{w}K_{de}\left(z,w\right)\varphi_{e}\left(w\right),\\
+\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)} & =-\frac{i}{2}\int_{x}\ell_{A}^{c}\left(x\right)\Delta_{cd}^{-1}\left(x,z\right)\int_{y}\Delta_{ea}^{-1}\left(w,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right).
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The only effect of the new WI on the previously established equations of
+ motion is the addition of a term 
+\begin_inset Formula $\propto J$
+\end_inset
+
+ on the right hand side of the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ equation of motion and a linear constraint saying that 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ must be proportional to 
+\begin_inset Formula $J$
+\end_inset
+
+ if 
+\begin_inset Formula $J\neq0$
+\end_inset
+
+.
+ This WI has no consequences if 
+\begin_inset Formula $J_{a}=0$
+\end_inset
+
+ so none of the previous results are affected.
+ Also note that the new Lagrange multipliers 
+\begin_inset Formula $\ell_{A}$
+\end_inset
+
+ are finite because the term on the right hand side of the 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ equation of motion does not vanish identically.
 \end_layout
 
 \begin_layout Standard
@@ -1200,141 +1268,372 @@ To find the linear response expand all quantities
 
  etc.
  as first order.
- Working first on the WI gives the pair of equations: 
+ Working first on the WIs gives the equations: 
 \begin_inset Formula 
 \begin{align}
+0 & =J_{a}T_{ab}^{A}\tilde{\varphi}_{b}\\
 0 & =\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\tilde{\varphi}_{b},\label{eq:WI-zeroth-order}\\
 0 & =\delta\Delta_{ca}^{-1}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}-J_{a}T_{ac}^{A}.\label{eq:WI-first-order}
 \end{align}
 
 \end_inset
 
-The first equation is simply the equilibrium constraint as expected since
- the analysis of the last section holds with all quantities decorated with
- tildes.
- The second equation is new.
- Using the identity 
-\begin_inset Formula $\delta\Delta_{ca}^{-1}=-\Delta_{cd}^{-1}\delta\Delta_{de}\Delta_{ea}^{-1}+\mathcal{O}\left(\delta\Delta^{2}\right)$
+The first equation requires that the source components in the Goldstone
+ directions vanish, that is 
+\begin_inset Formula $J_{a}=\left(0,\cdots,0,J_{N}\right)$
 \end_inset
 
- gives to first order
+.
+ The generation of Goldstone field fluctuations is outside the scope of
+ linear response theory.
+ The second equation is simply the equilibrium constraint as expected.
+ The third equation is new.
+\end_layout
+
+\begin_layout Standard
+To understand 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:WI-first-order"
+
+\end_inset
+
+ start by taking the variation of 
+\begin_inset Formula $\Delta^{-1}$
+\end_inset
+
+ from its definition in terms of the 1PIEA 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-Delta-def-from-Gamma"
+
+\end_inset
+
+ (recall that 
+\begin_inset Formula $\Delta^{-1}=\delta^{2}\Gamma^{(1)}/\delta\varphi\delta\varphi$
+\end_inset
+
+).
+ One can write
 \begin_inset Formula 
 \begin{equation}
-0=-\tilde{\Delta}_{cd}^{-1}\delta\Delta_{de}\left(\tilde{\Delta}_{ea}^{-1}T_{ab}^{A}\tilde{\varphi}_{b}\right)+\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}-J_{a}T_{ac}^{A}.
+\delta\Delta_{ca}^{-1}=\frac{\delta^{3}\Gamma^{\left(1\right)}}{\delta\varphi_{d}\delta\varphi_{c}\delta\varphi_{a}}\delta\varphi_{d}+\mathcal{O}\left(\delta\varphi^{2}\right),
 \end{equation}
 
 \end_inset
 
-The first term vanishes by virtue of the zeroth order WI, thus 
+and note that 
+\begin_inset Formula $\delta^{3}\Gamma^{\left(1\right)}/\delta\varphi_{d}\delta\varphi_{c}\delta\varphi_{a}=V_{dca}$
+\end_inset
+
+ is the three point vertex function.
+ These relations no longer hold identically for the 2PI correlation functions,
+ but they do hold numerically for the 
+\emph on
+exact
+\emph default
+ solutions of the untruncated 2PI equations of motion.
+ This can be extended to the 2PIEA by writing 
 \begin_inset Formula 
 \begin{equation}
-\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}=J_{a}T_{ac}^{A}.\label{eq:first-order-constraint-simple-scheme}
+\delta\Delta_{ca}^{-1}=V_{dca}\delta\varphi_{d}+\mathcal{K}_{ca},
 \end{equation}
 
 \end_inset
 
-The nature of this equation is remarkable.
- The 
-\emph on
-constraint
-\emph default
- yields a 
-\emph on
-wave equation
-\emph default
- for the fluctuations.
- Working out the component equations gives:
+where 
+\begin_inset Formula $\mathcal{K}_{ca}$
+\end_inset
+
+ encapsulates the additional variations of 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ in the truncated 2PIEA formalism.
+ Also recall there is a WI for the three point vertex function 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:1PI-V-WI"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{equation}
+\mathcal{W}_{dc}^{A}=V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},
+\end{equation}
+
+\end_inset
+
+which is unaffected by the presence of sources.
+ As with 
+\begin_inset Formula $\mathcal{W}_{c}^{A}$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{W}_{dc}^{A}=0$
+\end_inset
+
+ in the exact theory, but not automatically in truncations.
+ Combining these relations with 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:WI-first-order"
+
+\end_inset
+
+ gives:
 \begin_inset Formula 
 \begin{align}
-\tilde{\Delta}_{G}^{-1}\delta\varphi_{N} & =-J_{N}, & A=\left(g,N\right),\ c\neq N,\label{eq:phiN-eom-massless}\\
-\tilde{\Delta}_{H}^{-1}\delta\varphi_{g} & =-J_{g}, & A=\left(g,N\right),\ c=N,\label{eq:phiG-eom-w-Higgs-propagator}\\
-\tilde{\Delta}_{G}^{-1}\delta\varphi_{g} & =-J_{g}, & A=\left(g,g'\right),\ g,g'\neq N,\ c=g',c\neq g.\label{eq:phiG-eom-w-Goldstone-propagator}
+0 & =\delta\varphi_{d}\left(\mathcal{W}_{dc}^{A}-\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}-\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}-J_{a}T_{ac}^{A}\nonumber \\
+ & =\delta\varphi_{d}\left(\mathcal{W}_{dc}^{A}-\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}-J_{a}T_{ac}^{A},
 \end{align}
 
 \end_inset
 
-The desired linear response functions are then just the Green functions
- for these equations, i.e.
- 
-\begin_inset Formula $\chi_{NN}^{\phi J}\left(x,y\right)=-\tilde{\Delta}_{G}\left(x,y\right)$
+which can be rearranged as 
+\begin_inset Formula 
+\begin{equation}
+\left(\delta\varphi_{d}\tilde{\Delta}_{da}^{-1}+J_{a}\right)T_{ac}^{A}=\delta\varphi_{d}\mathcal{W}_{dc}^{A}+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}.\label{eq:fluctuation-eom-vertex-WI-1}
+\end{equation}
+
 \end_inset
 
- etc.
+ 
 \end_layout
 
 \begin_layout Standard
-There are two major flaws with these equations.
- The first is a physical misprediction: 
-\begin_inset Formula $\delta\varphi_{N}$
+If the right hand side vanishes one has (using the symmetry of 
+\begin_inset Formula $\tilde{\Delta}^{-1}$
 \end_inset
 
- propagates masslessly due to the equilibrium Goldstone propagator even
- though the Higgs propagator has a non-zero mass.
- The second is that 
-\begin_inset Formula $\delta\varphi_{g}$
+) 
+\begin_inset Formula 
+\begin{equation}
+\tilde{\Delta}_{ad}^{-1}\delta\varphi_{d}=-J_{a},
+\end{equation}
+
 \end_inset
 
- is overdetermined, i.e.
- its initial value problem is ill posed.
- In the Fourier domain equations 
+which is the correct equation of motion for fluctuations.
+ The failure of these equations to be satisfied is measured by the terms
+ on the right hand side of 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:phiG-eom-w-Higgs-propagator"
+reference "eq:fluctuation-eom-vertex-WI-1"
 
+\end_inset
+
+, which have two distinct meanings.
+ The first, 
+\begin_inset Formula $\delta\varphi_{d}\mathcal{W}_{dc}^{A}$
+\end_inset
+
+, measures the failure of the 
+\emph on
+vertex
+\emph default
+ WI to be satisfied by 2PI approximations, while the second term, 
+\begin_inset Formula $\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}$
+\end_inset
+
+, measures the failure of the variations in the 2PI functions 
+\begin_inset Formula $\varphi$
 \end_inset
 
  and 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ to be linked according to the 1PI relations.
+ Generically one cannot expect these terms to cancel as they are logically
+ independent (i.e., they do not cancel as the result of any basic identity).
+ The vanishing of the right hand side of 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:phiG-eom-w-Goldstone-propagator"
+reference "eq:fluctuation-eom-vertex-WI-1"
 
 \end_inset
 
- read 
-\begin_inset Formula 
-\begin{eqnarray}
-\left(p^{2}-m_{H}^{2}-\tilde{\Sigma}_{H}\left(p\right)\right)\delta\varphi_{g} & = & -J_{g},\\
-\left(p^{2}-\tilde{\Sigma}_{G}\left(p\right)\right)\delta\varphi_{g} & = & -J_{g},
-\end{eqnarray}
-
+ is an additional constraint on the linear response functions, which are
+ fully determined by the 2PI equations of motion.
+ Therefore the existence of a physically reasonable linear response approximatio
+n is a 
+\begin_inset Quotes eld
 \end_inset
 
-which obviously only allows solutions if there are modes satisfying 
-\begin_inset Formula $m_{H}^{2}+\tilde{\Sigma}_{H}\left(p\right)=\tilde{\Sigma}_{G}\left(p\right)$
+fine tuned
+\begin_inset Quotes erd
 \end_inset
 
- and if 
-\begin_inset Formula $J_{g}$
-\end_inset
-
- is only supported on these modes.
- If any other perturbation is applied or a solution of 
-\begin_inset Formula $m_{H}^{2}+\tilde{\Sigma}_{H}\left(p\right)=\tilde{\Sigma}_{G}\left(p\right)$
-\end_inset
-
- does not exist the system is inconsistent.
- This is clearly not the expected behaviour physically.
- One can relax 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:phiG-eom-w-Higgs-propagator"
-
-\end_inset
-
- by using the projected constraint instead of the simple one, however this
- leads to further difficulties as discussed in section 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "subsec:The-Alternate-Constraint"
-
-\end_inset
-
-.
+ property of particular truncations.
 \end_layout
 
 \begin_layout Standard
-There is further danger lurking in the right hand sides of the SI-2PI equations
- of motion.
+The 
+\begin_inset Quotes eld
+\end_inset
+
+anomalous
+\begin_inset Quotes erd
+\end_inset
+
+ terms on the right hand side can be understood in greater detail by expanding
+ 
+\begin_inset Formula $\mathcal{K}_{ca}$
+\end_inset
+
+ using the identity
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Note that one must be careful using this identity because 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ can develop an IR divergence.
+ 
+\begin_inset Formula $\delta\Delta^{-1}$
+\end_inset
+
+ is at least 
+\begin_inset Quotes eld
+\end_inset
+
+infrared safe.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $\delta\Delta_{ca}^{-1}=-\Delta_{cd}^{-1}\delta\Delta_{de}\Delta_{ea}^{-1}+\mathcal{O}\left(\delta\Delta^{2}\right)$
+\end_inset
+
+ and the expressions for 
+\begin_inset Formula $\delta\varphi$
+\end_inset
+
+ and 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ in terms of the linear response functions 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lrt-dphi-from-response-functions"
+
+\end_inset
+
+-
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:lrt-dDelta-from-response-functions"
+
+\end_inset
+
+ to obtain
+\begin_inset Formula 
+\begin{align}
+\mathcal{K}_{ca} & =-\Delta_{cd}^{-1}\left(\chi_{def}^{\Delta J}J_{f}+\frac{1}{2}\chi_{defg}^{\Delta K}K_{fg}\right)\Delta_{ea}^{-1}-V_{dca}\left(\chi_{de}^{\phi J}J_{e}+\frac{1}{2}\chi_{def}^{\phi K}K_{ef}\right)\nonumber \\
+ & =\left(-\Delta_{cd}^{-1}\chi_{def}^{\Delta J}\Delta_{ea}^{-1}-V_{dca}\chi_{df}^{\phi J}\right)J_{f}+\frac{1}{2}\left(-\Delta_{cd}^{-1}\chi_{defg}^{\Delta K}\Delta_{ea}^{-1}-V_{dca}\chi_{dfg}^{\phi K}\right)K_{fg}.
+\end{align}
+
+\end_inset
+
+The anomalous right hand side becomes
+\begin_inset Formula 
+\begin{align}
+\mathcal{F}_{c}^{A} & \equiv\delta\varphi_{d}\mathcal{W}_{dc}^{A}+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}\nonumber \\
+ & =\left(\chi_{df}^{\phi J}J_{f}+\frac{1}{2}\chi_{dfg}^{\phi K}K_{fg}\right)\left(V_{dca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)\nonumber \\
+ & +\left[\left(-\tilde{\Delta}_{cd}^{-1}\chi_{def}^{\Delta J}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{df}^{\phi J}\right)J_{f}+\frac{1}{2}\left(-\tilde{\Delta}_{cd}^{-1}\chi_{defg}^{\Delta K}\tilde{\Delta}_{ea}^{-1}-V_{dca}\chi_{dfg}^{\phi K}\right)K_{fg}\right]T_{ab}^{A}\tilde{\varphi}_{b}.
+\end{align}
+
+\end_inset
+
+Demanding that this vanishes independent of the sources gives the pair of
+ conditions
+\begin_inset Formula 
+\begin{align}
+0 & =\chi_{df}^{\phi J}\left(\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)-\tilde{\Delta}_{cd}^{-1}\chi_{def}^{\Delta J}\tilde{\Delta}_{ea}^{-1}T_{ab}^{A}\tilde{\varphi}_{b},\\
+0 & =\chi_{dfg}^{\phi K}\left(\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}+\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)-\tilde{\Delta}_{cd}^{-1}\chi_{defg}^{\Delta K}\tilde{\Delta}_{ea}^{-1}T_{ab}^{A}\tilde{\varphi}_{b},
+\end{align}
+
+\end_inset
+
+which must be satisfied by the linear response functions in order for the
+ linear response approximation to correctly describe the propagation of
+ field fluctuations.
+\end_layout
+
+\begin_layout Standard
+The equations of motion following from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fluctuation-eom-vertex-WI-1"
+
+\end_inset
+
+ can be worked out by substituting particular values for 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $c$
+\end_inset
+
+ and working out the components.
+ The nontrivial components are
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align}
+\tilde{\Delta}_{G}^{-1}\delta\varphi_{g}+J_{g} & =\delta\varphi_{g}\left(V_{GHG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)+\mathcal{K}_{Ng}v, & A=\left(g,N\right),\ c=N,\\
+0 & =\mathcal{K}_{cg}v, & A=\left(g,N\right),\ c\neq g,N,\\
+\tilde{\Delta}_{H}^{-1}\delta\varphi_{N}+J_{N} & =-\delta\varphi_{N}\left(V_{HGG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\mathcal{K}_{gg}v, & A=\left(g,N\right),\ c=g,\\
+\tilde{\Delta}_{G}^{-1}\delta\varphi_{g}+J_{g} & =0, & A=\left(g,g'\right),\ g,g'\neq N,\ c=g',c\neq g.
+\end{align}
+
+\end_inset
+
+(Note that 
+\begin_inset Formula $\mathcal{K}_{gg}$
+\end_inset
+
+ is not summed on 
+\begin_inset Formula $g$
+\end_inset
+
+.) These equations are not completely independent but neither are they trivial.
+ In particular, the consistency of the first and fourth equation requires
+\begin_inset Formula 
+\begin{equation}
+\delta\varphi_{g}\left(V_{GHG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)+\mathcal{K}_{Ng}v=0,
+\end{equation}
+
+\end_inset
+
+which is not guaranteed by the SI-2PI equations of motion.
+ The corresponding conditions on the response functions are
+\begin_inset Formula 
+\begin{align}
+0 & =\chi_{kf}^{\phi J}\left(\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\tilde{\Delta}_{H}^{-1}\chi_{Nkf}^{\Delta J}\tilde{\Delta}_{G}^{-1}v,\\
+0 & =\chi_{kfg}^{\phi K}\left(\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\tilde{\Delta}_{H}^{-1}\chi_{Nkfg}^{\Delta K}\tilde{\Delta}_{G}^{-1}v.
+\end{align}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+There are further constraints lurking in the right hand sides of the SI-2PI
+ equations of motion.
  Since the constraint procedure involves a limit 
 \begin_inset Formula $\tilde{\ell}\to\infty$
 \end_inset
@@ -1455,10 +1754,7 @@ key "Dirac2001"
 \end_inset
 
  limit of the equations of motion.
-\end_layout
-
-\begin_layout Standard
-Note that one can take 
+ Note that one can take 
 \begin_inset Formula $m_{G}^{2}\to0$
 \end_inset
 
@@ -1470,31 +1766,151 @@ reference "eq:secondary-constraint-delta-eom"
 \end_inset
 
 , so that constraint is satisfied identically.
- Similarly, 
+ Also, 
 \begin_inset CommandInset ref
 LatexCommand eqref
 reference "eq:secondary-constraint-phi-eom"
 
 \end_inset
 
- can be simplified to 
+ can be simplified following the same procedure as 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:fluctuation-eom-vertex-WI-1"
+
+\end_inset
+
+, yielding two further conditions on the linear response functions
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-0 & =m_{G}^{2}\int_{yw}\left(\delta_{dN}P_{cg}^{\perp}\delta\Delta_{cg}\left(y,w\right)\tilde{\Delta}_{G}^{-1}\left(w,z\right)-P_{de}^{\perp}\delta\Delta_{eN}\left(y,w\right)\tilde{\Delta}_{H}^{-1}\left(w,z\right)\right),
+0 & =\int_{xwv}\left[-\delta_{Nd}P_{ab}^{\perp}\Delta_{G}^{-1}\left(x,w\right)\Delta_{G}^{-1}\left(v,z\right)+P_{ad}^{\perp}\delta_{bN}\Delta_{G}^{-1}\left(x,w\right)\Delta_{H}^{-1}\left(v,z\right)\right]\chi_{abc}^{\Delta J}\left(w,v,u\right),\\
+0 & =\int_{xwv}\left[-\delta_{Nd}P_{ab}^{\perp}\Delta_{G}^{-1}\left(x,w\right)\Delta_{G}^{-1}\left(v,z\right)+P_{ad}^{\perp}\delta_{bN}\Delta_{G}^{-1}\left(x,w\right)\Delta_{H}^{-1}\left(v,z\right)\right]\chi_{abcd}^{\Delta K}\left(w,v,u,y\right).
 \end{align}
 
 \end_inset
 
-which is also automatically satisfied in the 
-\begin_inset Formula $m_{G}^{2}\to0$
+
+\end_layout
+
+\begin_layout Standard
+With one exception it is not known whether any truncation satisfies all
+ of these conditions.
+ The exception is the truncation of the 
+\emph on
+equations of motion
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The truncation of 
+\begin_inset Formula $\Gamma$
 \end_inset
 
- limit.
- The fact that the secondary constraints automatically vanish is a consequence
- of using the unprojected constraint.
- As shown in the next section, using the projected constraint instead removes
- the troublesome equation of motion, but the secondary constraints become
- non-trivial and lead again to pathologies.
+ to 
+\begin_inset Formula $\mathcal{O}\left(\hbar^{0}\right)$
+\end_inset
+
+ leaves 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ undetermined.
+\end_layout
+
+\end_inset
+
+
+\emph default
+ to lowest order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+, for which 
+\begin_inset Formula 
+\begin{align}
+\delta\Delta_{ca}^{-1} & =\delta\Delta_{0ca}^{-1}\nonumber \\
+ & =\left(-\frac{\lambda}{3}\tilde{\varphi}_{d}\delta\varphi^{d}\delta_{ac}-\frac{\lambda}{3}\delta\varphi_{a}\tilde{\varphi}_{c}-\frac{\lambda}{3}\tilde{\varphi}_{a}\delta\varphi_{c}\right)\delta\left(x-y\right)\nonumber \\
+ & =-\frac{\lambda}{3}v\left(\delta\varphi_{N}\delta_{ac}+\delta\varphi_{a}\delta_{cN}+\delta_{aN}\delta\varphi_{c}\right)\delta\left(x-y\right).
+\end{align}
+
+\end_inset
+
+Substituting this into the WI gives
+\begin_inset Formula 
+\begin{equation}
+0=-\frac{\lambda v^{2}}{3}\left(\delta\varphi_{N}\left(x\right)\delta_{ac}+\delta\varphi_{a}\left(x\right)\delta_{cN}\right)T_{aN}^{A}+\int_{y}\tilde{\Delta}_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\delta\varphi_{b}\left(y\right)-J_{a}T_{ac}^{A},
+\end{equation}
+
+\end_inset
+
+and working out the components gives the set of equations 
+\begin_inset Formula 
+\begin{align}
+\int_{y}\left[\tilde{\Delta}_{G}^{-1}\left(x,y\right)-\frac{\lambda v^{2}}{3}\delta\left(x-y\right)\right]\delta\varphi_{N}\left(y\right) & =-J_{N},\\
+\int_{y}\left[\tilde{\Delta}_{H}^{-1}\left(x,y\right)+\frac{\lambda v^{2}}{3}\delta\left(x-y\right)\right]\delta\varphi_{g}\left(y\right) & =-J_{g},\\
+\int_{y}\tilde{\Delta}_{G}^{-1}\left(x,y\right)\delta\varphi_{g}\left(y\right) & =-J_{g}.
+\end{align}
+
+\end_inset
+
+This system is consistent if 
+\begin_inset Formula $m_{H}^{2}=m_{G}^{2}+\lambda v^{2}/3+\mathcal{O}\left(\hbar\right)$
+\end_inset
+
+ which, of course, is true.
+ Thus, for the 1PIEA the WI propagates Higgs and Goldstone fluctuations
+ with the correct masses and source terms.
+ This is expected because the WI was constructed to be satisfied by the
+ 1PI correlation functions.
+ One further has that 
+\begin_inset Formula $\delta\varphi_{g}=0$
+\end_inset
+
+ as a consequence of 
+\begin_inset Formula $J_{g}=0$
+\end_inset
+
+.
+ Furthermore, from the 
+\begin_inset Formula $d=N$
+\end_inset
+
+ component of the secondary constraint one has
+\begin_inset Formula 
+\begin{align}
+0 & =P_{cg}^{\perp}\int_{x}\delta\Delta_{cg}^{-1}\left(x,z\right)\nonumber \\
+ & =-\frac{\lambda}{3}vP_{cg}^{\perp}\int_{x}\left(\delta\varphi_{N}\delta_{gc}+\delta\varphi_{g}\delta_{cN}+\delta_{gN}\delta\varphi_{c}\right)\delta\left(x-z\right)\nonumber \\
+ & =-\frac{\lambda}{3}v\left(N-1\right)\delta\varphi_{N}\left(z\right),
+\end{align}
+
+\end_inset
+
+which implies that 
+\begin_inset Formula $\delta\varphi_{N}=0$
+\end_inset
+
+, which in turn implies 
+\begin_inset Formula $\delta\Delta^{-1}=0$
+\end_inset
+
+, which in turn requires 
+\begin_inset Formula $K=0$
+\end_inset
+
+ which is a consequence of the 2PI equation of motion.
+ Thus the classical approximation is consistent, but trivial.
+ There is no longer any reason for this to go through if 
+\begin_inset Formula $\delta\Delta$
+\end_inset
+
+ is independent of 
+\begin_inset Formula $\delta\varphi$
+\end_inset
+
+, which is the case in higher order truncations.
 \end_layout
 
 \begin_layout Subsection
@@ -1520,14 +1936,24 @@ name "subsec:The-Alternate-Constraint"
 \end_layout
 
 \begin_layout Standard
-Now consider using the projected constraint instead of the simple constraint
- used above for the symmetry improvement.
+Now consider using the projected constraint
+\begin_inset Formula 
+\begin{equation}
+\mathcal{C}'=\frac{i}{2}\ell_{A}^{c}P_{cd}^{\perp}\mathcal{W}_{d}^{A},
+\end{equation}
+
+\end_inset
+
+instead of the simple constraint used above for the symmetry improvement.
  The projection operator forces only Goldstone modes to be involved in the
  constraint.
  Note that the constraints which have been projected out are valid WIs which
  are obeyed by the 1PIEA.
- This alternate scheme consists of picking a subset of the WIs to enforce,
- chosen in the only 
+ This alternate scheme consists of picking a 
+\emph on
+subset
+\emph default
+ of the WIs to enforce, chosen in the only 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
 \end_inset
 
@@ -1614,7 +2040,7 @@ The second term vanishes due to the zeroth order WI and the first term is
  just 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:first-order-constraint-simple-scheme"
+reference "eq:WI-first-order"
 
 \end_inset
 
@@ -1626,28 +2052,23 @@ reference "eq:first-order-constraint-simple-scheme"
  This gives the set of wave equations: 
 \begin_inset Formula 
 \begin{align}
-\tilde{\Delta}_{G}^{-1}\delta\varphi_{N} & =-J_{N},\label{eq:phiN-eom-massless-1}\\
-\tilde{\Delta}_{G}^{-1}\delta\varphi_{g} & =-J_{g},\label{eq:phiG-eom-w-Goldstone-propagator-1}
+0 & =\mathcal{K}_{cg}v, & A=\left(g,N\right),\ c\neq g,N,\\
+\tilde{\Delta}_{H}^{-1}\delta\varphi_{N}+J_{N} & =-\delta\varphi_{N}\left(V_{HGG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)-\mathcal{K}_{gg}v, & A=\left(g,N\right),\ c=g,\\
+\tilde{\Delta}_{G}^{-1}\delta\varphi_{g}+J_{g} & =0, & A=\left(g,g'\right),\ g,g'\neq N,\ c=g',c\neq g.
 \end{align}
 
 \end_inset
 
-which would be the end of the story if not for the secondary constraints.
- However, note that the Higgs field 
-\emph on
-still
-\emph default
- propagates masslessly, so this scheme is still not fully satisfactory even
- if the secondary constraints were not an issue.
+
 \end_layout
 
 \begin_layout Standard
 In order to find the secondary constraints one writes the equations of motion
 \begin_inset Formula 
 \begin{align}
-\frac{\delta\Gamma}{\delta\varphi_{d}\left(z\right)} & =\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)\frac{\delta P_{fc}^{\perp}\left(x\right)}{\delta\varphi_{d}\left(z\right)}\left(\int_{y}\Delta_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)+T_{ca}^{A}J_{a}\left(x\right)\right)\nonumber \\
- & +\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)P_{fc}^{\perp}\left(x\right)\Delta_{ca}^{-1}\left(x,z\right)T_{ad}^{A}-J_{d}\left(z\right)-\int_{w}K_{de}\left(z,w\right)\varphi_{e}\left(w\right),\label{eq:si-eom-phi-projected-scheme}\\
-\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)} & =-\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)P_{fc}^{\perp}\left(x\right)\Delta_{cd}^{-1}\left(x,z\right)\int_{y}\Delta_{ea}^{-1}\left(w,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right).\label{eq:si-eom-delta-projected-scheme}
+\frac{\delta\Gamma}{\delta\varphi_{d}\left(z\right)} & =-iJ_{a}\left(z\right)\ell_{A}T_{ad}^{A}+\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)\frac{\delta P_{fc}^{\perp}\left(x\right)}{\delta\varphi_{d}\left(z\right)}\left(\int_{y}\Delta_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)+T_{ca}^{A}J_{a}\left(x\right)\right)\nonumber \\
+ & +\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)P_{fc}^{\perp}\left(x\right)\Delta_{ca}^{-1}\left(x,z\right)T_{ad}^{A}-J_{d}\left(z\right)-\int_{w}K_{de}\left(z,w\right)\varphi_{e}\left(w\right),\label{eq:si-eom-phi-projected-scheme-1}\\
+\frac{\delta\Gamma}{\delta\Delta_{de}\left(z,w\right)} & =-\frac{i}{2}\int_{x}\ell_{A}^{f}\left(x\right)P_{fc}^{\perp}\left(x\right)\Delta_{cd}^{-1}\left(x,z\right)\int_{y}\Delta_{ea}^{-1}\left(w,y\right)T_{ab}^{A}\varphi_{b}\left(y\right)-\frac{1}{2}i\hbar K_{de}\left(z,w\right).\label{eq:si-eom-delta-projected-scheme-1}
 \end{align}
 
 \end_inset
@@ -1665,7 +2086,7 @@ The secondary constraints are that the variation of the terms multiplying
  Starting work on the right hand side of 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:si-eom-delta-projected-scheme"
+reference "eq:si-eom-delta-projected-scheme-1"
 
 \end_inset
 
@@ -1700,7 +2121,7 @@ and one again finds that every term is proportional to
 Now working on the right hand side of 
 \begin_inset CommandInset ref
 LatexCommand eqref
-reference "eq:si-eom-phi-projected-scheme"
+reference "eq:si-eom-phi-projected-scheme-1"
 
 \end_inset
 
@@ -1757,79 +2178,32 @@ The first term vanishes as
 \end_inset
 
 .
- The second term also vanishes as
-\begin_inset Formula 
-\begin{align}
-\int_{y}\delta\Delta_{Na}^{-1}\left(z,y\right)P_{ad}^{\perp} & =-\int_{wvy}\tilde{\Delta}_{Nb}^{-1}\left(z,w\right)\delta\Delta_{bc}\left(w,v\right)\tilde{\Delta}_{ca}^{-1}\left(v,y\right)P_{ad}^{\perp}\nonumber \\
- & =-\int_{wv}\tilde{\Delta}_{Nb}^{-1}\left(z,w\right)\delta\Delta_{bc}\left(w,v\right)P_{cd}^{\perp}\int_{y}\tilde{\Delta}_{G}^{-1}\left(v,y\right)\nonumber \\
- & =\int_{wv}\tilde{\Delta}_{Nb}^{-1}\left(z,w\right)\delta\Delta_{bc}\left(w,v\right)P_{cd}^{\perp}m_{G}^{2}.
-\end{align}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The remaining terms become, in the case 
+ The remaining terms become, for 
 \begin_inset Formula $d=N$
 \end_inset
 
-: 
-\begin_inset Formula 
-\begin{align}
-0 & =\int_{x}\delta\Delta_{ga}^{-1}\left(x,z\right)P_{ga}^{\perp}\nonumber \\
- & =-\int_{xyw}\tilde{\Delta}_{gb}^{-1}\left(x,y\right)\delta\Delta_{bc}\left(y,w\right)\tilde{\Delta}_{ca}^{-1}\left(w,z\right)P_{ga}^{\perp}\nonumber \\
- & =m_{G}^{2}\int_{yw}\delta\Delta_{bc}\left(y,w\right)\tilde{\Delta}_{G}^{-1}\left(w,z\right)P_{bc}^{\perp},
-\end{align}
-
-\end_inset
-
-which is satisfied identically.
- The remaining constraint is for 
-\begin_inset Formula $d\neq N$
-\end_inset
-
-: 
-\begin_inset Formula 
-\begin{align}
-0 & =-\frac{1}{v}\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)\delta\varphi_{d}\left(y\right)-\frac{1}{v}J_{d}\left(z\right)\nonumber \\
- & -\frac{1}{v}\int_{x}\delta\varphi_{d}\left(x\right)\tilde{\Delta}_{H}^{-1}\left(x,z\right)+m_{G}^{2}\int_{yw}\delta\Delta_{dN}\left(y,w\right)\tilde{\Delta}_{H}^{-1}\left(w,z\right).
-\end{align}
-
-\end_inset
-
-Again the last term vanishes and 
-\begin_inset Formula 
-\begin{align}
-0 & =\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)\delta\varphi_{d}\left(y\right)+J_{d}\left(z\right)+\int_{x}\delta\varphi_{d}\left(x\right)\tilde{\Delta}_{H}^{-1}\left(x,z\right)\nonumber \\
- & =2\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)\delta\varphi_{d}\left(y\right)+J_{d}\left(z\right).
-\end{align}
-
-\end_inset
-
-The second line follows by the Hermiticity of 
-\begin_inset Formula $\tilde{\Delta}_{H}^{-1}$
-\end_inset
-
-.
- Finally another wave equation is obtained 
+,
 \begin_inset Formula 
 \begin{equation}
-\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)\delta\varphi_{d}\left(y\right)=-\frac{1}{2}J_{d}\left(z\right).
+0=\left(N-1\right)\int_{xw}V_{HGG}\left(w,x,z\right)\delta\varphi_{N}\left(w\right)+\int_{x}P_{ga}^{\perp}\mathcal{K}_{ga}\left(x,z\right),
 \end{equation}
 
 \end_inset
 
-Again 
-\begin_inset Formula $\delta\varphi_{d}$
+and for 
+\begin_inset Formula $d\neq N$
 \end_inset
 
- is over-determined, but by a 
-\emph on
-different
-\emph default
- equation this time.
+
+\begin_inset Formula 
+\begin{equation}
+\int_{y}\tilde{\Delta}_{H}^{-1}\left(z,y\right)\delta\varphi_{d}\left(y\right)+\frac{1}{2}J_{d}\left(z\right)=v\int_{yw}V_{GHG}\left(w,z,y\right)\delta\varphi_{d}\left(w\right)+v\int_{y}\mathcal{K}_{Nd}\left(z,y\right).
+\end{equation}
+
+\end_inset
+
+These equations are again apparently incompatible with the usual SI-2PI
+ equations of motion.
 \end_layout
 
 \begin_layout Section
@@ -1856,7 +2230,9 @@ name "sec:LRT-Discussion"
 
 \begin_layout Standard
 This chapter has shown that the imposition of symmetry improvement constraints
- is incompatible with the linear response approximation.
+ is incompatible with the linear response approximation, except possibly
+ in finely tuned truncations which satisfy a number of constraints above
+ and beyond the usual equations of motion.
  Since the original symmetry improvement scheme of Pilaftsis and Teresi
  was not formulated 
 \begin_inset Formula $\mathrm{O}\left(N\right)$
@@ -1884,13 +2260,8 @@ reference "chap:chap4"
 \end_layout
 
 \begin_layout Standard
-There are two types of pathology appearing in these results.
- The first is that the Higgs field fluctuations propagate masslessly.
- The second and more serious pathology is that the Goldstone field fluctuations
- are over-determined, and this over-determination happens in both constraint
- schemes considered (though in different ways).
- There is no simple modification of the constraint which could possibly
- fix these problems since one can understand them as a consequence of treating
+There is no simple modification of the constraint which could possibly fix
+ these problems since one can understand them as a consequence of treating
  
 \begin_inset Formula $\varphi$
 \end_inset
@@ -1905,261 +2276,22 @@ There are two types of pathology appearing in these results.
 vertex
 \emph default
  WI.
-\end_layout
-
-\begin_layout Standard
-To see these aspects of the problem consider the first order Ward identity
- for the 1PIEA, which is the same in form as 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:WI-first-order"
-
-\end_inset
-
-, 
-\begin_inset Formula 
-\begin{equation}
-0=\delta\Delta_{ca}^{-1}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}-J_{a}T_{ac}^{A},
-\end{equation}
-
-\end_inset
-
-only now 
-\begin_inset Formula $\Delta$
-\end_inset
-
- is not independent and 
-\begin_inset Formula $\delta\Delta^{-1}$
-\end_inset
-
- is to be understood as arising purely from the variation 
-\begin_inset Formula $\delta\varphi$
-\end_inset
-
-.
- To lowest order in 
-\begin_inset Formula $\hbar$
-\end_inset
-
-: 
-\begin_inset Formula 
-\begin{align}
-\delta\Delta_{ca}^{-1} & =\delta\Delta_{0ca}^{-1}\nonumber \\
- & =\left(-\frac{\lambda}{3}\tilde{\varphi}_{d}\delta\varphi^{d}\delta_{ac}-\frac{\lambda}{3}\delta\varphi_{a}\tilde{\varphi}_{c}-\frac{\lambda}{3}\tilde{\varphi}_{a}\delta\varphi_{c}\right)\delta\left(x-y\right)\nonumber \\
- & =-\frac{\lambda}{3}v\left(\delta\varphi_{N}\delta_{ac}+\delta\varphi_{a}\delta_{cN}+\delta_{aN}\delta\varphi_{c}\right)\delta\left(x-y\right).
-\end{align}
-
-\end_inset
-
-Substituting this into the WI gives 
-\begin_inset Formula 
-\begin{equation}
-0=-\frac{\lambda v^{2}}{3}\left(\delta\varphi_{N}\left(x\right)\delta_{ac}+\delta\varphi_{a}\left(x\right)\delta_{cN}\right)T_{aN}^{A}+\int_{y}\tilde{\Delta}_{ca}^{-1}\left(x,y\right)T_{ab}^{A}\delta\varphi_{b}\left(y\right)-J_{a}T_{ac}^{A},
-\end{equation}
-
-\end_inset
-
-and working out the components gives the set of equations 
-\begin_inset Formula 
-\begin{align}
-\int_{y}\left[\tilde{\Delta}_{G}^{-1}\left(x,y\right)-\frac{\lambda v^{2}}{3}\delta\left(x-y\right)\right]\delta\varphi_{N}\left(y\right) & =-J_{N},\\
-\int_{y}\left[\tilde{\Delta}_{H}^{-1}\left(x,y\right)+\frac{\lambda v^{2}}{3}\delta\left(x-y\right)\right]\delta\varphi_{g}\left(y\right) & =-J_{g},\\
-\int_{y}\tilde{\Delta}_{G}^{-1}\left(x,y\right)\delta\varphi_{g}\left(y\right) & =-J_{g},
-\end{align}
-
-\end_inset
-
-which is to be contrasted with 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:phiN-eom-massless"
-
-\end_inset
-
--
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:phiG-eom-w-Goldstone-propagator"
-
-\end_inset
-
-.
- This system is consistent if 
-\begin_inset Formula $m_{H}^{2}=m_{G}^{2}+\lambda v^{2}/3+\mathcal{O}\left(\hbar\right)$
-\end_inset
-
- which, of course, is true.
- Thus, for the 1PIEA the WI propagates Higgs and Goldstone fluctuations
- with the correct masses and source terms.
- This is expected because the WI was constructed to be satisfied by the
- 1PI correlation functions.
- There is no longer any reason for this to work if 
-\begin_inset Formula $\delta\Delta$
-\end_inset
-
- is independent of 
-\begin_inset Formula $\delta\varphi$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-This analysis can be followed further by considering 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:WI-first-order"
-
-\end_inset
-
- again.
- Taking the variation of 
-\begin_inset Formula $\Delta^{-1}$
-\end_inset
-
- from its definition in terms of the 1PIEA, 
-\begin_inset Formula $\Delta^{-1}=\delta^{2}\Gamma^{(1)}/\delta\varphi\delta\varphi$
-\end_inset
-
-, one can write
-\begin_inset Formula 
-\begin{equation}
-\delta\Delta_{ca}^{-1}=\frac{\delta^{3}\Gamma^{\left(1\right)}}{\delta\varphi_{d}\delta\varphi_{c}\delta\varphi_{a}}\delta\varphi_{d}+\mathcal{O}\left(\delta\varphi^{2}\right),
-\end{equation}
-
-\end_inset
-
-and note that 
-\begin_inset Formula $\delta^{3}\Gamma^{\left(1\right)}/\delta\varphi_{d}\delta\varphi_{c}\delta\varphi_{a}=V_{dca}$
-\end_inset
-
- is the three point vertex function.
- These relations no longer hold identically for the 2PI correlation functions,
- but they do hold numerically for the 
-\emph on
-exact
-\emph default
- solutions of the untruncated 2PI equations of motion.
- This can be extended to the 2PIEA by writing 
-\begin_inset Formula 
-\begin{equation}
-\delta\Delta_{ca}^{-1}=V_{dca}\delta\varphi_{d}+\mathcal{K}_{ca},
-\end{equation}
-
-\end_inset
-
-where 
-\begin_inset Formula $\mathcal{K}_{ca}$
-\end_inset
-
- encapsulates the additional variations of 
-\begin_inset Formula $\Delta$
-\end_inset
-
- in the truncated 2PIEA formalism.
-\end_layout
-
-\begin_layout Standard
-There is a WI for the three point vertex function 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:1PI-V-WI"
-
-\end_inset
-
-, 
-\begin_inset Formula 
-\begin{equation}
-\mathcal{W}_{dc}^{A}=V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},
-\end{equation}
-
-\end_inset
-
-which is unaffected by the presence of sources.
- As with 
-\begin_inset Formula $\mathcal{W}_{c}^{A}$
-\end_inset
-
-, 
-\begin_inset Formula $\mathcal{W}_{dc}^{A}=0$
-\end_inset
-
- in the exact theory, but not automatically in truncations.
- Combining these relations with 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:WI-first-order"
-
-\end_inset
-
- gives:
-\begin_inset Formula 
-\begin{align}
-0 & =\delta\varphi_{d}\left(\mathcal{W}_{dc}^{A}-\tilde{\Delta}_{ca}^{-1}T_{ad}^{A}-\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}+\tilde{\Delta}_{ca}^{-1}T_{ab}^{A}\delta\varphi_{b}-J_{a}T_{ac}^{A}\nonumber \\
- & =\delta\varphi_{d}\left(\mathcal{W}_{dc}^{A}-\tilde{\Delta}_{da}^{-1}T_{ac}^{A}\right)+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}-J_{a}T_{ac}^{A},
-\end{align}
-
-\end_inset
-
-which can be rearranged as 
-\begin_inset Formula 
-\begin{equation}
-\left(\delta\varphi_{d}\tilde{\Delta}_{da}^{-1}+J_{a}\right)T_{ac}^{A}=\delta\varphi_{d}\mathcal{W}_{dc}^{A}+\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}.\label{eq:fluctuation-eom-vertex-WI}
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Standard
-If the right hand side vanishes one has (using the symmetry of 
-\begin_inset Formula $\tilde{\Delta}^{-1}$
-\end_inset
-
-) 
-\begin_inset Formula 
-\begin{equation}
-\tilde{\Delta}_{ad}^{-1}\delta\varphi_{d}=-J_{a},
-\end{equation}
-
-\end_inset
-
-which is the correct equation of motion for fluctuations.
- The failure of these equations to be satisfied is measured by the terms
- on the right hand side of 
-\begin_inset CommandInset ref
-LatexCommand eqref
-reference "eq:fluctuation-eom-vertex-WI"
-
-\end_inset
-
-, which have two distinct meanings.
- The first, 
-\begin_inset Formula $\delta\varphi_{d}\mathcal{W}_{dc}^{A}$
-\end_inset
-
-, measures the failure of the 
+ There are two error terms in the equations of motion for fluctuations.
+ The first is due to the violation of the 
 \emph on
 vertex
 \emph default
- WI to be satisfied by 2PI approximations, while the second term, 
-\begin_inset Formula $\mathcal{K}_{ca}T_{ab}^{A}\tilde{\varphi}_{b}$
-\end_inset
-
-, measures the failure of the variations in the 2PI functions 
-\begin_inset Formula $\varphi$
-\end_inset
-
- and 
+ WI by the equilibrium solutions of the SI-2PI equations of motion.
+ The second is due to the independence of 
 \begin_inset Formula $\Delta$
 \end_inset
 
- to be linked according to the 1PI relations.
-\end_layout
+ and 
+\begin_inset Formula $\varphi$
+\end_inset
 
-\begin_layout Standard
-One could try to eliminate the second error term by constraining the variation
+ in the 2PIEA.
+ One could try to eliminate the second error term by constraining the variation
  
 \begin_inset Formula $\delta\Delta$
 \end_inset
@@ -2230,50 +2362,42 @@ PIEA scheme only has the power to enforce constraints between the lowest
  Violations of the higher order Ward identities then feed back into the
  equations of motion for the fluctuations, leading to an inconsistent system
  overall.
- This leads to the general conclusion: 
-\emph on
-all symmetry improved 
+ This leads to the general conclusion: it is not possible to formulate a
+ linear response theory for SI-
 \begin_inset Formula $n$
 \end_inset
 
-PIEA schemes are incompatible with the linear response approximation
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-It is interesting that the same number of non-trivial constraints is found
- in both schemes, despite the attempt to reduce their number in the projected
- scheme.
- This is because the projection operator depends on the fields 
+PIEAs by requiring (as in the 1PIEA) the vanishing of WI violations and
+ the linking of correlation functions of different order (e.g.
+ 
 \begin_inset Formula $\varphi$
 \end_inset
 
-, so it has non-trivial derivatives.
- This will be the case for any 
-\begin_inset Formula $\mathrm{O}\left(N\right)$
+ and 
+\begin_inset Formula $\Delta$
 \end_inset
 
--covariant projection scheme.
- This motivates a study of whether it is possible to 
+).
+ Instead, one must rely upon a network of cancellations among the 
 \emph on
-non-covariantly
+violations
 \emph default
- project out the troublesome constraints, i.e.
- explicitly break the symmetry in order to save it.
- It is worth mentioning the logical possibility that the true behaviour
- of the solutions to the truncated SI-2PIEA equations of motion, when solutions
- exist, is non-analytic as a function of the sources in the neighbourhood
- of equilibrium.
- This would invalidate any attempted Taylor series expansion in the sources
- and so one should expect problems at the linear response level.
- The author does not know how to further analyse this possibility at this
- time.
+ of the usual 1PI relations by the corresponding 
+\begin_inset Formula $n$
+\end_inset
+
+PI quantities.
+ Such a situation is delicate and highly truncation dependent, so that,
+ so far, it is not know that any truncation beyond the 
+\emph on
+classical
+\emph default
+ theory actually obeys all of the required conditions.
 \end_layout
 
 \begin_layout Standard
-It would also be interesting to examine whether alternatives to symmetry
- improvement can be extended to non-equilibrium situations.
+It would be interesting to examine whether alternatives to symmetry improvement
+ can be extended to non-equilibrium situations.
  This motivates the investigation of the linear response of the soft symmetry
  improvement formalism as a potential workaround for the issues found here.
  There are two reasons that the results of this chapter cannot be directly
@@ -2286,15 +2410,7 @@ reference "chap:chap5"
 
 .
  The first is that the WI is not exactly imposed in the SSI formalism, so
- that the 
-\begin_inset Quotes eld
-\end_inset
-
-short cut
-\begin_inset Quotes erd
-\end_inset
-
- taken above no longer applies.
+ that the treatment given above no longer applies.
  Instead, one must explicitly compute the left hand sides of 
 \begin_inset CommandInset ref
 LatexCommand eqref

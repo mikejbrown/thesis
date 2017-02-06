@@ -165,7 +165,7 @@ y rather than exactly.
  The idea is that the extra freedom may allow solutions to exist while violation
 s of the WIs may be acceptably small phenomenologically depending on the
  application one has in mind.
- This chapter investigates an entirely novel method called 
+ This chapter investigates a novel method called 
 \emph on
 soft symmetry improvement
 \emph default
@@ -224,8 +224,7 @@ This chapter formulates the SSI-2PIEA, then renormalises and solves the
  but the third is new.
  The properties of this new limit are examined in equilibrium at finite
  and zero temperature.
- All of this work is new and forms the basis of a manuscript which is currently
- being prepared for publication by the author 
+ All of this work is new and forms the basis of a paper by the author 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brown2016"
@@ -4001,7 +4000,7 @@ increases
 \end_layout
 
 \begin_layout Standard
-This behaviour highlights the difficult faced by the symmetry improvement
+This behaviour highlights the difficulty faced by the symmetry improvement
  program.
  Ward identities are by nature infrared properties of a field theory and
  imposing them amounts to modifying a theory at large distances, while trying

@@ -172,7 +172,7 @@ PIEA is truncated some subset of perturbative diagrams is summed to infinite
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "York2012,York2014"
+key "Arrizabalaga2002,Carrington2005,York2012,York2014"
 
 \end_inset
 
@@ -745,10 +745,10 @@ reference "eq:master-WI"
  are
 \begin_inset Formula 
 \begin{eqnarray}
-\mathcal{W}^{A} & = & -J_{a}T_{ab}^{A}\varphi_{b},\\
+\mathcal{W}^{A} & = & -J_{a}T_{ab}^{A}\varphi_{b},\label{eq:1PI-Jphi-WI}\\
 \mathcal{W}_{c}^{A} & = & \Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}-J_{a}T_{ac}^{A},\label{eq:1PI-Delta-WI}\\
 \mathcal{W}_{cd}^{A} & = & V_{dca}T_{ab}^{A}\varphi_{b}+\Delta_{ca}^{-1}T_{ad}^{A}+\Delta_{da}^{-1}T_{ac}^{A},\label{eq:1PI-V-WI}\\
-\mathcal{W}_{cde}^{A} & = & V_{edca}^{\left(4\right)}T_{ab}^{A}\varphi_{b}+V_{dca}T_{ae}^{A}+V_{eca}T_{ad}^{A}+V_{eda}T_{ac}^{A},
+\mathcal{W}_{cde}^{A} & = & W_{edca}T_{ab}^{A}\varphi_{b}+V_{dca}T_{ae}^{A}+V_{eca}T_{ad}^{A}+V_{eda}T_{ac}^{A},
 \end{eqnarray}
 
 \end_inset
@@ -848,8 +848,12 @@ which gives
 
 \end_inset
 
-recalling that the zero mode of the inverse propagator is (minus) the mass
- matrix.
+recalling that the zero mode of the inverse propagator is (minus) the mass-squar
+ed matrix 
+\begin_inset Formula $M_{ca}^{2}=M_{ac}^{2}$
+\end_inset
+
+.
  Choosing without loss of generality a basis where 
 \begin_inset Formula $\varphi_{b}=\left(0,\cdots,0,v\right)=v\delta_{bN}$
 \end_inset
@@ -931,7 +935,7 @@ Strictly speaking a Higgs or Brout-Englert-Higgs boson only exists in theories
 \begin_inset Quotes eld
 \end_inset
 
-Higss
+Higgs
 \begin_inset Quotes erd
 \end_inset
 
@@ -1064,6 +1068,15 @@ where
 \end_inset
 
 .
+ Note that the free propagators are
+\begin_inset Formula 
+\begin{equation}
+\Delta_{0G/H}^{-1}=p^{2}-m_{G/H}^{2}.\label{eq:SSB-free-propagators}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1158,7 +1171,14 @@ and
 \end_inset
 
 .
- Then the WI becomes
+ Then using 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-Dyson-equation"
+
+\end_inset
+
+ the WI becomes
 \end_layout
 
 \begin_layout Standard
@@ -1265,10 +1285,17 @@ The shift of
 \begin_inset Formula $\Gamma$
 \end_inset
 
- gives the 2PI version of the master Ward identity
+ gives the 2PI version of the master Ward identity 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Pilaftsis2013"
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{equation}
-\frac{\delta\Gamma}{\delta\varphi_{a}}i\epsilon_{A}T_{ab}^{A}\varphi_{b}+\frac{\delta\Gamma}{\delta\Delta_{ab}}i\epsilon_{A}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right)=0.
+\frac{\delta\Gamma}{\delta\varphi_{a}}i\epsilon_{A}T_{ab}^{A}\varphi_{b}+\frac{\delta\Gamma}{\delta\Delta_{ab}}i\epsilon_{A}\left(T_{ac}^{A}\Delta_{cb}+T_{bc}^{A}\Delta_{ac}\right)=0.\label{eq:2pi-master-WI}
 \end{equation}
 
 \end_inset
@@ -1497,8 +1524,14 @@ The profusion of different derivatives of
 \begin_inset Formula $\delta/\delta\varphi_{c}$
 \end_inset
 
- of the master 2PI WI and using the previous result in the absence of external
- sources, giving
+ of the master 2PI WI 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2pi-master-WI"
+
+\end_inset
+
+ and using the previous result in the absence of external sources, giving
 \begin_inset Formula 
 \begin{equation}
 0=\Delta_{ca}^{-1}T_{ab}^{A}\varphi_{b}+\frac{\delta^{2}\Gamma}{\delta\varphi_{c}\delta\Delta_{ab}}\left(T_{ad}^{A}\Delta_{db}+T_{bd}^{A}\Delta_{ad}\right).
@@ -2138,6 +2171,13 @@ for
 .
  Matching these to 
 \begin_inset Formula $\Delta_{G/H}^{-1}\left(x,y\right)=-\left(\square_{x}+m_{G/H}^{2}\right)\delta\left(x-y\right)$
+\end_inset
+
+ from 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:SSB-free-propagators"
+
 \end_inset
 
  gives the gap equations
@@ -3220,15 +3260,24 @@ One now makes a systematic expansion of these equations in powers of
 \end_inset
 
 .
+ To that end define 
+\begin_inset Formula $\hat{v}=v/\sqrt{N}$
+\end_inset
+
+ which is fixed in the large 
+\begin_inset Formula $N$
+\end_inset
+
+ limit.
  The equations of motion become
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-0 & =-v\left(m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)\right)+\mathcal{O}\left(\lambda^{2}\right),\\
-m_{G}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{6}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\\
-m_{H}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right).
+0 & =-\sqrt{N}\hat{v}\left(m^{2}+g\frac{\hat{v}^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)\right)+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{G}^{2} & =m^{2}+g\frac{\hat{v}^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{6}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right),\\
+m_{H}^{2} & =m^{2}+g\frac{\hat{v}^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{g}{N}\left(-\frac{\hbar}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\frac{\hbar}{2}\mathcal{T}_{H}^{\mathrm{fin}}\right)+\mathcal{O}\left(\lambda^{2}\right).
 \end{align}
 
 \end_inset
@@ -3278,9 +3327,9 @@ ty altogether), that the maximum amount of compensation is
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-0 & =-v\left(m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}\right)+\mathcal{O}\left(\frac{g}{N}\right),\\
-m_{G}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right),\\
-m_{H}^{2} & =m^{2}+\frac{g}{N}\frac{v^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right).
+0 & =-\sqrt{N}\hat{v}\left(m^{2}+g\frac{\hat{v}^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}\right)+\mathcal{O}\left(\frac{g}{N}\right),\\
+m_{G}^{2} & =m^{2}+g\frac{\hat{v}^{2}}{6}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right),\\
+m_{H}^{2} & =m^{2}+g\frac{\hat{v}^{2}}{2}+\frac{\hbar g}{6}\mathcal{T}_{G}^{\mathrm{fin}}+\mathcal{O}\left(\frac{g}{N}\right).
 \end{align}
 
 \end_inset
@@ -3314,7 +3363,7 @@ i.e.
  and
 \begin_inset Formula 
 \begin{equation}
-m_{H}^{2}=\frac{g}{N}\frac{v^{2}}{3}+\mathcal{O}\left(\frac{g}{N}\right),
+m_{H}^{2}=g\frac{\hat{v}^{2}}{3}+\mathcal{O}\left(\frac{g}{N}\right),
 \end{equation}
 
 \end_inset
@@ -3411,7 +3460,7 @@ and note that multiplying by a
 
 has no physical effect.
  (Also note that 
-\begin_inset Formula $\left\langle \sigma\right\rangle =\frac{\lambda}{3!}\left\langle \phi_{a}\phi_{a}\right\rangle \sim\mathcal{O}\left(1\right)$
+\begin_inset Formula $\left\langle \sigma\right\rangle =\frac{\lambda}{3!}\left\langle \phi_{a}\phi_{a}\right\rangle \sim g\hat{v}^{2}\sim\mathcal{O}\left(1\right)$
 \end_inset
 
  as 

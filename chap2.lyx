@@ -530,8 +530,7 @@ key "Born1946,Kirkwood1946"
  some finite order, which necessitates invoking a closure ansatz approximating
  some higher order correlation functions in terms of lower order ones.
  This ansatz can be physically motivated but always involves some degree
- of arbitrariness and often leads to the violation of some physical principle
- such as time reversal invariance or gauge invariance.
+ of arbitrariness.
  In contrast, while the higher 
 \begin_inset Formula $n$
 \end_inset
@@ -863,15 +862,24 @@ The diagram expansion for
 \end_inset
 
 .
- Note that to lowest order
+ To lowest order
 \begin_inset Formula 
 \begin{equation}
-W\left[J\right]=W\left[0\right]-\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
+W\left[J\right]=W\left[0\right]+\int_{x}J\left(x\right)\left\langle \phi\left(x\right)\right\rangle -\frac{1}{2}\int_{xy}J\left(x\right)\Delta_{0}\left(x,y\right)J\left(y\right)+\mathcal{O}\left(V_{\mathrm{int}}\right).
 \end{equation}
 
 \end_inset
 
-As usual, for most physical purposes the overall normalisation 
+Note that 
+\begin_inset Formula $\left\langle \phi\left(x\right)\right\rangle \sim\mathcal{O}\left(V_{\mathrm{int}}\right)$
+\end_inset
+
+ if there is no linear term in 
+\begin_inset Formula $\mathcal{L}\left(\phi\right)$
+\end_inset
+
+, which will be assumed below.
+ As usual, for most physical purposes the overall normalisation 
 \begin_inset Formula $W\left[0\right]$
 \end_inset
 
@@ -2090,7 +2098,15 @@ There are physically relevant cases where this equation cannot be inverted.
  The non-convex portion of the potential is unphysical, corresponding to
  a metastable state, and the imaginary part of the potential is related
  to the lifetime of that state.
- The true form of 
+ The quantity actually found by the saddle point method is an effective
+ action which expands about a single classical configuration.
+ This is equal to 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ in the case that it is convex.
+ However, for a non-convex effective potential the two quantities differ
+ and the true form of 
 \begin_inset Formula $\Gamma$
 \end_inset
 
@@ -2099,7 +2115,7 @@ There are physically relevant cases where this equation cannot be inverted.
  
 \begin_inset CommandInset citation
 LatexCommand citep
-key "Alexandre2012"
+key "Zinn-Justin1990,Alexandre2012"
 
 \end_inset
 
@@ -2142,7 +2158,7 @@ so that
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}=\Delta^{-1}\left(x,y\right).
+\frac{\delta^{2}\Gamma}{\delta\varphi\left(x\right)\delta\varphi\left(y\right)}=\Delta^{-1}\left(x,y\right).\label{eq:1PI-Delta-def-from-Gamma}
 \end{equation}
 
 \end_inset
@@ -2783,6 +2799,30 @@ two particle irreducible
 \emph default
  (2PI) graphs, i.e.
  those which do not fall apart under any cutting of two lines.
+ Note that 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ depends on 
+\begin_inset Formula $\hbar$
+\end_inset
+
+ through 
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "eq:2PI-Dyson-equation"
+
+\end_inset
+
+, which must be accounted for when comparing 
+\begin_inset Formula $\Gamma\left[\varphi,\Delta\left[\varphi\right]\right]$
+\end_inset
+
+ to the 1PIEA order by order in 
+\begin_inset Formula $\hbar$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2898,7 +2938,20 @@ and the effective interaction Lagrangian (i.e.
 \begin_inset Formula $S$
 \end_inset
 
- after shifting the field ala 
+ after shifting the field 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+`{a}
+\end_layout
+
+\end_inset
+
+ la 
 \begin_inset Formula $\phi=\varphi+\hbar^{1/2}\tilde{\phi}$
 \end_inset
 
@@ -3612,7 +3665,23 @@ key "DeDominicis1964"
 \end_inset
 
 .
- Early work on higher effective actions was carried on by Vasiliev 
+ They were mentioned, but not used, in the pioneering 2PIEA paper 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Cornwall1974"
+
+\end_inset
+
+ and developed further in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Norton1975"
+
+\end_inset
+
+.
+ More early work on higher effective actions was carried on by Vasiliev
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Vasiliev1998"
@@ -4332,10 +4401,28 @@ where
 \end_inset
 
  is the Euler-Mascheroni constant.
- The three terms are the divergent contribution, the finite vacuum contribution
- and the finite temperature Bose-Einstein contribution respectively.
- The renormalisation procedure (not carried out in full here), effectively
- results in the removal of the infinite part.
+ The three terms are the 
+\begin_inset Formula $\overline{\mathrm{MS}}$
+\end_inset
+
+ divergent contribution, the finite vacuum contribution and the finite temperatu
+re Bose-Einstein contribution respectively.
+ The renormalisation procedure (not carried out in full here; see section
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Renormalisation-and-solution-2PI-HF"
+
+\end_inset
+
+ and appendix 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Appendix-Renormalisation-Details"
+
+\end_inset
+
+ for details), effectively results in the removal of the infinite part.
  The ambiguity in the removal of a finite part is reflected in the freedom
  to choose 
 \begin_inset Formula $\mu$
@@ -4591,11 +4678,11 @@ end{fmffile}
 \end_inset
 
 where the full propagator represents 
-\begin_inset Formula $\Delta$
+\begin_inset Formula $i\Delta$
 \end_inset
 
  and the dashed propagator 
-\begin_inset Formula $\Delta_{0}$
+\begin_inset Formula $i\Delta_{0}$
 \end_inset
 
 .
@@ -5034,7 +5121,15 @@ superdaisy
  (i.e., daisies within daisies in a fractal pattern) diagrams.
  The highly non-trivial fact about 2PI approximation schemes is that all
  of these diagrams appear with the correct combinatoric factors.
- From the point of view of someone engineering 
+ (This no longer holds for all diagrams in 
+\begin_inset Formula $n$
+\end_inset
+
+PIEA with 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+.) From the point of view of someone engineering 
 \emph on
 ad hoc
 \emph default
@@ -5346,7 +5441,7 @@ status open
 
  approximants.
  This section tests the hypothesis that the 2PI methods should be more accurate
- that Borel-Pad
+ than Borel-Pad
 \begin_inset ERT
 status open
 
@@ -5359,7 +5454,7 @@ status open
 
 \end_inset
 
- and, indeed, finds this to be the case, at least in certain regimes.
+ and, indeed, one finds this to be the case, at least in certain regimes.
 \end_layout
 
 \begin_layout Standard
@@ -9008,7 +9103,7 @@ The study of the toy model revealed several interesting features.
 
 ) axis, a fact which is invisible to perturbation theory.
  The theory is Borel summable, with the Borel sum giving the exact answer.
- However, Borel summation alone is not usually this helpful in practice.
+ However, Borel summation alone is not usually very helpful in practice.
  Pad
 \begin_inset ERT
 status open
