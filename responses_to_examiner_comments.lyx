@@ -222,7 +222,7 @@ Correction made as requested.
 \end_layout
 
 \begin_layout Enumerate
-In fact the process if forbidden by the unbroken 
+In fact the process is forbidden by the unbroken 
 \begin_inset Formula $\mathrm{O}\left(N-1\right)$
 \end_inset
 
@@ -519,9 +519,9 @@ Added the requested table (table 0.2 on page xii).
 The request for an evaluation of the SI method is clearly reasonable.
  However, the examiner confuses the Marko et.
  al.
- study, which used the two loop approximation, with the results Hartree-Fock
- approximation (indeed there is no problem for the SI-2PIEA in the Hartree-Fock
- approximation) which are directly comparable to the SI-3PI results presented
+ study, which used the two loop approximation, with the results of the Hartree-F
+ock approximation (indeed there is no problem for the SI-2PIEA in the Hartree-Fo
+ck approximation) which are directly comparable to the SI-3PI results presented
  in chapter 4.
  The Marko et.
  al.

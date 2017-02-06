@@ -1610,8 +1610,7 @@ reference "eq:fluctuation-eom-vertex-WI-1"
 \end_inset
 
 .) These equations are not completely independent but neither are they trivial.
- In particular, the consistency of the first and fourth equation in particular
- requires
+ In particular, the consistency of the first and fourth equation requires
 \begin_inset Formula 
 \begin{equation}
 \delta\varphi_{g}\left(V_{GHG}v+\tilde{\Delta}_{G}^{-1}-\tilde{\Delta}_{H}^{-1}\right)+\mathcal{K}_{Ng}v=0,
