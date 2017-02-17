@@ -9,6 +9,12 @@ This is the source distribution for Michael J. Brown's PhD thesis entitled "Symm
 
 Except where otherwise noted, all parts of this thesis are Copyright © 2016 by Michael J. Brown.
 
+Version History
+---------------
+
+- [v1.0.0 (Github link)](https://github.com/mikejbrown/thesis/releases/tag/v1.0.0): The final approved version with all examiner corrections. [Download the rendered pdf here](https://github.com/mikejbrown/thesis/releases/download/v1.0.0/michael.j.brown-thesis-v1.0.0.pdf). [![DOI](https://zenodo.org/badge/69083959.svg)](https://zenodo.org/badge/latestdoi/69083959)
+
+
 Abstract
 --------
 
@@ -41,8 +47,8 @@ Except where otherwise noted, the following licenses apply:
   ![JCU logo](jculogo.svg)
 
 
-Version Info
-------------
+Version Number Info
+-------------------
 
 This thesis uses a modified form of [semantic versioning](http://semver.org/) suitable for scientific documents.
 The version number is of the form v_MAJOR_._MINOR_._PATCH_ where MAJOR, MINOR and PATCH are non-negative integers.
